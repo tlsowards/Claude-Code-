@@ -25,6 +25,23 @@ const WARN_FILL = 'FCF0DC';       // not addressed
 
 const statusFill = (s) => (s === 'Conflict' ? FLAG_FILL : s === 'Not Addressed' ? WARN_FILL : undefined);
 
+const WORDS = ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight',
+  'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen',
+  'Seventeen', 'Eighteen', 'Nineteen', 'Twenty'];
+const TENS = { 20: 'Twenty', 30: 'Thirty', 40: 'Forty', 50: 'Fifty' };
+
+// Spell a small number for prose, so the text tracks the register rather than
+// carrying a count that goes stale the next time a finding moves.
+function word(n, cap = false) {
+  let w;
+  if (n < WORDS.length) w = WORDS[n];
+  else if (n < 60 && TENS[Math.floor(n / 10) * 10]) {
+    w = TENS[Math.floor(n / 10) * 10];
+    if (n % 10) w += `-${WORDS[n % 10].toLowerCase()}`;
+  } else return String(n);
+  return cap ? w : w.toLowerCase();
+}
+
 function txt(text, opts = {}) {
   return new TextRun({ text: String(text), color: INK, ...opts });
 }
@@ -106,7 +123,7 @@ push(
   }),
   new Paragraph({
     children: [txt(
-      `Gap register Revision ${data.revision}. ${data.total} requirements assessed against 14 departmental policies.`,
+      `Gap register Revision ${data.revision}. ${data.total} requirements assessed against ${data.doc_count} departmental policies.`,
       { size: 22, color: MUTED })],
     spacing: { after: 900 }, alignment: AlignmentType.CENTER,
   }),
@@ -119,7 +136,7 @@ push(
             txt('It is a policy-to-standard comparison prepared for internal remediation '
               + 'planning. Findings state what the documents reviewed contain. Where a '
               + 'requirement is recorded as not addressed, that means no provision appeared '
-              + 'in the 14 documents reviewed, not that the practice does not occur. '
+              + `in the ${data.doc_count} documents reviewed, not that the practice does not occur. `
               + 'Statutory questions route to County Counsel.', { size: 20 }),
           ],
           spacing: { before: 60, after: 60, line: 260 },
@@ -144,19 +161,22 @@ push(
   new Paragraph({ text: '1. What this document does', heading: HeadingLevel.HEADING_1 }),
   p('The gap register records, for each requirement, what the department has. This document '
     + 'sets the requirement and the departmental provision next to each other so the '
-    + 'divergence is visible on its face, and then inverts the view so each of the 14 '
-    + 'reviewed policies can be worked one at a time.'),
+    + 'divergence is visible on its face, and then inverts the view so each of the '
+    + `${data.doc_count} reviewed policies can be worked one at a time.`),
   p('Three divergence classes are used throughout.'),
   labelled('Conflict.', 'The policy states a rule, and the rule is wrong. This is the worst '
     + 'class, because staff following policy are out of compliance by doing what they were '
-    + 'told. Twelve requirements sit here, and they are set out in full at part 3.'),
+    + `told. ${word(data.by_status.Conflict, true)} requirements sit here, and they are set `
+    + 'out in full at part 3.'),
   labelled('Not Addressed.', 'The documents reviewed contain no provision on the point. '
-    + 'Seventeen requirements sit here. Eleven of them cite no departmental document at all, '
+    + `${word(data.by_status['Not Addressed'], true)} requirements sit here. `
+    + `${word(data.na_orphans, true)} of them cite no departmental document at all, `
     + 'so they cannot be closed by amendment: they need drafting or an administrative '
     + 'decision.'),
-  labelled('Partial.', 'A provision exists and does part of the work. Thirty-nine requirements '
-    + 'sit here, and this is where most of the remediation labor is. A partial finding is '
-    + 'usually cheaper to close than it looks, because the drafting anchor already exists.'),
+  labelled('Partial.', 'A provision exists and does part of the work. '
+    + `${word(data.by_status.Partial, true)} requirements sit here, and this is where most of `
+    + 'the remediation labor is. A partial finding is usually cheaper to close than it looks, '
+    + 'because the drafting anchor already exists.'),
   p('Part 4 is the crosswalk in the order an auditor scores. Part 5 is the same findings '
     + 'reorganized by departmental document, which is the order the drafting actually gets '
     + 'done in.'),
@@ -250,7 +270,8 @@ push(new Paragraph({ children: [new PageBreak()] }));
 
 push(
   new Paragraph({ text: '3. Class A divergence: policy states the wrong rule', heading: HeadingLevel.HEADING_1 }),
-  p('Twelve requirements where a departmental document affirmatively states a rule that '
+  p(`${word(data.by_status.Conflict, true)} requirements where a departmental document `
+    + 'affirmatively states a rule that '
     + 'contradicts federal or California law, or contradicts another departmental document. '
     + 'These come first because they are the only class where compliant staff behavior '
     + 'produces non-compliance. Each entry names the register row it traces to.'),
@@ -342,7 +363,7 @@ push(
   new Paragraph({ text: '5. The same findings, policy by policy', heading: HeadingLevel.HEADING_1 }),
   p('Part 4 is organized the way an auditor reads. This part is organized the way the work '
     + 'gets done: one document at a time. A requirement that cites more than one document '
-    + 'appears under each, so the counts below sum to more than 83.'),
+    + `appears under each, so the counts below sum to more than ${data.total}.`),
 );
 
 data.doc_view.forEach((d) => {
@@ -390,10 +411,12 @@ data.doc_view.forEach((d) => {
 
 if (data.orphans.length) {
   push(new Paragraph({ text: 'No departmental document identified', heading: HeadingLevel.HEADING_2 }));
-  push(p(`${data.orphans.length} requirements cite none of the 14 documents reviewed. Eleven `
-    + 'record no departmental provision at all and cannot be remediated by amendment: they '
-    + 'need drafting or an administrative decision. Two turn on documents that exist but were '
-    + 'not produced, rows 14 and 45, and may close on production.'));
+  push(p(`${data.orphans.length} requirements cite none of the ${data.doc_count} documents `
+    + `reviewed. ${word(data.orphan_none, true)} record no departmental provision at all and `
+    + 'cannot be remediated by amendment: they need drafting or an administrative decision. '
+    + `${word(data.orphan_unproduced, true)} turn on documents that exist but were not `
+    + `produced, row${data.orphan_unproduced === 1 ? '' : 's'} `
+    + `${data.orphan_unproduced_ids.join(', ')}, and may close on production.`));
   push(table([700, 2400, 1400, 5580], [
     new TableRow({
       tableHeader: true,

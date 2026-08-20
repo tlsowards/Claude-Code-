@@ -1,5 +1,15 @@
 node_modules/
-*.pdf
-.DS_Store
-tools/crosswalk.json
 __pycache__/
+tools/crosswalk.json
+.DS_Store
+
+# Source policy documents are never committed. They are county records that
+# belong on the department's own systems, and this project treats the register
+# as the artifact, not the sources. docs/README.md says where they go.
+docs/*
+!docs/README.md
+
+# Deliverables produced outside this repository are not versioned here. The
+# master report and the liability assessment in particular carry handling
+# considerations that a repository does not respect.
+deliverables/YDF_PREA_*

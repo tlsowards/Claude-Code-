@@ -20,7 +20,7 @@ CSV_PATH = os.path.join(ROOT, "prea-register.csv")
 JSON_PATH = os.path.join(ROOT, "tools", "crosswalk.json")
 MD_PATH = os.path.join(ROOT, "deliverables", "PREA_versus_Policy_Crosswalk.md")
 
-REVISION = 3
+REVISION = 4
 
 # Order used by 28 CFR part 115 subpart D, with the California and audit
 # groupings appended, so the document tracks what an auditor scores in order.
@@ -64,13 +64,19 @@ DOCUMENTS = [
     ("OO 1362 Reporting of Incidents", "eff 11/01/2019", r"OO 1362"),
     ("OO 1453 Sexual Assault", "eff 04/25/2013, rev 12/09/2019", r"OO 1453"),
     ("Internal Affairs Administrative Investigations", "eff 01/11/2011, no revision",
-     r"Internal Affairs"),
+     r"Internal Affairs (?:Administrative Investigations|[IVX]+\b)"),
     ("Code of Conduct, Non-Sworn and Non-County Personnel", "eff 06/01/2011",
      r"Code of Conduct"),
     ("Detention and Intake Responsibility (J-3.4)", "undated",
      r"J-3\.4|Detention and Intake Responsibility"),
     ("General Order, Mandatory Reporting: Dependent Adult and Elder Abuse",
      "eff 06/30/2017", r"Dependent Adult|Elder Abuse"),
+    # Produced after Revision 3.
+    ("OO 1354.5 Room Confinement", "eff 04/05/2023", r"OO 1354\.5"),
+    ("OO 1390/1391 Discipline and Discipline Process",
+     "eff 10/01/2013, rev 05/01/2020", r"OO 1390|OO 1391"),
+    ("Internal Complaints (Administrative P&P Manual)", "rev 10/30/2013",
+     r"Internal Complaints"),
 ]
 
 # The twelve conflicts, stated as law versus policy. Text is taken from the
@@ -264,6 +270,26 @@ CONFLICTS = [
 AUTHORITY_OVERRIDES = {79: "15 CCR 1350; 15 CCR 1350.5"}
 
 
+_WORDS = {
+    0: "No", 1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six",
+    7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten", 11: "Eleven", 12: "Twelve",
+    13: "Thirteen", 14: "Fourteen", 15: "Fifteen", 16: "Sixteen",
+    17: "Seventeen", 18: "Eighteen", 19: "Nineteen", 20: "Twenty",
+    30: "Thirty", 40: "Forty", 50: "Fifty",
+}
+
+
+def word(n, cap=False):
+    """Spell a small number for prose. Falls back to digits above the table."""
+    if n in _WORDS:
+        w = _WORDS[n]
+    elif n < 60 and (n // 10) * 10 in _WORDS and n % 10 in _WORDS:
+        w = "%s-%s" % (_WORDS[(n // 10) * 10], _WORDS[n % 10].lower())
+    else:
+        return str(n)
+    return w if cap else w.lower()
+
+
 def authority(row):
     """The controlling citation for a requirement, federal first."""
     if int(row["id"]) in AUTHORITY_OVERRIDES:
@@ -338,8 +364,18 @@ def build(rows):
         key=lambda r: (STATUS_ORDER.index(r["status"]), r["id"]),
     )
 
+    # Orphans split two ways: rows with no departmental provision at all, and
+    # rows that turn on a document that exists but was not produced.
+    orphan_none = [r for r in orphans if r["county_document"].startswith("None")]
+    orphan_unproduced = [r for r in orphans if r not in orphan_none]
+
     return {
         "revision": REVISION,
+        "doc_count": len(DOCUMENTS),
+        "orphan_none": len(orphan_none),
+        "orphan_unproduced": len(orphan_unproduced),
+        "orphan_unproduced_ids": [r["id"] for r in orphan_unproduced],
+        "na_orphans": len([r for r in orphan_none if r["status"] == "Not Addressed"]),
         "total": len(rows),
         "by_status": {s: by_status.get(s, 0) for s in STATUS_ORDER},
         "by_priority": {p: by_priority.get(p, 0)
@@ -358,8 +394,8 @@ def md(data):
     w("# PREA versus Policy: a standard-by-standard crosswalk")
     w("")
     w("Sacramento County Probation Department, Youth Detention Facility.")
-    w("Gap register Revision %d. %d requirements assessed against 14 departmental "
-      "policies." % (data["revision"], data["total"]))
+    w("Gap register Revision %d. %d requirements assessed against %d departmental "
+      "policies." % (data["revision"], data["total"], data["doc_count"]))
     w("")
     w("**This is not legal advice.** It is a policy-to-standard comparison prepared "
       "for internal remediation planning. Statutory questions route to County "
@@ -370,22 +406,26 @@ def md(data):
     w("The gap register records, for each requirement, what the department has. This "
       "document sets the requirement and the departmental provision next to each "
       "other so the divergence is visible on its face, and then inverts the view so "
-      "each of the 14 reviewed policies can be worked one at a time.")
+      "each of the %d reviewed policies can be worked one at a time." % data["doc_count"])
     w("")
     w("Three divergence classes are used throughout.")
     w("")
     w("- **Conflict.** The policy states a rule, and the rule is wrong. This is the "
       "worst class, because staff following policy are out of compliance by doing "
-      "what they were told. Twelve requirements sit here.")
+      "what they were told. %s requirements sit here."
+      % word(data["by_status"]["Conflict"], cap=True))
     w("- **Not Addressed.** The documents reviewed contain no provision on the "
-      "point. Seventeen requirements sit here.")
-    w("- **Partial.** A provision exists and does part of the work. Thirty-nine "
-      "requirements sit here, and this is where most of the remediation labor is.")
+      "point. %s requirements sit here, %s of which cite no departmental document "
+      "at all." % (word(data["by_status"]["Not Addressed"], cap=True),
+                   word(data["na_orphans"])))
+    w("- **Partial.** A provision exists and does part of the work. %s "
+      "requirements sit here, and this is where most of the remediation labor is."
+      % word(data["by_status"]["Partial"], cap=True))
     w("")
     w("Findings state what the documents reviewed contain. Where a requirement is "
-      "recorded as not addressed, that means no provision appeared in the 14 "
+      "recorded as not addressed, that means no provision appeared in the %d "
       "documents, not that the practice does not occur. Several findings will close "
-      "on production of the documents listed as outstanding.")
+      "on production of the documents listed as outstanding." % data["doc_count"])
     w("")
     w("## 2. Where policy and standard diverge")
     w("")
@@ -410,7 +450,8 @@ def md(data):
     w("")
     w("## 3. Class A divergence: policy states the wrong rule")
     w("")
-    w("Twelve requirements where a departmental document affirmatively states a rule "
+    w("%s requirements where a departmental document affirmatively states a rule "
+      % word(data["by_status"]["Conflict"], cap=True) +
       "that contradicts federal or California law, or contradicts another "
       "departmental document. These are listed first because they are the only class "
       "where compliant staff behavior produces non-compliance.")
@@ -484,11 +525,16 @@ def md(data):
     if data["orphans"]:
         w("### No departmental document identified")
         w("")
-        w("%d requirements that cite none of the 14 documents reviewed. Eleven "
+        w("%d requirements that cite none of the %d documents reviewed. %s "
           "record no departmental provision at all and cannot be remediated by "
-          "amendment: they need drafting or an administrative decision. Two turn "
-          "on documents that exist but were not produced (rows 14 and 45), and "
-          "may close on production." % len(data["orphans"]))
+          "amendment: they need drafting or an administrative decision. %s turn "
+          "on documents that exist but were not produced (row%s %s), and "
+          "may close on production."
+          % (len(data["orphans"]), data["doc_count"],
+             word(data["orphan_none"], cap=True),
+             word(data["orphan_unproduced"], cap=True),
+             "" if data["orphan_unproduced"] == 1 else "s",
+             ", ".join(str(i) for i in data["orphan_unproduced_ids"])))
         w("")
         for r in data["orphans"]:
             w("- **Row %d, %s** (%s, %s). %s" %

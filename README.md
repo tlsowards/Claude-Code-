@@ -11,8 +11,8 @@ overwrite `CLAUDE.md` with a generated one.
 
 ```
 CLAUDE.md            project memory: working rules, findings, verified authorities
-prea-register.csv    the working record. 83 requirements, register Revision 3
-docs/                the 14 source policy PDFs (not in the repository)
+prea-register.csv    the working record. 83 requirements, register Revision 4
+docs/                the 17 source policy documents (not in the repository)
 deliverables/        finished work product
 drafts/              redlines and new policy drafts
 tools/               generators that build deliverables from the register
@@ -58,8 +58,10 @@ than that the requirement has no authority. A clean run prints no warning.
 
 ## Deliverables produced outside this repository
 
-These came from the prior conversation and belong in `deliverables/`. They are not
-generated from the register and are not checked in here.
+These came from the prior conversation and belong in `deliverables/`, but they are
+not committed: see the handling note below. They are not generated from the register,
+so they do not update when it does. The master report reflects Revision 3 and predates
+the three documents assessed in Revision 4, so it now understates what is known.
 
 - `YDF_PREA_Policy_Review_Report.docx`, the master document
 - `YDF_PREA_Applicability_Memo.docx`
@@ -70,9 +72,15 @@ generated from the register and are not checked in here.
 
 ## Handling
 
+**Do not commit source policy documents or the prior deliverables.** `.gitignore`
+enforces this. The register and the views generated from it are what this repository
+carries. Source county records stay on departmental systems.
+
 The liability exposure assessment is candid about departmental weaknesses and is
 very likely discoverable as currently prepared. Ask County Counsel to request it in
 writing, in anticipation of litigation, so privilege can be asserted, before it
-circulates further.
+circulates further. The same reasoning applies to where this repository lives: a
+gap register is an itemized account of known compliance failures, and its location
+and access controls are part of how it will be characterized later.
 
 Nothing in this project is legal advice. Statutory questions route to County Counsel.

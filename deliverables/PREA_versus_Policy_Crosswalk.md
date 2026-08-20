@@ -1,29 +1,29 @@
 # PREA versus Policy: a standard-by-standard crosswalk
 
 Sacramento County Probation Department, Youth Detention Facility.
-Gap register Revision 3. 83 requirements assessed against 14 departmental policies.
+Gap register Revision 4. 83 requirements assessed against 17 departmental policies.
 
 **This is not legal advice.** It is a policy-to-standard comparison prepared for internal remediation planning. Statutory questions route to County Counsel.
 
 ## 1. What this document does
 
-The gap register records, for each requirement, what the department has. This document sets the requirement and the departmental provision next to each other so the divergence is visible on its face, and then inverts the view so each of the 14 reviewed policies can be worked one at a time.
+The gap register records, for each requirement, what the department has. This document sets the requirement and the departmental provision next to each other so the divergence is visible on its face, and then inverts the view so each of the 17 reviewed policies can be worked one at a time.
 
 Three divergence classes are used throughout.
 
 - **Conflict.** The policy states a rule, and the rule is wrong. This is the worst class, because staff following policy are out of compliance by doing what they were told. Twelve requirements sit here.
-- **Not Addressed.** The documents reviewed contain no provision on the point. Seventeen requirements sit here.
-- **Partial.** A provision exists and does part of the work. Thirty-nine requirements sit here, and this is where most of the remediation labor is.
+- **Not Addressed.** The documents reviewed contain no provision on the point. Sixteen requirements sit here, ten of which cite no departmental document at all.
+- **Partial.** A provision exists and does part of the work. Forty requirements sit here, and this is where most of the remediation labor is.
 
-Findings state what the documents reviewed contain. Where a requirement is recorded as not addressed, that means no provision appeared in the 14 documents, not that the practice does not occur. Several findings will close on production of the documents listed as outstanding.
+Findings state what the documents reviewed contain. Where a requirement is recorded as not addressed, that means no provision appeared in the 17 documents, not that the practice does not occur. Several findings will close on production of the documents listed as outstanding.
 
 ## 2. Where policy and standard diverge
 
 | Status | Count |
 |---|---|
 | Conflict | 12 |
-| Not Addressed | 17 |
-| Partial | 39 |
+| Not Addressed | 16 |
+| Partial | 40 |
 | Not Evidenced | 1 |
 | Addressed | 14 |
 | **Total** | **83** |
@@ -43,7 +43,7 @@ Findings state what the documents reviewed contain. Where a requirement is recor
 | Responsive Planning | 4 | 0 | 0 | 4 | 0 | 0 |
 | Training and Education | 11 | 0 | 3 | 3 | 0 | 5 |
 | Screening | 8 | 3 | 1 | 2 | 0 | 2 |
-| Reporting | 10 | 0 | 3 | 5 | 1 | 1 |
+| Reporting | 10 | 0 | 2 | 6 | 1 | 1 |
 | Official Response | 11 | 2 | 1 | 7 | 0 | 1 |
 | Investigations | 5 | 1 | 0 | 3 | 0 | 1 |
 | Discipline | 3 | 1 | 0 | 2 | 0 | 0 |
@@ -680,13 +680,13 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 |---|---|
 | Status | Partial |
 | Priority | High |
-| Departmental provision | PREA Policy III.D; OO 1352 III.E.1.a (S-4 High single room), III.I (S-8 single room) |
+| Departmental provision | PREA Policy III.D; OO 1352 III.E.1.a (S-4 High single room), III.I (S-8 single room); OO 1354.5 (Room Confinement, eff. 04/05/2023) I.A-E, II.A-K, III.A |
 
 **The standard requires.** Isolate residents only as a last resort when less restrictive measures are inadequate and only until an alternative can be arranged; do not deny daily large-muscle exercise or legally required education; provide daily visits from a medical or mental health clinician; document the basis for the safety concern and why no alternative separation is available; review every 30 days.
 
-**Divergence.** Last resort standard, daily large-muscle exercise, legally required education, and the 30-day review are present in PREA Policy III.D. Defects: the policy says 'regular visits from medical or mental health staff' where the standard requires daily visits from a clinician, and it does not require documentation of the basis for the safety concern or of why no alternative separation could be arranged. OO 1352 adds a further problem by mandating single-room housing at all times for S-4 High and for S-8 by category, without the individualized documentation 115.342(h) requires. All protective separation must also be reconciled with WIC 208.3 and 15 CCR 1354.5, which impose a four-hour review cycle and documented supervisor authorization. The PREA policy predates 208.3 and does not address the interaction.
+**Divergence.** Materially improved by OO 1354.5, effective April 5, 2023, which was not available for revisions 1 through 3. What that order supplies: room confinement only on enumerated criteria, with less restrictive options attempted and exhausted (I.A), which is the last resort standard; an express prohibition on confinement for punishment, coercion, convenience, or retaliation by staff, and on confinement that compromises the youth's mental or physical health (I.C), tracking WIC 208.3; thorough documentation in an Institutional Incident Report including the time placed and the time removed, imposed only by a supervisor or Watch Commander (I.B); and for extended room confinement beyond four hours, documented justification (II.E), imposition only by a YDF manager (II.G), documented manager authorization for the initial extension and again every four hours thereafter carrying the justification, the basis for the extension, and the date and time the youth is authorized to return to full programming (II.K), an individualized reintegration plan with goals and objectives (II.H.4, II.K.3), and immediate discontinuance once the youth can safely return (II.H.5). III.A guarantees one hour of large muscle exercise, education including individual instruction in the unit day space or the youth's room where classroom attendance is unsafe, and access to medical services and mental health counseling. The four-hour review cycle and the documented supervisor authorization that revision 3 recorded as missing are therefore present, and the WIC 208.3 interaction that revision 3 said the PREA policy did not address is now addressed in a current order. Two defects persist and one is new. First, III.A guarantees access to medical services and mental health counseling, where the standard requires daily visits from a medical or mental health clinician. Access is a weaker duty than an affirmative daily visit, and on its face weaker than the regular visits language in PREA Policy III.D that revision 3 already scored as insufficient. Second, no provision expressly requires documentation of why no alternative separation could be arranged, which 115.342(h) requires, although I.A.4 makes exhaustion of less restrictive options a criterion and I.B requires thorough IIR documentation, so this is close. Third and most significant for PREA: OO 1354.5 defines Separation in its definitions section, expressly including protective custody, and then regulates only Room Confinement and Extended Room Confinement. None of the safeguards above attach to a protective separation, which is the placement this standard actually governs. OO 1352's categorical single-room rules for S-4 High and S-8 remain in place and remain the other half of this finding. OO 1354, still outstanding, is the document that would close the scope hole.
 
-*Change log: REVISED: OO 1352 categorical single-room rules added to the gap.*
+*Change log: REVISED: OO 1352 categorical single-room rules added to the gap. REVISED in 4: OO 1354.5 reviewed. Four-hour cycle, supervisor authorization, exercise, education, and the punitive-use prohibition are now documented. Daily clinician visits still missing, and OO 1354.5 excludes protective separation from its own scope.*
 
 #### 33. 28 CFR 115.341(c)-(e); 15 CCR 1350.5(a)-(k)
 
@@ -715,20 +715,6 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 *Change log: MATERIALLY REVISED: was Partial / High. OO 1352 states the standard nearly verbatim.*
 
 ### Reporting
-
-#### 41. 28 CFR 115.351(e)
-
-| | |
-|---|---|
-| Status | Not Addressed |
-| Priority | High |
-| Departmental provision | None |
-
-**The standard requires.** Provide a method for staff to privately report sexual abuse and sexual harassment of residents.
-
-**Divergence.** Reverts to Not Addressed. Revision 2.1 credited non-agency staff advocates as a possible private staff reporting route; the department confirms those advocates no longer exist. Staff therefore have no private channel for reporting sexual abuse or sexual harassment of a resident. The PREA policy and OO 1453 both route staff reports to the Duty Supervisor, which is not private where the suspected abuser is a supervisor or sits in the reporting staff member's chain of command. This is a discrete gap with a cheap fix: a confidential line, a named recipient outside the chain, or an express route to Internal Affairs stated in policy.
-
-*Change log: REVISED in 3: downgraded from Partial. The advocates credited in revision 2.1 no longer exist.*
 
 #### 44. 28 CFR 115.353(c)
 
@@ -764,13 +750,13 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 |---|---|
 | Status | Partial |
 | Priority | Medium |
-| Departmental provision | OO 1361 (Grievances) I.C, I.D, II.A, II.B; PREA Policy II.B.2 |
+| Departmental provision | OO 1361 (Grievances) I.C, I.D, II.A, II.B; PREA Policy II.B.2; Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), Resident Grievances or Complaints; Non-Discretionary Referral to Internal Affairs |
 
 **The standard requires.** Provide multiple internal ways for residents to privately report sexual abuse and sexual harassment, retaliation, and staff neglect or violation of responsibilities that may have contributed to an incident.
 
-**Divergence.** OO 1361 I.C is strong: a youth reporting sexual assault or sexual harassment may use the grievance process in addition to telephone and in-person reporting, and may report to probation, medical, or mental health staff. I.D requires grievance forms to be accessible in each living unit without asking staff. II.B allows the youth to place the grievance in the secured box personally. II.A requires staff assistance within two hours of request. That is multiple private internal routes. Remaining gap: the standard also requires internal routes for reporting retaliation and for reporting staff neglect or violation of responsibilities that may have contributed to an incident. Neither is named as separately reportable.
+**Divergence.** OO 1361 I.C is strong: a youth reporting sexual assault or sexual harassment may use the grievance process in addition to telephone and in-person reporting, and may report to probation, medical, or mental health staff. I.D requires grievance forms to be accessible in each living unit without asking staff. II.B allows the youth to place the grievance in the secured box personally. II.A requires staff assistance within two hours of request. That is multiple private internal routes. Remaining gap: the standard also requires internal routes for reporting retaliation and for reporting staff neglect or violation of responsibilities that may have contributed to an incident. Neither is named as separately reportable. Internal Complaints narrows the retaliation element. It makes retaliation for filing a grievance a non-discretionary referral to the Assistant Division Chief of Internal Affairs, which gives a resident complaint about retaliation a mandatory destination once it is made. It does not make retaliation a separately reportable category within the resident-facing reporting routes, which is what this standard requires, and it does not name staff neglect or violation of responsibilities as reportable. Its resident grievance section also inserts a review gate: a grievance alleging staff misconduct is forwarded to an institutional manager for review, and only if that manager determines misconduct is alleged or present does the matter become a personnel complaint. For a sexual abuse allegation that gate should not exist, and removing it belongs in the same amendment as the OO 1361 rebuild.
 
-*Change log: REVISED: was Partial / High. OO 1361 supplies multiple internal private routes; gap narrowed to retaliation and staff-neglect reporting.*
+*Change log: REVISED: was Partial / High. OO 1361 supplies multiple internal private routes; gap narrowed to retaliation and staff-neglect reporting. REVISED in 4: Internal Complaints reviewed. Retaliation now has a mandatory destination once reported. New observation: an institutional manager review gate sits ahead of the personnel complaint route.*
 
 #### 39. 28 CFR 115.351(b); 15 CCR 1361(h)
 
@@ -800,19 +786,33 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 
 *Change log: REVISED: was Partial / High. OO 1361 closes the tools-and-access half; gap narrowed to anonymous, third-party, and documentation of verbal reports.*
 
+#### 41. 28 CFR 115.351(e)
+
+| | |
+|---|---|
+| Status | Partial |
+| Priority | High |
+| Departmental provision | Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), Non-Discretionary Referral to Internal Affairs; Personnel Complaint Intake Form |
+
+**The standard requires.** Provide a method for staff to privately report sexual abuse and sexual harassment of residents.
+
+**Divergence.** Upgraded from Not Addressed. Revision 3 recorded that staff had no private channel and named the cheap fix as a confidential line, a named recipient outside the chain, or an express route to Internal Affairs stated in policy. The Internal Complaints policy supplies the third of those. Any internally generated complaint where staff misconduct is alleged or present shall be referred to the Assistant Division Chief of Internal Affairs where the matter involves unreasonable use of force, threats of violence toward a resident, retaliation for filing a grievance, or criminal conduct, documented on a Personnel Complaint Intake Form and forwarded to the Internal Affairs Manager. Staff sexual abuse of a resident is criminal conduct, so the route is mandatory and the recipient is named and sits outside the living unit chain. That is a method within the meaning of the standard. What is still missing is the privacy the standard exists to provide. The policy nowhere states that the route is confidential, does not say who makes the referral or that any employee may make it directly, and does not address the case the standard is written for, where the suspected abuser is the reporting employee's supervisor or the institutional manager to whom resident grievances are routed for review. The residual fix is narrow: state in policy that any employee may report directly and confidentially to Internal Affairs without going through the chain of command and that no supervisor may impede or inhibit the report, which also aligns the department with PC 11166(i)(1). Priority is held at High notwithstanding the narrowing, because the part that remains open is precisely the scenario the standard protects.
+
+*Change log: REVISED in 3: downgraded from Partial. The advocates credited in revision 2.1 no longer exist. REVISED in 4: upgraded from Not Addressed to Partial. Internal Complaints supplies the express, mandatory route to Internal Affairs that revision 3 identified as a sufficient fix. Privacy is still not stated. Priority held at High.*
+
 #### 42. 28 CFR 115.352(a)-(g); 15 CCR 1361
 
 | | |
 |---|---|
 | Status | Partial |
 | Priority | High |
-| Departmental provision | OO 1361 (Grievances), I.A, II.B, II.D, II.F, IV |
+| Departmental provision | OO 1361 (Grievances), I.A, II.B, II.D, II.F, IV; Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), Resident Grievances or Complaints |
 
 **The standard requires.** No time limit on filing a sexual abuse grievance; no requirement to use an informal process or resolve with staff; the grievance may not be submitted to or referred to the staff member who is its subject; final agency decision within 90 days with a permitted 70-day extension on written notice; third parties, including parents and legal guardians, may file; emergency grievances alleging substantial risk of imminent sexual abuse get an initial response within 48 hours and a final decision within 5 calendar days; discipline for filing only on a demonstrated bad-faith showing.
 
-**Divergence.** Now assessable. Met: no time limit on filing (I.A); confidential submission that does not pass through the subject staff member (II.B) and assignment only to staff not directly involved in the circumstances (II.F.2.a), which satisfies 115.352(c); appeal heard by a person not directly involved, escalating to the Assistant Division Chief with a five-day decision (IV). The three-business-day initial response and ten-business-day resolution sit comfortably inside the 90-day federal cap. Remaining gaps: (1) no emergency grievance track for an allegation of substantial risk of imminent sexual abuse, which requires immediate forwarding to a level where corrective action can be taken, an initial response within 48 hours, and a final decision within five calendar days, with both documenting the risk determination and the action taken; I.C's 'health and safety issues must be addressed immediately' is close but is not the standard; (2) the extension in II.D, 'unless circumstances dictate a longer time frame,' has no outer bound, whereas PREA caps extensions at 70 days with written notice and a stated decision date; (3) no statement that a youth alleging sexual abuse is not required to use the informal process first, which matters because the order's Purpose and the 'Your Voice' track both push toward informal resolution; (4) no third-party filing right and, in particular, no right for a parent or legal guardian to file a sexual abuse grievance and appeal on the youth's behalf without the youth's agreement, which 115.352(e)(4) requires; (5) no bad-faith-only rule for disciplining a grievant, which interacts with the PREA Policy XIV.A conflict below.
+**Divergence.** Now assessable. Met: no time limit on filing (I.A); confidential submission that does not pass through the subject staff member (II.B) and assignment only to staff not directly involved in the circumstances (II.F.2.a), which satisfies 115.352(c); appeal heard by a person not directly involved, escalating to the Assistant Division Chief with a five-day decision (IV). The three-business-day initial response and ten-business-day resolution sit comfortably inside the 90-day federal cap. Remaining gaps: (1) no emergency grievance track for an allegation of substantial risk of imminent sexual abuse, which requires immediate forwarding to a level where corrective action can be taken, an initial response within 48 hours, and a final decision within five calendar days, with both documenting the risk determination and the action taken; I.C's 'health and safety issues must be addressed immediately' is close but is not the standard; (2) the extension in II.D, 'unless circumstances dictate a longer time frame,' has no outer bound, whereas PREA caps extensions at 70 days with written notice and a stated decision date; (3) no statement that a youth alleging sexual abuse is not required to use the informal process first, which matters because the order's Purpose and the 'Your Voice' track both push toward informal resolution; (4) no third-party filing right and, in particular, no right for a parent or legal guardian to file a sexual abuse grievance and appeal on the youth's behalf without the youth's agreement, which 115.352(e)(4) requires; (5) no bad-faith-only rule for disciplining a grievant, which interacts with the PREA Policy XIV.A conflict below. Internal Complaints, now reviewed, closes none of the five gaps above. It directs that resident grievances be handled first under the Juvenile Institutions Grievance Policy, and adds one provision worth keeping in the rebuild: every attempt shall be made to interview the grievant and identified resident witnesses regardless of whether they have been released. It also inserts the institutional manager review gate described at row 38, which sits awkwardly against the duty to accept and process a sexual abuse grievance and should be expressly excepted for those allegations.
 
-*Change log: MATERIALLY REVISED: was Not Evidenced / Critical. OO 1361 reviewed; four of the standard's elements are met and five discrete gaps remain.*
+*Change log: MATERIALLY REVISED: was Not Evidenced / Critical. OO 1361 reviewed; four of the standard's elements are met and five discrete gaps remain. REVISED in 4: Internal Complaints reviewed. None of the five gaps close.*
 
 #### 82. 28 CFR 115.351(b), 115.353(a); WIC 224.71, 224.72, 2200
 
@@ -900,11 +900,13 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 |---|---|
 | Status | Partial |
 | Priority | High |
-| Departmental provision | PREA Policy IV.A; V.A.7 |
+| Departmental provision | PREA Policy IV.A; V.A.7; Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), Non-Discretionary Referral to Internal Affairs |
 
 **The standard requires.** Require all staff to report immediately any knowledge, suspicion, or information regarding an incident of sexual abuse or sexual harassment that occurred in a facility, whether or not part of the agency; retaliation against residents or staff who reported; and any staff neglect or violation of responsibilities that may have contributed to an incident or to retaliation.
 
-**Divergence.** Immediate confidential reporting to the Duty Supervisor of information or suspicion of sexual assault within a county institution is required. Three elements are missing: sexual harassment as a separately reportable category, reports of retaliation, and reports of staff neglect or violation of responsibilities contributing to an incident. Abuse at another facility is addressed only in V.A.7 and only as a chief-level notification duty.
+**Divergence.** Immediate confidential reporting to the Duty Supervisor of information or suspicion of sexual assault within a county institution is required. Three elements are missing: sexual harassment as a separately reportable category, reports of retaliation, and reports of staff neglect or violation of responsibilities contributing to an incident. Abuse at another facility is addressed only in V.A.7 and only as a chief-level notification duty. Internal Complaints partially reaches the retaliation element, but at the routing level rather than the duty level: retaliation for filing a grievance is a mandatory Internal Affairs referral once a complaint exists. It imposes no duty on staff to report retaliation they observe, and it does not touch sexual harassment as a separately reportable category or staff neglect or violation of responsibilities contributing to an incident. The reporting duty and the routing rule need to be stated together, in the same amendment.
+
+*Change log: REVISED in 4: Internal Complaints reviewed. Retaliation routing exists; the staff reporting duty still does not reach it.*
 
 #### 49. 28 CFR 115.361(c)-(d)
 
@@ -964,11 +966,13 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 |---|---|
 | Status | Partial |
 | Priority | Critical |
-| Departmental provision | PREA Policy, Guidelines (retaliation paragraph) |
+| Departmental provision | PREA Policy, Guidelines (retaliation paragraph); Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), Non-Discretionary Referral to Internal Affairs; Notification and Tracking |
 
 **The standard requires.** Establish a policy protecting residents and staff who report or cooperate from retaliation; designate which staff members or departments monitor retaliation; employ multiple protection measures; monitor for at least 90 days the conduct and treatment of reporting residents and staff, including disciplinary reports, housing and program changes, and negative performance reviews or reassignments, with periodic status checks of residents; extend monitoring if indicated; act promptly to remedy retaliation.
 
-**Divergence.** Retaliation is prohibited and defined, and discipline or prosecution is threatened. Everything operational is missing: no designated retaliation monitor, no 90-day monitoring period, no enumerated indicators to watch, no periodic status checks with the youth, and no protection measures list. Retaliation monitoring is a standalone standard and a standalone audit failure.
+**Divergence.** Retaliation is prohibited and defined, and discipline or prosecution is threatened. Everything operational is missing: no designated retaliation monitor, no 90-day monitoring period, no enumerated indicators to watch, no periodic status checks with the youth, and no protection measures list. Retaliation monitoring is a standalone standard and a standalone audit failure. Internal Complaints supplies the first operational retaliation element the department has on paper. Retaliation for filing a grievance is a non-discretionary referral to the Assistant Division Chief of Internal Affairs, all such matters are tracked and their documentation retained by Internal Affairs, and a Case Dispositional Notice goes to the complainant. That is a named recipient and a tracking mechanism, and it partially answers the designation element. It does not reach retaliation for reporting sexual abuse by any route other than a grievance, and it does not reach retaliation against staff who report or cooperate. Everything on the monitoring side remains absent: no 90-day monitoring period, no enumerated indicators, no periodic status checks with the youth, and no protection measures list. Priority stays Critical.
+
+*Change log: REVISED in 4: Internal Complaints reviewed. A designated recipient and tracking now exist for grievance retaliation; all monitoring elements still missing.*
 
 #### 57. 28 CFR 115.368; 15 CCR 1354, 1354.5
 
@@ -976,11 +980,13 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 |---|---|
 | Status | Partial |
 | Priority | High |
-| Departmental provision | PREA Policy III.D |
+| Departmental provision | PREA Policy III.D; OO 1354.5 (Room Confinement, eff. 04/05/2023) Definitions, I.A-E, II.A-K, III.A |
 
 **The standard requires.** Any use of segregated housing to protect a resident alleged to have suffered sexual abuse is subject to the isolation requirements of 115.342.
 
-**Divergence.** Follows the 115.342(b) gaps above: daily clinician visits and documentation of the basis for isolation and the unavailability of alternatives. Must also be reconciled with WIC 208.3 room confinement limits.
+**Divergence.** Sharpened by OO 1354.5. That order builds a detailed safeguard structure for room confinement: enumerated criteria, imposition only by a supervisor or Watch Commander, YDF manager authorization for any extension and again every four hours, documented justification and reintegration planning, and an enumerated list of provisions that may not be withdrawn. It then places protective separation outside its own scope. The Definitions section defines Separation as limiting a youth's participation in regular programming for a specific purpose including protective custody, and the operative sections govern only Room Confinement and Extended Room Confinement. The practical result is that the placement 115.368 governs, segregated housing used to protect a resident alleged to have suffered sexual abuse, carries fewer written safeguards than a placement used for a youth who is a behavior problem. That is the wrong way round and it is the kind of asymmetry an auditor and a plaintiff both notice. The remedy is less new drafting than extension: apply the OO 1354.5 authorization, documentation, review, and non-deprivable provisions to protective separation, and produce OO 1354 so the two can be reconciled. The daily clinician visit defect recorded at row 35 carries over here, since 115.368 incorporates the 115.342 isolation requirements by reference.
+
+*Change log: REVISED in 4: OO 1354.5 reviewed. It defines Separation to include protective custody and then regulates only room confinement, leaving the placement this standard governs with fewer safeguards than a behavioral placement.*
 
 #### 55. 28 CFR 115.366
 
@@ -1002,13 +1008,13 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 |---|---|
 | Status | Conflict |
 | Priority | Critical |
-| Departmental provision | PREA Policy XVIII.B (10 years); Internal Affairs XI.C.1 (5 years); 115.371(j) (tenure plus 5 years) |
+| Departmental provision | PREA Policy XVIII.B (10 years); Internal Affairs XI.C.1 (5 years); 115.371(j) (tenure plus 5 years); Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), Notification and Tracking; Resident Grievances or Complaints |
 
 **The standard requires.** Administrative investigations must include an effort to determine whether staff actions or failures to act contributed to the abuse and must be documented in written reports describing physical and testimonial evidence, credibility reasoning, and findings; criminal investigations documented with attached documentary evidence; reports retained as long as the alleged abuser is incarcerated or employed plus five years; departure of the alleged abuser or victim does not terminate an investigation.
 
-**Divergence.** Three different retention rules now govern the same records. Internal Affairs XI.C.1 retains records of citizen complaints, formal investigations, and dispositions for at least five years. PREA Policy XVIII.B retains all case records associated with claims of sexual abuse for at least ten years. 115.371(j) requires investigation reports to be retained for as long as the alleged abuser is incarcerated or employed by the agency, plus five years, which for a long-tenured employee is far longer than either. A department that destroys a sexual abuse investigation file at five years under the IA schedule violates its own PREA policy and the federal standard. Layer on CCP 352, which tolls a minor's limitations period, and the practical exposure is a file destroyed years before suit is filed. Reconcile the three into a single retention schedule reviewed with County Counsel. Also still missing: the duty to determine whether staff actions or failures to act contributed to the abuse; the required content of administrative and criminal investigative reports; and the rule that departure of the alleged abuser or victim does not terminate an investigation.
+**Divergence.** Three different retention rules now govern the same records. Internal Affairs XI.C.1 retains records of citizen complaints, formal investigations, and dispositions for at least five years. PREA Policy XVIII.B retains all case records associated with claims of sexual abuse for at least ten years. 115.371(j) requires investigation reports to be retained for as long as the alleged abuser is incarcerated or employed by the agency, plus five years, which for a long-tenured employee is far longer than either. A department that destroys a sexual abuse investigation file at five years under the IA schedule violates its own PREA policy and the federal standard. Layer on CCP 352, which tolls a minor's limitations period, and the practical exposure is a file destroyed years before suit is filed. Reconcile the three into a single retention schedule reviewed with County Counsel. Also still missing: the duty to determine whether staff actions or failures to act contributed to the abuse; the required content of administrative and criminal investigative reports; and the rule that departure of the alleged abuser or victim does not terminate an investigation. Internal Complaints adds a fourth departmental document pointing at Internal Affairs retention, stating that all discretionary and non-discretionary investigative documentation and evidence shall be retained by Internal Affairs. It states no period, so it neither resolves nor worsens the three-way conflict, but it does mean the reconciled schedule has to be reflected in four documents rather than three. It supplies part of the rule that a departure does not terminate an investigation: every attempt shall be made to interview the grievant and identified resident witnesses regardless of whether they have been released, which is the resident half. The staff half, that an alleged abuser's resignation or separation does not terminate the investigation, still does not appear in the documents reviewed, and it interacts directly with the unmet reporting duty at row 62.
 
-*Change log: MATERIALLY REVISED: was Partial / High. IA five-year retention conflicts with the PREA policy's ten years and with the federal formula.*
+*Change log: MATERIALLY REVISED: was Partial / High. IA five-year retention conflicts with the PREA policy's ten years and with the federal formula. REVISED in 4: Internal Complaints reviewed. A fourth document now bears on retention. The resident half of the no-termination-on-departure rule is supplied; the staff half is not.*
 
 #### 58. 28 CFR 115.371(a)-(f); PC 832.5
 
@@ -1016,13 +1022,13 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 |---|---|
 | Status | Partial |
 | Priority | Critical |
-| Departmental provision | PREA Policy XII.A-C; Internal Affairs Administrative Investigations, General D-F, VII, VIII, X |
+| Departmental provision | PREA Policy XII.A-C; Internal Affairs Administrative Investigations, General D-F, VII, VIII, X; Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), Non-Discretionary Referral to Internal Affairs; Discretionary Referral to Internal Affairs; Personnel Complaint Intake Form |
 
 **The standard requires.** Investigate promptly, thoroughly, and objectively all allegations including third-party and anonymous reports; use investigators trained under 115.334; gather and preserve direct and circumstantial evidence including DNA and electronic monitoring data; interview victims, suspects, and witnesses; review prior complaints involving the suspected perpetrator; do not terminate an investigation solely because the source recants; consult prosecutors before compelled interviews; assess credibility individually and never require a victim to submit to a polygraph.
 
-**Divergence.** The Internal Affairs policy adds real substance: General D requires that all allegations of misconduct from citizen complaints or internal sources be promptly and thoroughly investigated; General E requires fair, impartial, and timely investigation; section VII requires an Administrative Admonishment or Lybarger warning before any interview or interrogation; section X sets a one-year completion timeline consistent with Government Code 3304. Still missing: express acceptance and investigation of third-party and anonymous reports; use of investigators trained under 115.334; the evidence-gathering standard, including physical and DNA evidence and available electronic monitoring data, which matters given the facility's fixed camera and audio recording systems referenced in OO 1362; review of prior complaints and reports of sexual abuse involving the suspected perpetrator; the rule that an investigation is not terminated solely because the source recants; consultation with prosecutors before compelled interviews, which is a live risk given the Lybarger compulsion in section VIII.B; individualized credibility assessment not determined by status as youth or staff; and the prohibition on requiring a youth who alleges abuse to submit to a polygraph.
+**Divergence.** The Internal Affairs policy adds real substance: General D requires that all allegations of misconduct from citizen complaints or internal sources be promptly and thoroughly investigated; General E requires fair, impartial, and timely investigation; section VII requires an Administrative Admonishment or Lybarger warning before any interview or interrogation; section X sets a one-year completion timeline consistent with Government Code 3304. Still missing: express acceptance and investigation of third-party and anonymous reports; use of investigators trained under 115.334; the evidence-gathering standard, including physical and DNA evidence and available electronic monitoring data, which matters given the facility's fixed camera and audio recording systems referenced in OO 1362; review of prior complaints and reports of sexual abuse involving the suspected perpetrator; the rule that an investigation is not terminated solely because the source recants; consultation with prosecutors before compelled interviews, which is a live risk given the Lybarger compulsion in section VIII.B; individualized credibility assessment not determined by status as youth or staff; and the prohibition on requiring a youth who alleges abuse to submit to a polygraph. Internal Complaints, now reviewed, cuts both ways. It adds intake quality that the earlier documents did not supply: the Personnel Complaint Intake Form must carry the complainant's name and contact information, identifying information for the employee suspected of misconduct, the specific date, time, and nature of each allegation, witness information, and any investigative leads and items of evidentiary value. It also requires that every attempt be made to interview the grievant and identified resident witnesses regardless of whether they have been released. Against that, it states that the Internal Affairs Manager will determine whether or not a formal investigation is necessary, with no exception for allegations of sexual abuse or sexual harassment, where 115.371(a) requires that an administrative or criminal investigation be completed for all such allegations. The policy nowhere says that a sexual abuse allegation may go uninvestigated, so this is recorded as a defect rather than scored as a thirteenth conflict, but it is the closest thing in the documents reviewed to one. Correct it with an express carve-out: allegations of sexual abuse or sexual harassment are referred and investigated, and the discretion not to investigate does not reach them.
 
-*Change log: REVISED: IA policy elements credited; remaining gaps itemized against it.*
+*Change log: REVISED: IA policy elements credited; remaining gaps itemized against it. REVISED in 4: Internal Complaints reviewed. Intake and evidence-preservation elements credited. New defect: unqualified Internal Affairs Manager discretion over whether to investigate, with no sexual abuse carve-out. Recorded as a defect, not scored as a conflict.*
 
 #### 61. 28 CFR 115.373(a)-(f)
 
@@ -1030,13 +1036,13 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 |---|---|
 | Status | Partial |
 | Priority | Critical |
-| Departmental provision | Internal Affairs XI.B.1-2 |
+| Departmental provision | Internal Affairs XI.B.1-2; Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), Notification and Tracking |
 
 **The standard requires.** Inform the resident whether the allegation was substantiated, unsubstantiated, or unfounded; request that information from an outside investigating agency where the agency did not investigate; and, following a staff-abuse allegation, notify the resident when the staff member is no longer posted in the unit, is no longer employed, is indicted, or is convicted; and following a resident-abuse allegation, when the abuser is indicted or convicted; document all notifications and attempted notifications.
 
-**Divergence.** Internal Affairs XI.B.1 requires that where a formal investigation resulted from a citizen or internal complaint, the complainant be notified in writing of the disposition. Where the youth is the complainant that is a partial answer to 115.373(a), but it is contingent on the youth being treated as the complainant, it uses IA disposition language rather than substantiated, unsubstantiated, or unfounded, and it does not reach the rest of the standard. Still absent: notification where the agency did not conduct the investigation, including the duty to request the outcome from the investigating agency; and the four ongoing notifications following a staff-abuse allegation, when the staff member is no longer posted in the youth's unit, is no longer employed at the facility, is indicted, or is convicted, plus the two parallel notifications following a youth-on-youth allegation. No documentation of notifications or attempted notifications is required.
+**Divergence.** Internal Affairs XI.B.1 requires that where a formal investigation resulted from a citizen or internal complaint, the complainant be notified in writing of the disposition. Where the youth is the complainant that is a partial answer to 115.373(a), but it is contingent on the youth being treated as the complainant, it uses IA disposition language rather than substantiated, unsubstantiated, or unfounded, and it does not reach the rest of the standard. Still absent: notification where the agency did not conduct the investigation, including the duty to request the outcome from the investigating agency; and the four ongoing notifications following a staff-abuse allegation, when the staff member is no longer posted in the youth's unit, is no longer employed at the facility, is indicted, or is convicted, plus the two parallel notifications following a youth-on-youth allegation. No documentation of notifications or attempted notifications is required. Internal Complaints extends the notification duty beyond Internal Affairs XI.B.1. Internal Affairs sends Case Dispositional Notices to complainants in all cases resulting in a formal investigation completed by either Internal Affairs or the Division, and the affected Division provides notice of the outcome to the complaining party for matters resolved without a formal investigation. That widens coverage without changing the character of the gap: notification remains contingent on the youth being treated as the complainant, it uses Internal Affairs disposition language rather than substantiated, unsubstantiated, or unfounded, and none of the four ongoing notifications following a staff abuse allegation or the two following a youth-on-youth allegation appear. The duty is also qualified as owed to the extent it can be given by law and policy, which needs to be reconciled with 115.373 rather than left standing as a general reservation.
 
-*Change log: REVISED: was Not Addressed. IA complainant notification credited as a partial answer.*
+*Change log: REVISED: was Not Addressed. IA complainant notification credited as a partial answer. REVISED in 4: Internal Complaints reviewed. Notification now reaches Division-resolved matters as well as Internal Affairs investigations; the character of the gap is unchanged.*
 
 #### 81. 28 CFR 115.371(g), 115.373(a), 115.387(a)
 
@@ -1074,11 +1080,13 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 |---|---|
 | Status | Conflict |
 | Priority | Critical |
-| Departmental provision | PREA Policy XIV.A; XIII.B; OO 1362 III.G |
+| Departmental provision | PREA Policy XIV.A; XIII.B; OO 1362 III.G; OO 1390/1391 (Discipline and Discipline Process, eff. 10/01/2013, rev. 05/01/2020) Purpose, I.A, II.B.4, III, IV, V |
 
 **The standard requires.** Discipline a resident for resident-on-resident sexual abuse only through a formal disciplinary process following an administrative or criminal finding; sanctions commensurate and consistent; isolation sanctions preserve daily large-muscle exercise, legally required education, and daily clinician visits; consider whether mental disability or illness contributed; discipline a resident for sexual contact with staff only on a finding the staff member did not consent; and a good-faith report based on a reasonable belief is not false reporting or lying even if unsubstantiated.
 
-**Divergence.** The False Allegations section states that if an investigation determines the allegations 'were false,' the resident making them may be disciplined. That is broader than PREA permits. Under 115.378(f) a good-faith report based on a reasonable belief cannot be treated as false reporting even where the investigation does not substantiate it, and 115.352(g) permits discipline only where the agency demonstrates bad faith. As written, the policy chills reporting, and it will be read to a jury that way. Rewrite to a bad-faith standard with the burden on the department. Also missing: the requirement that discipline for sexual contact with staff issue only on a finding the staff member did not consent, and the mental-disability consideration.
+**Divergence.** The conflict is unchanged. PREA Policy XIV.A still permits discipline where an investigation determines allegations were false. 115.378(f) protects a good-faith report based on a reasonable belief even where the investigation does not substantiate it, and 115.352(g) permits discipline only where the agency demonstrates bad faith. As written the policy chills reporting and it will be read to a jury that way. Rewrite to a bad-faith standard with the burden on the department. OO 1390/1391 contains no false reporting provision, so it neither cures nor compounds that defect; worth preserving in the rewrite is that neither its minor nor its major rule violation list includes false reporting or lying. What OO 1390/1391 does supply, and what revisions 1 through 3 could not credit, is the formal disciplinary process the standard requires. Section IV builds a due process hearing with written notice of the violation before the hearing, a hearing officer who is not a party to the incident, an opportunity to be heard and to present evidence and testimony, staff assistance on request, an interpreter where needed, accommodations for youth with disabilities, limited literacy, and English language learners, a documented finding, administrative review by the Assistant Division Chief, and an appeal under section V that may not increase the sanction. Two strengths beyond the standard should be recorded: section III lists the available consequences and isolation is not among them, and OO 1354.5 I.C.1 independently prohibits room confinement for punishment, so the department has effectively excluded the isolation sanction whose conditions this standard otherwise regulates. That element of the requirement is satisfied by exclusion rather than by compliance, which is a stronger position, and it should be stated that way rather than left to inference. Four defects remain. First, the due process hearing attaches only where the recommended discipline is Program Separation (IV.A, IV.D.2). Sexual misconduct is a major rule violation at II.B.4, but where the recommended consequence is point loss, loss of commissary privilege, early bed, loss of bank points, or demotion to a lower level, no hearing is required by the order's own terms, whereas the standard requires the formal process for any discipline imposed for resident-on-resident sexual abuse. Second, sexual misconduct is listed as a major rule violation and is nowhere defined, so nothing distinguishes coerced from non-coerced sexual activity between residents, and nothing carves out sexual contact with a staff member, which the standard permits to be disciplined only on a finding that the staff member did not consent. That omission is serious in California, where PC 289.6 makes sexual activity between staff and a confined person criminal irrespective of purported consent, so a youth disciplined for sexual misconduct arising from staff contact would be punished for being the victim of a crime. Third, no provision requires consideration of whether a mental disability or mental illness contributed to the behavior when determining sanctions. IV.B.2 provides procedural accommodations at the hearing, which is a different thing, and the Purpose paragraph's trauma-informed language is permissive, using should rather than shall. Fourth, the standard requires sanctions commensurate with the resident's disciplinary history and consistent with those imposed for comparable offenses by residents with similar histories. The Purpose paragraph's least restrictive level language and the appeal ground at V.A.3 for discipline different from that received by others for the same offense reach part of this, but neither states the history-informed comparison. Confirm subsection lettering within 115.378 against the CFR before any of this is quoted in a deliverable; only (f) is verified here.
+
+*Change log: MATERIALLY REVISED in 4: OO 1390/1391 reviewed. The formal disciplinary process the standard requires now largely exists, so remediation shifts from drafting a process to extending one. The XIV.A conflict is unchanged. Two new defects: the due process trigger is limited to Program Separation, and sexual misconduct is undefined with no staff-consent carve-out.*
 
 #### 62. 28 CFR 115.376(a)-(d); PC 832.5
 
@@ -1086,13 +1094,13 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 |---|---|
 | Status | Partial |
 | Priority | High |
-| Departmental provision | PREA Policy XIII.A, VII.A.1-2; Internal Affairs XIII (Disciplinary Process), X (Timelines) |
+| Departmental provision | PREA Policy XIII.A, VII.A.1-2; Internal Affairs XIII (Disciplinary Process), X (Timelines); Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), full document |
 
 **The standard requires.** Staff subject to discipline up to termination; termination is the presumptive sanction for staff who engaged in sexual abuse; sanctions for other policy violations commensurate with the conduct and consistent across comparable cases; all terminations, and resignations by staff who would have been terminated, reported to law enforcement unless clearly non-criminal, and to any relevant licensing bodies.
 
-**Divergence.** The Internal Affairs policy supplies a complete and well-built disciplinary machinery: Notice of Proposed Discipline, Skelly hearing before an Assistant Chief Deputy or higher not involved in the investigation or adjudication, Order of Disciplinary Action, and affidavits of service. What PREA adds and the department does not have: the presumptive-termination rule for staff who engaged in sexual abuse (115.376(b)), and the duty to report all terminations, and resignations by staff who would have been terminated, to law enforcement unless the conduct was clearly non-criminal and to any relevant licensing or certification bodies (115.376(d)). Coordinate the licensing element with County Counsel and Labor Relations; note that probation officers are peace officers under PC 830.5, which the IA policy itself recognizes at VIII.L.
+**Divergence.** The Internal Affairs policy supplies a complete and well-built disciplinary machinery: Notice of Proposed Discipline, Skelly hearing before an Assistant Chief Deputy or higher not involved in the investigation or adjudication, Order of Disciplinary Action, and affidavits of service. What PREA adds and the department does not have: the presumptive-termination rule for staff who engaged in sexual abuse (115.376(b)), and the duty to report all terminations, and resignations by staff who would have been terminated, to law enforcement unless the conduct was clearly non-criminal and to any relevant licensing or certification bodies (115.376(d)). Coordinate the licensing element with County Counsel and Labor Relations; note that probation officers are peace officers under PC 830.5, which the IA policy itself recognizes at VIII.L. Internal Complaints adds the intake and tracking layer around the Internal Affairs disciplinary machinery: a Personnel Complaint Intake Form, a Complaint Action Report returned to the referring division, tracking and retention of all discretionary and non-discretionary matters by Internal Affairs, and dispositional notices to both the complainant and the subject staff member. Neither of the two PREA-specific additions is supplied: the presumptive termination rule and the duty to report terminations, and resignations by staff who would have been terminated, to law enforcement and to relevant licensing bodies. One further observation for the rewrite: the non-discretionary referral list names unreasonable use of force, discrimination, sexual harassment or workplace violence, threats of violence toward a resident, and criminal conduct, but does not name staff sexual abuse or sexual harassment of a resident as a category of its own. It is caught as criminal conduct, but an auditor scores the named category, and the employment-context reading of the sexual harassment entry makes the omission worth curing.
 
-*Change log: REVISED: IA disciplinary process credited; the two PREA-specific additions isolated.*
+*Change log: REVISED: IA disciplinary process credited; the two PREA-specific additions isolated. REVISED in 4: Internal Complaints reviewed. Intake and tracking credited; neither PREA-specific element closes. Staff sexual abuse of a resident is not a named mandatory-referral category.*
 
 #### 63. 28 CFR 115.377(a)-(b)
 
@@ -1480,9 +1488,43 @@ All rows: 79
 
 All rows: 77
 
+### OO 1354.5 Room Confinement
+
+*eff 04/05/2023. Cited by 2 requirements.*
+
+| Conflict | Not Addressed | Partial | Not Evidenced | Addressed |
+|---|---|---|---|---|
+| 0 | 0 | 2 | 0 | 0 |
+
+All rows: 35, 57
+
+### OO 1390/1391 Discipline and Discipline Process
+
+*eff 10/01/2013, rev 05/01/2020. Cited by 1 requirements.*
+
+| Conflict | Not Addressed | Partial | Not Evidenced | Addressed |
+|---|---|---|---|---|
+| 1 | 0 | 0 | 0 | 0 |
+
+**Conflicts to correct:** row 64 (28 CFR 115.378(a)-(g); 15 CCR 1390, 1391)
+
+All rows: 64
+
+### Internal Complaints (Administrative P&P Manual)
+
+*rev 10/30/2013. Cited by 9 requirements.*
+
+| Conflict | Not Addressed | Partial | Not Evidenced | Addressed |
+|---|---|---|---|---|
+| 1 | 0 | 8 | 0 | 0 |
+
+**Conflicts to correct:** row 59 (28 CFR 115.371(g)-(h), (j)-(k))
+
+All rows: 38, 41, 42, 47, 56, 58, 59, 61, 62
+
 ### No departmental document identified
 
-13 requirements that cite none of the 14 documents reviewed. Eleven record no departmental provision at all and cannot be remediated by amendment: they need drafting or an administrative decision. Two turn on documents that exist but were not produced (rows 14 and 45), and may close on production.
+12 requirements that cite none of the 17 documents reviewed. Ten record no departmental provision at all and cannot be remediated by amendment: they need drafting or an administrative decision. Two turn on documents that exist but were not produced (rows 14, 45), and may close on production.
 
 - **Row 3, 28 CFR 115.311(c)** (Not Addressed, Critical). Where an agency operates more than one facility, each facility shall designate a PREA Compliance Manager with sufficient time and authority to coordinate that facility's compliance.
 - **Row 7, 28 CFR 115.313(d)** (Not Addressed, High). At least annually, in consultation with the PREA Coordinator, assess, determine, and document whether adjustments are needed to the staffing plan, prevailing staffing patterns, video monitoring deployment, and resources available to adhere to the plan.
@@ -1490,7 +1532,6 @@ All rows: 77
 - **Row 15, 28 CFR 115.318(a)-(b)** (Not Addressed, Low). When designing, acquiring, expanding, or modifying facilities, and when installing or updating video or other monitoring technology, consider the effect on the ability to protect residents from sexual abuse.
 - **Row 21, 28 CFR 115.331(b)** (Not Addressed, Medium). Training tailored to the unique needs and attributes of juvenile residents and to the gender of residents at the employee's facility, with additional training when an employee transfers between a male-only and a female-only facility.
 - **Row 27, 28 CFR 115.333(c)** (Not Addressed, Medium). Residents receive education upon transfer to a different facility to the extent the new facility's policies and procedures differ.
-- **Row 41, 28 CFR 115.351(e)** (Not Addressed, High). Provide a method for staff to privately report sexual abuse and sexual harassment of residents.
 - **Row 46, 28 CFR 115.354; 15 CCR 1324(n)** (Not Addressed, High). Establish a method to receive third-party reports of sexual abuse and sexual harassment and distribute publicly information on how to report on behalf of a resident.
 - **Row 50, 28 CFR 115.361(e)** (Not Addressed, Critical). On receiving any allegation of sexual abuse, the facility head or designee shall promptly report it to the appropriate agency office and to the alleged victim's parents or legal guardians unless official documentation shows they should not be notified; to the caseworker instead if the youth is under child welfare guardianship; and, where a juvenile court retains jurisdiction, to the youth's attorney or legal representative of record within 14 days.
 - **Row 71, 28 CFR 115.388(a)-(d)** (Not Addressed, Critical). Review the aggregated data to assess and improve the effectiveness of prevention, detection, and response policies, practices, and training by identifying problem areas, taking ongoing corrective action, and preparing an annual report of findings and corrective actions for each facility and for the agency as a whole; compare the current year with prior years and assess progress; the report must be approved by the agency head and made readily available to the public, with any redactions identified.

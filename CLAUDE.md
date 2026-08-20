@@ -36,13 +36,13 @@ hedging, and he will catch a wrong citation.
 
 ## 3. Project state
 
-Register is at **Revision 3**. 83 requirements assessed against 14 departmental policies.
+Register is at **Revision 4**. 83 requirements assessed against 17 departmental policies.
 
 | Status | Count |
 |---|---|
 | Addressed | 14 |
-| Partial | 39 |
-| Not Addressed | 17 |
+| Partial | 40 |
+| Not Addressed | 16 |
 | Conflict (policy states the wrong rule) | 12 |
 | Not Evidenced (document exists, not produced) | 1 |
 
@@ -69,12 +69,21 @@ Full register with gap text is in `prea-register.csv`. Columns `owner`, `target_
 | 12 | Code of Conduct, Non-Sworn and Non-County Personnel | eff 06/01/2011 |
 | 13 | Detention and Intake Responsibility (J-3.4) | undated |
 | 14 | General Order, Mandatory Reporting: Dependent Adult and Elder Abuse | eff 06/30/2017 |
+| 15 | OO 1354.5 Room Confinement | eff 04/05/2023 |
+| 16 | OO 1390/1391 Discipline and Discipline Process | eff 10/01/2013, rev 05/01/2020 |
+| 17 | Internal Complaints (Administrative P&P Manual) | rev 10/30/2013 |
 
-Put the source PDFs in `docs/` so you can read them directly.
+Documents 15 to 17 were produced after Revision 3 and are assessed in Revision 4.
+Note the dates: 1354.5 is the newest policy in the set by nearly three years, and it shows.
+
+Put the source PDFs in `docs/` so you can read them directly. The 1390/1391 PDF is a
+scan with no text layer, so it has to be rasterized and read as images, not extracted.
 
 ## 5. The twelve conflicts (highest priority)
 
 Policy that states a rule contradicting the law or another departmental policy.
+Still twelve after Revision 4. Nothing in the three new documents cured a conflict, and
+nothing in them created one, though see the near miss recorded at the end of this section.
 
 1. **OO 1352 II.M and III.I, S-8.** Classification created for any LGBTQI youth; single-room
    housing at all times. Violates 115.342(c) and 15 CCR 1352(e). Also contradicts OO 1352's
@@ -106,6 +115,18 @@ Policy that states a rule contradicting the law or another departmental policy.
     not meet the enumerated criteria. OO 1352 II.C.3 references DJJ, which closed 06/30/2023.
 12. **Detention and Intake Responsibility (J-3.4).** References CYA and CYA parolees throughout.
     No PREA content. Omits the 15 CCR 1350(a) admittance elements added in 2019.
+
+**The near miss (row 58, not scored as a conflict).** Internal Complaints gives the Internal
+Affairs Manager discretion to "determine whether or not a formal investigation is necessary,"
+with no carve-out for sexual abuse or sexual harassment. 115.371(a) requires an administrative
+or criminal investigation for **all** such allegations. The policy never says a sexual abuse
+allegation may go uninvestigated, so it is recorded as a defect in the row rather than scored
+as a thirteenth conflict. If a document turns up showing the discretion has been exercised that
+way in practice, it becomes one. Fix is a one-sentence carve-out.
+
+**Conflict 5 narrowed in Revision 4.** OO 1390/1391 supplies the formal disciplinary process
+115.378 requires, so the remediation is now extending an existing process rather than drafting
+one. The PREA Policy XIV.A false-allegations defect itself is unchanged.
 
 ## 6. The fifteen recommended policy changes
 
@@ -192,6 +213,17 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
   of view). Recommend only a cross-reference in 1360.
 - **Youth advocates no longer exist.** External access is the OYCR Ombudsperson plus counsel.
   115.351(e) staff private reporting reverted to Not Addressed.
+- **Rev 3 said 115.351(e) had no departmental route at all.** Corrected in 4. Internal
+  Complaints supplies an express, mandatory route to the Assistant Division Chief of Internal
+  Affairs, which is one of the three fixes rev 3 itself named as sufficient. Now **Partial**,
+  priority held at High. What is missing is the word confidential, not the channel.
+- **Rev 1 to 3 scored the WIC 208.3 room confinement interaction as unaddressed.** OO 1354.5,
+  eff 04/05/2023, supplies the four-hour review cycle, documented supervisor and manager
+  authorization, and the prohibition on punitive confinement. Do not re-raise those.
+- **Do not assume isolation is available as a disciplinary sanction.** OO 1390/1391 III omits
+  it from the consequences list and OO 1354.5 I.C.1 prohibits confinement for punishment. The
+  department has excluded it, which is a stronger position than complying with the isolation
+  safeguards. Say so rather than leaving it to inference.
 
 ## 9. Open questions for the department
 
@@ -207,6 +239,10 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
 9. Has any PREA audit or consultant review ever been done at YDF?
 10. Is the annual public data publication required by PREA Policy XVIII.C actually happening?
 11. Does the CBA contain anything limiting removal of an alleged staff abuser? (115.366)
+12. **Confirm the subsection lettering inside 115.378 against the CFR before quoting it.**
+    Only 115.378(f), the good-faith reporting protection, is verified. The register describes
+    the other elements of that standard by content rather than by letter for this reason.
+    This environment's network egress is restricted, so eCFR and Cornell could not be reached.
 
 ## 10. Documents still outstanding
 
@@ -217,11 +253,12 @@ Referenced in reviewed policies but never produced. Several may close findings.
 - Hiring process, arrest notification protocol, written employee reporting requirement
 - Institutional Policy on Documentation, Confidentiality and Maintenance of Records
 - Institutional Policy on Video Recording and Photograph System
-- Internal Complaints policy (Administrative P&P Manual)
 - Interrogations of Department Personnel policy
 - Institutional Incident Report User's Guide
-- OO 1354 and 1354.5 (separation and room confinement)
-- OO 1390 and 1391 (discipline and due process)
+- OO 1354 (separation). **Now the highest-value outstanding document.** OO 1354.5 defines
+  Separation to include protective custody and then regulates only room confinement, so the
+  placement 115.342(b) and 115.368 actually govern is the one with the fewest written
+  safeguards. See rows 35 and 57.
 - Volunteer, intern, and contractor onboarding and clearance procedure
 - Medical and mental health service policies / Health Services agreement
 - Staffing rosters and post assignments
