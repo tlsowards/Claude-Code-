@@ -48,6 +48,14 @@ npm run crosswalk
 `tools/crosswalk.json`. `tools/build_crosswalk_docx.js` builds the Word file from
 that JSON. Word output, not Excel, per the preference recorded in `CLAUDE.md`.
 
+The contents page is a Word field, so page numbers are computed by Word rather
+than written into the file. The document asks Word to refresh its fields on open.
+If the contents page still looks empty or stale, click in it and press F9.
+
+The generator prints a warning if any register row has neither a 28 CFR nor a
+California citation, since that usually means a CSV edit blanked a column rather
+than that the requirement has no authority. A clean run prints no warning.
+
 ## Deliverables produced outside this repository
 
 These came from the prior conversation and belong in `deliverables/`. They are not

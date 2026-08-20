@@ -6,8 +6,7 @@ const path = require('path');
 const {
   Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType,
   Table, TableRow, TableCell, WidthType, ShadingType, BorderStyle,
-  PageBreak, PageOrientation, TableOfContents, Header, Footer,
-  PageNumber, LevelFormat, convertInchesToTwip,
+  PageBreak, TableOfContents, Header, Footer, PageNumber,
 } = require('docx');
 
 const ROOT = path.dirname(__dirname);
@@ -439,6 +438,9 @@ push(
 /* -------------------------------------------------------------- assemble */
 
 const doc = new Document({
+  // The table of contents is a Word field. docx cannot compute page numbers,
+  // so without this Word shows an empty contents page until someone presses F9.
+  features: { updateFields: true },
   creator: 'Sacramento County Probation Department',
   title: 'PREA versus Policy: a standard-by-standard crosswalk',
   description: `Gap register Revision ${data.revision}`,

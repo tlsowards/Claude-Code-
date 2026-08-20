@@ -43,7 +43,10 @@ STATUS_ORDER = ["Conflict", "Not Addressed", "Partial", "Not Evidenced", "Addres
 
 # The fourteen documents reviewed, in CLAUDE.md section 4 order. The patterns
 # match how each document is named in the register's county_document column.
-# Order matters: OO 1352.5 and OO 1350.5 are tested before OO 1352.
+# documents_for() tests every pattern independently, so list order does not
+# affect matching; it only sets the order of part 5. What keeps "OO 1352.5"
+# from also matching the OO 1352 entry is the negative lookahead on that
+# pattern, so leave it in place if these are ever reordered.
 DOCUMENTS = [
     ("PREA Policy and Procedure, Juvenile Institutions", "eff/rev 04/25/2013",
      r"PREA Policy"),
@@ -512,6 +515,13 @@ def main():
         fh.write(md(data))
     with open(JSON_PATH, "w", encoding="utf-8") as fh:
         json.dump(data, fh, indent=1)
+    fallback = [r["id"] for r in rows
+                if r["authority"] == "Departmental policy structure"]
+    if fallback:
+        print("WARNING         %d row(s) have neither a 28 CFR nor a California "
+              "citation and fall back to a generic heading: %s"
+              % (len(fallback), ", ".join(str(i) for i in fallback)))
+        print("                check the register before trusting those headings.")
     print("rows            %d" % data["total"])
     print("by status       %s" % data["by_status"])
     print("by priority     %s" % data["by_priority"])
