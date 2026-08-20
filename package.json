@@ -1,0 +1,11 @@
+{
+  "name": "prea-ydf-tools",
+  "private": true,
+  "description": "Build scripts for YDF PREA compliance deliverables",
+  "scripts": {
+    "crosswalk": "python3 tools/build_crosswalk.py && node tools/build_crosswalk_docx.js"
+  },
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}
