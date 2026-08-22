@@ -137,11 +137,12 @@ def main():
 
     out_dir = args.out.resolve()
     if args.source.is_dir():
-        source = args.source.resolve()
-        if out_dir == source:
+        if out_dir == args.source.resolve():
             sys.exit("--out must differ from --in, so the originals are kept")
         # --out may sit inside --in; skip anything already there so a second
         # run brands the originals again rather than the branded copies.
+        # rglob("*") rather than two globs, so a case-insensitive filesystem
+        # doesn't return the same deck twice.
         decks = sorted(
             d for d in args.source.rglob("*")
             if d.suffix.lower() == ".pptx"
@@ -153,12 +154,21 @@ def main():
     if not decks:
         sys.exit(f"No .pptx files found in {args.source}")
 
-    logo_buf, logo_ratio = load_logo(args.logo, args.trim, args.opacity)
-
-    failed = 0
+    # Work out every destination up front and refuse if any lands back on its
+    # own source, so a bad --out can't destroy originals part-way through.
+    jobs = []
     for deck in decks:
         rel = deck.relative_to(args.source) if args.source.is_dir() else deck.name
         out_path = args.out / rel
+        if out_path.resolve() == deck.resolve():
+            sys.exit(f"--out would overwrite the original: {deck}\n"
+                     "Choose an --out folder outside --in.")
+        jobs.append((deck, out_path))
+
+    logo_buf, logo_ratio = load_logo(args.logo, args.trim, args.opacity)
+
+    failed = 0
+    for deck, out_path in jobs:
         try:
             stamped, total = stamp(deck, out_path, logo_buf, logo_ratio, args)
         except Exception as exc:
