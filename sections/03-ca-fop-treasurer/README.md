@@ -144,6 +144,9 @@ President's Meeting budget line on the plan versus result slide, and a
 **new Events and Sponsorships slide** added as the fifth slide, with a footnote covering
 money that arrived after the fiscal year closed.
 
+Both are PowerPoint `.pptx` files. The prior session generated them with Python builder scripts rather than by hand, so the style below is
+written as values to set programmatically, and works equally well applied manually.
+
 Deck style, if you build or edit slides:
 
 | Element | Spec |
@@ -156,8 +159,8 @@ Deck style, if you build or edit slides:
 | Total bar | Rounded rectangle navy `142340`, gold `E6CF8E` label, white Cambria amount |
 | Body text | Gray `6C7482` |
 
-The builder scripts from the prior session were scratchpad only and are not in Dropbox.
-Rebuild them if slide work resumes.
+Those builder scripts lived in the prior session's scratchpad, not in Dropbox, so they are
+gone. Rebuild them from this style table if slide work resumes.
 
 ## Suggested first moves
 
