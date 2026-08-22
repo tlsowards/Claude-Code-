@@ -42,6 +42,17 @@ Logos added by this script are named `BrandLogo`. A second run finds and
 replaces them rather than stacking a second copy, so you can safely re-run with
 different sizing until it looks right.
 
+## Batch runs
+
+A folder run is searched recursively and tolerates a messy folder: `.PPTX` is
+matched as well as `.pptx`, Office lock files (`~$...`) are ignored, and a deck
+that can't be opened is reported and skipped rather than aborting the batch
+(the exit code is non-zero if any were skipped).
+
+`--out` may sit inside `--in` — already-branded copies are excluded from the
+search, so a second run re-brands the originals rather than double-stamping its
+own output.
+
 ## Notes
 
 Slide content is left untouched — shapes, text, and speaker notes all survive.

@@ -69,23 +69,27 @@ def send_behind_text(slide, pic):
     """Drop the logo just above the background so it never covers body text."""
     tree = pic._element.getparent()
     tree.remove(pic._element)
+    # A spTree always opens with nvGrpSpPr then grpSpPr, so index 2 is the
+    # first drawable slot — behind every real shape, but still in the tree.
     tree.insert(2, pic._element)
 
 
-def stamp(deck_path, out_path, logo_path, args):
+def stamp(deck_path, out_path, logo_buf, logo_ratio, args):
     prs = Presentation(str(deck_path))
     slide_w, slide_h = prs.slide_width, prs.slide_height
+    left, top, width, height = place(
+        slide_w, slide_h, logo_ratio, args.width_pct, args.margin_pct, args.position
+    )
 
     stamped = 0
     for index, slide in enumerate(prs.slides):
         if args.skip_first and index == 0:
             continue
         clear_previous(slide)
-        buf, ratio = load_logo(logo_path, args.trim, args.opacity)
-        left, top, width, height = place(
-            slide_w, slide_h, ratio, args.width_pct, args.margin_pct, args.position
-        )
-        pic = slide.shapes.add_picture(buf, left, top, width, height)
+        # add_picture consumes the stream, so rewind it for each slide.
+        # python-pptx hashes the bytes, so the deck still stores one copy.
+        logo_buf.seek(0)
+        pic = slide.shapes.add_picture(logo_buf, left, top, width, height)
         pic.name = SHAPE_NAME
         if args.behind:
             send_behind_text(slide, pic)
@@ -122,23 +126,54 @@ def main():
 
     if not args.logo.is_file():
         sys.exit(f"Logo not found: {args.logo}")
+    if not args.source.exists():
+        sys.exit(f"Not found: {args.source}")
     if not 0.0 < args.opacity <= 1.0:
         sys.exit("--opacity must be greater than 0 and at most 1")
+    if not 0 < args.width_pct <= 100:
+        sys.exit("--width-pct must be greater than 0 and at most 100")
+    if not 0 <= args.margin_pct < 50:
+        sys.exit("--margin-pct must be at least 0 and less than 50")
 
+    out_dir = args.out.resolve()
     if args.source.is_dir():
-        decks = sorted(d for d in args.source.rglob("*.pptx")
-                       if not d.name.startswith("~$"))
+        source = args.source.resolve()
+        if out_dir == source:
+            sys.exit("--out must differ from --in, so the originals are kept")
+        # --out may sit inside --in; skip anything already there so a second
+        # run brands the originals again rather than the branded copies.
+        decks = sorted(
+            d for d in args.source.rglob("*")
+            if d.suffix.lower() == ".pptx"
+            and not d.name.startswith("~$")
+            and out_dir not in d.resolve().parents
+        )
     else:
         decks = [args.source]
     if not decks:
         sys.exit(f"No .pptx files found in {args.source}")
 
+    logo_buf, logo_ratio = load_logo(args.logo, args.trim, args.opacity)
+
+    failed = 0
     for deck in decks:
         rel = deck.relative_to(args.source) if args.source.is_dir() else deck.name
         out_path = args.out / rel
-        stamped, total = stamp(deck, out_path, args.logo, args)
+        try:
+            stamped, total = stamp(deck, out_path, logo_buf, logo_ratio, args)
+        except Exception as exc:
+            # One unreadable deck shouldn't abandon the rest of the batch.
+            failed += 1
+            print(f"{deck.name}: SKIPPED ({exc})", file=sys.stderr)
+            continue
         print(f"{deck.name}: logo on {stamped}/{total} slides -> {out_path}")
+
+    if failed:
+        print(f"\n{failed} of {len(decks)} deck(s) could not be processed.",
+              file=sys.stderr)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
