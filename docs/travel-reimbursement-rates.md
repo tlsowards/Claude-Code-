@@ -5,40 +5,39 @@ Two of these change on a fixed calendar, so the review dates below matter.
 
 ## Meals & incidentals (per diem)
 
-A **CAFOP board-set rate**, paid per day without receipts.
+The **GSA standard CONUS rate** — the federal default for any location without
+its own published rate. Paid per day, no receipts required.
 
 | Item | Amount |
 | --- | --- |
-| Meals & incidentals, full day | **$85.00** |
-| First and last day of travel (75%) | **$63.75** |
-| Breakfast deduction, if provided | $20.00 |
-| Lunch deduction, if provided | $23.00 |
-| Dinner deduction, if provided | $37.00 |
+| M&IE, full day | **$68.00** |
+| M&IE, first and last day of travel (75%) | **$51.00** |
+| Breakfast deduction, if provided | $16.00 |
+| Lunch deduction, if provided | $19.00 |
+| Dinner deduction, if provided | $28.00 |
 | Incidentals (never deducted) | $5.00 |
 
-A meal furnished by the host, conference, or another party is deducted at the
-amounts above; the $5 incidentals allowance stays payable. The meal components
-sum to $80 and, with incidentals, to the $85 daily rate.
+Effective 1 Oct 2025 – 30 Sep 2026 (federal FY2026). A meal furnished by the
+host, conference, or another party is deducted at the amounts above; the $5
+incidentals allowance stays payable.
 
-### Tax treatment — read before adopting
+Paying at — not above — the federal rate is what keeps this simple: per diem at
+or below the federal rate sits inside an accountable plan, so it is not wages,
+is not reported on a W-2 or 1099, and needs no meal receipts. Any rate above
+$68/day would make the excess taxable to the member unless substantiated with
+actual receipts.
 
-The federal per diem rate for meals and incidentals is **$68.00/day** (GSA
-standard CONUS, FY2026). CAFOP's $85.00 rate exceeds it by **$17.00 per day**.
+Non-standard localities carry higher published M&IE tiers, up to $92/day. If
+CAFOP travel concentrates in high-cost California metros, adopting the
+locality-specific tables would raise reimbursement while staying federal — and
+therefore still non-reportable. That is the supported way to pay more than $68.
 
-Under an accountable plan, per diem paid at or below the federal rate is not
-wages and is not reported. **The excess over the federal rate is treated as
-taxable income** to the member unless the full amount is substantiated with
-actual receipts. Practically, the association has three options:
+### One open policy question
 
-1. Pay $85/day and report the $17/day excess as taxable compensation on the
-   member's Form W-2 or 1099.
-2. Pay $85/day but require receipts for meals, converting it from a per diem
-   into an actual-cost reimbursement.
-3. Drop to $68/day, at which point nothing is reportable.
-
-This is a board and treasurer decision, not a form decision — the form pays
-$85/day as configured either way. Confirm the handling with whoever prepares
-CAFOP's information returns before the first claim is paid.
+Federal per diem is payable only for travel that requires an overnight stay; a
+same-day trip earns no M&IE under the federal rules. This form does not enforce
+that — it pays 75% for a single-day trip. If the board wants to match the
+federal treatment, that is a one-line change in `buildDiem`.
 
 ## Lodging
 
@@ -48,8 +47,7 @@ zero balance is required; members should book the conference room block where
 one is offered.
 
 Because lodging is reimbursed against actual receipted cost, it stays inside an
-accountable plan and is not reportable as income at any dollar amount — the tax
-concern above applies to the flat meal per diem, not to lodging.
+accountable plan and is not reportable as income at any dollar amount.
 
 ## Mileage — personal vehicle
 
@@ -96,14 +94,14 @@ reason in the notes and have the approver initial it.
 
 | Date | What changes |
 | --- | --- |
-| Late Aug 2026 | GSA publishes FY2027 per diem. CAFOP sets its own meal rate and caps no lodging, so nothing on the form changes — but the FY2027 federal M&IE figure is the number the $85 rate is measured against for the taxable excess, so record it. |
+| Late Aug 2026 | GSA publishes FY2027 per diem; update the M&IE rate and its meal breakdown for travel on or after 1 Oct 2026. Lodging is uncapped, so the FY2027 lodging figure does not apply here. |
 | Mid-Dec 2026 | IRS publishes the 2027 standard mileage rate; add it to the `MILEAGE` table. |
 
 Rates live in one block near the top of the form's `<script>`:
 
 ```js
-var MIE = 85, MIE_PARTIAL = 63.75;
-var MEAL = { b:20, l:23, d:37 };
+var MIE = 68, MIE_PARTIAL = 51;
+var MEAL = { b:16, l:19, d:28 };
 var LONG_TRIP_MI = 200, REVIEW_MI = 100;
 var MILEAGE = [ { from:"2026-07-01", rate:0.76, label:"76.0¢" }, … ];
 ```
@@ -116,6 +114,26 @@ rate card near the top of the markup, which is written out in plain text.
 ## Sources
 
 - IRS, 2026 standard mileage rates (72.5¢ from 1 Jan 2026; raised to 76¢ from 1 Jul 2026, announced 13 Jul 2026)
-- GSA, FY2026 CONUS per diem rates ($68 M&IE, effective 1 Oct 2025), Per Diem Bulletin FTR 26-01 — the federal benchmark the $85 board rate is measured against
-- IRS Publication 463 / accountable plan rules, on per diem paid above the federal rate
+- GSA, FY2026 CONUS per diem rates ($68 M&IE, effective 1 Oct 2025), Per Diem Bulletin FTR 26-01
+- GSA, M&IE breakdown table, FY2026 ($16 / $19 / $28 / $5 incidentals; 75% on travel days)
+- IRS Publication 463 / accountable plan rules, on per diem paid at or above the federal rate
 - Federal Travel Regulation, constructive-cost rule for privately owned vehicle use
+
+## Known constraints
+
+- **The form is authored as an artifact fragment**, so it deliberately carries no
+  `<!DOCTYPE>`, `<html>`, `<head>`, or `<body>` — the hosting layer supplies
+  them. Opened straight from disk it therefore renders in quirks mode. Measured
+  effect is 19px of document height and no box-model differences, but a
+  standalone distribution copy should be wrapped in an HTML5 skeleton. The
+  `charset` and `viewport` meta tags are honored from the top of the file either
+  way, so encoding and mobile layout are correct in both paths.
+- **Typefaces load from Google Fonts.** The file is otherwise self-contained, but
+  it is not offline-clean: opening it requests fonts from `fonts.googleapis.com`
+  and `fonts.gstatic.com`, which discloses the opener's IP and user-agent to
+  Google. Fallback stacks are solid, so the form is fully usable with no network.
+  Removing the two `<link>` tags makes it truly self-contained at the cost of the
+  typography.
+- **Drafts persist in the browser** via `localStorage` under the key
+  `cafop-exp-01`, including name and email, until the traveler uses **Clear
+  form**. This is stated on the form itself.

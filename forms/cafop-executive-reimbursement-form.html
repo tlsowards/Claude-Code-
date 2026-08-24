@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CAFOP Executive Reimbursement</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -299,13 +301,13 @@
   <section class="rates" aria-labelledby="rates-h">
     <div class="rates-head">
       <h2 id="rates-h">Reimbursement rates in effect</h2>
-      <span class="asof">CAFOP board rates &middot; IRS 2026 mileage &middot; review annually</span>
+      <span class="asof">GSA FY2026 M&amp;IE &middot; IRS 2026 mileage &middot; verify after 30 Sep 2026</span>
     </div>
     <dl class="rate-grid">
       <div class="rate">
         <dt>Meals &amp; incidentals</dt>
-        <dd>$85.00<span style="font-size:.8rem;color:var(--ink-2)">/day</span></dd>
-        <small>CAFOP board rate; $63.75 on first &amp; last travel day (75%). Exceeds the $68.00 federal standard.</small>
+        <dd>$68.00<span style="font-size:.8rem;color:var(--ink-2)">/day</span></dd>
+        <small>Federal standard CONUS rate; $51.00 on first &amp; last travel day (75%). No receipts, not taxable.</small>
       </div>
       <div class="rate">
         <dt>Lodging</dt>
@@ -332,7 +334,7 @@
       <div class="row">
         <div class="f"><label for="name">Name</label><input type="text" id="name" autocomplete="name"></div>
         <div class="f"><label for="role">Executive role / office</label><input type="text" id="role" placeholder="e.g. Treasurer"></div>
-        <div class="f"><label for="email">Email</label><input type="text" id="email" inputmode="email"></div>
+        <div class="f"><label for="email">Email</label><input type="email" id="email" autocomplete="email"></div>
       </div>
       <div class="row">
         <div class="f"><label for="purpose">Business purpose / event</label><input type="text" id="purpose" placeholder="e.g. Q3 board meeting"></div>
@@ -343,6 +345,7 @@
         <div class="f"><label for="ret">Return</label><input type="date" id="ret"></div>
         <div class="f"><span class="lbl">Trip length</span><output id="triplen" class="hint" style="padding-top:.5rem">&mdash;</output></div>
       </div>
+      <div class="note flag" id="dateflag" hidden></div>
     </div>
   </section>
 
@@ -422,7 +425,7 @@
   <section class="block">
     <div class="block-head"><span class="num">4</span><h2>Meals &amp; incidentals per diem</h2><p>Per day &mdash; no receipts required</p></div>
     <div class="block-body">
-      <p class="hint">Days are generated from the travel dates in section 1. First and last day pay <b>75%</b> ($63.75). Tick any meal that was <b>provided</b> by the host, conference, or another party &mdash; provided meals are deducted at breakfast <b>$20</b>, lunch <b>$23</b>, dinner <b>$37</b>. The $5 incidentals allowance is never deducted.</p>
+      <p class="hint">Days are generated from the travel dates in section 1. First and last day pay <b>75%</b> ($51.00). Tick any meal that was <b>provided</b> by the host, conference, or another party &mdash; provided meals are deducted at breakfast <b>$16</b>, lunch <b>$19</b>, dinner <b>$28</b>. The $5 incidentals allowance is never deducted.</p>
       <div class="tw">
         <table>
           <thead>
@@ -501,8 +504,12 @@
   </section>
 
   <p class="foot">
-    Rate basis: mileage follows the IRS 2026 standard business rates (72.5&cent;/mi 1 Jan &ndash; 30 Jun 2026; 76&cent;/mi from 1 Jul 2026). Lodging is reimbursed at actual cost with no nightly cap.
-    The $85.00 daily meal rate is set by the CAFOP board and exceeds the $68.00 federal standard &mdash; the $17.00 daily difference is generally reportable as taxable income to the member unless substantiated with receipts.
+    This form keeps a working draft in this browser only &mdash; nothing is transmitted anywhere, and no data reaches CAFOP until you print or export it. The draft persists, including your name and email, until you use <b>Clear form</b>. On a shared or public computer, clear it when you are done.
+  </p>
+
+  <p class="foot">
+    Rate basis: meals follow the GSA FY2026 standard CONUS M&amp;IE rate ($68/day, effective 1 Oct 2025 &ndash; 30 Sep 2026); mileage follows the IRS 2026 standard business rates (72.5&cent;/mi 1 Jan &ndash; 30 Jun 2026; 76&cent;/mi from 1 Jul 2026). Lodging is reimbursed at actual cost with no nightly cap.
+    Because the meal per diem is paid at the federal rate and lodging is receipted at actual cost, the whole claim sits inside an accountable plan &mdash; none of it is reportable as income to the member.
     Neither agency varies the mileage rate by trip distance &mdash; the 200-mile test on this form is CAFOP policy, modeled on the federal constructive-cost rule.
     Update this form when FY2027 rates publish in late August 2026.
   </p>
@@ -522,10 +529,10 @@
 (function(){
   "use strict";
 
-  // CAFOP board-set meal rate. Above the GSA national standard of $68/day — see
-  // docs/travel-reimbursement-rates.md on the tax treatment of the excess.
-  var MIE = 85, MIE_PARTIAL = 63.75;
-  var MEAL = { b:20, l:23, d:37 };
+  // GSA standard CONUS rate. Paying at the federal rate keeps the per diem
+  // inside an accountable plan, so nothing is reportable as income.
+  var MIE = 68, MIE_PARTIAL = 51;
+  var MEAL = { b:16, l:19, d:28 };
   var LONG_TRIP_MI = 200, REVIEW_MI = 100;
 
   // IRS standard business mileage rates, newest first.
@@ -547,14 +554,28 @@
   function $(id){ return document.getElementById(id); }
   function setText(id, txt){ var el = $(id); if (el) el.textContent = txt; }
 
+  var MAX_DAYS = 366;
+  var rangeIssue = "";   // set by eachDate, surfaced by recompute
+
   function eachDate(a, b){
     var out = [];
+    rangeIssue = "";
     if (!a || !b) return out;
     var start = new Date(a + "T00:00:00"), end = new Date(b + "T00:00:00");
-    if (isNaN(start) || isNaN(end) || end < start) return out;
-    var guard = 0;
-    for (var d = start; d <= end && guard < 366; d.setDate(d.getDate() + 1), guard++){
+    if (isNaN(start) || isNaN(end)){
+      rangeIssue = "One of the travel dates could not be read. Re-enter it.";
+      return out;
+    }
+    if (end < start){
+      rangeIssue = "The return date falls before the departure date, so no per diem days can be built.";
+      return out;
+    }
+    for (var d = start; d <= end && out.length < MAX_DAYS; d.setDate(d.getDate() + 1)){
       out.push(d.toISOString().slice(0,10));
+    }
+    if (d <= end){
+      rangeIssue = "This trip spans more than " + MAX_DAYS + " days. Only the first " + MAX_DAYS +
+        " are listed, so the per diem total below is short — split it into separate claims.";
     }
     return out;
   }
@@ -631,8 +652,8 @@
       return days;
     }
     days.forEach(function(iso, idx){
-      var partial = (idx === 0 || idx === days.length - 1) && days.length > 1;
-      if (days.length === 1) partial = true;
+      // First and last day pay 75%; a single-day trip is both.
+      var partial = idx === 0 || idx === days.length - 1;
       var tr = document.createElement("tr");
       tr.innerHTML =
         '<td class="day">' + pretty(iso) + (partial ? '<span class="tag">75%</span>' : '') + '</td>' +
@@ -676,6 +697,11 @@
     // trip length
     var days = eachDate($("depart").value, $("ret").value);
     setText("triplen", days.length ? days.length + (days.length === 1 ? " day" : " days") : "—");
+    var df = $("dateflag");
+    if (rangeIssue){
+      df.hidden = false;
+      df.innerHTML = "<strong>Check the travel dates.</strong> " + rangeIssue;
+    } else { df.hidden = true; }
 
     // lodging
     var lodging = num($("nights")) * num($("rate")) + num($("tax"));
