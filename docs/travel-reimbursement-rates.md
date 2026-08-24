@@ -5,36 +5,51 @@ Two of these change on a fixed calendar, so the review dates below matter.
 
 ## Meals & incidentals (per diem)
 
-The form uses the **GSA standard CONUS rate**, which is the national default for
-any location without its own published rate. It requires no receipts.
+A **CAFOP board-set rate**, paid per day without receipts.
 
 | Item | Amount |
 | --- | --- |
-| M&IE, full day | **$68.00** |
-| M&IE, first and last day of travel (75%) | **$51.00** |
-| Breakfast deduction, if provided | $16.00 |
-| Lunch deduction, if provided | $19.00 |
-| Dinner deduction, if provided | $28.00 |
+| Meals & incidentals, full day | **$85.00** |
+| First and last day of travel (75%) | **$63.75** |
+| Breakfast deduction, if provided | $20.00 |
+| Lunch deduction, if provided | $23.00 |
+| Dinner deduction, if provided | $37.00 |
 | Incidentals (never deducted) | $5.00 |
 
-Effective 1 Oct 2025 – 30 Sep 2026 (federal FY2026). A meal furnished by the
-host, conference, or another party is deducted at the amounts above; the $5
-incidentals allowance stays payable. Non-standard localities have higher M&IE
-tiers, up to $92/day — if CAFOP travel concentrates in high-cost California
-metros (San Francisco, San Diego, Los Angeles), consider adopting the
-locality-specific tables instead of the national standard.
+A meal furnished by the host, conference, or another party is deducted at the
+amounts above; the $5 incidentals allowance stays payable. The meal components
+sum to $80 and, with incidentals, to the $85 daily rate.
+
+### Tax treatment — read before adopting
+
+The federal per diem rate for meals and incidentals is **$68.00/day** (GSA
+standard CONUS, FY2026). CAFOP's $85.00 rate exceeds it by **$17.00 per day**.
+
+Under an accountable plan, per diem paid at or below the federal rate is not
+wages and is not reported. **The excess over the federal rate is treated as
+taxable income** to the member unless the full amount is substantiated with
+actual receipts. Practically, the association has three options:
+
+1. Pay $85/day and report the $17/day excess as taxable compensation on the
+   member's Form W-2 or 1099.
+2. Pay $85/day but require receipts for meals, converting it from a per diem
+   into an actual-cost reimbursement.
+3. Drop to $68/day, at which point nothing is reportable.
+
+This is a board and treasurer decision, not a form decision — the form pays
+$85/day as configured either way. Confirm the handling with whoever prepares
+CAFOP's information returns before the first claim is paid.
 
 ## Lodging
 
-| Item | Amount |
-| --- | --- |
-| Standard CONUS lodging ceiling | **$110.00 / night**, excluding taxes |
+Reimbursed at **actual cost. There is no nightly ceiling.** Taxes and mandatory
+fees are reimbursed in addition to the room rate. An itemized folio showing a
+zero balance is required; members should book the conference room block where
+one is offered.
 
-Lodging is reimbursed at **actual cost up to the ceiling**, not as a flat
-allowance. Room taxes and mandatory fees are reimbursed *on top of* the ceiling
-and are not counted against it. The form flags any nightly rate above $110 and
-asks for a conference room-block confirmation or written pre-approval — the
-usual and reasonable exceptions.
+Because lodging is reimbursed against actual receipted cost, it stays inside an
+accountable plan and is not reportable as income at any dollar amount — the tax
+concern above applies to the flat meal per diem, not to lodging.
 
 ## Mileage — personal vehicle
 
@@ -81,14 +96,14 @@ reason in the notes and have the approver initial it.
 
 | Date | What changes |
 | --- | --- |
-| Late Aug 2026 | GSA publishes FY2027 per diem; update lodging and M&IE for 1 Oct 2026. |
+| Late Aug 2026 | GSA publishes FY2027 per diem. CAFOP sets its own meal rate and caps no lodging, so nothing on the form changes — but the FY2027 federal M&IE figure is the number the $85 rate is measured against for the taxable excess, so record it. |
 | Mid-Dec 2026 | IRS publishes the 2027 standard mileage rate; add it to the `MILEAGE` table. |
 
 Rates live in one block near the top of the form's `<script>`:
 
 ```js
-var MIE = 68, MIE_PARTIAL = 51, LODGE_CAP = 110;
-var MEAL = { b:16, l:19, d:28 };
+var MIE = 85, MIE_PARTIAL = 63.75;
+var MEAL = { b:20, l:23, d:37 };
 var LONG_TRIP_MI = 200, REVIEW_MI = 100;
 var MILEAGE = [ { from:"2026-07-01", rate:0.76, label:"76.0¢" }, … ];
 ```
@@ -101,6 +116,6 @@ rate card near the top of the markup, which is written out in plain text.
 ## Sources
 
 - IRS, 2026 standard mileage rates (72.5¢ from 1 Jan 2026; raised to 76¢ from 1 Jul 2026, announced 13 Jul 2026)
-- GSA, FY2026 CONUS per diem rates ($110 lodging / $68 M&IE, effective 1 Oct 2025), Per Diem Bulletin FTR 26-01
-- GSA, M&IE breakdown table, FY2026 ($16 / $19 / $28 / $5 incidentals; 75% on travel days)
+- GSA, FY2026 CONUS per diem rates ($68 M&IE, effective 1 Oct 2025), Per Diem Bulletin FTR 26-01 — the federal benchmark the $85 board rate is measured against
+- IRS Publication 463 / accountable plan rules, on per diem paid above the federal rate
 - Federal Travel Regulation, constructive-cost rule for privately owned vehicle use

@@ -299,18 +299,18 @@
   <section class="rates" aria-labelledby="rates-h">
     <div class="rates-head">
       <h2 id="rates-h">Reimbursement rates in effect</h2>
-      <span class="asof">FY2026 GSA CONUS &middot; IRS 2026 &middot; verify after 30 Sep 2026</span>
+      <span class="asof">CAFOP board rates &middot; IRS 2026 mileage &middot; review annually</span>
     </div>
     <dl class="rate-grid">
       <div class="rate">
         <dt>Meals &amp; incidentals</dt>
-        <dd>$68.00<span style="font-size:.8rem;color:var(--ink-2)">/day</span></dd>
-        <small>National standard CONUS rate. $51.00 on first &amp; last travel day (75%).</small>
+        <dd>$85.00<span style="font-size:.8rem;color:var(--ink-2)">/day</span></dd>
+        <small>CAFOP board rate; $63.75 on first &amp; last travel day (75%). Exceeds the $68.00 federal standard.</small>
       </div>
       <div class="rate">
-        <dt>Lodging ceiling</dt>
-        <dd>$110.00<span style="font-size:.8rem;color:var(--ink-2)">/night</span></dd>
-        <small>National standard, excluding taxes. Higher in listed metro areas.</small>
+        <dt>Lodging</dt>
+        <dd>Actual cost</dd>
+        <small>No nightly cap. Reimbursed at the rate paid plus taxes and mandatory fees, against an itemized folio.</small>
       </div>
       <div class="rate">
         <dt>Mileage &mdash; POV</dt>
@@ -356,8 +356,7 @@
         <div class="f"><label for="rate">Room rate / night ($)</label><input type="number" id="rate" min="0" step="0.01" placeholder="0.00"></div>
         <div class="f"><label for="tax">Taxes &amp; fees ($)</label><input type="number" id="tax" min="0" step="0.01" placeholder="0.00"></div>
       </div>
-      <div class="note flag" id="lodgeflag" hidden></div>
-      <p class="hint">Room tax is reimbursed in addition to the room rate and is not counted against the nightly ceiling. If the nightly rate exceeds <b>$110</b>, attach the conference room-block confirmation or a written pre-approval.</p>
+      <p class="hint">Lodging is reimbursed at <b>actual cost</b> &mdash; there is no nightly cap. Taxes and mandatory fees are reimbursed in addition to the room rate. Attach the itemized folio showing a zero balance; book the conference room block where one is offered.</p>
       <div class="sub"><span class="lbl">Lodging subtotal</span><output id="lodgesub">$0.00</output></div>
     </div>
   </section>
@@ -423,7 +422,7 @@
   <section class="block">
     <div class="block-head"><span class="num">4</span><h2>Meals &amp; incidentals per diem</h2><p>Per day &mdash; no receipts required</p></div>
     <div class="block-body">
-      <p class="hint">Days are generated from the travel dates in section 1. First and last day pay <b>75%</b> ($51.00). Tick any meal that was <b>provided</b> by the host, conference, or another party &mdash; provided meals are deducted at breakfast <b>$16</b>, lunch <b>$19</b>, dinner <b>$28</b>. The $5 incidentals allowance is never deducted.</p>
+      <p class="hint">Days are generated from the travel dates in section 1. First and last day pay <b>75%</b> ($63.75). Tick any meal that was <b>provided</b> by the host, conference, or another party &mdash; provided meals are deducted at breakfast <b>$20</b>, lunch <b>$23</b>, dinner <b>$37</b>. The $5 incidentals allowance is never deducted.</p>
       <div class="tw">
         <table>
           <thead>
@@ -502,7 +501,8 @@
   </section>
 
   <p class="foot">
-    Rate basis: GSA FY2026 standard CONUS per diem ($110 lodging + $68 M&amp;IE, effective 1 Oct 2025 &ndash; 30 Sep 2026) and the IRS 2026 standard business mileage rates (72.5&cent;/mi 1 Jan &ndash; 30 Jun 2026; 76&cent;/mi from 1 Jul 2026).
+    Rate basis: mileage follows the IRS 2026 standard business rates (72.5&cent;/mi 1 Jan &ndash; 30 Jun 2026; 76&cent;/mi from 1 Jul 2026). Lodging is reimbursed at actual cost with no nightly cap.
+    The $85.00 daily meal rate is set by the CAFOP board and exceeds the $68.00 federal standard &mdash; the $17.00 daily difference is generally reportable as taxable income to the member unless substantiated with receipts.
     Neither agency varies the mileage rate by trip distance &mdash; the 200-mile test on this form is CAFOP policy, modeled on the federal constructive-cost rule.
     Update this form when FY2027 rates publish in late August 2026.
   </p>
@@ -522,8 +522,10 @@
 (function(){
   "use strict";
 
-  var MIE = 68, MIE_PARTIAL = 51, LODGE_CAP = 110;
-  var MEAL = { b:16, l:19, d:28 };
+  // CAFOP board-set meal rate. Above the GSA national standard of $68/day — see
+  // docs/travel-reimbursement-rates.md on the tax treatment of the excess.
+  var MIE = 85, MIE_PARTIAL = 63.75;
+  var MEAL = { b:20, l:23, d:37 };
   var LONG_TRIP_MI = 200, REVIEW_MI = 100;
 
   // IRS standard business mileage rates, newest first.
@@ -676,16 +678,8 @@
     setText("triplen", days.length ? days.length + (days.length === 1 ? " day" : " days") : "—");
 
     // lodging
-    var nights = num($("nights")), rate = num($("rate")), tax = num($("tax"));
-    var lodging = nights * rate + tax;
+    var lodging = num($("nights")) * num($("rate")) + num($("tax"));
     setText("lodgesub", money(lodging));
-    var lf = $("lodgeflag");
-    if (rate > LODGE_CAP){
-      lf.hidden = false;
-      lf.innerHTML = "<strong>Over the national ceiling.</strong> $" + rate.toFixed(2) +
-        "/night exceeds the $110.00 standard by $" + (rate - LODGE_CAP).toFixed(2) +
-        ". Attach the conference rate confirmation or written pre-approval, or the difference is not payable.";
-    } else { lf.hidden = true; }
 
     // mileage
     var mi = mileageTotals();
