@@ -173,6 +173,21 @@ and silently drops out of the total.
 
 ## Two things worth deciding before you launch
 
+**Who else gets a copy.** `ALSO_NOTIFY` at the top of `Code.gs` is a list of addresses
+copied on every claim:
+
+```js
+var ALSO_NOTIFY = ['roger@cafop.org'];
+```
+
+They are CC'd on the treasurer's email rather than sent a separate one, so a reply
+reaches everybody in a single thread. Add or remove addresses in that list; an empty
+list (`[]`) turns it off. Remember it takes a **new version** deployment to take effect.
+
+Bear in mind that everyone on this list sees every claim in full — names, destinations,
+amounts. That is usually the point for a treasurer and a president, but it is worth being
+deliberate about rather than letting the list grow.
+
 **Where claims land.** Whatever account runs `setUp` receives every claim. If that is a
 county or other employer address, association financial records land in an employer
 mailbox, where they may fall under that employer's retention policy and public-records

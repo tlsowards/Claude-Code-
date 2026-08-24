@@ -23,6 +23,10 @@ var TREASURER_EMAIL = '';
 var FORM_TITLE      = 'CAFOP Executive Travel Reimbursement';
 var COPY_TO_OFFICER = true;   // email the submitting officer their computed total
 
+// Anyone else who should see every claim. Copied on the treasurer's email rather than
+// sent a separate one, so replies stay in a single thread. Add or remove addresses here.
+var ALSO_NOTIFY = ['roger@cafop.org'];
+
 // Meals & incidentals — GSA standard CONUS, FY2026.
 var MIE          = 68;    // full day
 var MIE_PARTIAL  = 51;    // first and last day of travel (75%)
@@ -402,7 +406,10 @@ function notify_(a, c, email) {
                 money_(c.due) + (c.flags.length ? ' — NEEDS REVIEW' : '');
   var html = emailBody_(a, c, email);
 
-  MailApp.sendEmail({ to: treasurer_(), subject: subject, htmlBody: html, name: 'CAFOP Reimbursement Form' });
+  var mail = { to: treasurer_(), subject: subject, htmlBody: html, name: 'CAFOP Reimbursement Form' };
+  var copies = (ALSO_NOTIFY || []).map(function (e) { return String(e).trim(); }).filter(String);
+  if (copies.length) mail.cc = copies.join(',');
+  MailApp.sendEmail(mail);
 
   if (COPY_TO_OFFICER && email) {
     MailApp.sendEmail({

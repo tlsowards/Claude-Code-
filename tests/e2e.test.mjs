@@ -147,6 +147,8 @@ eq('rate column 3dp', formats.find(f=>f.col===13)?.numberFormat, '0.000');
 
 eq('two emails sent', sent.length, 2);
 eq('treasurer copy', sent[0].to, 'treasurer@example.org');
+eq('extra recipients are cc-ed, not sent separately', sent[0].cc, 'roger@cafop.org');
+eq('one treasurer-side email, not two', sent.filter(m => m.to === 'treasurer@example.org').length, 1);
 eq('officer copy', sent[1].to, 'dana.whitfield@example.org');
 eq('subject carries the total', sent[0].subject.includes('$731.68'), true);
 eq('clean claim raises no review banner', sent[0].subject.includes('NEEDS REVIEW'), false);
