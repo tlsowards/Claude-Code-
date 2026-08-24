@@ -64,6 +64,31 @@ Officers see the running total as they type and file with a button. Everything i
 recomputed on the server before it is written or emailed, so a doctored page cannot
 change what gets paid.
 
+### The two ways this goes wrong
+
+Both produce the same misleading message — **`Script function not found: doGet`** — so
+check them in this order.
+
+**`Index` was created as a Script file instead of an HTML file.** Step 2 above is easy to
+click past. Look at the Files list: it must read `Index.html`. If `Index` is missing
+entirely, or shows as `Index.gs`, that is the fault. Delete it and add it again with **+ →
+HTML**. A missing or mistyped HTML file reports itself as a missing *function*, which
+sends you looking in the wrong file.
+
+**The deployment is serving an old snapshot.** Apps Script freezes your code at the moment
+you deploy, and the `/exec` URL keeps serving that frozen copy no matter what you edit
+afterwards. Creating another new deployment does not help if you leave the version
+dropdown on an existing version. The fix is always: **Manage deployments → pencil →
+Version: New version → Deploy**.
+
+To tell the two apart in one step, open the function dropdown at the top of the editor.
+If `doGet` is listed, the code is fine and the problem is the deployment. If it is not
+listed, the project is not compiling — look at the files.
+
+Names of `.gs` files do not matter, only their contents; `WebApp.gs`, `WebbApp.gs` and
+`Untitled.gs` all work the same. The HTML file is the opposite: it must be named exactly
+`Index`, because `doGet` asks for it by name.
+
 Re-deploy after any edit: **Deploy** → **Manage deployments** → the pencil →
 *Version: New version* → **Deploy**. Editing the files alone does not update the live
 URL.
