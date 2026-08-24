@@ -557,6 +557,15 @@
   var MAX_DAYS = 366;
   var rangeIssue = "";   // set by eachDate, surfaced by recompute
 
+  // Build the ISO string from local calendar fields. Serializing through UTC would land
+  // on the previous day at any positive UTC offset, where local midnight falls before
+  // 00:00Z — that shifted every generated per diem date one day earlier than entered.
+  function toISO(d){
+    return d.getFullYear() + "-" +
+      String(d.getMonth() + 1).padStart(2, "0") + "-" +
+      String(d.getDate()).padStart(2, "0");
+  }
+
   function eachDate(a, b){
     var out = [];
     rangeIssue = "";
@@ -571,7 +580,7 @@
       return out;
     }
     for (var d = start; d <= end && out.length < MAX_DAYS; d.setDate(d.getDate() + 1)){
-      out.push(d.toISOString().slice(0,10));
+      out.push(toISO(d));
     }
     if (d <= end){
       rangeIssue = "This trip spans more than " + MAX_DAYS + " days. Only the first " + MAX_DAYS +
