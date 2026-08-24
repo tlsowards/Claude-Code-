@@ -45,10 +45,10 @@ anything up.
   other expense does need one.
 - **Lodging is reimbursed at what you actually paid.** There is no nightly cap.
   Attach the itemized folio showing a zero balance.
-- **If you drove more than 200 miles round trip,** include a screenshot of what a
-  comparable coach flight would have cost, taken when you booked. Association
-  policy reimburses the lesser of the two. You are always free to drive — this
-  only affects the amount.
+- **If flying was a realistic option and you drove anyway,** include a screenshot
+  of what a comparable coach flight would have cost, taken when you booked.
+  Association policy reimburses the lesser of the two. You are always free to
+  drive — this only affects the amount. Skip this for a local drive.
 - **File within 30 days of getting back.**
 
 Submit it and you will get an emailed copy with the total. If a number looks wrong,

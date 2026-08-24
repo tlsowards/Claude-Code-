@@ -63,32 +63,35 @@ The applicable rate follows **the date the driving occurred**, not the date the
 claim is submitted — so a claim filed in August for a June trip is paid at 72.5¢.
 The form selects the rate from the date entered on each mileage leg.
 
-### On the 100 / 200 mile question
+### On the distance question
 
 Neither the IRS nor GSA varies the per-mile rate by trip distance. There is no
-federal tier at 100 miles, at 200 miles, or anywhere else — the rate is flat.
+federal tier at 100 miles, at 200 miles, or anywhere else — the rate is flat, and
+this form keeps it flat.
 
 What the federal rules *do* contain is a **constructive cost** test: when driving
 is not the most advantageous method of travel, reimbursement is limited to what
-the government would have paid for common carrier. CAFOP policy on this form
-implements that as three distance bands:
+the government would have paid for common carrier. CAFOP applies that as a single
+rule, with no distance test attached:
 
-| Round-trip distance | Treatment |
-| --- | --- |
-| **0 – 100 miles** | Full IRS rate. No comparison, no justification. |
-| **101 – 200 miles** | Full IRS rate. State the business reason for driving in the notes. |
-| **Over 200 miles** | Full IRS rate, but the payable amount is capped at the **lesser of** mileage or a comparable coach airfare plus airport ground transport. |
+> **Mileage is paid at the IRS national rate for the date driven, capped at the
+> cost of a comparable coach itinerary where flying was a realistic option.**
 
-The band is a policy choice, not a legal requirement — the thresholds are set in
-one place at the top of the form's script (`REVIEW_MI`, `LONG_TRIP_MI`) if the
-board wants different numbers. The economics behind 200: at 76¢, a 200-mile round
-trip reimburses $152, which is roughly where a discounted in-state coach fare
-starts to compete.
+The airfare field is optional and always available. Leave it blank for a local
+drive or a destination with no commercial service, and full mileage is paid. Fill
+it in and the lower of the two figures is what gets reimbursed.
 
-Note what the cap does and does not do. A member may always choose to drive; only
-the reimbursement is limited. Driving time, checked bags, and carrying materials
-to the event are legitimate reasons the comparison can be waived — record the
-reason in the notes and have the approver initial it.
+A member may always choose to drive; only the reimbursement is capped. Driving
+time, checked bags, and carrying materials to the event are legitimate reasons the
+comparison should be waived — record the reason in the notes and have the approver
+initial it.
+
+**What this rule does not do.** With no distance threshold, nothing prompts an
+officer to supply an airfare quote — the cap only applies when they enter one. For
+board travel among officers who know each other this is normally fine, and it
+avoids demanding a flight quote for a thirty-mile drive to a local meeting. If the
+board later wants the quote required above some distance, that is a small addition
+to `calculate_` in both forms, not a redesign.
 
 ## Review schedule
 
@@ -102,7 +105,6 @@ Rates live in one block near the top of the form's `<script>`:
 ```js
 var MIE = 68, MIE_PARTIAL = 51;
 var MEAL = { b:16, l:19, d:28 };
-var LONG_TRIP_MI = 200, REVIEW_MI = 100;
 var MILEAGE = [ { from:"2026-07-01", rate:0.76, label:"76.0¢" }, … ];
 ```
 

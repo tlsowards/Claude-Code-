@@ -4,7 +4,7 @@
  * Google Forms cannot calculate. This script closes that gap: the Form collects
  * only raw facts (dates, miles, nights, rate paid, meals provided), and everything
  * derived — the per diem schedule, the mileage rate for the date driven, the
- * over-200-mile airfare comparison, the totals — is computed here on submit,
+ * airfare cap on mileage, the totals — is computed here on submit,
  * logged to a spreadsheet, and emailed to the treasurer as a finished claim.
  *
  * Setup: see SETUP.md. Short version — paste this into a new project at
@@ -34,8 +34,6 @@ var MILEAGE = [
   { from: '2026-01-01', rate: 0.725 },
   { from: '2025-01-01', rate: 0.70  }
 ];
-var REVIEW_MI    = 100;   // above this, state why driving was chosen
-var LONG_TRIP_MI = 200;   // above this, cap at comparable coach airfare
 
 // Question titles. Responses are matched by title, so if you rename a question
 // in the Form editor, rename it here too.
@@ -121,9 +119,9 @@ function setUp() {
       .setRequired(false);
   numberItem_(form, Q.MILES, 'Total round-trip miles.', false);
   numberItem_(form, Q.AIRFARE,
-    'Required only if you drove more than ' + LONG_TRIP_MI + ' miles round trip. Quote a comparable ' +
-    'coach itinerary plus airport parking or ground transport — over ' + LONG_TRIP_MI + ' miles, ' +
-    'mileage is reimbursed at the lesser of the two. Leave blank if you drove less than that.', false);
+    'Only if flying was a realistic option for this trip. Quote a comparable coach itinerary plus ' +
+    'airport parking or ground transport — mileage is reimbursed at the lesser of the two. Leave ' +
+    'blank for a local drive or where no commercial service reaches the destination.', false);
   numberItem_(form, Q.AIR, '', false);
   numberItem_(form, Q.BAG, '', false);
   numberItem_(form, Q.GROUND, '', false);
@@ -258,7 +256,7 @@ function calculate_(a) {
                  Math.max(0, c.days - 1) + ').');
   }
 
-  // Mileage: rate by date driven; over 200 miles, capped at the constructive cost.
+  // Mileage: the IRS national rate for the date driven, capped at what flying would have cost.
   c.miles = num_(a[Q.MILES]);
   var driven = parseDate_(a[Q.DRIVE_DATE]) || depart;
   c.mileageRate = rateFor_(driven);
@@ -266,24 +264,13 @@ function calculate_(a) {
   c.mileage = c.mileageFull;
   c.constructive = num_(a[Q.AIRFARE]);
 
-  if (c.miles > LONG_TRIP_MI) {
-    if (c.constructive <= 0) {
-      c.flags.push('REVIEW: ' + c.miles + ' miles is over the ' + LONG_TRIP_MI +
-                   '-mile threshold but no airfare comparison was given. Mileage shown at the full ' +
-                   'rate — get the quote before paying.');
-    } else if (c.constructive < c.mileageFull) {
-      c.mileage = c.constructive;
-      c.mileageNote = 'Capped at the comparable air itinerary (' + money_(c.constructive) +
-                      ') instead of ' + money_(c.mileageFull) + ' of mileage.';
-    } else {
-      c.mileageNote = 'Mileage of ' + money_(c.mileageFull) + ' is at or below the comparable air ' +
-                      'itinerary (' + money_(c.constructive) + '), so it is payable in full.';
-    }
-  } else if (c.miles > REVIEW_MI) {
-    c.mileageNote = 'Over ' + REVIEW_MI + ' miles — reason for driving should be in the notes.';
-    if (!String(a[Q.NOTES] || '').trim()) {
-      c.flags.push(c.miles + ' miles driven with no reason given in the notes.');
-    }
+  if (c.constructive > 0 && c.constructive < c.mileageFull) {
+    c.mileage = c.constructive;
+    c.mileageNote = 'Capped at the comparable air itinerary (' + money_(c.constructive) +
+                    ') instead of ' + money_(c.mileageFull) + ' of mileage.';
+  } else if (c.constructive > 0) {
+    c.mileageNote = 'Mileage of ' + money_(c.mileageFull) + ' is at or below the comparable air ' +
+                    'itinerary (' + money_(c.constructive) + '), so it is payable in full.';
   }
 
   c.otherTransport = num_(a[Q.AIR]) + num_(a[Q.BAG]) + num_(a[Q.GROUND]) +
@@ -466,7 +453,7 @@ function emailBody_(a, c, email) {
   body += '<p style="margin:20px 0 0;font-size:11px;color:#77879E;border-top:1px solid ' + rule + ';padding-top:12px">' +
     'Meals paid at the GSA standard CONUS rate (' + money_(MIE) + '/day, ' + money_(MIE_PARTIAL) +
     ' on travel days). Lodging at actual cost, no ceiling. Mileage at the IRS rate for the date driven. ' +
-    'Over ' + LONG_TRIP_MI + ' miles round trip, mileage is capped at a comparable coach itinerary.' +
+    'Where flying was an option and cost less, mileage is capped at that figure.' +
     '</p></div></div>';
 
   return body;

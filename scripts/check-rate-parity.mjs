@@ -48,8 +48,6 @@ const a = read(FORM), b = read(GS);
 const checks = [
   ['MIE',          scalar(a, 'MIE', FORM),          scalar(b, 'MIE', GS)],
   ['MIE_PARTIAL',  scalar(a, 'MIE_PARTIAL', FORM),  scalar(b, 'MIE_PARTIAL', GS)],
-  ['REVIEW_MI',    scalar(a, 'REVIEW_MI', FORM),    scalar(b, 'REVIEW_MI', GS)],
-  ['LONG_TRIP_MI', scalar(a, 'LONG_TRIP_MI', FORM), scalar(b, 'LONG_TRIP_MI', GS)],
   ['MEAL',         JSON.stringify(meals(a, FORM)),  JSON.stringify(meals(b, GS))],
   ['MILEAGE',      mileage(a, FORM).join(', '),     mileage(b, GS).join(', ')]
 ];

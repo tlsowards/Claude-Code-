@@ -317,12 +317,12 @@
       <div class="rate">
         <dt>Mileage &mdash; POV</dt>
         <dd>72.5&cent; &rarr; 76&cent;</dd>
-        <small>72.5&cent;/mi through 30 Jun 2026; 76&cent;/mi from 1 Jul 2026. Flat &mdash; no distance tiers.</small>
+        <small>72.5&cent;/mi through 30 Jun 2026; 76&cent;/mi from 1 Jul 2026. National rate, flat at any distance.</small>
       </div>
       <div class="rate">
-        <dt>Long-trip test</dt>
-        <dd>200 mi</dd>
-        <small>Over 200 miles round trip, mileage is capped at comparable coach airfare.</small>
+        <dt>Mileage cap</dt>
+        <dd>Airfare</dd>
+        <small>Where flying was an option and cost less, mileage is paid at that lower figure.</small>
       </div>
     </dl>
   </section>
@@ -391,7 +391,7 @@
 
       <div class="note" id="mileNote"></div>
 
-      <div id="compareWrap" hidden>
+      <div id="compareWrap">
         <div class="row tight">
           <div class="f">
             <label for="airfare">Comparable coach airfare ($)</label>
@@ -406,7 +406,7 @@
             <output id="constructive" class="hint" style="padding-top:.5rem">&mdash;</output>
           </div>
         </div>
-        <p class="hint" style="margin:.5rem 0 0">Quote captured at booking time from any two carriers, dated screenshot attached. Leave blank only if no commercial service reaches the destination &mdash; then note why below.</p>
+        <p class="hint" style="margin:.5rem 0 0">Leave blank when flying was never a realistic option &mdash; a local drive, or no commercial service to the destination. Where it was an option, quote a comparable coach itinerary priced at booking time and attach the dated screenshot.</p>
       </div>
 
       <div class="row tight">
@@ -510,7 +510,7 @@
   <p class="foot">
     Rate basis: meals follow the GSA FY2026 standard CONUS M&amp;IE rate ($68/day, effective 1 Oct 2025 &ndash; 30 Sep 2026); mileage follows the IRS 2026 standard business rates (72.5&cent;/mi 1 Jan &ndash; 30 Jun 2026; 76&cent;/mi from 1 Jul 2026). Lodging is reimbursed at actual cost with no nightly cap.
     Because the meal per diem is paid at the federal rate and lodging is receipted at actual cost, the whole claim sits inside an accountable plan &mdash; none of it is reportable as income to the member.
-    Neither agency varies the mileage rate by trip distance &mdash; the 200-mile test on this form is CAFOP policy, modeled on the federal constructive-cost rule.
+    Neither agency varies the mileage rate by trip distance, and neither does this form. Capping mileage at the cost of a comparable flight is CAFOP policy, modeled on the federal constructive-cost rule.
     Update this form when FY2027 rates publish in late August 2026.
   </p>
 </div>
@@ -533,7 +533,6 @@
   // inside an accountable plan, so nothing is reportable as income.
   var MIE = 68, MIE_PARTIAL = 51;
   var MEAL = { b:16, l:19, d:28 };
-  var LONG_TRIP_MI = 200, REVIEW_MI = 100;
 
   // IRS standard business mileage rates, newest first.
   var MILEAGE = [
@@ -716,42 +715,29 @@
     var lodging = num($("nights")) * num($("rate")) + num($("tax"));
     setText("lodgesub", money(lodging));
 
-    // mileage
+    // mileage: national rate always, capped at the cost of flying when that is lower
     var mi = mileageTotals();
-    var note = $("mileNote"), compare = $("compareWrap");
+    var note = $("mileNote");
     var claimedMileage = mi.amount;
     var constructive = num($("airfare")) + num($("airground"));
+    setText("constructive", constructive > 0 ? money(constructive) : "—");
 
     note.className = "note";
     if (mi.miles === 0){
-      note.innerHTML = "Rate is set automatically from the date driven: <strong>72.5¢/mi</strong> through 30 June 2026, <strong>76¢/mi</strong> from 1 July 2026. The federal rate does not change with distance.";
-      compare.hidden = true;
-    } else if (mi.miles <= REVIEW_MI){
-      note.className = "note ok";
-      note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles — short trip.</strong> Reimbursed at the full IRS rate, " +
-        money(mi.amount) + ". No airfare comparison required at or under 100 miles round trip.";
-      compare.hidden = true;
-    } else if (mi.miles <= LONG_TRIP_MI){
-      note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles — mid-range trip.</strong> Still reimbursed at the full IRS rate, " +
-        money(mi.amount) + ". Over 100 miles, state the business reason driving was chosen in the notes; no cost comparison is required until 200 miles.";
-      compare.hidden = true;
-    } else {
-      compare.hidden = false;
+      note.innerHTML = "Mileage is paid at the IRS national rate, taken from the date driven: <strong>72.5¢/mi</strong> through 30 June 2026, <strong>76¢/mi</strong> from 1 July 2026. The rate does not change with distance.";
+    } else if (constructive > 0 && constructive < mi.amount){
+      claimedMileage = constructive;
       note.className = "note flag";
-      var full = money(mi.amount);
-      if (constructive > 0 && constructive < mi.amount){
-        claimedMileage = constructive;
-        note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles — over the 200-mile threshold.</strong> Mileage would be " + full +
-          ", but the comparable air itinerary costs " + money(constructive) + ". CAFOP reimburses the lesser amount: <strong>" +
-          money(constructive) + "</strong>. Driving is still your choice — only the reimbursement is capped.";
-      } else if (constructive > 0){
-        note.className = "note ok";
-        note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles — over the 200-mile threshold.</strong> Mileage of " + full +
-          " is at or below the comparable air itinerary (" + money(constructive) + "), so the full mileage amount is payable.";
-      } else {
-        note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles — over the 200-mile threshold.</strong> The rate stays the same, but the payable amount is capped at the cost of a comparable coach itinerary. Enter the airfare quote below to complete the comparison.";
-      }
-      setText("constructive", constructive > 0 ? money(constructive) : "—");
+      note.innerHTML = "<strong>Capped at the cost of flying.</strong> " + mi.miles.toFixed(1) + " miles at the national rate is " +
+        money(mi.amount) + ", but the comparable air itinerary costs " + money(constructive) +
+        ". CAFOP pays the lesser amount: <strong>" + money(constructive) + "</strong>. Driving is still your choice — only the reimbursement is capped.";
+    } else if (constructive > 0){
+      note.className = "note ok";
+      note.innerHTML = "<strong>Driving was the cheaper option.</strong> " + mi.miles.toFixed(1) + " miles at the national rate is " +
+        money(mi.amount) + ", at or below the comparable air itinerary (" + money(constructive) + "), so the full mileage amount is payable.";
+    } else {
+      note.className = "note ok";
+      note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles at the national rate — " + money(mi.amount) + ".</strong> If flying would have cost less for this trip, enter the fare below and the lower amount is paid instead.";
     }
 
     var transport = claimedMileage + num($("air")) + num($("bag")) + num($("ground")) + num($("parking")) + num($("rental"));

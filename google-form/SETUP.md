@@ -2,7 +2,7 @@
 
 **The thing you need to know first: Google Forms cannot do arithmetic.** It has no
 calculated fields, no per-day per diem schedule, no mileage rate that changes with
-the date driven, no over-200-mile airfare comparison. A plain Google Form would
+the date driven, no airfare cap on mileage. A plain Google Form would
 collect numbers and hand you a spreadsheet of raw answers to total by hand — which
 is most of the work the HTML form was built to remove.
 
@@ -47,9 +47,12 @@ Submit a claim to yourself using the published URL: departure `2026-09-14`,
 return `2026-09-16`, 2 nights at `129` plus `41.28` tax, `240` miles driven
 `2026-09-14`, `24` parking, 1 lunch provided, `275` other, `200` advance.
 
-You should get an email showing **$731.68** due, and a red note that 240 miles is
-over the 200-mile threshold with no airfare comparison given. That figure and that
-flag are the same ones the HTML form produces for the same trip.
+You should get an email showing **$731.68** due, with mileage of $182.40 paid at
+the national rate — no airfare was quoted, so no cap applies. That figure is the
+same one the HTML form produces for the same trip.
+
+To see the cap work, submit it again with `150` in the airfare question. Mileage
+should drop from $182.40 to $150.00 and the total to **$699.28**.
 
 ## What the officer sees, and what you get
 
@@ -60,7 +63,6 @@ rate is or which mileage rate applied in March versus September.
 Your email arrives with a line-item breakdown, the total due, and a
 **Before paying this claim** box that appears when something needs judgment:
 
-- over 200 miles driven with no airfare comparison quoted
 - more provided meals reported than the trip pays for
 - more nights claimed than the travel dates cover
 - other expenses claimed with no description
@@ -91,7 +93,6 @@ var MIE = 68;              // full day meals & incidentals
 var MIE_PARTIAL = 51;      // first and last travel day
 var MEAL = { breakfast: 16, lunch: 19, dinner: 28 };
 var MILEAGE = [ { from: '2026-07-01', rate: 0.76 }, … ];
-var LONG_TRIP_MI = 200;
 ```
 
 **When one changes, change both**, or the printable form and the online form will
