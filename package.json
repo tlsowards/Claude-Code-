@@ -1,0 +1,18 @@
+{
+  "name": "cafop-reimbursement",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CAFOP executive travel reimbursement form, Google Form intake and rate documentation",
+  "scripts": {
+    "test": "npm run test:unit && npm run test:browser",
+    "test:unit": "node tests/appsscript.test.mjs && node tests/e2e.test.mjs",
+    "test:browser": "node tests/form.test.mjs && node tests/webpage.test.mjs",
+    "check": "node scripts/check-rate-parity.mjs && node scripts/build-webapp.mjs --check",
+    "build:webapp": "node scripts/build-webapp.mjs",
+    "build:standalone": "node scripts/build-standalone.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}
