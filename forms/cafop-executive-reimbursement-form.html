@@ -736,8 +736,9 @@
       note.innerHTML = "<strong>Driving was the cheaper option.</strong> " + mi.miles.toFixed(1) + " miles at the national rate is " +
         money(mi.amount) + ", at or below the comparable air itinerary (" + money(constructive) + "), so the full mileage amount is payable.";
     } else {
-      note.className = "note ok";
-      note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles at the national rate — " + money(mi.amount) + ".</strong> If flying would have cost less for this trip, enter the fare below and the lower amount is paid instead.";
+      // Neutral, not "ok" — nothing has been compared yet, so don't dress it as verified.
+      note.className = "note";
+      note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles at the national rate — " + money(mi.amount) + ".</strong> No airfare comparison entered. If flying would have cost less for this trip, enter the fare below and the lower amount is paid instead.";
     }
 
     var transport = claimedMileage + num($("air")) + num($("bag")) + num($("ground")) + num($("parking")) + num($("rental"));

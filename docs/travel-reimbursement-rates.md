@@ -126,10 +126,20 @@ rate card near the top of the markup, which is written out in plain text.
 - **The form is authored as an artifact fragment**, so it deliberately carries no
   `<!DOCTYPE>`, `<html>`, `<head>`, or `<body>` — the hosting layer supplies
   them. Opened straight from disk it therefore renders in quirks mode. Measured
-  effect is 19px of document height and no box-model differences, but a
-  standalone distribution copy should be wrapped in an HTML5 skeleton. The
+  effect is 19px of document height and no box-model differences, and the
   `charset` and `viewport` meta tags are honored from the top of the file either
   way, so encoding and mobile layout are correct in both paths.
+
+  For a copy to email or hand out, build the wrapped version:
+
+  ```
+  node scripts/build-standalone.mjs
+  ```
+
+  It writes `forms/cafop-reimbursement-form.standalone.html` — the same form
+  inside a real HTML5 document, verified to render in standards mode and to
+  produce identical totals. It is generated rather than committed, so there is no
+  second copy to drift out of step, and it is listed in `.gitignore`.
 - **Typefaces load from Google Fonts.** The file is otherwise self-contained, but
   it is not offline-clean: opening it requests fonts from `fonts.googleapis.com`
   and `fonts.gstatic.com`, which discloses the opener's IP and user-agent to
