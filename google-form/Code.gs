@@ -373,7 +373,8 @@ function record_(a, c, email) {
   ]);
   var row = sheet.getLastRow();
   sheet.getRange(row, 10, 1, 9).setNumberFormat('$#,##0.00');
-  sheet.getRange(row, 13).setNumberFormat('0.000');
+  sheet.getRange(row, 12).setNumberFormat('#,##0.0');   // miles, not dollars
+  sheet.getRange(row, 13).setNumberFormat('0.000');     // rate per mile
   sheet.getRange(row, 18).setFontWeight('bold');
   if (c.flags.length) sheet.getRange(row, 1, 1, 20).setBackground('#FBEDED');
 }
