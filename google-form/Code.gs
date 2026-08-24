@@ -376,10 +376,18 @@ function record_(a, c, email) {
   if (c.flags.length) sheet.getRange(row, 1, 1, 20).setBackground('#FBEDED');
 }
 
+/**
+ * Who the claim is from. Deliberately excludes the email: the ledger keeps it in its
+ * own column and the email header appends it, so folding it in here printed it twice.
+ * Falls back to the address only when there is nothing else to identify them by.
+ */
 function nameOf_(a, email) {
-  var given = String(a[Q.NAME] || '').trim();
-  if (given) return given + (a[Q.ROLE] ? ' — ' + a[Q.ROLE] : '');
-  return (a[Q.ROLE] ? a[Q.ROLE] + ' — ' : '') + (email || 'unknown');
+  var given = String(a[Q.NAME] || '').trim();     // web app only
+  var role  = String(a[Q.ROLE]  || '').trim();
+  if (given && role) return given + ' — ' + role;
+  if (given) return given;
+  if (role)  return role;
+  return email || 'unknown';
 }
 
 /** The account claims go to: the configured address, else whoever owns the script. */
