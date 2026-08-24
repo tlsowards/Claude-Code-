@@ -16,8 +16,10 @@
 
 // ---------------------------------------------------------------- configuration
 
-var TREASURER_EMAIL = 'sowardst@sacprobation.org';
-var TREASURER_NAME  = 'Treasurer';
+// Where claims are sent. Leave blank and setUp() uses the Google account that runs it,
+// so the treasurer just runs setUp() from their own account and claims come to them.
+// Set it explicitly only to send claims somewhere other than the owning account.
+var TREASURER_EMAIL = '';
 var FORM_TITLE      = 'CAFOP Executive Travel Reimbursement';
 var COPY_TO_OFFICER = true;   // email the submitting officer their computed total
 
@@ -68,6 +70,7 @@ var Q = {
 
 var PROP_FORM  = 'cafop_form_id';
 var PROP_SHEET = 'cafop_sheet_id';
+var PROP_EMAIL = 'cafop_treasurer_email';
 var LEDGER     = 'Calculated claims';
 
 // ---------------------------------------------------------------------- set up
@@ -159,6 +162,7 @@ function setUp() {
   var props = PropertiesService.getScriptProperties();
   props.setProperty(PROP_FORM, form.getId());
   props.setProperty(PROP_SHEET, ss.getId());
+  props.setProperty(PROP_EMAIL, treasurer_());
 
   ScriptApp.getProjectTriggers().forEach(function (t) {
     if (t.getHandlerFunction() === 'onFormSubmit') ScriptApp.deleteTrigger(t);
@@ -168,7 +172,7 @@ function setUp() {
   Logger.log('Send officers this link:  ' + form.getPublishedUrl());
   Logger.log('Edit the form here:       ' + form.getEditUrl());
   Logger.log('Submissions land here:    ' + ss.getUrl());
-  Logger.log('Claims are emailed to:    ' + TREASURER_EMAIL);
+  Logger.log('Claims are emailed to:    ' + treasurer_());
 }
 
 function textItem_(form, title, help, required) {
@@ -189,8 +193,8 @@ function ledger_(ss) {
     sheet.appendRow(['Submitted', 'Officer', 'Email', 'Role', 'Purpose', 'Destination',
                      'Depart', 'Return', 'Days', 'Lodging', 'Mileage payable', 'Miles',
                      'Rate', 'Other transport', 'Per diem', 'Other', 'Advance',
-                     'DUE TO OFFICER', 'Flags']);
-    sheet.getRange(1, 1, 1, 19).setFontWeight('bold').setBackground('#0A2A57').setFontColor('#FFFFFF');
+                     'DUE TO OFFICER', 'Certified', 'Flags']);
+    sheet.getRange(1, 1, 1, 20).setFontWeight('bold').setBackground('#0A2A57').setFontColor('#FFFFFF');
     sheet.setFrozenRows(1);
   }
   return sheet;
@@ -289,6 +293,19 @@ function calculate_(a) {
   c.advance   = num_(a[Q.ADVANCE]);
   c.due = c.lodging + c.transport + c.perDiem + c.other - c.advance;
 
+  var NUMERIC = [Q.NIGHTS, Q.ROOM_RATE, Q.ROOM_TAX, Q.BREAKFASTS, Q.LUNCHES, Q.DINNERS,
+                 Q.MILES, Q.AIRFARE, Q.AIR, Q.BAG, Q.GROUND, Q.PARKING, Q.RENTAL,
+                 Q.OTHER_AMT, Q.ADVANCE];
+  NUMERIC.forEach(function (key) {
+    if (!looksNumeric_(a[key])) {
+      c.flags.push('REVIEW: "' + key + '" was entered as "' + a[key] +
+                   '", which is not a number. It was counted as $0.00.');
+    }
+  });
+
+  c.certified = Array.isArray(a[Q.CERTIFY]) ? a[Q.CERTIFY].length > 0 : !!a[Q.CERTIFY];
+  if (!c.certified) c.flags.push('REVIEW: the certification was not checked.');
+
   if (c.other > 0 && !String(a[Q.OTHER_DESC] || '').trim()) {
     c.flags.push('Other expenses claimed with no description.');
   }
@@ -320,9 +337,18 @@ function rateFor_(date) {
   return MILEAGE[0].rate;
 }
 
+/** Blank and unparseable both read as 0. Use looksNumeric_ to tell them apart. */
 function num_(v) {
-  var n = parseFloat(String(v == null ? '' : v).replace(/[^0-9.\-]/g, ''));
-  return isFinite(n) && n > 0 ? n : 0;
+  var raw = String(v == null ? '' : v).trim().replace(/[$,\s]/g, '');
+  var n = parseFloat(raw);
+  return looksNumeric_(v) && isFinite(n) && n > 0 ? n : 0;
+}
+
+/** True when the value is empty or a clean number. False means the officer typed something
+ *  parseFloat would silently truncate — "1-2-3" reads as 1, which on a money claim is wrong. */
+function looksNumeric_(v) {
+  var raw = String(v == null ? '' : v).trim().replace(/[$,\s]/g, '');
+  return raw === '' || /^-?(\d+\.?\d*|\.\d+)$/.test(raw);
 }
 
 function money_(n) {
@@ -343,17 +369,24 @@ function record_(a, c, email) {
     new Date(), nameOf_(a, email), email, a[Q.ROLE] || '', a[Q.PURPOSE] || '', a[Q.DEST] || '',
     a[Q.DEPART] || '', a[Q.RETURN] || '', c.days, c.lodging, c.mileage, c.miles,
     c.mileageRate, c.otherTransport, c.perDiem, c.other, c.advance, c.due,
-    c.flags.join(' | ')
+    c.certified ? 'yes' : 'NO', c.flags.join(' | ')
   ]);
   var row = sheet.getLastRow();
   sheet.getRange(row, 10, 1, 9).setNumberFormat('$#,##0.00');
   sheet.getRange(row, 13).setNumberFormat('0.000');
   sheet.getRange(row, 18).setFontWeight('bold');
-  if (c.flags.length) sheet.getRange(row, 1, 1, 19).setBackground('#FBEDED');
+  if (c.flags.length) sheet.getRange(row, 1, 1, 20).setBackground('#FBEDED');
 }
 
 function nameOf_(a, email) {
   return (a[Q.ROLE] ? a[Q.ROLE] + ' — ' : '') + (email || 'unknown');
+}
+
+/** The account claims go to: the configured address, else whoever owns the script. */
+function treasurer_() {
+  return TREASURER_EMAIL ||
+         PropertiesService.getScriptProperties().getProperty(PROP_EMAIL) ||
+         Session.getEffectiveUser().getEmail();
 }
 
 function notify_(a, c, email) {
@@ -361,7 +394,7 @@ function notify_(a, c, email) {
                 money_(c.due) + (c.flags.length ? ' — NEEDS REVIEW' : '');
   var html = emailBody_(a, c, email);
 
-  MailApp.sendEmail({ to: TREASURER_EMAIL, subject: subject, htmlBody: html, name: 'CAFOP Reimbursement Form' });
+  MailApp.sendEmail({ to: treasurer_(), subject: subject, htmlBody: html, name: 'CAFOP Reimbursement Form' });
 
   if (COPY_TO_OFFICER && email) {
     MailApp.sendEmail({

@@ -22,8 +22,11 @@ expect and can flag a mistake before you cut the check.
 2. Delete the sample `function myFunction() {}` and paste in the entire contents of
    [`Code.gs`](Code.gs).
 3. Rename the project something like `CAFOP Reimbursement` (click *Untitled project*).
-4. Check the top of the file. `TREASURER_EMAIL` is already set to
-   `sowardst@sacprobation.org` — change it if claims should go somewhere else.
+4. Check the top of the file. `TREASURER_EMAIL` is deliberately **blank**: claims go to
+   whichever Google account runs `setUp`, so if the treasurer sets this up from their own
+   account, claims come to them with nothing to configure. Fill it in only to send claims
+   somewhere other than the owning account. It is left blank in the repository on purpose —
+   this is a public repository, and an address typed in here is published with it.
 5. In the function dropdown at the top, select **`setUp`**, then click **Run**.
 6. Google will ask you to authorize. Click through **Review permissions** → your
    account → **Advanced** → **Go to (project name)** → **Allow**. The unverified-app
@@ -61,6 +64,8 @@ Your email arrives with a line-item breakdown, the total due, and a
 - more provided meals reported than the trip pays for
 - more nights claimed than the travel dates cover
 - other expenses claimed with no description
+- an amount that was not a readable number, which is counted as $0.00 rather than guessed at
+- a submission where the certification box somehow was not ticked
 - a return date before the departure date
 - an advance larger than the claim, meaning the officer owes CAFOP
 
@@ -94,18 +99,30 @@ quote different totals for the same trip. `docs/travel-reimbursement-rates.md`
 lists the dates the federal figures get republished — GSA in late August, IRS in
 December.
 
+There is a check for this. From the repository root:
+
+```
+node scripts/check-rate-parity.mjs
+```
+
+It reads the constants out of both files, compares them, and fails if they disagree. It
+also verifies the two internal rules the rates have to satisfy: that the travel-day rate is
+exactly 75% of the full rate, and that the three meal components plus the $5 incidentals
+allowance add up to the daily rate. Run it after any rate change.
+
 If you rename a question in the Form editor, rename it in the `Q` block too. The
 script matches answers by question title, so a renamed question stops being read
 and silently drops out of the total.
 
 ## Two things worth deciding before you launch
 
-**Where claims land.** `sowardst@sacprobation.org` is a Sacramento County address.
-Association financial records sent to a county mailbox may fall under county
-retention policy and public-records requests, and many associations deliberately
-keep union and association business on a non-employer account for that reason.
-Entirely your call — change `TREASURER_EMAIL` to whatever address you prefer, and
-consider whether the officers' confirmation copies should go to work addresses too.
+**Where claims land.** Whatever account runs `setUp` receives every claim. If that is a
+county or other employer address, association financial records land in an employer
+mailbox, where they may fall under that employer's retention policy and public-records
+obligations — many associations keep union and association business on a non-employer
+account for exactly that reason. Entirely your call: run `setUp` from the account you want
+claims in, or set `TREASURER_EMAIL` explicitly. Officers' confirmation copies go to
+whatever address they submit from.
 
 **Which form is the record.** You now have two. A reasonable split:
 
