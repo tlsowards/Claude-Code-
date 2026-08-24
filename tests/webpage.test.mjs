@@ -20,7 +20,14 @@ const fails=[];
 function eq(l,g,w){const ok=String(g)===String(w); if(!ok)fails.push(l); console.log(`${ok?'PASS':'FAIL'}  ${l} = ${g}${ok?'':`  (want ${w})`}`);}
 const errs=[]; p.on('pageerror',e=>errs.push(String(e)));
 // Blocked font requests are the network's problem, not the page's.
-p.on('console', m => { if (m.type()==='error' && !/Failed to load resource|ERR_(CONNECTION|NAME|INTERNET|BLOCKED|NETWORK)|net::/i.test(m.text())) errs.push('console: '+m.text()); });
+// Only the webfonts may fail — this sandbox blocks them and the page falls back.
+// Match the request URL, so a genuine load failure is still reported.
+const FONT_HOSTS = /fonts\.(googleapis|gstatic)\.com/;
+p.on('console', m => {
+  if (m.type() !== 'error') return;
+  if (FONT_HOSTS.test(m.location()?.url || '') || FONT_HOSTS.test(m.text())) return;
+  errs.push('console: ' + m.text());
+});
 
 // stub the Apps Script bridge and capture what the page would send
 await p.addInitScript(() => {

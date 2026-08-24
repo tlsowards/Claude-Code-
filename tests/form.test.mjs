@@ -26,11 +26,15 @@ for (const scheme of ['light','dark']) {
   // Script errors are the point. A blocked font request is the network's problem, not
   // the page's — the CSS carries fallbacks — and would otherwise fail this suite on any
   // machine without outbound access to Google Fonts.
-  const isNetworkNoise = (t) => /Failed to load resource|ERR_(CONNECTION|NAME|INTERNET|BLOCKED|NETWORK)|net::/i.test(t);
+  // Only the webfonts are allowed to fail: this sandbox blocks them, and the page is
+  // designed to fall back. Anything else failing to load is a real failure and must
+  // not be swallowed, so match the request URL rather than the shape of the message.
+  const FONT_HOSTS = /fonts\.(googleapis|gstatic)\.com/;
+  const isFontNoise = (m) => FONT_HOSTS.test(m.location()?.url || '') || FONT_HOSTS.test(m.text());
   p.on('pageerror', e => errs.push(String(e)));
   p.on('console', m => {
     if (m.type() !== 'error') return;
-    if (isNetworkNoise(m.text())) return;
+    if (isFontNoise(m)) return;
     errs.push('console: ' + m.text());
   });
   await p.goto(FILE);
