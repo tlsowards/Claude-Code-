@@ -519,8 +519,15 @@
         that I have not been and will not be reimbursed for them from any other source.</span>
       </label>
 
-      <p class="hint" id="receiptNote">Attach receipts by replying to the confirmation email you
-      receive. Meals need no receipts &mdash; they are paid per diem.</p>
+      <div class="f">
+        <label for="receipts">Receipts</label>
+        <input type="file" id="receipts" multiple
+               accept="image/*,application/pdf,.heic,.doc,.docx">
+        <p class="hint" style="margin:.35rem 0 0">Hotel folio, registration, parking, and the
+        airfare screenshot if you are claiming a long drive. Photos or PDFs both work, and you
+        can pick several at once. <b>Meals need no receipts</b> &mdash; they are paid per diem.</p>
+        <output id="fileList" class="hint"></output>
+      </div>
 
       <div class="submit-row">
         <button type="button" class="btn primary" id="send">Submit claim</button>
@@ -583,6 +590,7 @@
       });
 
       return {
+        receipts: pending,
         name: val("name"), role: val("role"), email: val("email"),
         purpose: val("purpose"), dest: val("dest"),
         depart: val("depart"), ret: val("ret"),
@@ -594,6 +602,65 @@
         other: other, advance: val("advance"), notes: val("notes"),
         certified: document.getElementById("certify").checked
       };
+    }
+
+    // Read files once, when picked, so submitting is instant rather than stalling on a
+    // large photo. Each becomes {name, mimeType, data} with data base64-encoded.
+    var pending = [];
+    var MAX_FILE = 10 * 1024 * 1024;      // one file
+    var MAX_TOTAL = 25 * 1024 * 1024;     // all of them together
+
+    var picker = document.getElementById("receipts");
+    var fileList = document.getElementById("fileList");
+
+    function readFile(file){
+      return new Promise(function(resolve, reject){
+        var r = new FileReader();
+        r.onload = function(){
+          // strip the "data:...;base64," prefix — the server wants the payload only
+          resolve({ name:file.name, mimeType:file.type || "application/octet-stream",
+                    size:file.size, data:String(r.result).split(",")[1] });
+        };
+        r.onerror = function(){ reject(new Error("Could not read " + file.name)); };
+        r.readAsDataURL(file);
+      });
+    }
+
+    if (picker){
+      picker.addEventListener("change", function(){
+        var chosen = Array.prototype.slice.call(picker.files || []);
+        var err = document.getElementById("sendErr");
+        hide(err);
+        pending = [];
+        fileList.textContent = "";
+        if (!chosen.length) return;
+
+        var tooBig = chosen.filter(function(f){ return f.size > MAX_FILE; });
+        var total = chosen.reduce(function(t,f){ return t + f.size; }, 0);
+        if (tooBig.length){
+          show(err, "<strong>Too large to attach.</strong> " +
+            tooBig.map(function(f){ return f.name; }).join(", ") +
+            " is over 10 MB. Photograph it at a lower resolution, or email it separately.");
+          picker.value = ""; return;
+        }
+        if (total > MAX_TOTAL){
+          show(err, "<strong>Too much at once.</strong> Those files come to " +
+            Math.round(total/1048576) + " MB; the limit is 25 MB. Submit the claim, then " +
+            "email the rest.");
+          picker.value = ""; return;
+        }
+
+        fileList.textContent = "Reading " + chosen.length + " file(s)…";
+        Promise.all(chosen.map(readFile)).then(function(files){
+          pending = files;
+          fileList.textContent = files.length + " attached: " +
+            files.map(function(f){ return f.name; }).join(", ");
+        }).catch(function(e){
+          pending = [];
+          fileList.textContent = "";
+          show(err, "<strong>Could not read those files.</strong> " + e.message);
+        });
+      });
     }
 
     function missing(p){
@@ -636,6 +703,7 @@
             return;
           }
           show(ok, "<strong>Claim filed &mdash; " + res.due + " due to you.</strong> " +
+                   (res.receipts ? res.receipts + " receipt(s) went with it. " : "") +
                    (res.copiedTo ? "A copy is on its way to " + res.copiedTo + ". " : "") +
                    "Keep this page open if you want to print it for your records.");
           try { localStorage.removeItem("cafop-exp-01"); } catch (e) {}

@@ -201,8 +201,8 @@ function ledger_(ss) {
     sheet.appendRow(['Submitted', 'Officer', 'Email', 'Role', 'Purpose', 'Destination',
                      'Depart', 'Return', 'Days', 'Lodging', 'Mileage payable', 'Miles',
                      'Rate', 'Other transport', 'Per diem', 'Other', 'Advance',
-                     'DUE TO OFFICER', 'Certified', 'Flags']);
-    sheet.getRange(1, 1, 1, 20).setFontWeight('bold').setBackground('#0A2A57').setFontColor('#FFFFFF');
+                     'DUE TO OFFICER', 'Certified', 'Receipts', 'Flags']);
+    sheet.getRange(1, 1, 1, 21).setFontWeight('bold').setBackground('#0A2A57').setFontColor('#FFFFFF');
     sheet.setFrozenRows(1);
   }
   return sheet;
@@ -367,7 +367,7 @@ function fmtDate_(d) {
 
 // --------------------------------------------------------------- record & send
 
-function record_(a, c, email) {
+function record_(a, c, email, receipts) {
   var id = PropertiesService.getScriptProperties().getProperty(PROP_SHEET);
   if (!id) return;
   var sheet = ledger_(SpreadsheetApp.openById(id));
@@ -375,14 +375,20 @@ function record_(a, c, email) {
     new Date(), nameOf_(a, email), email, a[Q.ROLE] || '', a[Q.PURPOSE] || '', a[Q.DEST] || '',
     a[Q.DEPART] || '', a[Q.RETURN] || '', c.days, c.lodging, c.mileage, c.miles,
     c.mileageRate, c.otherTransport, c.perDiem, c.other, c.advance, c.due,
-    c.certified ? 'yes' : 'NO', c.flags.join(' | ')
+    c.certified ? 'yes' : 'NO', receiptCell_(receipts), c.flags.join(' | ')
   ]);
   var row = sheet.getLastRow();
   sheet.getRange(row, 10, 1, 9).setNumberFormat('$#,##0.00');
   sheet.getRange(row, 12).setNumberFormat('#,##0.0');   // miles, not dollars
   sheet.getRange(row, 13).setNumberFormat('0.000');     // rate per mile
   sheet.getRange(row, 18).setFontWeight('bold');
-  if (c.flags.length) sheet.getRange(row, 1, 1, 20).setBackground('#FBEDED');
+  if (c.flags.length) sheet.getRange(row, 1, 1, 21).setBackground('#FBEDED');
+}
+
+/** One clickable link per receipt, or a plain note when there are none. */
+function receiptCell_(receipts) {
+  if (!receipts || !receipts.length) return 'none attached';
+  return receipts.map(function (r) { return r.name + ' — ' + r.url; }).join('\n');
 }
 
 /**
@@ -406,17 +412,20 @@ function treasurer_() {
          Session.getEffectiveUser().getEmail();
 }
 
-function notify_(a, c, email) {
+function notify_(a, c, email, receipts) {
   var subject = 'CAFOP reimbursement — ' + (a[Q.ROLE] || 'officer') + ' — ' +
                 money_(c.due) + (c.flags.length ? ' — NEEDS REVIEW' : '');
-  var html = emailBody_(a, c, email);
+  var html = emailBody_(a, c, email, receipts);
+  var files = attachments_(receipts);
 
   var mail = { to: treasurer_(), subject: subject, htmlBody: html, name: 'CAFOP Reimbursement Form' };
   var copies = (ALSO_NOTIFY || []).map(function (e) { return String(e).trim(); }).filter(String);
   if (copies.length) mail.cc = copies.join(',');
+  if (files.length) mail.attachments = files;
   MailApp.sendEmail(mail);
 
   if (COPY_TO_OFFICER && email) {
+    // The officer already has their own receipts; send them the figures, not the files back.
     MailApp.sendEmail({
       to: email,
       subject: 'Your CAFOP reimbursement claim — ' + money_(c.due),
@@ -426,7 +435,7 @@ function notify_(a, c, email) {
   }
 }
 
-function emailBody_(a, c, email) {
+function emailBody_(a, c, email, receipts) {
   var navy = '#0A2A57', gold = '#C9A227', rule = '#D5DFEB', muted = '#4B5D75';
   var who = nameOf_(a, email);
   var rows = [
@@ -481,6 +490,12 @@ function emailBody_(a, c, email) {
     c.flags.forEach(function (f) { body += '<li>' + esc_(f) + '</li>'; });
     body += '</ul></div>';
   }
+  if (receipts && receipts.length) {
+    body += '<p style="margin:16px 0 0;font-size:13px;color:' + muted + '"><b>Receipts:</b> ' +
+            receipts.map(function (r) {
+              return '<a href="' + esc_(r.url) + '" style="color:' + navy + '">' + esc_(r.name) + '</a>';
+            }).join(' &middot; ') + '</p>';
+  }
   if (String(a[Q.NOTES] || '').trim()) {
     body += '<p style="margin:16px 0 0;font-size:13px;color:' + muted + '"><b>Officer notes:</b> ' +
             esc_(a[Q.NOTES]) + '</p>';
@@ -493,6 +508,24 @@ function emailBody_(a, c, email) {
     '</p></div></div>';
 
   return body;
+}
+
+/**
+ * Receipt blobs for the treasurer's email. Gmail rejects a message over 25MB, so past
+ * a conservative ceiling the files are left in Drive and the email carries the links —
+ * losing the attachments is better than losing the whole notification.
+ */
+function attachments_(receipts) {
+  var LIMIT = 20 * 1024 * 1024;
+  var out = [], total = 0;
+  (receipts || []).forEach(function (r) {
+    if (!r.blob) return;
+    var size = r.bytes || 0;
+    if (total + size > LIMIT) return;
+    total += size;
+    out.push(r.blob);
+  });
+  return out;
 }
 
 function esc_(s) {

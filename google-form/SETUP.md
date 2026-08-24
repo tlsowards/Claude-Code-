@@ -132,12 +132,28 @@ scrolls past unnoticed.
 
 ## Receipts
 
-The form includes a **file upload** question, which is the clean way to collect the
-hotel folio. It has one requirement: **file upload only works when respondents are
-signed in to a Google account**, and on a Workspace form they may need to be in
-your domain. If your officers submit from personal Gmail or non-Google addresses,
-`setUp` skips that question automatically and logs that it did — in that case have
-them email receipts to you referencing the trip, and the claim email tells them so.
+**On the web app**, officers pick files at the bottom of the form — photos or PDFs, several
+at once. Each claim gets its own folder inside a Drive folder called
+**CAFOP Reimbursement Receipts**, named for the departure date and the officer, and the
+files are also attached to the email you receive. The spreadsheet row links to each one.
+
+Limits are 10 MB per file and 25 MB per claim, checked in the browser before anything is
+sent, with a plain message saying what to do instead. If a claim's files together exceed
+20 MB the email carries the links rather than the attachments — losing the attachments
+beats losing the notification to a bounced oversized message.
+
+Files land in Drive first. If that fails the submission fails and the officer can retry,
+rather than a claim being recorded with its receipts silently missing.
+
+> **This needs re-authorization.** Saving to Drive is a permission the script did not
+> previously hold, so the first time you deploy this version Google will ask you to
+> approve it again — same **Advanced → Go to … → Allow** path as the first time. Until you
+> do, submissions with files attached will fail.
+
+**On the Google Form**, the built-in file upload question only works when respondents are
+signed in to a Google account, and on a Workspace form they may need to be in your domain.
+If your officers submit from personal addresses, `setUp` skips that question automatically
+and logs that it did; have them email receipts to you referencing the trip.
 
 ## Keeping the two forms in step
 

@@ -35,13 +35,23 @@ function submitClaim(p) {
     var mileage = legTotals_(p.legs);
     var claim = calculate_(a, mileage);
 
-    record_(a, claim, String(p.email || ''));
-    notify_(a, claim, String(p.email || ''));
+    // Save receipts before anything else is written, so a Drive failure surfaces as a
+    // failed submission the officer can retry rather than a claim recorded without them.
+    var receipts = saveReceipts_(p.receipts, nameOf_(a, String(p.email || '')), p.depart);
+
+    record_(a, claim, String(p.email || ''), receipts);
+    notify_(a, claim, String(p.email || ''), receipts);
 
     // Only name an address the officer will actually receive mail at, so the page
     // never promises a copy that COPY_TO_OFFICER has switched off.
     var copiedTo = (COPY_TO_OFFICER && String(p.email || '').trim()) ? String(p.email).trim() : '';
-    return { ok: true, due: money_(claim.due), copiedTo: copiedTo, flags: claim.flags };
+    return {
+      ok: true,
+      due: money_(claim.due),
+      copiedTo: copiedTo,
+      receipts: receipts.length,
+      flags: claim.flags
+    };
   } catch (err) {
     // Surface the reason to the officer rather than a blank failure, and leave a trace
     // in the Executions log for whoever is debugging.
@@ -105,4 +115,46 @@ function legTotals_(legs) {
   });
   if (miles === 0) return null;
   return { miles: miles, mileageFull: amount, rate: rate === -1 ? amount / miles : rate };
+}
+
+
+// ------------------------------------------------------------------- receipts
+
+var PROP_FOLDER = 'cafop_receipts_folder';
+var RECEIPTS_FOLDER = 'CAFOP Reimbursement Receipts';
+
+/**
+ * Writes each uploaded receipt into a per-claim folder in the owner's Drive and returns
+ * [{name, url, bytes, blob}] — url and name for the ledger and the email body, blob for
+ * the attachment. Returns [] when nothing was uploaded.
+ *
+ * Files live in Drive rather than only on the email so the association keeps a durable
+ * record that survives a mailbox being cleared out.
+ */
+function saveReceipts_(files, who, depart) {
+  files = files || [];
+  if (!files.length) return [];
+
+  var parent = receiptsRoot_();
+  var label = (depart || 'undated') + ' ' + (who || 'unknown');
+  var folder = parent.createFolder(label.substring(0, 120));
+
+  return files.map(function (f) {
+    var bytes = Utilities.base64Decode(f.data);
+    var blob = Utilities.newBlob(bytes, f.mimeType || 'application/octet-stream', f.name || 'receipt');
+    var saved = folder.createFile(blob);
+    return { name: saved.getName(), url: saved.getUrl(), bytes: bytes.length, blob: blob };
+  });
+}
+
+/** The one folder everything lands under, created on first use and remembered after. */
+function receiptsRoot_() {
+  var props = PropertiesService.getScriptProperties();
+  var id = props.getProperty(PROP_FOLDER);
+  if (id) {
+    try { return DriveApp.getFolderById(id); } catch (e) { /* deleted — make a new one */ }
+  }
+  var folder = DriveApp.createFolder(RECEIPTS_FOLDER);
+  props.setProperty(PROP_FOLDER, folder.getId());
+  return folder;
 }

@@ -45,7 +45,9 @@ const sandbox = {
     formatString(fmt, n) {
       if (fmt !== '%.2f') throw new Error('unstubbed format: ' + fmt);
       return n.toFixed(2);
-    }
+    },
+    base64Decode: (d) => Buffer.from(String(d), 'base64'),
+    newBlob: (bytes, mime, name) => ({ __blob: true, bytes, mime, name })
   },
   Session: {
     getScriptTimeZone: () => 'America/Los_Angeles',
@@ -64,8 +66,28 @@ const sandbox = {
     })
   },
   MailApp: { sendEmail: o => sent.push(o) },
+  DriveApp: {
+    createFolder: (name) => makeFolder(name),
+    getFolderById: (id) => { if (id === 'gone') throw new Error('deleted'); return makeFolder('root'); }
+  },
   HtmlService: { createHtmlOutputFromFile: () => ({ setTitle(){return this}, addMetaTag(){return this}, setXFrameOptionsMode(){return this} }), XFrameOptionsMode:{ALLOWALL:1} }
 };
+
+const drive = { folders: [], files: [] };
+function makeFolder(name) {
+  drive.folders.push(name);
+  return {
+    getId: () => 'folder-' + drive.folders.length,
+    createFolder: (n) => makeFolder(n),
+    createFile: (blob) => {
+      drive.files.push({ folder: name, name: blob.name, mime: blob.mime });
+      return {
+        getName: () => blob.name,
+        getUrl: () => 'https://drive.example/' + encodeURIComponent(blob.name)
+      };
+    }
+  };
+}
 
 const sheetObj = {
   appendRow: r => sheetRows.push(r),
@@ -131,8 +153,8 @@ function eq(label, got, want) {
 
 const header = sheetRows[0], row = sheetRows[1];
 eq('header written once', sheetRows.length, 2);
-eq('header column count', header.length, 20);
-eq('data column count', row.length, 20);
+eq('header column count', header.length, 21);
+eq('data column count', row.length, 21);
 eq('DUE TO OFFICER is column 18', header.indexOf('DUE TO OFFICER') + 1, 18);
 eq('due amount', row[17].toFixed(2), '731.68');
 eq('lodging', row[9].toFixed(2), '299.28');
@@ -164,7 +186,7 @@ eq('google form header shows role then address',
 
 // ---- web app path: the same trip filed through submitClaim ------------------
 sent.length = 0; sheetRows.length = 1;
-const web = sandbox.submitClaim({
+const webPayload = {
   name:'Dana Whitfield', role:'Treasurer', email:'dana.whitfield@example.org',
   purpose:'Q3 State Board Meeting', dest:'Sacramento, CA',
   depart:'2026-09-14', ret:'2026-09-16',
@@ -174,7 +196,8 @@ const web = sandbox.submitClaim({
   provided:{breakfasts:0, lunches:1, dinners:0},
   other:[{date:'2026-09-15', desc:'Conference registration', amt:'275'}],
   advance:'200', notes:'Carried the board packets.', certified:true
-});
+};
+const web = sandbox.submitClaim({ ...webPayload });
 eq('web app returns ok', web.ok, true);
 eq('web app total matches the printable form', web.due, '$731.68');
 eq('web app wrote a ledger row', sheetRows.length, 2);
@@ -232,6 +255,38 @@ sandbox.onFormSubmit({ response: {
 }});
 eq('script tag escaped, not live', sent[0].htmlBody.includes('<script>alert(1)</script>'), false);
 eq('script tag still readable', sent[0].htmlBody.includes('&lt;script&gt;'), true);
+
+// ---- receipts -------------------------------------------------------------
+sent.length = 0; sheetRows.length = 1; drive.folders = []; drive.files = [];
+props = { cafop_sheet_id: 'sheet123', cafop_treasurer_email: 'treasurer@example.org' };
+
+const withReceipts = sandbox.submitClaim({
+  ...webPayload,
+  receipts: [
+    { name: 'folio.pdf',   mimeType: 'application/pdf', data: Buffer.from('hotel folio').toString('base64') },
+    { name: 'parking.jpg', mimeType: 'image/jpeg',      data: Buffer.from('parking').toString('base64') }
+  ]
+});
+
+eq('submission with receipts succeeds', withReceipts.ok, true);
+eq('receipt count returned to the page', withReceipts.receipts, 2);
+eq('both files written to Drive', drive.files.length, 2);
+eq('filed under one per-claim folder', drive.files[0].folder, drive.files[1].folder);
+eq('folder named for the trip', /2026-09-14/.test(drive.files[0].folder), true);
+eq('treasurer email carries the attachments', (sent[0].attachments || []).length, 2);
+eq('officer copy does not resend their own files', (sent[1].attachments || []).length, 0);
+eq('email links the receipts', sent[0].htmlBody.includes('drive.example'), true);
+eq('ledger row records the links',
+   /folio\.pdf/.test(sheetRows[1][19]) && /parking\.jpg/.test(sheetRows[1][19]), true);
+eq('ledger still 21 columns', sheetRows[1].length, 21);
+eq('flags stayed in the last column', sheetRows[0][20], 'Flags');
+
+// no receipts is the normal case and must stay clean
+sent.length = 0; sheetRows.length = 1; drive.folders = []; drive.files = [];
+sandbox.submitClaim({ ...webPayload });
+eq('no upload creates no Drive folder', drive.folders.length, 0);
+eq('no upload means no attachments', (sent[0].attachments || []).length, 0);
+eq('ledger says so plainly', sheetRows[1][19], 'none attached');
 
 console.log(fails.length ? `\n${fails.length} FAILURE(S)` : '\nALL PASS — end to end');
 process.exit(fails.length ? 1 : 0);
