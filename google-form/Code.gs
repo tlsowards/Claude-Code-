@@ -416,6 +416,7 @@ function notify_(a, c, email) {
 
 function emailBody_(a, c, email) {
   var navy = '#0A2A57', gold = '#C9A227', rule = '#D5DFEB', muted = '#4B5D75';
+  var who = nameOf_(a, email);
   var rows = [
     ['Lodging', c.lodging, c.nights ? c.nights + ' night(s) at ' + money_(c.roomRate) + ' plus tax' : ''],
     ['Mileage', c.mileage, c.miles ? c.miles + ' mi at ' + (c.mileageRate * 100).toFixed(1) + '¢' : ''],
@@ -433,8 +434,10 @@ function emailBody_(a, c, email) {
       'Executive travel reimbursement claim</div>' +
     '</div>' +
     '<div style="padding:20px">' +
-      '<p style="margin:0 0 4px"><b>' + esc_(nameOf_(a, email)) + '</b>' +
-        (email ? ' &middot; ' + esc_(email) : '') + '</p>' +
+      // nameOf_ falls back to the address when there is no name and no role; appending
+      // it again there would print it twice, so only add it when it is not already the name.
+      '<p style="margin:0 0 4px"><b>' + esc_(who) + '</b>' +
+        (email && who !== email ? ' &middot; ' + esc_(email) : '') + '</p>' +
       '<p style="margin:0 0 16px;color:' + muted + ';font-size:14px">' +
         esc_(a[Q.PURPOSE] || '') + (a[Q.DEST] ? ' &middot; ' + esc_(a[Q.DEST]) : '') + '<br>' +
         fmtDate_(parseDate_(a[Q.DEPART])) + ' &ndash; ' + fmtDate_(parseDate_(a[Q.RETURN])) +
