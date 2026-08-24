@@ -1,0 +1,39 @@
+# The printable form and the Google Form each carry their own copy of the reimbursement
+# rates. If only one is updated the failure is silent: two officers filing the same trip
+# get different totals. This makes the drift check automatic rather than remembered.
+name: rate parity
+
+on:
+  pull_request:
+    paths:
+      - 'forms/**'
+      - 'google-form/**'
+      - 'scripts/check-rate-parity.mjs'
+  push:
+    branches: [main]
+    paths:
+      - 'forms/**'
+      - 'google-form/**'
+      - 'scripts/check-rate-parity.mjs'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Compare rates across both forms
+        run: node scripts/check-rate-parity.mjs
+
+  webapp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Index.html matches the printable form
+        run: node scripts/build-webapp.mjs --check

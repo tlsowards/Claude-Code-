@@ -1,0 +1,42 @@
+# The claim maths decides what officers get paid, so it is worth having the assertions
+# run on every change rather than living in someone's terminal history.
+name: tests
+
+on:
+  pull_request:
+    paths:
+      - 'forms/**'
+      - 'google-form/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'package.json'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  unit:
+    name: calculation and submission
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      # These two need nothing installed — they run the Apps Script against stubs.
+      - run: node tests/appsscript.test.mjs
+      - run: node tests/e2e.test.mjs
+
+  browser:
+    name: form in a browser
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: node tests/form.test.mjs
+      - run: node tests/webpage.test.mjs
