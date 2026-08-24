@@ -188,6 +188,12 @@ Bear in mind that everyone on this list sees every claim in full — names, dest
 amounts. That is usually the point for a treasurer and a president, but it is worth being
 deliberate about rather than letting the list grow.
 
+Note the asymmetry with `TREASURER_EMAIL`, which ships blank so that no address is
+published with this repository. `ALSO_NOTIFY` does carry a real one, deliberately: it is
+an association-domain address for a standing officer, which the board is content to have
+visible. Hold that line if the list grows — `cafop.org` addresses can live here, anything
+personal or employer-issued should be added in your own copy rather than committed.
+
 **Where claims land.** Whatever account runs `setUp` receives every claim. If that is a
 county or other employer address, association financial records land in an employer
 mailbox, where they may fall under that employer's retention policy and public-records

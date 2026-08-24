@@ -25,6 +25,11 @@ var COPY_TO_OFFICER = true;   // email the submitting officer their computed tot
 
 // Anyone else who should see every claim. Copied on the treasurer's email rather than
 // sent a separate one, so replies stay in a single thread. Add or remove addresses here.
+//
+// A real address is checked in on purpose, unlike TREASURER_EMAIL which ships blank.
+// This is an association-domain address for a standing officer, not a personal or
+// employer mailbox, and the board is content for it to be visible. Keep that distinction
+// if the list grows: cafop.org addresses here, anything personal set locally instead.
 var ALSO_NOTIFY = ['roger@cafop.org'];
 
 // Meals & incidentals — GSA standard CONUS, FY2026.
