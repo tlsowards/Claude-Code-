@@ -123,6 +123,29 @@ function legTotals_(legs) {
 var PROP_FOLDER = 'cafop_receipts_folder';
 var RECEIPTS_FOLDER = 'CAFOP Reimbursement Receipts';
 
+// Re-checked here as well as in the browser. The page's limits are a courtesy to the
+// officer; these are the ones that actually hold, because anyone can call submitClaim
+// straight from a console and skip the picker entirely.
+var MAX_FILE_BYTES  = 10 * 1024 * 1024;
+var MAX_TOTAL_BYTES = 25 * 1024 * 1024;
+var MAX_FILES       = 20;
+
+// What may be written to Drive and mailed on to the treasurer. The accept= attribute on
+// the file input is a hint the browser can be told to ignore; this is the real gate.
+var ALLOWED_TYPES = [
+  'image/', 'application/pdf', 'text/plain',
+  'application/msword',
+  'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+];
+
+function typeAllowed_(mime) {
+  var m = String(mime || '').toLowerCase();
+  for (var i = 0; i < ALLOWED_TYPES.length; i++) {
+    if (m.indexOf(ALLOWED_TYPES[i]) === 0) return true;
+  }
+  return false;
+}
+
 /**
  * Writes each uploaded receipt into a per-claim folder in the owner's Drive and returns
  * [{name, url, bytes, blob}] — url and name for the ledger and the email body, blob for
@@ -134,16 +157,60 @@ var RECEIPTS_FOLDER = 'CAFOP Reimbursement Receipts';
 function saveReceipts_(files, who, depart) {
   files = files || [];
   if (!files.length) return [];
+  if (files.length > MAX_FILES) {
+    throw new Error(files.length + ' files is more than the ' + MAX_FILES +
+                    ' allowed on one claim. Send the rest by email.');
+  }
+
+  // Decode and check everything before creating a folder, so a rejected claim leaves
+  // nothing behind in Drive.
+  var total = 0;
+  var decoded = files.map(function (f) {
+    var name = String(f.name || 'receipt');
+    if (!typeAllowed_(f.mimeType)) {
+      throw new Error('"' + name + '" is a ' + (f.mimeType || 'unknown') +
+                      ' file. Attach photos, PDFs or Word documents.');
+    }
+    var bytes = Utilities.base64Decode(f.data);
+    if (bytes.length > MAX_FILE_BYTES) {
+      throw new Error('"' + name + '" is ' + Math.round(bytes.length / 1048576) +
+                      ' MB, over the 10 MB limit for one file.');
+    }
+    total += bytes.length;
+    if (total > MAX_TOTAL_BYTES) {
+      throw new Error('Those files come to more than the 25 MB allowed on one claim.');
+    }
+    return { name: name, bytes: bytes, mimeType: f.mimeType };
+  });
 
   var parent = receiptsRoot_();
   var label = (depart || 'undated') + ' ' + (who || 'unknown');
   var folder = parent.createFolder(label.substring(0, 120));
+  shareWith_(folder, [treasurer_()].concat(ALSO_NOTIFY || []));
 
-  return files.map(function (f) {
-    var bytes = Utilities.base64Decode(f.data);
-    var blob = Utilities.newBlob(bytes, f.mimeType || 'application/octet-stream', f.name || 'receipt');
+  return decoded.map(function (d) {
+    var blob = Utilities.newBlob(d.bytes, d.mimeType || 'application/octet-stream', d.name);
     var saved = folder.createFile(blob);
-    return { name: saved.getName(), url: saved.getUrl(), bytes: bytes.length, blob: blob };
+    return { name: saved.getName(), url: saved.getUrl(), bytes: d.bytes.length, blob: blob };
+  });
+}
+
+/**
+ * The folder lives in the Drive of whoever deployed the web app, so everyone else on the
+ * claim email would hit a request-access wall on the links. Add them as viewers instead.
+ * Sharing failing must not fail the claim — the files are attached to the email anyway.
+ */
+function shareWith_(folder, addresses) {
+  var seen = {};
+  (addresses || []).forEach(function (raw) {
+    var address = String(raw || '').trim();
+    if (!address || seen[address]) return;
+    seen[address] = true;
+    try {
+      folder.addViewer(address);
+    } catch (err) {
+      Logger.log('Could not share receipts with ' + address + ': ' + err);
+    }
   });
 }
 

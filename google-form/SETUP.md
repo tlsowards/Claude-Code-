@@ -137,13 +137,23 @@ at once. Each claim gets its own folder inside a Drive folder called
 **CAFOP Reimbursement Receipts**, named for the departure date and the officer, and the
 files are also attached to the email you receive. The spreadsheet row links to each one.
 
-Limits are 10 MB per file and 25 MB per claim, checked in the browser before anything is
-sent, with a plain message saying what to do instead. If a claim's files together exceed
+Limits are 10 MB per file, 25 MB and 20 files per claim, and photos, PDFs, plain text or
+Word documents only. The browser checks first so the officer gets an immediate message,
+and the server checks again because the browser's copy of the rules can be skipped — the
+second check is the one that holds. If a claim's files together exceed
 20 MB the email carries the links rather than the attachments — losing the attachments
 beats losing the notification to a bounced oversized message.
 
 Files land in Drive first. If that fails the submission fails and the officer can retry,
-rather than a claim being recorded with its receipts silently missing.
+rather than a claim being recorded with its receipts silently missing. A claim rejected
+for size or file type leaves nothing behind — the folder is only created once every file
+has passed.
+
+The folder lives in the Drive of whoever deployed the web app, so each claim's folder is
+automatically shared as view-only with the treasurer address and everyone in
+`ALSO_NOTIFY`. Without that they would hit a request-access wall on the links. If you add
+someone to `ALSO_NOTIFY` later, they get access to new claims but not to folders already
+created; share the parent folder with them once to cover the back catalogue.
 
 > **This needs re-authorization.** Saving to Drive is a permission the script did not
 > previously hold, so the first time you deploy this version Google will ask you to

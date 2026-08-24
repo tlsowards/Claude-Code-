@@ -73,12 +73,13 @@ const sandbox = {
   HtmlService: { createHtmlOutputFromFile: () => ({ setTitle(){return this}, addMetaTag(){return this}, setXFrameOptionsMode(){return this} }), XFrameOptionsMode:{ALLOWALL:1} }
 };
 
-const drive = { folders: [], files: [] };
+const drive = { folders: [], files: [], viewers: [] };
 function makeFolder(name) {
   drive.folders.push(name);
   return {
     getId: () => 'folder-' + drive.folders.length,
     createFolder: (n) => makeFolder(n),
+    addViewer: (address) => { drive.viewers.push(address); },
     createFile: (blob) => {
       drive.files.push({ folder: name, name: blob.name, mime: blob.mime });
       return {
@@ -257,7 +258,7 @@ eq('script tag escaped, not live', sent[0].htmlBody.includes('<script>alert(1)</
 eq('script tag still readable', sent[0].htmlBody.includes('&lt;script&gt;'), true);
 
 // ---- receipts -------------------------------------------------------------
-sent.length = 0; sheetRows.length = 1; drive.folders = []; drive.files = [];
+sent.length = 0; sheetRows.length = 1; drive.folders = []; drive.files = []; drive.viewers = [];
 props = { cafop_sheet_id: 'sheet123', cafop_treasurer_email: 'treasurer@example.org' };
 
 const withReceipts = sandbox.submitClaim({
@@ -281,8 +282,40 @@ eq('ledger row records the links',
 eq('ledger still 21 columns', sheetRows[1].length, 21);
 eq('flags stayed in the last column', sheetRows[0][20], 'Flags');
 
+eq('folder shared with treasurer and the cc list',
+   drive.viewers.slice().sort().join(','), 'roger@cafop.org,treasurer@example.org');
+
+// the browser's limits are a courtesy; these are the ones that hold
+const big = (mb) => Buffer.alloc(mb * 1024 * 1024, 1).toString('base64');
+let r = sandbox.submitClaim({ ...webPayload,
+  receipts: [{ name:'huge.jpg', mimeType:'image/jpeg', data: big(11) }] });
+eq('oversized file rejected server-side', r.ok, false);
+eq('and says which file and why', /huge\.jpg.*10 MB/s.test(r.error), true);
+
+r = sandbox.submitClaim({ ...webPayload,
+  receipts: [{ name:'a.jpg', mimeType:'image/jpeg', data: big(9) },
+             { name:'b.jpg', mimeType:'image/jpeg', data: big(9) },
+             { name:'c.jpg', mimeType:'image/jpeg', data: big(9) }] });
+eq('over-total rejected server-side', r.ok, false);
+eq('total message names the 25 MB cap', /25 MB/.test(r.error), true);
+
+r = sandbox.submitClaim({ ...webPayload,
+  receipts: [{ name:'payload.exe', mimeType:'application/x-msdownload', data:'AAA=' }] });
+eq('disallowed file type rejected', r.ok, false);
+eq('type message is plain english', /photos, PDFs or Word/.test(r.error), true);
+
+r = sandbox.submitClaim({ ...webPayload,
+  receipts: Array.from({length:21}, (_,i) => ({ name:`r${i}.jpg`, mimeType:'image/jpeg', data:'AAA=' })) });
+eq('too many files rejected', r.ok, false);
+
+drive.folders = []; drive.files = []; drive.viewers = [];
+r = sandbox.submitClaim({ ...webPayload,
+  receipts: [{ name:'ok.pdf', mimeType:'application/pdf', data:'AAA=' },
+             { name:'bad.exe', mimeType:'application/x-msdownload', data:'AAA=' }] });
+eq('a rejected batch leaves nothing in Drive', drive.folders.length, 0);
+
 // no receipts is the normal case and must stay clean
-sent.length = 0; sheetRows.length = 1; drive.folders = []; drive.files = [];
+sent.length = 0; sheetRows.length = 1; drive.folders = []; drive.files = []; drive.viewers = [];
 sandbox.submitClaim({ ...webPayload });
 eq('no upload creates no Drive folder', drive.folders.length, 0);
 eq('no upload means no attachments', (sent[0].attachments || []).length, 0);
