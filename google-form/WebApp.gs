@@ -13,10 +13,13 @@
  */
 
 function doGet() {
+  // Frame protection is left at the Apps Script default on purpose. This page files
+  // claims and sends money-bearing mail on a button press, so it must not be embeddable
+  // by an arbitrary origin. Only relax this if the form is genuinely being embedded in a
+  // Google Site, and understand what it opens up before you do.
   return HtmlService.createHtmlOutputFromFile('Index')
     .setTitle('CAFOP Executive Reimbursement')
-    .addMetaTag('viewport', 'width=device-width, initial-scale=1')
-    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+    .addMetaTag('viewport', 'width=device-width, initial-scale=1');
 }
 
 /**
@@ -35,12 +38,10 @@ function submitClaim(p) {
     record_(a, claim, String(p.email || ''));
     notify_(a, claim, String(p.email || ''));
 
-    return {
-      ok: true,
-      due: money_(claim.due),
-      sentTo: String(p.email || '').trim() || treasurer_(),
-      flags: claim.flags
-    };
+    // Only name an address the officer will actually receive mail at, so the page
+    // never promises a copy that COPY_TO_OFFICER has switched off.
+    var copiedTo = (COPY_TO_OFFICER && String(p.email || '').trim()) ? String(p.email).trim() : '';
+    return { ok: true, due: money_(claim.due), copiedTo: copiedTo, flags: claim.flags };
   } catch (err) {
     // Surface the reason to the officer rather than a blank failure, and leave a trace
     // in the Executions log for whoever is debugging.

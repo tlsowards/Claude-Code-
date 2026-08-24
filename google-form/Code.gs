@@ -425,7 +425,8 @@ function emailBody_(a, c, email) {
       'Executive travel reimbursement claim</div>' +
     '</div>' +
     '<div style="padding:20px">' +
-      '<p style="margin:0 0 4px"><b>' + esc_(a[Q.ROLE] || 'Officer') + '</b> — ' + esc_(email) + '</p>' +
+      '<p style="margin:0 0 4px"><b>' + esc_(nameOf_(a, email)) + '</b>' +
+        (email ? ' &middot; ' + esc_(email) : '') + '</p>' +
       '<p style="margin:0 0 16px;color:' + muted + ';font-size:14px">' +
         esc_(a[Q.PURPOSE] || '') + (a[Q.DEST] ? ' &middot; ' + esc_(a[Q.DEST]) : '') + '<br>' +
         fmtDate_(parseDate_(a[Q.DEPART])) + ' &ndash; ' + fmtDate_(parseDate_(a[Q.RETURN])) +

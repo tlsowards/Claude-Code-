@@ -127,8 +127,8 @@
             return;
           }
           show(ok, "<strong>Claim filed &mdash; " + res.due + " due to you.</strong> " +
-                   "A copy is on its way to " + res.sentTo + ". Keep this page open if you " +
-                   "want to print it for your records.");
+                   (res.copiedTo ? "A copy is on its way to " + res.copiedTo + ". " : "") +
+                   "Keep this page open if you want to print it for your records.");
           try { localStorage.removeItem("cafop-exp-01"); } catch (e) {}
           ok.scrollIntoView({ behavior:"smooth", block:"center" });
         })

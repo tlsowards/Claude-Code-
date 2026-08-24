@@ -41,6 +41,37 @@ expect and can flag a mistake before you cut the check.
 Run `setUp` **once**. Running it again builds a second form and a second
 spreadsheet; if you need to start over, delete the ones it made first.
 
+## The web app — the designed form at a link
+
+Google Forms cannot be styled beyond a header image, one accent colour and a choice
+of four fonts. There is no custom layout, no running total, no per-day meal table. If
+you want officers to get the form as designed, serve it as a web app instead. It files
+through the same calculation, the same spreadsheet and the same email.
+
+In the same Apps Script project:
+
+1. Click **+** beside *Files* → **Script**, name it `WebApp`, paste in
+   [`WebApp.gs`](WebApp.gs).
+2. Click **+** → **HTML**, name it exactly **`Index`** (no `.html`), select all of
+   Google's boilerplate and paste in [`Index.html`](Index.html).
+3. Save, then **Deploy** → **New deployment** → the gear → **Web app**:
+   - *Execute as*: **Me**
+   - *Who has access*: **Anyone**
+4. **Deploy**, authorize if asked, and copy the `/exec` URL. That is what officers open —
+   no login, works on a phone.
+
+Officers see the running total as they type and file with a button. Everything is
+recomputed on the server before it is written or emailed, so a doctored page cannot
+change what gets paid.
+
+Re-deploy after any edit: **Deploy** → **Manage deployments** → the pencil →
+*Version: New version* → **Deploy**. Editing the files alone does not update the live
+URL.
+
+`Index.html` is generated from the printable form by `scripts/build-webapp.mjs`, so the
+two stay identical. If you edit the form, regenerate it rather than editing `Index.html`
+by hand.
+
 ## Test it before you send it out
 
 Submit a claim to yourself using the published URL: departure `2026-09-14`,
