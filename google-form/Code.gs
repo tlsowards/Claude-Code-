@@ -38,6 +38,7 @@ var MILEAGE = [
 // Question titles. Responses are matched by title, so if you rename a question
 // in the Form editor, rename it here too.
 var Q = {
+  NAME:        'Name',                     // web app only; the Google Form uses the account email
   ROLE:        'Executive role or office',
   PURPOSE:     'Business purpose or event',
   DEST:        'Destination (city, state)',
@@ -213,8 +214,12 @@ function onFormSubmit(e) {
   notify_(answers, claim, email);
 }
 
-/** All of the arithmetic. Mirrors the HTML form exactly. */
-function calculate_(a) {
+/**
+ * All of the arithmetic. Serves the Google Form and the web app alike.
+ * `mileage` is optional: the web app prices each leg at the rate for its own drive date
+ * and passes the result in, so a trip spanning a rate change is not blended.
+ */
+function calculate_(a, mileage) {
   var c = { flags: [] };
 
   var depart = parseDate_(a[Q.DEPART]);
@@ -257,10 +262,15 @@ function calculate_(a) {
   }
 
   // Mileage: the IRS national rate for the date driven, capped at what flying would have cost.
-  c.miles = num_(a[Q.MILES]);
-  var driven = parseDate_(a[Q.DRIVE_DATE]) || depart;
-  c.mileageRate = rateFor_(driven);
-  c.mileageFull = c.miles * c.mileageRate;
+  if (mileage) {
+    c.miles = mileage.miles;
+    c.mileageRate = mileage.rate;
+    c.mileageFull = mileage.mileageFull;
+  } else {
+    c.miles = num_(a[Q.MILES]);
+    c.mileageRate = rateFor_(parseDate_(a[Q.DRIVE_DATE]) || depart);
+    c.mileageFull = c.miles * c.mileageRate;
+  }
   c.mileage = c.mileageFull;
   c.constructive = num_(a[Q.AIRFARE]);
 
@@ -367,6 +377,8 @@ function record_(a, c, email) {
 }
 
 function nameOf_(a, email) {
+  var given = String(a[Q.NAME] || '').trim();
+  if (given) return given + (a[Q.ROLE] ? ' — ' + a[Q.ROLE] : '');
   return (a[Q.ROLE] ? a[Q.ROLE] + ' — ' : '') + (email || 'unknown');
 }
 

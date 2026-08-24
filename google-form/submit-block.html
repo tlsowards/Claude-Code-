@@ -1,0 +1,144 @@
+  <!-- Injected into the web-app build only. The printable form ends at the signature
+       block; online, the claim is filed with this button instead of a wet signature. -->
+  <section class="block no-print" id="submitBlock">
+    <div class="block-head"><span class="num">7</span><h2>File this claim</h2><p>Sends it to the treasurer</p></div>
+    <div class="block-body">
+      <label class="cert-check">
+        <input type="checkbox" id="certify">
+        <span>I certify that the expenses claimed above were incurred by me on official CAFOP
+        business, that they are accurate and supported by the documentation I am providing, and
+        that I have not been and will not be reimbursed for them from any other source.</span>
+      </label>
+
+      <p class="hint" id="receiptNote">Attach receipts by replying to the confirmation email you
+      receive. Meals need no receipts &mdash; they are paid per diem.</p>
+
+      <div class="submit-row">
+        <button type="button" class="btn primary" id="send">Submit claim</button>
+        <output id="sendState" class="hint"></output>
+      </div>
+
+      <div class="note ok" id="sendOk" hidden></div>
+      <div class="note flag" id="sendErr" hidden></div>
+    </div>
+  </section>
+
+  <style>
+    .cert-check{ display:flex; gap:.6rem; align-items:flex-start; font-size:.85rem; color:var(--ink-2); }
+    .cert-check input{ margin-top:.15rem; flex:none; }
+    .submit-row{ display:flex; gap:.75rem; align-items:center; flex-wrap:wrap; }
+    .btn.primary[disabled]{ opacity:.55; cursor:not-allowed; }
+  </style>
+
+  <script>
+  (function(){
+    "use strict";
+    var send = document.getElementById("send");
+    if (!send) return;
+
+    function val(id){ var el = document.getElementById(id); return el ? el.value : ""; }
+
+    function payload(){
+      var legs = [];
+      document.querySelectorAll("#miles-body tr").forEach(function(tr){
+        var miles = tr.querySelector(".m-mi").value;
+        if (String(miles).trim() === "") return;
+        legs.push({
+          date:  tr.querySelector(".m-date").value,
+          route: tr.querySelector(".m-route").value,
+          miles: miles
+        });
+      });
+
+      var other = [];
+      document.querySelectorAll("#other-body tr").forEach(function(tr){
+        var amt = tr.querySelector(".o-amt").value;
+        if (String(amt).trim() === "") return;
+        other.push({
+          date: tr.querySelector(".o-date").value,
+          desc: tr.querySelector(".o-desc").value,
+          amt:  amt
+        });
+      });
+
+      // Provided meals are deducted at a flat amount per meal, so counts carry
+      // everything the total needs — which day they fell on does not change it.
+      var provided = { breakfasts:0, lunches:0, dinners:0 };
+      document.querySelectorAll("#diem-body tr[data-iso]").forEach(function(tr){
+        tr.querySelectorAll('input[type="checkbox"]').forEach(function(cb){
+          if (!cb.checked) return;
+          if (cb.dataset.meal === "b") provided.breakfasts++;
+          if (cb.dataset.meal === "l") provided.lunches++;
+          if (cb.dataset.meal === "d") provided.dinners++;
+        });
+      });
+
+      return {
+        name: val("name"), role: val("role"), email: val("email"),
+        purpose: val("purpose"), dest: val("dest"),
+        depart: val("depart"), ret: val("ret"),
+        hotel: val("hotel"), nights: val("nights"), rate: val("rate"), tax: val("tax"),
+        legs: legs, airfare: val("airfare"), airground: val("airground"),
+        air: val("air"), bag: val("bag"), ground: val("ground"),
+        parking: val("parking"), rental: val("rental"),
+        provided: provided,
+        other: other, advance: val("advance"), notes: val("notes"),
+        certified: document.getElementById("certify").checked
+      };
+    }
+
+    function missing(p){
+      var need = [];
+      if (!p.name.trim())    need.push("your name");
+      if (!p.email.trim())   need.push("your email");
+      if (!p.purpose.trim()) need.push("the business purpose");
+      if (!p.depart)         need.push("a departure date");
+      if (!p.ret)            need.push("a return date");
+      if (!p.certified)      need.push("the certification tick");
+      return need;
+    }
+
+    function show(el, html){ el.hidden = false; el.innerHTML = html; }
+    function hide(el){ el.hidden = true; }
+
+    send.addEventListener("click", function(){
+      var ok = document.getElementById("sendOk");
+      var err = document.getElementById("sendErr");
+      var state = document.getElementById("sendState");
+      hide(ok); hide(err);
+
+      var p = payload();
+      var need = missing(p);
+      if (need.length){
+        show(err, "<strong>Nearly there.</strong> Still needed: " + need.join(", ") + ".");
+        return;
+      }
+
+      send.disabled = true;
+      state.textContent = "Sending…";
+
+      google.script.run
+        .withSuccessHandler(function(res){
+          send.disabled = false;
+          state.textContent = "";
+          if (!res || !res.ok){
+            show(err, "<strong>Not filed.</strong> " + ((res && res.error) || "Unknown error.") +
+                      " Nothing was recorded — you can try again.");
+            return;
+          }
+          show(ok, "<strong>Claim filed &mdash; " + res.due + " due to you.</strong> " +
+                   "A copy is on its way to " + res.sentTo + ". Keep this page open if you " +
+                   "want to print it for your records.");
+          try { localStorage.removeItem("cafop-exp-01"); } catch (e) {}
+          ok.scrollIntoView({ behavior:"smooth", block:"center" });
+        })
+        .withFailureHandler(function(e){
+          send.disabled = false;
+          state.textContent = "";
+          show(err, "<strong>Not filed.</strong> " + (e && e.message ? e.message : e) +
+                    " Nothing was recorded — you can try again.");
+        })
+        .submitClaim(p);
+    });
+  })();
+  </script>

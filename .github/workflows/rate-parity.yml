@@ -27,3 +27,13 @@ jobs:
           node-version: '20'
       - name: Compare rates across both forms
         run: node scripts/check-rate-parity.mjs
+
+  webapp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Index.html matches the printable form
+        run: node scripts/build-webapp.mjs --check
