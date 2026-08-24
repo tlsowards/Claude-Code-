@@ -1,0 +1,843 @@
+<title>CAFOP Executive Reimbursement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+<style>
+  /* CAFOP identity: the Fraternal Order of Police colors are blue, gold and white.
+     Blue carries the page, gold marks money and the emblem, white is the ground. */
+  :root{
+    --paper:#EFF3F9;
+    --card:#FFFFFF;
+    --field:#FAFCFE;
+    --ink:#0D1A2D;
+    --ink-2:#4B5D75;
+    --ink-3:#77879E;
+    --rule:#D5DFEB;
+    --rule-strong:#AEBED2;
+    --navy:#0A2A57;
+    --navy-deep:#071D3D;
+    --accent:#0A2A57;
+    --accent-soft:#E7EDF7;
+    --gold:#B08A1E;
+    --gold-line:#C9A227;
+    --gold-soft:#FAF3DF;
+    --ledger:#8A6A12;
+    --flag:#9B2C2C;
+    --flag-soft:#FBEDED;
+    --on-navy:#FFFFFF;
+    --shadow:0 1px 2px rgba(10,42,87,.06), 0 8px 24px -12px rgba(10,42,87,.28);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#080F1A;
+      --card:#101B2C;
+      --field:#162337;
+      --ink:#E4EBF5;
+      --ink-2:#9BADC5;
+      --ink-3:#7A8CA5;
+      --rule:#24334A;
+      --rule-strong:#3A4C68;
+      --navy:#0A2A57;
+      --navy-deep:#061428;
+      --accent:#8FB6E8;
+      --accent-soft:#132743;
+      --gold:#E3C271;
+      --gold-line:#C9A227;
+      --gold-soft:#241E10;
+      --ledger:#E3C271;
+      --flag:#E89393;
+      --flag-soft:#2A1616;
+      --on-navy:#FFFFFF;
+      --shadow:0 1px 2px rgba(0,0,0,.5), 0 8px 24px -12px rgba(0,0,0,.7);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#080F1A;
+    --card:#101B2C;
+    --field:#162337;
+    --ink:#E4EBF5;
+    --ink-2:#9BADC5;
+    --ink-3:#7A8CA5;
+    --rule:#24334A;
+    --rule-strong:#3A4C68;
+    --navy:#0A2A57;
+    --navy-deep:#061428;
+    --accent:#8FB6E8;
+    --accent-soft:#132743;
+    --gold:#E3C271;
+    --gold-line:#C9A227;
+    --gold-soft:#241E10;
+    --ledger:#E3C271;
+    --flag:#E89393;
+    --flag-soft:#2A1616;
+    --on-navy:#FFFFFF;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 8px 24px -12px rgba(0,0,0,.7);
+  }
+
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size:15px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .doc{ max-width:60rem; margin:0 auto; padding:2.5rem 1.25rem 8rem; }
+
+  /* ---------- masthead: lodge letterhead ---------- */
+  .masthead{
+    background:var(--navy); color:var(--on-navy); border-radius:4px 4px 0 0;
+    border-bottom:3px solid var(--gold-line);
+    padding:1.35rem 1.5rem;
+    display:flex; flex-wrap:wrap; gap:1.25rem; align-items:center; justify-content:space-between;
+    box-shadow:var(--shadow);
+  }
+  .brand{ display:flex; gap:1rem; align-items:center; min-width:0; }
+  .mark{ flex:none; width:3.1rem; height:3.1rem; }
+  .org{
+    font-family:"Source Serif 4", Georgia, serif; font-weight:700; font-size:1.6rem;
+    letter-spacing:-.01em; margin:0; line-height:1.15; color:var(--on-navy); text-wrap:balance;
+  }
+  .org-sub{
+    margin:.25rem 0 0; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--gold-line); font-weight:500;
+  }
+  .stamp{
+    font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:.7rem; letter-spacing:.06em;
+    text-transform:uppercase; color:rgba(255,255,255,.72); text-align:right; line-height:1.9;
+  }
+  .stamp b{ color:var(--on-navy); font-weight:600; }
+  @media (max-width:34rem){ .stamp{ text-align:left; } }
+
+  /* ---------- rate card ---------- */
+  .rates{
+    margin-top:0; background:var(--card); border:1px solid var(--rule); border-radius:0 0 4px 4px;
+    box-shadow:var(--shadow); overflow:hidden;
+  }
+  .rates-head{
+    display:flex; flex-wrap:wrap; gap:.5rem 1rem; align-items:baseline; justify-content:space-between;
+    padding:.7rem 1rem; background:var(--accent-soft); border-bottom:1px solid var(--rule);
+    border-left:3px solid var(--gold-line);
+  }
+  .rates-head h2{ margin:0; font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; font-weight:600; color:var(--accent); }
+  .rates-head .asof{ font-family:"IBM Plex Mono", monospace; font-size:.72rem; color:var(--ink-2); }
+  .rate-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(11rem,1fr)); }
+  .rate{ padding:.85rem 1rem; border-right:1px solid var(--rule); border-top:1px solid var(--rule); }
+  .rate:first-child{ border-top:none; }
+  @media (min-width:640px){ .rate{ border-top:none; } }
+  .rate:last-child{ border-right:none; }
+  .rate dt{ font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-2); }
+  .rate dd{ margin:.15rem 0 0; font-family:"IBM Plex Mono", monospace; font-size:1.15rem; font-weight:500; font-variant-numeric:tabular-nums; }
+  .rate small{ display:block; color:var(--ink-3); font-size:.72rem; font-family:"IBM Plex Sans", sans-serif; margin-top:.15rem; }
+
+  /* ---------- sections ---------- */
+  .block{
+    margin-top:1.5rem; background:var(--card); border:1px solid var(--rule); border-radius:4px;
+    box-shadow:var(--shadow); overflow:hidden; break-inside:avoid;
+  }
+  .block-head{ display:flex; gap:.75rem; align-items:baseline; padding:.85rem 1rem; border-bottom:1px solid var(--rule); }
+  .num{
+    flex:none; width:1.5rem; height:1.5rem; display:grid; place-items:center; align-self:center;
+    background:var(--navy); color:#FFFFFF; border-radius:2px;
+    font-family:"IBM Plex Mono", monospace; font-size:.8rem; font-weight:500;
+  }
+  .block-head h2{ margin:0; font-family:"Source Serif 4", Georgia, serif; font-size:1.15rem; font-weight:600; }
+  .block-head p{ margin:0; color:var(--ink-3); font-size:.8rem; }
+  .block-body{ padding:1rem; display:flex; flex-direction:column; gap:1rem; }
+
+  .row{ display:grid; gap:.9rem 1rem; align-items:end; grid-template-columns:repeat(auto-fit, minmax(12rem,1fr)); }
+  .row.tight{ grid-template-columns:repeat(auto-fit, minmax(8.5rem,1fr)); }
+  .f{ display:flex; flex-direction:column; gap:.3rem; min-width:0; }
+  .f label, .lbl{ font-size:.7rem; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-2); font-weight:500; }
+  input[type="text"], input[type="date"], input[type="number"], select, textarea{
+    font-family:inherit; font-size:.95rem; color:var(--ink); background:var(--field);
+    border:1px solid var(--rule-strong); border-radius:3px; padding:.45rem .55rem; width:100%; min-width:0;
+  }
+  input[type="number"]{ font-family:"IBM Plex Mono", monospace; font-variant-numeric:tabular-nums; text-align:right; }
+  textarea{ resize:vertical; min-height:3.5rem; }
+  input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible{
+    outline:2px solid var(--accent); outline-offset:1px;
+  }
+  .hint{ font-size:.78rem; color:var(--ink-3); }
+  .hint b{ color:var(--ink-2); font-weight:600; }
+
+  /* ---------- tables ---------- */
+  .tw{ overflow-x:auto; margin:0 -1rem; padding:0 1rem; }
+  table{ width:100%; border-collapse:collapse; min-width:34rem; }
+  th{
+    text-align:left; font-size:.68rem; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-2);
+    font-weight:600; padding:.35rem .5rem; border-bottom:1px solid var(--rule-strong); white-space:nowrap;
+  }
+  td{ padding:.3rem .5rem; border-bottom:1px solid var(--rule); vertical-align:middle; }
+  tbody tr:last-child td{ border-bottom:1px solid var(--rule-strong); }
+  th.n, td.n{ text-align:right; }
+  td.amt{ font-family:"IBM Plex Mono", monospace; font-variant-numeric:tabular-nums; text-align:right; white-space:nowrap; }
+  td.day{ font-family:"IBM Plex Mono", monospace; font-size:.85rem; white-space:nowrap; }
+  .tag{
+    display:inline-block; font-size:.62rem; letter-spacing:.06em; text-transform:uppercase; font-weight:600;
+    padding:.1rem .35rem; border-radius:2px; background:var(--accent-soft); color:var(--accent); margin-left:.35rem;
+  }
+  .chk{ display:flex; gap:.3rem; align-items:center; justify-content:center; }
+  th.c{ text-align:center; }
+  .sr{ position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+  input[type="checkbox"]{ accent-color:var(--accent); width:1rem; height:1rem; }
+  .mini{ width:6rem !important; }
+  .icon-btn{
+    border:1px solid var(--rule-strong); background:var(--field); color:var(--ink-2); border-radius:3px;
+    width:1.6rem; height:1.6rem; line-height:1; cursor:pointer; font-size:1rem;
+  }
+  .icon-btn:hover{ color:var(--ink); border-color:var(--ink-3); }
+  .btn{
+    align-self:flex-start; border:1px solid var(--rule-strong); background:var(--field); color:var(--ink);
+    font-family:inherit; font-size:.82rem; font-weight:500; padding:.4rem .75rem; border-radius:3px; cursor:pointer;
+  }
+  .btn:hover{ border-color:var(--accent); color:var(--accent); }
+  .btn.primary{ background:var(--accent); border-color:var(--accent); color:#fff; }
+  .btn.primary:hover{ filter:brightness(1.1); color:#fff; }
+
+  /* ---------- callouts ---------- */
+  .note{
+    border-left:3px solid var(--accent); background:var(--accent-soft); padding:.65rem .8rem;
+    font-size:.82rem; color:var(--ink-2); border-radius:0 3px 3px 0;
+  }
+  .note strong{ color:var(--ink); }
+  .note.flag{ border-left-color:var(--flag); background:var(--flag-soft); }
+  .note.ok{ border-left-color:var(--gold-line); background:var(--gold-soft); }
+  .note[hidden]{ display:none; }
+
+  /* ---------- subtotal + ledger ---------- */
+  .sub{
+    display:flex; justify-content:space-between; align-items:baseline; gap:1rem;
+    border-top:1px solid var(--rule-strong); padding-top:.6rem;
+  }
+  .sub .lbl{ margin:0; }
+  .sub output{
+    font-family:"IBM Plex Mono", monospace; font-variant-numeric:tabular-nums;
+    font-size:1.05rem; font-weight:500;
+  }
+  .ledger{ display:flex; flex-direction:column; gap:.1rem; }
+  .line{ display:flex; align-items:baseline; gap:.5rem; padding:.3rem 0; }
+  .line .t{ white-space:nowrap; }
+  .line .dots{ flex:1; border-bottom:1px dotted var(--rule-strong); transform:translateY(-.2rem); }
+  .line .v{ font-family:"IBM Plex Mono", monospace; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .line.total{
+    margin-top:.4rem; padding-top:.7rem; border-top:2px solid var(--gold-line);
+    font-family:"Source Serif 4", Georgia, serif; font-size:1.35rem; font-weight:700;
+  }
+  .line.total .v{ font-family:"IBM Plex Mono", monospace; font-size:1.35rem; font-weight:600; color:var(--ledger); }
+  .line.minus .v{ color:var(--flag); }
+
+  /* ---------- signatures ---------- */
+  .sigs{ display:grid; gap:1.5rem 2rem; grid-template-columns:repeat(auto-fit,minmax(14rem,1fr)); }
+  .sig{ display:flex; flex-direction:column; gap:.35rem; }
+  .sig .rule-line{ border-bottom:1px solid var(--rule-strong); height:2.1rem; }
+  .sig .cap{ font-size:.72rem; color:var(--ink-2); }
+  .cert{ font-size:.82rem; color:var(--ink-2); }
+
+  /* ---------- running total bar ---------- */
+  .bar{
+    position:fixed; left:0; right:0; bottom:0; z-index:20;
+    background:var(--card); border-top:3px solid var(--gold-line);
+    box-shadow:0 -6px 20px -14px rgba(0,0,0,.5);
+  }
+  .bar-in{
+    max-width:60rem; margin:0 auto; padding:.65rem 1.25rem;
+    display:flex; flex-wrap:wrap; gap:.5rem 1.25rem; align-items:center; justify-content:space-between;
+  }
+  .bar .k{ font-size:.7rem; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-2); }
+  .bar .v{ font-family:"IBM Plex Mono", monospace; font-variant-numeric:tabular-nums; font-size:1.25rem; font-weight:600; color:var(--ledger); }
+  .bar .actions{ display:flex; gap:.5rem; }
+  .foot{ margin-top:1.5rem; font-size:.75rem; color:var(--ink-3); line-height:1.7; }
+  .foot a{ color:var(--accent); }
+
+  @media print{
+    :root{ --paper:#fff; --card:#fff; --field:#fff; --shadow:none; }
+    body{ font-size:10.5pt; color:#000; }
+    .doc{ max-width:none; padding:0; }
+    .bar, .no-print{ display:none !important; }
+    .block{ border:1px solid #999; box-shadow:none; page-break-inside:avoid; }
+    input, select, textarea{ border:none; border-bottom:1px solid #999; border-radius:0; background:#fff; }
+    .note{ background:#fff; border-left:2px solid #666; }
+    .masthead{ background:#fff; color:#000; border-bottom:3px solid #C9A227; padding:0 0 .75rem; box-shadow:none; }
+    .org{ color:#000; }
+    .org-sub{ color:#0A2A57; }
+    .stamp{ color:#333; }
+    .stamp b{ color:#000; }
+    .num{ background:#0A2A57; }
+  }
+  @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+
+<div class="doc">
+
+  <header class="masthead">
+    <div class="brand">
+      <!-- Placeholder mark in FOP blue/gold. To use the official CAFOP emblem, replace this
+           <svg> with <img class="mark" alt="CAFOP" src="data:image/png;base64,…"> — the file must be
+           inlined as a data URI, since remote image hosts are blocked when this page is published. -->
+      <svg class="mark" viewBox="0 0 100 100" role="img" aria-label="California Fraternal Order of Police">
+        <circle cx="50" cy="50" r="47" fill="#FFFFFF"></circle>
+        <path d="M50,6 L60.58,35.44 L91.85,36.40 L67.12,55.56 L75.86,85.60 L50,68 L24.14,85.60 L32.88,55.56 L8.15,36.40 L39.42,35.44 Z"
+              fill="#C9A227"></path>
+        <circle cx="50" cy="50" r="30" fill="none" stroke="#0A2A57" stroke-width="6"></circle>
+        <circle cx="50" cy="50" r="12" fill="#FFFFFF" stroke="#0A2A57" stroke-width="4"></circle>
+      </svg>
+      <div>
+        <h1 class="org">California Fraternal Order of Police</h1>
+        <p class="org-sub">Executive travel &amp; expense reimbursement</p>
+      </div>
+    </div>
+    <div class="stamp">
+      Form <b>CAFOP&#8209;EXP&#8209;01</b><br>
+      Rev. <b>2026.2</b><br>
+      Submit within <b>30 days</b> of return
+    </div>
+  </header>
+
+  <section class="rates" aria-labelledby="rates-h">
+    <div class="rates-head">
+      <h2 id="rates-h">Reimbursement rates in effect</h2>
+      <span class="asof">FY2026 GSA CONUS &middot; IRS 2026 &middot; verify after 30 Sep 2026</span>
+    </div>
+    <dl class="rate-grid">
+      <div class="rate">
+        <dt>Meals &amp; incidentals</dt>
+        <dd>$68.00<span style="font-size:.8rem;color:var(--ink-2)">/day</span></dd>
+        <small>National standard CONUS rate. $51.00 on first &amp; last travel day (75%).</small>
+      </div>
+      <div class="rate">
+        <dt>Lodging ceiling</dt>
+        <dd>$110.00<span style="font-size:.8rem;color:var(--ink-2)">/night</span></dd>
+        <small>National standard, excluding taxes. Higher in listed metro areas.</small>
+      </div>
+      <div class="rate">
+        <dt>Mileage &mdash; POV</dt>
+        <dd>72.5&cent; &rarr; 76&cent;</dd>
+        <small>72.5&cent;/mi through 30 Jun 2026; 76&cent;/mi from 1 Jul 2026. Flat &mdash; no distance tiers.</small>
+      </div>
+      <div class="rate">
+        <dt>Long-trip test</dt>
+        <dd>200 mi</dd>
+        <small>Over 200 miles round trip, mileage is capped at comparable coach airfare.</small>
+      </div>
+    </dl>
+  </section>
+
+  <!-- 1. TRAVELER -->
+  <section class="block">
+    <div class="block-head"><span class="num">1</span><h2>Traveler &amp; trip</h2></div>
+    <div class="block-body">
+      <div class="row">
+        <div class="f"><label for="name">Name</label><input type="text" id="name" autocomplete="name"></div>
+        <div class="f"><label for="role">Executive role / office</label><input type="text" id="role" placeholder="e.g. Treasurer"></div>
+        <div class="f"><label for="email">Email</label><input type="text" id="email" inputmode="email"></div>
+      </div>
+      <div class="row">
+        <div class="f"><label for="purpose">Business purpose / event</label><input type="text" id="purpose" placeholder="e.g. Q3 board meeting"></div>
+        <div class="f"><label for="dest">Destination (city, state)</label><input type="text" id="dest"></div>
+      </div>
+      <div class="row tight">
+        <div class="f"><label for="depart">Depart</label><input type="date" id="depart"></div>
+        <div class="f"><label for="ret">Return</label><input type="date" id="ret"></div>
+        <div class="f"><span class="lbl">Trip length</span><output id="triplen" class="hint" style="padding-top:.5rem">&mdash;</output></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. LODGING -->
+  <section class="block">
+    <div class="block-head"><span class="num">2</span><h2>Lodging</h2><p>Itemized hotel folio required</p></div>
+    <div class="block-body">
+      <div class="row tight">
+        <div class="f"><label for="hotel">Hotel / property</label><input type="text" id="hotel"></div>
+        <div class="f"><label for="nights">Nights</label><input type="number" id="nights" min="0" step="1" placeholder="0"></div>
+        <div class="f"><label for="rate">Room rate / night ($)</label><input type="number" id="rate" min="0" step="0.01" placeholder="0.00"></div>
+        <div class="f"><label for="tax">Taxes &amp; fees ($)</label><input type="number" id="tax" min="0" step="0.01" placeholder="0.00"></div>
+      </div>
+      <div class="note flag" id="lodgeflag" hidden></div>
+      <p class="hint">Room tax is reimbursed in addition to the room rate and is not counted against the nightly ceiling. If the nightly rate exceeds <b>$110</b>, attach the conference room-block confirmation or a written pre-approval.</p>
+      <div class="sub"><span class="lbl">Lodging subtotal</span><output id="lodgesub">$0.00</output></div>
+    </div>
+  </section>
+
+  <!-- 3. TRANSPORTATION -->
+  <section class="block">
+    <div class="block-head"><span class="num">3</span><h2>Transportation</h2><p>Personal vehicle, common carrier, ground</p></div>
+    <div class="block-body">
+
+      <div>
+        <span class="lbl">A. Personal vehicle mileage</span>
+        <div class="tw" style="margin-top:.5rem">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:9.5rem">Date driven</th>
+                <th>From &rarr; to</th>
+                <th class="n" style="width:7rem">Round-trip mi</th>
+                <th class="n" style="width:6rem">Rate</th>
+                <th class="n" style="width:7rem">Amount</th>
+                <th class="no-print" style="width:2rem"><span class="sr">Remove</span></th>
+              </tr>
+            </thead>
+            <tbody id="miles-body"></tbody>
+          </table>
+        </div>
+        <button type="button" class="btn no-print" id="add-mile" style="margin-top:.6rem">+ Add leg</button>
+      </div>
+
+      <div class="note" id="mileNote"></div>
+
+      <div id="compareWrap" hidden>
+        <div class="row tight">
+          <div class="f">
+            <label for="airfare">Comparable coach airfare ($)</label>
+            <input type="number" id="airfare" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="f">
+            <label for="airground">Airport ground / parking ($)</label>
+            <input type="number" id="airground" min="0" step="0.01" placeholder="0.00">
+          </div>
+          <div class="f">
+            <span class="lbl">Constructive cost</span>
+            <output id="constructive" class="hint" style="padding-top:.5rem">&mdash;</output>
+          </div>
+        </div>
+        <p class="hint" style="margin:.5rem 0 0">Quote captured at booking time from any two carriers, dated screenshot attached. Leave blank only if no commercial service reaches the destination &mdash; then note why below.</p>
+      </div>
+
+      <div class="row tight">
+        <div class="f"><label for="air">Air / rail ticket ($)</label><input type="number" id="air" min="0" step="0.01" placeholder="0.00"></div>
+        <div class="f"><label for="bag">Baggage ($)</label><input type="number" id="bag" min="0" step="0.01" placeholder="0.00"></div>
+        <div class="f"><label for="ground">Taxi / rideshare / transit ($)</label><input type="number" id="ground" min="0" step="0.01" placeholder="0.00"></div>
+        <div class="f"><label for="parking">Parking &amp; tolls ($)</label><input type="number" id="parking" min="0" step="0.01" placeholder="0.00"></div>
+        <div class="f"><label for="rental">Rental car &amp; fuel ($)</label><input type="number" id="rental" min="0" step="0.01" placeholder="0.00"></div>
+      </div>
+
+      <div class="sub"><span class="lbl">Transportation subtotal</span><output id="transub">$0.00</output></div>
+    </div>
+  </section>
+
+  <!-- 4. PER DIEM -->
+  <section class="block">
+    <div class="block-head"><span class="num">4</span><h2>Meals &amp; incidentals per diem</h2><p>Per day &mdash; no receipts required</p></div>
+    <div class="block-body">
+      <p class="hint">Days are generated from the travel dates in section 1. First and last day pay <b>75%</b> ($51.00). Tick any meal that was <b>provided</b> by the host, conference, or another party &mdash; provided meals are deducted at breakfast <b>$16</b>, lunch <b>$19</b>, dinner <b>$28</b>. The $5 incidentals allowance is never deducted.</p>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:11rem">Date</th>
+              <th class="n" style="width:5.5rem">Full rate</th>
+              <th class="c" style="width:4rem" title="Breakfast provided">B</th>
+              <th class="c" style="width:4rem" title="Lunch provided">L</th>
+              <th class="c" style="width:4rem" title="Dinner provided">D</th>
+              <th class="n" style="width:6.5rem">Payable</th>
+            </tr>
+          </thead>
+          <tbody id="diem-body">
+            <tr><td colspan="6" class="hint" style="padding:.75rem .5rem">Enter depart and return dates above to build the daily schedule.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="sub"><span class="lbl">Per diem subtotal <span id="diemDays" class="hint"></span></span><output id="diemsub">$0.00</output></div>
+    </div>
+  </section>
+
+  <!-- 5. OTHER -->
+  <section class="block">
+    <div class="block-head"><span class="num">5</span><h2>Other reimbursable expenses</h2><p>Receipt required for each line</p></div>
+    <div class="block-body">
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:9.5rem">Date</th>
+              <th>Description</th>
+              <th class="n" style="width:7rem">Amount</th>
+              <th class="no-print" style="width:2rem"></th>
+            </tr>
+          </thead>
+          <tbody id="other-body"></tbody>
+        </table>
+      </div>
+      <button type="button" class="btn no-print" id="add-other">+ Add expense</button>
+      <p class="hint">Registration fees, printing, shipping, and business calls are reimbursable. Alcohol, personal entertainment, traffic fines, travel companion costs, and hotel room upgrades are not.</p>
+      <div class="sub"><span class="lbl">Other subtotal</span><output id="othersub">$0.00</output></div>
+    </div>
+  </section>
+
+  <!-- 6. SUMMARY -->
+  <section class="block">
+    <div class="block-head"><span class="num">6</span><h2>Summary &amp; certification</h2></div>
+    <div class="block-body">
+      <div class="ledger">
+        <div class="line"><span class="t">Lodging</span><span class="dots"></span><span class="v" id="s-lodge">$0.00</span></div>
+        <div class="line"><span class="t">Transportation</span><span class="dots"></span><span class="v" id="s-trans">$0.00</span></div>
+        <div class="line"><span class="t">Meals &amp; incidentals per diem</span><span class="dots"></span><span class="v" id="s-diem">$0.00</span></div>
+        <div class="line"><span class="t">Other expenses</span><span class="dots"></span><span class="v" id="s-other">$0.00</span></div>
+        <div class="line minus">
+          <span class="t">Less advance / CAFOP card charges</span><span class="dots"></span>
+          <span class="v">&minus;&nbsp;<input type="number" id="advance" class="mini" min="0" step="0.01" placeholder="0.00" style="display:inline-block"></span>
+        </div>
+        <div class="line total"><span class="t">Due to traveler</span><span class="dots"></span><span class="v" id="s-total">$0.00</span></div>
+      </div>
+
+      <div class="f">
+        <label for="notes">Notes / exceptions</label>
+        <textarea id="notes" placeholder="Explain any rate exceeded, missing receipt, or comparison waived."></textarea>
+      </div>
+
+      <p class="cert">I certify that the expenses claimed above were incurred by me on official CAFOP business, that they are accurate and supported by the attached documentation, and that I have not been and will not be reimbursed for them from any other source.</p>
+
+      <div class="sigs">
+        <div class="sig"><div class="rule-line"></div><span class="cap">Traveler signature &mdash; date</span></div>
+        <div class="sig"><div class="rule-line"></div><span class="cap">Treasurer / Finance review &mdash; date</span></div>
+        <div class="sig"><div class="rule-line"></div><span class="cap">President or designee approval &mdash; date</span></div>
+      </div>
+
+      <p class="hint" style="margin:0">A claim by the Treasurer is approved by the President; a claim by the President is approved by the Treasurer. No member approves their own reimbursement.</p>
+    </div>
+  </section>
+
+  <p class="foot">
+    Rate basis: GSA FY2026 standard CONUS per diem ($110 lodging + $68 M&amp;IE, effective 1 Oct 2025 &ndash; 30 Sep 2026) and the IRS 2026 standard business mileage rates (72.5&cent;/mi 1 Jan &ndash; 30 Jun 2026; 76&cent;/mi from 1 Jul 2026).
+    Neither agency varies the mileage rate by trip distance &mdash; the 200-mile test on this form is CAFOP policy, modeled on the federal constructive-cost rule.
+    Update this form when FY2027 rates publish in late August 2026.
+  </p>
+</div>
+
+<div class="bar no-print">
+  <div class="bar-in">
+    <div><div class="k">Due to traveler</div><div class="v" id="bar-total">$0.00</div></div>
+    <div class="actions">
+      <button type="button" class="btn" id="clear">Clear form</button>
+      <button type="button" class="btn primary" id="print">Print / save PDF</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var MIE = 68, MIE_PARTIAL = 51, LODGE_CAP = 110;
+  var MEAL = { b:16, l:19, d:28 };
+  var LONG_TRIP_MI = 200, REVIEW_MI = 100;
+
+  // IRS standard business mileage rates, newest first.
+  var MILEAGE = [
+    { from:"2026-07-01", rate:0.76,  label:"76.0¢" },
+    { from:"2026-01-01", rate:0.725, label:"72.5¢" },
+    { from:"2025-01-01", rate:0.70,  label:"70.0¢" }
+  ];
+  var DEFAULT_RATE = MILEAGE[0];
+
+  function rateFor(date){
+    if (date) { for (var i=0;i<MILEAGE.length;i++){ if (date >= MILEAGE[i].from) return MILEAGE[i]; } }
+    return DEFAULT_RATE;
+  }
+  function num(el){ var v = parseFloat(el && el.value); return isFinite(v) && v > 0 ? v : 0; }
+  function money(n){
+    return "$" + n.toLocaleString("en-US", { minimumFractionDigits:2, maximumFractionDigits:2 });
+  }
+  function $(id){ return document.getElementById(id); }
+  function setText(id, txt){ var el = $(id); if (el) el.textContent = txt; }
+
+  function eachDate(a, b){
+    var out = [];
+    if (!a || !b) return out;
+    var start = new Date(a + "T00:00:00"), end = new Date(b + "T00:00:00");
+    if (isNaN(start) || isNaN(end) || end < start) return out;
+    var guard = 0;
+    for (var d = start; d <= end && guard < 366; d.setDate(d.getDate() + 1), guard++){
+      out.push(d.toISOString().slice(0,10));
+    }
+    return out;
+  }
+  function pretty(iso){
+    var d = new Date(iso + "T00:00:00");
+    if (isNaN(d)) return iso;
+    return d.toLocaleDateString("en-US", { weekday:"short", month:"short", day:"numeric" });
+  }
+
+  /* ---------- mileage legs ---------- */
+  var mileBody = $("miles-body");
+
+  function mileRow(){
+    var tr = document.createElement("tr");
+    tr.innerHTML =
+      '<td><input type="date" class="m-date"></td>' +
+      '<td><input type="text" class="m-route" placeholder="Home → venue, round trip"></td>' +
+      '<td><input type="number" class="m-mi" min="0" step="0.1" placeholder="0"></td>' +
+      '<td class="amt m-rate">' + DEFAULT_RATE.label + '</td>' +
+      '<td class="amt m-amt">$0.00</td>' +
+      '<td class="no-print"><button type="button" class="icon-btn m-del" aria-label="Remove leg">×</button></td>';
+    tr.querySelector(".m-del").addEventListener("click", function(){
+      tr.remove();
+      if (!mileBody.children.length) mileBody.appendChild(mileRow());
+      recompute(); save();
+    });
+    return tr;
+  }
+
+  function mileageTotals(){
+    var rows = mileBody.querySelectorAll("tr"), miles = 0, amount = 0;
+    for (var i=0;i<rows.length;i++){
+      var tr = rows[i];
+      var d = tr.querySelector(".m-date").value;
+      var mi = num(tr.querySelector(".m-mi"));
+      var r = rateFor(d);
+      tr.querySelector(".m-rate").textContent = r.label;
+      var amt = mi * r.rate;
+      tr.querySelector(".m-amt").textContent = money(amt);
+      miles += mi; amount += amt;
+    }
+    return { miles: miles, amount: amount };
+  }
+
+  /* ---------- other expenses ---------- */
+  var otherBody = $("other-body");
+
+  function otherRow(){
+    var tr = document.createElement("tr");
+    tr.innerHTML =
+      '<td><input type="date" class="o-date"></td>' +
+      '<td><input type="text" class="o-desc" placeholder="Registration fee, printing, shipping…"></td>' +
+      '<td><input type="number" class="o-amt" min="0" step="0.01" placeholder="0.00"></td>' +
+      '<td class="no-print"><button type="button" class="icon-btn o-del" aria-label="Remove expense">×</button></td>';
+    tr.querySelector(".o-del").addEventListener("click", function(){
+      tr.remove();
+      if (!otherBody.children.length) otherBody.appendChild(otherRow());
+      recompute(); save();
+    });
+    return tr;
+  }
+
+  /* ---------- per diem grid ---------- */
+  var diemBody = $("diem-body");
+  var provided = {};   // iso date -> {b,l,d}
+
+  function buildDiem(){
+    var days = eachDate($("depart").value, $("ret").value);
+    diemBody.textContent = "";
+    if (!days.length){
+      var tr = document.createElement("tr");
+      tr.innerHTML = '<td colspan="6" class="hint" style="padding:.75rem .5rem">Enter depart and return dates above to build the daily schedule.</td>';
+      diemBody.appendChild(tr);
+      return days;
+    }
+    days.forEach(function(iso, idx){
+      var partial = (idx === 0 || idx === days.length - 1) && days.length > 1;
+      if (days.length === 1) partial = true;
+      var tr = document.createElement("tr");
+      tr.innerHTML =
+        '<td class="day">' + pretty(iso) + (partial ? '<span class="tag">75%</span>' : '') + '</td>' +
+        '<td class="amt">' + money(partial ? MIE_PARTIAL : MIE) + '</td>' +
+        '<td><span class="chk"><input type="checkbox" data-meal="b" aria-label="Breakfast provided ' + iso + '"></span></td>' +
+        '<td><span class="chk"><input type="checkbox" data-meal="l" aria-label="Lunch provided ' + iso + '"></span></td>' +
+        '<td><span class="chk"><input type="checkbox" data-meal="d" aria-label="Dinner provided ' + iso + '"></span></td>' +
+        '<td class="amt d-amt">$0.00</td>';
+      tr.dataset.iso = iso;
+      tr.dataset.partial = partial ? "1" : "";
+      var state = provided[iso] || {};
+      tr.querySelectorAll('input[type="checkbox"]').forEach(function(cb){
+        cb.checked = !!state[cb.dataset.meal];
+        cb.addEventListener("change", function(){ recompute(); save(); });
+      });
+      diemBody.appendChild(tr);
+    });
+    return days;
+  }
+
+  function diemTotals(){
+    var rows = diemBody.querySelectorAll("tr[data-iso]"), total = 0;
+    provided = {};
+    for (var i=0;i<rows.length;i++){
+      var tr = rows[i];
+      var base = tr.dataset.partial ? MIE_PARTIAL : MIE;
+      var state = {};
+      tr.querySelectorAll('input[type="checkbox"]').forEach(function(cb){
+        if (cb.checked){ base -= MEAL[cb.dataset.meal]; state[cb.dataset.meal] = true; }
+      });
+      provided[tr.dataset.iso] = state;
+      if (base < 0) base = 0;
+      tr.querySelector(".d-amt").textContent = money(base);
+      total += base;
+    }
+    return { total: total, days: rows.length };
+  }
+
+  /* ---------- master recompute ---------- */
+  function recompute(){
+    // trip length
+    var days = eachDate($("depart").value, $("ret").value);
+    setText("triplen", days.length ? days.length + (days.length === 1 ? " day" : " days") : "—");
+
+    // lodging
+    var nights = num($("nights")), rate = num($("rate")), tax = num($("tax"));
+    var lodging = nights * rate + tax;
+    setText("lodgesub", money(lodging));
+    var lf = $("lodgeflag");
+    if (rate > LODGE_CAP){
+      lf.hidden = false;
+      lf.innerHTML = "<strong>Over the national ceiling.</strong> $" + rate.toFixed(2) +
+        "/night exceeds the $110.00 standard by $" + (rate - LODGE_CAP).toFixed(2) +
+        ". Attach the conference rate confirmation or written pre-approval, or the difference is not payable.";
+    } else { lf.hidden = true; }
+
+    // mileage
+    var mi = mileageTotals();
+    var note = $("mileNote"), compare = $("compareWrap");
+    var claimedMileage = mi.amount;
+    var constructive = num($("airfare")) + num($("airground"));
+
+    note.className = "note";
+    if (mi.miles === 0){
+      note.innerHTML = "Rate is set automatically from the date driven: <strong>72.5¢/mi</strong> through 30 June 2026, <strong>76¢/mi</strong> from 1 July 2026. The federal rate does not change with distance.";
+      compare.hidden = true;
+    } else if (mi.miles <= REVIEW_MI){
+      note.className = "note ok";
+      note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles — short trip.</strong> Reimbursed at the full IRS rate, " +
+        money(mi.amount) + ". No airfare comparison required at or under 100 miles round trip.";
+      compare.hidden = true;
+    } else if (mi.miles <= LONG_TRIP_MI){
+      note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles — mid-range trip.</strong> Still reimbursed at the full IRS rate, " +
+        money(mi.amount) + ". Over 100 miles, state the business reason driving was chosen in the notes; no cost comparison is required until 200 miles.";
+      compare.hidden = true;
+    } else {
+      compare.hidden = false;
+      note.className = "note flag";
+      var full = money(mi.amount);
+      if (constructive > 0 && constructive < mi.amount){
+        claimedMileage = constructive;
+        note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles — over the 200-mile threshold.</strong> Mileage would be " + full +
+          ", but the comparable air itinerary costs " + money(constructive) + ". CAFOP reimburses the lesser amount: <strong>" +
+          money(constructive) + "</strong>. Driving is still your choice — only the reimbursement is capped.";
+      } else if (constructive > 0){
+        note.className = "note ok";
+        note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles — over the 200-mile threshold.</strong> Mileage of " + full +
+          " is at or below the comparable air itinerary (" + money(constructive) + "), so the full mileage amount is payable.";
+      } else {
+        note.innerHTML = "<strong>" + mi.miles.toFixed(1) + " miles — over the 200-mile threshold.</strong> The rate stays the same, but the payable amount is capped at the cost of a comparable coach itinerary. Enter the airfare quote below to complete the comparison.";
+      }
+      setText("constructive", constructive > 0 ? money(constructive) : "—");
+    }
+
+    var transport = claimedMileage + num($("air")) + num($("bag")) + num($("ground")) + num($("parking")) + num($("rental"));
+    setText("transub", money(transport));
+
+    // per diem
+    var pd = diemTotals();
+    setText("diemsub", money(pd.total));
+    setText("diemDays", pd.days ? "(" + pd.days + (pd.days === 1 ? " day)" : " days)") : "");
+
+    // other
+    var other = 0;
+    otherBody.querySelectorAll(".o-amt").forEach(function(el){ other += num(el); });
+    setText("othersub", money(other));
+
+    // summary
+    var advance = num($("advance"));
+    var due = lodging + transport + pd.total + other - advance;
+    setText("s-lodge", money(lodging));
+    setText("s-trans", money(transport));
+    setText("s-diem", money(pd.total));
+    setText("s-other", money(other));
+    setText("s-total", money(due));
+    setText("bar-total", money(due));
+  }
+
+  /* ---------- draft persistence (this browser only) ---------- */
+  var KEY = "cafop-exp-01";
+
+  function collect(){
+    var data = { fields:{}, miles:[], other:[], provided:provided };
+    document.querySelectorAll("[id]").forEach(function(el){
+      if (el.matches("input, textarea, select")) data.fields[el.id] = el.value;
+    });
+    mileBody.querySelectorAll("tr").forEach(function(tr){
+      data.miles.push({
+        date: tr.querySelector(".m-date").value,
+        route: tr.querySelector(".m-route").value,
+        mi: tr.querySelector(".m-mi").value
+      });
+    });
+    otherBody.querySelectorAll("tr").forEach(function(tr){
+      data.other.push({
+        date: tr.querySelector(".o-date").value,
+        desc: tr.querySelector(".o-desc").value,
+        amt: tr.querySelector(".o-amt").value
+      });
+    });
+    return data;
+  }
+
+  function save(){
+    try { localStorage.setItem(KEY, JSON.stringify(collect())); } catch (e) {}
+  }
+
+  function restore(){
+    var data = null;
+    try { data = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) { data = null; }
+    if (!data) return false;
+    Object.keys(data.fields || {}).forEach(function(id){
+      var el = $(id);
+      if (el && el.matches("input, textarea, select")) el.value = data.fields[id];
+    });
+    provided = data.provided || {};
+    if ((data.miles || []).length){
+      mileBody.textContent = "";
+      data.miles.forEach(function(m){
+        var tr = mileRow();
+        tr.querySelector(".m-date").value = m.date || "";
+        tr.querySelector(".m-route").value = m.route || "";
+        tr.querySelector(".m-mi").value = m.mi || "";
+        mileBody.appendChild(tr);
+      });
+    }
+    if ((data.other || []).length){
+      otherBody.textContent = "";
+      data.other.forEach(function(o){
+        var tr = otherRow();
+        tr.querySelector(".o-date").value = o.date || "";
+        tr.querySelector(".o-desc").value = o.desc || "";
+        tr.querySelector(".o-amt").value = o.amt || "";
+        otherBody.appendChild(tr);
+      });
+    }
+    return true;
+  }
+
+  /* ---------- wiring ---------- */
+  mileBody.appendChild(mileRow());
+  otherBody.appendChild(otherRow());
+  restore();
+  buildDiem();
+
+  $("add-mile").addEventListener("click", function(){ mileBody.appendChild(mileRow()); save(); });
+  $("add-other").addEventListener("click", function(){ otherBody.appendChild(otherRow()); save(); });
+
+  document.addEventListener("input", function(e){
+    if (!e.target.matches("input, textarea, select")) return;
+    if (e.target.id === "depart" || e.target.id === "ret"){ diemTotals(); buildDiem(); }
+    recompute(); save();
+  });
+
+  $("print").addEventListener("click", function(){ window.print(); });
+  $("clear").addEventListener("click", function(){
+    if (!window.confirm("Clear every field on this form? The saved draft in this browser is deleted too.")) return;
+    try { localStorage.removeItem(KEY); } catch (e) {}
+    document.querySelectorAll("input, textarea").forEach(function(el){
+      if (el.type === "checkbox") el.checked = false; else el.value = "";
+    });
+    provided = {};
+    mileBody.textContent = ""; mileBody.appendChild(mileRow());
+    otherBody.textContent = ""; otherBody.appendChild(otherRow());
+    buildDiem(); recompute();
+  });
+
+  recompute();
+})();
+</script>
