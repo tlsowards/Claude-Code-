@@ -14,3 +14,12 @@ extraction must never be read as an empty policy.
 
 Nothing in this project should assert what a policy says without the PDF being
 readable here or the assertion being traceable to `prea-register.csv`.
+
+## title15-bscc-juvenile.pdf
+
+BSCC, Minimum Standards for Juvenile Facilities, Title 15, **rev. 04/01/2014**.
+
+This is the edition the department produced. It predates the January 2019 rewrite and
+therefore contains no section 1350.5, 1352.5, or 1354.5, and the word "PREA" does not appear
+in it. It was read in full for the Revision 5 verification pass. What it does and does not
+confirm is recorded in `CLAUDE.md` section 7. The current edition is still outstanding.

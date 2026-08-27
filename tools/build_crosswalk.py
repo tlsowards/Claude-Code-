@@ -20,7 +20,7 @@ CSV_PATH = os.path.join(ROOT, "prea-register.csv")
 JSON_PATH = os.path.join(ROOT, "tools", "crosswalk.json")
 MD_PATH = os.path.join(ROOT, "deliverables", "PREA_versus_Policy_Crosswalk.md")
 
-REVISION = 4
+REVISION = 5
 
 # Order used by 28 CFR part 115 subpart D, with the California and audit
 # groupings appended, so the document tracks what an auditor scores in order.
@@ -87,15 +87,29 @@ CONFLICTS = [
         "n": 1,
         "topic": "Categorical LGBTQI housing (classification S-8)",
         "rows": [36],
-        "law": "28 CFR 115.342(c); 15 CCR 1352(e). LGBTI residents shall not be "
-               "placed in particular housing, bed, or other assignments solely on "
-               "the basis of that identification or status.",
+        "law": "28 CFR 115.342(c). LGBTI residents shall not be placed in "
+               "particular housing, bed, or other assignments solely on the "
+               "basis of that identification or status. 15 CCR 1352(e), "
+               "verified against the edition effective 04/01/2014, says the "
+               "same: staff shall not separate a youth from the general "
+               "population or assign a single occupancy room based solely on "
+               "sexual orientation, gender identity, or gender expression. 15 "
+               "CCR 1324(h) separately requires the policy manual to bar "
+               "restrictive housing or classification decisions made solely on "
+               "those bases.",
         "policy": "OO 1352 II.M creates classification S-8 for any LGBTQI youth, "
                   "and III.I requires single-room housing at all times for S-8.",
         "note": "Also contradicts OO 1352's own Purpose and Scope paragraph, PREA "
-                "Policy III.E, and OO 1352.5 III.H. The chronology is damaging: "
-                "OO 1352.5 stated the correct rule effective 03/2019, and S-8 was "
-                "created 12/2019 and revised 02/2020.",
+                "Policy III.E, and OO 1352.5 III.H. The chronology is worse than "
+                "earlier revisions recorded. 15 CCR 1352(e) was not added by the "
+                "2019 Title 15 rewrite; it is in the edition effective "
+                "04/01/2014. S-8 was created 12/09/2019 and retained on the "
+                "02/27/2020 revision, five and a half years after the state rule "
+                "was already in force. 1352(e) also states the lawful "
+                "alternative on its face: individualized placement, or a single "
+                "room at the youth's specific request. The 1324(h) route is the "
+                "cleaner BSCC inspection finding, because it does not depend on "
+                "whether PREA binds a county facility.",
         "fix": "Recommended change 1: rescind the S-8 single-room mandate.",
     },
     {
@@ -153,7 +167,13 @@ CONFLICTS = [
                   "determines the allegations were false.",
         "note": "A false-allegations rule stated at this breadth suppresses "
                 "reporting, which is the behavior the standard is written to "
-                "protect.",
+                "protect. Separately, and now verified against source, 15 CCR "
+                "1391(e) attaches the due process elements to major rule "
+                "violations as a class, while OO 1390/1391 IV.A attaches the "
+                "hearing only where the recommended discipline is Program "
+                "Separation. That narrowing is a confirmed Title 15 defect in "
+                "its own right, actionable on BSCC inspection independent of "
+                "PREA.",
         "fix": "Recommended change 5: rewrite to a bad-faith standard.",
     },
     {
