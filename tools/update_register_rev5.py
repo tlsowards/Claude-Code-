@@ -167,6 +167,11 @@ CHANGES = {
            "FLAGGED in 5: 15 CCR 1350.5 not confirmed; absent from the produced edition."),
 
     # ---------------------------------------------------------------- 1354
+    # Rows 35 and 57 are the only entries that compound ok() and pending().
+    # They cite 1354 and 1354.5 together: 1354 is confirmed against the produced
+    # edition, 1354.5 is absent from it, so the row needs both halves. Row 74 is
+    # also partly confirmed and partly not, but it reads better as one ok() whose
+    # text names the unconfirmed (a)-(n) range, so it stays a single call.
     "35": ("Partial", "High",
            ok("1354 requires written policies and procedures addressing "
               "separation 'for reasons that include, but are not be limited to, "
