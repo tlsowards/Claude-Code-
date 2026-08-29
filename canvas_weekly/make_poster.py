@@ -13,6 +13,7 @@ import argparse
 import html
 import json
 import pathlib
+import re
 
 TEMPLATE = """// Generated for: %(title)s
 // Course %(course)s / topic %(topic)s on %(origin)s
@@ -143,8 +144,13 @@ def main(argv=None) -> int:
 
     path = pathlib.Path(args.out)
     path.parent.mkdir(parents=True, exist_ok=True)
+    # The title lands in a // comment. A line terminator there would end the
+    # comment and turn the rest of the line into code, in a console session
+    # that holds the CSRF token.
+    title = re.sub(r"[\r\n\u2028\u2029]+", " ", topic.get("topic_title", "")).strip()
+
     path.write_text(TEMPLATE % {
-        "title": topic.get("topic_title", ""),
+        "title": title,
         "course": json.dumps(topic.get("course_id")),
         "topic": json.dumps(topic.get("topic_id")),
         "origin": json.dumps(bundle.get("base_url", "")),

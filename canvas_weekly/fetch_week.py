@@ -51,17 +51,30 @@ def load_config(path: pathlib.Path) -> dict:
 
 
 def walk(entries: list, parent_author: str | None = None, depth: int = 0):
-    """Yield (entry, parent_author, depth) over the nested reply tree."""
+    """Yield (entry, parent_author, depth) over the nested reply tree.
+
+    Canvas leaves the replies under a deleted post visible in the thread, so a
+    deleted entry is skipped but its children are not: they are promoted to the
+    deleted post's own position rather than disappearing with it.
+    """
     for entry in entries or []:
         if entry.get("deleted"):
+            yield from walk(entry.get("replies"), parent_author, depth)
             continue
         yield entry, parent_author, depth
         yield from walk(entry.get("replies"), entry.get("_author"), depth + 1)
 
 
 def subtree_has_author(entry: dict, user_id: int) -> bool:
+    """Whether this post has a live reply from `user_id` beneath it.
+
+    A deleted reply does not count as an answer -- the student can no longer
+    see it -- but a live reply nested under a deleted one still does.
+    """
     for reply in entry.get("replies") or []:
-        if reply.get("user_id") == user_id or subtree_has_author(reply, user_id):
+        if not reply.get("deleted") and reply.get("user_id") == user_id:
+            return True
+        if subtree_has_author(reply, user_id):
             return True
     return False
 

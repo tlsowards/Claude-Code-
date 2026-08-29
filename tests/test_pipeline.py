@@ -13,7 +13,7 @@ import tempfile
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from canvas_weekly import from_paste, make_poster, render_review          # noqa: E402
+from canvas_weekly import fetch_week, from_paste, make_poster, render_review  # noqa: E402
 from canvas_weekly.canvas_client import CanvasClient, CanvasError         # noqa: E402
 
 FAILURES = []
@@ -242,6 +242,61 @@ def test_review_page_escaping():
     check("page declares a charset", 'charset="utf-8"' in html)
 
 
+def test_deleted_parent_keeps_live_replies():
+    """A deleted post must not take its live replies down with it.
+
+    Canvas leaves those replies visible in the thread, so an unanswered student
+    post under a deleted parent still needs a reply. Losing it means the student
+    is silently never answered.
+    """
+    print("\ndeleted posts")
+    tree = [{"id": 1, "user_id": 601, "deleted": True, "replies": [
+        {"id": 2, "user_id": 602, "message": "Live reply", "replies": []}]}]
+    seen = [(e["id"], d) for e, _, d in fetch_week.walk(tree)]
+    check("live reply under a deleted parent stays visible", seen == [(2, 0)], str(seen))
+    check("the deleted entry itself is not yielded", 1 not in [i for i, _ in seen])
+
+    answered_by_deleted = {"id": 10, "user_id": 602, "replies": [
+        {"id": 11, "user_id": 35997, "deleted": True, "replies": []}]}
+    check("a deleted instructor reply does not count as answered",
+          not fetch_week.subtree_has_author(answered_by_deleted, 35997))
+
+    nested_live = {"id": 10, "user_id": 602, "replies": [
+        {"id": 11, "user_id": 602, "deleted": True, "replies": [
+            {"id": 12, "user_id": 35997, "replies": []}]}]}
+    check("a live instructor reply under a deleted one still counts",
+          fetch_week.subtree_has_author(nested_live, 35997))
+
+    for name in ("fetch_thread.js", "read_thread_min.js"):
+        js = (ROOT / "browser" / name).read_text()
+        check(f"{name} recurses past a deleted entry",
+              re.search(r"if \(e\.deleted\)\s*\{\s*walk\(", js) is not None)
+
+
+def test_title_cannot_escape_the_comment():
+    """The topic title lands in a // comment in a script pasted into a session
+    holding the CSRF token. A line terminator there would end the comment."""
+    print("\ngenerated script header")
+    bundle = {"base_url": "https://canvas.csuchico.edu", "entry_ids": "canvas",
+              "school_id": "browser",
+              "topics": [{"course_id": 51718, "topic_id": 454157, "course_name": "C",
+                          "topic_url": "",
+                          "topic_title": 'Ch 1\nconsole.log("live code")',
+                          "needs_reply": [{"entry_id": 1, "author": "A"}]}]}
+    drafts = {"replies": [{"topic_id": 454157, "entry_id": 1, "author": "A",
+                           "draft": "Body."}], "topic_additions": []}
+    with tempfile.TemporaryDirectory() as tmp:
+        d = pathlib.Path(tmp)
+        (d / "b.json").write_text(json.dumps(bundle))
+        (d / "dr.json").write_text(json.dumps(drafts))
+        make_poster.main(["--bundle", str(d / "b.json"), "--drafts", str(d / "dr.json"),
+                          "--out", str(d / "out.js")])
+        header = (d / "out.js").read_text().splitlines()[0]
+        rest = (d / "out.js").read_text().splitlines()[1]
+        check("title stays on the comment line", 'console.log("live code")' in header)
+        check("no injected statement on the next line", rest.startswith("//"), rest[:60])
+
+
 def test_client_is_read_only():
     print("\nCanvas client")
     c = CanvasClient("https://example.test", "token")
@@ -272,6 +327,8 @@ def main():
     for fn in (test_real_ids, test_hand_typed_is_synthetic,
                test_real_headers_synthetic_entries, test_adversarial_paste,
                test_poster_guard, test_guard_truth_table, test_outbound_escaping, test_review_page_escaping,
+               test_deleted_parent_keeps_live_replies,
+               test_title_cannot_escape_the_comment,
                test_client_is_read_only, test_reader_omits_student_ids):
         fn()
     print()

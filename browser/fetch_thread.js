@@ -40,7 +40,9 @@
   const thread = [];
   const walk = (entries, parent, depth) => {
     for (const e of entries || []) {
-      if (e.deleted) continue;
+      // Canvas keeps replies under a deleted post visible; promote them rather
+      // than losing a live student post along with its deleted parent.
+      if (e.deleted) { walk(e.replies, parent, depth); continue; }
       thread.push({
         entry_id: e.id, author: names[e.user_id] || 'unknown', author_id: e.user_id,
         created_at: e.created_at, depth, replying_to: parent,

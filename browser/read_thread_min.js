@@ -9,7 +9,9 @@
   const out = [`COURSE_ID: ${c}`, `TOPIC_ID: ${t}`, `TOPIC: ${top.title}`,
     `URL: ${location.origin}/courses/${c}/discussion_topics/${t}`,
     `ME: ${me.name} [user:${me.id}]`, `PROMPT: ${txt(top.message)}`, ''];
-  const walk = (l, d) => (l||[]).forEach(e => { if (e.deleted) return;
+  const walk = (l, d) => (l||[]).forEach(e => {
+    // A deleted parent must not take its live replies with it.
+    if (e.deleted) { walk(e.replies, d); return; }
     // Only your own user id is tagged: it is all the tools need to tell your
     // posts from students', and this text gets pasted around.
     const tag = e.user_id === me.id ? ` [entry:${e.id} user:${e.user_id}]` : ` [entry:${e.id}]`;
