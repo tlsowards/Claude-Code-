@@ -60,6 +60,10 @@ python3 -m canvas_weekly.fetch_week --school chico --days 7
 Writes `bundles/chico-<date>.json` — the week's topics, the full thread for
 context, and the posts with no instructor reply.
 
+`--days` is a hard window: a post that was never answered stops appearing once
+it ages past it. If you skip a week, run that week with `--days 14` so nothing
+falls through the gap.
+
 Claude then drafts from that bundle (see `.claude/skills/canvas-weekly/SKILL.md`)
 and renders the review page:
 
@@ -99,7 +103,7 @@ will not have identical rules.
 ## Layout
 
 ```
-canvas_weekly/canvas_client.py   Canvas REST client (stdlib only, paginated)
+canvas_weekly/canvas_client.py   read-only Canvas client (GET-only, paginated)
 canvas_weekly/fetch_week.py      read a week of discussion activity → bundle
 canvas_weekly/render_review.py   bundle + drafts → review page
 .claude/skills/canvas-weekly/    how Claude runs the weekly pass

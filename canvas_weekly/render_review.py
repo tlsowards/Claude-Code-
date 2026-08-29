@@ -80,7 +80,11 @@ def render(bundle: dict, drafts: dict) -> str:
         by_topic.setdefault(reply.get("topic_id"), []).append(reply)
     additions = {a["topic_id"]: a for a in drafts.get("topic_additions", [])}
 
-    out = [f"<title>Weekly Discussion Drafts</title><style>{CSS}</style>",
+    # Explicit charset: student names routinely carry non-ASCII characters and
+    # this file is opened straight off disk, with no server to declare one.
+    out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">'
+           '<meta name="viewport" content="width=device-width,initial-scale=1">',
+           f"<title>Weekly Discussion Drafts</title><style>{CSS}</style></head><body>",
            '<div class="wrap">',
            f"<h1>{esc(bundle.get('school_name'))} — discussion drafts</h1>",
            f'<p class="sub">Week ending {esc(bundle.get("generated_at", "")[:10])} · '
@@ -129,7 +133,7 @@ def render(bundle: dict, drafts: dict) -> str:
     out.append("<footer>Drafted by Claude from Canvas discussion data. Review, edit, "
                "and post under your own account — these are not posted automatically."
                "</footer></div>")
-    out.append(f"<script>{JS}</script>")
+    out.append(f"<script>{JS}</script></body></html>")
     return "\n".join(out)
 
 

@@ -1,7 +1,11 @@
-"""Minimal Canvas LMS REST client.
+"""Minimal read-only Canvas LMS REST client.
 
 Stdlib only, so a scheduled run works in a bare container with no pip step.
 Each institution runs its own Canvas tenant, so one client == one school.
+
+This client cannot write to Canvas. `_request` refuses any method other than
+GET, so there is no code path -- present, unused, or added by accident later --
+that posts on the instructor's behalf. Drafts go to a human, who posts them.
 """
 
 from __future__ import annotations
@@ -37,13 +41,15 @@ class CanvasClient:
 
     # ---- transport -------------------------------------------------
 
-    def _request(self, method: str, url: str, body: dict | None = None):
-        data = json.dumps(body).encode() if body is not None else None
-        req = urllib.request.Request(url, data=data, method=method)
+    def _request(self, method: str, url: str):
+        if method != "GET":
+            raise CanvasError(
+                f"{method} refused: this client is read-only by design. "
+                f"Drafts are reviewed and posted by the instructor."
+            )
+        req = urllib.request.Request(url, method=method)
         req.add_header("Authorization", f"Bearer {self.token}")
         req.add_header("Accept", "application/json")
-        if data:
-            req.add_header("Content-Type", "application/json")
 
         last_err = None
         for attempt in range(4):
@@ -56,12 +62,17 @@ class CanvasClient:
                         payload = payload[len("while(1);"):]
                     return json.loads(payload or "null"), dict(resp.headers)
             except urllib.error.HTTPError as exc:
-                # 403 here is usually Canvas throttling, not a permission problem.
-                if exc.code in (403, 429, 500, 502, 503, 504) and attempt < 3:
+                detail = exc.read().decode("utf-8", "replace")[:400]
+                # Canvas reports throttling as 403 too, so read the body rather
+                # than burning three backoffs on a token that will never work.
+                throttled = exc.code == 403 and "rate limit" in detail.lower()
+                if (throttled or exc.code in (429, 500, 502, 503, 504)) and attempt < 3:
                     last_err = exc
                     time.sleep(2 ** attempt)
                     continue
-                detail = exc.read().decode("utf-8", "replace")[:400]
+                if exc.code in (401, 403):
+                    detail += (" -- check that the API token is valid, unexpired, "
+                               "and belongs to an account enrolled in this course.")
                 raise CanvasError(f"{method} {url} -> HTTP {exc.code}: {detail}") from exc
             except urllib.error.URLError as exc:
                 if attempt < 3:
@@ -98,9 +109,6 @@ class CanvasClient:
             url = match.group(1) if match else None
         return out
 
-    def post(self, path: str, body: dict):
-        return self._request("POST", f"{self.base_url}{path}", body)[0]
-
     # ---- convenience ------------------------------------------------
 
     def whoami(self) -> dict:
@@ -117,16 +125,3 @@ class CanvasClient:
         return self.get(
             f"/api/v1/courses/{course_id}/discussion_topics/{topic_id}/view"
         ) or {}
-
-    def reply_to_entry(self, course_id: int, topic_id: int, entry_id: int, message: str):
-        return self.post(
-            f"/api/v1/courses/{course_id}/discussion_topics/{topic_id}"
-            f"/entries/{entry_id}/replies",
-            {"message": message},
-        )
-
-    def post_entry(self, course_id: int, topic_id: int, message: str):
-        return self.post(
-            f"/api/v1/courses/{course_id}/discussion_topics/{topic_id}/entries",
-            {"message": message},
-        )
