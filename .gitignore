@@ -1,0 +1,8 @@
+# Never commit course rosters, student posts, or drafts containing student work.
+config.json
+bundles/
+drafts/
+reviews/
+*.env
+__pycache__/
+*.pyc
