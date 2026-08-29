@@ -16,8 +16,11 @@ a script running in your browser can do the same. This needs no personal access
 token, which matters because many institutions disable instructor tokens.
 
 1. Open the discussion topic while logged in.
-2. Open the console (F12) and paste `browser/fetch_thread.js`. It reads the
-   thread and copies a bundle to your clipboard. Read-only.
+2. Open the console (F12) and paste a reader. Both are read-only:
+   - `browser/fetch_thread.js` copies a JSON bundle — feed it straight to the tools.
+   - `browser/read_thread_min.js` prints the thread as readable text you can skim
+     before sending. It embeds real Canvas ids, so `from_paste` produces a
+     postable bundle from it rather than a drafting-only one.
 3. Give the bundle to Claude. It drafts replies and returns a `post.js`.
 4. Paste `post.js` into the console on the same page. It posts as you.
 
@@ -184,7 +187,8 @@ canvas_weekly/fetch_week.py      read a week of discussion activity → bundle
 canvas_weekly/from_paste.py      pasted thread text → the same bundle, no API
 canvas_weekly/render_review.py   bundle + drafts → review page
 canvas_weekly/make_poster.py     bundle + drafts → browser script that posts
-browser/fetch_thread.js          console snippet: read a thread, no token
+browser/fetch_thread.js          console snippet: read a thread → JSON bundle
+browser/read_thread_min.js       console snippet: read a thread → readable text
 .claude/skills/canvas-weekly/    how Claude runs the weekly pass
 config.example.json              copy to config.json
 ```

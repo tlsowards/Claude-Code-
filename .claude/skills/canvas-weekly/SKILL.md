@@ -20,7 +20,12 @@ draft in `note` when it needs their judgment.
 
 1. **Get a bundle.** Either path produces the same thing:
 
-   - *Pasted thread* (no API access): `python3 -m canvas_weekly.from_paste --in <file> --school-name "<school>"`
+   - *Console reader* (no API access): the instructor runs `browser/read_thread_min.js`
+     and sends the text. Save it and run
+     `python3 -m canvas_weekly.from_paste --in <file> --school-name "<school>"`.
+     Its output carries real Canvas ids, so the bundle is postable.
+   - *Hand-typed paste*: same command, but the bundle is drafting-only — check
+     `entry_ids` in the bundle; `synthetic` means `make_poster` will refuse it.
    - *API*: `python3 -m canvas_weekly.fetch_week --school <id> --days 7`
 
    If the API path reports an unreachable host, the environment network policy is

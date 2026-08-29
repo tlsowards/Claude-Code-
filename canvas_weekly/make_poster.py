@@ -126,13 +126,15 @@ def main(argv=None) -> int:
     # Paste bundles number their entries 1..n as they are read. Those are not
     # Canvas entry ids, so posting against them would target whatever entries
     # happen to hold those ids in the live course.
-    if (bundle.get("school_id") == "paste" or not topic.get("course_id")
-            or not bundle.get("base_url")):
+    synthetic = (bundle.get("entry_ids") == "synthetic"
+                 or (bundle.get("school_id") == "paste"
+                     and bundle.get("entry_ids") != "canvas"))
+    if synthetic or not topic.get("course_id") or not bundle.get("base_url"):
         raise SystemExit(
             "this bundle has no real Canvas entry ids, so its replies cannot be "
-            "addressed to actual posts. Posting requires a bundle from "
-            "browser/fetch_thread.js (or fetch_week.py) -- the paste path is for "
-            "drafting and the review page only."
+            "addressed to actual posts. Posting needs a bundle from "
+            "browser/fetch_thread.js, browser/read_thread_min.js, or fetch_week.py "
+            "-- hand-typed paste text has read-order counters, not Canvas ids."
         )
 
     messages = build_messages(bundle, drafts)

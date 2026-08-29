@@ -39,7 +39,10 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-HEADER_RE = re.compile(r"^(COURSE|TOPIC|URL|ME|PROMPT)\s*:\s*(.*)$", re.I)
+HEADER_RE = re.compile(
+    r"^(COURSE_ID|TOPIC_ID|COURSE|TOPIC|URL|ME|PROMPT)\s*:\s*(.*)$", re.I)
+# read_thread_min.js appends real Canvas ids to each author line.
+IDS_RE = re.compile(r"\s*\[(?:entry:(\d+))?\s*(?:user:(\d+))?\]\s*$")
 # An author is required, so a bare "---" divider inside a post stays post text.
 MARKER_RE = re.compile(r"^(\s*)---[ \t]+(\S.*?)\s*$")
 
@@ -65,7 +68,8 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
 
     def new_topic() -> dict:
         return {"course_name": "", "topic_title": "", "topic_url": "",
-                "me": "", "topic_prompt": "", "posts": []}
+                "me": "", "me_id": None, "course_id": None, "topic_id": None,
+                "topic_prompt": "", "posts": []}
 
     for line_no, line in enumerate(text.splitlines(), start=1):
         # An explicit escape for a line that would otherwise look like syntax.
@@ -93,8 +97,18 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
                 post, buf = None, []
                 current = new_topic()
                 topics.append(current)
+            if key in ("COURSE_ID", "TOPIC_ID"):
+                digits = re.sub(r"\D", "", value)
+                current["course_id" if key == "COURSE_ID" else "topic_id"] = (
+                    int(digits) if digits else None)
+                continue
             field = {"COURSE": "course_name", "TOPIC": "topic_title",
                      "URL": "topic_url", "ME": "me", "PROMPT": "topic_prompt"}[key]
+            if key == "ME":
+                ids = IDS_RE.search(value)
+                if ids:
+                    current["me_id"] = int(ids.group(2)) if ids.group(2) else None
+                    value = IDS_RE.sub("", value)
             current[field] = (current[field] + " " + value).strip() if current[field] and field == "topic_prompt" else value
             continue
 
@@ -113,7 +127,18 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
                     f"{depth - previous} levels deeper than the post above it "
                     f"(or than the start of the topic); check the indentation"
                 )
-            post = {"entry_id": next_id, "author": marker.group(2), "depth": depth}
+            author = marker.group(2)
+            ids = IDS_RE.search(author)
+            entry_id, user_id = next_id, None
+            if ids:
+                author = IDS_RE.sub("", author).strip()
+                if ids.group(1):
+                    entry_id = int(ids.group(1))
+                if ids.group(2):
+                    user_id = int(ids.group(2))
+            post = {"entry_id": entry_id, "author": author,
+                    "author_id": user_id, "depth": depth,
+                    "real_id": bool(ids and ids.group(1))}
             next_id += 1
             continue
 
@@ -128,38 +153,48 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
 
 
 def to_bundle(topics: list[dict], school_name: str) -> dict:
-    out_topics = []
+    out_topics, reals = [], []
+    base_url = ""
     for index, topic in enumerate(topics, start=1):
         me = (topic.get("me") or "").strip().lower()
         posts = topic["posts"]
 
+        me_id = topic.get("me_id")
         thread = []
         for position, post in enumerate(posts):
             # The nearest preceding post one level shallower is the parent.
             parent = next((posts[j]["author"] for j in range(position - 1, -1, -1)
                            if posts[j]["depth"] < post["depth"]), None)
-            thread.append({**post, "author_id": None, "created_at": "",
-                           "replying_to": parent})
+            thread.append({**post, "created_at": "", "replying_to": parent})
+
+        def is_me(entry: dict) -> bool:
+            if me_id is not None and entry.get("author_id") is not None:
+                return entry["author_id"] == me_id
+            return bool(me) and entry["author"].strip().lower() == me
 
         needs = []
         for position, post in enumerate(thread):
-            if me and post["author"].strip().lower() == me:
+            if is_me(post):
                 continue
             # Answered if any deeper post before the next same-or-shallower one is mine.
             answered = False
             for later in thread[position + 1:]:
                 if later["depth"] <= post["depth"]:
                     break
-                if me and later["author"].strip().lower() == me:
+                if is_me(later):
                     answered = True
                     break
             if not answered:
                 needs.append(post)
 
+        real = bool(posts) and all(p.get("real_id") for p in posts)
+        reals.append(real and bool(topic.get("course_id")) and bool(topic.get("topic_id")))
+        if topic.get("topic_url") and not base_url:
+            base_url = "/".join(topic["topic_url"].split("/")[:3])
         out_topics.append({
-            "course_id": 0,
+            "course_id": topic.get("course_id") or 0,
             "course_name": topic.get("course_name") or "",
-            "topic_id": index,
+            "topic_id": topic.get("topic_id") or index,
             "topic_title": topic.get("topic_title") or f"Discussion {index}",
             "topic_url": topic.get("topic_url") or "",
             "topic_prompt": topic.get("topic_prompt") or "",
@@ -169,10 +204,14 @@ def to_bundle(topics: list[dict], school_name: str) -> dict:
             "thread": thread,
         })
 
+    all_real = bool(reals) and all(reals) and bool(base_url)
     return {
         "school_id": "paste",
+        # Canvas ids only when every post carried one; otherwise the entry ids
+        # are read-order counters and must never be used to address a reply.
+        "entry_ids": "canvas" if all_real else "synthetic",
         "school_name": school_name,
-        "base_url": "",
+        "base_url": base_url,
         "source": "pasted text (no Canvas API)",
         "instructor": {"id": None, "name": topics[0].get("me") if topics else None},
         "window_days": None,  # pasted text carries no timestamps to filter on

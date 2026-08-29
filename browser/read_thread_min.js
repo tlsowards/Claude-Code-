@@ -6,9 +6,12 @@
   const [me, top, v] = await Promise.all([g('/api/v1/users/self'), g(`/api/v1/courses/${c}/discussion_topics/${t}`), g(`/api/v1/courses/${c}/discussion_topics/${t}/view`)]);
   const n = {}; (v.participants || []).forEach(p => n[p.id] = p.display_name || p.name || p.id);
   const txt = h => { const d = new DOMParser().parseFromString((h||'').replace(/<br\s*\/?>|<\/p>/gi,'\n'), 'text/html'); return (d.body.textContent||'').trim(); };
-  const out = [`COURSE: ${c}`, `TOPIC: ${top.title}`, `TOPIC_ID: ${t}`, `ME: ${me.name} [id:${me.id}]`, `PROMPT: ${txt(top.message)}`, ''];
+  const out = [`COURSE_ID: ${c}`, `TOPIC_ID: ${t}`, `TOPIC: ${top.title}`,
+    `URL: ${location.origin}/courses/${c}/discussion_topics/${t}`,
+    `ME: ${me.name} [user:${me.id}]`, `PROMPT: ${txt(top.message)}`, ''];
   const walk = (l, d) => (l||[]).forEach(e => { if (e.deleted) return;
-    out.push('  '.repeat(d) + `--- ${n[e.user_id]||'?'} [entry:${e.id}]`, '  '.repeat(d) + txt(e.message), '');
+    out.push('  '.repeat(d) + `--- ${n[e.user_id]||'?'} [entry:${e.id} user:${e.user_id}]`,
+            '  '.repeat(d) + txt(e.message), '');
     walk(e.replies, d + 1); });
   walk(v.view, 0);
   const s = out.join('\n');
