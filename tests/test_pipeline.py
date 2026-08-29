@@ -5,6 +5,7 @@ No dependencies, no test runner:  python3 tests/test_pipeline.py
 
 import json
 import pathlib
+import re
 import subprocess
 import sys
 import tempfile
@@ -259,10 +260,12 @@ def test_reader_omits_student_ids():
     js = (ROOT / "browser" / "read_thread_min.js").read_text()
     check("tags the instructor's user id only", "e.user_id === me.id ?" in js)
     check("parses HTML inertly", "innerHTML" not in js and "DOMParser" in js)
-    fetch_js = (ROOT / "browser" / "fetch_thread.js").read_text()
-    check("fetch_thread.js also inert",
-          "innerHTML" not in fetch_js.split("//")[0] + fetch_js.replace(
-              "// innerHTML on a detached div would still fire <img onerror> from a student's", ""))
+    # Strip comments generically rather than by matching a hardcoded sentence,
+    # so rewording a comment can never quietly disable this check.
+    strip_comments = lambda src: re.sub(r"//[^\n]*", "", src)
+    for name in ("fetch_thread.js", "read_thread_min.js"):
+        code = strip_comments((ROOT / "browser" / name).read_text())
+        check(f"{name}: no innerHTML in code (comments aside)", "innerHTML" not in code)
 
 
 def main():
