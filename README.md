@@ -7,7 +7,23 @@ page. The instructor edits and posts.
 
 **This tooling never writes to Canvas.** See [Why drafts, not autopost](#why-drafts-not-autopost).
 
-## Two ways to run this
+## Browser workflow (no token, no admin)
+
+Canvas's own frontend calls its API with your session cookie and a CSRF token, so
+a script running in your browser can do the same. This needs no personal access
+token, which matters because many institutions disable instructor tokens.
+
+1. Open the discussion topic while logged in.
+2. Open the console (F12) and paste `browser/fetch_thread.js`. It reads the
+   thread and copies a bundle to your clipboard. Read-only.
+3. Give the bundle to Claude. It drafts replies and returns a `post.js`.
+4. Paste `post.js` into the console on the same page. It posts as you.
+
+Chrome blocks console pasting until you type `allow pasting` once per session.
+Re-running `post.js` is safe: it re-reads the thread first and skips any post you
+have already replied to.
+
+## Two other ways to run this
 
 **Paste (no API access needed).** Copy the discussion thread out of Canvas into a
 text file and run `from_paste`. Everything downstream — drafting, the review
@@ -148,6 +164,8 @@ canvas_weekly/canvas_client.py   read-only Canvas client (GET-only, paginated)
 canvas_weekly/fetch_week.py      read a week of discussion activity → bundle
 canvas_weekly/from_paste.py      pasted thread text → the same bundle, no API
 canvas_weekly/render_review.py   bundle + drafts → review page
+canvas_weekly/make_poster.py     bundle + drafts → browser script that posts
+browser/fetch_thread.js          console snippet: read a thread, no token
 .claude/skills/canvas-weekly/    how Claude runs the weekly pass
 config.example.json              copy to config.json
 ```

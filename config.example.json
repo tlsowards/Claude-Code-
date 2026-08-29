@@ -4,7 +4,7 @@
     {
       "id": "chico",
       "name": "CSU Chico",
-      "base_url": "https://REPLACE.instructure.com",
+      "base_url": "https://canvas.csuchico.edu",
       "token_env": "CANVAS_TOKEN_CHICO",
       "courses": [
         { "id": 000000, "name": "Course name for your own reference" }

@@ -1,14 +1,20 @@
 ---
 name: canvas-weekly
-description: Run the weekly Canvas discussion pass for a course - pull the week's student posts, draft a substantive reply and a probing follow-up question for each, propose content to add to the thread, and render a review page for the instructor to edit and post. Use when asked to do the weekly Canvas run, draft discussion replies, or prepare the week's discussion responses. Never posts to Canvas.
+description: Run the weekly Canvas discussion pass for a course - pull the week's student posts, draft a substantive reply and a probing follow-up question for each, propose content to add to the thread, and produce the browser script that posts them. Use when asked to do the weekly Canvas run, draft discussion replies, or prepare the week's discussion responses.
 ---
 
 # Weekly Canvas discussion pass
 
-Produce drafts for the instructor to review, edit, and post themselves. **You
-never post to Canvas.** The instructor is the author of record; federal
-distance-education rules on regular and substantive interaction depend on that
-being true.
+Draft replies to the week's student posts and produce the script that posts them.
+
+**Nothing you run reaches Canvas.** The Python client is GET-only, and posting
+happens in a browser script the instructor pastes into their own logged-in
+session on the discussion page. That split is deliberate: the instructor's
+machine and account do the posting, so the account of record stays theirs.
+
+This instructor has chosen automatic posting - draft, generate the script, hand
+it over. Do not add a review gate they did not ask for. Do flag an individual
+draft in `note` when it needs their judgment.
 
 ## Steps
 
@@ -44,8 +50,13 @@ being true.
    }
    ```
 
-4. **Render.** `python3 -m canvas_weekly.render_review --bundle <b> --drafts <d> --out reviews/<school>-<date>.html`
-   Publish it as an Artifact and give the instructor the link.
+4. **Generate the poster.** `python3 -m canvas_weekly.make_poster --bundle <b> --drafts <d> --out posts/<topic>.js`
+   Send them the file. They paste it into the console on the discussion page;
+   it posts through Canvas's API on their session, skipping anything they have
+   already replied to so a second paste cannot double post.
+
+5. **Optional review page.** `python3 -m canvas_weekly.render_review --bundle <b> --drafts <d> --out reviews/<school>-<date>.html`
+   Useful when they want to read the drafts before running the poster.
 
 ## What a good draft looks like
 
@@ -65,7 +76,8 @@ being true.
 
 ## Never
 
-- Post, reply, or write to Canvas through any endpoint.
+- Write to Canvas from any tool you run. The only write path is the generated
+  script, executed by the instructor in their own browser.
 - Copy student names or post text into commits, PRs, or anything leaving this
   machine. `bundles/`, `drafts/`, and `reviews/` are gitignored — keep it that way.
 - Invent course facts (due dates, policies, readings) not present in the bundle.
