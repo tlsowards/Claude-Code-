@@ -10,7 +10,10 @@
     `URL: ${location.origin}/courses/${c}/discussion_topics/${t}`,
     `ME: ${me.name} [user:${me.id}]`, `PROMPT: ${txt(top.message)}`, ''];
   const walk = (l, d) => (l||[]).forEach(e => { if (e.deleted) return;
-    out.push('  '.repeat(d) + `--- ${n[e.user_id]||'?'} [entry:${e.id} user:${e.user_id}]`,
+    // Only your own user id is tagged: it is all the tools need to tell your
+    // posts from students', and this text gets pasted around.
+    const tag = e.user_id === me.id ? ` [entry:${e.id} user:${e.user_id}]` : ` [entry:${e.id}]`;
+    out.push('  '.repeat(d) + `--- ${n[e.user_id]||'?'}${tag}`,
             '  '.repeat(d) + txt(e.message), '');
     walk(e.replies, d + 1); });
   walk(v.view, 0);
