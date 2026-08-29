@@ -1,0 +1,35 @@
+{
+  "_comment": "Copy to config.json and fill in. config.json is gitignored - it holds course IDs, and tokens never live here at all (they come from environment variables named below).",
+  "schools": [
+    {
+      "id": "chico",
+      "name": "CSU Chico",
+      "base_url": "https://canvas.csuchico.edu",
+      "token_env": "CANVAS_TOKEN_CHICO",
+      "courses": [
+        { "id": 000000, "name": "Course name for your own reference" }
+      ]
+    },
+    {
+      "id": "sacstate",
+      "name": "Sacramento State",
+      "base_url": "https://REPLACE.instructure.com",
+      "token_env": "CANVAS_TOKEN_SACSTATE",
+      "courses": []
+    },
+    {
+      "id": "devry",
+      "name": "DeVry University",
+      "base_url": "https://REPLACE.instructure.com",
+      "token_env": "CANVAS_TOKEN_DEVRY",
+      "courses": []
+    },
+    {
+      "id": "arc",
+      "name": "American River College",
+      "base_url": "https://REPLACE.instructure.com",
+      "token_env": "CANVAS_TOKEN_ARC",
+      "courses": []
+    }
+  ]
+}

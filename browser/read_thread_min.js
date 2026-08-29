@@ -1,0 +1,26 @@
+(async () => {
+  const m = location.pathname.match(/courses\/(\d+)\/discussion_topics\/(\d+)/);
+  if (!m) return console.error('Open the discussion topic page first.');
+  const g = async p => JSON.parse((await (await fetch(p, {credentials:'same-origin'})).text()).replace(/^while\(1\);/, ''));
+  const [, c, t] = m;
+  const [me, top, v] = await Promise.all([g('/api/v1/users/self'), g(`/api/v1/courses/${c}/discussion_topics/${t}`), g(`/api/v1/courses/${c}/discussion_topics/${t}/view`)]);
+  const n = {}; (v.participants || []).forEach(p => n[p.id] = p.display_name || p.name || p.id);
+  const txt = h => { const d = new DOMParser().parseFromString((h||'').replace(/<br\s*\/?>|<\/p>/gi,'\n'), 'text/html'); return (d.body.textContent||'').trim(); };
+  const out = [`COURSE_ID: ${c}`, `TOPIC_ID: ${t}`, `TOPIC: ${top.title}`,
+    `URL: ${location.origin}/courses/${c}/discussion_topics/${t}`,
+    `ME: ${me.name} [user:${me.id}]`, `PROMPT: ${txt(top.message)}`, ''];
+  const walk = (l, d) => (l||[]).forEach(e => {
+    // A deleted parent must not take its live replies with it.
+    if (e.deleted) { walk(e.replies, d); return; }
+    // Only your own user id is tagged: it is all the tools need to tell your
+    // posts from students', and this text gets pasted around.
+    const tag = e.user_id === me.id ? ` [entry:${e.id} user:${e.user_id}]` : ` [entry:${e.id}]`;
+    out.push('  '.repeat(d) + `--- ${n[e.user_id]||'?'}${tag}`,
+            '  '.repeat(d) + txt(e.message), '');
+    walk(e.replies, d + 1); });
+  walk(v.view, 0);
+  const s = out.join('\n');
+  try { await navigator.clipboard.writeText(s); } catch(_) {}
+  console.log(s);
+  console.log('--- copied to clipboard; paste this to Claude ---');
+})();
