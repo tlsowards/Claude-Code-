@@ -28,10 +28,13 @@
   const names = {};
   for (const p of view.participants || []) names[p.id] = p.display_name || p.name || `user ${p.id}`;
 
-  const text = (html) => {
-    const el = document.createElement('div');
-    el.innerHTML = (html || '').replace(/<br\s*\/?>|<\/p>/gi, '\n');
-    return (el.textContent || '').replace(/\n{3,}/g, '\n\n').trim();
+  // DOMParser builds an inert document: no resource loads, no event handlers.
+  // innerHTML on a detached div would still fire <img onerror> from a student's
+  // post, and this runs inside your authenticated Canvas session.
+  const text = (raw) => {
+    const doc = new DOMParser().parseFromString(
+      (raw || '').replace(/<br\s*\/?>|<\/p>/gi, '\n'), 'text/html');
+    return (doc.body.textContent || '').replace(/\n{3,}/g, '\n\n').trim();
   };
 
   const thread = [];
