@@ -3,6 +3,7 @@ config.json
 bundles/
 drafts/
 reviews/
+posts/
 *.env
 __pycache__/
 *.pyc

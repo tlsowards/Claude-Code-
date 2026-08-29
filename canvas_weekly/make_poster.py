@@ -10,6 +10,7 @@ token, so no personal access token is involved.
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import pathlib
 
@@ -95,11 +96,14 @@ def build_messages(bundle: dict, drafts: dict) -> list[dict]:
             body = f"{body}\n\n{question}" if body else question
         if not body:
             continue
-        # Canvas renders entries as HTML, so paragraph-wrap rather than send \n.
-        html = "".join(f"<p>{p.strip()}</p>" for p in body.split("\n\n") if p.strip())
+        # Canvas renders entries as HTML, so paragraph-wrap rather than send \n --
+        # and escape first, since this is the one place text goes out to students.
+        # An ampersand or a quoted "<" in a draft must not become markup.
+        markup = "".join(f"<p>{html.escape(p.strip())}</p>"
+                         for p in body.split("\n\n") if p.strip())
         out.append({"entry_id": reply["entry_id"],
                     "author": reply.get("author") or authors.get(reply["entry_id"], "?"),
-                    "message": html})
+                    "message": markup})
     return out
 
 
