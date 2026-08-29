@@ -72,6 +72,8 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
         if line.startswith("\\"):
             if post is not None:
                 buf.append(line[1:])
+            elif current is not None and current["topic_prompt"]:
+                current["topic_prompt"] += "\n" + line[1:].strip()
             continue
 
         header = HEADER_RE.match(line.strip())
@@ -104,11 +106,12 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
             flush(post, buf, current["posts"])
             buf = []
             depth = len(marker.group(1)) // 2
-            if current["posts"] and depth > current["posts"][-1]["depth"] + 1:
+            previous = current["posts"][-1]["depth"] if current["posts"] else -1
+            if depth > previous + 1:
                 warnings.append(
                     f"line {line_no}: {marker.group(2)!r} is indented "
-                    f"{depth - current['posts'][-1]['depth']} levels deeper than the "
-                    f"post above it; check the indentation"
+                    f"{depth - previous} levels deeper than the post above it "
+                    f"(or than the start of the topic); check the indentation"
                 )
             post = {"entry_id": next_id, "author": marker.group(2), "depth": depth}
             next_id += 1

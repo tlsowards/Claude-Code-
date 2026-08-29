@@ -1,11 +1,13 @@
 # Weekly Canvas discussion assistant
 
-Each week, pull the discussion activity from a Canvas course, draft a substantive
+Each week, read the discussion activity from a Canvas course, draft a substantive
 reply and a probing follow-up question for every student post that hasn't been
-answered, propose content to add to the thread, and render it all as one review
-page. The instructor edits and posts.
+answered, propose content to add to the thread, and post them.
 
-**This tooling never writes to Canvas.** See [Why drafts, not autopost](#why-drafts-not-autopost).
+**Nothing in this repo writes to Canvas.** The client is GET-only. Posting happens
+in a script you paste into your own browser, on your own session — so the account
+of record stays yours. See [Posting](#posting) for what that does and does not
+settle.
 
 ## Browser workflow (no token, no admin)
 
@@ -25,13 +27,14 @@ have already replied to.
 
 ## Two other ways to run this
 
-**Paste (no API access needed).** Drafting and the review page only — pasted
-text carries no Canvas entry ids, so the poster cannot address replies to real
-posts and will refuse a paste bundle. Use the browser workflow above to post.
- Copy the discussion thread out of Canvas into a
-text file and run `from_paste`. Everything downstream — drafting, the review
-page — is identical. Start here; many institutions disable instructor access
-tokens, and this path never depends on one.
+**Paste (no API access needed).** Copy the discussion thread out of Canvas into a
+text file and run `from_paste`. Drafting and the review page work exactly as they
+do on the other paths.
+
+This path cannot post. Pasted text carries no Canvas entry ids, so a reply has
+nothing real to attach to, and `make_poster` refuses a paste bundle rather than
+generating a script that would silently do nothing. Use the browser workflow
+above to post.
 
 **API (automatic fetch).** If you can get a token, `fetch_week` pulls the threads
 for you and tracks which posts you have already answered. Same output.
@@ -147,22 +150,31 @@ drafting run before you sit down to it — e.g. Sunday evening, so drafts are
 waiting Monday morning. Ask Claude to "set up the weekly Canvas run for <school>
 on Sunday evenings" and it will create the trigger.
 
-## Why drafts, not autopost
+## Posting
 
-Canvas's API can post replies, and this tool deliberately doesn't.
+The browser workflow posts drafted replies to students. Two things are worth
+being clear about, because they are different questions.
 
-Federal distance-education regulations require *regular and substantive
-interaction* between students and the **instructor of record**, and that
-requirement is tied to accreditation and Title IV eligibility. An agent posting
-unreviewed under your name is squarely what those rules are about. Most
-institutions also now have AI-disclosure policies for instructors, and student
-discussion posts are education records under FERPA — which is why `bundles/`,
-`drafts/`, and `reviews/` never leave the machine and never enter git.
+**Whose account posts.** Yours, structurally. `canvas_client.py` refuses any HTTP
+method but GET, so nothing this repo runs can write to Canvas. The only write
+path is the generated script, executed by you, in your browser, on your session.
+That is the part the architecture can actually guarantee.
 
-Reviewing and posting yourself keeps the interaction yours, keeps you inside
-those rules, and still removes most of the weekly labor. Worth confirming your
-specific policy with each institution before the first run — the four campuses
-will not have identical rules.
+**Whether a human reads each draft first.** That is a policy choice, not an
+architectural one, and the tool does what you configure. It defaults to
+generating the poster without a review gate. `render_review.py` produces a review
+page if you want to read the drafts first, and it is worth doing for the first
+few weeks — the drafts are written from thread text alone, so they cannot know
+what you covered in lecture or which student is retaking the course.
+
+Two things to check with each institution before a first run, since the four
+campuses will not have identical rules. Federal distance-education regulations
+require *regular and substantive interaction* between students and the
+**instructor of record**, tied to accreditation and Title IV eligibility. And
+most institutions now have AI-disclosure policies for instructors. Student
+discussion posts are also education records under FERPA, which is why
+`bundles/`, `drafts/`, `reviews/`, and `posts/` never leave the machine and never
+enter git.
 
 ## Layout
 
