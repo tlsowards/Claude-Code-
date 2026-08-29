@@ -18,8 +18,11 @@ Format (headers are per-topic; repeat the block for more topics):
       --- Priya K.
       But evergreening extends them past the incentive.
 
-Every `---` line starts a post; the rest of the line is the author. Indent the
-marker two spaces per level of reply nesting. `ME:` marks your own name, so your
+Every `---` line followed by an author starts a post. A bare `---` divider
+inside a post stays part of that post. Indent the marker two spaces per level of
+reply nesting. Headers count only before a topic's first post, so a student
+quoting `TOPIC:` or `ME:` is kept as message text. Prefix any line with a
+backslash to force it to be treated as text. `ME:` marks your own name, so your
 posts count as context and the threads you already answered are left alone.
 `URL:` and `PROMPT:` are optional but both improve the drafts.
 
@@ -33,21 +36,23 @@ import datetime as dt
 import json
 import pathlib
 import re
+import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 HEADER_RE = re.compile(r"^(COURSE|TOPIC|URL|ME|PROMPT)\s*:\s*(.*)$", re.I)
-MARKER_RE = re.compile(r"^(\s*)---\s*(.*?)\s*$")
+# An author is required, so a bare "---" divider inside a post stays post text.
+MARKER_RE = re.compile(r"^(\s*)---[ \t]+(\S.*?)\s*$")
 
 
 def flush(post: dict | None, buf: list, out: list) -> None:
     if post is None:
         return
     post["message"] = "\n".join(buf).strip()
-    if post["message"] or post["author"]:
+    if post["message"]:
         out.append(post)
 
 
-def parse(text: str) -> list[dict]:
+def parse(text: str) -> tuple[list[dict], list[str]]:
     """Split the file into topic blocks, each with its ordered posts."""
     topics: list[dict] = []
     current: dict | None = None
@@ -55,13 +60,30 @@ def parse(text: str) -> list[dict]:
     buf: list[str] = []
     next_id = 1
 
+    warnings: list[str] = []
+    line_no = 0
+
     def new_topic() -> dict:
         return {"course_name": "", "topic_title": "", "topic_url": "",
                 "me": "", "topic_prompt": "", "posts": []}
 
-    for line in text.splitlines():
+    for line_no, line in enumerate(text.splitlines(), start=1):
+        # An explicit escape for a line that would otherwise look like syntax.
+        if line.startswith("\\"):
+            if post is not None:
+                buf.append(line[1:])
+            continue
+
         header = HEADER_RE.match(line.strip())
-        if header and not MARKER_RE.match(line):
+        # Headers describe a topic, so they only count before its first post.
+        # After that they are a student quoting something -- keep them verbatim.
+        if header and post is not None:
+            warnings.append(
+                f"line {line_no}: {header.group(1).upper()}: appears inside a post "
+                f"by {post['author']!r}; treated as message text, not a header"
+            )
+            header = None
+        if header:
             key, value = header.group(1).upper(), header.group(2).strip()
             # A second TOPIC: header starts a new block.
             if current is None or (key == "TOPIC" and current["topic_title"]):
@@ -81,8 +103,14 @@ def parse(text: str) -> list[dict]:
                 topics.append(current)
             flush(post, buf, current["posts"])
             buf = []
-            post = {"entry_id": next_id, "author": marker.group(2) or "unknown",
-                    "depth": len(marker.group(1)) // 2}
+            depth = len(marker.group(1)) // 2
+            if current["posts"] and depth > current["posts"][-1]["depth"] + 1:
+                warnings.append(
+                    f"line {line_no}: {marker.group(2)!r} is indented "
+                    f"{depth - current['posts'][-1]['depth']} levels deeper than the "
+                    f"post above it; check the indentation"
+                )
+            post = {"entry_id": next_id, "author": marker.group(2), "depth": depth}
             next_id += 1
             continue
 
@@ -93,10 +121,10 @@ def parse(text: str) -> list[dict]:
 
     if current is not None:
         flush(post, buf, current["posts"])
-    return [t for t in topics if t["posts"]]
+    return [t for t in topics if t["posts"]], warnings
 
 
-def to_bundle(topics: list[dict], school_name: str, days: int) -> dict:
+def to_bundle(topics: list[dict], school_name: str) -> dict:
     out_topics = []
     for index, topic in enumerate(topics, start=1):
         me = (topic.get("me") or "").strip().lower()
@@ -144,7 +172,7 @@ def to_bundle(topics: list[dict], school_name: str, days: int) -> dict:
         "base_url": "",
         "source": "pasted text (no Canvas API)",
         "instructor": {"id": None, "name": topics[0].get("me") if topics else None},
-        "window_days": days,
+        "window_days": None,  # pasted text carries no timestamps to filter on
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "topics": out_topics,
     }
@@ -159,13 +187,15 @@ def main(argv=None) -> int:
     args = ap.parse_args(argv)
 
     text = pathlib.Path(args.src).read_text()
-    topics = parse(text)
+    topics, warnings = parse(text)
+    for warning in warnings:
+        print(f"warning: {warning}", file=sys.stderr)
     if not topics:
         raise SystemExit(
             "no posts found. Every post needs a line starting with '---' followed "
             "by the author's name. See the format in this module's docstring."
         )
-    bundle = to_bundle(topics, args.school_name, 7)
+    bundle = to_bundle(topics, args.school_name)
 
     out = pathlib.Path(args.out) if args.out else (
         ROOT / "bundles" / f"paste-{dt.date.today().isoformat()}.json")

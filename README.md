@@ -25,7 +25,10 @@ have already replied to.
 
 ## Two other ways to run this
 
-**Paste (no API access needed).** Copy the discussion thread out of Canvas into a
+**Paste (no API access needed).** Drafting and the review page only — pasted
+text carries no Canvas entry ids, so the poster cannot address replies to real
+posts and will refuse a paste bundle. Use the browser workflow above to post.
+ Copy the discussion thread out of Canvas into a
 text file and run `from_paste`. Everything downstream — drafting, the review
 page — is identical. Start here; many institutions disable instructor access
 tokens, and this path never depends on one.
@@ -51,8 +54,12 @@ Natural monopolies in utilities lower costs.
   But evergreening extends them past the incentive window.
 ```
 
-Each `---` line starts a post, and the rest of that line is the author. Indent
-the marker two spaces per level of reply nesting. `ME:` is what keeps the tool
+Each `---` line followed by an author starts a post, and the rest of that line is
+the author. Indent the marker two spaces per level of reply nesting. A bare `---`
+divider inside a post stays part of that post, and a header keyword only counts
+before a topic's first post — so a student who writes `TOPIC:` or `ME:` in their
+own text is kept verbatim, with a warning. Prefix any line with a backslash to
+force it to be treated as text. `ME:` is what keeps the tool
 from drafting replies to your own posts, and marks threads you already answered
 so they are left alone. `URL:` and `PROMPT:` are optional; both sharpen the drafts.
 
