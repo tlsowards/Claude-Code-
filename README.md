@@ -7,7 +7,46 @@ page. The instructor edits and posts.
 
 **This tooling never writes to Canvas.** See [Why drafts, not autopost](#why-drafts-not-autopost).
 
-## Setup
+## Two ways to run this
+
+**Paste (no API access needed).** Copy the discussion thread out of Canvas into a
+text file and run `from_paste`. Everything downstream — drafting, the review
+page — is identical. Start here; many institutions disable instructor access
+tokens, and this path never depends on one.
+
+**API (automatic fetch).** If you can get a token, `fetch_week` pulls the threads
+for you and tracks which posts you have already answered. Same output.
+
+## Paste workflow
+
+Copy the thread from your browser into a file shaped like this:
+
+```
+COURSE: ECON 103 - Microeconomics
+TOPIC: Week 4: Is a monopoly ever good for consumers?
+URL: https://your-school.instructure.com/courses/900/discussion_topics/11
+ME: Your Name
+PROMPT: Read Ch. 7, then argue a position with evidence.
+
+--- Dana R.
+Natural monopolies in utilities lower costs.
+
+  --- Priya K.
+  But evergreening extends them past the incentive window.
+```
+
+Each `---` line starts a post, and the rest of that line is the author. Indent
+the marker two spaces per level of reply nesting. `ME:` is what keeps the tool
+from drafting replies to your own posts, and marks threads you already answered
+so they are left alone. `URL:` and `PROMPT:` are optional; both sharpen the drafts.
+
+```bash
+python3 -m canvas_weekly.from_paste --in week4.txt --school-name "CSU Chico"
+```
+
+Repeat the header block in the same file for more than one topic.
+
+## API setup
 
 ### 1. Allow Canvas through the network policy
 
@@ -22,9 +61,11 @@ https://code.claude.com/docs/en/claude-code-on-the-web.)
 In Canvas: **Account → Settings → Approved Integrations → + New Access Token**.
 Give it a purpose and an expiry date.
 
-Some institutions disable instructor-generated tokens. If the button isn't there,
-that's the answer — ask the campus Canvas admin whether a token can be issued
-for this purpose, and tell them what it's for.
+Some institutions disable instructor-generated tokens — if the button isn't
+there, or creating one fails, that setting is on and it isn't something you can
+work around from your own account. Either ask the campus Canvas admin whether a
+token can be issued for this purpose, or just use the paste workflow above,
+which needs nothing but your normal browser login.
 
 Tokens carry your full instructor permissions. Keep them in the environment, not
 in a file:
@@ -105,6 +146,7 @@ will not have identical rules.
 ```
 canvas_weekly/canvas_client.py   read-only Canvas client (GET-only, paginated)
 canvas_weekly/fetch_week.py      read a week of discussion activity → bundle
+canvas_weekly/from_paste.py      pasted thread text → the same bundle, no API
 canvas_weekly/render_review.py   bundle + drafts → review page
 .claude/skills/canvas-weekly/    how Claude runs the weekly pass
 config.example.json              copy to config.json

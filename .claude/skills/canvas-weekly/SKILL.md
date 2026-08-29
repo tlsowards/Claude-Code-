@@ -12,10 +12,15 @@ being true.
 
 ## Steps
 
-1. **Fetch.** `python3 -m canvas_weekly.fetch_week --school <id> --days 7`
-   Writes `bundles/<school>-<date>.json`. If it reports an unreachable host, the
-   environment network policy is still blocking `*.instructure.com` — say so and
-   stop rather than working around it.
+1. **Get a bundle.** Either path produces the same thing:
+
+   - *Pasted thread* (no API access): `python3 -m canvas_weekly.from_paste --in <file> --school-name "<school>"`
+   - *API*: `python3 -m canvas_weekly.fetch_week --school <id> --days 7`
+
+   If the API path reports an unreachable host, the environment network policy is
+   still blocking `*.instructure.com` — say so and offer the paste path rather
+   than working around it. If the instructor pastes a thread straight into chat,
+   write it to a file in the paste format and run `from_paste` on it.
 
 2. **Read the bundle.** Each topic carries `topic_prompt` (what the instructor
    asked), `thread` (the full conversation for context), and `needs_reply` (the
