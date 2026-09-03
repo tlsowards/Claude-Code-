@@ -64,19 +64,19 @@ OO 1352 II.M creates classification S-8 for any LGBTQI youth, and III.I requires
 
 > ~~S-8. Classification assigned to any youth who is lesbian, gay, bisexual, transgender, questioning, or intersex.~~
 
-*Described in the register, not read in this review*
+*Described in the register, not read in this review.*
 
 **OO 1352 III.I**
 
 > ~~Youth classified S-8 shall be housed in a single room at all times.~~
 
-*Described in the register, not read in this review*
+*Described in the register, not read in this review.*
 
 **OO 1352 III.E**
 
 > ~~Every S-8 entry in the housing matrix.~~
 
-*Described in the register, not read in this review*
+*Described in the register, not read in this review.*
 
 ### Insert
 
@@ -131,7 +131,7 @@ OO 1352.5 is otherwise a strong order. It supplies individualized assessment at 
 
 > ~~All transgender and intersex youth shall be provided a single room.~~
 
-*Described in the register, not read in this review*
+*Described in the register, not read in this review.*
 
 ### Insert
 
@@ -185,7 +185,7 @@ The twenty-four hour Child Protective Services timeline appears in two departmen
 
 > ~~All incidents of sexual assault shall be reported to Child Protective Services verbally within 24 hours, with a written report submitted within 36 hours.~~
 
-*Described in the register, not read in this review*
+*Described in the register, not read in this review.*
 
 ### Insert
 
@@ -245,7 +245,7 @@ The policy sets a fourteen-day window for the Chief Deputy or Assistant Chief De
 
 > ~~Within 14 days of receiving the allegation, the Chief Deputy or Assistant Chief Deputy shall notify the head of the facility where the alleged abuse occurred.~~
 
-*Described in the register, not read in this review*
+*Described in the register, not read in this review.*
 
 ### Insert
 
@@ -294,7 +294,7 @@ PREA Policy XIV.A permits discipline where an investigation determines allegatio
 
 > ~~A resident may be subject to disciplinary action where an investigation determines that the allegation was false.~~
 
-*Described in the register, not read in this review*
+*Described in the register, not read in this review.*
 
 ### Insert
 
@@ -346,13 +346,13 @@ Two problems in the S-4 classification. First, the note at II.F.2 states that a 
 
 > ~~A history of being a victim of molest, arson, or cruelty to animals should alert the Classification Officer for possible sexually inappropriate tendencies.~~
 
-*Quoted in register row 80 from the earlier review, which read the order*
+*Quoted in register row 80 from the earlier review, which read the order.*
 
 **OO 1352 II.H**
 
 > ~~The portion of the S-4 Low criteria that groups youth who act out sexually together with youth who have been victims of sexual abuse or are susceptible to victimization.~~
 
-*Described in the register, not read in this review*
+*Described in the register, not read in this review.*
 
 ### Insert
 
@@ -422,13 +422,13 @@ Three different retention rules govern the same records, and a fourth document p
 
 > ~~The five-year period, as applied to records within the scope of the schedule below. The five-year rule may stand for other citizen complaint records.~~
 
-*Described in the register, not read in this review*
+*Described in the register, not read in this review.*
 
 **PREA Policy XVIII.B**
 
 > ~~The ten-year period stated as the retention rule for case records associated with claims of sexual abuse, which is replaced by the cross-reference below.~~
 
-*Described in the register, not read in this review*
+*Described in the register, not read in this review.*
 
 ### Insert
 

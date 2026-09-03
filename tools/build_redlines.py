@@ -130,7 +130,9 @@ def main():
             add('')
             add('> ~~%s~~' % s['text'])
             add('')
-            add('*%s*' % s['status'].capitalize())
+            # status is stored ready to print, so this view and the Word view
+            # cannot drift. Do not re-case it here.
+            add('*%s*' % s['status'])
             add('')
         add('### Insert')
         add('')

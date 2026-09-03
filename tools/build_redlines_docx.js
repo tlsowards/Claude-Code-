@@ -222,9 +222,10 @@ data.items.forEach((it, idx) => {
           spacing: { before: 60, after: 60, line: 260 },
         }),
       ]),
+      // status is stored ready to print, so this view and the Markdown view
+      // cannot drift. Do not re-case it here.
       p('', {
-        runs: [txt(s.status.charAt(0).toUpperCase() + s.status.slice(1) + '.',
-          { italics: true, size: 18, color: MUTED })],
+        runs: [txt(s.status, { italics: true, size: 18, color: MUTED })],
         spacing: { before: 60, after: 200 },
       }),
     );

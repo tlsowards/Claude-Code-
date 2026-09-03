@@ -21,28 +21,33 @@
       "n": 1,
       "title": "Rescind the S-8 single-room mandate",
       "priority": "Critical",
-      "targets": ["OO 1352 Classification (eff. 12/09/2019, rev. 02/27/2020), II.M, III.E, III.I"],
+      "targets": [
+        "OO 1352 Classification (eff. 12/09/2019, rev. 02/27/2020), II.M, III.E, III.I"
+      ],
       "authority": [
         "28 CFR 115.342(c)",
         "15 CCR 1352(e), verified against the edition effective 04/01/2014",
         "15 CCR 1324(h), verified against the same edition"
       ],
-      "rows": [36, 75],
+      "rows": [
+        36,
+        75
+      ],
       "problem": "OO 1352 II.M creates classification S-8 for any LGBTQI youth, and III.I requires single-room housing at all times for S-8. 15 CCR 1352(e) prohibits exactly that, and it has done so since at least April 1, 2014, which is verified against the produced text. S-8 was created December 9, 2019 and retained on the February 27, 2020 revision, five and a half years after the state rule was already in force. The provision also contradicts the Purpose and Scope paragraph of OO 1352 itself, PREA Policy III.E, and OO 1352.5 III.H, which took effect March 1, 2019 and states that staff shall not consider a youth's sexual orientation or gender identity as a reason to isolate or withhold program options. S-8 is materially broader than the OO 1352.5 III.I provision, because it sweeps in lesbian, gay, bisexual, and questioning youth for whom no anatomical privacy rationale exists at all. 15 CCR 1324(h) supplies a second and independent hook: the policy and procedure manual must itself bar classification and restrictive housing decisions made solely on these bases, so S-8 is a defect in the required contents of the manual as well as an operational violation.",
       "strike": [
         {
           "cite": "OO 1352 II.M",
-          "status": "described in the register, not read in this review",
+          "status": "Described in the register, not read in this review.",
           "text": "S-8. Classification assigned to any youth who is lesbian, gay, bisexual, transgender, questioning, or intersex."
         },
         {
           "cite": "OO 1352 III.I",
-          "status": "described in the register, not read in this review",
+          "status": "Described in the register, not read in this review.",
           "text": "Youth classified S-8 shall be housed in a single room at all times."
         },
         {
           "cite": "OO 1352 III.E",
-          "status": "described in the register, not read in this review",
+          "status": "Described in the register, not read in this review.",
           "text": "Every S-8 entry in the housing matrix."
         }
       ],
@@ -76,18 +81,23 @@
       "n": 2,
       "title": "Convert the transgender and intersex single-room rule to a presumptive, documented outcome",
       "priority": "Critical",
-      "targets": ["OO 1352.5 Transgender and Intersex Youth (eff. 03/01/2019), III.I"],
+      "targets": [
+        "OO 1352.5 Transgender and Intersex Youth (eff. 03/01/2019), III.I"
+      ],
       "authority": [
         "28 CFR 115.342(c)-(g)",
         "15 CCR 1352(e), verified against the edition effective 04/01/2014",
         "15 CCR 1352.5, cited but not confirmed: absent from the produced edition"
       ],
-      "rows": [37, 75],
+      "rows": [
+        37,
+        75
+      ],
       "problem": "OO 1352.5 is otherwise a strong order. It supplies individualized assessment at admission, no automatic housing by external anatomy, documented reasons for any placement not matching gender identity, consideration of the youth's own preferences and provider recommendations, monthly reassessment which exceeds the twice-yearly federal minimum, private showers for all youth, and preservation of program participation. III.I undoes part of it by providing that all transgender and intersex youth shall be provided a single room. That is a categorical housing outcome assigned by status, which is what 115.342(c) and 15 CCR 1352(e) prohibit, and it contradicts III.B, III.F, and III.H within the same order. This version is more defensible than the S-8 mandate in OO 1352, because it is limited to transgender and intersex youth, states a privacy and safety rationale, and preserves program access. Categorical is still categorical.",
       "strike": [
         {
           "cite": "OO 1352.5 III.I",
-          "status": "described in the register, not read in this review",
+          "status": "Described in the register, not read in this review.",
           "text": "All transgender and intersex youth shall be provided a single room."
         }
       ],
@@ -129,12 +139,15 @@
         "Penal Code 11166(a), 11165.9, 11166(i)(1), 11166(j), 11172(a)",
         "Penal Code 11166(c), penalties"
       ],
-      "rows": [48, 77],
+      "rows": [
+        48,
+        77
+      ],
       "problem": "The twenty-four hour Child Protective Services timeline appears in two departmental documents. PREA Policy V.A.4 states it, and OO 1453 I.A.9 restates it: all incidents of sexual assault shall be reported to Child Protective Services verbally within twenty-four hours, with the written report within thirty-six hours. Penal Code 11166(a) requires the telephone report immediately or as soon as is practicably possible. OO 1453 was last revised December 9, 2019, six years after the PREA policy, so the department restated the error rather than catching it on review. The Code of Conduct at VII.A.1 states the standard correctly, so three departmental documents address the same duty and two of them are wrong. A policy that tells a mandated reporter a report is timely at twenty-three hours is telling that employee to commit a misdemeanor, and the employee, not the department, carries that exposure.",
       "strike": [
         {
           "cite": "PREA Policy V.A.4 and OO 1453 I.A.9, the same defect in both",
-          "status": "described in the register, not read in this review",
+          "status": "Described in the register, not read in this review.",
           "text": "All incidents of sexual assault shall be reported to Child Protective Services verbally within 24 hours, with a written report submitted within 36 hours."
         }
       ],
@@ -174,14 +187,21 @@
       "n": 4,
       "title": "Correct the cross-facility notification timeline",
       "priority": "Critical",
-      "targets": ["PREA Policy and Procedure, Juvenile Institutions, V.A.7"],
-      "authority": ["28 CFR 115.363(a)-(d)"],
-      "rows": [52, 47],
+      "targets": [
+        "PREA Policy and Procedure, Juvenile Institutions, V.A.7"
+      ],
+      "authority": [
+        "28 CFR 115.363(a)-(d)"
+      ],
+      "rows": [
+        52,
+        47
+      ],
       "problem": "The policy sets a fourteen-day window for the Chief Deputy or Assistant Chief Deputy to notify the head of the facility where the abuse allegedly occurred. The federal standard is seventy-two hours. The fourteen-day figure appears to have been carried over from the attorney notification timeline at 115.361(e)(3). This is a straight timeline error and the shortest correction in the set.",
       "strike": [
         {
           "cite": "PREA Policy V.A.7",
-          "status": "described in the register, not read in this review",
+          "status": "Described in the register, not read in this review.",
           "text": "Within 14 days of receiving the allegation, the Chief Deputy or Assistant Chief Deputy shall notify the head of the facility where the alleged abuse occurred."
         }
       ],
@@ -210,18 +230,23 @@
       "n": 5,
       "title": "Rewrite the false allegations provision to a bad-faith standard",
       "priority": "Critical",
-      "targets": ["PREA Policy and Procedure, Juvenile Institutions, XIV.A"],
+      "targets": [
+        "PREA Policy and Procedure, Juvenile Institutions, XIV.A"
+      ],
       "authority": [
         "28 CFR 115.378(f), good-faith reporting protection, verified",
         "28 CFR 115.352(g), discipline only on a demonstrated bad-faith showing",
         "15 CCR 1391(e), due process for major rule violations as a class, verified"
       ],
-      "rows": [64, 42],
+      "rows": [
+        64,
+        42
+      ],
       "problem": "PREA Policy XIV.A permits discipline where an investigation determines allegations were false. 115.378(f) protects a good-faith report based on a reasonable belief even where the investigation does not substantiate it, and 115.352(g) permits discipline only where the agency demonstrates the report was made in bad faith. Unsubstantiated is not the same finding as false, and the current provision collapses the two. As written it chills reporting, and it will be read to a jury that way in any case where the department argues it had no notice. OO 1390/1391 contains no false reporting provision, so it neither cures nor compounds the defect, and neither its minor nor its major rule violation list includes false reporting or lying. That is worth preserving in the rewrite.",
       "strike": [
         {
           "cite": "PREA Policy XIV.A",
-          "status": "described in the register, not read in this review",
+          "status": "Described in the register, not read in this review.",
           "text": "A resident may be subject to disciplinary action where an investigation determines that the allegation was false."
         }
       ],
@@ -252,24 +277,30 @@
       "n": 6,
       "title": "Delete the S-4 victim-to-perpetrator inference and split the code",
       "priority": "High",
-      "targets": ["OO 1352 Classification, II.F.2 and its note, II.G, II.H, III.E"],
+      "targets": [
+        "OO 1352 Classification, II.F.2 and its note, II.G, II.H, III.E"
+      ],
       "authority": [
         "28 CFR 115.341(c)",
         "28 CFR 115.342",
         "15 CCR 1350.5(a), cited but not confirmed: absent from the produced edition",
         "Penal Code 287, renumbered from 288a by SB 1494 effective 01/01/2019"
       ],
-      "rows": [80, 78, 32],
+      "rows": [
+        80,
+        78,
+        32
+      ],
       "problem": "Two problems in the S-4 classification. First, the note at II.F.2 states that a youth with a history of being a victim of molest, arson, or cruelty to animals should alert the Classification Officer for possible sexually inappropriate tendencies. That instructs staff to treat a youth's own sexual victimization as a predictor of sexual abusiveness. The Macdonald triad on which the molest, arson, and animal cruelty grouping rests has not held up, and the inference runs against 115.341(c), which lists prior victimization and prior abusiveness as separate factors serving different purposes. Second, S-4 as a code mixes populations: S-4 High captures youth with sex offense adjudications, while S-4 Low captures both youth who act out sexually and youth who have been victims of sexual abuse or are susceptible to victimization. The housing matrix at III.E keeps those populations apart in practice, so the operational outcome is sound. The defect is in the classification logic and its documentation, and it will not survive an auditor tracing how victimization risk and abusiveness risk are separately assessed and separately acted on.",
       "strike": [
         {
           "cite": "OO 1352 II.F.2, the note",
-          "status": "quoted in register row 80 from the earlier review, which read the order",
+          "status": "Quoted in register row 80 from the earlier review, which read the order.",
           "text": "A history of being a victim of molest, arson, or cruelty to animals should alert the Classification Officer for possible sexually inappropriate tendencies."
         },
         {
           "cite": "OO 1352 II.H",
-          "status": "described in the register, not read in this review",
+          "status": "Described in the register, not read in this review.",
           "text": "The portion of the S-4 Low criteria that groups youth who act out sexually together with youth who have been victims of sexual abuse or are susceptible to victimization."
         }
       ],
@@ -331,17 +362,20 @@
         "Code of Civil Procedure 340.1 as amended by AB 452",
         "Code of Civil Procedure 352; Government Code 905(m)"
       ],
-      "rows": [59, 72],
+      "rows": [
+        59,
+        72
+      ],
       "problem": "Three different retention rules govern the same records, and a fourth document points at one of them without stating a period. Internal Affairs XI.C.1 retains records of citizen complaints, formal investigations, and dispositions for at least five years. PREA Policy XVIII.B retains all case records associated with claims of sexual abuse for at least ten years. 115.371(j) requires investigation reports to be retained as long as the alleged abuser is incarcerated or employed by the agency, plus five years, which for a long-tenured employee is far longer than either. Internal Complaints states that all discretionary and non-discretionary investigative documentation and evidence shall be retained by Internal Affairs, with no period, so the reconciled schedule has to be reflected in four documents rather than three. A department that destroys a sexual abuse investigation file at five years under the Internal Affairs schedule violates its own PREA policy and the federal standard in the same act.",
       "strike": [
         {
           "cite": "Internal Affairs XI.C.1",
-          "status": "described in the register, not read in this review",
+          "status": "Described in the register, not read in this review.",
           "text": "The five-year period, as applied to records within the scope of the schedule below. The five-year rule may stand for other citizen complaint records."
         },
         {
           "cite": "PREA Policy XVIII.B",
-          "status": "described in the register, not read in this review",
+          "status": "Described in the register, not read in this review.",
           "text": "The ten-year period stated as the retention rule for case records associated with claims of sexual abuse, which is replaced by the cross-reference below."
         }
       ],
