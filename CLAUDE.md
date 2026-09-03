@@ -323,9 +323,13 @@ Referenced in reviewed policies but never produced. Several may close findings.
 
 ## 11. Likely next tasks
 
-1. **Draft the redlines for changes 1 to 7.** Amendment language, not full rewrites.
+1. ~~Draft the redlines for changes 1 to 7.~~ **Done.** `drafts/redlines.json` is the source;
+   `drafts/REDLINES.md` and `deliverables/PREA_Redlines_Changes_1_to_7.docx` are generated
+   from it by `npm run redlines`. Do not hand-edit either output. Section 13 records what the
+   drafting assumed and what has to be confirmed before any of it is adopted.
 2. **Draft the new General Order on child abuse and neglect reporting.** Contents specified in
    report Part 4.1. Model the structure on the existing Dependent Adult and Elder Abuse GO.
+   Redline 3 stage two is the cross-reference that replaces the interim text once this issues.
 3. **Draft the rewritten PREA Policy** to Subpart D order so each provision maps to what an
    auditor scores.
 4. **Build the Tier 1 and supervisor lesson plans** from report Parts 5 and 6.
@@ -346,3 +350,60 @@ Download these from the prior conversation and keep them in `deliverables/`:
 | `YDF_PREA_Gap_Register_Rev3.xlsx` | Excel version of `prea-register.csv` |
 
 The user has said he prefers Word over Excel for reports going forward.
+
+---
+
+## 13. The redlines for changes 1 to 7
+
+Drafted against register Revision 5. Source is `drafts/redlines.json`; run `npm run redlines`
+to regenerate the Markdown and the Word file. The builder aborts rather than writing if it
+finds an em dash or an out-of-order item number.
+
+**What the drafting could and could not stand on.** Only four documents have been produced to
+this project: OO 1354.5, OO 1390/1391, Internal Complaints, and Title 15 rev. 04/01/2014. Five
+of the orders the redlines amend have **never been produced**: OO 1352, OO 1352.5, the PREA
+Policy, OO 1453, and the Internal Affairs policy. For those, the struck text in each redline is
+a **reconstruction of what the register describes, not a quotation**, and the section numbers
+trace to the register, which traces to the earlier review that did read the orders. Every item
+carries a Before adoption block saying which it is. Do not let a redline circulate as though the
+struck text were the order's real words.
+
+The one exception is the Internal Complaints piece of change 7, which is grounded in the
+produced document.
+
+**Drafting decisions worth knowing before touching them again.**
+
+- **Change 1** replaces OO 1352 II.M in place rather than striking it, so no renumbering is
+  needed. The insert tracks the 15 CCR 1352(e) list verbatim and carries the regulation's own
+  carve-out, single occupancy at the youth's specific request, documented. It adds a fourth
+  paragraph barring any classification code that carries an automatic housing consequence, which
+  is what stops S-8 from reappearing under another letter.
+- **Change 2** makes single occupancy the presumptive outcome of the III.F determination rather
+  than a status rule. Flagged in the Why: a presumption applied without a real determination is
+  the same defect in better clothes, so the JPIP documentation is what makes it work.
+- **Change 3 is staged.** Stage one corrects PC 11166(a) in place in both PREA Policy V.A.4 and
+  OO 1453 I.A.9 now; stage two replaces both with a cross-reference once the General Order
+  issues. Paragraph 2 of stage one says internal notification does not satisfy or delay the
+  mandated report, which is the operationally important sentence. Paragraph 4 (the PC 11166(j)
+  cross-report duty) assumes the county has designated Probation to receive mandated reports
+  under PC 11165.9. **That designation is unconfirmed.** Confirm before adopting paragraph 4.
+- **Change 4** adds the receiving side of 115.363 (paragraph 3), which the current policy does
+  not address at all, and it references the change 7 retention schedule. If 7 is deferred, that
+  reference has to point somewhere else.
+- **Change 5** keeps the ability to discipline a fabricated report, with the burden on the
+  department, so nothing operational is lost. It expressly does not add a false reporting rule
+  violation to OO 1390/1391, which would recreate the defect in a second document.
+- **Change 6** splits S-4 into **S-4A** (risk of being sexually abusive) and **S-4B** (risk of
+  being sexually victimized). PC 288.5 and 289.6 in the S-4A offense list are the drafter's
+  judgment, not from the order, and are flagged as such. The list ends with a successor-statute
+  catch-all so the next renumbering does not reopen the 287 gap.
+- **Change 7** is the one the department cannot fully solve itself. Paragraph 3 is drafted as a
+  **destruction moratorium** for conduct on or after 01/01/2024, because AB 452 left that class
+  of claim with no limitations period and no fixed retention figure can cover it. County Counsel
+  sets the schedule, not a policy revision.
+
+**Conforming items folded in that were not in the report's change list.** Change 6 carries the
+PREA Policy I.I.1 (288a to 287) correction and the OO 1352 II.C.3 DJJ deletion, both from
+conflict 11, because they sit in the same documents and the same amendment cycle. Change 2
+carries the OO 1360 search cross-reference. Change 5 carries the bad-faith rule for OO 1361.
+These are labelled as conforming changes, not as part of the numbered change.

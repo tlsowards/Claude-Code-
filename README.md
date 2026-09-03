@@ -11,11 +11,11 @@ overwrite `CLAUDE.md` with a generated one.
 
 ```
 CLAUDE.md            project memory: working rules, findings, verified authorities
-prea-register.csv    the working record. 83 requirements, register Revision 4
+prea-register.csv    the working record. 83 requirements, register Revision 5
 docs/                the 17 source policy documents (not in the repository)
 deliverables/        finished work product
-drafts/              redlines and new policy drafts
-tools/               generators that build deliverables from the register
+drafts/              redlines and new policy drafts, generated from redlines.json
+tools/               generators that build deliverables from the register and the redline source
 ```
 
 ## The register is the source of truth
@@ -38,15 +38,23 @@ department did after it identified these issues.
 |---|---|
 | `deliverables/PREA_versus_Policy_Crosswalk.docx` | `npm run crosswalk` |
 | `deliverables/PREA_versus_Policy_Crosswalk.md` | same, Markdown source of the above |
+| `deliverables/PREA_Redlines_Changes_1_to_7.docx` | `npm run redlines` |
+| `drafts/REDLINES.md` | same, Markdown working copy |
 
 ```
 npm install          # first run only, installs the docx library
 npm run crosswalk
+npm run redlines
 ```
 
 `tools/build_crosswalk.py` reads the register and writes the Markdown plus
 `tools/crosswalk.json`. `tools/build_crosswalk_docx.js` builds the Word file from
 that JSON. Word output, not Excel, per the preference recorded in `CLAUDE.md`.
+
+The redlines work the same way from a different source. `drafts/redlines.json` holds the
+amendment language for recommended changes 1 to 7; the Markdown and the Word file are
+regenerated from it, not hand edited. `tools/build_redlines.py` aborts rather than writing
+if it finds an em dash or an out-of-order item number.
 
 The contents page is a Word field, so page numbers are computed by Word rather
 than written into the file. The document asks Word to refresh its fields on open.
