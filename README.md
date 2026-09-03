@@ -40,11 +40,13 @@ department did after it identified these issues.
 | `deliverables/PREA_versus_Policy_Crosswalk.md` | same, Markdown source of the above |
 | `deliverables/PREA_Redlines_Changes_1_to_7.docx` | `npm run redlines` |
 | `drafts/REDLINES.md` | same, Markdown working copy |
+| `deliverables/PREA_Staffing_Plan_Factors.docx` | `npm run staffing-factors` |
 
 ```
 npm install          # first run only, installs the docx library
 npm run crosswalk
 npm run redlines
+npm run staffing-factors
 ```
 
 `tools/build_crosswalk.py` reads the register and writes the Markdown plus

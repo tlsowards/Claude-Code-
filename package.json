@@ -4,7 +4,8 @@
   "description": "Build scripts for YDF PREA compliance deliverables",
   "scripts": {
     "crosswalk": "python3 tools/build_crosswalk.py && node tools/build_crosswalk_docx.js",
-    "redlines": "python3 tools/build_redlines.py && node tools/build_redlines_docx.js"
+    "redlines": "python3 tools/build_redlines.py && node tools/build_redlines_docx.js",
+    "staffing-factors": "node tools/build_staffing_factors_docx.js"
   },
   "dependencies": {
     "docx": "^9.7.1"

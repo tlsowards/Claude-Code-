@@ -43,6 +43,16 @@ const FACTORS = [
   ['Any other relevant factors', 'The catch-all.'],
 ];
 
+// The content above is written by hand rather than generated from the register,
+// so nothing else enforces the no-em-dash rule in CLAUDE.md section 1 on it.
+// Fail loudly at build time rather than shipping one into a departmental document.
+const DASHES = FACTORS.flat().filter((s) => /[\u2014\u2013]/.test(s));
+if (DASHES.length) {
+  console.error('ABORTED. Em or en dash in the factor text, which CLAUDE.md section 1 forbids:');
+  DASHES.forEach((s) => console.error('  ' + s.slice(0, 90)));
+  process.exit(1);
+}
+
 const txt = (t, o = {}) => new TextRun({ text: String(t), color: INK, ...o });
 
 function cell(children, { width, fill, bold, size, align, span } = {}) {
