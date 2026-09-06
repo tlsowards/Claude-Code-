@@ -1,0 +1,542 @@
+"""Self-contained checks for the paths that reach students.
+
+No dependencies, no test runner:  python3 tests/test_pipeline.py
+"""
+
+import json
+import pathlib
+import re
+import subprocess
+import sys
+import tempfile
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+from canvas_weekly import (fetch_week, from_paste, grade_week,  # noqa: E402
+                           make_poster, render_review)
+from canvas_weekly.canvas_client import CanvasClient, CanvasError         # noqa: E402
+
+FAILURES = []
+
+
+def check(name, condition, detail=""):
+    print(f"  {'ok  ' if condition else 'FAIL'}  {name}")
+    if not condition:
+        FAILURES.append(f"{name}{': ' + detail if detail else ''}")
+
+
+LIVE = """COURSE_ID: 51718
+TOPIC_ID: 454157
+TOPIC: Chapter 1 Discussion
+URL: https://canvas.csuchico.edu/courses/51718/discussion_topics/454157
+ME: Patricia Instructor [user:35997]
+PROMPT: Sentencing.
+
+--- Ana Student [entry:1969349]
+First post.
+
+  --- Pat Instructor [entry:1969400 user:35997]
+  Canvas shows a short display name here; the ME: line does not match it.
+
+--- Bo Student [entry:1971523]
+Second post.
+"""
+
+HAND_TYPED = """TOPIC: Week 4
+ME: Pat Instructor
+
+--- Ana Student
+First post.
+
+--- Bo Student
+Second post.
+"""
+
+HEADERS_ONLY = """COURSE_ID: 51718
+TOPIC_ID: 454157
+URL: https://canvas.csuchico.edu/courses/51718/discussion_topics/454157
+ME: Patricia Instructor [user:35997]
+
+--- Ana Student
+Retyped by hand, so this entry id is a counter, not a Canvas id.
+"""
+
+ADVERSARIAL = """TOPIC: Week 4
+ME: Pat Instructor
+
+--- Ana Student
+Two ideas.
+
+---
+
+My source:
+URL: https://example.org
+TOPIC: still my post
+"""
+
+
+def bundle_from(text):
+    topics, warnings = from_paste.parse(text)
+    return from_paste.to_bundle(topics, "Test"), warnings
+
+
+def test_real_ids():
+    print("\nreader output with Canvas ids")
+    b, _ = bundle_from(LIVE)
+    t = b["topics"][0]
+    check("entry_ids marked canvas", b["entry_ids"] == "canvas", b["entry_ids"])
+    check("base_url derived from URL header",
+          b["base_url"] == "https://canvas.csuchico.edu", b["base_url"])
+    check("course and topic ids real",
+          (t["course_id"], t["topic_id"]) == (51718, 454157))
+    check("author names carry no id suffix",
+          all("[" not in e["author"] for e in t["thread"]))
+    check("instructor matched by user id despite a different display name",
+          all(e["author"] != "Pat Instructor" for e in t["needs_reply"]),
+          str([e["author"] for e in t["needs_reply"]]))
+    check("answered post excluded, unanswered kept",
+          [e["entry_id"] for e in t["needs_reply"]] == [1971523],
+          str([e["entry_id"] for e in t["needs_reply"]]))
+
+
+def test_hand_typed_is_synthetic():
+    print("\nhand-typed paste")
+    b, _ = bundle_from(HAND_TYPED)
+    check("entry_ids marked synthetic", b["entry_ids"] == "synthetic", b["entry_ids"])
+    check("both students flagged", len(b["topics"][0]["needs_reply"]) == 2)
+
+
+def test_adversarial_paste():
+    print("\npost text that looks like syntax")
+    b, warnings = bundle_from(ADVERSARIAL)
+    check("one topic, not two", len(b["topics"]) == 1, str(len(b["topics"])))
+    post = b["topics"][0]["thread"][0]
+    check("bare --- divider stays in the post", "---" in post["message"])
+    check("URL:/TOPIC: lines stay in the post", "TOPIC: still my post" in post["message"])
+    check("misread lines are reported", len(warnings) >= 2, str(warnings))
+
+
+def test_real_headers_synthetic_entries():
+    """The dangerous middle case: real course, but entry ids typed by hand.
+
+    Posting against these would address replies to whatever entries happen to
+    hold ids 1..n in a live course.
+    """
+    print("\nreal headers, hand-typed posts")
+    b, _ = bundle_from(HEADERS_ONLY)
+    check("entry_ids marked synthetic", b["entry_ids"] == "synthetic", b["entry_ids"])
+    with tempfile.TemporaryDirectory() as tmp:
+        d = pathlib.Path(tmp)
+        (d / "b.json").write_text(json.dumps(b))
+        (d / "drafts.json").write_text(json.dumps({"replies": [
+            {"topic_id": 454157, "entry_id": 1, "author": "Ana Student",
+             "draft": "Body."}], "topic_additions": []}))
+        refused = False
+        try:
+            make_poster.main(["--bundle", str(d / "b.json"),
+                              "--drafts", str(d / "drafts.json"),
+                              "--out", str(d / "out.js")])
+        except SystemExit:
+            refused = True
+        check("poster refuses despite a real course and origin",
+              refused and not (d / "out.js").exists())
+
+
+def test_poster_guard():
+    print("\nposter guard")
+    drafts = {"replies": [{"topic_id": 454157, "entry_id": 1971523,
+                           "author": "Bo Student", "draft": "Body."}],
+              "topic_additions": []}
+    with tempfile.TemporaryDirectory() as tmp:
+        d = pathlib.Path(tmp)
+        (d / "drafts.json").write_text(json.dumps(drafts))
+
+        real, _ = bundle_from(LIVE)
+        (d / "real.json").write_text(json.dumps(real))
+        rc = make_poster.main(["--bundle", str(d / "real.json"),
+                               "--drafts", str(d / "drafts.json"),
+                               "--out", str(d / "real.js")])
+        check("accepts a bundle with Canvas ids", rc == 0 and (d / "real.js").exists())
+        js = (d / "real.js").read_text()
+        check("targets the real entry id", '"entry_id": 1971523' in js)
+        check("targets the real course", "COURSE = 51718" in js)
+
+        synth, _ = bundle_from(HAND_TYPED)
+        (d / "synth.json").write_text(json.dumps(synth))
+        refused = False
+        try:
+            make_poster.main(["--bundle", str(d / "synth.json"),
+                              "--drafts", str(d / "drafts.json"),
+                              "--out", str(d / "synth.js")])
+        except SystemExit:
+            refused = True
+        check("refuses hand-typed ids", refused and not (d / "synth.js").exists())
+
+
+def test_guard_truth_table():
+    """Pin each clause of the poster guard independently.
+
+    The guard refuses on `entry_ids == "synthetic"` and, separately, on a paste
+    bundle that predates the entry_ids field. Either alone must refuse, so
+    neither can be dropped without a test noticing.
+    """
+    print("\nposter guard, clause by clause")
+    base = {"base_url": "https://canvas.csuchico.edu",
+            "topics": [{"course_id": 51718, "topic_id": 454157, "topic_title": "T",
+                        "course_name": "C", "topic_url": "",
+                        "needs_reply": [{"entry_id": 1, "author": "A"}]}]}
+    cases = [
+        ({"school_id": "paste", "entry_ids": "synthetic"}, True, "paste + synthetic"),
+        ({"school_id": "browser", "entry_ids": "synthetic"}, True, "entry_ids clause alone"),
+        ({"school_id": "paste"}, True, "school_id clause alone (pre-entry_ids bundle)"),
+        ({"school_id": "paste", "entry_ids": "canvas"}, False, "paste + canvas is postable"),
+    ]
+    with tempfile.TemporaryDirectory() as tmp:
+        d = pathlib.Path(tmp)
+        (d / "drafts.json").write_text(json.dumps({"replies": [
+            {"topic_id": 454157, "entry_id": 1, "author": "A", "draft": "x"}],
+            "topic_additions": []}))
+        for extra, want_refused, label in cases:
+            (d / "b.json").write_text(json.dumps({**base, **extra}))
+            out = d / "b.js"
+            if out.exists():
+                out.unlink()
+            refused = False
+            try:
+                make_poster.main(["--bundle", str(d / "b.json"),
+                                  "--drafts", str(d / "drafts.json"), "--out", str(out)])
+            except SystemExit:
+                refused = True
+            check(f"{label}: {'refused' if want_refused else 'accepted'}",
+                  refused == want_refused and out.exists() == (not want_refused))
+
+
+def test_outbound_escaping():
+    print("\nescaping on the way out to students")
+    bundle = {"topics": [{"needs_reply": [{"entry_id": 1, "author": "Ana"}]}]}
+    drafts = {"replies": [{"entry_id": 1, "author": "Ana",
+                           "draft": 'Costs fell to <0.5c, and Rockefeller & Co merged.',
+                           "probing_question": "Is price < cost predation?"}]}
+    msg = make_poster.build_messages(bundle, drafts)[0]["message"]
+    check("< escaped", "&lt;0.5c" in msg, msg[:80])
+    check("& escaped", "Rockefeller &amp; Co" in msg)
+    check("wrapped in paragraphs", msg.startswith("<p>") and msg.endswith("</p>"))
+    check("no raw angle brackets left",
+          "<" not in msg.replace("<p>", "").replace("</p>", ""))
+
+
+def test_review_page_escaping():
+    print("\nescaping on the way in to the review page")
+    bundle = {"school_name": "X", "base_url": "https://h", "generated_at": "2026-01-01",
+              "topics": [{"topic_id": 1, "course_id": 9, "course_name": "C",
+                          "topic_title": "T", "topic_url": "", "topic_prompt": "",
+                          "entry_count": 1, "thread": [],
+                          "needs_reply": [{"entry_id": 7, "author": "Ana",
+                                           "created_at": "2026-01-01",
+                                           "message": "<script>alert(1)</script>"}]}]}
+    drafts = {"replies": [{"topic_id": 1, "entry_id": 7, "author": "Ana",
+                           "draft": "<img onerror=x>"}], "topic_additions": []}
+    html = render_review.render(bundle, drafts)
+    check("student script tag neutralized", "<script>alert(1)</script>" not in html)
+    check("draft img tag neutralized", "<img onerror" not in html)
+    check("page declares a charset", 'charset="utf-8"' in html)
+
+
+def test_deleted_parent_keeps_live_replies():
+    """A deleted post must not take its live replies down with it.
+
+    Canvas leaves those replies visible in the thread, so an unanswered student
+    post under a deleted parent still needs a reply. Losing it means the student
+    is silently never answered.
+    """
+    print("\ndeleted posts")
+    tree = [{"id": 1, "user_id": 601, "deleted": True, "replies": [
+        {"id": 2, "user_id": 602, "message": "Live reply", "replies": []}]}]
+    seen = [(e["id"], d) for e, _, d in fetch_week.walk(tree)]
+    check("live reply under a deleted parent stays visible", seen == [(2, 0)], str(seen))
+    check("the deleted entry itself is not yielded", 1 not in [i for i, _ in seen])
+
+    answered_by_deleted = {"id": 10, "user_id": 602, "replies": [
+        {"id": 11, "user_id": 35997, "deleted": True, "replies": []}]}
+    check("a deleted instructor reply does not count as answered",
+          not fetch_week.subtree_has_author(answered_by_deleted, 35997))
+
+    nested_live = {"id": 10, "user_id": 602, "replies": [
+        {"id": 11, "user_id": 602, "deleted": True, "replies": [
+            {"id": 12, "user_id": 35997, "replies": []}]}]}
+    check("a live instructor reply under a deleted one still counts",
+          fetch_week.subtree_has_author(nested_live, 35997))
+
+    for name in ("fetch_thread.js", "read_thread_min.js"):
+        js = (ROOT / "browser" / name).read_text()
+        check(f"{name} recurses past a deleted entry",
+              re.search(r"if \(e\.deleted\)\s*\{\s*walk\(", js) is not None)
+
+
+def test_title_cannot_escape_the_comment():
+    """The topic title lands in a // comment in a script pasted into a session
+    holding the CSRF token. A line terminator there would end the comment."""
+    print("\ngenerated script header")
+    bundle = {"base_url": "https://canvas.csuchico.edu", "entry_ids": "canvas",
+              "school_id": "browser",
+              "topics": [{"course_id": 51718, "topic_id": 454157, "course_name": "C",
+                          "topic_url": "",
+                          "topic_title": 'Ch 1\nconsole.log("live code")',
+                          "needs_reply": [{"entry_id": 1, "author": "A"}]}]}
+    drafts = {"replies": [{"topic_id": 454157, "entry_id": 1, "author": "A",
+                           "draft": "Body."}], "topic_additions": []}
+    with tempfile.TemporaryDirectory() as tmp:
+        d = pathlib.Path(tmp)
+        (d / "b.json").write_text(json.dumps(bundle))
+        (d / "dr.json").write_text(json.dumps(drafts))
+        make_poster.main(["--bundle", str(d / "b.json"), "--drafts", str(d / "dr.json"),
+                          "--out", str(d / "out.js")])
+        header = (d / "out.js").read_text().splitlines()[0]
+        rest = (d / "out.js").read_text().splitlines()[1]
+        check("title stays on the comment line", 'console.log("live code")' in header)
+        check("no injected statement on the next line", rest.startswith("//"), rest[:60])
+
+
+GRADED = """COURSE_ID: 51718
+TOPIC_ID: 454157
+URL: https://canvas.csuchico.edu/courses/51718/discussion_topics/454157
+ME: Patricia Instructor [user:35997]
+
+--- Ana Student [entry:11 sid:aaa111 at:2026-08-25T18:00:00Z]
+{long}
+
+--- Ana Student [entry:12 sid:aaa111 at:2026-08-27T18:00:00Z]
+{long}
+
+  --- Pat Instructor [entry:13 user:35997 at:2026-08-27T19:00:00Z]
+  {long}
+
+--- Chris K. [entry:14 sid:bbb222 at:2026-08-25T18:00:00Z]
+{long}
+
+--- Chris K. [entry:15 sid:ccc333 at:2026-08-26T18:00:00Z]
+{long}
+"""
+
+
+TWO_TOPICS = """COURSE_ID: 51718
+TOPIC_ID: 454157
+TOPIC: Captured by the reader
+ME: Pat Instructor [user:35997]
+
+--- Ana Student [entry:11 sid:aaa111 at:2026-08-25T18:00:00Z]
+A post.
+
+  --- Pat Instructor [entry:12 user:35997 at:2026-08-26T18:00:00Z]
+  My reply. A student could quote TOPIC: like this and it stays text.
+
+COURSE_ID: 321406
+TOPIC_ID: 999001
+TOPIC: Second thread, captured without an instructor id
+ME: Pat Instructor
+
+--- Bo Student [entry:21 sid:bbb222 at:2026-08-27T18:00:00Z]
+Another post.
+"""
+
+
+def test_multiple_topics_in_one_paste():
+    """Reader-emitted id headers start a new topic even after posts.
+
+    A plain TOPIC: after a post is a student quoting and stays message text,
+    but COURSE_ID:/TOPIC_ID: are machine-emitted and never appear in prose.
+    """
+    print("\nmulti-topic paste")
+    topics, _ = from_paste.parse(TWO_TOPICS)
+    bundle = from_paste.to_bundle(topics, "Test")
+    check("both topics parsed", len(bundle["topics"]) == 2, str(len(bundle["topics"])))
+    ids = [(t["course_id"], t["topic_id"]) for t in bundle["topics"]]
+    check("each topic keeps its own course and topic id",
+          ids == [(51718, 454157), (321406, 999001)], str(ids))
+    check("a quoted TOPIC: stayed inside the post",
+          any("TOPIC: like this" in e["message"]
+              for t in bundle["topics"] for e in t["thread"]))
+    # Topic 2 carries no instructor id; the bundle must still report topic 1's.
+    check("bundle keeps the instructor id from the topic that had one",
+          bundle["instructor"]["id"] == 35997, str(bundle["instructor"]["id"]))
+
+
+GRADE_IDS = """COURSE_ID: 51718
+TOPIC_ID: 454157
+ASSIGNMENT_ID: 887766
+URL: https://canvas.csuchico.edu/courses/51718/discussion_topics/454157
+ME: Pat Instructor [user:35997]
+
+--- Ana Student [entry:11 user:601 at:2026-08-25T18:00:00Z]
+{long}
+
+--- Bo Student [entry:12 user:602 at:2026-08-26T18:00:00Z]
+{long}
+
+--- Cy Student [entry:13 user:603 at:2026-08-27T18:00:00Z]
+{long}
+"""
+
+
+def test_each_grade_carries_its_own_student_id():
+    """Every row must carry its own user id.
+
+    This exercises grade_week.main(), not just grade_student() -- the row
+    building is where a grade could be addressed to the wrong student, and
+    the direct-call tests never reach it.
+    """
+    print("\ngrade routing")
+    text = GRADE_IDS.replace("{long}", " ".join(["word"] * 300))
+    topics, _ = from_paste.parse(text)
+    bundle = from_paste.to_bundle(topics, "Test")
+    check("assignment id parsed",
+          bundle["topics"][0]["assignment_id"] == 887766,
+          str(bundle["topics"][0]["assignment_id"]))
+
+    with tempfile.TemporaryDirectory() as tmp:
+        d = pathlib.Path(tmp)
+        (d / "bundle.json").write_text(json.dumps(bundle))
+        grade_week.main(["--bundle", str(d / "bundle.json"), "--posts", "3",
+                         "--days", "2", "--total", "21", "--out", str(d / "g.csv")])
+        side = json.loads((d / "g.json").read_text())
+        pairs = {g["student"]: g["user_id"] for g in side["grades"]}
+        check("each student keeps their own Canvas id",
+              pairs == {"Ana Student": 601, "Bo Student": 602, "Cy Student": 603},
+              str(pairs))
+        check("sidecar carries the assignment id", side["assignment_id"] == 887766)
+
+        # The sidecar path is derived from --out, so it can collide with the input.
+        refused = False
+        try:
+            grade_week.main(["--bundle", str(d / "in.json"), "--posts", "3",
+                             "--days", "2", "--total", "21", "--out", str(d / "in.csv")])
+        except SystemExit as exc:
+            refused = "overwrite the bundle" in str(exc)
+        except Exception:
+            refused = False
+        (d / "in.json").write_text(json.dumps(bundle))
+        refused = False
+        try:
+            grade_week.main(["--bundle", str(d / "in.json"), "--posts", "3",
+                             "--days", "2", "--total", "21", "--out", str(d / "in.csv")])
+        except SystemExit as exc:
+            refused = "overwrite the bundle" in str(exc)
+        check("refuses to write a sidecar over its own input bundle", refused)
+
+
+def test_grading_excludes_the_instructor():
+    """The instructor's own replies must never land in the gradebook."""
+    print("\ngrading")
+    text = GRADED.replace("{long}", " ".join(["word"] * 300))
+    topics, _ = from_paste.parse(text)
+    bundle = from_paste.to_bundle(topics, "Test")
+    check("bundle carries the recovered instructor id",
+          bundle["instructor"]["id"] == 35997, str(bundle["instructor"]))
+
+    rubric = {"required_posts": 3, "required_days": 2, "total_points": 21,
+              "min_words": 250, "timezone": "America/Los_Angeles", "day_weight": 0.0}
+    me = bundle["instructor"]["id"]
+    graded = [e for e in bundle["topics"][0]["thread"] if e.get("author_id") != me]
+    check("instructor's post filtered out of the graded set",
+          all(e["author"] != "Pat Instructor" for e in graded),
+          str([e["author"] for e in graded]))
+
+    ana = [e for e in graded if e["author"] == "Ana Student"]
+    r = grade_week.grade_student(ana, rubric)
+    check("2 of 3 posts scores 2/3 of the points", r["score"] == 14.0, str(r["score"]))
+    check("two separate days counted", r["days"] == 2, str(r["days"]))
+
+
+def test_same_display_name_not_merged():
+    """Two students sharing a display name must stay separate rows."""
+    text = GRADED.replace("{long}", " ".join(["word"] * 300))
+    topics, _ = from_paste.parse(text)
+    bundle = from_paste.to_bundle(topics, "Test")
+    chris = [e for e in bundle["topics"][0]["thread"] if e["author"] == "Chris K."]
+    keys = {e.get("student_key") for e in chris}
+    check("the two Chris K. posts carry different student keys",
+          len(keys) == 2 and "" not in keys, str(keys))
+
+
+def test_timezone_and_word_scoring():
+    rubric = {"required_posts": 3, "required_days": 3, "total_points": 21,
+              "min_words": 250, "timezone": "America/Los_Angeles", "day_weight": 0.0}
+    long_post = " ".join(["word"] * 300)
+    # 18:00Z Aug 25 and 02:00Z Aug 26 are the same Pacific day.
+    same_day = [{"created_at": "2026-08-25T18:00:00Z", "message": long_post},
+                {"created_at": "2026-08-26T02:00:00Z", "message": long_post}]
+    check("UTC-midnight crossing counted as one course day",
+          grade_week.grade_student(same_day, rubric)["days"] == 1)
+
+    short = [{"created_at": "2026-08-25T18:00:00Z", "message": " ".join(["w"] * 125)}]
+    r = grade_week.grade_student(short, rubric)
+    check("half-length post earns half of one post's value",
+          abs(r["score"] - 3.5) < 0.1, str(r["score"]))
+
+    over = [{"created_at": f"2026-08-2{d}T18:00:00Z", "message": long_post}
+            for d in range(1, 6)]
+    check("extra posts do not exceed the total",
+          grade_week.grade_student(over, rubric)["score"] == 21.0)
+
+
+def test_client_is_read_only():
+    print("\nCanvas client")
+    c = CanvasClient("https://example.test", "token")
+    check("no write verbs exposed",
+          not any(hasattr(c, v) for v in ("post", "post_entry", "reply_to_entry")))
+    refused = False
+    try:
+        c._request("POST", "https://example.test/api/v1/x")
+    except CanvasError:
+        refused = True
+    check("non-GET refused", refused)
+
+
+def test_reader_omits_student_ids():
+    print("\nbrowser reader")
+    js = (ROOT / "browser" / "read_thread_min.js").read_text()
+    check("tags the instructor's user id only", "e.user_id === me.id ?" in js)
+    check("parses HTML inertly", "innerHTML" not in js and "DOMParser" in js)
+    # Strip comments generically rather than by matching a hardcoded sentence,
+    # so rewording a comment can never quietly disable this check.
+    strip_comments = lambda src: re.sub(r"//[^\n]*", "", src)
+    for name in ("fetch_thread.js", "read_thread_min.js"):
+        code = strip_comments((ROOT / "browser" / name).read_text())
+        check(f"{name}: no innerHTML in code (comments aside)", "innerHTML" not in code)
+
+
+def main():
+    registered = (test_real_ids, test_hand_typed_is_synthetic,
+               test_real_headers_synthetic_entries, test_adversarial_paste,
+               test_poster_guard, test_guard_truth_table, test_outbound_escaping, test_review_page_escaping,
+               test_multiple_topics_in_one_paste, test_each_grade_carries_its_own_student_id,
+               test_grading_excludes_the_instructor, test_same_display_name_not_merged,
+               test_timezone_and_word_scoring,
+               test_deleted_parent_keeps_live_replies,
+               test_title_cannot_escape_the_comment,
+               test_client_is_read_only, test_reader_omits_student_ids)
+
+    # A test function that never got added to the tuple above would pass by
+    # never running. Fail loudly instead.
+    defined = {k for k, v in globals().items()
+               if k.startswith("test_") and callable(v)}
+    missing = sorted(defined - {f.__name__ for f in registered})
+    if missing:
+        print("test(s) defined but never run: " + ", ".join(missing))
+        return 1
+
+    for fn in registered:
+        fn()
+    print()
+    if FAILURES:
+        print(f"{len(FAILURES)} check(s) failed:")
+        for f in FAILURES:
+            print(f"  - {f}")
+        return 1
+    print("all checks passed")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
