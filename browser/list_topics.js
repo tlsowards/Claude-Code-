@@ -7,11 +7,15 @@
   if (!m) return console.error('Open a page inside the course first.');
   const course = m[1];
 
-  const get = async p => {
+  // One request helper: returns the parsed body and the next page, if any.
+  const req = async p => {
     const r = await fetch(p, { credentials: 'same-origin', headers: { Accept: 'application/json' } });
     if (!r.ok) throw new Error(`${p} -> HTTP ${r.status}`);
-    return JSON.parse((await r.text()).replace(/^while\(1\);/, ''));
+    const body = JSON.parse((await r.text()).replace(/^while\(1\);/, ''));
+    const next = (r.headers.get('Link') || '').match(/<([^>]+)>\s*;\s*rel="next"/);
+    return { body, next: next ? next[1] : null };
   };
+  const get = async p => (await req(p)).body;
 
   const [me, info] = await Promise.all([get('/api/v1/users/self'), get(`/api/v1/courses/${course}`)]);
 
@@ -19,12 +23,9 @@
   let url = `/api/v1/courses/${course}/discussion_topics?per_page=100&exclude_assignment_descriptions=true`;
   const topics = [];
   while (url) {
-    const r = await fetch(url, { credentials: 'same-origin', headers: { Accept: 'application/json' } });
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    topics.push(...JSON.parse((await r.text()).replace(/^while\(1\);/, '')));
-    const link = r.headers.get('Link') || '';
-    const next = link.match(/<([^>]+)>\s*;\s*rel="next"/);
-    url = next ? next[1] : null;
+    const page = await req(url);
+    topics.push(...page.body);
+    url = page.next;
   }
 
   const live = topics.filter(t => !t.locked_for_user);
