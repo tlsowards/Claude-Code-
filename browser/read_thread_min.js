@@ -10,8 +10,11 @@
   const sid = id => { let h = 2166136261;
     for (const c of String(id)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); }
     return (h >>> 0).toString(16).padStart(8, '0').slice(0, 6); };
+  // TOPIC: is a single-line header; a break in the value would
+  // silently truncate it on the way back in.
+  const one = v => String(v || '').replace(/[\r\n\u2028\u2029]+/g, ' ').trim();
   const txt = h => { const d = new DOMParser().parseFromString((h||'').replace(/<br\s*\/?>|<\/p>/gi,'\n'), 'text/html'); return (d.body.textContent||'').trim(); };
-  const out = [`COURSE_ID: ${c}`, `TOPIC_ID: ${t}`, `TOPIC: ${top.title}`,
+  const out = [`COURSE_ID: ${c}`, `TOPIC_ID: ${t}`, `TOPIC: ${one(top.title)}`,
     `URL: ${location.origin}/courses/${c}/discussion_topics/${t}`,
     `ME: ${me.name} [user:${me.id}]`, `PROMPT: ${txt(top.message)}`, ''];
   const walk = (l, d) => (l||[]).forEach(e => {

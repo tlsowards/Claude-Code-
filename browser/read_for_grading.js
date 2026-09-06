@@ -29,6 +29,9 @@
   const n = {};
   (v.participants || []).forEach(p => n[p.id] = p.display_name || p.name || p.id);
 
+  // TOPIC: is a single-line header; a break in the value would
+  // silently truncate it on the way back in.
+  const one = v => String(v || '').replace(/[\r\n\u2028\u2029]+/g, ' ').trim();
   const txt = h => {
     const d = new DOMParser().parseFromString((h || '').replace(/<br\s*\/?>|<\/p>/gi, '\n'), 'text/html');
     return (d.body.textContent || '').replace(/\n{3,}/g, '\n\n').trim();
@@ -36,7 +39,7 @@
 
   const out = [`COURSE_ID: ${c}`, `TOPIC_ID: ${t}`,
                `ASSIGNMENT_ID: ${top.assignment_id || ''}`,
-               `TOPIC: ${top.title}`,
+               `TOPIC: ${one(top.title)}`,
                `URL: ${location.origin}/courses/${c}/discussion_topics/${t}`,
                `ME: ${me.name} [user:${me.id}]`, `PROMPT: ${txt(top.message)}`, ''];
 
