@@ -40,7 +40,8 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 HEADER_RE = re.compile(
-    r"^(COURSE_ID|TOPIC_ID|COURSE|TOPIC|URL|ME|PROMPT)\s*:\s*(.*)$", re.I)
+    r"^(COURSE_ID|TOPIC_ID|ASSIGNMENT_ID|COURSE|TOPIC|URL|ME|PROMPT)\s*:\s*(.*)$",
+    re.I)
 # read_thread_min.js appends real Canvas ids to each author line.
 IDS_RE = re.compile(
     r"\s*\[(?:entry:(\d+))?\s*(?:user:(\d+))?\s*(?:sid:([0-9a-f]+))?"
@@ -71,6 +72,7 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
     def new_topic() -> dict:
         return {"course_name": "", "topic_title": "", "topic_url": "",
                 "me": "", "me_id": None, "course_id": None, "topic_id": None,
+                "assignment_id": None,
                 "topic_prompt": "", "posts": []}
 
     for line_no, line in enumerate(text.splitlines(), start=1):
@@ -103,10 +105,11 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
                 post, buf = None, []
                 current = new_topic()
                 topics.append(current)
-            if key in ("COURSE_ID", "TOPIC_ID"):
+            if key in ("COURSE_ID", "TOPIC_ID", "ASSIGNMENT_ID"):
                 digits = re.sub(r"\D", "", value)
-                current["course_id" if key == "COURSE_ID" else "topic_id"] = (
-                    int(digits) if digits else None)
+                field = {"COURSE_ID": "course_id", "TOPIC_ID": "topic_id",
+                         "ASSIGNMENT_ID": "assignment_id"}[key]
+                current[field] = int(digits) if digits else None
                 continue
             field = {"COURSE": "course_name", "TOPIC": "topic_title",
                      "URL": "topic_url", "ME": "me", "PROMPT": "topic_prompt"}[key]
@@ -207,6 +210,7 @@ def to_bundle(topics: list[dict], school_name: str) -> dict:
             "course_id": topic.get("course_id") or 0,
             "course_name": topic.get("course_name") or "",
             "topic_id": topic.get("topic_id") or index,
+            "assignment_id": topic.get("assignment_id"),
             "topic_title": topic.get("topic_title") or f"Discussion {index}",
             "topic_url": topic.get("topic_url") or "",
             "topic_prompt": topic.get("topic_prompt") or "",

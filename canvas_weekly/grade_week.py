@@ -144,16 +144,21 @@ def main(argv=None) -> int:
                     skipped_window += 1
                     continue
             name = entry.get("author") or "unknown"
-            key = entry.get("student_key") or name
-            groups.setdefault(key, {"name": name, "posts": []})["posts"].append(entry)
+            # Real user id when the grading reader supplied one, else the
+            # privacy-preserving digest, else the display name.
+            key = (str(entry["author_id"]) if entry.get("author_id") is not None
+                   else entry.get("student_key") or name)
+            groups.setdefault(key, {"name": name, "user_id": entry.get("author_id"),
+                                    "posts": []})["posts"].append(entry)
 
-    by_student = {}
+    by_student, group_ids = {}, {}
     seen_names: dict[str, int] = {}
     for key, group in groups.items():
         name = group["name"]
         seen_names[name] = seen_names.get(name, 0) + 1
         label = name if seen_names[name] == 1 else f"{name} ({key})"
         by_student[label] = group["posts"]
+        group_ids[label] = group.get("user_id") or ""
 
     if not by_student:
         print("no student posts found in this bundle", file=sys.stderr)
@@ -168,8 +173,8 @@ def main(argv=None) -> int:
     print()
     for name in sorted(by_student):
         r = grade_student(by_student[name], rubric)
-        rows.append({"student": name, "score": r["score"], "posts": r["posts"],
-                     "days": r["days"],
+        rows.append({"student": name, "user_id": group_ids.get(label, ""),
+                     "score": r["score"], "posts": r["posts"], "days": r["days"],
                      "words": "|".join(str(d["words"]) for d in r["detail"]),
                      "dates": "|".join(d["day"] or "?" for d in r["detail"]),
                      "notes": "; ".join(r["flags"])})
@@ -193,6 +198,22 @@ def main(argv=None) -> int:
         writer.writeheader()
         writer.writerows([{k: safe(v) for k, v in row.items()} for row in rows])
     print(f"\n{len(rows)} student(s) -> {out}")
+
+    graded = [r for r in rows if r["user_id"]]
+    if graded:
+        sidecar = out.with_suffix(".json")
+        sidecar.write_text(json.dumps({
+            "course_id": (bundle.get("topics") or [{}])[0].get("course_id"),
+            "assignment_id": (bundle.get("topics") or [{}])[0].get("assignment_id"),
+            "base_url": bundle.get("base_url", ""),
+            "total_points": args.total,
+            "grades": [{"user_id": r["user_id"], "student": r["student"],
+                        "score": r["score"], "notes": r["notes"]} for r in graded],
+        }, indent=2))
+        print(f"{len(graded)} with Canvas ids -> {sidecar} (feed to make_grade_poster)")
+    else:
+        print("no Canvas user ids in this bundle; grades can be entered by hand only.\n"
+              "Re-read the thread with browser/read_for_grading.js to post them.")
     return 0
 
 
