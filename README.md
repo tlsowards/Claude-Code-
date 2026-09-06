@@ -223,6 +223,7 @@ canvas_weekly/render_review.py   bundle + drafts → review page
 canvas_weekly/grade_week.py      bundle + rubric → scores, with the reasoning
 canvas_weekly/make_poster.py     bundle + drafts → browser script that posts
 browser/fetch_thread.js          console snippet: read a thread → JSON bundle
+browser/list_topics.js           console snippet: list a course's discussion topics
 browser/read_thread_min.js       console snippet: read a thread → readable text
 tests/test_pipeline.py           checks for every path that reaches students
 .claude/skills/canvas-weekly/    how Claude runs the weekly pass
