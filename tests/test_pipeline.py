@@ -362,6 +362,69 @@ def test_multiple_topics_in_one_paste():
           bundle["instructor"]["id"] == 35997, str(bundle["instructor"]["id"]))
 
 
+GRADE_IDS = """COURSE_ID: 51718
+TOPIC_ID: 454157
+ASSIGNMENT_ID: 887766
+URL: https://canvas.csuchico.edu/courses/51718/discussion_topics/454157
+ME: Pat Instructor [user:35997]
+
+--- Ana Student [entry:11 user:601 at:2026-08-25T18:00:00Z]
+{long}
+
+--- Bo Student [entry:12 user:602 at:2026-08-26T18:00:00Z]
+{long}
+
+--- Cy Student [entry:13 user:603 at:2026-08-27T18:00:00Z]
+{long}
+"""
+
+
+def test_each_grade_carries_its_own_student_id():
+    """Every row must carry its own user id.
+
+    This exercises grade_week.main(), not just grade_student() -- the row
+    building is where a grade could be addressed to the wrong student, and
+    the direct-call tests never reach it.
+    """
+    print("\ngrade routing")
+    text = GRADE_IDS.replace("{long}", " ".join(["word"] * 300))
+    topics, _ = from_paste.parse(text)
+    bundle = from_paste.to_bundle(topics, "Test")
+    check("assignment id parsed",
+          bundle["topics"][0]["assignment_id"] == 887766,
+          str(bundle["topics"][0]["assignment_id"]))
+
+    with tempfile.TemporaryDirectory() as tmp:
+        d = pathlib.Path(tmp)
+        (d / "bundle.json").write_text(json.dumps(bundle))
+        grade_week.main(["--bundle", str(d / "bundle.json"), "--posts", "3",
+                         "--days", "2", "--total", "21", "--out", str(d / "g.csv")])
+        side = json.loads((d / "g.json").read_text())
+        pairs = {g["student"]: g["user_id"] for g in side["grades"]}
+        check("each student keeps their own Canvas id",
+              pairs == {"Ana Student": 601, "Bo Student": 602, "Cy Student": 603},
+              str(pairs))
+        check("sidecar carries the assignment id", side["assignment_id"] == 887766)
+
+        # The sidecar path is derived from --out, so it can collide with the input.
+        refused = False
+        try:
+            grade_week.main(["--bundle", str(d / "in.json"), "--posts", "3",
+                             "--days", "2", "--total", "21", "--out", str(d / "in.csv")])
+        except SystemExit as exc:
+            refused = "overwrite the bundle" in str(exc)
+        except Exception:
+            refused = False
+        (d / "in.json").write_text(json.dumps(bundle))
+        refused = False
+        try:
+            grade_week.main(["--bundle", str(d / "in.json"), "--posts", "3",
+                             "--days", "2", "--total", "21", "--out", str(d / "in.csv")])
+        except SystemExit as exc:
+            refused = "overwrite the bundle" in str(exc)
+        check("refuses to write a sidecar over its own input bundle", refused)
+
+
 def test_grading_excludes_the_instructor():
     """The instructor's own replies must never land in the gradebook."""
     print("\ngrading")
@@ -444,14 +507,26 @@ def test_reader_omits_student_ids():
 
 
 def main():
-    for fn in (test_real_ids, test_hand_typed_is_synthetic,
+    registered = (test_real_ids, test_hand_typed_is_synthetic,
                test_real_headers_synthetic_entries, test_adversarial_paste,
                test_poster_guard, test_guard_truth_table, test_outbound_escaping, test_review_page_escaping,
-               test_multiple_topics_in_one_paste, test_grading_excludes_the_instructor, test_same_display_name_not_merged,
+               test_multiple_topics_in_one_paste, test_each_grade_carries_its_own_student_id,
+               test_grading_excludes_the_instructor, test_same_display_name_not_merged,
                test_timezone_and_word_scoring,
                test_deleted_parent_keeps_live_replies,
                test_title_cannot_escape_the_comment,
-               test_client_is_read_only, test_reader_omits_student_ids):
+               test_client_is_read_only, test_reader_omits_student_ids)
+
+    # A test function that never got added to the tuple above would pass by
+    # never running. Fail loudly instead.
+    defined = {k for k, v in globals().items()
+               if k.startswith("test_") and callable(v)}
+    missing = sorted(defined - {f.__name__ for f in registered})
+    if missing:
+        print("test(s) defined but never run: " + ", ".join(missing))
+        return 1
+
+    for fn in registered:
         fn()
     print()
     if FAILURES:

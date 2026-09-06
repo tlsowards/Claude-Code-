@@ -173,7 +173,7 @@ def main(argv=None) -> int:
     print()
     for name in sorted(by_student):
         r = grade_student(by_student[name], rubric)
-        rows.append({"student": name, "user_id": group_ids.get(label, ""),
+        rows.append({"student": name, "user_id": group_ids.get(name, ""),
                      "score": r["score"], "posts": r["posts"], "days": r["days"],
                      "words": "|".join(str(d["words"]) for d in r["detail"]),
                      "dates": "|".join(d["day"] or "?" for d in r["detail"]),
@@ -202,6 +202,13 @@ def main(argv=None) -> int:
     graded = [r for r in rows if r["user_id"]]
     if graded:
         sidecar = out.with_suffix(".json")
+        # The sidecar is derived from --out, so it can land on the bundle that
+        # was just read. Writing it would destroy the input.
+        if sidecar.resolve() == pathlib.Path(args.bundle).resolve():
+            raise SystemExit(
+                f"the grade sidecar would overwrite the bundle at {sidecar}. "
+                f"Pass a different --out."
+            )
         sidecar.write_text(json.dumps({
             "course_id": (bundle.get("topics") or [{}])[0].get("course_id"),
             "assignment_id": (bundle.get("topics") or [{}])[0].get("assignment_id"),
