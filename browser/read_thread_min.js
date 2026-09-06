@@ -5,6 +5,11 @@
   const [, c, t] = m;
   const [me, top, v] = await Promise.all([g('/api/v1/users/self'), g(`/api/v1/courses/${c}/discussion_topics/${t}`), g(`/api/v1/courses/${c}/discussion_topics/${t}/view`)]);
   const n = {}; (v.participants || []).forEach(p => n[p.id] = p.display_name || p.name || p.id);
+  // A short stable digest of the Canvas user id: enough to tell two students
+  // with the same display name apart when grading, without carrying the id.
+  const sid = id => { let h = 2166136261;
+    for (const c of String(id)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); }
+    return (h >>> 0).toString(16).padStart(8, '0').slice(0, 6); };
   const txt = h => { const d = new DOMParser().parseFromString((h||'').replace(/<br\s*\/?>|<\/p>/gi,'\n'), 'text/html'); return (d.body.textContent||'').trim(); };
   const out = [`COURSE_ID: ${c}`, `TOPIC_ID: ${t}`, `TOPIC: ${top.title}`,
     `URL: ${location.origin}/courses/${c}/discussion_topics/${t}`,
@@ -14,7 +19,7 @@
     if (e.deleted) { walk(e.replies, d); return; }
     // Only your own user id is tagged: it is all the tools need to tell your
     // posts from students', and this text gets pasted around.
-    const who = e.user_id === me.id ? ` user:${e.user_id}` : '';
+    const who = e.user_id === me.id ? ` user:${e.user_id}` : ` sid:${sid(e.user_id)}`;
     // created_at drives the "posts on separate days" rule when grading.
     const tag = ` [entry:${e.id}${who} at:${e.created_at || ''}]`;
     out.push('  '.repeat(d) + `--- ${n[e.user_id]||'?'}${tag}`,

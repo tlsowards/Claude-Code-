@@ -43,7 +43,8 @@ HEADER_RE = re.compile(
     r"^(COURSE_ID|TOPIC_ID|COURSE|TOPIC|URL|ME|PROMPT)\s*:\s*(.*)$", re.I)
 # read_thread_min.js appends real Canvas ids to each author line.
 IDS_RE = re.compile(
-    r"\s*\[(?:entry:(\d+))?\s*(?:user:(\d+))?\s*(?:at:([0-9T:.+\-Z]*))?\]\s*$")
+    r"\s*\[(?:entry:(\d+))?\s*(?:user:(\d+))?\s*(?:sid:([0-9a-f]+))?"
+    r"\s*(?:at:([0-9T:.+\-Z]*))?\]\s*$")
 # An author is required, so a bare "---" divider inside a post stays post text.
 MARKER_RE = re.compile(r"^(\s*)---[ \t]+(\S.*?)\s*$")
 
@@ -130,17 +131,18 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
                 )
             author = marker.group(2)
             ids = IDS_RE.search(author)
-            entry_id, user_id, created = next_id, None, ""
+            entry_id, user_id, created, student_key = next_id, None, "", ""
             if ids:
                 author = IDS_RE.sub("", author).strip()
                 if ids.group(1):
                     entry_id = int(ids.group(1))
                 if ids.group(2):
                     user_id = int(ids.group(2))
-                created = ids.group(3) or ""
+                created = ids.group(4) or ""
+                student_key = ids.group(3) or ""
             post = {"entry_id": entry_id, "author": author,
-                    "author_id": user_id, "depth": depth,
-                    "created_at": created,
+                    "author_id": user_id, "student_key": student_key,
+                    "depth": depth, "created_at": created,
                     "real_id": bool(ids and ids.group(1))}
             next_id += 1
             continue
@@ -158,6 +160,9 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
 def to_bundle(topics: list[dict], school_name: str) -> dict:
     out_topics, reals = [], []
     base_url = ""
+    # Whichever topic recovered a real instructor id; grading needs it to keep
+    # the instructor's own replies out of the gradebook.
+    me_id = next((t.get("me_id") for t in topics if t.get("me_id")), None)
     for index, topic in enumerate(topics, start=1):
         me = (topic.get("me") or "").strip().lower()
         posts = topic["posts"]
@@ -216,7 +221,7 @@ def to_bundle(topics: list[dict], school_name: str) -> dict:
         "school_name": school_name,
         "base_url": base_url,
         "source": "pasted text (no Canvas API)",
-        "instructor": {"id": None, "name": topics[0].get("me") if topics else None},
+        "instructor": {"id": me_id, "name": topics[0].get("me") if topics else None},
         "window_days": None,  # pasted text carries no timestamps to filter on
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "topics": out_topics,

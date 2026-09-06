@@ -13,7 +13,8 @@ import tempfile
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from canvas_weekly import fetch_week, from_paste, make_poster, render_review  # noqa: E402
+from canvas_weekly import (fetch_week, from_paste, grade_week,  # noqa: E402
+                           make_poster, render_review)
 from canvas_weekly.canvas_client import CanvasClient, CanvasError         # noqa: E402
 
 FAILURES = []
@@ -297,6 +298,83 @@ def test_title_cannot_escape_the_comment():
         check("no injected statement on the next line", rest.startswith("//"), rest[:60])
 
 
+GRADED = """COURSE_ID: 51718
+TOPIC_ID: 454157
+URL: https://canvas.csuchico.edu/courses/51718/discussion_topics/454157
+ME: Patricia Instructor [user:35997]
+
+--- Ana Student [entry:11 sid:aaa111 at:2026-08-25T18:00:00Z]
+{long}
+
+--- Ana Student [entry:12 sid:aaa111 at:2026-08-27T18:00:00Z]
+{long}
+
+  --- Pat Instructor [entry:13 user:35997 at:2026-08-27T19:00:00Z]
+  {long}
+
+--- Chris K. [entry:14 sid:bbb222 at:2026-08-25T18:00:00Z]
+{long}
+
+--- Chris K. [entry:15 sid:ccc333 at:2026-08-26T18:00:00Z]
+{long}
+"""
+
+
+def test_grading_excludes_the_instructor():
+    """The instructor's own replies must never land in the gradebook."""
+    print("\ngrading")
+    text = GRADED.replace("{long}", " ".join(["word"] * 300))
+    topics, _ = from_paste.parse(text)
+    bundle = from_paste.to_bundle(topics, "Test")
+    check("bundle carries the recovered instructor id",
+          bundle["instructor"]["id"] == 35997, str(bundle["instructor"]))
+
+    rubric = {"required_posts": 3, "required_days": 2, "total_points": 21,
+              "min_words": 250, "timezone": "America/Los_Angeles", "day_weight": 0.0}
+    me = bundle["instructor"]["id"]
+    graded = [e for e in bundle["topics"][0]["thread"] if e.get("author_id") != me]
+    check("instructor's post filtered out of the graded set",
+          all(e["author"] != "Pat Instructor" for e in graded),
+          str([e["author"] for e in graded]))
+
+    ana = [e for e in graded if e["author"] == "Ana Student"]
+    r = grade_week.grade_student(ana, rubric)
+    check("2 of 3 posts scores 2/3 of the points", r["score"] == 14.0, str(r["score"]))
+    check("two separate days counted", r["days"] == 2, str(r["days"]))
+
+
+def test_same_display_name_not_merged():
+    """Two students sharing a display name must stay separate rows."""
+    text = GRADED.replace("{long}", " ".join(["word"] * 300))
+    topics, _ = from_paste.parse(text)
+    bundle = from_paste.to_bundle(topics, "Test")
+    chris = [e for e in bundle["topics"][0]["thread"] if e["author"] == "Chris K."]
+    keys = {e.get("student_key") for e in chris}
+    check("the two Chris K. posts carry different student keys",
+          len(keys) == 2 and "" not in keys, str(keys))
+
+
+def test_timezone_and_word_scoring():
+    rubric = {"required_posts": 3, "required_days": 3, "total_points": 21,
+              "min_words": 250, "timezone": "America/Los_Angeles", "day_weight": 0.0}
+    long_post = " ".join(["word"] * 300)
+    # 18:00Z Aug 25 and 02:00Z Aug 26 are the same Pacific day.
+    same_day = [{"created_at": "2026-08-25T18:00:00Z", "message": long_post},
+                {"created_at": "2026-08-26T02:00:00Z", "message": long_post}]
+    check("UTC-midnight crossing counted as one course day",
+          grade_week.grade_student(same_day, rubric)["days"] == 1)
+
+    short = [{"created_at": "2026-08-25T18:00:00Z", "message": " ".join(["w"] * 125)}]
+    r = grade_week.grade_student(short, rubric)
+    check("half-length post earns half of one post's value",
+          abs(r["score"] - 3.5) < 0.1, str(r["score"]))
+
+    over = [{"created_at": f"2026-08-2{d}T18:00:00Z", "message": long_post}
+            for d in range(1, 6)]
+    check("extra posts do not exceed the total",
+          grade_week.grade_student(over, rubric)["score"] == 21.0)
+
+
 def test_client_is_read_only():
     print("\nCanvas client")
     c = CanvasClient("https://example.test", "token")
@@ -327,6 +405,8 @@ def main():
     for fn in (test_real_ids, test_hand_typed_is_synthetic,
                test_real_headers_synthetic_entries, test_adversarial_paste,
                test_poster_guard, test_guard_truth_table, test_outbound_escaping, test_review_page_escaping,
+               test_grading_excludes_the_instructor, test_same_display_name_not_merged,
+               test_timezone_and_word_scoring,
                test_deleted_parent_keeps_live_replies,
                test_title_cannot_escape_the_comment,
                test_client_is_read_only, test_reader_omits_student_ids):

@@ -4,6 +4,7 @@ bundles/
 drafts/
 reviews/
 posts/
+grades/
 *.env
 __pycache__/
 *.pyc

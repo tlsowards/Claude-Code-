@@ -107,6 +107,11 @@ def main(argv=None) -> int:
     ap.add_argument("--day-weight", type=float, default=0.0,
                     help="how much a missed day-spread rule reduces the score "
                          "(0-1, default 0 = report only, no deduction)")
+    ap.add_argument("--since", default=None,
+                    help="ignore posts before this date (YYYY-MM-DD, course time). "
+                         "A topic that stays active accumulates posts across weeks, "
+                         "so scope the window or earlier weeks get counted again.")
+    ap.add_argument("--until", default=None, help="ignore posts after this date")
     ap.add_argument("--out", default=None, help="CSV path")
     args = ap.parse_args(argv)
 
@@ -116,12 +121,39 @@ def main(argv=None) -> int:
               "timezone": args.timezone, "day_weight": args.day_weight}
 
     me = (bundle.get("instructor") or {}).get("id")
-    by_student: dict[str, list] = {}
+    me_name = ((bundle.get("instructor") or {}).get("name") or "").strip().lower()
+    tz = ZoneInfo(args.timezone)
+    since = dt.date.fromisoformat(args.since) if args.since else None
+    until = dt.date.fromisoformat(args.until) if args.until else None
+
+    # Group by the reader's stable per-student key when present, so two
+    # students sharing a display name are not merged into one row.
+    groups: dict[str, dict] = {}
+    skipped_window = 0
     for topic in bundle.get("topics", []):
         for entry in topic.get("thread", []):
             if me is not None and entry.get("author_id") == me:
                 continue
-            by_student.setdefault(entry.get("author") or "unknown", []).append(entry)
+            # Fallback for bundles with no ids at all: match the instructor by name.
+            if me is None and me_name and (entry.get("author") or "").strip().lower() == me_name:
+                continue
+            stamp = parse_ts(entry.get("created_at"))
+            if stamp and (since or until):
+                day = stamp.astimezone(tz).date()
+                if (since and day < since) or (until and day > until):
+                    skipped_window += 1
+                    continue
+            name = entry.get("author") or "unknown"
+            key = entry.get("student_key") or name
+            groups.setdefault(key, {"name": name, "posts": []})["posts"].append(entry)
+
+    by_student = {}
+    seen_names: dict[str, int] = {}
+    for key, group in groups.items():
+        name = group["name"]
+        seen_names[name] = seen_names.get(name, 0) + 1
+        label = name if seen_names[name] == 1 else f"{name} ({key})"
+        by_student[label] = group["posts"]
 
     if not by_student:
         print("no student posts found in this bundle", file=sys.stderr)
@@ -129,7 +161,11 @@ def main(argv=None) -> int:
 
     rows = []
     print(f"Rubric: {args.posts} posts on {args.days} separate day(s), "
-          f"{args.min_words}+ words each, {args.total} points, {args.timezone}\n")
+          f"{args.min_words}+ words each, {args.total} points, {args.timezone}")
+    if since or until:
+        print(f"Window: {since or 'start'} to {until or 'end'} "
+              f"({skipped_window} post(s) outside it ignored)")
+    print()
     for name in sorted(by_student):
         r = grade_student(by_student[name], rubric)
         rows.append({"student": name, "score": r["score"], "posts": r["posts"],
@@ -144,6 +180,10 @@ def main(argv=None) -> int:
         for flag in r["flags"]:
             print(f"        - {flag}")
 
+    def safe(value):
+        text = str(value)
+        return "'" + text if text[:1] in ("=", "+", "-", "@") else text
+
     out = pathlib.Path(args.out) if args.out else (
         pathlib.Path(__file__).resolve().parent.parent / "grades" /
         f"{bundle.get('school_id','course')}-{dt.date.today().isoformat()}.csv")
@@ -151,7 +191,7 @@ def main(argv=None) -> int:
     with out.open("w", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=list(rows[0]))
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerows([{k: safe(v) for k, v in row.items()} for row in rows])
     print(f"\n{len(rows)} student(s) -> {out}")
     return 0
 

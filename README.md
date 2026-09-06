@@ -194,6 +194,13 @@ CSV and prints the reasoning behind every number.
 but bunched them into one day scores full marks with a flag, so the call stays
 yours. Raise `--day-weight` to make missed days cost points.
 
+**Scope the window.** A discussion topic that stays active accumulates posts
+across weeks, so grading week 4 without `--since`/`--until` counts week 1's posts
+again. Pass the week's dates (course time, not UTC).
+
+**Chico:** the written prompt says three posts on three separate days, but the
+announced tolerance is two dates, so grade with `--posts 3 --days 2`.
+
 Nothing here writes a grade to Canvas.
 
 ## Tests
