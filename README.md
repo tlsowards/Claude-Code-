@@ -73,7 +73,10 @@ so they are left alone. `URL:` and `PROMPT:` are optional; both sharpen the draf
 python3 -m canvas_weekly.from_paste --in week4.txt --school-name "CSU Chico"
 ```
 
-Repeat the header block in the same file for more than one topic.
+Repeat the header block in the same file for more than one topic. A block must
+start with `COURSE_ID:` or `TOPIC_ID:` to begin a new topic mid-file — a bare
+`TOPIC:` after a post is treated as a student quoting it, and stays message text.
+The readers emit those id headers, so their output concatenates cleanly.
 
 ## API setup
 

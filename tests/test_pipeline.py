@@ -320,6 +320,48 @@ ME: Patricia Instructor [user:35997]
 """
 
 
+TWO_TOPICS = """COURSE_ID: 51718
+TOPIC_ID: 454157
+TOPIC: Captured by the reader
+ME: Pat Instructor [user:35997]
+
+--- Ana Student [entry:11 sid:aaa111 at:2026-08-25T18:00:00Z]
+A post.
+
+  --- Pat Instructor [entry:12 user:35997 at:2026-08-26T18:00:00Z]
+  My reply. A student could quote TOPIC: like this and it stays text.
+
+COURSE_ID: 321406
+TOPIC_ID: 999001
+TOPIC: Second thread, captured without an instructor id
+ME: Pat Instructor
+
+--- Bo Student [entry:21 sid:bbb222 at:2026-08-27T18:00:00Z]
+Another post.
+"""
+
+
+def test_multiple_topics_in_one_paste():
+    """Reader-emitted id headers start a new topic even after posts.
+
+    A plain TOPIC: after a post is a student quoting and stays message text,
+    but COURSE_ID:/TOPIC_ID: are machine-emitted and never appear in prose.
+    """
+    print("\nmulti-topic paste")
+    topics, _ = from_paste.parse(TWO_TOPICS)
+    bundle = from_paste.to_bundle(topics, "Test")
+    check("both topics parsed", len(bundle["topics"]) == 2, str(len(bundle["topics"])))
+    ids = [(t["course_id"], t["topic_id"]) for t in bundle["topics"]]
+    check("each topic keeps its own course and topic id",
+          ids == [(51718, 454157), (321406, 999001)], str(ids))
+    check("a quoted TOPIC: stayed inside the post",
+          any("TOPIC: like this" in e["message"]
+              for t in bundle["topics"] for e in t["thread"]))
+    # Topic 2 carries no instructor id; the bundle must still report topic 1's.
+    check("bundle keeps the instructor id from the topic that had one",
+          bundle["instructor"]["id"] == 35997, str(bundle["instructor"]["id"]))
+
+
 def test_grading_excludes_the_instructor():
     """The instructor's own replies must never land in the gradebook."""
     print("\ngrading")
@@ -405,7 +447,7 @@ def main():
     for fn in (test_real_ids, test_hand_typed_is_synthetic,
                test_real_headers_synthetic_entries, test_adversarial_paste,
                test_poster_guard, test_guard_truth_table, test_outbound_escaping, test_review_page_escaping,
-               test_grading_excludes_the_instructor, test_same_display_name_not_merged,
+               test_multiple_topics_in_one_paste, test_grading_excludes_the_instructor, test_same_display_name_not_merged,
                test_timezone_and_word_scoring,
                test_deleted_parent_keeps_live_replies,
                test_title_cannot_escape_the_comment,

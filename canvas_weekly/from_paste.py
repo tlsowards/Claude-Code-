@@ -83,18 +83,22 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
             continue
 
         header = HEADER_RE.match(line.strip())
-        # Headers describe a topic, so they only count before its first post.
-        # After that they are a student quoting something -- keep them verbatim.
-        if header and post is not None:
+        key = header.group(1).upper() if header else None
+        # COURSE_ID:/TOPIC_ID: are emitted by the readers, never written in
+        # prose, so they start a new topic block even mid-file. A plain TOPIC:
+        # after a post is a student quoting, and stays message text.
+        boundary = key in ("COURSE_ID", "TOPIC_ID") and current is not None and (
+            current["posts"] or current["topic_id"] is not None)
+        if header and post is not None and not boundary:
             warnings.append(
                 f"line {line_no}: {header.group(1).upper()}: appears inside a post "
                 f"by {post['author']!r}; treated as message text, not a header"
             )
             header = None
         if header:
-            key, value = header.group(1).upper(), header.group(2).strip()
-            # A second TOPIC: header starts a new block.
-            if current is None or (key == "TOPIC" and current["topic_title"]):
+            value = header.group(2).strip()
+            # A second TOPIC: header, or a reader-emitted id header, starts a block.
+            if current is None or boundary or (key == "TOPIC" and current["topic_title"]):
                 flush(post, buf, current["posts"]) if current else None
                 post, buf = None, []
                 current = new_topic()
@@ -166,8 +170,8 @@ def to_bundle(topics: list[dict], school_name: str) -> dict:
     for index, topic in enumerate(topics, start=1):
         me = (topic.get("me") or "").strip().lower()
         posts = topic["posts"]
+        topic_me_id = topic.get("me_id")
 
-        me_id = topic.get("me_id")
         thread = []
         for position, post in enumerate(posts):
             # The nearest preceding post one level shallower is the parent.
@@ -176,8 +180,8 @@ def to_bundle(topics: list[dict], school_name: str) -> dict:
             thread.append({**post, "replying_to": parent})
 
         def is_me(entry: dict) -> bool:
-            if me_id is not None and entry.get("author_id") is not None:
-                return entry["author_id"] == me_id
+            if topic_me_id is not None and entry.get("author_id") is not None:
+                return entry["author_id"] == topic_me_id
             return bool(me) and entry["author"].strip().lower() == me
 
         needs = []
