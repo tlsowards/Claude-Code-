@@ -34,10 +34,18 @@ have already replied to.
 text file and run `from_paste`. Drafting and the review page work exactly as they
 do on the other paths.
 
-This path cannot post. Pasted text carries no Canvas entry ids, so a reply has
-nothing real to attach to, and `make_poster` refuses a paste bundle rather than
-generating a script that would silently do nothing. Use the browser workflow
-above to post.
+Whether that bundle can post depends on where the text came from, so check the
+`entry_ids` field it records:
+
+- **From a reader** (`read_thread_min.js`, `read_for_grading.js`) — `canvas`.
+  Every post carries its real Canvas id, so replies and grades can be addressed.
+- **Typed or copied by hand** — `synthetic`. The ids are read-order counters,
+  which point at nothing, so `make_poster` refuses rather than generating a
+  script that would post to whatever happens to hold ids 1..n. Drafting and the
+  review page still work; use a reader when you need to post.
+
+Copying the reader's headers onto hand-typed posts does not change this — the
+per-post ids are what matter, not the course and topic ids.
 
 **API (automatic fetch).** If you can get a token, `fetch_week` pulls the threads
 for you and tracks which posts you have already answered. Same output.
