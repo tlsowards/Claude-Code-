@@ -179,6 +179,23 @@ discussion posts are also education records under FERPA, which is why
 `bundles/`, `drafts/`, `reviews/`, and `posts/` never leave the machine and never
 enter git.
 
+## Grading
+
+```bash
+python3 -m canvas_weekly.grade_week --bundle bundles/<file>.json \
+    --posts 3 --days 3 --total 21 --min-words 250
+```
+
+Counts each student's posts, the distinct days they posted on (in the course's
+timezone, not UTC), and each post's word count, then scores per post. Writes a
+CSV and prints the reasoning behind every number.
+
+`--days` is reported, not deducted, by default: a student who met the post count
+but bunched them into one day scores full marks with a flag, so the call stays
+yours. Raise `--day-weight` to make missed days cost points.
+
+Nothing here writes a grade to Canvas.
+
 ## Tests
 
 ```bash
@@ -196,6 +213,7 @@ canvas_weekly/canvas_client.py   read-only Canvas client (GET-only, paginated)
 canvas_weekly/fetch_week.py      read a week of discussion activity → bundle
 canvas_weekly/from_paste.py      pasted thread text → the same bundle, no API
 canvas_weekly/render_review.py   bundle + drafts → review page
+canvas_weekly/grade_week.py      bundle + rubric → scores, with the reasoning
 canvas_weekly/make_poster.py     bundle + drafts → browser script that posts
 browser/fetch_thread.js          console snippet: read a thread → JSON bundle
 browser/read_thread_min.js       console snippet: read a thread → readable text

@@ -14,7 +14,9 @@
     if (e.deleted) { walk(e.replies, d); return; }
     // Only your own user id is tagged: it is all the tools need to tell your
     // posts from students', and this text gets pasted around.
-    const tag = e.user_id === me.id ? ` [entry:${e.id} user:${e.user_id}]` : ` [entry:${e.id}]`;
+    const who = e.user_id === me.id ? ` user:${e.user_id}` : '';
+    // created_at drives the "posts on separate days" rule when grading.
+    const tag = ` [entry:${e.id}${who} at:${e.created_at || ''}]`;
     out.push('  '.repeat(d) + `--- ${n[e.user_id]||'?'}${tag}`,
             '  '.repeat(d) + txt(e.message), '');
     walk(e.replies, d + 1); });

@@ -42,7 +42,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 HEADER_RE = re.compile(
     r"^(COURSE_ID|TOPIC_ID|COURSE|TOPIC|URL|ME|PROMPT)\s*:\s*(.*)$", re.I)
 # read_thread_min.js appends real Canvas ids to each author line.
-IDS_RE = re.compile(r"\s*\[(?:entry:(\d+))?\s*(?:user:(\d+))?\]\s*$")
+IDS_RE = re.compile(
+    r"\s*\[(?:entry:(\d+))?\s*(?:user:(\d+))?\s*(?:at:([0-9T:.+\-Z]*))?\]\s*$")
 # An author is required, so a bare "---" divider inside a post stays post text.
 MARKER_RE = re.compile(r"^(\s*)---[ \t]+(\S.*?)\s*$")
 
@@ -129,15 +130,17 @@ def parse(text: str) -> tuple[list[dict], list[str]]:
                 )
             author = marker.group(2)
             ids = IDS_RE.search(author)
-            entry_id, user_id = next_id, None
+            entry_id, user_id, created = next_id, None, ""
             if ids:
                 author = IDS_RE.sub("", author).strip()
                 if ids.group(1):
                     entry_id = int(ids.group(1))
                 if ids.group(2):
                     user_id = int(ids.group(2))
+                created = ids.group(3) or ""
             post = {"entry_id": entry_id, "author": author,
                     "author_id": user_id, "depth": depth,
+                    "created_at": created,
                     "real_id": bool(ids and ids.group(1))}
             next_id += 1
             continue
@@ -165,7 +168,7 @@ def to_bundle(topics: list[dict], school_name: str) -> dict:
             # The nearest preceding post one level shallower is the parent.
             parent = next((posts[j]["author"] for j in range(position - 1, -1, -1)
                            if posts[j]["depth"] < post["depth"]), None)
-            thread.append({**post, "created_at": "", "replying_to": parent})
+            thread.append({**post, "replying_to": parent})
 
         def is_me(entry: dict) -> bool:
             if me_id is not None and entry.get("author_id") is not None:
