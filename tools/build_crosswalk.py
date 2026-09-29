@@ -94,9 +94,9 @@ CONFLICTS = [
                "same: staff shall not separate a youth from the general "
                "population or assign a single occupancy room based solely on "
                "sexual orientation, gender identity, or gender expression. 15 "
-               "CCR 1324(h) separately requires the policy manual to bar "
-               "restrictive housing or classification decisions made solely on "
-               "those bases.",
+               "CCR 1324(k), verified against the edition effective 01/01/2019, "
+               "separately requires the policy manual to bar restrictive housing "
+               "or classification decisions made solely on those bases.",
         "policy": "OO 1352 II.M creates classification S-8 for any LGBTQI youth, "
                   "and III.I requires single-room housing at all times for S-8.",
         "note": "Also contradicts OO 1352's own Purpose and Scope paragraph, PREA "
@@ -107,7 +107,7 @@ CONFLICTS = [
                 "02/27/2020 revision, five and a half years after the state rule "
                 "was already in force. 1352(e) also states the lawful "
                 "alternative on its face: individualized placement, or a single "
-                "room at the youth's specific request. The 1324(h) route is the "
+                "room at the youth's specific request. The 1324(k) route is the "
                 "cleaner BSCC inspection finding, because it does not depend on "
                 "whether PREA binds a county facility.",
         "fix": "Recommended change 1: rescind the S-8 single-room mandate.",
@@ -167,8 +167,8 @@ CONFLICTS = [
                   "determines the allegations were false.",
         "note": "A false-allegations rule stated at this breadth suppresses "
                 "reporting, which is the behavior the standard is written to "
-                "protect. Separately, and now verified against source, 15 CCR "
-                "1391(e) attaches the due process elements to major rule "
+                "protect. Separately, and verified against the edition effective "
+                "01/01/2019, 15 CCR 1391(f) attaches the due process elements to major rule "
                 "violations as a class, while OO 1390/1391 IV.A attaches the "
                 "hearing only where the recommended discipline is Program "
                 "Separation. That narrowing is a confirmed Title 15 defect in "

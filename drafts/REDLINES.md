@@ -56,7 +56,7 @@ Not produced. Every provision cited in these documents traces to the register, w
 
 ### The defect
 
-OO 1352 II.M creates classification S-8 for any LGBTQI youth, and III.I requires single-room housing at all times for S-8. 15 CCR 1352(e) prohibits exactly that, and it has done so since at least April 1, 2014, which is verified against the produced text. S-8 was created December 9, 2019 and retained on the February 27, 2020 revision, five and a half years after the state rule was already in force. The provision also contradicts the Purpose and Scope paragraph of OO 1352 itself, PREA Policy III.E, and OO 1352.5 III.H, which took effect March 1, 2019 and states that staff shall not consider a youth's sexual orientation or gender identity as a reason to isolate or withhold program options. S-8 is materially broader than the OO 1352.5 III.I provision, because it sweeps in lesbian, gay, bisexual, and questioning youth for whom no anatomical privacy rationale exists at all. 15 CCR 1324(h) supplies a second and independent hook: the policy and procedure manual must itself bar classification and restrictive housing decisions made solely on these bases, so S-8 is a defect in the required contents of the manual as well as an operational violation.
+OO 1352 II.M creates classification S-8 for any LGBTQI youth, and III.I requires single-room housing at all times for S-8. 15 CCR 1352(e) prohibits exactly that, and it has done so since at least April 1, 2014, which is verified against the produced text. S-8 was created December 9, 2019 and retained on the February 27, 2020 revision, five and a half years after the state rule was already in force. The provision also contradicts the Purpose and Scope paragraph of OO 1352 itself, PREA Policy III.E, and OO 1352.5 III.H, which took effect March 1, 2019 and states that staff shall not consider a youth's sexual orientation or gender identity as a reason to isolate or withhold program options. S-8 is materially broader than the OO 1352.5 III.I provision, because it sweeps in lesbian, gay, bisexual, and questioning youth for whom no anatomical privacy rationale exists at all. 15 CCR 1324(k), verified against the edition effective 01/01/2019, supplies a second and independent hook: the policy and procedure manual must itself bar classification and restrictive housing decisions made solely on these bases, so S-8 is a defect in the required contents of the manual as well as an operational violation.
 
 ### Strike
 
@@ -281,7 +281,7 @@ The policy sets a fourteen-day window for the Chief Deputy or Assistant Chief De
 |---|---|
 | **Priority** | Critical |
 | **Document** | PREA Policy and Procedure, Juvenile Institutions, XIV.A |
-| **Authority** | 28 CFR 115.378(f), good-faith reporting protection, verified<br>28 CFR 115.352(g), discipline only on a demonstrated bad-faith showing<br>15 CCR 1391(e), due process for major rule violations as a class, verified |
+| **Authority** | 28 CFR 115.378(f), good-faith reporting protection, verified<br>28 CFR 115.352(g), discipline only on a demonstrated bad-faith showing<br>15 CCR 1391(f), due process for major rule violations as a class, verified against the edition effective 01/01/2019. Revision 5 cited this as 1391(e) from the 04/01/2014 edition; the 2019 rewrite renumbered it, and 1391(e) is now minor rule violations |
 | **Register rows** | 64, 42 |
 
 ### The defect

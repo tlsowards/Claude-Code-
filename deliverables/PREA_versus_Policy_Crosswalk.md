@@ -60,11 +60,11 @@ Twelve requirements where a departmental document affirmatively states a rule th
 
 *Register row 36.*
 
-**The law requires.** 28 CFR 115.342(c). LGBTI residents shall not be placed in particular housing, bed, or other assignments solely on the basis of that identification or status. 15 CCR 1352(e), verified against the edition effective 04/01/2014, says the same: staff shall not separate a youth from the general population or assign a single occupancy room based solely on sexual orientation, gender identity, or gender expression. 15 CCR 1324(h) separately requires the policy manual to bar restrictive housing or classification decisions made solely on those bases.
+**The law requires.** 28 CFR 115.342(c). LGBTI residents shall not be placed in particular housing, bed, or other assignments solely on the basis of that identification or status. 15 CCR 1352(e), verified against the edition effective 04/01/2014, says the same: staff shall not separate a youth from the general population or assign a single occupancy room based solely on sexual orientation, gender identity, or gender expression. 15 CCR 1324(k), verified against the edition effective 01/01/2019, separately requires the policy manual to bar restrictive housing or classification decisions made solely on those bases.
 
 **The policy says.** OO 1352 II.M creates classification S-8 for any LGBTQI youth, and III.I requires single-room housing at all times for S-8.
 
-**Why it matters.** Also contradicts OO 1352's own Purpose and Scope paragraph, PREA Policy III.E, and OO 1352.5 III.H. The chronology is worse than earlier revisions recorded. 15 CCR 1352(e) was not added by the 2019 Title 15 rewrite; it is in the edition effective 04/01/2014. S-8 was created 12/09/2019 and retained on the 02/27/2020 revision, five and a half years after the state rule was already in force. 1352(e) also states the lawful alternative on its face: individualized placement, or a single room at the youth's specific request. The 1324(h) route is the cleaner BSCC inspection finding, because it does not depend on whether PREA binds a county facility.
+**Why it matters.** Also contradicts OO 1352's own Purpose and Scope paragraph, PREA Policy III.E, and OO 1352.5 III.H. The chronology is worse than earlier revisions recorded. 15 CCR 1352(e) was not added by the 2019 Title 15 rewrite; it is in the edition effective 04/01/2014. S-8 was created 12/09/2019 and retained on the 02/27/2020 revision, five and a half years after the state rule was already in force. 1352(e) also states the lawful alternative on its face: individualized placement, or a single room at the youth's specific request. The 1324(k) route is the cleaner BSCC inspection finding, because it does not depend on whether PREA binds a county facility.
 
 **Remediation.** Recommended change 1: rescind the S-8 single-room mandate.
 
@@ -112,7 +112,7 @@ Twelve requirements where a departmental document affirmatively states a rule th
 
 **The policy says.** PREA Policy XIV.A permits discipline where an investigation determines the allegations were false.
 
-**Why it matters.** A false-allegations rule stated at this breadth suppresses reporting, which is the behavior the standard is written to protect. Separately, and now verified against source, 15 CCR 1391(e) attaches the due process elements to major rule violations as a class, while OO 1390/1391 IV.A attaches the hearing only where the recommended discipline is Program Separation. That narrowing is a confirmed Title 15 defect in its own right, actionable on BSCC inspection independent of PREA.
+**Why it matters.** A false-allegations rule stated at this breadth suppresses reporting, which is the behavior the standard is written to protect. Separately, and verified against the edition effective 01/01/2019, 15 CCR 1391(f) attaches the due process elements to major rule violations as a class, while OO 1390/1391 IV.A attaches the hearing only where the recommended discipline is Program Separation. That narrowing is a confirmed Title 15 defect in its own right, actionable on BSCC inspection independent of PREA.
 
 **Remediation.** Recommended change 5: rewrite to a bad-faith standard.
 
