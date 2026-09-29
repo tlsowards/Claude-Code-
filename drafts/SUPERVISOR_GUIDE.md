@@ -12,6 +12,8 @@ Generated from `drafts/supervisor-guide.json` by `npm run supervisor-guide`. Edi
 
 > **Citation note.** The due process provision for major rule violations is cited here as 15 CCR 1391(f), its numbering in the edition effective 01/01/2019. Revision 6 has now brought the gap register and CLAUDE.md into line with that numbering, so this guide and the register agree. Two further citations were corrected in the same pass: 15 CCR 1324(h) is 1324(k), and 34 U.S.C. 30307(e)(2) is 30307(c)(2). Neither is used in this guide.
 
+> **Verification note.** Where this guide quotes 28 CFR 115.6 and the Penal Code 11165.1 definitions, that text is corroborated from search, including exact-phrase matches against the Cornell and eCFR listings, and has NOT been read from the Code of Federal Regulations or the Penal Code directly, because network access to those sources is blocked from the drafting environment. The Title 15 citations are different: those were read in full from the edition effective 01/01/2019 and are quoted into the gap register. Confirm the federal and Penal Code quotations against primary source before this issues, alongside the CANRA questions already routed to County Counsel.
+
 ## Why this exists
 
 Staff are getting one-off sexualized comments between youth and do not know whether they have a PREA incident, a CPS report, a rule violation, or none of those. The uncertainty is not a training failure. It is the predictable result of two different legal tests with different thresholds, applied to the same incident, where the department's own documents misstate one of them. This guide separates the tests.

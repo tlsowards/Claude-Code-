@@ -119,15 +119,16 @@ push(
   new Paragraph({ children: [new PageBreak()] }),
 );
 
-if (data.citation_note) {
-  push(
-    new Paragraph({ text: 'Citation note', heading: HeadingLevel.HEADING_1 }),
+if (data.citation_note || data.verification_note) {
+  push(new Paragraph({ text: 'Citation and verification notes', heading: HeadingLevel.HEADING_1 }));
+  [data.citation_note, data.verification_note].filter(Boolean).forEach((note, i) => push(
     block(WARN_FILL, [new Paragraph({
-      children: [txt(data.citation_note)],
+      children: [txt(note)],
       spacing: { before: 60, after: 60, line: 264 },
     })]),
-    new Paragraph({ children: [new PageBreak()] }),
-  );
+    new Paragraph({ text: '', spacing: { after: i === 0 ? 160 : 0 } }),
+  ));
+  push(new Paragraph({ children: [new PageBreak()] }));
 }
 
 /* ---------------------------------------------------------------- toc */

@@ -71,6 +71,10 @@ def main():
         add('> **Citation note.** %s' % data['citation_note'])
         add('')
 
+    if data.get('verification_note'):
+        add('> **Verification note.** %s' % data['verification_note'])
+        add('')
+
     add('## Why this exists')
     add('')
     add(data['why'])

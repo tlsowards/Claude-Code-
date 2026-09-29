@@ -164,10 +164,13 @@ way in practice, it becomes one. Fix is a one-sentence carve-out.
 **15 CCR 1391(f)**, not 1391(e). In the edition effective 01/01/2019, 1391(e) is minor rule
 violations handled informally and the due process elements for major rule violations moved to
 **1391(f)**. That subsection attaches those elements to major rule violations **as a class**
-and requires written notice before hearing, accommodations for youth with disabilities,
-limited literacy and English language learners, a hearing by a person who is not a party to
-the incident, opportunity to be heard and present evidence and testimony, and staff assistance
-in the hearing. OO 1390/1391 IV.A attaches the hearing only where the recommended discipline is
+and requires **at least** written notice before hearing, accommodations for youth with
+disabilities, limited literacy and English language learners, a hearing by a person who is not
+a party to the incident, opportunity to be heard and present evidence and testimony, and staff
+assistance in the hearing. **That enumeration is incomplete and must not be quoted as the full
+list:** the extraction it came from was truncated inside the fifth item. The 2014 predecessor
+carried an administrative review element that is not among the five, so at least one further
+element exists. Obtain the full subsection before quoting it. OO 1390/1391 IV.A attaches the hearing only where the recommended discipline is
 Program Separation. The department narrowed the trigger from the regulatory class to one
 sanction within it. Recorded in Revision 4 as a PREA observation; now a confirmed Title 15
 defect, actionable on BSCC inspection independent of PREA. Row 64.
@@ -324,6 +327,12 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
 - **Rev 5 could not confirm eight citations and carried them forward unconfirmed. All eight
   exist.** 1350.5, 1352.5, 1354.5, 1324(n), 1352(f), 1360(g), 1361(h) and the 1353(c) pinpoint
   are all in the 2019 edition, now quoted into their rows. Do not re-flag them.
+- **Revision 6 first stated the 15 CCR 1391(f) element list as though it were complete. It is
+  not.** The text extraction behind it was truncated inside the fifth item, and the 2014
+  predecessor carried an administrative review element that is not among those five. Corrected
+  immediately after Revision 6 in both the register and this file. The lesson generalises: a
+  quotation taken from a truncated extraction must be marked as partial at the moment it is
+  written, not assumed complete because it reads like a list.
 - **Do not assume isolation is available as a disciplinary sanction.** OO 1390/1391 III omits
   it from the consequences list and OO 1354.5 I.C.1 prohibits confinement for punishment. The
   department has excluded it, which is a stronger position than complying with the isolation
