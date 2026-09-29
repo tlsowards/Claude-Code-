@@ -20,7 +20,7 @@ CSV_PATH = os.path.join(ROOT, "prea-register.csv")
 JSON_PATH = os.path.join(ROOT, "tools", "crosswalk.json")
 MD_PATH = os.path.join(ROOT, "deliverables", "PREA_versus_Policy_Crosswalk.md")
 
-REVISION = 5
+REVISION = 6
 
 # Order used by 28 CFR part 115 subpart D, with the California and audit
 # groupings appended, so the document tracks what an auditor scores in order.

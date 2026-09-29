@@ -36,12 +36,14 @@ hedging, and he will catch a wrong citation.
 
 ## 3. Project state
 
-Register is at **Revision 5**. 83 requirements assessed against 17 departmental policies.
+Register is at **Revision 6**. 83 requirements assessed against 17 departmental policies.
 
-Revision 5 was a verification pass against the Title 15 text, not a re-scoring. No status or
-priority changed. Twenty-eight rows gained a note recording whether their California citation
-was confirmed against source, and two rows gained new findings the source text supports
-(rows 36 and 64). See section 7 for what is and is not verified.
+Revision 6 was a second verification pass, against the Title 15 edition **effective 01/01/2019**,
+plus three citation corrections. No status or priority changed. Twenty-four rows changed, in the
+`gap` and `change_log` columns only. All eight citations Revision 5 had to carry forward
+unconfirmed are now confirmed and quoted, three state-law hooks were added, and the eleven
+115.313(a) staffing factors were enumerated into row 5. See section 7 for current verification
+state and section 8 for the corrections.
 
 | Status | Count |
 |---|---|
@@ -81,8 +83,16 @@ Full register with gap text is in `prea-register.csv`. Columns `owner`, `target_
 Documents 15 to 17 were produced after Revision 3 and are assessed in Revision 4.
 Note the dates: 1354.5 is the newest policy in the set by nearly three years, and it shows.
 
+Two further source documents have been produced and read, and are authority rather than
+departmental policy, so they are not numbered above: **Title 15 effective 01/01/2019** (the
+post-rewrite edition, basis for Revision 6) and **PREA, Public Law 108-79, as enacted**.
+
 Put the source PDFs in `docs/` so you can read them directly. The 1390/1391 PDF is a
 scan with no text layer, so it has to be rasterized and read as images, not extracted.
+
+**`docs/` is gitignored and does not survive a new container.** Every verified quotation is
+therefore captured into `prea-register.csv` or into this file at the time it is read, so the
+finding outlives the PDF. If a citation needs re-checking, the source has to be uploaded again.
 
 ## 5. The twelve conflicts (highest priority)
 
@@ -99,12 +109,22 @@ nothing in them created one, though see the near miss recorded at the end of thi
    02/27/2020 revision, five and a half years after the state rule was already in force.
    1352(e) also states the lawful alternative on its face: individualized placement, or a
    single room **at the youth's specific request**.
-   **Second hook added in Revision 5: 15 CCR 1324(h)** requires the policy and procedure
-   manual to bar discrimination on the listed bases "including restrictive housing or
-   classification decisions based solely on any of the above mentioned categories." S-8 is
-   exactly that, so it is both an operational violation of 1352(e) and a defect in the
-   required contents of the manual. The 1324(h) route is the cleaner BSCC inspection finding
-   because it does not depend on whether PREA binds a county facility.
+   **Second hook, corrected in Revision 6: 15 CCR 1324(k)**, not 1324(h). In the edition
+   effective 01/01/2019, 1324(h) is "trauma-informed approaches" and the non-discrimination
+   provision is **1324(k)**, which is also broader than the 2014 text because it adds
+   immigration status. It requires the policy and procedure manual to bar discrimination on
+   the listed bases "including restrictive housing or classification decisions based solely on
+   any of the above mentioned categories." S-8 is exactly that, so it is both an operational
+   violation of 1352(e) and a defect in the required contents of the manual. The 1324(k) route
+   is the cleaner BSCC inspection finding because it does not depend on whether PREA binds a
+   county facility.
+   **Third hook, new in Revision 6: 15 CCR 1352(f)**, which did not exist in the 2014 edition:
+   "facility staff shall not consider lesbian, gay, bisexual, transgender, questioning or
+   intersex identification or status as an indicator of likelihood of being sexually abusive."
+   If the S-series is a sexual-risk taxonomy, which the S-4 criteria indicate, then placing
+   LGBTQI youth in that series at all is what 1352(f) forbids, independent of the housing
+   consequence. **This needs OO 1352 to confirm and is recorded as a hook to test, not a
+   scored finding.**
 2. **OO 1352.5 III.I.** All transgender and intersex youth get a single room. Same categorical
    defect, more defensible (privacy rationale, program access preserved at III.K), but
    contradicts III.B, III.F, III.H of the same order.
@@ -140,10 +160,14 @@ allegation may go uninvestigated, so it is recorded as a defect in the row rathe
 as a thirteenth conflict. If a document turns up showing the discretion has been exercised that
 way in practice, it becomes one. Fix is a one-sentence carve-out.
 
-**Conflict 5, new state-law defect found in Revision 5.** 15 CCR 1391(e) attaches the due
-process elements to major rule violations **as a class**, defined as violations "which may
-include withdrawal from group activities for 24 hours or more or extension of time in
-custody." OO 1390/1391 IV.A attaches the hearing only where the recommended discipline is
+**Conflict 5, state-law defect found in Revision 5, citation corrected in Revision 6.**
+**15 CCR 1391(f)**, not 1391(e). In the edition effective 01/01/2019, 1391(e) is minor rule
+violations handled informally and the due process elements for major rule violations moved to
+**1391(f)**. That subsection attaches those elements to major rule violations **as a class**
+and requires written notice before hearing, accommodations for youth with disabilities,
+limited literacy and English language learners, a hearing by a person who is not a party to
+the incident, opportunity to be heard and present evidence and testimony, and staff assistance
+in the hearing. OO 1390/1391 IV.A attaches the hearing only where the recommended discipline is
 Program Separation. The department narrowed the trigger from the regulatory class to one
 sanction within it. Recorded in Revision 4 as a PREA observation; now a confirmed Title 15
 defect, actionable on BSCC inspection independent of PREA. Row 64.
@@ -182,8 +206,9 @@ Requires drafting or an administrative decision (8 to 15):
 "Agency" includes local units, 28 CFR 115.5. Subpart D covers juvenile facilities. DOJ guidance
 states the standards apply equally to locally operated facilities.
 
-**Enforcement gap.** The 5% grant penalty, 34 U.S.C. 30307(e)(2), runs through the governor's
-certification, which 28 CFR 115.501(b) limits to state executive branch facilities. AG overview
+**Enforcement gap.** The 5% grant penalty, **34 U.S.C. 30307(c)(2)** (corrected in Revision 6
+from 30307(e)(2); PREA section 8 has only subsections (a), (b) and (c)), runs through the
+governor's certification, which 28 CFR 115.501(b) limits to state executive branch facilities. AG overview
 at 77 Fed. Reg. 37106, 37115 states it does not encompass county facilities. DOJ: no direct
 federal financial penalty for local facilities. **No private right of action under PREA.**
 
@@ -196,29 +221,40 @@ Independence, 445 U.S. 622). Being county-run is what *creates* the damages expo
 **California hooks.** WIC 209 biennial BSCC inspection. Title 15 embeds PREA content at
 1324(n), 1350.5, 1352(e)-(f), 1352.5, 1353(c), 1360(g), 1361(h), 1452, 1453.
 
-**Title 15 verification status, established in Revision 5.** The only edition produced is
-`docs/title15-bscc-juvenile.pdf`, BSCC Minimum Standards for Juvenile Facilities,
-**rev. 04/01/2014**. It predates the January 2019 rewrite. Read directly, all 65 pages.
+**Title 15 verification status, as of Revision 6.** Two editions have been read in full:
+`title15-bscc-juvenile.pdf`, **rev. 04/01/2014**, and `title15-bscc-juvenile-2019.pdf`,
+**effective 01/01/2019**, the post-rewrite edition.
 
-*Confirmed against that text, quotable now:* **1301** ("meet or exceed and do not conflict
-with"), **1321(h)(1)(A)-(B)** (1:10 waking, 1:30 sleeping) and **1321(h)(1)(E)** (excludes
-administrative, instructional, clerical, kitchen, and maintenance personnel from the youth
-supervision count, the state analogue of the federal security-staff-only rule), **1324**
-(biennial administrative review) and **1324(h)** (non-discrimination, restrictive housing and
-classification), **1352(e)** (anti-categorical housing, with its own carve-out), **1353**
-(orientation, (a) to (p)), **1354** (separation includes protective custody; privileges
-retained except as necessary; **daily review** of all separated youth), **1361** (grievances,
-(a) to (f), including **1361(b)** confidential filing option), **1390** (least restrictive,
-ten-item deprivation floor), **1391(e)** (due process for major rule violations as a class),
-**1452** and **1453** (forensic collection by non-treating personnel; evidentiary examination
-**at a facility separate from the custodial facility**).
+*Confirmed against the 2019 edition in Revision 6, quotable now:* **1324** running (a) to (n),
+including **1324(k)** (non-discrimination, restrictive housing and classification, now adding
+immigration status) and **1324(n)** (the manual must carry a policy prohibiting all forms of
+sexual abuse, sexual assault and sexual harassment, with an approach to prevention, detection,
+response and retaliation, and reporting by youth, staff or a third party); **1350.5** (screening
+within 72 hours against eleven factors, LGBTQI status treated as vulnerability and never as
+abusiveness); **1352(e)** (unchanged from 2014) and **1352(f)** (LGBTQI status is not an
+indicator of likelihood of being sexually abusive); **1352.5** (a) to (e), including **1352.5(c)**
+(house youth in the unit or room that best meets their individual needs, no automatic housing by
+external anatomy, documented reasons, youth preference and provider recommendations considered);
+**1353(c)** (age appropriate information on the sexual abuse policy and how to report, which
+resolves the Revision 5 flag on row 25); **1354.5** (room confinement, tracking WIC 208.3);
+**1360(g)** (cross-gender pat-down and strip searches prohibited except exigent or medical,
+documented); **1361(h)** (multiple internal and external reporting methods; concerns of parents,
+guardians, staff or other parties addressed and documented on a timeframe); **1391(e)** (minor
+rule violations, informal) and **1391(f)** (due process for major rule violations as a class).
 
-*Not confirmed, because the section or subsection does not exist in that edition:* **1350.5**,
-**1352.5**, **1354.5** (absent entirely); **1324(n)** (1324 ends at (j)); **1352(f)** (1352
-ends at (e)); **1360(g)** (1360 ends at (f), and (f) is "searches of transgender youth");
-**1361(h)** (1361 ends at (f)); **1353(c)** as used in row 25 (in this edition 1353(c) is
-"access to legal services", not resident education). These are carried forward unconfirmed,
-not dropped. **Get the current BSCC edition before quoting any of them.**
+*Confirmed against the 2014 edition in Revision 5 and not re-read in the 2019 edition:* **1301**,
+**1321(h)(1)(A)-(B)** and **(E)**, **1324** biennial review (also seen in 2019), **1353** as a
+whole, **1354**, **1361(b)**, **1390**, **1452**, **1453**. These sections exist in both editions.
+Re-reading them against the 2019 text is the obvious next verification pass.
+
+**Neither edition contains any PREA reference or any facility audit requirement.** In the 2019
+edition the strings PREA, Prison Rape, 28 CFR and Part 115 return zero hits, and the only "audit"
+matches are section 1403, Health Care Monitoring and Audits. California has not adopted a PREA
+audit requirement for juvenile facilities.
+
+A trap for the next reader: in the 2019 PDF the section headers for **1352.5 and 1354.5 print
+without a period after the number**, so a regex expecting `§ 1352.5.` misses them and reports a
+false negative. Match on the title.
 
 The word "PREA" does not appear anywhere in the 2014 edition. Two case-insensitive matches
 are the letters inside "spread". Adult local
@@ -274,6 +310,20 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
 - **Rev 1 to 4 treated the Title 15 LGBTQI housing rule as part of the 2019 rewrite.** It is
   not. 15 CCR 1352(e) is in the edition effective 04/01/2014. This materially worsens
   conflict 1: S-8 postdates the state rule by five and a half years, not one. Corrected in 5.
+- **Rev 5 cited the non-discrimination hook as 15 CCR 1324(h). It is 1324(k).** In the
+  edition effective 01/01/2019, 1324(h) is "trauma-informed approaches." Corrected in 6.
+  This one was load-bearing: it is the second hook on conflict 1 and it was in the authority
+  line of redline change 1 as first drafted.
+- **Rev 5 cited the major rule violation due process elements as 15 CCR 1391(e). It is
+  1391(f).** In the 2019 edition 1391(e) is minor rule violations handled informally.
+  Corrected in 6. The finding is unchanged; the subsection letter is not.
+- **Rev 1 to 5 cited the five percent grant penalty as 34 U.S.C. 30307(e)(2). It is
+  30307(c)(2).** Verified against Public Law 108-79 as enacted: PREA section 8 has only
+  subsections (a), (b) and (c), and the penalty with its certification-or-assurance choice is
+  section 8(c)(2). Corrected in 6.
+- **Rev 5 could not confirm eight citations and carried them forward unconfirmed. All eight
+  exist.** 1350.5, 1352.5, 1354.5, 1324(n), 1352(f), 1360(g), 1361(h) and the 1353(c) pinpoint
+  are all in the 2019 edition, now quoted into their rows. Do not re-flag them.
 - **Do not assume isolation is available as a disciplinary sanction.** OO 1390/1391 III omits
   it from the consequences list and OO 1354.5 I.C.1 prohibits confinement for punishment. The
   department has excluded it, which is a stronger position than complying with the isolation
@@ -309,10 +359,12 @@ Referenced in reviewed policies but never produced. Several may close findings.
 - Institutional Policy on Video Recording and Photograph System
 - Interrogations of Department Personnel policy
 - Institutional Incident Report User's Guide
-- **Current BSCC Title 15 edition (post January 2019).** Needed to confirm 1350.5, 1352.5,
-  1354.5, 1324(n), 1352(f), 1360(g), 1361(h), and the 1353 pinpoint. The only edition
-  produced is rev. 04/01/2014. Worth asking internally whether the policy shop has been
-  drafting against the 2014 text, which would explain a good deal.
+- ~~Current BSCC Title 15 edition (post January 2019).~~ **Produced and read in Revision 6.**
+  All eight citations are confirmed. One question it raised is still worth asking internally:
+  whether the policy shop has been drafting against the 2014 text, since two of the
+  department's own citations match the superseded numbering. Note also that the edition
+  produced is effective 01/01/2019 and BSCC published a standards matrix revised January 2023,
+  so a later amendment may exist and has not been seen.
 - OO 1354 (separation). **Now the highest-value outstanding document.** OO 1354.5 defines
   Separation to include protective custody and then regulates only room confinement, so the
   placement 115.342(b) and 115.368 actually govern is the one with the fewest written

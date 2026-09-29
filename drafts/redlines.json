@@ -1,7 +1,7 @@
 {
   "set": "Recommended changes 1 to 7",
   "subtitle": "Amendment language for the seven changes correctable without new policy",
-  "register_revision": 5,
+  "register_revision": 6,
   "note": "Source of truth for this deliverable. drafts/REDLINES.md and the Word file in deliverables/ are generated from it. Edit here, then run npm run redlines.",
   "produced": [
     "OO 1354.5 Room Confinement",
@@ -27,7 +27,8 @@
       "authority": [
         "28 CFR 115.342(c)",
         "15 CCR 1352(e), verified against the edition effective 04/01/2014",
-        "15 CCR 1324(h), verified against the same edition"
+        "15 CCR 1324(k), verified against the edition effective 01/01/2019. Revision 5 cited this as 1324(h) from the 04/01/2014 edition; the 2019 rewrite renumbered it and broadened it",
+        "15 CCR 1352(f), verified against the edition effective 01/01/2019, a third and independent hook"
       ],
       "rows": [
         36,
@@ -74,7 +75,7 @@
       "before_adoption": [
         "OO 1352 has never been produced to this review. The section numbers II.M, III.E, and III.I come from the register, which traces to the earlier review that read the order. Pull the PDF and confirm the numbering and the actual wording before this goes to the policy shop.",
         "The struck text above is a reconstruction of what the register describes, not a quotation. Replace it with the order's real words before circulating the redline.",
-        "The 15 CCR 1352(e) language quoted in the insert is verified against the edition effective 04/01/2014, the only edition produced. Confirm against the current BSCC edition that the subsection was not renumbered in the January 2019 rewrite."
+        "The 15 CCR 1352(e) language quoted in the insert is now verified against both editions and is word for word identical in each, so it did not move. Its neighbours did: the non-discrimination provision went from 1324(h) to 1324(k), which is corrected above. 1352(f) is new in the 2019 edition and is added to the authority line."
       ]
     },
     {

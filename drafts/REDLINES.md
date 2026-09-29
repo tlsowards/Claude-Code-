@@ -2,7 +2,7 @@
 
 Amendment language for the seven changes correctable without new policy
 
-Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 5.
+Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 6.
 
 > This is not legal advice. It is proposed amendment language prepared for internal remediation planning. Statutory questions, and every item in a *Before adoption* block, route to County Counsel.
 
@@ -51,7 +51,7 @@ Not produced. Every provision cited in these documents traces to the register, w
 |---|---|
 | **Priority** | Critical |
 | **Document** | OO 1352 Classification (eff. 12/09/2019, rev. 02/27/2020), II.M, III.E, III.I |
-| **Authority** | 28 CFR 115.342(c)<br>15 CCR 1352(e), verified against the edition effective 04/01/2014<br>15 CCR 1324(h), verified against the same edition |
+| **Authority** | 28 CFR 115.342(c)<br>15 CCR 1352(e), verified against the edition effective 04/01/2014<br>15 CCR 1324(k), verified against the edition effective 01/01/2019. Revision 5 cited this as 1324(h) from the 04/01/2014 edition; the 2019 rewrite renumbered it and broadened it<br>15 CCR 1352(f), verified against the edition effective 01/01/2019, a third and independent hook |
 | **Register rows** | 36, 75 |
 
 ### The defect
@@ -108,7 +108,7 @@ This is the strongest municipal liability exhibit in the packet and the clearest
 
 - OO 1352 has never been produced to this review. The section numbers II.M, III.E, and III.I come from the register, which traces to the earlier review that read the order. Pull the PDF and confirm the numbering and the actual wording before this goes to the policy shop.
 - The struck text above is a reconstruction of what the register describes, not a quotation. Replace it with the order's real words before circulating the redline.
-- The 15 CCR 1352(e) language quoted in the insert is verified against the edition effective 04/01/2014, the only edition produced. Confirm against the current BSCC edition that the subsection was not renumbered in the January 2019 rewrite.
+- The 15 CCR 1352(e) language quoted in the insert is now verified against both editions and is word for word identical in each, so it did not move. Its neighbours did: the non-discrimination provision went from 1324(h) to 1324(k), which is corrected above. 1352(f) is new in the 2019 edition and is added to the authority line.
 
 ---
 

@@ -4,13 +4,13 @@ A decision guide for comments, exposure, and touching between youth
 
 > **DRAFT FOR COUNTY COUNSEL REVIEW. Not for issuance to supervisors until the CANRA column is confirmed.**
 
-Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 5.
+Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 6.
 
 > This is not legal advice. It is a policy and standards analysis prepared for internal use. The CANRA determinations in particular route to County Counsel before this issues to anyone.
 
 Generated from `drafts/supervisor-guide.json` by `npm run supervisor-guide`. Edit the JSON, not this file.
 
-> **Citation note.** One citation in this guide runs ahead of the gap register. The due process provision for major rule violations is cited here as 15 CCR 1391(f), its numbering in the edition effective 01/01/2019. The register and CLAUDE.md still carry 1391(e) from the 04/01/2014 edition. The current numbering is the correct one and is used deliberately; Revision 6 is the pass that brings the register into line. Two further citations are in the same position project-wide but are not used in this guide: 15 CCR 1324(h), now 1324(k), and 34 U.S.C. 30307(e)(2), now 30307(c)(2).
+> **Citation note.** The due process provision for major rule violations is cited here as 15 CCR 1391(f), its numbering in the edition effective 01/01/2019. Revision 6 has now brought the gap register and CLAUDE.md into line with that numbering, so this guide and the register agree. Two further citations were corrected in the same pass: 15 CCR 1324(h) is 1324(k), and 34 U.S.C. 30307(e)(2) is 30307(c)(2). Neither is used in this guide.
 
 ## Why this exists
 
@@ -165,7 +165,7 @@ OO 1390/1391 II.B.4 lists it. Nothing in the order says whether it covers a comm
 
 **The disciplinary hearing may not attach. Register row 64.**
 
-OO 1390/1391 IV.A requires the due process hearing only where the recommended discipline is Program Separation. 15 CCR 1391(f) requires those protections for major rule violations as a class. Charge sexual misconduct and give point loss or a level demotion, and the youth receives none of the state-required process. Citation note: this guide cites 1391(f), the numbering in the Title 15 edition effective 01/01/2019. The gap register and CLAUDE.md still cite the same provision as 1391(e), which is its numbering in the 04/01/2014 edition and was correct when Revision 5 verified it. The provision moved in the 2019 rewrite. This guide uses the current numbering deliberately, because it is headed for supervisors and County Counsel, and Revision 6 reconciles the register to match. Do not read the difference as a conflict.
+OO 1390/1391 IV.A requires the due process hearing only where the recommended discipline is Program Separation. 15 CCR 1391(f) requires those protections for major rule violations as a class. Charge sexual misconduct and give point loss or a level demotion, and the youth receives none of the state-required process. Citation note: 1391(f) is the numbering in the edition effective 01/01/2019. The 04/01/2014 edition had these elements at 1391(e). Revision 6 corrected the register to match, so the two now agree.
 
 **There is no emergency grievance track. Register row 42.**
 

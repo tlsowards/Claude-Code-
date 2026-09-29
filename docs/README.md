@@ -51,12 +51,18 @@ The statute, not the standards: it does not contain 28 CFR part 115 and cannot b
 verify any standard. Section 8 has only subsections (a), (b), and (c), so the 5 percent
 grant provision is **section 8(c)(2)**, codified at 34 U.S.C. 30307(c)(2).
 
-## Documents received but not yet worked into the register
+## Applied in Revision 6
 
-`title15-bscc-juvenile-2019.pdf` and `prea-public-law-108-79.pdf` arrived after Revision 5.
-The register, `CLAUDE.md`, and the redlines have **not** been updated for them yet, so
-section 7 still carries three citations now known to be wrong (1324(h), 1391(e), and
-34 U.S.C. 30307(e)(2)) and section 10 still lists the current Title 15 as outstanding.
-Revision 6 is the pass that fixes all of it.
+`title15-bscc-juvenile-2019.pdf` and `prea-public-law-108-79.pdf` have been worked into the
+register. Revision 6 confirmed all eight previously unconfirmed citations, corrected three
+that the 2019 rewrite renumbered (1324(h) to **1324(k)**, 1391(e) to **1391(f)**, and
+34 U.S.C. 30307(e)(2) to **30307(c)(2)**), and quoted the confirming text into the rows.
 
-One deliverable already uses the corrected numbering ahead of that pass. `deliverables/PREA_Supervisor_Decision_Guide.docx` cites **15 CCR 1391(f)** where the register still says 1391(e), because that guide is written for supervisors and County Counsel and should not carry a citation known to be stale. The guide says so on its own face, in a citation note on the first page. Revision 6 brings the register into line.
+Because `docs/` is gitignored and does not survive a new container, **the quotations are now
+the durable record**, not these PDFs. A future session that needs to re-verify has to have the
+source uploaded again. That is the reason Revision 6 quoted the text into the register instead
+of merely recording that it had been checked.
+
+Sections verified against the 2014 edition in Revision 5 and **not** re-read in the 2019
+edition: 1301, 1321(a) and (h), 1354, 1390, 1452, 1453. They exist in both editions. Re-reading
+them against the 2019 text is the obvious next verification pass.
