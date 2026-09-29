@@ -22,6 +22,23 @@ touch orders that have never been produced to this review, so the struck text in
 a reconstruction of what the register describes, not a quotation, and the section numbers
 need confirming against the PDFs before any of it circulates.
 
+## Supervisor decision guide
+
+`supervisor-guide.json` is the source. `SUPERVISOR_GUIDE.md` and
+`deliverables/PREA_Supervisor_Decision_Guide.docx` are generated views. Rebuild with
+`npm run supervisor-guide`. Both generators abort on an em dash.
+
+It answers the question line staff actually ask: a youth said or did something sexual to
+another youth, is this PREA, and do I have to call CPS. Five conduct tiers, each with the
+PREA classification, the CANRA answer, and the required steps.
+
+**It carries a DRAFT status line and must not be issued until County Counsel confirms the
+CANRA column.** The hard case is tier 4: intentional touching of an enumerated body area is
+unambiguously PREA sexual abuse, while the same conduct between similarly aged detained youth
+may not map to any offense enumerated at Penal Code 11165.1. That tension is real, it is
+flagged in the document rather than resolved, and it is the reason the guide routes rather
+than answers.
+
 ## Still to draft
 
 Per CLAUDE.md section 11:
