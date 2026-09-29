@@ -10,6 +10,8 @@ Sacramento County Probation Department, Youth Detention Facility. Drawn from gap
 
 Generated from `drafts/supervisor-guide.json` by `npm run supervisor-guide`. Edit the JSON, not this file.
 
+> **Citation note.** One citation in this guide runs ahead of the gap register. The due process provision for major rule violations is cited here as 15 CCR 1391(f), its numbering in the edition effective 01/01/2019. The register and CLAUDE.md still carry 1391(e) from the 04/01/2014 edition. The current numbering is the correct one and is used deliberately; Revision 6 is the pass that brings the register into line. Two further citations are in the same position project-wide but are not used in this guide: 15 CCR 1324(h), now 1324(k), and 34 U.S.C. 30307(e)(2), now 30307(c)(2).
+
 ## Why this exists
 
 Staff are getting one-off sexualized comments between youth and do not know whether they have a PREA incident, a CPS report, a rule violation, or none of those. The uncertainty is not a training failure. It is the predictable result of two different legal tests with different thresholds, applied to the same incident, where the department's own documents misstate one of them. This guide separates the tests.
@@ -163,7 +165,7 @@ OO 1390/1391 II.B.4 lists it. Nothing in the order says whether it covers a comm
 
 **The disciplinary hearing may not attach. Register row 64.**
 
-OO 1390/1391 IV.A requires the due process hearing only where the recommended discipline is Program Separation. 15 CCR 1391(f) requires those protections for major rule violations as a class. Charge sexual misconduct and give point loss or a level demotion, and the youth receives none of the state-required process.
+OO 1390/1391 IV.A requires the due process hearing only where the recommended discipline is Program Separation. 15 CCR 1391(f) requires those protections for major rule violations as a class. Charge sexual misconduct and give point loss or a level demotion, and the youth receives none of the state-required process. Citation note: this guide cites 1391(f), the numbering in the Title 15 edition effective 01/01/2019. The gap register and CLAUDE.md still cite the same provision as 1391(e), which is its numbering in the 04/01/2014 edition and was correct when Revision 5 verified it. The provision moved in the 2019 rewrite. This guide uses the current numbering deliberately, because it is headed for supervisors and County Counsel, and Revision 6 reconciles the register to match. Do not read the difference as a conflict.
 
 **There is no emergency grievance track. Register row 42.**
 

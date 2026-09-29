@@ -58,3 +58,5 @@ The register, `CLAUDE.md`, and the redlines have **not** been updated for them y
 section 7 still carries three citations now known to be wrong (1324(h), 1391(e), and
 34 U.S.C. 30307(e)(2)) and section 10 still lists the current Title 15 as outstanding.
 Revision 6 is the pass that fixes all of it.
+
+One deliverable already uses the corrected numbering ahead of that pass. `deliverables/PREA_Supervisor_Decision_Guide.docx` cites **15 CCR 1391(f)** where the register still says 1391(e), because that guide is written for supervisors and County Counsel and should not carry a citation known to be stale. The guide says so on its own face, in a citation note on the first page. Revision 6 brings the register into line.

@@ -67,6 +67,10 @@ def main():
         'Edit the JSON, not this file.')
     add('')
 
+    if data.get('citation_note'):
+        add('> **Citation note.** %s' % data['citation_note'])
+        add('')
+
     add('## Why this exists')
     add('')
     add(data['why'])
