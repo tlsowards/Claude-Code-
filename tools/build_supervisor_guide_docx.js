@@ -90,6 +90,15 @@ const isAbuse = (t) => /SEXUAL ABUSE/.test(t.prea_flag);
 const body = [];
 const push = (...x) => body.push(...x);
 
+// Section headings in the order emitted, for the cross-view check at the end.
+// "Contents" and the notes page are front matter and have no Markdown analogue.
+const SECTIONS = [];
+const FRONT = new Set(['Contents', 'Citation and verification notes']);
+function h1(text) {
+  if (!FRONT.has(text)) SECTIONS.push(text);
+  return new Paragraph({ text, heading: HeadingLevel.HEADING_1 });
+}
+
 /* -------------------------------------------------------------- title */
 
 push(
@@ -122,7 +131,7 @@ push(
 );
 
 if (data.citation_note || data.verification_note) {
-  push(new Paragraph({ text: 'Citation and verification notes', heading: HeadingLevel.HEADING_1 }));
+  push(h1('Citation and verification notes'));
   [data.citation_note, data.verification_note].filter(Boolean).forEach((note, i) => push(
     block(WARN_FILL, [new Paragraph({
       children: [txt(note)],
@@ -136,7 +145,7 @@ if (data.citation_note || data.verification_note) {
 /* ---------------------------------------------------------------- toc */
 
 push(
-  new Paragraph({ text: 'Contents', heading: HeadingLevel.HEADING_1, spacing: { after: 200 } }),
+  h1('Contents'),
   new TableOfContents('Contents', { hyperlink: true, headingStyleRange: '1-2' }),
   new Paragraph({ children: [new PageBreak()] }),
 );
@@ -144,9 +153,9 @@ push(
 /* -------------------------------------------------------------- why */
 
 push(
-  new Paragraph({ text: 'Why this exists', heading: HeadingLevel.HEADING_1 }),
+  h1('Why this exists'),
   p(data.why),
-  new Paragraph({ text: 'Four rules that apply to every incident', heading: HeadingLevel.HEADING_1 }),
+  h1('Four rules that apply to every incident'),
 );
 data.principles.forEach((pr, i) => push(
   new Paragraph({ text: `${i + 1}. ${pr.head}`, heading: HeadingLevel.HEADING_2 }),
@@ -157,7 +166,7 @@ data.principles.forEach((pr, i) => push(
 
 const G = [760, 4200, 2560, 2560];
 push(
-  new Paragraph({ text: 'The tiers at a glance', heading: HeadingLevel.HEADING_1 }),
+  h1('The tiers at a glance'),
   p('Find the conduct, then read the full tier. The two right columns are different tests '
     + 'and they do not track each other.'),
   table(G, [
@@ -195,7 +204,7 @@ push(
 
 data.tiers.forEach((t, idx) => {
   push(
-    new Paragraph({ text: `Tier ${t.n}`, heading: HeadingLevel.HEADING_1 }),
+    h1(`Tier ${t.n}`),
     p('', { runs: [txt('The conduct. ', { bold: true }), txt(t.conduct)] }),
     table([2200, 7880], [
       new TableRow({
@@ -231,32 +240,19 @@ data.tiers.forEach((t, idx) => {
 
 push(
   new Paragraph({ children: [new PageBreak()] }),
-  new Paragraph({ text: data.flips.head, heading: HeadingLevel.HEADING_1 }),
+  h1(data.flips.head),
   block(WARN_FILL, data.flips.items.map((it, i) => new Paragraph({
     children: [txt(it)],
     bullet: { level: 0 },
     spacing: { before: i ? 40 : 60, after: 60, line: 264 },
   }))),
-  new Paragraph({ text: data.doubt.head, heading: HeadingLevel.HEADING_1 }),
+  h1(data.doubt.head),
   p(data.doubt.body),
 );
-if (data.canra) {
-  push(
-    new Paragraph({ text: data.canra.head, heading: HeadingLevel.HEADING_1 }),
-    p(data.canra.body),
-    // Bold runs are marked with **...** in the source so the statutory
-    // subsections that decide the chart stand out when a supervisor scans it.
-    ...data.canra.items.map((it) => new Paragraph({
-      children: it.split(/\*\*(.+?)\*\*/g).map((part, i) => txt(part, { bold: i % 2 === 1 })),
-      bullet: { level: 0 },
-      spacing: { after: 80, line: 264 },
-    })),
-  );
-}
 if (data.staff) {
   push(
     new Paragraph({ children: [new PageBreak()] }),
-    new Paragraph({ text: data.staff.head, heading: HeadingLevel.HEADING_1 }),
+    h1(data.staff.head),
     block(ABUSE_FILL, [new Paragraph({
       children: [txt(data.staff.body)],
       spacing: { before: 60, after: 60, line: 264 },
@@ -270,8 +266,21 @@ if (data.staff) {
     }),
   ));
 }
+if (data.canra) {
+  push(
+    h1(data.canra.head),
+    p(data.canra.body),
+    // Bold runs are marked with **...** in the source so the statutory
+    // subsections that decide the chart stand out when a supervisor scans it.
+    ...data.canra.items.map((it) => new Paragraph({
+      children: it.split(/\*\*(.+?)\*\*/g).map((part, i) => txt(part, { bold: i % 2 === 1 })),
+      bullet: { level: 0 },
+      spacing: { after: 80, line: 264 },
+    })),
+  );
+}
 push(
-  new Paragraph({ text: data.defects.head, heading: HeadingLevel.HEADING_1 }),
+  h1(data.defects.head),
   p(data.defects.body),
 );
 data.defects.items.forEach((d) => push(
@@ -279,7 +288,7 @@ data.defects.items.forEach((d) => push(
   p(d.body),
 ));
 push(
-  new Paragraph({ text: data.counsel.head, heading: HeadingLevel.HEADING_1 }),
+  h1(data.counsel.head),
   ...data.counsel.items.map((it) => bullet(it)),
 );
 
@@ -325,6 +334,25 @@ const doc = new Document({
     children: body,
   }],
 });
+
+// The two views are generated by separate programs in different languages, so
+// nothing but this check keeps their section order in step. A reviewer caught
+// them diverging once; this makes the next divergence a build failure. The
+// order is recorded as each heading is emitted rather than read back out of the
+// docx objects, which do not expose their text in any stable way.
+const MD = path.join(ROOT, 'drafts', 'SUPERVISOR_GUIDE.md');
+if (fs.existsSync(MD)) {
+  const mdOrder = fs.readFileSync(MD, 'utf8')
+    .split('\n').filter((l) => l.startsWith('## ')).map((l) => l.slice(3).trim());
+  const a = mdOrder.join(' | ');
+  const b = SECTIONS.join(' | ');
+  if (a !== b) {
+    console.error('ABORTED. The Markdown and Word views disagree on section order.');
+    console.error('  markdown: ' + a);
+    console.error('  word:     ' + b);
+    process.exit(1);
+  }
+}
 
 const out = path.join(ROOT, 'deliverables', 'PREA_Supervisor_Decision_Guide.docx');
 Packer.toBuffer(doc).then((buf) => {
