@@ -266,6 +266,17 @@ if (data.staff) {
     }),
   ));
 }
+if (data.prea) {
+  push(
+    h1(data.prea.head),
+    p(data.prea.body),
+    ...data.prea.items.map((it) => new Paragraph({
+      children: it.split(/\*\*(.+?)\*\*/g).map((part, i) => txt(part, { bold: i % 2 === 1 })),
+      bullet: { level: 0 },
+      spacing: { after: 80, line: 264 },
+    })),
+  );
+}
 if (data.canra) {
   push(
     h1(data.canra.head),

@@ -141,6 +141,15 @@ def main():
             add(it['body'])
             add('')
 
+    if data.get('prea'):
+        add('## %s' % data['prea']['head'])
+        add('')
+        add(data['prea']['body'])
+        add('')
+        for it in data['prea']['items']:
+            add('- %s' % it)
+        add('')
+
     if data.get('canra'):
         add('## %s' % data['canra']['head'])
         add('')

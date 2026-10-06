@@ -125,7 +125,7 @@ PREA sexual harassment requires conduct that is repeated. Repetition only exists
 
 **The conduct.** Intentional touching of another youth's genitalia, anus, groin, breast, inner thigh, or buttocks, including through the clothing. The grabbing-at-the-butt case.
 
-**PREA: PREA SEXUAL ABUSE.** Sexual abuse under 115.6. The body areas are enumerated by name, contact through clothing counts, and the only exclusion is contact incidental to a physical altercation. It is not horseplay and it is not a tier below the comment cases.
+**PREA: PREA SEXUAL ABUSE.** Sexual abuse under 115.6. The body areas are enumerated by name, contact through clothing counts, and the only exclusion is contact incidental to a physical altercation. It is not horseplay and it is not a tier below the comment cases. One element the chart previously left out: the resident-on-resident definition applies where the victim does not consent, is coerced by overt or implied threats of violence, or is unable to consent or refuse. An unwanted grab satisfies that on its face, but the element has to be established and written down rather than assumed, and it is what separates this from consensual contact between youth, which is a rule violation and a safety problem but is not resident-on-resident sexual abuse under this definition.
 
 **CPS: YES. Report.** YES, where the touching was for sexual arousal or gratification. Penal Code 11165.1(b)(4) covers "the intentional touching of the genitals or intimate parts, including the breasts, genital area, groin, inner thighs, and buttocks, or the clothing covering them, of a child, or of the perpetrator by a child, for purposes of sexual arousal or gratification." Note how closely that tracks the PREA list: the same body parts, the same through-clothing rule. CANRA adds a purpose element that PREA does not have, and excludes acts reasonably construed as normal caretaker responsibilities, demonstrations of affection, or acts for a valid medical purpose, none of which fit a deliberate grab between youth. Penal Code 11165.6 separately excludes "a mutual affray between minors," which is the CANRA analogue of the PREA carve-out for contact incidental to a physical altercation. Contact during a fight is outside both.
 
@@ -145,7 +145,7 @@ PREA sexual harassment requires conduct that is repeated. Repetition only exists
 
 **The conduct.** Oral, anal, or penetrative sexual contact, attempted or completed. Or any conduct in any tier above accomplished by force, threat, coercion, or leverage over the other youth.
 
-**PREA: PREA SEXUAL ABUSE.** Sexual abuse under 115.6, at the most serious end. Full response.
+**PREA: PREA SEXUAL ABUSE.** Sexual abuse under 115.6, at the most serious end. Full response. The same non-consent element applies: the victim does not consent, is coerced by overt or implied threats of violence, or is unable to consent or refuse. Force or coercion establishes it outright. Where youth describe the contact as mutual, do not resolve consent on the unit; age, the custodial setting and any disparity between the two all bear on whether a youth was able to consent or refuse, and that determination belongs to the investigation.
 
 **CPS: YES. Report.** YES. Reportable twice over: Penal Code 261, 286, 287 and 289 are enumerated at 11165.1(a), and the acts themselves are listed at 11165.1(b)(1) to (3). Force or coercion also removes the 11165.1(a) exception for voluntary conduct. One point for County Counsel rather than for the floor: that exception excludes voluntary conduct violating 286, 287 or 289 where there are no indicators of abuse, and how it applies between detained youth is not obvious, because custody makes "voluntary" difficult and indicators of abuse likely. Do not use it to decline a report without counsel.
 
@@ -203,6 +203,17 @@ Report. The standard is reasonable suspicion, not proof, and the employee who he
 ### What actually reduces this exposure
 
 Not how complaints are adjudicated. Where searches happen and whether they are witnessed and recorded. A search conducted in camera view with a second staff member present resolves itself; one conducted in a blind spot becomes a credibility contest the department usually loses. That ties directly to 115.313(a) factor 5, the blind-spot survey, and to the **Institutional Policy on Video Recording and Photograph System, which has never been produced** and is on the outstanding documents list. Until someone knows what the camera coverage of search locations actually is, this risk cannot be managed, only absorbed.
+
+## What the PREA definitions do and do not contain
+
+Checked the same way the CANRA sections were, because the two columns carry different risks and both have to be auditable. The reason tiers 1 through 4 are not sexual abuse is not an inference from the absence of contact. It is that the prongs which would otherwise catch them exist only for staff.
+
+- **Resident-on-resident sexual abuse** has four prongs, all requiring contact: penis to vulva or anus, mouth to penis, vulva or anus, penetration of the anal or genital opening by a hand, finger, object or instrument, and any other intentional touching, directly or through the clothing, of the genitalia, anus, groin, breast, inner thigh or buttocks, excluding contact incidental to a physical altercation.
+- **All four are gated by the same element:** the act counts where the victim does not consent, is coerced into it by overt or implied threats of violence, or is unable to consent or refuse.
+- **There is no attempt, threat or request prong for resident-on-resident conduct.** That prong exists, but only for staff. This is why tier 1 is not sexual abuse: a youth announcing an intention to perform a sex act on another youth would be a threat to engage in a listed act, and if the speaker were a staff member it would be sexual abuse on that basis. Between youth the definition does not reach it.
+- **There is no display or voyeurism prong for resident-on-resident conduct either.** Display of uncovered genitalia in the presence of a resident, and voyeurism, are staff-only prongs. That is why tiers 3 and 4 are not sexual abuse no matter how many times they happen, and it is also why the same two acts by a staff member would be.
+- **Sexual harassment** is the only prong that reaches speech, and prong one requires conduct that is repeated and unwelcome, directed by one resident toward another. That repetition element is what tiers 1 and 2 turn on.
+- **Staff sexual abuse** adds to the four contact prongs: contact with any body part where the staff member has the intent to abuse, arouse or gratify sexual desire; the attempt, threat or request prong; display of uncovered genitalia, buttocks or breast in a resident's presence; and voyeurism. The touching prong for staff is qualified by being unrelated to official duties or carrying that intent, which is the whole of the search analysis in the section above.
 
 ## The CANRA sections this guide rests on
 
