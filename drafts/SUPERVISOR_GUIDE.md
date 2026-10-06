@@ -217,7 +217,15 @@ The tier chart was written assuming both residents are minors. In a hall housing
 | **One under 18, one over 18.** The resident under 18 is the one acting. | **Tiers 5 and 6: still YES.** 11165.1(b)(4) reaches touching "of a child, **or of the perpetrator by a child**," so it bites in both directions. **Tier 4: NO.** (b)(5) requires the masturbation be in the presence of a **child**, and the only person present is an adult. | Unchanged. PREA does not care which resident is older. | Do not decide on the unit which resident is the victim. That is an investigative conclusion, and Penal Code 11172(a) gives the reporter immunity. Report and let it sort out. |
 | **Both 18 or over** | **NO. On every tier.** No child, so no CANRA duty. No dependent adult status, so no WIC 15630 duty either. **There is no mandated external reporting duty of any kind.** | Entirely unchanged. A resident is a resident under Subpart D. | The external route is the **Sheriff, not CPS**: 15 CCR 1453 and OO 1453 I.A.8. Read the note below before relying on it. |
 
-**Do not read the bottom row as "no report."** Every PREA duty is age-neutral: 115.361(a) staff reporting, 115.371(a) investigation, 115.362 protection and 115.367 retaliation monitoring all apply identically to a 24 year old. And there is an external route, because 15 CCR 1453 requires sexual assaults occurring in the facility to be reported to local law enforcement without regard to age, and OO 1453 I.A.8 implements it. **But it is not an equivalent substitute, and every difference runs the same way.** CANRA triggers on reasonable suspicion, binds the individual employee who formed it, and carries personal criminal exposure under 11166(c). OO 1453 I.A.8 triggers on a belief that a sexual assault occurred, binds the Duty Supervisor rather than the employee who saw it, and carries departmental consequences only. Threshold up, duty moved off the person who witnessed it, personal exposure gone, all at once. **And its trigger is sexual assault only**, so for two adult residents tiers 2, 3 and 4 have no external reporting route at all. They are internal PREA matters. Log them as such, and log them every time, because repetition is what makes tier 2 and the harassment prong work.
+**"No CPS report" does not mean "no report."**
+
+PREA does not change with age. A resident is a resident. Staff still report under 115.361(a), the allegation is still investigated under 115.371(a), and the protection and retaliation monitoring duties still apply.
+
+The external report goes to the **Sheriff instead of CPS**. 15 CCR 1453 requires sexual assaults in the facility to be reported to local law enforcement at any age, and OO 1453 I.A.8 puts that on the Duty Supervisor.
+
+**It is a weaker duty than CANRA, in three ways.** CANRA starts at reasonable suspicion; OO 1453 starts at a belief that a sexual assault occurred. CANRA binds the employee who saw it; OO 1453 binds the supervisor. CANRA carries personal criminal liability under 11166(c); OO 1453 does not.
+
+**And it covers sexual assault only.** For two adult residents, tiers 2, 3 and 4 have no external report at all. Handle them as PREA matters, and write them up every time.
 
 ---
 

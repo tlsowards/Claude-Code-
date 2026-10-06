@@ -294,10 +294,12 @@ if (data.ages) {
       })),
     ]),
     new Paragraph({ text: '', spacing: { after: 120 } }),
-    block(WARN_FILL, [new Paragraph({
-      children: data.ages.note.split(/\*\*(.+?)\*\*/g).map((part, i) => txt(part, { bold: i % 2 === 1 })),
-      spacing: { before: 60, after: 60, line: 264 },
-    })]),
+    // The note is written as blank-line-separated paragraphs. Word ignores
+    // newlines inside a run, so split on them rather than emitting one block.
+    block(WARN_FILL, data.ages.note.split('\n\n').map((para, n, all) => new Paragraph({
+      children: para.split(/\*\*(.+?)\*\*/g).map((part, i) => txt(part, { bold: i % 2 === 1 })),
+      spacing: { before: n ? 100 : 60, after: n === all.length - 1 ? 60 : 0, line: 264 },
+    }))),
   );
 }
 if (data.mixedage) {

@@ -669,8 +669,9 @@ WIC 875 correction in section 8 and row 90. The narrow finding stands: 875(j) an
 controls exercised by the court, and 875(g)(3) directs BSCC to write separation standards that have
 never been produced to this project. None of the three is a housing rule binding the facility
 today.)* Classification is
-the only control, and it sits in OO 1352, which has never been produced and which carries both
-documented classification defects.
+the only control, and it sits in OO 1352, **produced and read in full in Revision 9**, which carries
+both documented classification defects. Reading it confirmed the finding rather than closing it: the
+order weights age as a factor but contains no age-based housing rule. See section 16.
 
 **Row 85. Title 15 has its own definition of sexual abuse and it is broader than PREA's.** It
 counts coercion by **manipulation**, where the federal resident-on-resident definition requires
