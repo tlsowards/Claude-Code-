@@ -128,6 +128,28 @@ def main():
     add(data['doubt']['body'])
     add('')
 
+    if data.get('staff'):
+        add('---')
+        add('')
+        add('## %s' % data['staff']['head'])
+        add('')
+        add(data['staff']['body'])
+        add('')
+        for it in data['staff']['items']:
+            add('### %s' % it['head'])
+            add('')
+            add(it['body'])
+            add('')
+
+    if data.get('canra'):
+        add('## %s' % data['canra']['head'])
+        add('')
+        add(data['canra']['body'])
+        add('')
+        for it in data['canra']['items']:
+            add('- %s' % it)
+        add('')
+
     add('## %s' % data['defects']['head'])
     add('')
     add(data['defects']['body'])

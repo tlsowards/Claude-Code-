@@ -12,7 +12,7 @@ Generated from `drafts/supervisor-guide.json` by `npm run supervisor-guide`. Edi
 
 > **Citation note.** The due process provision for major rule violations is cited here as 15 CCR 1391(f), its numbering in the edition effective 01/01/2019. Revision 6 has now brought the gap register and CLAUDE.md into line with that numbering, so this guide and the register agree. Two further citations were corrected in the same pass: 15 CCR 1324(h) is 1324(k), and 34 U.S.C. 30307(e)(2) is 30307(c)(2). Neither is used in this guide.
 
-> **Verification note.** Where this guide quotes 28 CFR 115.6 and the Penal Code 11165.1 definitions, that text is corroborated from search, including exact-phrase matches against the Cornell and eCFR listings, and has NOT been read from the Code of Federal Regulations or the Penal Code directly, because network access to those sources is blocked from the drafting environment. The Title 15 citations are different: those were read in full from the edition effective 01/01/2019 and are quoted into the gap register. Confirm the federal and Penal Code quotations against primary source before this issues, alongside the CANRA questions already routed to County Counsel.
+> **Verification note.** The CANRA and 28 CFR 115.6 text quoted here is corroborated from search, including exact-phrase matches against the Cornell, eCFR, FindLaw and Justia listings, and has NOT been read from the Penal Code or the Code of Federal Regulations directly, because network access to those sources is blocked from the drafting environment. The Title 15 citations are different: those were read in full from the edition effective 01/01/2019 and are quoted into the gap register. Confirm the CANRA and federal quotations against primary source before this issues.
 
 ## Why this exists
 
@@ -20,9 +20,9 @@ Staff are getting one-off sexualized comments between youth and do not know whet
 
 ## Four rules that apply to every incident
 
-**1. Run two separate tests. Never let one answer the other.**
+**1. Run two separate tests. They converge on contact and diverge everywhere else.**
 
-The PREA test asks what category the conduct falls in under 28 CFR 115.6. The CANRA test asks whether a mandated reporter has reasonable suspicion that a child has been the victim of child abuse under Penal Code 11165.1. They have different thresholds and they cross. Conduct can be PREA sexual abuse and not CPS reportable. Conduct can be CPS reportable and not fit PREA sexual harassment. Answering one does not answer the other.
+The PREA test asks what category the conduct falls in under 28 CFR 115.6. The CANRA test asks whether a mandated reporter has reasonable suspicion that a child has been the victim of child abuse under Penal Code 11165.1. For touching, the two tests line up almost exactly: the same intimate body parts, the same through-clothing rule, and a matching carve-out for contact during a fight. Away from contact they come apart in both directions. Repeated comments are PREA and not CANRA. Masturbation in view of another youth is CANRA on the first occurrence and not PREA unless repeated. Answering one question never answers the other.
 
 **2. Line staff report. They do not classify.**
 
@@ -40,21 +40,22 @@ PREA sexual harassment requires conduct that is repeated. Repetition only exists
 
 | Tier | Conduct | PREA | CPS report |
 |---|---|---|---|
-| 1 | A single unwelcome sexualized comment directed at another youth, with no contact, no threat and no leverage | **Not PREA on these facts** | **No, absent a flip factor** |
-| 2 | Sexualized comments, gestures, or actions of a derogatory or offensive nature, repeated and unwelcome, directed at the same youth | **PREA sexual harassment** | **No, absent a flip factor** |
-| 3 | One youth exposes genitals to another youth, or masturbates in view of another youth | **PREA sexual harassment only if repeated** | **No, absent a flip factor** |
-| 4 | Intentional touching of another youth's genitalia, anus, groin, breast, inner thigh, or buttocks, including through the clothing | **PREA SEXUAL ABUSE** | **ESCALATE. Fact dependent** |
-| 5 | Oral, anal, or penetrative sexual contact, attempted or completed | **PREA SEXUAL ABUSE** | **YES. Report** |
+| 1 | A single unwelcome sexualized comment directed at another youth, with no contact, no exposure, no threat and no leverage | **Not PREA on these facts** | **NO** |
+| 2 | Sexualized comments or gestures of a derogatory or offensive nature, repeated and unwelcome, directed at the same youth | **PREA sexual harassment** | **NO** |
+| 3 | One youth exposes his genitals to another youth | **PREA sexual harassment only if repeated** | **NO, but read tier 4** |
+| 4 | One youth masturbates in the presence of or in view of another youth | **PREA sexual harassment only if repeated** | **YES. Report** |
+| 5 | Intentional touching of another youth's genitalia, anus, groin, breast, inner thigh, or buttocks, including through the clothing | **PREA SEXUAL ABUSE** | **YES. Report** |
+| 6 | Oral, anal, or penetrative sexual contact, attempted or completed | **PREA SEXUAL ABUSE** | **YES. Report** |
 
 ---
 
 ## Tier 1
 
-**The conduct.** A single unwelcome sexualized comment directed at another youth, with no contact, no threat and no leverage. The "I'll eat your ass" case.
+**The conduct.** A single unwelcome sexualized comment directed at another youth, with no contact, no exposure, no threat and no leverage. The "I'll eat your ass" case.
 
 **PREA: Not PREA on these facts.** Not sexual abuse: that definition is contact based. Not sexual harassment either, because 115.6 requires conduct that is "repeated and unwelcome." A single comment does not meet the definition on its face.
 
-**CPS: No, absent a flip factor.** Not on these facts. Words alone are not conduct in violation of any offense enumerated at Penal Code 11165.1.
+**CPS: NO.** No. Words are not conduct in violation of any offense enumerated at Penal Code 11165.1(a), and they are not among the acts listed at 11165.1(b). Nothing in CANRA reaches speech alone.
 
 **Required steps**
 
@@ -63,77 +64,96 @@ PREA sexual harassment requires conduct that is repeated. Repetition only exists
 - Incident report naming both youth, the words used verbatim, and the target's response verbatim.
 - Supervisor records the classification decision and the reason, including the decision not to make a CANRA report.
 - Treat as classification information on both youth: risk of abusiveness for the speaker, risk of victimization for the target.
-- Check the target's history. If this is the second time toward the same youth, it is tier 2, not tier 1.
+- Check the target's history. If this is the second time toward the same youth, it is tier 2.
 
 ---
 
 ## Tier 2
 
-**The conduct.** Sexualized comments, gestures, or actions of a derogatory or offensive nature, repeated and unwelcome, directed at the same youth.
+**The conduct.** Sexualized comments or gestures of a derogatory or offensive nature, repeated and unwelcome, directed at the same youth. Still no contact and no exposure.
 
-**PREA: PREA sexual harassment.** Sexual harassment under 115.6, prong one. This is a reportable PREA incident and enters the PREA data set.
+**PREA: PREA sexual harassment.** Sexual harassment under 115.6, prong one. A reportable PREA incident that enters the PREA data set.
 
-**CPS: No, absent a flip factor.** Still not on these facts alone. Repetition makes it PREA; it does not by itself make it an enumerated Penal Code offense.
+**CPS: NO.** No, on the same reasoning as tier 1. Repetition makes it PREA. It does not turn speech into an act CANRA reaches.
 
 **Required steps**
 
 - Everything in tier 1.
 - Classify and log as a PREA sexual harassment incident.
-- Assess whether the target is at substantial risk of imminent sexual abuse. If yes, 115.362 requires immediate action to protect, and that is a separate duty from the investigation.
+- Assess whether the target is at substantial risk of imminent sexual abuse. If yes, 115.362 requires immediate action to protect, separately from any investigation.
 - Reassess classification and housing for both youth.
-- If the target or any youth reported it, begin retaliation monitoring. 115.367 wants at least 90 days of monitoring of the reporting youth's treatment, including disciplinary reports and housing or program changes, with periodic status checks.
+- If the target or any youth reported it, begin retaliation monitoring under 115.367: at least 90 days, with periodic status checks.
 
 ---
 
 ## Tier 3
 
-**The conduct.** One youth exposes genitals to another youth, or masturbates in view of another youth.
+**The conduct.** One youth exposes his genitals to another youth. Flashing, with no masturbation and no contact.
 
-**PREA: PREA sexual harassment only if repeated.** Not sexual abuse, because there is no contact. It is an "action of a derogatory or offensive sexual nature" under the harassment prong, so a single incident still fails the "repeated" element and a repeat does not.
+**PREA: PREA sexual harassment only if repeated.** Not sexual abuse, because there is no contact. It is an "action of a derogatory or offensive sexual nature" under the harassment prong, so a single incident fails the "repeated" element and a repeat does not.
 
-**CPS: No, absent a flip factor.** Not on these facts. Penal Code 314, indecent exposure, is not among the offenses enumerated at 11165.1. Section 647.6 is the only non-contact offense on that list and it turns on an abnormal sexual interest in children, which is a poor fit between similarly aged detained youth.
+**CPS: NO, but read tier 4.** No on these facts. Penal Code 314, indecent exposure, is not among the offenses enumerated at 11165.1(a), and bare exposure is not among the acts listed at 11165.1(b). Read tier 4 before settling on this answer: if the youth was masturbating, the answer changes.
 
 **Required steps**
 
 - Everything in tier 1.
-- Consider whether the exposure was directed at a specific youth or general. Directed conduct is the stronger indicator for the protection assessment under 115.362.
-- Consider a Penal Code 314 referral separately. That is a law enforcement and District Attorney question, not a CANRA question, and the two do not travel together.
+- Establish whether there was masturbation. That single fact decides the CANRA question, so put the answer in the incident report in plain terms rather than leaving it to inference.
+- Consider whether the exposure was directed at a specific youth. Directed conduct is the stronger indicator for the 115.362 protection assessment.
+- Consider a Penal Code 314 referral separately. That is a law enforcement and District Attorney question and does not travel with the CANRA question.
 
 ---
 
 ## Tier 4
 
-**The conduct.** Intentional touching of another youth's genitalia, anus, groin, breast, inner thigh, or buttocks, including through the clothing. The grabbing-at-the-butt case.
+**The conduct.** One youth masturbates in the presence of or in view of another youth.
 
-**PREA: PREA SEXUAL ABUSE.** This is sexual abuse under 115.6. The body areas are enumerated by name, contact through clothing counts, and the only exclusion is contact incidental to a physical altercation. It is not horseplay and it is not a tier below the comment cases. It is the most commonly waved-off conduct in this entire guide.
+**PREA: PREA sexual harassment only if repeated.** Not sexual abuse, because there is no contact. Sexual harassment under the harassment prong only if repeated, same as tier 3.
 
-**CPS: ESCALATE. Fact dependent.** Depends on the facts and this is the row that needs County Counsel. Penal Code 243.4, sexual battery, is not among the offenses enumerated at 11165.1. Section 288 requires a victim under 14, or 14 or 15 with a perpetrator at least 10 years older, so between similarly aged detained youth it often will not apply. That produces the counterintuitive result that conduct which is unambiguously PREA sexual abuse may not be CANRA reportable on its face. Do not resolve this one from the table. Escalate it.
+**CPS: YES. Report.** YES. Penal Code 11165.1(b)(5) lists "the intentional masturbation of the perpetrator's genitals in the presence of a child" as conduct described as sexual assault. It is reportable on the first occurrence, with no repetition element, and it does not depend on any offense in the 11165.1(a) list. This tier is the clearest case in the guide where the CANRA answer is yes and the PREA answer is no.
 
 **Required steps**
 
-- Separate immediately and secure the target youth's safety before anything else.
-- Staff reports to the Duty Supervisor immediately. Treat as a PREA sexual abuse allegation from the first moment, not after the facts are sorted out.
-- Preserve evidence. Do not let either youth shower, change, or clean up, and secure the area, until a determination is made about forensic needs under OO 1453.
-- Refer for administrative or criminal investigation. 115.371(a) requires an investigation of all allegations of sexual abuse; there is no discretion to decide investigation is unnecessary.
-- Make the CANRA determination deliberately, with the ages of both youth in front of you, and document the reasoning either way.
+- Everything in tier 1.
+- Mandated report by telephone immediately or as soon as is practicably possible, written report on form SS 8572 within 36 hours. Do not wait for the investigation or for a supervisor's approval.
+- Record the basis in the incident report: intentional masturbation, in the presence of the other youth.
 - Apply 115.362 protection duties and reassess housing for both youth.
-- Begin retaliation monitoring under 115.367.
+- Begin retaliation monitoring under 115.367 if the target reported it.
 
 ---
 
 ## Tier 5
 
+**The conduct.** Intentional touching of another youth's genitalia, anus, groin, breast, inner thigh, or buttocks, including through the clothing. The grabbing-at-the-butt case.
+
+**PREA: PREA SEXUAL ABUSE.** Sexual abuse under 115.6. The body areas are enumerated by name, contact through clothing counts, and the only exclusion is contact incidental to a physical altercation. It is not horseplay and it is not a tier below the comment cases.
+
+**CPS: YES. Report.** YES, where the touching was for sexual arousal or gratification. Penal Code 11165.1(b)(4) covers "the intentional touching of the genitals or intimate parts, including the breasts, genital area, groin, inner thighs, and buttocks, or the clothing covering them, of a child, or of the perpetrator by a child, for purposes of sexual arousal or gratification." Note how closely that tracks the PREA list: the same body parts, the same through-clothing rule. CANRA adds a purpose element that PREA does not have, and excludes acts reasonably construed as normal caretaker responsibilities, demonstrations of affection, or acts for a valid medical purpose, none of which fit a deliberate grab between youth. Penal Code 11165.6 separately excludes "a mutual affray between minors," which is the CANRA analogue of the PREA carve-out for contact incidental to a physical altercation. Contact during a fight is outside both.
+
+**Required steps**
+
+- Separate immediately and secure the target youth's safety before anything else.
+- Staff reports to the Duty Supervisor immediately. Treat as a PREA sexual abuse allegation from the first moment.
+- Mandated report by telephone immediately unless the contact was plainly incidental to a fight, which is outside both definitions. If that is the call, write down why.
+- Preserve evidence. Do not let either youth shower, change, or clean up, and secure the area, until a determination is made about forensic needs under OO 1453.
+- Refer for administrative or criminal investigation. 115.371(a) requires investigation of all sexual abuse allegations; there is no discretion to decide one is unnecessary.
+- Apply 115.362 protection duties and reassess housing for both youth.
+- Begin retaliation monitoring under 115.367.
+
+---
+
+## Tier 6
+
 **The conduct.** Oral, anal, or penetrative sexual contact, attempted or completed. Or any conduct in any tier above accomplished by force, threat, coercion, or leverage over the other youth.
 
 **PREA: PREA SEXUAL ABUSE.** Sexual abuse under 115.6, at the most serious end. Full response.
 
-**CPS: YES. Report.** Report. Penal Code 261, 286, 287, and 289 are all enumerated at 11165.1, and force or coercion removes the voluntary-conduct exception. Telephone report immediately or as soon as is practicably possible, written report on Department of Justice form SS 8572 within 36 hours.
+**CPS: YES. Report.** YES. Reportable twice over: Penal Code 261, 286, 287 and 289 are enumerated at 11165.1(a), and the acts themselves are listed at 11165.1(b)(1) to (3). Force or coercion also removes the 11165.1(a) exception for voluntary conduct. One point for County Counsel rather than for the floor: that exception excludes voluntary conduct violating 286, 287 or 289 where there are no indicators of abuse, and how it applies between detained youth is not obvious, because custody makes "voluntary" difficult and indicators of abuse likely. Do not use it to decline a report without counsel.
 
 **Required steps**
 
-- Everything in tier 4.
-- Mandated report by telephone immediately. Do not wait for the investigation, the shift to end, or a supervisor's approval.
-- Law enforcement notification and forensic examination under OO 1453 and 15 CCR 1452 and 1453. The evidentiary examination occurs at a facility separate from the custodial facility.
+- Everything in tier 5.
+- Mandated report by telephone immediately. Do not wait for the investigation, the end of shift, or anyone's approval.
+- Law enforcement notification and forensic examination under OO 1453 and 15 CCR 1452 and 1453. The evidentiary examination occurs at a health facility separate from the custodial facility.
 - Notify the parent or legal guardian and, where applicable, counsel.
 - Preserve all records under the sexual abuse retention schedule.
 
@@ -143,15 +163,59 @@ PREA sexual harassment requires conduct that is repeated. Repetition only exists
 
 - Force, threat, coercion, or leverage of any kind, including debt, protection, or commissary.
 - Any indication the conduct already happened before, whether or not it was reported.
-- The target youth is under 14.
+- The target youth is under 14, which brings Penal Code 288 into the 11165.1(a) list.
 - A significant age, size, developmental, or cognitive disparity between the two youth.
 - The target discloses prior sexual abuse, in the facility or outside it.
-- Reason to suspect the youth who made the comment has himself been sexually abused. Markedly sexualized behavior can be an indicator. That is a separate reporting question about a different child.
+- Reason to suspect the youth who acted has himself been sexually abused. Markedly sexualized behavior can be an indicator. That is a separate reporting question about a different child.
 - The conduct is part of a pattern by the same youth toward multiple targets.
+- Any staff involvement at all. Staff conduct is not on this chart. Abuse by an employee of an institution caring for children is its own CANRA category under Penal Code 11165.5, abuse or neglect in out-of-home care, and it reports regardless of tier.
 
 ## When it is genuinely unclear, report
 
 The CANRA threshold is reasonable suspicion, which is deliberately low: facts that would cause a reasonable person in a like position, drawing on training and experience, to suspect child abuse. Penal Code 11172(a) gives immunity to mandated reporters who report. Penal Code 11166(c) penalizes the failure to report. The risk is asymmetric by design, and this guide exists to make the easy calls faster, not to give anyone a reason to sit on a hard one.
+
+---
+
+## Searches: when a resident says an officer grabbed or manipulated
+
+This is not on the tier chart and it must never be run through it. The chart is youth-on-youth. A complaint that an officer went beyond a search is an allegation of STAFF sexual misconduct, and it travels down three tracks at once, none of which waits for the others.
+
+### What the allegation actually is under PREA
+
+28 CFR 115.6 defines staff sexual abuse to include any other intentional contact, directly or through the clothing, of or with the genitalia, anus, groin, breast, inner thigh or buttocks, **that is unrelated to official duties or where the staff member has the intent to abuse, arouse, or gratify sexual desire.** A pat search is an official duty, so the contact inherent in a properly conducted one is not sexual abuse. That qualifier is the whole analysis. An allegation that the officer grabbed or manipulated is precisely an allegation that the contact went beyond the official duty or carried that intent. It is therefore an allegation of staff sexual abuse on its face, whatever anyone thinks of its merits.
+
+### The consequence nobody gets to skip
+
+115.371(a) requires an administrative or criminal investigation of ALL allegations of sexual abuse. There is no threshold of plausibility and no discretion to decide one is unnecessary. The officer who receives the complaint is not the person who decides whether it is true. **This is the exact scenario where register row 58 bites:** Internal Complaints gives the Internal Affairs Manager discretion to determine whether a formal investigation is necessary, with no carve-out for sexual abuse. That gap is harmless until the day it is used on a complaint like this one.
+
+### CANRA, and why staff conduct is its own category
+
+Two provisions. Penal Code 11165.1(b)(4) covers intentional touching of intimate parts including through the clothing, for purposes of sexual arousal or gratification. A proper search carries no such purpose; an improper one does. Then **Penal Code 11165.5**, abuse or neglect in out-of-home care, captures sexual abuse where the person responsible for the child's welfare is an employee of an institution caring for children. A juvenile hall employee is squarely within that. Staff-on-youth is a named CANRA category in its own right, which is why it is not a tier on the chart.
+
+### Report or not, and the honest version of the answer
+
+Report. The standard is reasonable suspicion, not proof, and the employee who hears the complaint is not the adjudicator. If the allegation is true it is sexual abuse in out-of-home care. Penal Code 11166(i)(1) makes the duty individual and bars any supervisor from impeding it, and 11172(a) immunizes the reporter. The asymmetry decides it: reporting costs an investigation that 115.371(a) already requires, while not reporting is a misdemeanor for the employee personally and, in the pattern case, ruinous for the department. The honest counterpoint is that not every complaint about a search creates reasonable suspicion on its own facts, and a bare objection to a textbook pat search may not. That is exactly why this should be **a bright-line departmental rule rather than a judgment made on the unit at 0200**: any allegation that a search was sexual in nature goes to CPS and to Internal Affairs. A rule removes the credibility call from the person least equipped to make it and most exposed if it is made wrong.
+
+### Ask the cross-gender question first, because it is separate and it is cleaner
+
+**15 CCR 1360(g)**, verified against the edition effective 01/01/2019: "Cross-gender pat-down searches and strip searches are prohibited except in exigent circumstances or when conducted by a medical professional. Such searches must be justified and documented in writing." If the search was cross-gender, there is a Title 15 problem regardless of whether the touching was improper, and it is provable from the roster rather than from competing accounts. For transgender and intersex youth, OO 1352.5 IV.A.3.b separately requires the preferred-gender staff member to conduct the search with a second staff member within hearing but out of view.
+
+### What actually reduces this exposure
+
+Not how complaints are adjudicated. Where searches happen and whether they are witnessed and recorded. A search conducted in camera view with a second staff member present resolves itself; one conducted in a blind spot becomes a credibility contest the department usually loses. That ties directly to 115.313(a) factor 5, the blind-spot survey, and to the **Institutional Policy on Video Recording and Photograph System, which has never been produced** and is on the outstanding documents list. Until someone knows what the camera coverage of search locations actually is, this risk cannot be managed, only absorbed.
+
+## The CANRA sections this guide rests on
+
+Checked rather than recalled, because the CPS column is the part of this document that carries personal exposure for the employee who gets it wrong.
+
+- **11165.1(a)** defines sexual assault by reference to enumerated offenses: Penal Code 261, 261.5(d), 264.1, 285, 286, 287, 288(a), (b) and (c)(1), 289, and 647.6. It excludes voluntary conduct violating 286, 287 or 289 where there are no indicators of abuse, unless between a person 21 or older and a minor under 16.
+- **11165.1(b)** is the part that decides most of this chart, and it is easy to miss because it operates independently of the (a) list. Conduct described as sexual assault includes, but is not limited to, penetration however slight, oral contact with genitals, intrusion into the genitals or anal opening, **(4)** the intentional touching of genitals or intimate parts including the breasts, genital area, groin, inner thighs and buttocks, or the clothing covering them, for purposes of sexual arousal or gratification, and **(5)** the intentional masturbation of the perpetrator's genitals in the presence of a child.
+- **11165.1(c)** defines sexual exploitation, which covers obscene matter depicting a minor and inducing a child into prostitution or a live obscene performance. Nothing on this chart is sexual exploitation.
+- **11165.5** defines abuse or neglect in out-of-home care, which captures abuse where the responsible person is an employee of an institution caring for children. That is the staff-on-youth category and it is not on this chart.
+- **11165.6** defines child abuse or neglect overall and expressly excludes a mutual affray between minors, and injury from reasonable and necessary force by a peace officer acting in the course and scope of employment.
+- **11165.7** lists mandated reporters and includes a probation officer.
+- **11165.9** names the agencies that may receive a report. **11166(a)** sets the timing. **11166(i)(1)** makes the duty individual and bars any supervisor from impeding it. **11166(j)** imposes the cross-report duty on a county probation department that receives a report. **11172(a)** gives immunity to reporters. **11166(c)** penalizes failure to report.
+- **11166.05** permits, but does not require, a report where a child is suffering or at substantial risk of serious emotional damage. Worth knowing for a youth who is the repeated target in tiers 1 to 3 and is visibly deteriorating.
 
 ## Five things in current departmental documents that will mislead a supervisor
 
@@ -179,8 +243,10 @@ OO 1390/1391 IV.A requires the due process hearing only where the recommended di
 
 ## What County Counsel needs to confirm before this issues
 
-- The CANRA column in tiers 3, 4, and 5, and in particular whether peer-on-peer touching between similarly aged detained youth is reportable where no enumerated offense clearly applies. That is the question staff actually face and it is the one this guide cannot answer on its own.
-- Whether Penal Code 647.6 can reach directed sexualized conduct between detained minors, which determines tier 3.
+- The purpose element in tier 5. Penal Code 11165.1(b)(4) requires the touching be for sexual arousal or gratification, and staff will have to form a view on that in the moment. Confirm how the department wants that judged and recorded, and confirm that the practical answer is to report and let the investigation sort purpose out rather than to decline on an untested inference about motive.
+- The boundary between the Penal Code 11165.6 exclusion for a mutual affray between minors and contact that happens to occur during a fight but is sexual in purpose. That line decides whether tier 5 reports.
+- Whether the Penal Code 11165.1(a) exception for voluntary conduct violating 286, 287 or 289 where there are no indicators of abuse can ever apply between detained youth, given that custody makes voluntariness difficult to establish.
+- Whether Penal Code 647.6 can reach directed sexualized conduct between detained minors, which is the only route by which tiers 1 to 3 could become reportable on their own facts.
 - Whether the department is designated under Penal Code 11165.9 to receive mandated reports, which determines whether the Penal Code 11166(j) cross-reporting duty applies to the department itself.
 - Whether any of this should be stated in a department-wide General Order on child abuse reporting rather than in a facility job aid. That order is already recommended as change 3.
 

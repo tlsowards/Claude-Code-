@@ -239,6 +239,38 @@ push(
   }))),
   new Paragraph({ text: data.doubt.head, heading: HeadingLevel.HEADING_1 }),
   p(data.doubt.body),
+);
+if (data.canra) {
+  push(
+    new Paragraph({ text: data.canra.head, heading: HeadingLevel.HEADING_1 }),
+    p(data.canra.body),
+    // Bold runs are marked with **...** in the source so the statutory
+    // subsections that decide the chart stand out when a supervisor scans it.
+    ...data.canra.items.map((it) => new Paragraph({
+      children: it.split(/\*\*(.+?)\*\*/g).map((part, i) => txt(part, { bold: i % 2 === 1 })),
+      bullet: { level: 0 },
+      spacing: { after: 80, line: 264 },
+    })),
+  );
+}
+if (data.staff) {
+  push(
+    new Paragraph({ children: [new PageBreak()] }),
+    new Paragraph({ text: data.staff.head, heading: HeadingLevel.HEADING_1 }),
+    block(ABUSE_FILL, [new Paragraph({
+      children: [txt(data.staff.body)],
+      spacing: { before: 60, after: 60, line: 264 },
+    })]),
+  );
+  data.staff.items.forEach((it) => push(
+    new Paragraph({ text: it.head, heading: HeadingLevel.HEADING_2 }),
+    new Paragraph({
+      children: it.body.split(/\*\*(.+?)\*\*/g).map((part, i) => txt(part, { bold: i % 2 === 1 })),
+      spacing: { after: 120, line: 276 },
+    }),
+  ));
+}
+push(
   new Paragraph({ text: data.defects.head, heading: HeadingLevel.HEADING_1 }),
   p(data.defects.body),
 );
