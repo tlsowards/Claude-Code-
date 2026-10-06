@@ -86,6 +86,7 @@ DOCUMENTS = [
 CONFLICTS = [
     {
         "n": 1,
+        "checked": 9,
         "topic": "Categorical LGBTQI housing (classification S-8)",
         "rows": [36],
         "law": "28 CFR 115.342(c). LGBTI residents shall not be placed in "
@@ -98,8 +99,12 @@ CONFLICTS = [
                "CCR 1324(k), verified against the edition effective 01/01/2019, "
                "separately requires the policy manual to bar restrictive housing "
                "or classification decisions made solely on those bases.",
-        "policy": "OO 1352 II.M creates classification S-8 for any LGBTQI youth, "
-                  "and III.I requires single-room housing at all times for S-8.",
+        "policy": "OO 1352 II.M.1 creates classification S-8 for \"Any Lesbian, "
+                  "Gay, Bisexual, Transgender, Questioning and Intersex (LGBTQI) "
+                  "youth,\" and III.I.1 provides that \"Any youth classified S-8 "
+                  "will require a single room (no roommate) housing at all "
+                  "times.\" Both quoted verbatim from the order, produced and "
+                  "read in full in Revision 9.",
         "note": "Also contradicts OO 1352's own Purpose and Scope paragraph, PREA "
                 "Policy III.E, and OO 1352.5 III.H. The chronology is worse than "
                 "earlier revisions recorded. 15 CCR 1352(e) was not added by the "
@@ -110,11 +115,34 @@ CONFLICTS = [
                 "alternative on its face: individualized placement, or a single "
                 "room at the youth's specific request. The 1324(k) route is the "
                 "cleaner BSCC inspection finding, because it does not depend on "
-                "whether PREA binds a county facility.",
+                "whether PREA binds a county facility. Three additions from "
+                "reading the order in Revision 9. First, a fifth internal "
+                "contradiction: II.M.1.a defers housing to the Transgender and "
+                "Intersex Youth Policy and III.I.1 then forecloses it, so the "
+                "same order defers the decision and decides it. Second, a "
+                "correction that removes a theory: a 15 CCR 1352(f) hook "
+                "recorded in Revision 6, reasoned on the S-series being a "
+                "sexual-risk taxonomy, fails and is withdrawn. The S-series is a "
+                "general security taxonomy, and II.M.1 frames S-8 as protection "
+                "against victimization and discrimination, which is the "
+                "vulnerability framing 1350.5 requires rather than the "
+                "abusiveness framing 1352(f) forbids. Third, a stronger "
+                "replacement grounded in the order's own text: III.I.1 and "
+                "III.E.1.a are word for word identical and are the only two "
+                "provisions in the entire order imposing a single room at all "
+                "times. III.E.1.a governs S-4 High, the documented sex offence "
+                "category, which II.F.1 defines by the youth's potential for "
+                "sexually acting out against others. The order therefore gives "
+                "LGBTQI youth the identical housing restriction it reserves for "
+                "adjudicated sex offenders, and gives it to nobody else. Note "
+                "also that III.D.8, the deviation rule, is attached to the S-3 "
+                "matrix and reaches neither mandate, so neither has a written "
+                "override path.",
         "fix": "Recommended change 1: rescind the S-8 single-room mandate.",
     },
     {
         "n": 2,
+        "checked": 9,
         "topic": "Categorical single-room housing for transgender and intersex youth",
         "rows": [37],
         "law": "28 CFR 115.342(d) to (g); 15 CCR 1352.5(a) to (e). Housing and "
@@ -130,6 +158,7 @@ CONFLICTS = [
     },
     {
         "n": 3,
+        "checked": 9,
         "topic": "Child abuse reporting timeline",
         "rows": [48],
         "law": "PC 11166(a). Telephone report immediately or as soon as "
@@ -146,6 +175,7 @@ CONFLICTS = [
     },
     {
         "n": 4,
+        "checked": 9,
         "topic": "Cross-facility notification window",
         "rows": [52],
         "law": "28 CFR 115.363(b). Notify the head of the facility where the "
@@ -158,6 +188,7 @@ CONFLICTS = [
     },
     {
         "n": 5,
+        "checked": 9,
         "topic": "Discipline for allegations found false",
         "rows": [64],
         "law": "28 CFR 115.378(f) protects a good-faith report based on a "
@@ -179,22 +210,39 @@ CONFLICTS = [
     },
     {
         "n": 6,
+        "checked": 9,
         "topic": "Victimization treated as an indicator of abusiveness",
         "rows": [80],
         "law": "28 CFR 115.341(c). Prior victimization and prior abusiveness are "
                "screened as distinct risk factors.",
-        "policy": "The note at OO 1352 II.F.2 states that a history of being a "
-                  "victim of molest, arson, or cruelty to animals should alert "
-                  "the Classification Officer to possible sexually inappropriate "
-                  "tendencies.",
+        "policy": "The note at OO 1352 II.F.2 states, in bold in the original, "
+                  "\"Youth with a history of victim of molest, arson, or cruelty "
+                  "to animals should alert the Classification Officer for "
+                  "possible sexually inappropriate tendencies.\" The same "
+                  "inference appears a second time as a lettered criterion at "
+                  "II.F.2.d, \"History of victimization related to sexual abuse "
+                  "or a sexual offense,\" alongside three abusiveness criteria. "
+                  "Both quoted verbatim from the order, produced and read in "
+                  "full in Revision 9.",
         "note": "This instructs staff to treat a youth's own sexual victimization "
                 "as a predictor of sexual abusiveness, which is the inference "
-                "115.341(c) separates.",
+                "115.341(c) separates. Reading the order in Revision 9 made the "
+                "finding larger in two ways. The inference is in two places, not "
+                "one, so striking the bolded note alone leaves it in force, and "
+                "the redline as first drafted struck only the note. And the "
+                "order contradicts itself on the same fact: II.H.3 makes being "
+                "the victim of a CPS referral relative to sexual abuse, or of "
+                "any sustained sex offence, a criterion for S-4 Low, which the "
+                "III.E.2 housing matrix treats protectively. Victimization "
+                "history is therefore used once as an abusiveness indicator and "
+                "once as a vulnerability indicator, inside one classification, "
+                "in one order.",
         "fix": "Recommended change 6: delete the inference, split the code, and "
                "add PC 287 to the S-4 High criteria.",
     },
     {
         "n": 7,
+        "checked": 9,
         "topic": "Records retention",
         "rows": [59],
         "law": "28 CFR 115.371(j). Retain investigation reports for as long as "
@@ -210,6 +258,7 @@ CONFLICTS = [
     },
     {
         "n": 8,
+        "checked": 9,
         "topic": "Staffing ratios",
         "rows": [6],
         "law": "28 CFR 115.313(c). At least 1:8 during waking hours and 1:16 "
@@ -225,6 +274,7 @@ CONFLICTS = [
     },
     {
         "n": 9,
+        "checked": 9,
         "topic": "Duty assigned to a position that does not exist",
         "rows": [2],
         "law": "28 CFR 115.311(b). Designate an upper-level, agency-wide PREA "
@@ -241,6 +291,7 @@ CONFLICTS = [
     },
     {
         "n": 10,
+        "checked": 9,
         "topic": "Policy age and biennial review",
         "rows": [74],
         "law": "15 CCR 1324. The policy and procedure manual is administratively "
@@ -255,20 +306,30 @@ CONFLICTS = [
     },
     {
         "n": 11,
+        "checked": 9,
         "topic": "Obsolete statutory citations",
         "rows": [78],
         "law": "PC 287. SB 1494 renumbered PC 288a to PC 287 effective "
                "01/01/2019.",
-        "policy": "PREA Policy I.I.1 still cites PC 288a. OO 1352 II.G.1 omits "
-                  "287 from the S-4 High criteria entirely, so a 287 "
-                  "adjudication does not meet the enumerated criteria. OO 1352 "
-                  "II.C.3 references DJJ, which closed 06/30/2023.",
+        "policy": "PREA Policy I.I.1 still cites PC 288a. The complete S-4 High "
+                  "enumeration, verified in Revision 9, is II.G.1 (\"a. Sodomy "
+                  "(286 PC); b. Lewd or lascivious acts with child under 14 (288 "
+                  "PC, all sub-divisions)\") plus II.G.3 (rape, 261 PC, all "
+                  "sub-divisions). PC 287 is omitted, and so is PC 289, sexual "
+                  "penetration, which earlier revisions never flagged. Also "
+                  "absent: 243.4, 264.1, 285 and 647.6. OO 1352 II.C.3 "
+                  "references DJJ, which closed 06/30/2023, and IV.A carries a "
+                  "second DJJ reference as the worked example of a legal status "
+                  "change.",
         "note": "The S-4 omission is the operative one: it is not a citation "
-                "cosmetic, it changes who gets classified.",
+                "cosmetic, it changes who gets classified. A youth with a "
+                "documented 287 or 289 adjudication does not meet the enumerated "
+                "S-4 High criteria on the face of the order.",
         "fix": "Recommended change 6.",
     },
     {
         "n": 12,
+        "checked": 9,
         "topic": "Intake policy substantively obsolete",
         "rows": [79],
         "law": "15 CCR 1350 and 1350.5. Intake and admittance policy must reflect "
@@ -577,6 +638,26 @@ def md(data):
 README_PATH = os.path.join(ROOT, "README.md")
 
 
+
+def check_conflicts():
+    """Force a deliberate look at the hardcoded conflict narratives each revision.
+
+    CONFLICTS is prose, so no register migration can update it, and it has gone
+    stale twice: once on the 1324(h) and 1391(e) citations, and once on the
+    substance of conflicts 1, 6 and 11 after OO 1352 was read. Nothing derives
+    it, so the only honest control is to make the build stop until someone has
+    re-read each entry against the register and said so by bumping "checked".
+    """
+    stale = [c["n"] for c in CONFLICTS if c.get("checked") != REVISION]
+    if stale:
+        print("ABORTED, nothing written. These CONFLICTS narratives were last "
+              "checked against an earlier revision: %s"
+              % ", ".join(str(n) for n in stale))
+        print("              REVISION is %d. Re-read each one against "
+              "prea-register.csv, update the prose if the finding moved, then "
+              "set its \"checked\" to %d." % (REVISION, REVISION))
+        sys.exit(1)
+
 def check_readme(total):
     """Fail the build if README.md's Layout block has gone stale.
 
@@ -610,6 +691,7 @@ def main():
     rows = load()
     data = build(rows)
     check_readme(data["total"])
+    check_conflicts()
     os.makedirs(os.path.dirname(MD_PATH), exist_ok=True)
     with open(MD_PATH, "w", encoding="utf-8") as fh:
         fh.write(md(data))

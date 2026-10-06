@@ -75,6 +75,16 @@ The contents page is a Word field, so page numbers are computed by Word rather
 than written into the file. The document asks Word to refresh its fields on open.
 If the contents page still looks empty or stale, click in it and press F9.
 
+Two more guards exist for the same reason, both added after the bug they catch had
+already shipped. `tools/build_supervisor_guide_docx.js` fails the build if any table's
+column widths do not sum to the content width, because a table wider than the page
+looks fine in the Markdown view and runs off the edge in Word. And
+`tools/build_crosswalk.py` carries a `"checked"` stamp on each entry of its hardcoded
+`CONFLICTS` narratives and **fails the build** when any of them is older than
+`REVISION`. That prose is a second source of truth no register migration can reach,
+and it has gone stale twice. Nothing can derive it, so the only honest control is to
+stop the build until someone has re-read each entry against the register and said so.
+
 `npm run crosswalk` also checks the Layout block above against the register and the
 builder's `REVISION`, and **fails the build** if the row count or the revision number
 there has gone stale. That line sat at "90 requirements, register Revision 9" through

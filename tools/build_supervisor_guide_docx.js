@@ -70,6 +70,13 @@ function cell(children, { width, fill, bold, size, align, span } = {}) {
 }
 
 function table(columnWidths, rows) {
+  const sum = columnWidths.reduce((a, b) => a + b, 0);
+  if (sum !== CONTENT_W) {
+    console.error('ABORTED. A table\'s column widths sum to ' + sum + ' twips, but the content '
+      + 'width is ' + CONTENT_W + '. Widths: [' + columnWidths.join(', ') + ']. A table wider than '
+      + 'the content width runs off the page in Word and nothing in the build notices.');
+    process.exit(1);
+  }
   return new Table({
     columnWidths,
     width: { size: columnWidths.reduce((a, b) => a + b, 0), type: WidthType.DXA },
@@ -269,7 +276,7 @@ if (data.staff) {
 if (data.ages) {
   // Four rows, and the two middle ones differ only in which resident is the minor.
   // That distinction decides tier 4, so it gets its own row rather than a footnote.
-  const A = [2600, 3400, 2600, 3400];
+  const A = [2100, 3100, 1880, 3000];   // sums to CONTENT_W; table() enforces it
   push(
     new Paragraph({ children: [new PageBreak()] }),
     h1(data.ages.head),
