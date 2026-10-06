@@ -316,13 +316,21 @@ routing room-confinement separation to WIC 208.3 and 1354.5; **1390** (see the c
 section 8, the floor is eleven items); **1391(f)** in full, six elements; **1452** and **1453**
 unchanged. **No Title 15 citation in this register now rests on the 2014 edition alone.**
 
-**The 2019 edition is not the current one, and this is now the largest verification gap in the
-project.** BSCC has published a Minimum Standards for Juvenile Facilities **regulation text revised
-01/2023** and a **standards matrix revised 08/14/2025**, and has run an SYTF subcommittee of its
-Juvenile Regulations Revision Executive Steering Committee. The 01/01/2019 edition **predates SB 823
-realignment, the closure of DJJ, and any WIC 875(g)(3) secure youth treatment facility standards
-entirely.** Every Title 15 citation in this register is verified against the 2019 edition and
-**none is verified against the current one.** See row 90. Obtain the current regulations.
+**The edition effective 01/01/2019 is still the operative one. Do not draft against the pending
+revision.** The department advises that the **January 2023 juvenile regulations text is still under
+consideration and not approved**, and that its contents may change. It is a proposed revision in an
+open rulemaking by the Juvenile Regulations Revision Executive Steering Committee, not an adopted
+edition. **Do not cite it for any proposition.** Every Title 15 citation in this register is
+verified against the operative edition and is sound.
+
+What is genuinely open is narrower, and it is a finding about the state rather than the department.
+WIC 875(g)(3) required BSCC to adopt secure youth treatment facility standards, including separation
+standards, by 07/01/2023, and the revision that would carry them is still pending. Whether anything
+SYTF-specific was adopted separately, including by emergency rulemaking, has not been established.
+875(g)(3) answers part of it on its face: "Pending the final adoption of these modified standards, a
+secure youth treatment facility shall comply with applicable minimum standards for juvenile
+facilities in Title 15 and Title 24." So the 2019 edition governs such a unit by operation of the
+statute. See row 90.
 
 **Neither edition read contains any PREA reference or any facility audit requirement.** In the 2019
 edition the strings PREA, Prison Rape, 28 CFR and Part 115 return zero hits, and the only "audit"
@@ -432,6 +440,13 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
   lesson: a search of one edition of one regulation is not a search of state law.
 - **Redline 6 struck the II.F.2 note only. The same inference is also at II.F.2.d.** Found in 9 on
   reading the order. A redline drafted from a register row inherits whatever that row did not record.
+- **Revision 9 called the January 2023 BSCC juvenile regulations text an adopted edition and the
+  2019 one stale. It is a pending proposal, still under consideration. Corrected by the department
+  immediately after 9.** The error was inferring adoption from document titles returned by a search,
+  without confirming status. **New standing rule: a proposed or pending regulation is not authority.
+  Confirm adoption before citing any regulation, and never draft against a text that can still
+  change.** The practical consequence is good news: the edition effective 01/01/2019 is operative, so
+  every Title 15 citation in this register stands.
 - **Do not assume isolation is available as a disciplinary sanction.** OO 1390/1391 III omits
   it from the consequences list and OO 1354.5 I.C.1 prohibits confinement for punishment. The
   department has excluded it, which is a stronger position than complying with the isolation
@@ -487,12 +502,10 @@ Referenced in reviewed policies but never produced. Several may close findings.
 - Institutional Policy on Video Recording and Photograph System
 - Interrogations of Department Personnel policy
 - Institutional Incident Report User's Guide
-- **Current BSCC juvenile regulations. BACK ON THIS LIST, AND IT IS NOW THE HIGHEST-VALUE
-  OUTSTANDING DOCUMENT.** Revision 6 struck this off on the strength of the edition effective
-  01/01/2019. That edition is not current: BSCC has published a regulation text revised **01/2023**
-  and a matrix revised **08/14/2025**, and the 2019 text predates SB 823 realignment, the closure of
-  DJJ and any WIC 875(g)(3) secure youth treatment facility standards. See row 90. The note below is
-  kept for what it still records about the 2019 edition.
+- **Any adopted SYTF-specific BSCC standards, if they exist.** Not the full regulations: the
+  edition effective 01/01/2019 is operative and has been read. The narrow question is whether
+  anything was adopted under WIC 875(g)(3), including by emergency rulemaking. **The January 2023
+  revision is a pending proposal and must not be drafted against.** See row 90.
 - ~~Current BSCC Title 15 edition (post January 2019).~~ **Produced and read in Revision 6.**
   All eight citations are confirmed. One question it raised is still worth asking internally:
   whether the policy shop has been drafting against the 2014 text, since two of the
@@ -758,8 +771,11 @@ offence list. Conflicts 1, 6 and 11 all carry the order's real words now.
   the 1352(e) and 1324(k) protected lists. Primarily a Health and Safety Code 121070 question for
   County Counsel. The same provision also routes duties to **Youth Advocates**, a role that no longer
   exists, which is the conflict 9 defect class.
-- **90. WIC 875 and the secure youth treatment facility framework.** Scored **Not Evidenced**,
-  because the governing BSCC standards have never been produced. See section 7.
+- **90. WIC 875 and the secure youth treatment facility framework.** Scored **Not Evidenced**.
+  **Corrected immediately after Revision 9 by the department**: this row first said the January 2023
+  BSCC text was an adopted edition making the 2019 one stale. It is a pending proposal. The 2019
+  edition is operative and the register's Title 15 citations are sound. See section 7 and the
+  correction in section 8.
 
 **One structural finding worth more than its row.** OO 1352 **never once references OO 1350.5**, in
 twelve pages. The order that screens for sexual abuse risk and the order that makes the housing, bed

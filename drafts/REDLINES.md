@@ -22,10 +22,11 @@ Produced and read directly:
 - OO 1390/1391 Discipline and Discipline Process
 - Internal Complaints (Administrative P&P Manual)
 - Title 15, Minimum Standards for Juvenile Facilities, rev. 04/01/2014
+- OO 1352 Classification, eff. 12/09/2019, rev. 02/27/2020 (produced and read in full in Revision 9)
+- Title 15, Minimum Standards for Juvenile Facilities, eff. 01/01/2019
 
 Not produced. Every provision cited in these documents traces to the register, which traces to the earlier review that read them. Confirm each section number and its wording against the PDF before any of this is circulated:
 
-- OO 1352 Classification
 - OO 1352.5 Transgender and Intersex Youth
 - PREA Policy and Procedure, Juvenile Institutions
 - OO 1453 Sexual Assault
@@ -64,13 +65,13 @@ OO 1352 II.M creates classification S-8 for any LGBTQI youth, and III.I requires
 
 > ~~Any Lesbian, Gay, Bisexual, Transgender, Questioning and Intersex (LGBTQI) youth to further protect against victimization/discrimination within the unit setting. a. See the Transgender and Intersex Youth Policy for housing guidelines.~~
 
-*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. This is the order’s actual text.*
+*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. This is the order's actual text.*
 
 **OO 1352 III.I**
 
 > ~~Any youth classified S-8 will require a single room (no roommate) housing at all times.~~
 
-*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. This is the order’s actual text.*
+*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. This is the order's actual text.*
 
 **OO 1352 III.E**
 
@@ -106,8 +107,8 @@ This is the strongest municipal liability exhibit in the packet and the clearest
 
 ### Before adoption
 
-- VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. The section numbers II.M and III.I and the struck text above are the order’s own words, read from the produced PDF, not a reconstruction. This redline may now circulate as a true redline.
-- The order’s Purpose and Scope paragraph already states the correct rule almost verbatim from 15 CCR 1352(e), including the carve-out for a single occupancy room "at the youth’s specific request or in accordance with regulations regarding separation." The amendment below conforms II.M and III.I to the order’s own Purpose paragraph. Say that to the policy shop: it is a consistency fix, not a new policy.
+- VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. The section numbers II.M and III.I and the struck text above are the order's own words, read from the produced PDF, not a reconstruction. This redline may now circulate as a true redline.
+- The order's Purpose and Scope paragraph already states the correct rule almost verbatim from 15 CCR 1352(e), including the carve-out for a single occupancy room "at the youth's specific request or in accordance with regulations regarding separation." The amendment below conforms II.M and III.I to the order's own Purpose paragraph. Say that to the policy shop: it is a consistency fix, not a new policy.
 - II.M.1.a already defers housing to the Transgender and Intersex Youth Policy. III.I.1 then forecloses it. Deleting III.I.1 restores the deferral the order already contains.
 - III.E.1.a imposes the identical mandate on S-4 High and is the only other provision in the order that does. Do not amend III.E.1.a here. It is a different question and it is not defective in the same way, but note that III.D.8, the deviation rule, is attached to the S-3 matrix and reaches neither mandate, so neither currently has a written override path.
 
@@ -347,7 +348,7 @@ Two problems in the S-4 classification. First, the note at II.F.2 states that a 
 
 > ~~Youth with a history of victim of molest, arson, or cruelty to animals should alert the Classification Officer for possible sexually inappropriate tendencies.~~
 
-*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. This is the order’s actual text, bolded in the original.*
+*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. This is the order's actual text, bolded in the original.*
 
 **OO 1352 II.F.2.d**
 
@@ -403,9 +404,9 @@ Two problems in the S-4 classification. First, the note at II.F.2 states that a 
 
 ### Before adoption
 
-- VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. II.F.2, II.G, II.H and III.E are confirmed as cited and the struck text is the order’s own words. This redline may now circulate as a true redline.
+- VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. II.F.2, II.G, II.H and III.E are confirmed as cited and the struck text is the order's own words. This redline may now circulate as a true redline.
 - The S-4 High and S-4 Low split the register describes is confirmed and is sounder than its label suggests, so the insert below is a relabeling and separation of an existing structure rather than the invention of a new one. Say that to the policy shop.
-- OO 1352 never references OO 1350.5 anywhere in its twelve pages. The insert at II.H.1 creates that cross-reference for the first time. Confirm OO 1350.5’s section numbering before adopting it.
+- OO 1352 never references OO 1350.5 anywhere in its twelve pages. The insert at II.H.1 creates that cross-reference for the first time. Confirm OO 1350.5's section numbering before adopting it.
 
 ---
 
