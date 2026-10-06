@@ -36,14 +36,15 @@ hedging, and he will catch a wrong citation.
 
 ## 3. Project state
 
-Register is at **Revision 6**. 83 requirements assessed against 17 departmental policies.
+Register is at **Revision 7**. 83 requirements assessed against 17 departmental policies.
 
-Revision 6 was a second verification pass, against the Title 15 edition **effective 01/01/2019**,
-plus three citation corrections. No status or priority changed. Twenty-four rows changed, in the
-`gap` and `change_log` columns only. All eight citations Revision 5 had to carry forward
-unconfirmed are now confirmed and quoted, three state-law hooks were added, and the eleven
-115.313(a) staffing factors were enumerated into row 5. See section 7 for current verification
-state and section 8 for the corrections.
+Revision 6 verified against the Title 15 edition **effective 01/01/2019** and corrected three
+citations. **Revision 7 closed the gap Revision 6 left**: the six sections still carrying their
+04/01/2014 provenance (1301, 1321, 1354, 1390, 1452, 1453) were re-read against the 2019 text,
+and the full 1391(f) was obtained. No status or priority has changed since Revision 5. Eight
+rows changed in Revision 7, `gap` and `change_log` only. **Every Title 15 citation in this
+register is now verified against the current edition.** See section 7 for state and section 8
+for corrections.
 
 | Status | Count |
 |---|---|
@@ -164,13 +165,14 @@ way in practice, it becomes one. Fix is a one-sentence carve-out.
 **15 CCR 1391(f)**, not 1391(e). In the edition effective 01/01/2019, 1391(e) is minor rule
 violations handled informally and the due process elements for major rule violations moved to
 **1391(f)**. That subsection attaches those elements to major rule violations **as a class**
-and requires **at least** written notice before hearing, accommodations for youth with
-disabilities, limited literacy and English language learners, a hearing by a person who is not
-a party to the incident, opportunity to be heard and present evidence and testimony, and staff
-assistance in the hearing. **That enumeration is incomplete and must not be quoted as the full
-list:** the extraction it came from was truncated inside the fifth item. The 2014 predecessor
-carried an administrative review element that is not among the five, so at least one further
-element exists. Obtain the full subsection before quoting it. OO 1390/1391 IV.A attaches the hearing only where the recommended discipline is
+and requires six elements, obtained in full in Revision 7: (1) written notice of violation
+prior to a hearing, (2) accommodations for youth with disabilities, limited literacy and English
+language learners, (3) hearing by a person who is not a party to the incident, (4) opportunity
+for the youth to be heard and present evidence and testimony, (5) provision for the youth to be
+assisted by staff in the hearing process, and (6) **provision for administrative review**. The
+sixth is the element the Revision 6 truncation flag predicted was missing, and that flag is now
+cleared. **1391(g)** also exists: violations resulting in removal from a camp or commitment
+program, short of a return to court, follow the subsection (e) process. OO 1390/1391 IV.A attaches the hearing only where the recommended discipline is
 Program Separation. The department narrowed the trigger from the regulatory class to one
 sanction within it. Recorded in Revision 4 as a PREA observation; now a confirmed Title 15
 defect, actionable on BSCC inspection independent of PREA. Row 64.
@@ -245,10 +247,15 @@ documented); **1361(h)** (multiple internal and external reporting methods; conc
 guardians, staff or other parties addressed and documented on a timeframe); **1391(e)** (minor
 rule violations, informal) and **1391(f)** (due process for major rule violations as a class).
 
-*Confirmed against the 2014 edition in Revision 5 and not re-read in the 2019 edition:* **1301**,
-**1321(h)(1)(A)-(B)** and **(E)**, **1324** biennial review (also seen in 2019), **1353** as a
-whole, **1354**, **1361(b)**, **1390**, **1452**, **1453**. These sections exist in both editions.
-Re-reading them against the 2019 text is the obvious next verification pass.
+*Also confirmed against the 2019 edition, in Revision 7:* **1301** ("meet or exceed and do not
+conflict with", unchanged); **1321(h)(1)** (A) 1:10 waking, (B) 1:30 sleeping, (E) the exclusion
+of administrative, instructional, clerical, kitchen and maintenance personnel, plus **(C)** at
+least two wide-awake youth supervision staff at all times absent a backup arrangement and
+**(D)** at least one staff member of the same gender as youth housed, both new to this register;
+**1354** now (a) to (f), with new **(d)** routing disciplinary separation to 1390 and new **(e)**
+routing room-confinement separation to WIC 208.3 and 1354.5; **1390** (see the correction in
+section 8, the floor is eleven items); **1391(f)** in full, six elements; **1452** and **1453**
+unchanged. **No Title 15 citation in this register now rests on the 2014 edition alone.**
 
 **Neither edition contains any PREA reference or any facility audit requirement.** In the 2019
 edition the strings PREA, Prison Rape, 28 CFR and Part 115 return zero hits, and the only "audit"
@@ -333,6 +340,15 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
   immediately after Revision 6 in both the register and this file. The lesson generalises: a
   quotation taken from a truncated extraction must be marked as partial at the moment it is
   written, not assumed complete because it reads like a list.
+- **Rev 5 credited OO 1390/1391 I.A with exceeding the 15 CCR 1390 deprivation floor by adding
+  rehabilitative programming as an eleventh item. It does not exceed it.** The 2019 edition's
+  floor runs (a) to **(k)**, eleven items, and **(k) is "rehabilitative programming."** The order
+  matches the regulation. Corrected in 7. Note the direction: this removes a credit previously
+  given to the department, which is the direction a correction is least likely to be noticed in.
+  No amendment should describe OO 1390/1391 as exceeding anything here.
+- **The Revision 6 flag that the 1391(f) element list was truncated is resolved, and it was
+  right.** The full subsection has six elements and the sixth is "provision for administrative
+  review." Obtained in Revision 7. The hedge was correct and is now cleared.
 - **Do not assume isolation is available as a disciplinary sanction.** OO 1390/1391 III omits
   it from the consequences list and OO 1354.5 I.C.1 prohibits confinement for punishment. The
   department has excluded it, which is a stronger position than complying with the isolation

@@ -4,7 +4,7 @@ A decision guide for comments, exposure, and touching between youth
 
 > **DRAFT FOR COUNTY COUNSEL REVIEW. Not for issuance to supervisors until the CANRA column is confirmed.**
 
-Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 6.
+Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 7.
 
 > This is not legal advice. It is a policy and standards analysis prepared for internal use. The CANRA determinations in particular route to County Counsel before this issues to anyone.
 

@@ -1,7 +1,7 @@
 {
   "set": "Recommended changes 1 to 7",
   "subtitle": "Amendment language for the seven changes correctable without new policy",
-  "register_revision": 6,
+  "register_revision": 7,
   "note": "Source of truth for this deliverable. drafts/REDLINES.md and the Word file in deliverables/ are generated from it. Edit here, then run npm run redlines.",
   "produced": [
     "OO 1354.5 Room Confinement",

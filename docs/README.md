@@ -63,6 +63,11 @@ the durable record**, not these PDFs. A future session that needs to re-verify h
 source uploaded again. That is the reason Revision 6 quoted the text into the register instead
 of merely recording that it had been checked.
 
-Sections verified against the 2014 edition in Revision 5 and **not** re-read in the 2019
-edition: 1301, 1321(a) and (h), 1354, 1390, 1452, 1453. They exist in both editions. Re-reading
-them against the 2019 text is the obvious next verification pass.
+**Revision 7 closed that gap.** The 2019 edition was re-produced and the six outstanding
+sections were re-read against it: 1301, 1321, 1354, 1390, 1452 and 1453, along with the full
+text of 1391(f). No Title 15 citation in the register now rests on the 2014 edition alone.
+
+Two findings from that pass. 1391(f) has **six** elements, the sixth being provision for
+administrative review, which clears the truncation flag raised after Revision 6. And 1390's
+deprivation floor runs (a) to **(k)**, eleven items, with (k) being rehabilitative programming,
+which corrects a credit Revision 5 had given OO 1390/1391 for exceeding the floor.
