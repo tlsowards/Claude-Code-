@@ -13,6 +13,7 @@ import csv
 import json
 import os
 import re
+import sys
 from collections import Counter, OrderedDict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -573,9 +574,42 @@ def md(data):
     return "\n".join(o) + "\n"
 
 
+README_PATH = os.path.join(ROOT, "README.md")
+
+
+def check_readme(total):
+    """Fail the build if README.md's Layout block has gone stale.
+
+    That line is a hardcoded restatement of two facts the register already
+    knows, in a file no generator writes, which is exactly how it sat at
+    "83 requirements, register Revision 5" for three revisions. Deriving it
+    is not worth templating a README, but noticing is cheap.
+    """
+    if not os.path.exists(README_PATH):
+        return
+    with open(README_PATH, encoding="utf-8") as fh:
+        text = fh.read()
+    m = re.search(r"prea-register\.csv\s+the working record\. "
+                  r"(\d+) requirements, register Revision (\d+)", text)
+    if not m:
+        print("ABORTED. README.md no longer states the register row count and "
+              "revision in the form this guard recognises. Either restore that "
+              "line or update the pattern in tools/build_crosswalk.py.")
+        sys.exit(1)
+    said_rows, said_rev = int(m.group(1)), int(m.group(2))
+    if (said_rows, said_rev) != (total, REVISION):
+        print("ABORTED, nothing written. README.md is stale:")
+        print("  README says    %d requirements, register Revision %d"
+              % (said_rows, said_rev))
+        print("  register has   %d requirements, register Revision %d"
+              % (total, REVISION))
+        sys.exit(1)
+
+
 def main():
     rows = load()
     data = build(rows)
+    check_readme(data["total"])
     os.makedirs(os.path.dirname(MD_PATH), exist_ok=True)
     with open(MD_PATH, "w", encoding="utf-8") as fh:
         fh.write(md(data))

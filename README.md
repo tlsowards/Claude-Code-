@@ -11,7 +11,7 @@ overwrite `CLAUDE.md` with a generated one.
 
 ```
 CLAUDE.md            project memory: working rules, findings, verified authorities
-prea-register.csv    the working record. 83 requirements, register Revision 5
+prea-register.csv    the working record. 87 requirements, register Revision 8
 docs/                the 17 source policy documents (not in the repository)
 deliverables/        finished work product
 drafts/              redlines and new policy drafts, generated from redlines.json
@@ -66,9 +66,20 @@ at 12pt, headings from 14pt up, per the standing preference in `CLAUDE.md` secti
 It fails the build if an edit drops below those floors, so font sizes live there rather
 than as literals in the builders.
 
+Rebuilding a Word file with no source change still produces a few different bytes,
+because the zip container carries timestamps. A `deliverables/*.docx` diff on its own
+means nothing; check the Markdown view or `tools/crosswalk.json`, which are
+byte-stable, before concluding that content moved.
+
 The contents page is a Word field, so page numbers are computed by Word rather
 than written into the file. The document asks Word to refresh its fields on open.
 If the contents page still looks empty or stale, click in it and press F9.
+
+`npm run crosswalk` also checks the Layout block above against the register and the
+builder's `REVISION`, and **fails the build** if the row count or the revision number
+there has gone stale. That line sat at "87 requirements, register Revision 8" through
+three revisions and four review rounds before anyone noticed, because no generator
+touches this file. Now one does.
 
 The generator prints a warning if any register row has neither a 28 CFR nor a
 California citation, since that usually means a CSV edit blanked a column rather
@@ -79,7 +90,8 @@ than that the requirement has no authority. A clean run prints no warning.
 These came from the prior conversation and belong in `deliverables/`, but they are
 not committed: see the handling note below. They are not generated from the register,
 so they do not update when it does. The master report reflects Revision 3 and predates
-the three documents assessed in Revision 4, so it now understates what is known.
+every revision since, so it understates what is known by a widening margin. Treat the
+register and the generated crosswalk as current and the report as historical.
 
 - `YDF_PREA_Policy_Review_Report.docx`, the master document
 - `YDF_PREA_Applicability_Memo.docx`
