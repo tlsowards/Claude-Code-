@@ -1,7 +1,7 @@
 # PREA versus Policy: a standard-by-standard crosswalk
 
 Sacramento County Probation Department, Youth Detention Facility.
-Gap register Revision 7. 83 requirements assessed against 17 departmental policies.
+Gap register Revision 8. 87 requirements assessed against 17 departmental policies.
 
 **This is not legal advice.** It is a policy-to-standard comparison prepared for internal remediation planning. Statutory questions route to County Counsel.
 
@@ -12,7 +12,7 @@ The gap register records, for each requirement, what the department has. This do
 Three divergence classes are used throughout.
 
 - **Conflict.** The policy states a rule, and the rule is wrong. This is the worst class, because staff following policy are out of compliance by doing what they were told. Twelve requirements sit here.
-- **Not Addressed.** The documents reviewed contain no provision on the point. Sixteen requirements sit here, ten of which cite no departmental document at all.
+- **Not Addressed.** The documents reviewed contain no provision on the point. Twenty requirements sit here, ten of which cite no departmental document at all.
 - **Partial.** A provision exists and does part of the work. Forty requirements sit here, and this is where most of the remediation labor is.
 
 Findings state what the documents reviewed contain. Where a requirement is recorded as not addressed, that means no provision appeared in the 17 documents, not that the practice does not occur. Several findings will close on production of the documents listed as outstanding.
@@ -22,17 +22,17 @@ Findings state what the documents reviewed contain. Where a requirement is recor
 | Status | Count |
 |---|---|
 | Conflict | 12 |
-| Not Addressed | 16 |
+| Not Addressed | 20 |
 | Partial | 40 |
 | Not Evidenced | 1 |
 | Addressed | 14 |
-| **Total** | **83** |
+| **Total** | **87** |
 
 | Priority | Count |
 |---|---|
-| Critical | 19 |
-| High | 33 |
-| Medium | 17 |
+| Critical | 21 |
+| High | 36 |
+| Medium | 16 |
 | Low | 14 |
 
 ### Divergence by area
@@ -50,7 +50,7 @@ Findings state what the documents reviewed contain. Where a requirement is recor
 | Medical and Mental Health | 4 | 0 | 0 | 4 | 0 | 0 |
 | Data Collection and Review | 4 | 0 | 1 | 2 | 0 | 1 |
 | Audit | 1 | 0 | 1 | 0 | 0 | 0 |
-| California-Specific | 6 | 3 | 0 | 1 | 0 | 2 |
+| California-Specific | 10 | 3 | 4 | 1 | 0 | 2 |
 
 ## 3. Class A divergence: policy states the wrong rule
 
@@ -244,7 +244,9 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 
 **The standard requires.** Where an agency operates more than one facility, each facility shall designate a PREA Compliance Manager with sufficient time and authority to coordinate that facility's compliance.
 
-**Divergence.** No facility-level PREA Compliance Manager is designated for YDF. Confirm the current count of departmentally operated juvenile facilities; if more than one is operated, a Compliance Manager is required at each.
+**Divergence.** No facility-level PREA Compliance Manager is designated for YDF. Confirm the current count of departmentally operated juvenile facilities; if more than one is operated, a Compliance Manager is required at each. Facility facts confirmed by the department in Revision 8: the Juvenile Hall houses residents aged 13 to 25, has 17 units of which 12 are in use, houses girls separately from boys, groups boys by age, and treats a resident under 16 housed with one over 18 as uncommon but not prohibited. Note that this answers a different question than the one this row asks. Twelve units in use describes the size of one facility; it does not say how many juvenile facilities the department operates, which is what 115.311(c) turns on. Open question 1 stays open.
+
+*Change log: REVISED in 8: unit count recorded. The facility count 115.311(c) turns on is still open.*
 
 #### 5. 28 CFR 115.313(a)-(b); 15 CCR 1321(a), (h)
 
@@ -256,9 +258,9 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 
 **The standard requires.** Develop, implement, and document a staffing plan providing adequate staffing and, where applicable, video monitoring, weighing 11 enumerated factors including blind spots, resident composition, supervisory placement, and prevalence of substantiated and unsubstantiated incidents. Comply with the plan except in limited, discrete, fully documented exigent circumstances.
 
-**Divergence.** OO 1321 restates the Title 15 ratios and generic adequacy language. There is no documented PREA staffing plan, none of the 11 required factors is analyzed, and there is no mechanism for documenting deviations. A written staffing plan is one of the most frequently cited findings in juvenile PREA audits. VERIFIED in Revision 5 against Title 15 rev. 04/01/2014, the only edition produced: 1321(a) requires 'an adequate number of personnel sufficient to carry out its program,' and 1321(h) requires assignment of sufficient youth supervision staff for continuous wide awake supervision. Both read as cited. Neither supplies the written staffing plan this requirement concerns, so the finding stands. The eleven factors are enumerated here so the staffing plan can be drafted from this row rather than from the standard. 28 CFR 115.313(a) requires the agency to take into consideration: (1) generally accepted juvenile detention, correctional, or secure residential practices; (2) any judicial findings of inadequacy; (3) any findings of inadequacy from Federal investigative agencies; (4) any findings of inadequacy from internal or external oversight bodies; (5) all components of the facility's physical plant, including blind spots or areas where staff or residents may be isolated; (6) the composition of the resident population; (7) the number and placement of supervisory staff; (8) institution programs occurring on a particular shift; (9) any applicable State or local laws, regulations, or standards; (10) the prevalence of substantiated and unsubstantiated incidents of sexual abuse; and (11) any other relevant factors. Three are harder for this department than they look. Factor 10 cannot currently be computed at all, because the Internal Affairs six-category disposition taxonomy does not map to the three PREA findings; see row 81. Factor 4 now takes in this register itself, which is a finding of inadequacy from an internal review. Factor 5 has no supporting document, because the Institutional Policy on Video Recording and Photograph System has never been produced. CORROBORATION NOTE: the eleven factors are corroborated from search, including exact-phrase matches against the Cornell, eCFR, and PREA Resource Center listings, and have not been read from the Code of Federal Regulations itself, because network access to those sources is blocked from the drafting environment. Confirm the wording against 28 CFR 115.313(a) before it is adopted into a staffing plan. VERIFIED in Revision 7 against Title 15 effective 01/01/2019: 1321(h)(1) is confirmed as cited for juvenile halls: (A) one wide-awake youth supervision staff member for each 10 youth during waking hours, (B) one for each 30 during sleeping hours, and (E) personnel whose primary responsibility is administration, supervision of personnel, academic or trade instruction, clerical, kitchen or maintenance shall not be classified as youth supervision staff. Two subsections this register did not carry are now recorded. (C) requires at least two wide-awake youth supervision staff members on duty at all times regardless of the number of youth in detention, unless an arrangement has been made for backup support services allowing immediate response to emergencies, which is a floor the federal ratios do not state and which binds on low-count units. (D) requires at least one youth supervision staff member on duty who is the same gender as youth housed in the facility, which bears on the 115.315 cross-gender viewing and announcement duties and should be read alongside them rather than as a staffing rule alone.
+**Divergence.** OO 1321 restates the Title 15 ratios and generic adequacy language. There is no documented PREA staffing plan, none of the 11 required factors is analyzed, and there is no mechanism for documenting deviations. A written staffing plan is one of the most frequently cited findings in juvenile PREA audits. VERIFIED in Revision 5 against Title 15 rev. 04/01/2014, the only edition produced: 1321(a) requires 'an adequate number of personnel sufficient to carry out its program,' and 1321(h) requires assignment of sufficient youth supervision staff for continuous wide awake supervision. Both read as cited. Neither supplies the written staffing plan this requirement concerns, so the finding stands. The eleven factors are enumerated here so the staffing plan can be drafted from this row rather than from the standard. 28 CFR 115.313(a) requires the agency to take into consideration: (1) generally accepted juvenile detention, correctional, or secure residential practices; (2) any judicial findings of inadequacy; (3) any findings of inadequacy from Federal investigative agencies; (4) any findings of inadequacy from internal or external oversight bodies; (5) all components of the facility's physical plant, including blind spots or areas where staff or residents may be isolated; (6) the composition of the resident population; (7) the number and placement of supervisory staff; (8) institution programs occurring on a particular shift; (9) any applicable State or local laws, regulations, or standards; (10) the prevalence of substantiated and unsubstantiated incidents of sexual abuse; and (11) any other relevant factors. Three are harder for this department than they look. Factor 10 cannot currently be computed at all, because the Internal Affairs six-category disposition taxonomy does not map to the three PREA findings; see row 81. Factor 4 now takes in this register itself, which is a finding of inadequacy from an internal review. Factor 5 has no supporting document, because the Institutional Policy on Video Recording and Photograph System has never been produced. CORROBORATION NOTE: the eleven factors are corroborated from search, including exact-phrase matches against the Cornell, eCFR, and PREA Resource Center listings, and have not been read from the Code of Federal Regulations itself, because network access to those sources is blocked from the drafting environment. Confirm the wording against 28 CFR 115.313(a) before it is adopted into a staffing plan. VERIFIED in Revision 7 against Title 15 effective 01/01/2019: 1321(h)(1) is confirmed as cited for juvenile halls: (A) one wide-awake youth supervision staff member for each 10 youth during waking hours, (B) one for each 30 during sleeping hours, and (E) personnel whose primary responsibility is administration, supervision of personnel, academic or trade instruction, clerical, kitchen or maintenance shall not be classified as youth supervision staff. Two subsections this register did not carry are now recorded. (C) requires at least two wide-awake youth supervision staff members on duty at all times regardless of the number of youth in detention, unless an arrangement has been made for backup support services allowing immediate response to emergencies, which is a floor the federal ratios do not state and which binds on low-count units. (D) requires at least one youth supervision staff member on duty who is the same gender as youth housed in the facility, which bears on the 115.315 cross-gender viewing and announcement duties and should be read alongside them rather than as a staffing rule alone. Facility facts confirmed by the department in Revision 8: the Juvenile Hall houses residents aged 13 to 25, has 17 units of which 12 are in use, houses girls separately from boys, groups boys by age, and treats a resident under 16 housed with one over 18 as uncommon but not prohibited. The unit count is a direct input to the staffing plan. Twelve units in use interacts with 1321(h)(1)(C), which requires at least two wide-awake youth supervision staff on duty at all times regardless of the number of youth in detention, absent a backup arrangement allowing immediate response. On a low-count unit that floor binds before any ratio does, and with twelve units running it is a staffing question before it is a PREA question. Factor 6, the composition of the resident population, now has a concrete answer that the plan has to weigh: a twelve year age span, 13 to 25.
 
-*Change log: VERIFIED in 5: 15 CCR 1321(a) and (h) confirmed against source. REVISED in 6: the eleven 115.313(a) factors enumerated, with the factor 10, 4, and 5 problems named. REVISED in 7: 1321(h)(1) re-verified against the 2019 edition. (C) two-staff minimum and (D) same-gender staffing added.*
+*Change log: VERIFIED in 5: 15 CCR 1321(a) and (h) confirmed against source. REVISED in 6: the eleven 115.313(a) factors enumerated, with the factor 10, 4, and 5 problems named. REVISED in 7: 1321(h)(1) re-verified against the 2019 edition. (C) two-staff minimum and (D) same-gender staffing added. REVISED in 8: unit count and the 1321(h)(1)(C) two-staff interaction recorded against factors 5 and 6.*
 
 #### 7. 28 CFR 115.313(d)
 
@@ -632,9 +634,9 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 
 **The standard requires.** LGBTI residents shall not be placed in particular housing, bed, or other assignments solely on the basis of that identification or status, and such status shall not be considered an indicator of likelihood of being sexually abusive.
 
-**Divergence.** Unchanged as a finding and now supported by a fourth internal contradiction. OO 1352 II.M creates classification S-8 for any LGBTQI youth and III.I requires single-room housing at all times for S-8. That conflicts with 115.342(c), with 15 CCR 1352(e), with the Purpose and Scope paragraph of OO 1352 itself, with PREA Policy III.E, and now with OO 1352.5 III.H, which states that staff shall not consider a youth's sexual orientation or gender identity as a reason to isolate or withhold program options. OO 1352.5 took effect March 1, 2019. OO 1352 created S-8 effective December 9, 2019 and was revised February 27, 2020. The department adopted the correct rule first and then adopted the opposite rule twice afterward. Note that S-8 is materially broader than the OO 1352.5 III.I provision, because it sweeps in lesbian, gay, bisexual, and questioning youth for whom no anatomical privacy rationale exists at all. MATERIALLY STRENGTHENED in Revision 5 by verification against source. 15 CCR 1352(e) reads, in the edition effective April 1, 2014: 'provide that facility staff shall not separate youth from the general population or assign youth to a single occupancy room based solely on the youth's actual or perceived race, ethnic group identification, ancestry, national origin, color, religion, gender, sexual orientation, gender identity, gender expression, mental or physical disability, or HIV status.' The section then supplies its own carve-out: 'This section does not prohibit staff from placing youth in a single occupancy room at the youth's specific request or in accordance with Title 15 regulations regarding separation.' Two consequences. First, the chronology is far worse than Revision 4 recorded. This rule was not added by the 2019 Title 15 rewrite. It has been California law since at least April 1, 2014, five and a half years before OO 1352 created S-8 on December 9, 2019 and retained it on the February 27, 2020 revision. Second, the carve-out states the lawful alternative on the face of the regulation: individualized placement, or single-room housing at the youth's own request. S-8 is neither. A second and independent state hook is now confirmed: 1324(k) requires the policy and procedure manual itself to contain a non-discrimination provision barring discrimination on the same listed bases 'including restrictive housing or classification decisions based solely on any of the above mentioned categories.' S-8 is a classification decision based solely on a listed category, so it is both an operational violation of 1352(e) and a defect in the required contents of the manual under 1324(k). The 1324(k) route is the cleaner BSCC inspection finding because it does not depend on whether PREA binds a county facility. VERIFIED in Revision 6 against Title 15 effective 01/01/2019, the post-rewrite edition: 1352(f) exists and is a third and independent hook on S-8: 'facility staff shall not consider lesbian, gay, bisexual, transgender, questioning or intersex identification or status as an indicator of likelihood of being sexually abusive.' If the S-series is a sexual-risk taxonomy, which the S-4 High and S-4 Low criteria indicate, then placing LGBTQI youth into that series at all is what 1352(f) forbids, independent of the housing consequence. Confirming that requires OO 1352, which has never been produced, so it is recorded as a hook to test rather than as a scored finding. CITATION CORRECTED in Revision 6, and this one was load-bearing. Revision 5 recorded the non-discrimination hook as 1324(h) from the 04/01/2014 edition. In the edition effective 01/01/2019, 1324(h) is 'trauma-informed approaches' and the non-discrimination provision is 1324(k). The 2019 text is also broader than the 2014 text, adding immigration status to the listed bases. Anything citing 1324(h) for this proposition, including redline change 1 as originally drafted, is wrong for the current edition.
+**Divergence.** Unchanged as a finding and now supported by a fourth internal contradiction. OO 1352 II.M creates classification S-8 for any LGBTQI youth and III.I requires single-room housing at all times for S-8. That conflicts with 115.342(c), with 15 CCR 1352(e), with the Purpose and Scope paragraph of OO 1352 itself, with PREA Policy III.E, and now with OO 1352.5 III.H, which states that staff shall not consider a youth's sexual orientation or gender identity as a reason to isolate or withhold program options. OO 1352.5 took effect March 1, 2019. OO 1352 created S-8 effective December 9, 2019 and was revised February 27, 2020. The department adopted the correct rule first and then adopted the opposite rule twice afterward. Note that S-8 is materially broader than the OO 1352.5 III.I provision, because it sweeps in lesbian, gay, bisexual, and questioning youth for whom no anatomical privacy rationale exists at all. MATERIALLY STRENGTHENED in Revision 5 by verification against source. 15 CCR 1352(e) reads, in the edition effective April 1, 2014: 'provide that facility staff shall not separate youth from the general population or assign youth to a single occupancy room based solely on the youth's actual or perceived race, ethnic group identification, ancestry, national origin, color, religion, gender, sexual orientation, gender identity, gender expression, mental or physical disability, or HIV status.' The section then supplies its own carve-out: 'This section does not prohibit staff from placing youth in a single occupancy room at the youth's specific request or in accordance with Title 15 regulations regarding separation.' Two consequences. First, the chronology is far worse than Revision 4 recorded. This rule was not added by the 2019 Title 15 rewrite. It has been California law since at least April 1, 2014, five and a half years before OO 1352 created S-8 on December 9, 2019 and retained it on the February 27, 2020 revision. Second, the carve-out states the lawful alternative on the face of the regulation: individualized placement, or single-room housing at the youth's own request. S-8 is neither. A second and independent state hook is now confirmed: 1324(k) requires the policy and procedure manual itself to contain a non-discrimination provision barring discrimination on the same listed bases 'including restrictive housing or classification decisions based solely on any of the above mentioned categories.' S-8 is a classification decision based solely on a listed category, so it is both an operational violation of 1352(e) and a defect in the required contents of the manual under 1324(k). The 1324(k) route is the cleaner BSCC inspection finding because it does not depend on whether PREA binds a county facility. VERIFIED in Revision 6 against Title 15 effective 01/01/2019, the post-rewrite edition: 1352(f) exists and is a third and independent hook on S-8: 'facility staff shall not consider lesbian, gay, bisexual, transgender, questioning or intersex identification or status as an indicator of likelihood of being sexually abusive.' If the S-series is a sexual-risk taxonomy, which the S-4 High and S-4 Low criteria indicate, then placing LGBTQI youth into that series at all is what 1352(f) forbids, independent of the housing consequence. Confirming that requires OO 1352, which has never been produced, so it is recorded as a hook to test rather than as a scored finding. CITATION CORRECTED in Revision 6, and this one was load-bearing. Revision 5 recorded the non-discrimination hook as 1324(h) from the 04/01/2014 edition. In the edition effective 01/01/2019, 1324(h) is 'trauma-informed approaches' and the non-discrimination provision is 1324(k). The 2019 text is also broader than the 2014 text, adding immigration status to the listed bases. Anything citing 1324(h) for this proposition, including redline change 1 as originally drafted, is wrong for the current edition. DISTINCTION WORTH HAVING READY, added in Revision 8. The department houses girls separately from boys, and someone will reasonably ask why that is lawful if categorical housing on a listed basis is not, since gender is on the 1352(e) and 1324(k) lists. The answer is in the operative words. 1352(e) bars separating a youth FROM THE GENERAL POPULATION or assigning to a SINGLE OCCUPANCY ROOM solely on a listed basis. A girls unit is a general population assignment and is neither of those things. S-8 is a single occupancy assignment made solely on a listed basis and is squarely both. Same list, opposite result, and the difference is the operational consequence rather than the category. This is the cleanest way to explain the finding to an administrator who pushes back.
 
-*Change log: REVISED in 3: OO 1352.5 III.H adds a fourth internal contradiction and a damaging chronology. MATERIALLY REVISED in 5: 15 CCR 1352(e) verified against source and dated to 04/01/2014, not 2019, so S-8 postdates the rule by five and a half years. 15 CCR 1324(h) added as an independent hook. 1352(f) not confirmed. CORRECTED in 6: 1324(h) is 1324(k) in the 2019 edition. 1352(f) confirmed and added as a third hook.*
+*Change log: REVISED in 3: OO 1352.5 III.H adds a fourth internal contradiction and a damaging chronology. MATERIALLY REVISED in 5: 15 CCR 1352(e) verified against source and dated to 04/01/2014, not 2019, so S-8 postdates the rule by five and a half years. 15 CCR 1324(h) added as an independent hook. 1352(f) not confirmed. CORRECTED in 6: 1324(h) is 1324(k) in the 2019 edition. 1352(f) confirmed and added as a third hook. REVISED in 8: added the general population versus single occupancy distinction.*
 
 #### 37. 28 CFR 115.342(d)-(g); 15 CCR 1352.5(a)-(e)
 
@@ -646,9 +648,9 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 
 **The standard requires.** Decide transgender and intersex facility, housing, and program assignments case by case considering health, safety, and management concerns; reassess at least twice yearly; give serious consideration to the resident's own views on safety; provide the opportunity to shower separately.
 
-**Divergence.** Nearly everything required is present, and one provision undoes part of it. Present and in two places exceeding the standard: individualized assessment at admission with an Identity Preference Form (III.A); no automatic housing by external anatomy and documented reasons for any placement not matching gender identity (III.B); consideration of the youth's preferences and provider recommendations (III.C), which closes 115.342(f); housing based on individualized needs prioritizing emotional and physical safety and considering the youth's own perception of where they will be most secure, documented in JPIP classification comments with date and justification (III.F); reassessment of placement and program assignment monthly or as needed (III.G), which exceeds the twice-yearly minimum at 115.342(e); a prohibition on considering sexual orientation or gender identity as a reason to isolate or withhold program options (III.H); private showers for all youth (III.J), which closes 115.342(g); and preservation of program participation despite private accommodations (III.K). The defect is III.I: all transgender and intersex youth shall be provided a single room. That is a categorical housing outcome assigned by status, which is what 115.342(c) and 15 CCR 1352(e) prohibit, and it contradicts III.B, III.F, and III.H within the same order. This version is more defensible than the S-8 mandate in OO 1352 because it is limited to transgender and intersex youth, states a privacy and safety rationale, and preserves program access, but categorical is still categorical. The fix is narrow: make a single room the presumptive result of the III.F individualized determination with documented reasons, rather than an automatic rule. VERIFIED in Revision 6 against Title 15 effective 01/01/2019, the post-rewrite edition: 1352.5 exists, titled Transgender and Intersex Youth, running (a) to (e). Most relevant to this register: (c) requires staff to 'house youth in the unit or room that best meets their individual needs,' provides that staff 'may not automatically house youth according to their external anatomy,' requires documented reasons for any placement not matching gender identity, and requires consideration of the youth's preferences and of provider recommendations. That is an expressly individualized standard, which is what makes a categorical single-room rule a conflict with it.
+**Divergence.** Nearly everything required is present, and one provision undoes part of it. Present and in two places exceeding the standard: individualized assessment at admission with an Identity Preference Form (III.A); no automatic housing by external anatomy and documented reasons for any placement not matching gender identity (III.B); consideration of the youth's preferences and provider recommendations (III.C), which closes 115.342(f); housing based on individualized needs prioritizing emotional and physical safety and considering the youth's own perception of where they will be most secure, documented in JPIP classification comments with date and justification (III.F); reassessment of placement and program assignment monthly or as needed (III.G), which exceeds the twice-yearly minimum at 115.342(e); a prohibition on considering sexual orientation or gender identity as a reason to isolate or withhold program options (III.H); private showers for all youth (III.J), which closes 115.342(g); and preservation of program participation despite private accommodations (III.K). The defect is III.I: all transgender and intersex youth shall be provided a single room. That is a categorical housing outcome assigned by status, which is what 115.342(c) and 15 CCR 1352(e) prohibit, and it contradicts III.B, III.F, and III.H within the same order. This version is more defensible than the S-8 mandate in OO 1352 because it is limited to transgender and intersex youth, states a privacy and safety rationale, and preserves program access, but categorical is still categorical. The fix is narrow: make a single room the presumptive result of the III.F individualized determination with documented reasons, rather than an automatic rule. VERIFIED in Revision 6 against Title 15 effective 01/01/2019, the post-rewrite edition: 1352.5 exists, titled Transgender and Intersex Youth, running (a) to (e). Most relevant to this register: (c) requires staff to 'house youth in the unit or room that best meets their individual needs,' provides that staff 'may not automatically house youth according to their external anatomy,' requires documented reasons for any placement not matching gender identity, and requires consideration of the youth's preferences and of provider recommendations. That is an expressly individualized standard, which is what makes a categorical single-room rule a conflict with it. Revision 8 adds the housing context that makes this finding bite harder. The department houses girls separately from boys, so a transgender or intersex youth is the case the system has no default for, and III.I resolves it by assigning a single room by status rather than by the individualized determination III.B and III.F require. Where every other resident is housed in general population by sex, that difference is the whole finding. Recommended change 2 makes single occupancy the presumptive outcome of the III.F determination instead.
 
-*Change log: MATERIALLY REVISED in 3: was Not Evidenced. OO 1352.5 largely closes the standard; III.I is a discrete conflict. FLAGGED in 5: 15 CCR 1352.5 not confirmed; absent from the produced edition. REVISED in 6: 1352.5 confirmed and quoted. 1352.5(c) is the individualized standard the III.I categorical rule conflicts with.*
+*Change log: MATERIALLY REVISED in 3: was Not Evidenced. OO 1352.5 largely closes the standard; III.I is a discrete conflict. FLAGGED in 5: 15 CCR 1352.5 not confirmed; absent from the produced edition. REVISED in 6: 1352.5 confirmed and quoted. 1352.5(c) is the individualized standard the III.I categorical rule conflicts with. REVISED in 8: sex-segregated housing context added.*
 
 #### 80. 28 CFR 115.341(c), 115.342; 15 CCR 1350.5(a)
 
@@ -1300,17 +1302,75 @@ Grouped by the area an auditor scores. Within an area, worst divergence first.
 
 **Divergence.** This policy contains no PREA or sexual abuse screening content and does not reference OO 1350.5. It is also substantively obsolete: it repeatedly references the California Youth Authority and CYA parolees, and CYA became the Division of Juvenile Justice in 2005 and closed entirely on June 30, 2023 under SB 823. It also omits the 15 CCR 1350(a) admittance elements added in 2019. Recommend full rewrite and an explicit link to the 1350.5 screening.
 
+#### 84. 28 CFR 115.341(a)-(e); 115.342(a)-(b); 15 CCR 1302 (definition of youth), 1350.5(d)-(f), 1352, 1354
+
+| | |
+|---|---|
+| Status | Not Addressed |
+| Priority | Critical |
+| Departmental provision | OO 1352 (Classification), never produced; OO 1350.5; OO 1354, never produced |
+
+**The standard requires.** Use screening and classification to keep residents safe, including by weighting age, level of emotional and cognitive development, and physical size and stature, in a facility whose population spans a twelve year age range.
+
+**Divergence.** Facility facts confirmed by the department in Revision 8: the Juvenile Hall houses residents aged 13 to 25, has 17 units of which 12 are in use, houses girls separately from boys, groups boys by age, and treats a resident under 16 housed with one over 18 as uncommon but not prohibited. VERIFIED in Revision 8 against Title 15 effective 01/01/2019: Title 15 defines "Youth" as "any person who is in the custody of the juvenile facility. This person may be a minor under the age of 18 or a person over 18 years of age," and includes persons under both juvenile and adult court jurisdiction. Every Title 15 duty therefore applies identically to a 13 year old and a 25 year old. Searched in full: separation under 1354 is keyed to behavior and status, and no provision anywhere in the edition keys separation to age. On the federal side neither 115.14 nor 115.114, the youthful inmate and youthful detainee standards, applies in a juvenile facility, and a person over 18 held in one remains a resident under the subpart D definitions. The consequence is the finding: NOTHING IN FEDERAL OR STATE LAW REQUIRES SIGHT AND SOUND SEPARATION OF A 13 YEAR OLD FROM A 25 YEAR OLD IN THIS FACILITY. The only control is classification. 1350.5 supplies the right factors at (d) age, (e) level of emotional and cognitive development, and (f) physical size and stature, so the state screening instrument contemplates exactly this problem. Whether OO 1352 weights those factors across a twelve year span cannot be assessed, because OO 1352 has never been produced, and the two classification defects this register does document, the S-8 mandate at row 36 and the S-4 victim to perpetrator inference at row 80, both sit in that same order. Scored Not Addressed because no produced document contains an age based housing provision, not because the department does nothing: see row 86, where the practice exists and the documentation does not.
+
+*Change log: NEW in 8, from facility facts confirmed by the department.*
+
+#### 85. 28 CFR 115.6 (definitions), by comparison; 15 CCR 1302 (definition of sexual abuse), 1324(n)
+
+| | |
+|---|---|
+| Status | Not Addressed |
+| Priority | High |
+| Departmental provision | PREA Policy (definitions section); OO 1453 |
+
+**The standard requires.** Departmental policy must prohibit sexual abuse as California defines it, which is not the same as the federal definition.
+
+**Divergence.** VERIFIED in Revision 8 against Title 15 effective 01/01/2019: Title 15 carries its own definition. "Sexual abuse" is "sexual activity or voyeurism by one or more persons upon another person who does not consent, is unable to refuse, or is coerced into the act by manipulation, violence, or by overt or implied threats." It is broader than the federal resident-on-resident definition at 28 CFR 115.6 in two ways that matter operationally. First, coercion: the state counts coercion by MANIPULATION, where the federal definition requires that the resident be coerced by overt or implied threats of violence. Manipulation by an older resident over a younger one is the realistic coercion vector in a facility spanning 13 to 25, and it is precisely the case that can fail the federal test while meeting the state one. Second, voyeurism: the state definition reaches voyeurism by one or more persons upon another, where under the federal definition voyeurism is a staff-only prong and does not appear among the resident-on-resident prongs at all. 1324(n) requires the policy and procedure manual to prohibit all forms of sexual abuse, so this is an enforceable state standard and not background. No produced departmental document adopts or reflects the state definition. The practical risk is a department that screens incidents against the federal test alone and closes conduct the state standard reaches.
+
+*Change log: NEW in 8, from verification against the 2019 edition.*
+
+#### 86. 28 CFR 115.313(a); 115.342(a)-(b); 15 CCR 1324 (required contents of the manual), 1352
+
+| | |
+|---|---|
+| Status | Not Addressed |
+| Priority | High |
+| Departmental provision | None identified. OO 1352 never produced. |
+
+**The standard requires.** Controls the department actually relies on should appear in the policy and procedure manual, which 1324 requires to address at a minimum all applicable regulations and to be available to and reviewed by all employees.
+
+**Divergence.** Facility facts confirmed by the department in Revision 8: the Juvenile Hall houses residents aged 13 to 25, has 17 units of which 12 are in use, houses girls separately from boys, groups boys by age, and treats a resident under 16 housed with one over 18 as uncommon but not prohibited. Three separation controls are in daily use and none of them appears in the documents reviewed: girls housed separately from boys, boys grouped by age, and a resident under 16 kept apart from one over 18 in all but uncommon cases. VERIFIED in Revision 8 against Title 15 effective 01/01/2019: no provision requires housing separation by sex. The only sex-related housing rule in the edition is 1321(h)(1)(D), at least one youth supervision staff member on duty of the same gender as youth housed. There is likewise no age-based rule. So the department is operating three controls that neither the state nor the federal standard requires, which is a stronger position than compliance, and recording none of them. An undocumented control cannot be audited, does not survive staff turnover, erodes silently under population pressure, and in litigation reads as "we usually do not" rather than "our policy prohibits." The remediation is the cheapest in this register because the practice already exists: write it down. Two halves are needed. State the rule, including the age span threshold the department actually applies. Then state the exception path, because the department describes the under-16 with over-18 pairing as uncommon rather than impossible: who authorizes it, what justification is recorded, what additional safeguards attach, and where it is documented. A rule without a written override is not a control.
+
+*Change log: NEW in 8, from facility facts confirmed by the department.*
+
+#### 87. 28 CFR 115.6 (definitions); 115.371(a); PC 11165.1(a) and (b); PC 261.5, 286, 287, 288, 289; 15 CCR 1302
+
+| | |
+|---|---|
+| Status | Not Addressed |
+| Priority | Critical |
+| Departmental provision | PREA Policy; OO 1390/1391 II.B.4 (sexual misconduct, undefined) |
+
+**The standard requires.** Decide whether sexual contact between two residents is abuse without relying on apparent consent, in a facility that houses both minors and adults.
+
+**Divergence.** Where a resident under 18 and a resident over 18 are involved in the same incident, the federal and state tests can return opposite answers, and neither can be resolved on the unit. PREA side: resident-on-resident sexual abuse requires that the resident does not consent, is coerced by overt or implied threats of violence, or is UNABLE TO CONSENT OR REFUSE. That third limb is the one that governs the mixed-age case. A minor who cannot lawfully consent to sexual activity with an adult under California law is unable to consent within the meaning of the definition, so apparent willingness does not take the incident out of PREA, and 115.371(a) requires the allegation to be investigated regardless. CANRA side: the analysis is narrower and more treacherous. 11165.1(b)(4) reaches intentional touching of the intimate parts of a child for sexual arousal or gratification, and a child is anyone under 18, so touching a 17 year old is reportable on that basis alone. Against that, 11165.1(a) carries an exception: sexual assault does not include VOLUNTARY conduct in violation of sections 286, 287 or 289 where there are NO INDICATORS OF ABUSE, unless the conduct is between a person 21 or older and a minor under 16. Three things about that exception have to be understood before anyone relies on it. It reaches only 286, 287 and 289, so it does not reach touching under (b)(4) and does not reach intercourse under 261.5. It requires a finding of no indicators of abuse, which in a custodial setting with an age gap is a conclusion reached after investigation and never an observation made on a unit. And it is unavailable outright for a person 21 or older with a minor under 16, which in a facility housing 13 to 25 is a live pairing rather than a hypothetical. Add the state definition at row 85, which counts coercion by manipulation where the federal definition requires threats of violence: manipulation of a younger resident by an older one is the characteristic mixed-age fact pattern, and it is reachable under state law in cases where the federal test alone would not reach it. The operational rule that follows is narrow and should be written down: staff do not apply consent analysis, the PREA report and investigation proceed regardless of apparent willingness, and the CANRA voluntary-conduct exception is never applied at the facility level. No produced document states any of this, and OO 1390/1391 II.B.4 makes it worse by listing sexual misconduct as a major rule violation without defining it, so nothing distinguishes a coerced act from a non-coerced one for either disciplinary or reporting purposes. See row 64.
+
+*Change log: NEW in 8. The mixed-age consent collision, from facility facts.*
+
 #### 77. 28 CFR 115.361(b); WIC 15610.23, 15630; GO Mandatory Reporting: Dependent Adult and Elder Abuse
 
 | | |
 |---|---|
 | Status | Partial |
-| Priority | Medium |
+| Priority | High |
 | Departmental provision | General Order, Mandatory Reporting: Dependent Adult and Elder Abuse (eff. 06/30/2017) |
 
 **The standard requires.** Mandated reporters must report known or suspected abuse of a dependent adult to Adult Protective Services or local law enforcement immediately or as soon as practicably possible, with a written or internet report within two working days.
 
-**Divergence.** The department has a functioning dependent adult reporting order, but the PREA policy's reporting provisions (V.A.4-6) address only child abuse reporting. Title 15 defines 'youth' to include persons over 18 in custody, and a detained resident aged 18 to 64 with a qualifying physical or mental limitation may meet the WIC 15610.23 dependent adult definition. Add a cross-reference so staff have a defined reporting pathway for residents who are 18 or older, who fall outside CANRA.
+**Divergence.** The department has a functioning dependent adult reporting order, but the PREA policy's reporting provisions (V.A.4-6) address only child abuse reporting. Title 15 defines 'youth' to include persons over 18 in custody, and a detained resident aged 18 to 64 with a qualifying physical or mental limitation may meet the WIC 15610.23 dependent adult definition. Add a cross-reference so staff have a defined reporting pathway for residents who are 18 or older, who fall outside CANRA. PRIORITY RAISED from Medium to High in Revision 8. The department confirmed the Juvenile Hall houses residents to age 25, so adults are in the main population rather than an occasional edge case. Once a resident turns 18 CANRA stops applying to them entirely, because it protects a child, and this becomes the primary reporting pathway for a substantial part of the population. WIC 15610.23 turns on qualifying physical or mental limitations rather than on age alone, so it is not automatic and the cross reference has to say how the determination is made rather than merely pointing at the dependent adult order.
+
+*Change log: REVISED in 8: priority Medium to High. Adults are in the main population, so this is the primary reporting pathway once CANRA drops away.*
 
 #### 75. 28 CFR 115.315(e); 115.342(d)-(g); 15 CCR 1352.5
 
@@ -1344,15 +1404,17 @@ The crosswalk above is organized the way an auditor reads. This section is organ
 
 ### PREA Policy and Procedure, Juvenile Institutions
 
-*eff/rev 04/25/2013. Cited by 46 requirements.*
+*eff/rev 04/25/2013. Cited by 48 requirements.*
 
 | Conflict | Not Addressed | Partial | Not Evidenced | Addressed |
 |---|---|---|---|---|
-| 7 | 0 | 31 | 0 | 8 |
+| 7 | 2 | 31 | 0 | 8 |
 
 **Conflicts to correct:** row 36 (28 CFR 115.342(c); 15 CCR 1352(e)-(f)), row 48 (28 CFR 115.361(b); PC 11164 et seq.; PC 11166(a); PC 11165.9), row 52 (28 CFR 115.363(a)-(d)), row 59 (28 CFR 115.371(g)-(h), (j)-(k)), row 64 (28 CFR 115.378(a)-(g); 15 CCR 1390, 1391), row 74 (15 CCR 1324(a)-(n)), row 78 (28 CFR 115.331(a)(11); PC 261.5, 286, 287, 288, 289, 289.6)
 
-All rows: 1, 4, 8, 9, 13, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 28, 30, 35, 36, 38, 40, 43, 47, 48, 49, 51, 52, 53, 55, 56, 57, 58, 59, 62, 64, 65, 66, 67, 68, 69, 70, 72, 74, 78, 81, 82
+**Silent on:** row 85 (28 CFR 115.6 (definitions), by comparison; 15 CCR 1302 (definition of sexual abuse), 1324(n)), row 87 (28 CFR 115.6 (definitions); 115.371(a); PC 11165.1(a) and (b); PC 261.5, 286, 287, 288, 289; 15 CCR 1302)
+
+All rows: 1, 4, 8, 9, 13, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 28, 30, 35, 36, 38, 40, 43, 47, 48, 49, 51, 52, 53, 55, 56, 57, 58, 59, 62, 64, 65, 66, 67, 68, 69, 70, 72, 74, 78, 81, 82, 85, 87
 
 ### OO 1321 Staffing
 
@@ -1380,27 +1442,29 @@ All rows: 20, 22
 
 ### OO 1350.5 Screening for the Risk of Sexual Abuse
 
-*eff 11/10/2019. Cited by 3 requirements.*
+*eff 11/10/2019. Cited by 4 requirements.*
 
 | Conflict | Not Addressed | Partial | Not Evidenced | Addressed |
 |---|---|---|---|---|
-| 0 | 0 | 2 | 0 | 1 |
+| 0 | 1 | 2 | 0 | 1 |
 
-All rows: 31, 33, 66
+**Silent on:** row 84 (28 CFR 115.341(a)-(e); 115.342(a)-(b); 15 CCR 1302 (definition of youth), 1350.5(d)-(f), 1352, 1354)
+
+All rows: 31, 33, 66, 84
 
 ### OO 1352 Classification
 
-*eff 12/09/2019, rev 02/27/2020. Cited by 9 requirements.*
+*eff 12/09/2019, rev 02/27/2020. Cited by 11 requirements.*
 
 | Conflict | Not Addressed | Partial | Not Evidenced | Addressed |
 |---|---|---|---|---|
-| 3 | 2 | 3 | 0 | 1 |
+| 3 | 4 | 3 | 0 | 1 |
 
 **Conflicts to correct:** row 36 (28 CFR 115.342(c); 15 CCR 1352(e)-(f)), row 78 (28 CFR 115.331(a)(11); PC 261.5, 286, 287, 288, 289, 289.6), row 80 (28 CFR 115.341(c), 115.342; 15 CCR 1350.5(a))
 
-**Silent on:** row 32 (28 CFR 115.341(b)), row 83 (28 CFR 115.317(c)(2), (d))
+**Silent on:** row 32 (28 CFR 115.341(b)), row 83 (28 CFR 115.317(c)(2), (d)), row 84 (28 CFR 115.341(a)-(e); 115.342(a)-(b); 15 CCR 1302 (definition of youth), 1350.5(d)-(f), 1352, 1354), row 86 (28 CFR 115.313(a); 115.342(a)-(b); 15 CCR 1324 (required contents of the manual), 1352)
 
-All rows: 31, 32, 34, 35, 36, 78, 80, 82, 83
+All rows: 31, 32, 34, 35, 36, 78, 80, 82, 83, 84, 86
 
 ### OO 1352.5 Transgender and Intersex Youth
 
@@ -1454,15 +1518,17 @@ All rows: 64, 70, 76
 
 ### OO 1453 Sexual Assault
 
-*eff 04/25/2013, rev 12/09/2019. Cited by 8 requirements.*
+*eff 04/25/2013, rev 12/09/2019. Cited by 9 requirements.*
 
 | Conflict | Not Addressed | Partial | Not Evidenced | Addressed |
 |---|---|---|---|---|
-| 2 | 0 | 6 | 0 | 0 |
+| 2 | 1 | 6 | 0 | 0 |
 
 **Conflicts to correct:** row 2 (28 CFR 115.311(b)), row 48 (28 CFR 115.361(b); PC 11164 et seq.; PC 11166(a); PC 11165.9)
 
-All rows: 2, 16, 18, 19, 48, 53, 54, 69
+**Silent on:** row 85 (28 CFR 115.6 (definitions), by comparison; 15 CCR 1302 (definition of sexual abuse), 1324(n))
+
+All rows: 2, 16, 18, 19, 48, 53, 54, 69, 85
 
 ### Internal Affairs Administrative Investigations
 
@@ -1524,15 +1590,17 @@ All rows: 35, 57
 
 ### OO 1390/1391 Discipline and Discipline Process
 
-*eff 10/01/2013, rev 05/01/2020. Cited by 1 requirements.*
+*eff 10/01/2013, rev 05/01/2020. Cited by 2 requirements.*
 
 | Conflict | Not Addressed | Partial | Not Evidenced | Addressed |
 |---|---|---|---|---|
-| 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 0 | 0 | 0 |
 
 **Conflicts to correct:** row 64 (28 CFR 115.378(a)-(g); 15 CCR 1390, 1391)
 
-All rows: 64
+**Silent on:** row 87 (28 CFR 115.6 (definitions); 115.371(a); PC 11165.1(a) and (b); PC 261.5, 286, 287, 288, 289; 15 CCR 1302)
+
+All rows: 64, 87
 
 ### Internal Complaints (Administrative P&P Manual)
 

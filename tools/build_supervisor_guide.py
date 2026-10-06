@@ -141,6 +141,19 @@ def main():
             add(it['body'])
             add('')
 
+    if data.get('mixedage'):
+        add('---')
+        add('')
+        add('## %s' % data['mixedage']['head'])
+        add('')
+        add(data['mixedage']['body'])
+        add('')
+        for it in data['mixedage']['items']:
+            add('### %s' % it['head'])
+            add('')
+            add(it['body'])
+            add('')
+
     if data.get('prea'):
         add('## %s' % data['prea']['head'])
         add('')

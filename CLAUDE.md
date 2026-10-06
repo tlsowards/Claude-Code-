@@ -36,30 +36,31 @@ hedging, and he will catch a wrong citation.
 
 ## 3. Project state
 
-Register is at **Revision 7**. 83 requirements assessed against 17 departmental policies.
+Register is at **Revision 8**. 87 requirements assessed against 17 departmental policies.
 
 Revision 6 verified against the Title 15 edition **effective 01/01/2019** and corrected three
-citations. **Revision 7 closed the gap Revision 6 left**: the six sections still carrying their
-04/01/2014 provenance (1301, 1321, 1354, 1390, 1452, 1453) were re-read against the 2019 text,
-and the full 1391(f) was obtained. No status or priority has changed since Revision 5. Eight
-rows changed in Revision 7, `gap` and `change_log` only. **Every Title 15 citation in this
-register is now verified against the current edition.** See section 7 for state and section 8
-for corrections.
+citations. Revision 7 closed the gap it left, re-reading the six sections still carrying their
+04/01/2014 provenance. **Every Title 15 citation in this register is verified against the current
+edition.**
+
+**Revision 8 is the first pass driven by facility facts rather than documents**, and the first
+since Revision 4 to change the counts. See section 15 for the facts and what they produced:
+four new rows (84 to 87) and one priority raised (row 77, Medium to High).
 
 | Status | Count |
 |---|---|
 | Addressed | 14 |
 | Partial | 40 |
-| Not Addressed | 16 |
+| Not Addressed | 20 |
 | Conflict (policy states the wrong rule) | 12 |
 | Not Evidenced (document exists, not produced) | 1 |
 
-Priority: 19 critical, 33 high, 17 medium, 14 low.
+Priority: 21 critical, 36 high, 16 medium, 14 low.
 
 Full register with gap text is in `prea-register.csv`. Columns `owner`, `target_date`, and
 `disposition` are empty and intended for the department to fill.
 
-## 4. Documents reviewed (14)
+## 4. Documents reviewed (17)
 
 | # | Document | Dates |
 |---|---|---|
@@ -372,6 +373,17 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
     Only 115.378(f), the good-faith reporting protection, is verified. The register describes
     the other elements of that standard by content rather than by letter for this reason.
     This environment's network egress is restricted, so eCFR and Cornell could not be reached.
+13. **Does 115.387 data collection reach sexual harassment, or only sexual abuse?** The standard
+    is written around allegations of sexual abuse. The supervisor guide originally asserted that
+    a sexual harassment incident "enters the PREA data set"; that is now stated as the safe
+    default rather than a confirmed requirement, because the CFR text could not be read from
+    this environment. It decides whether the department's collection instrument has one scope or
+    two. See register row 70.
+14. **Does the Dependent Adult and Elder Abuse General Order, or WIC 15610.23, reach a resident
+    aged 18 to 25 held in this facility?** If it does, there is a mandated reporting duty for
+    adult residents that nothing in this project currently states. If it does not, conduct
+    between two adult residents carries a PREA duty and a criminal referral and no mandated
+    reporting duty at all. New in Revision 8, and it is the direct consequence of the age span.
 
 ## 10. Documents still outstanding
 
@@ -522,3 +534,85 @@ large tables. That is the intended trade: legibility over page count.
 built, the 16pt floor applies, and the scale belongs in a sibling module rather than in
 the deck builder.
 
+---
+
+## 15. The facility, and what knowing it changed (Revision 8)
+
+Confirmed by the department. Everything before Revision 8 was inferred from documents; this is
+the first pass that rests on how the place actually runs.
+
+- The **Juvenile Hall houses residents aged 13 to 25.** A twelve year span in one facility.
+- **17 units, 12 in use.**
+- **Girls are housed separately from boys.**
+- **Boys are grouped by age.**
+- A resident **under 16 housed with one over 18 is uncommon but not prohibited.**
+
+**The headline finding, row 84.** Title 15 defines "Youth" as any person in the custody of the
+facility, expressly including persons over 18, so every state duty applies identically to a 13
+year old and a 25 year old. Searched the full 2019 text: separation under 1354 is keyed to
+behavior and status, and **no provision anywhere keys separation to age.** On the federal side
+neither 115.14 nor 115.114 applies in a juvenile facility. **Nothing in federal or state law
+requires sight and sound separation of a 13 year old from a 25 year old here.** Classification is
+the only control, and it sits in OO 1352, which has never been produced and which carries both
+documented classification defects.
+
+**Row 85. Title 15 has its own definition of sexual abuse and it is broader than PREA's.** It
+counts coercion by **manipulation**, where the federal resident-on-resident definition requires
+coercion by overt or implied threats of violence, and it reaches **voyeurism between residents**,
+which the federal definition treats as a staff-only prong. 1324(n) makes it enforceable. A
+department screening only against the federal test will close conduct the state standard reaches.
+
+**Row 86. Every separation control the department relies on is practice, not policy.** Sex
+separation, age grouping, and keeping under-16s away from over-18s are all in daily use and none
+appears in the documents reviewed. Title 15 requires none of them, so the department is exceeding
+the standard and recording none of it. The remediation is the cheapest in the register: write
+down what is already done, plus a written override path for the uncommon cases, because a rule
+with no stated exception is not a control.
+
+**Row 87. The mixed-age consent collision.** PREA's "unable to consent or refuse" limb governs,
+so apparent willingness does not take a minor-with-adult incident out of PREA. CANRA's
+voluntary-conduct exception is narrower than it looks: it reaches only 286, 287 and 289, not
+touching under 11165.1(b)(4) and not 261.5; it requires a finding of no indicators of abuse,
+which is a post-investigation conclusion rather than a unit observation; and it is unavailable
+outright for a person 21 or older with a minor under 16, a live pairing here. **The rule to write
+down: staff do not apply consent analysis, and the CANRA exception is never applied at facility
+level.**
+
+**A distinction to have ready, added to row 36.** Someone will ask why sex-segregated housing is
+lawful if categorical housing on a listed basis is not, since gender is on the 1352(e) and
+1324(k) lists. 1352(e) bars separating a youth **from the general population** or assigning to a
+**single occupancy room** solely on a listed basis. A girls unit is a general population
+assignment and is neither. S-8 is a single occupancy assignment on a listed basis and is both.
+Same list, opposite result.
+
+**What this did to the supervisor guide.** The tier chart was written assuming both residents
+are minors, which in a 13 to 25 facility is often wrong, so Revision 8 added age qualifiers to
+the chart itself rather than leaving them in prose nobody reads under pressure.
+
+- **Tier 4** (masturbation in view) now reads **YES if the youth who saw it is under 18.**
+  11165.1(b)(5)'s element is masturbation in the presence of a **child**. Two adult residents,
+  no CANRA duty, however many times it happens.
+- **Tiers 5 and 6** now read **YES if either resident is under 18.** (b)(4) reaches touching the
+  intimate parts "of a child, **or of the perpetrator by a child**," so it is keyed to a child on
+  either side of the contact. Which resident is the victim is an investigative conclusion, not a
+  floor call, and PC 11172(a) gives the reporter immunity. Where both are 18 or over, CANRA does
+  not apply at all, because there is no child.
+- A new **mixed ages section** carries the consent rule, the three limits on the CANRA voluntary
+  conduct exception, and a worked example: **repeated masturbation in view, both residents over
+  18.** CANRA no, PREA yes, and the repetition is what does it, because that conduct is not a
+  resident-on-resident abuse prong but repeated unwelcome actions of a derogatory or offensive
+  sexual nature are sexual harassment under 115.6. Live alongside it: PC 314, which is
+  age-neutral; OO 1390/1391 II.B.4, which still does not define sexual misconduct; and open
+  question 14.
+- **One claim walked back.** Tier 2 asserted that a sexual harassment incident enters the PREA
+  data set. 115.387 is written around sexual abuse and could not be read from here, so the guide
+  now says log it, treat inclusion as the safe default, and confirm the scope. Open question 13.
+
+**The state-side point raised and deliberately not resolved.** Title 15's definition reaches
+voyeurism between residents, but voyeurism describes the watcher, not the person exposing
+himself. Whether it reaches exhibitionist conduct between residents is not answered on the face
+of the text. Recorded as a County Counsel question rather than scored.
+
+**Still open.** Twelve units in use describes one facility's size; it does not answer how many
+juvenile facilities the department operates, which is what 115.311(c) turns on. Open question 1
+stands.

@@ -266,6 +266,23 @@ if (data.staff) {
     }),
   ));
 }
+if (data.mixedage) {
+  push(
+    new Paragraph({ children: [new PageBreak()] }),
+    h1(data.mixedage.head),
+    block(ABUSE_FILL, [new Paragraph({
+      children: [txt(data.mixedage.body)],
+      spacing: { before: 60, after: 60, line: 264 },
+    })]),
+  );
+  data.mixedage.items.forEach((it) => push(
+    new Paragraph({ text: it.head, heading: HeadingLevel.HEADING_2 }),
+    new Paragraph({
+      children: it.body.split(/\*\*(.+?)\*\*/g).map((part, i) => txt(part, { bold: i % 2 === 1 })),
+      spacing: { after: 120, line: 276 },
+    }),
+  ));
+}
 if (data.prea) {
   push(
     h1(data.prea.head),
