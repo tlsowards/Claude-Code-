@@ -484,3 +484,41 @@ PREA Policy I.I.1 (288a to 287) correction and the OO 1352 II.C.3 DJJ deletion, 
 conflict 11, because they sit in the same documents and the same amendment cycle. Change 2
 carries the OO 1360 search cross-reference. Change 5 carries the bad-faith rule for OO 1361.
 These are labelled as conforming changes, not as part of the numbered change.
+
+---
+
+## 14. Typography and document formatting (standing preference)
+
+Tim's stated preference, and it applies to everything produced for this project.
+
+| Element | Size |
+|---|---|
+| Body text and paragraphs | **12pt minimum** |
+| Headings | **14pt minimum** |
+| PowerPoint body wording | **16pt minimum**, larger where it fits |
+
+These are floors, not targets. Heading levels ascend from the floor so hierarchy
+survives: H3 at 14pt, H2 at 15pt, H1 at 17pt, title 24pt, subtitle 16pt.
+
+**Where this is enforced.** `tools/docx_style.js` holds the single type scale that all
+four Word builders import. It converts points to the half-points the `docx` library
+wants, so nobody has to do that arithmetic again, and it **fails the build** if any body
+or heading value is edited below its floor. Do not reintroduce numeric font sizes into
+the builders; add a name to the scale instead.
+
+That file exists because the four builders previously carried their own literals, and
+the result drifted to 10.5pt body text and 9.5pt table cells without anyone deciding to.
+Table cell text counts as body text and sits at 12pt.
+
+**The one deliberate exception.** Running heads and page numbers are set at 9pt. They
+are document furniture rather than paragraphs of the report, and at 12pt they compete
+with the text. That call is a single line in `docx_style.js` if it is ever revisited.
+
+**Consequence worth expecting.** Raising body from 10.5pt and cells from 9.5pt makes
+every document meaningfully longer. The crosswalk in particular is a long document with
+large tables. That is the intended trade: legibility over page count.
+
+**No PowerPoint generator exists yet.** When the Tier 1 and supervisor lesson plans are
+built, the 16pt floor applies, and the scale belongs in a sibling module rather than in
+the deck builder.
+

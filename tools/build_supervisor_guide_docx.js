@@ -11,6 +11,8 @@ const {
   PageBreak, TableOfContents, Header, Footer, PageNumber,
 } = require('docx');
 
+const { TYPE } = require('./docx_style');
+
 const ROOT = path.dirname(__dirname);
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'drafts', 'supervisor-guide.json'), 'utf8'));
 
@@ -54,7 +56,7 @@ function bullet(text, fill) {
 
 function cell(children, { width, fill, bold, size, align, span } = {}) {
   const kids = Array.isArray(children) ? children : [new Paragraph({
-    children: [txt(children, { bold: !!bold, size: size || 19 })],
+    children: [txt(children, { bold: !!bold, size: size || TYPE.CELL })],
     spacing: { before: 40, after: 40, line: 240 },
     alignment: align,
   })];
@@ -92,28 +94,28 @@ const push = (...x) => body.push(...x);
 
 push(
   new Paragraph({
-    children: [txt(data.title, { size: 40, bold: true })],
+    children: [txt(data.title, { size: TYPE.TITLE, bold: true })],
     spacing: { before: 1200, after: 100 }, alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
-    children: [txt(data.subtitle, { size: 26, color: MUTED })],
+    children: [txt(data.subtitle, { size: TYPE.SUBTITLE, color: MUTED })],
     spacing: { after: 420 }, alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
-    children: [txt('Sacramento County Probation Department', { size: 24 })],
+    children: [txt('Sacramento County Probation Department', { size: TYPE.META })],
     spacing: { after: 60 }, alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
-    children: [txt('Youth Detention Facility', { size: 24 })],
+    children: [txt('Youth Detention Facility', { size: TYPE.META })],
     spacing: { after: 400 }, alignment: AlignmentType.CENTER,
   }),
   block(WARN_FILL, [new Paragraph({
-    children: [txt(data.status, { bold: true, size: 22 })],
+    children: [txt(data.status, { bold: true, size: TYPE.SUBTITLE })],
     spacing: { before: 80, after: 80, line: 260 }, alignment: AlignmentType.CENTER,
   })]),
   new Paragraph({ text: '', spacing: { after: 200 } }),
   block(ALT_FILL, [new Paragraph({
-    children: [txt('This is not legal advice. ', { bold: true, size: 20 }), txt(CAVEAT, { size: 20 })],
+    children: [txt('This is not legal advice. ', { bold: true, size: TYPE.NOTE }), txt(CAVEAT, { size: TYPE.NOTE })],
     spacing: { before: 60, after: 60, line: 260 },
   })]),
   new Paragraph({ children: [new PageBreak()] }),
@@ -175,11 +177,11 @@ push(
           cell(String(t.n), { width: G[0], fill }),
           cell(t.conduct.split('.')[0], { width: G[1], fill }),
           cell([new Paragraph({
-            children: [txt(t.prea_flag, { bold: isAbuse(t), size: 19 })],
+            children: [txt(t.prea_flag, { bold: isAbuse(t), size: TYPE.CELL })],
             spacing: { before: 40, after: 40, line: 240 },
           })], { width: G[2], fill }),
           cell([new Paragraph({
-            children: [txt(t.cps_flag, { bold: /YES|ESCALATE/.test(t.cps_flag), size: 19 })],
+            children: [txt(t.cps_flag, { bold: /YES|ESCALATE/.test(t.cps_flag), size: TYPE.CELL })],
             spacing: { before: 40, after: 40, line: 240 },
           })], { width: G[3], fill }),
         ],
@@ -200,7 +202,7 @@ data.tiers.forEach((t, idx) => {
         children: [
           cell('PREA', { width: 2200, fill: isAbuse(t) ? ABUSE_FILL : ALT_FILL, bold: true }),
           cell([new Paragraph({
-            children: [txt(t.prea_flag + '. ', { bold: true, size: 19 }), txt(t.prea, { size: 19 })],
+            children: [txt(t.prea_flag + '. ', { bold: true, size: TYPE.CELL }), txt(t.prea, { size: TYPE.CELL })],
             spacing: { before: 40, after: 40, line: 250 },
           })], { width: 7880, fill: isAbuse(t) ? ABUSE_FILL : undefined }),
         ],
@@ -209,7 +211,7 @@ data.tiers.forEach((t, idx) => {
         children: [
           cell('CPS report', { width: 2200, fill: ALT_FILL, bold: true }),
           cell([new Paragraph({
-            children: [txt(t.cps_flag + '. ', { bold: true, size: 19 }), txt(t.cps, { size: 19 })],
+            children: [txt(t.cps_flag + '. ', { bold: true, size: TYPE.CELL }), txt(t.cps, { size: TYPE.CELL })],
             spacing: { before: 40, after: 40, line: 250 },
           })], { width: 7880 }),
         ],
@@ -253,13 +255,13 @@ const doc = new Document({
   features: { updateFields: true },
   styles: {
     default: {
-      document: { run: { font: 'Calibri', size: 21, color: INK }, paragraph: { spacing: { line: 276 } } },
+      document: { run: { font: 'Calibri', size: TYPE.BODY, color: INK }, paragraph: { spacing: { line: 276 } } },
       heading1: {
-        run: { font: 'Calibri', size: 32, bold: true, color: INK },
+        run: { font: 'Calibri', size: TYPE.H1, bold: true, color: INK },
         paragraph: { spacing: { before: 360, after: 200 } },
       },
       heading2: {
-        run: { font: 'Calibri', size: 25, bold: true, color: INK },
+        run: { font: 'Calibri', size: TYPE.H2, bold: true, color: INK },
         paragraph: { spacing: { before: 300, after: 140 } },
       },
     },
@@ -275,7 +277,7 @@ const doc = new Document({
       default: new Header({
         children: [new Paragraph({
           children: [txt('Supervisor decision guide. YDF. DRAFT, not for issuance. Not legal advice.',
-            { size: 16, color: MUTED })],
+            { size: TYPE.RUNNING, color: MUTED })],
           alignment: AlignmentType.RIGHT, spacing: { after: 120 },
         })],
       }),
@@ -283,7 +285,7 @@ const doc = new Document({
     footers: {
       default: new Footer({
         children: [new Paragraph({
-          children: [new TextRun({ children: [PageNumber.CURRENT], size: 16, color: MUTED })],
+          children: [new TextRun({ children: [PageNumber.CURRENT], size: TYPE.RUNNING, color: MUTED })],
           alignment: AlignmentType.CENTER,
         })],
       }),

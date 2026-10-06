@@ -10,6 +10,8 @@ const {
   PageBreak, TableOfContents, Header, Footer, PageNumber,
 } = require('docx');
 
+const { TYPE } = require('./docx_style');
+
 const ROOT = path.dirname(__dirname);
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'drafts', 'redlines.json'), 'utf8'));
 
@@ -51,7 +53,7 @@ function bullet(text, opts = {}) {
 function cell(children, { width, fill, bold, size, align, span } = {}) {
   const kids = Array.isArray(children) ? children : [
     new Paragraph({
-      children: [txt(children, { bold: !!bold, size: size || 19 })],
+      children: [txt(children, { bold: !!bold, size: size || TYPE.CELL })],
       spacing: { before: 40, after: 40, line: 240 },
       alignment: align,
     }),
@@ -97,33 +99,33 @@ const push = (...x) => body.push(...x);
 
 push(
   new Paragraph({
-    children: [txt('Redlines', { size: 44, bold: true })],
+    children: [txt('Redlines', { size: TYPE.TITLE, bold: true })],
     spacing: { before: 1400, after: 100 },
     alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
-    children: [txt(data.set, { size: 28, color: MUTED })],
+    children: [txt(data.set, { size: TYPE.SUBTITLE, color: MUTED })],
     spacing: { after: 500 },
     alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
-    children: [txt('Sacramento County Probation Department', { size: 24 })],
+    children: [txt('Sacramento County Probation Department', { size: TYPE.META })],
     spacing: { after: 60 }, alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
-    children: [txt('Youth Detention Facility', { size: 24 })],
+    children: [txt('Youth Detention Facility', { size: TYPE.META })],
     spacing: { after: 400 }, alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
     children: [txt(`${data.subtitle}. Drawn from gap register Revision `
-      + `${data.register_revision}.`, { size: 22, color: MUTED })],
+      + `${data.register_revision}.`, { size: TYPE.META, color: MUTED })],
     spacing: { after: 900 }, alignment: AlignmentType.CENTER,
   }),
   block(ALT_FILL, [
     new Paragraph({
       children: [
-        txt('This is not legal advice. ', { bold: true, size: 20 }),
-        txt(CAVEAT, { size: 20 }),
+        txt('This is not legal advice. ', { bold: true, size: TYPE.NOTE }),
+        txt(CAVEAT, { size: TYPE.NOTE }),
       ],
       spacing: { before: 60, after: 60, line: 260 },
     }),
@@ -202,7 +204,7 @@ data.items.forEach((it, idx) => {
     children: [
       cell(label, { width: 2000, fill: ALT_FILL, bold: true }),
       cell(lines.map((line, i) => new Paragraph({
-        children: [txt(line, { size: 19 })],
+        children: [txt(line, { size: TYPE.CELL })],
         spacing: { before: i ? 20 : 40, after: 40, line: 240 },
       })), { width: 8080 }),
     ],
@@ -225,7 +227,7 @@ data.items.forEach((it, idx) => {
       // status is stored ready to print, so this view and the Markdown view
       // cannot drift. Do not re-case it here.
       p('', {
-        runs: [txt(s.status, { italics: true, size: 18, color: MUTED })],
+        runs: [txt(s.status, { italics: true, size: TYPE.NOTE, color: MUTED })],
         spacing: { before: 60, after: 200 },
       }),
     );
@@ -276,13 +278,13 @@ const doc = new Document({
   },
   styles: {
     default: {
-      document: { run: { font: 'Calibri', size: 21, color: INK }, paragraph: { spacing: { line: 276 } } },
+      document: { run: { font: 'Calibri', size: TYPE.BODY, color: INK }, paragraph: { spacing: { line: 276 } } },
       heading1: {
-        run: { font: 'Calibri', size: 32, bold: true, color: INK },
+        run: { font: 'Calibri', size: TYPE.H1, bold: true, color: INK },
         paragraph: { spacing: { before: 360, after: 200 } },
       },
       heading2: {
-        run: { font: 'Calibri', size: 25, bold: true, color: INK },
+        run: { font: 'Calibri', size: TYPE.H2, bold: true, color: INK },
         paragraph: { spacing: { before: 300, after: 140 } },
       },
     },
@@ -298,7 +300,7 @@ const doc = new Document({
       default: new Header({
         children: [new Paragraph({
           children: [txt('Redlines, ' + data.set + '. YDF, register Revision '
-            + data.register_revision + '. Not legal advice.', { size: 16, color: MUTED })],
+            + data.register_revision + '. Not legal advice.', { size: TYPE.RUNNING, color: MUTED })],
           alignment: AlignmentType.RIGHT,
           spacing: { after: 120 },
         })],
@@ -307,7 +309,7 @@ const doc = new Document({
     footers: {
       default: new Footer({
         children: [new Paragraph({
-          children: [new TextRun({ children: [PageNumber.CURRENT], size: 16, color: MUTED })],
+          children: [new TextRun({ children: [PageNumber.CURRENT], size: TYPE.RUNNING, color: MUTED })],
           alignment: AlignmentType.CENTER,
         })],
       }),

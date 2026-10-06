@@ -61,6 +61,11 @@ amendment language for recommended changes 1 to 7; the Markdown and the Word fil
 regenerated from it, not hand edited. `tools/build_redlines.py` aborts rather than writing
 if it finds an em dash or an out-of-order item number.
 
+All four Word builders share one type scale, `tools/docx_style.js`: body and table text
+at 12pt, headings from 14pt up, per the standing preference in `CLAUDE.md` section 14.
+It fails the build if an edit drops below those floors, so font sizes live there rather
+than as literals in the builders.
+
 The contents page is a Word field, so page numbers are computed by Word rather
 than written into the file. The document asks Word to refresh its fields on open.
 If the contents page still looks empty or stale, click in it and press F9.

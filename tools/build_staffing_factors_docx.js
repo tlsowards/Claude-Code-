@@ -10,6 +10,8 @@ const {
   Table, TableRow, TableCell, WidthType, ShadingType, BorderStyle,
 } = require('docx');
 
+const { TYPE } = require('./docx_style');
+
 const ROOT = path.dirname(__dirname);
 const CONTENT_W = 10080;
 const INK = '1A1A1A', MUTED = '5A5A5A', RULE = 'BFBFBF';
@@ -57,7 +59,7 @@ const txt = (t, o = {}) => new TextRun({ text: String(t), color: INK, ...o });
 
 function cell(children, { width, fill, bold, size, align, span } = {}) {
   const kids = Array.isArray(children) ? children : [new Paragraph({
-    children: [txt(children, { bold: !!bold, size: size || 19 })],
+    children: [txt(children, { bold: !!bold, size: size || TYPE.CELL })],
     spacing: { before: 40, after: 40, line: 240 },
     alignment: align,
   })];
@@ -84,12 +86,12 @@ const W = [620, 4400, 5060];
 
 const body = [
   new Paragraph({
-    children: [txt('The eleven staffing plan factors', { size: 32, bold: true })],
+    children: [txt('The eleven staffing plan factors', { size: TYPE.H1, bold: true })],
     spacing: { after: 80 },
   }),
   new Paragraph({
     children: [txt('28 CFR 115.313(a). Sacramento County Probation Department, Youth Detention '
-      + 'Facility. Register row 5, recommended change 9.', { size: 20, color: MUTED })],
+      + 'Facility. Register row 5, recommended change 9.', { size: TYPE.NOTE, color: MUTED })],
     spacing: { after: 260 },
   }),
   new Paragraph({
@@ -129,22 +131,22 @@ const body = [
     children: [cell([
       new Paragraph({
         children: [
-          txt('Verification. ', { bold: true, size: 20 }),
+          txt('Verification. ', { bold: true, size: TYPE.NOTE }),
           txt('The eleven factors are corroborated from two independent searches, including '
             + 'exact-phrase matches against the Cornell, eCFR, and PREA Resource Center listings '
             + 'of the standard. They have not been read from the Code of Federal Regulations '
             + 'itself, because network access to eCFR, Cornell, govinfo, and the PREA Resource '
             + 'Center was unavailable when this was prepared. Confirm the wording and numbering '
             + 'against 28 CFR 115.313(a) before this is adopted into a staffing plan.',
-            { size: 20 }),
+            { size: TYPE.NOTE }),
         ],
         spacing: { before: 60, after: 100, line: 260 },
       }),
       new Paragraph({
         children: [
-          txt('Not legal advice. ', { bold: true, size: 20 }),
+          txt('Not legal advice. ', { bold: true, size: TYPE.NOTE }),
           txt('Prepared for internal remediation planning. Statutory questions route to County '
-            + 'Counsel.', { size: 20 }),
+            + 'Counsel.', { size: TYPE.NOTE }),
         ],
         spacing: { after: 60, line: 260 },
       }),
@@ -155,7 +157,7 @@ const body = [
 const doc = new Document({
   styles: {
     default: {
-      document: { run: { font: 'Calibri', size: 21, color: INK }, paragraph: { spacing: { line: 276 } } },
+      document: { run: { font: 'Calibri', size: TYPE.BODY, color: INK }, paragraph: { spacing: { line: 276 } } },
     },
   },
   sections: [{

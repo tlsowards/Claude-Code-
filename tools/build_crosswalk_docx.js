@@ -9,6 +9,8 @@ const {
   PageBreak, TableOfContents, Header, Footer, PageNumber,
 } = require('docx');
 
+const { TYPE } = require('./docx_style');
+
 const ROOT = path.dirname(__dirname);
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'tools', 'crosswalk.json'), 'utf8'));
 
@@ -67,7 +69,7 @@ function labelled(label, body, opts = {}) {
 function cell(children, { width, fill, bold, size, align, span } = {}) {
   const kids = Array.isArray(children) ? children : [
     new Paragraph({
-      children: [txt(children, { bold: !!bold, size: size || 19 })],
+      children: [txt(children, { bold: !!bold, size: size || TYPE.CELL })],
       spacing: { before: 40, after: 40, line: 240 },
       alignment: align,
     }),
@@ -104,27 +106,27 @@ const push = (...x) => body.push(...x);
 
 push(
   new Paragraph({
-    children: [txt('PREA versus Policy', { size: 44, bold: true })],
+    children: [txt('PREA versus Policy', { size: TYPE.TITLE, bold: true })],
     spacing: { before: 1400, after: 100 },
     alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
-    children: [txt('A standard-by-standard crosswalk', { size: 28, color: MUTED })],
+    children: [txt('A standard-by-standard crosswalk', { size: TYPE.SUBTITLE, color: MUTED })],
     spacing: { after: 500 },
     alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
-    children: [txt('Sacramento County Probation Department', { size: 24 })],
+    children: [txt('Sacramento County Probation Department', { size: TYPE.META })],
     spacing: { after: 60 }, alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
-    children: [txt('Youth Detention Facility', { size: 24 })],
+    children: [txt('Youth Detention Facility', { size: TYPE.META })],
     spacing: { after: 400 }, alignment: AlignmentType.CENTER,
   }),
   new Paragraph({
     children: [txt(
       `Gap register Revision ${data.revision}. ${data.total} requirements assessed against ${data.doc_count} departmental policies.`,
-      { size: 22, color: MUTED })],
+      { size: TYPE.META, color: MUTED })],
     spacing: { after: 900 }, alignment: AlignmentType.CENTER,
   }),
   table([CONTENT_W], [
@@ -132,12 +134,12 @@ push(
       children: [cell([
         new Paragraph({
           children: [
-            txt('This is not legal advice. ', { bold: true, size: 20 }),
+            txt('This is not legal advice. ', { bold: true, size: TYPE.NOTE }),
             txt('It is a policy-to-standard comparison prepared for internal remediation '
               + 'planning. Findings state what the documents reviewed contain. Where a '
               + 'requirement is recorded as not addressed, that means no provision appeared '
               + `in the ${data.doc_count} documents reviewed, not that the practice does not occur. `
-              + 'Statutory questions route to County Counsel.', { size: 20 }),
+              + 'Statutory questions route to County Counsel.', { size: TYPE.NOTE }),
           ],
           spacing: { before: 60, after: 60, line: 260 },
         }),
@@ -246,7 +248,7 @@ push(table(matrixWidths, [
       cell('Area', { width: 3000, fill: HEAD_FILL, bold: true }),
       cell('All', { width: 900, fill: HEAD_FILL, bold: true, align: AlignmentType.RIGHT }),
       ...STATUS_ORDER.map((s) => cell(s, {
-        width: 1236, fill: HEAD_FILL, bold: true, size: 16, align: AlignmentType.RIGHT,
+        width: 1236, fill: HEAD_FILL, bold: true, size: TYPE.CELL, align: AlignmentType.RIGHT,
       })),
     ],
   }),
@@ -284,7 +286,7 @@ data.conflicts.forEach((c) => {
     keepNext: true,
   }));
   push(new Paragraph({
-    children: [txt(`Register row ${c.rows.join(', ')}`, { italics: true, color: MUTED, size: 19 })],
+    children: [txt(`Register row ${c.rows.join(', ')}`, { italics: true, color: MUTED, size: TYPE.NOTE })],
     spacing: { after: 120 },
     keepNext: true,
   }));
@@ -346,7 +348,7 @@ data.sections.forEach((sec) => {
     push(labelled('Divergence.', r.gap));
     if (r.change_log) {
       push(new Paragraph({
-        children: [txt(`Change log: ${r.change_log}`, { italics: true, color: MUTED, size: 19 })],
+        children: [txt(`Change log: ${r.change_log}`, { italics: true, color: MUTED, size: TYPE.NOTE })],
         spacing: { after: 240, line: 260 },
       }));
     } else {
@@ -370,7 +372,7 @@ data.doc_view.forEach((d) => {
   push(new Paragraph({ text: d.name, heading: HeadingLevel.HEADING_2, keepNext: true }));
   push(new Paragraph({
     children: [txt(`${d.dates}. Cited by ${d.total} requirement${d.total === 1 ? '' : 's'}.`,
-      { italics: true, color: MUTED, size: 19 })],
+      { italics: true, color: MUTED, size: TYPE.NOTE })],
     spacing: { after: 120 },
     keepNext: true,
   }));
@@ -382,7 +384,7 @@ data.doc_view.forEach((d) => {
     new TableRow({
       tableHeader: true,
       children: STATUS_ORDER.map((s) => cell(s, {
-        width: 2016, fill: HEAD_FILL, bold: true, size: 16, align: AlignmentType.CENTER,
+        width: 2016, fill: HEAD_FILL, bold: true, size: TYPE.CELL, align: AlignmentType.CENTER,
       })),
     }),
     new TableRow({
@@ -404,7 +406,7 @@ data.doc_view.forEach((d) => {
       d.not_addressed.map((r) => `row ${r.id} (${r.authority})`).join('; ') + '.'));
   }
   push(new Paragraph({
-    children: [txt(`All rows: ${d.rows.map((r) => r.id).join(', ')}.`, { color: MUTED, size: 19 })],
+    children: [txt(`All rows: ${d.rows.map((r) => r.id).join(', ')}.`, { color: MUTED, size: TYPE.NOTE })],
     spacing: { after: 260, line: 260 },
   }));
 });
@@ -469,17 +471,17 @@ const doc = new Document({
   description: `Gap register Revision ${data.revision}`,
   styles: {
     default: {
-      document: { run: { font: 'Calibri', size: 21, color: INK }, paragraph: { spacing: { line: 276 } } },
+      document: { run: { font: 'Calibri', size: TYPE.BODY, color: INK }, paragraph: { spacing: { line: 276 } } },
       heading1: {
-        run: { font: 'Calibri', size: 32, bold: true, color: INK },
+        run: { font: 'Calibri', size: TYPE.H1, bold: true, color: INK },
         paragraph: { spacing: { before: 360, after: 200 } },
       },
       heading2: {
-        run: { font: 'Calibri', size: 25, bold: true, color: INK },
+        run: { font: 'Calibri', size: TYPE.H2, bold: true, color: INK },
         paragraph: { spacing: { before: 300, after: 140 } },
       },
       heading3: {
-        run: { font: 'Calibri', size: 22, bold: true, color: '333333' },
+        run: { font: 'Calibri', size: TYPE.H3, bold: true, color: '333333' },
         paragraph: { spacing: { before: 260, after: 100 } },
       },
     },
@@ -495,7 +497,7 @@ const doc = new Document({
       default: new Header({
         children: [new Paragraph({
           children: [txt('PREA versus Policy crosswalk. YDF, register Revision '
-            + data.revision + '. Not legal advice.', { size: 16, color: MUTED })],
+            + data.revision + '. Not legal advice.', { size: TYPE.RUNNING, color: MUTED })],
           alignment: AlignmentType.RIGHT,
           spacing: { after: 120 },
         })],
@@ -504,7 +506,7 @@ const doc = new Document({
     footers: {
       default: new Footer({
         children: [new Paragraph({
-          children: [new TextRun({ children: [PageNumber.CURRENT], size: 16, color: MUTED })],
+          children: [new TextRun({ children: [PageNumber.CURRENT], size: TYPE.RUNNING, color: MUTED })],
           alignment: AlignmentType.CENTER,
         })],
       }),
