@@ -2,7 +2,7 @@
 
 Amendment language for the seven changes correctable without new policy
 
-Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 8.
+Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 9.
 
 > This is not legal advice. It is proposed amendment language prepared for internal remediation planning. Statutory questions, and every item in a *Before adoption* block, route to County Counsel.
 
@@ -62,15 +62,15 @@ OO 1352 II.M creates classification S-8 for any LGBTQI youth, and III.I requires
 
 **OO 1352 II.M**
 
-> ~~S-8. Classification assigned to any youth who is lesbian, gay, bisexual, transgender, questioning, or intersex.~~
+> ~~Any Lesbian, Gay, Bisexual, Transgender, Questioning and Intersex (LGBTQI) youth to further protect against victimization/discrimination within the unit setting. a. See the Transgender and Intersex Youth Policy for housing guidelines.~~
 
-*Described in the register, not read in this review.*
+*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. This is the order’s actual text.*
 
 **OO 1352 III.I**
 
-> ~~Youth classified S-8 shall be housed in a single room at all times.~~
+> ~~Any youth classified S-8 will require a single room (no roommate) housing at all times.~~
 
-*Described in the register, not read in this review.*
+*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. This is the order’s actual text.*
 
 **OO 1352 III.E**
 
@@ -106,9 +106,10 @@ This is the strongest municipal liability exhibit in the packet and the clearest
 
 ### Before adoption
 
-- OO 1352 has never been produced to this review. The section numbers II.M, III.E, and III.I come from the register, which traces to the earlier review that read the order. Pull the PDF and confirm the numbering and the actual wording before this goes to the policy shop.
-- The struck text above is a reconstruction of what the register describes, not a quotation. Replace it with the order's real words before circulating the redline.
-- The 15 CCR 1352(e) language quoted in the insert is now verified against both editions and is word for word identical in each, so it did not move. Its neighbours did: the non-discrimination provision went from 1324(h) to 1324(k), which is corrected above. 1352(f) is new in the 2019 edition and is added to the authority line.
+- VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. The section numbers II.M and III.I and the struck text above are the order’s own words, read from the produced PDF, not a reconstruction. This redline may now circulate as a true redline.
+- The order’s Purpose and Scope paragraph already states the correct rule almost verbatim from 15 CCR 1352(e), including the carve-out for a single occupancy room "at the youth’s specific request or in accordance with regulations regarding separation." The amendment below conforms II.M and III.I to the order’s own Purpose paragraph. Say that to the policy shop: it is a consistency fix, not a new policy.
+- II.M.1.a already defers housing to the Transgender and Intersex Youth Policy. III.I.1 then forecloses it. Deleting III.I.1 restores the deferral the order already contains.
+- III.E.1.a imposes the identical mandate on S-4 High and is the only other provision in the order that does. Do not amend III.E.1.a here. It is a different question and it is not defective in the same way, but note that III.D.8, the deviation rule, is attached to the S-3 matrix and reaches neither mandate, so neither currently has a written override path.
 
 ---
 
@@ -333,26 +334,32 @@ PREA Policy XIV.A permits discipline where an investigation determines allegatio
 |---|---|
 | **Priority** | High |
 | **Document** | OO 1352 Classification, II.F.2 and its note, II.G, II.H, III.E |
-| **Authority** | 28 CFR 115.341(c)<br>28 CFR 115.342<br>15 CCR 1350.5(a), cited but not confirmed: absent from the produced edition<br>Penal Code 287, renumbered from 288a by SB 1494 effective 01/01/2019 |
+| **Authority** | 28 CFR 115.341(c)<br>28 CFR 115.342<br>15 CCR 1350.5(a), confirmed against the edition effective 01/01/2019 in Revision 6<br>Penal Code 287, renumbered from 288a by SB 1494 effective 01/01/2019 |
 | **Register rows** | 80, 78, 32 |
 
 ### The defect
 
-Two problems in the S-4 classification. First, the note at II.F.2 states that a youth with a history of being a victim of molest, arson, or cruelty to animals should alert the Classification Officer for possible sexually inappropriate tendencies. That instructs staff to treat a youth's own sexual victimization as a predictor of sexual abusiveness. The Macdonald triad on which the molest, arson, and animal cruelty grouping rests has not held up, and the inference runs against 115.341(c), which lists prior victimization and prior abusiveness as separate factors serving different purposes. Second, S-4 as a code mixes populations: S-4 High captures youth with sex offense adjudications, while S-4 Low captures both youth who act out sexually and youth who have been victims of sexual abuse or are susceptible to victimization. The housing matrix at III.E keeps those populations apart in practice, so the operational outcome is sound. The defect is in the classification logic and its documentation, and it will not survive an auditor tracing how victimization risk and abusiveness risk are separately assessed and separately acted on.
+Two problems in the S-4 classification. First, the note at II.F.2 states that a youth with a history of being a victim of molest, arson, or cruelty to animals should alert the Classification Officer for possible sexually inappropriate tendencies. That instructs staff to treat a youth's own sexual victimization as a predictor of sexual abusiveness. The Macdonald triad on which the molest, arson, and animal cruelty grouping rests has not held up, and the inference runs against 115.341(c), which lists prior victimization and prior abusiveness as separate factors serving different purposes. The same inference also appears as a lettered criterion at II.F.2.d, "History of victimization related to sexual abuse or a sexual offense," so striking the note alone leaves the defect in force. The order then contradicts itself on the same fact: II.H.3 makes being the victim of a CPS referral relative to sexual abuse a criterion for S-4 Low, which the III.E.2 housing matrix treats protectively. Second, S-4 as a code mixes populations: S-4 High captures youth with sex offense adjudications, while S-4 Low captures both youth who act out sexually and youth who have been victims of sexual abuse or are susceptible to victimization. The housing matrix at III.E keeps those populations apart in practice, so the operational outcome is sound. The defect is in the classification logic and its documentation, and it will not survive an auditor tracing how victimization risk and abusiveness risk are separately assessed and separately acted on.
 
 ### Strike
 
 **OO 1352 II.F.2, the note**
 
-> ~~A history of being a victim of molest, arson, or cruelty to animals should alert the Classification Officer for possible sexually inappropriate tendencies.~~
+> ~~Youth with a history of victim of molest, arson, or cruelty to animals should alert the Classification Officer for possible sexually inappropriate tendencies.~~
 
-*Quoted in register row 80 from the earlier review, which read the order.*
+*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. This is the order’s actual text, bolded in the original.*
+
+**OO 1352 II.F.2.d**
+
+> ~~d. History of victimization related to sexual abuse or a sexual offense;~~
+
+*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. MISSED BY THIS REDLINE AS FIRST DRAFTED, added in Revision 9.*
 
 **OO 1352 II.H**
 
-> ~~The portion of the S-4 Low criteria that groups youth who act out sexually together with youth who have been victims of sexual abuse or are susceptible to victimization.~~
+> ~~II.H.2, "Sexually inappropriate acting out in front of other youth or staff (i.e., masturbation in front of others, exposing genitals, or continued sexual comments for the purpose of arousal)," which places perpetrator conduct in the same S-4 Low tier as II.H.3 and II.H.4, both of which are victimization criteria.~~
 
-*Described in the register, not read in this review.*
+*VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020.*
 
 ### Insert
 
@@ -385,9 +392,9 @@ Two problems in the S-4 classification. First, the note at II.F.2 states that a 
 ### Conforming changes
 
 - Rebuild the III.E housing matrix on the S-4A and S-4B codes. The matrix already keeps these populations apart, so this is a relabeling of a working rule, not a change to it.
-- Add Penal Code 287 to the S-4 High enumerated offenses. The current list carries sodomy under 286, lewd or lascivious acts under 288, and rape under 261, and omits 287 entirely, so a youth with a documented 287 adjudication does not meet the enumerated criteria on the face of the order. The insert at II.G.1 above already includes it, and the catch-all for successor statutes prevents the next renumbering from reopening the same gap.
+- Add Penal Code 287 AND 289 to the S-4 High enumerated offences. VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. The complete enumeration is II.G.1 ("a. Sodomy (286 PC); b. Lewd or lascivious acts with child under 14 (288 PC, all sub-divisions)") plus II.G.3 (rape, 261 PC, all sub-divisions). PC 287 is omitted as recorded, and so is PC 289, sexual penetration, which was never flagged and is comparably serious. Also absent: 243.4, 264.1, 285 and 647.6. The insert at II.G.1 above already carries all of them, and the successor-statute catch-all prevents the next renumbering from reopening the same gap.
 - Correct PREA Policy I.I.1, which cites Penal Code section 288a (Oral Copulation). 288a was renumbered to 287 by SB 1494 effective January 1, 2019. Same amendment cycle, different document.
-- Delete the reference in OO 1352 II.C.3 to a pending commitment to the Division of Juvenile Justice. DJJ closed June 30, 2023 under SB 823.
+- Delete the reference in OO 1352 II.C.3 to a pending commitment to the Division of Juvenile Justice. DJJ closed June 30, 2023 under SB 823. VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. IV.A carries a second DJJ reference, as the worked example of a legal status change requiring classification review. Delete both.
 - Update the JPIP code table, the classification worksheet, and classification officer training to the split codes, and map existing S-4 assignments onto S-4A, S-4B, or both.
 
 ### Why
@@ -396,10 +403,9 @@ Two problems in the S-4 classification. First, the note at II.F.2 states that a 
 
 ### Before adoption
 
-- OO 1352 has never been produced to this review. Confirm II.F.2, II.G, II.H, and III.E against the PDF, including whether the S-4 High and S-4 Low labels are as the register describes them.
-- The struck note is quoted from register row 80, which traces to the earlier review that read the order. Everything else struck here is described rather than quoted.
-- The 15 CCR 1350.5(a) citation is carried forward unconfirmed. That section does not exist in the produced 04/01/2014 edition of Title 15.
-- Penal Code 288.5 and 289.6 are included in the II.G.1 list on the drafter's judgment, not from the current order. Confirm the department wants that scope before adoption.
+- VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. II.F.2, II.G, II.H and III.E are confirmed as cited and the struck text is the order’s own words. This redline may now circulate as a true redline.
+- The S-4 High and S-4 Low split the register describes is confirmed and is sounder than its label suggests, so the insert below is a relabeling and separation of an existing structure rather than the invention of a new one. Say that to the policy shop.
+- OO 1352 never references OO 1350.5 anywhere in its twelve pages. The insert at II.H.1 creates that cross-reference for the first time. Confirm OO 1350.5’s section numbering before adopting it.
 
 ---
 

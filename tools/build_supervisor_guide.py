@@ -141,6 +141,21 @@ def main():
             add(it['body'])
             add('')
 
+    if data.get('ages'):
+        add('---')
+        add('')
+        add('## %s' % data['ages']['head'])
+        add('')
+        add(data['ages']['body'])
+        add('')
+        add('| %s |' % ' | '.join(data['ages']['columns']))
+        add('|%s' % ('---|' * len(data['ages']['columns'])))
+        for row in data['ages']['rows']:
+            add('| %s |' % ' | '.join(c.replace('\n', ' ') for c in row))
+        add('')
+        add(data['ages']['note'])
+        add('')
+
     if data.get('mixedage'):
         add('---')
         add('')

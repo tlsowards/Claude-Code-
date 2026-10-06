@@ -266,6 +266,33 @@ if (data.staff) {
     }),
   ));
 }
+if (data.ages) {
+  // Four rows, and the two middle ones differ only in which resident is the minor.
+  // That distinction decides tier 4, so it gets its own row rather than a footnote.
+  const A = [2600, 3400, 2600, 3400];
+  push(
+    new Paragraph({ children: [new PageBreak()] }),
+    h1(data.ages.head),
+    p(data.ages.body),
+    table(A, [
+      new TableRow({
+        tableHeader: true,
+        children: data.ages.columns.map((c, i) => cell(c, { width: A[i], fill: HEAD_FILL, bold: true })),
+      }),
+      ...data.ages.rows.map((row) => new TableRow({
+        children: row.map((c, i) => cell([new Paragraph({
+          children: c.split(/\*\*(.+?)\*\*/g).map((part, j) => txt(part, { bold: j % 2 === 1, size: TYPE.CELL })),
+          spacing: { before: 40, after: 40, line: 240 },
+        })], { width: A[i] })),
+      })),
+    ]),
+    new Paragraph({ text: '', spacing: { after: 120 } }),
+    block(WARN_FILL, [new Paragraph({
+      children: data.ages.note.split(/\*\*(.+?)\*\*/g).map((part, i) => txt(part, { bold: i % 2 === 1 })),
+      spacing: { before: 60, after: 60, line: 264 },
+    })]),
+  );
+}
 if (data.mixedage) {
   push(
     new Paragraph({ children: [new PageBreak()] }),

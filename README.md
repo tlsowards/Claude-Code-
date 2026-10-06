@@ -11,7 +11,7 @@ overwrite `CLAUDE.md` with a generated one.
 
 ```
 CLAUDE.md            project memory: working rules, findings, verified authorities
-prea-register.csv    the working record. 87 requirements, register Revision 8
+prea-register.csv    the working record. 90 requirements, register Revision 9
 docs/                the 17 source policy documents (not in the repository)
 deliverables/        finished work product
 drafts/              redlines and new policy drafts, generated from redlines.json
@@ -77,7 +77,7 @@ If the contents page still looks empty or stale, click in it and press F9.
 
 `npm run crosswalk` also checks the Layout block above against the register and the
 builder's `REVISION`, and **fails the build** if the row count or the revision number
-there has gone stale. That line sat at "87 requirements, register Revision 8" through
+there has gone stale. That line sat at "90 requirements, register Revision 9" through
 three revisions and four review rounds before anyone noticed, because no generator
 touches this file. Now one does.
 

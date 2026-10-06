@@ -36,26 +36,31 @@ hedging, and he will catch a wrong citation.
 
 ## 3. Project state
 
-Register is at **Revision 8**. 87 requirements assessed against 17 departmental policies.
+Register is at **Revision 9**. 90 requirements assessed against 17 departmental policies.
 
 Revision 6 verified against the Title 15 edition **effective 01/01/2019** and corrected three
 citations. Revision 7 closed the gap it left, re-reading the six sections still carrying their
 04/01/2014 provenance. **Every Title 15 citation in this register is verified against the current
 edition.**
 
-**Revision 8 is the first pass driven by facility facts rather than documents**, and the first
-since Revision 4 to change the counts. See section 15 for the facts and what they produced:
-four new rows (84 to 87) and one priority raised (row 77, Medium to High).
+**Revision 8 is the first pass driven by facility facts rather than documents.** See section 15
+for the facts and what they produced: four new rows (84 to 87) and one priority raised.
+
+**Revision 9 is the largest single pass since Revision 4**, and it rests on three things that
+arrived on one day: **OO 1352 Classification, produced and read in full for the first time**; the
+department's answer that residents aged 18 to 25 are **not treated as dependent adults**; and
+**WIC 875**, which corrects a Revision 8 finding. Twelve rows revised, three added (88 to 90), one
+status raised (row 84, Not Addressed to Partial). See section 16.
 
 | Status | Count |
 |---|---|
 | Addressed | 14 |
-| Partial | 40 |
-| Not Addressed | 20 |
+| Partial | 41 |
+| Not Addressed | 21 |
 | Conflict (policy states the wrong rule) | 12 |
-| Not Evidenced (document exists, not produced) | 1 |
+| Not Evidenced (document exists, not produced) | 2 |
 
-Priority: 21 critical, 36 high, 16 medium, 14 low.
+Priority: 21 critical, 39 high, 16 medium, 14 low.
 
 Full register with gap text is in `prea-register.csv`. Columns `owner`, `target_date`, and
 `disposition` are empty and intended for the department to fill.
@@ -68,7 +73,7 @@ Full register with gap text is in `prea-register.csv`. Columns `owner`, `target_
 | 2 | OO 1321 Staffing | reviewed 01/16/2020 |
 | 3 | OO 1322 Training and Staff Development | eff 06/15/2015, rev 05/08/2019 |
 | 4 | OO 1350.5 Screening for the Risk of Sexual Abuse | eff 11/10/2019 |
-| 5 | OO 1352 Classification | eff 12/09/2019, rev 02/27/2020 |
+| 5 | OO 1352 Classification | eff 12/09/2019, rev 02/27/2020. **Produced and read in full in Revision 9** |
 | 6 | OO 1352.5 Transgender and Intersex Youth | eff 03/01/2019 |
 | 7 | OO 1360 Searches | eff 12/01/2019, rev 03/04/2020 |
 | 8 | OO 1361 Grievances | eff 01/01/2011, rev 04/03/2019 |
@@ -90,7 +95,9 @@ departmental policy, so they are not numbered above: **Title 15 effective 01/01/
 post-rewrite edition, basis for Revision 6) and **PREA, Public Law 108-79, as enacted**.
 
 Put the source PDFs in `docs/` so you can read them directly. The 1390/1391 PDF is a
-scan with no text layer, so it has to be rasterized and read as images, not extracted.
+scan with no text layer, so it has to be rasterized and read as images, not extracted. **So is
+the OO 1352 PDF**: `pypdf` returns 363 characters across its twelve pages. Install `pymupdf`,
+render each page at 200 dpi, and read the PNGs. That works and is the only thing that does.
 
 **`docs/` is gitignored and does not survive a new container.** Every verified quotation is
 therefore captured into `prea-register.csv` or into this file at the time it is read, so the
@@ -125,8 +132,28 @@ nothing in them created one, though see the near miss recorded at the end of thi
    intersex identification or status as an indicator of likelihood of being sexually abusive."
    If the S-series is a sexual-risk taxonomy, which the S-4 criteria indicate, then placing
    LGBTQI youth in that series at all is what 1352(f) forbids, independent of the housing
-   consequence. **This needs OO 1352 to confirm and is recorded as a hook to test, not a
-   scored finding.**
+   consequence. **That reasoning was tested against OO 1352 in Revision 9 and it FAILS. It is
+   withdrawn.** The S-series is a general security taxonomy, not a sexual-risk one: S-3 is suicide,
+   S-5 mental health, S-6 gang, S-7 medical. And II.M.1 states S-8's purpose as protection "against
+   victimization/discrimination," which is the vulnerability framing 1350.5 requires rather than the
+   abusiveness framing 1352(f) forbids. On its face II.M is consistent with 1352(f).
+   **A stronger replacement, from the order's own text.** III.I.1 ("Any youth classified S-8 will
+   require a single room (no roommate) housing at all times") and III.E.1.a ("Any youth classified
+   S-4 high will require a single room (no roommate) housing at all times") are **word for word
+   identical, and are the only two provisions in the entire order imposing that mandate.** Every
+   other classification is written permissively, with supervisor approval and documentation. S-4 High
+   is the documented-sex-offence category, defined by II.F.1 as turning on "the youth's potential for
+   sexually acting out against other youth and/or staff." **So the order gives LGBTQI youth the
+   identical housing restriction it reserves for adjudicated sex offenders, and gives it to no one
+   else.** That is now a scored element of row 36, not a hook.
+   **Fifth internal contradiction, new in Revision 9.** II.M.1.a says "See the Transgender and
+   Intersex Youth Policy for housing guidelines," deferring housing to OO 1352.5. III.I.1 then
+   forecloses it. The same order defers the decision and decides it.
+   **Also confirmed:** page 12 records that this order "Amends/Replaces Previous Order: Classification
+   System Title XV 1352, 10/01/2013," so S-8 was created in the 2019 rewrite, and the III.D.8
+   deviation rule ("Deviation from the above housing patterns must be approved and documented by a
+   supervisor") is attached to the S-3 matrix and is **not** extended to either "at all times"
+   mandate, so neither has a written override path.
 2. **OO 1352.5 III.I.** All transgender and intersex youth get a single room. Same categorical
    defect, more defensible (privacy rationale, program access preserved at III.K), but
    contradicts III.B, III.F, III.H of the same order.
@@ -138,7 +165,13 @@ nothing in them created one, though see the near miss recorded at the end of thi
    good-faith reports; 115.352(g) requires a bad-faith showing.
 6. **OO 1352 II.F.2 note.** History of being a molest victim treated as an indicator of
    "sexually inappropriate tendencies." Contradicts 115.341(c), which separates victimization
-   risk from abusiveness risk.
+   risk from abusiveness risk. **Confirmed verbatim in Revision 9, and it is worse than recorded:
+   the inference appears twice.** Besides the bolded note, **II.F.2.d** lists "History of
+   victimization related to sexual abuse or a sexual offense" as a lettered S-4 criterion alongside
+   three abusiveness criteria. Striking the note alone leaves the defect in force, and redline 6 as
+   first drafted struck only the note. The order then contradicts itself on the same fact: **II.H.3**
+   makes being "the victim of any CPS referral relative to sexual abuse" a criterion for S-4 **Low**,
+   which the III.E.2 matrix treats protectively. Same fact, opposite uses, one classification.
 7. **Retention conflict.** IA XI.C.1 = 5 years; PREA Policy XVIII.B = 10 years;
    115.371(j) = abuser tenure + 5 years. Against AB 452, which eliminated the limitations
    period for childhood sexual assault occurring on or after 01/01/2024.
@@ -149,8 +182,12 @@ nothing in them created one, though see the near miss recorded at the end of thi
 10. **Policy age.** PREA Policy last revised 2013; IA policy 2011. 15 CCR 1324 requires
     administrative review at least every two years.
 11. **Citations.** PREA Policy I.I.1 cites PC 288a (renumbered to PC 287 by SB 1494 eff
-    01/01/2019). OO 1352 II.G.1 S-4 High criteria omit 287 entirely, so a 287 adjudication does
-    not meet the enumerated criteria. OO 1352 II.C.3 references DJJ, which closed 06/30/2023.
+    01/01/2019). OO 1352 II.C.3 references DJJ, which closed 06/30/2023, and **IV.A carries a second
+    DJJ reference** as the worked example of a legal status change. **Confirmed and broadened in
+    Revision 9:** the S-4 High enumeration is complete at II.G.1 ("a. Sodomy (286 PC); b. Lewd or
+    lascivious acts with child under 14 (288 PC, all sub-divisions)") plus II.G.3 (rape, 261 PC, all
+    subdivisions). **PC 289, sexual penetration, is omitted as well as 287**, and was never flagged.
+    Also absent: 243.4, 264.1, 285 and 647.6.
 12. **Detention and Intake Responsibility (J-3.4).** References CYA and CYA parolees throughout.
     No PREA content. Omits the 15 CCR 1350(a) admittance elements added in 2019.
 
@@ -227,6 +264,27 @@ Independence, 445 U.S. 622). Being county-run is what *creates* the damages expo
 **California hooks.** WIC 209 biennial BSCC inspection. Title 15 embeds PREA content at
 1324(n), 1350.5, 1352(e)-(f), 1352.5, 1353(c), 1360(g), 1361(h), 1452, 1453.
 
+**WIC 875, secure youth treatment facilities, read in Revision 9.** This is where the 13 to 25 age
+span comes from and it carries duties no reviewed document mentions. **875(c)(1)(A)**: no secure
+confinement beyond 23, or two years from commitment, whichever is later, extending to **25** where
+the offence would carry an aggregate adult sentence of seven or more years. **875(g)(2)**: such a
+facility may be "a unit or portion of an existing county juvenile facility, including a juvenile
+hall." **875(g)(3)**: BSCC was required by 07/01/2023 to adopt standards for such facilities, and
+those standards "shall specify how the facility may be used to serve or to separate juveniles,
+other than juveniles described in subdivision (a) serving baseline confinement terms, who may also
+be detained in or committed to the facility." **That is an express state separation mandate for a
+mixed population.** **875(g)(4)**: BSCC biennial WIC 209 inspection of each such facility.
+**875(j)**: a person 25 or older "shall not be committed to or detained in a county juvenile
+facility" absent court findings of best interest **and** no "risk to the other youth in the juvenile
+facility." **875(k)**: same bar for a person returning to local custody who was previously sentenced
+to state prison or committed to DJJ. **875(a)(3)(E)**: the court weighs age, developmental maturity,
+mental and emotional health, sexual orientation, gender identity and expression, and disabilities.
+
+**SB 824 (Menjivar, 2025-2026) is NOT law.** It would have amended 875 to add transition-planning
+duties to the individual rehabilitation plan. It **failed on 02/02/2026**, returned to the Secretary
+of the Senate under Joint Rule 56. Everything quoted above is existing law it left untouched. Do not
+cite SB 824 for any proposition.
+
 **Title 15 verification status, as of Revision 6.** Two editions have been read in full:
 `title15-bscc-juvenile.pdf`, **rev. 04/01/2014**, and `title15-bscc-juvenile-2019.pdf`,
 **effective 01/01/2019**, the post-rewrite edition.
@@ -258,7 +316,15 @@ routing room-confinement separation to WIC 208.3 and 1354.5; **1390** (see the c
 section 8, the floor is eleven items); **1391(f)** in full, six elements; **1452** and **1453**
 unchanged. **No Title 15 citation in this register now rests on the 2014 edition alone.**
 
-**Neither edition contains any PREA reference or any facility audit requirement.** In the 2019
+**The 2019 edition is not the current one, and this is now the largest verification gap in the
+project.** BSCC has published a Minimum Standards for Juvenile Facilities **regulation text revised
+01/2023** and a **standards matrix revised 08/14/2025**, and has run an SYTF subcommittee of its
+Juvenile Regulations Revision Executive Steering Committee. The 01/01/2019 edition **predates SB 823
+realignment, the closure of DJJ, and any WIC 875(g)(3) secure youth treatment facility standards
+entirely.** Every Title 15 citation in this register is verified against the 2019 edition and
+**none is verified against the current one.** See row 90. Obtain the current regulations.
+
+**Neither edition read contains any PREA reference or any facility audit requirement.** In the 2019
 edition the strings PREA, Prison Rape, 28 CFR and Part 115 return zero hits, and the only "audit"
 matches are section 1403, Health Care Monitoring and Audits. California has not adopted a PREA
 audit requirement for juvenile facilities.
@@ -350,6 +416,22 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
 - **The Revision 6 flag that the 1391(f) element list was truncated is resolved, and it was
   right.** The full subsection has six elements and the sixth is "provision for administrative
   review." Obtained in Revision 7. The hedge was correct and is now cleared.
+- **Rev 6 recorded a 15 CCR 1352(f) hook on conflict 1 reasoned on the S-series being a
+  sexual-risk taxonomy. That reasoning fails and is withdrawn in 9.** OO 1352 shows the S-series is a
+  general security taxonomy, and II.M.1 frames S-8 as protection against victimization, which is the
+  framing 1352(f) requires rather than the one it forbids. A stronger textual replacement is recorded
+  at conflict 1, so the conclusion survives and the reasoning does not. Note the direction: this
+  correction removes a theory the department would have had to answer.
+- **Rev 8 said nothing in federal or state law keys separation to age in this facility. Overbroad,
+  corrected in 9.** It is true of the Title 15 edition effective 01/01/2019, which is all that was
+  searched, but **WIC 875(j) and (k)** bar detaining a person 25 or older, or one returning from
+  state prison or DJJ, absent court findings including no "risk to the other youth," and **875(g)(3)**
+  directs BSCC to adopt standards specifying how a secure youth treatment facility separates its
+  wards from other detained juveniles. The narrow finding survives, because those are admission and
+  commitment controls exercised by the court rather than housing rules. The broad one does not. The
+  lesson: a search of one edition of one regulation is not a search of state law.
+- **Redline 6 struck the II.F.2 note only. The same inference is also at II.F.2.d.** Found in 9 on
+  reading the order. A redline drafted from a register row inherits whatever that row did not record.
 - **Do not assume isolation is available as a disciplinary sanction.** OO 1390/1391 III omits
   it from the consequences list and OO 1354.5 I.C.1 prohibits confinement for punishment. The
   department has excluded it, which is a stronger position than complying with the isolation
@@ -379,11 +461,20 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
     default rather than a confirmed requirement, because the CFR text could not be read from
     this environment. It decides whether the department's collection instrument has one scope or
     two. See register row 70.
-14. **Does the Dependent Adult and Elder Abuse General Order, or WIC 15610.23, reach a resident
-    aged 18 to 25 held in this facility?** If it does, there is a mandated reporting duty for
-    adult residents that nothing in this project currently states. If it does not, conduct
-    between two adult residents carries a PREA duty and a criminal referral and no mandated
-    reporting duty at all. New in Revision 8, and it is the direct consequence of the age span.
+14. ~~Does the Dependent Adult and Elder Abuse General Order reach a resident aged 18 to 25?~~
+    **Answered in Revision 9: the department does not treat them as dependent adults.** The
+    consequence is recorded at rows 77 and 87. **The narrowed question that replaces it:** is a
+    resident over 18 who carries the OO 1352 **S-5 Mental Health** classification a dependent adult
+    under WIC 15610.23(a)? The blanket position is defensible as to 15610.23(b), since a juvenile
+    hall is not a 24-hour health facility, but 15610.23(a) is an individualized test and S-5 tracks
+    its language closely. Narrow question, not a broad one.
+15. **Does any YDF unit operate as a secure youth treatment facility under WIC 875(g)(2)?** This
+    decides whether the 875(g)(3) separation standards apply, and those standards may already supply
+    the written rule rows 84 and 86 say is missing.
+16. **Do WIC 875(j) findings exist for any resident who is 25 or older?** The department has
+    confirmed the hall houses to 25. 875(j) bites **at** 25, not at 26, so each such resident needs a
+    court finding of best interest and no risk to other youth. Confirm whether the population in fact
+    tops out at 24, and if not, where those findings are filed.
 
 ## 10. Documents still outstanding
 
@@ -396,6 +487,12 @@ Referenced in reviewed policies but never produced. Several may close findings.
 - Institutional Policy on Video Recording and Photograph System
 - Interrogations of Department Personnel policy
 - Institutional Incident Report User's Guide
+- **Current BSCC juvenile regulations. BACK ON THIS LIST, AND IT IS NOW THE HIGHEST-VALUE
+  OUTSTANDING DOCUMENT.** Revision 6 struck this off on the strength of the edition effective
+  01/01/2019. That edition is not current: BSCC has published a regulation text revised **01/2023**
+  and a matrix revised **08/14/2025**, and the 2019 text predates SB 823 realignment, the closure of
+  DJJ and any WIC 875(g)(3) secure youth treatment facility standards. See row 90. The note below is
+  kept for what it still records about the 2019 edition.
 - ~~Current BSCC Title 15 edition (post January 2019).~~ **Produced and read in Revision 6.**
   All eight citations are confirmed. One question it raised is still worth asking internally:
   whether the policy shop has been drafting against the 2014 text, since two of the
@@ -448,9 +545,10 @@ Drafted against register Revision 5. Source is `drafts/redlines.json`; run `npm 
 to regenerate the Markdown and the Word file. The builder aborts rather than writing if it
 finds an em dash or an out-of-order item number.
 
-**What the drafting could and could not stand on.** Only four documents have been produced to
-this project: OO 1354.5, OO 1390/1391, Internal Complaints, and Title 15 rev. 04/01/2014. Five
-of the orders the redlines amend have **never been produced**: OO 1352, OO 1352.5, the PREA
+**What the drafting could and could not stand on.** **Updated in Revision 9: OO 1352 has now been
+produced and read in full, so changes 1 and 6 no longer rest on reconstruction.** Both have been
+rewritten against the order's real words, and change 6 gained an item it was missing (II.F.2.d).
+Four of the orders the redlines amend are still **unproduced**: OO 1352.5, the PREA
 Policy, OO 1453, and the Internal Affairs policy. For those, the struck text in each redline is
 a **reconstruction of what the register describes, not a quotation**, and the section numbers
 trace to the register, which traces to the earlier review that did read the orders. Every item
@@ -551,8 +649,13 @@ the first pass that rests on how the place actually runs.
 facility, expressly including persons over 18, so every state duty applies identically to a 13
 year old and a 25 year old. Searched the full 2019 text: separation under 1354 is keyed to
 behavior and status, and **no provision anywhere keys separation to age.** On the federal side
-neither 115.14 nor 115.114 applies in a juvenile facility. **Nothing in federal or state law
-requires sight and sound separation of a 13 year old from a 25 year old here.** Classification is
+neither 115.14 nor 115.114 applies in a juvenile facility. **Nothing in the 2019 Title 15 edition
+or in 28 CFR Part 115 requires sight and sound separation of a 13 year old from a 25 year old
+here.** *(Revision 8 stated this as "nothing in federal or state law," which was overbroad. See the
+WIC 875 correction in section 8 and row 90. The narrow finding stands: 875(j) and (k) are admission
+controls exercised by the court, and 875(g)(3) directs BSCC to write separation standards that have
+never been produced to this project. None of the three is a housing rule binding the facility
+today.)* Classification is
 the only control, and it sits in OO 1352, which has never been produced and which carries both
 documented classification defects.
 
@@ -616,3 +719,61 @@ of the text. Recorded as a County Counsel question rather than scored.
 **Still open.** Twelve units in use describes one facility's size; it does not answer how many
 juvenile facilities the department operates, which is what 115.311(c) turns on. Open question 1
 stands.
+
+---
+
+## 16. OO 1352 read, and what it changed (Revision 9)
+
+Produced and read in full on the same day as two other inputs: the department's answer on dependent
+adult status, and WIC 875. Twelve pages, scanned, no text layer. Rasterize at 200 dpi with
+`pymupdf` and read the images; `pypdf` returns 363 characters.
+
+**The register's citations to this order were accurate.** Every section number the earlier review
+recorded, II.C.3, II.F.2, II.G.1, II.H, II.M, III.E.1.a, III.I, I.B.3, I.B.6, I.B.12, V.A-C, is
+right. That is worth knowing about the provenance of the rest of the register.
+
+**What is now quotable rather than reconstructed.** The S-8 text, the III.I.1 single-room mandate,
+the Purpose and Scope paragraph tracking 1352(e), the II.F.2 molest-victim note, and the S-4 High
+offence list. Conflicts 1, 6 and 11 all carry the order's real words now.
+
+**The three findings that changed direction.**
+
+1. **The 1352(f) theory on conflict 1 is withdrawn and replaced with a better one.** See section 5.
+   Reasoning out, conclusion stronger.
+2. **Conflict 6 is bigger.** The victim-to-perpetrator inference is at II.F.2.d as well as the note,
+   and the order uses the same fact for the opposite purpose at II.H.3.
+3. **Row 84 is smaller, and that favours the department.** The Purpose paragraph weights age and
+   III.C.1 weights physical stature, so the factors exist. Status raised Not Addressed to Partial.
+   What is still missing is an age-based housing **rule**, which is a narrower claim.
+
+**Three new rows.**
+
+- **88. S-1 is written for male youth only.** II.C opens "Any **male** youth who meets the following
+  criteria will be housed in a high-security unit." Every criterion under it is behavioural or legal
+  and none is sex-specific. A female youth who meets them has no high-security path on the face of
+  the order. May reflect physical plant rather than intent; ask before assuming.
+- **89. The S-7 communicable disease log.** A daily list naming residents and their "exact medical
+  condition," HIV among them, on a clipboard in every unit and distributed to the kitchen, SCOE,
+  volunteers, contractors, the Juvenile Court Expeditor and the Sheriff's Bailiffs. HIV status is on
+  the 1352(e) and 1324(k) protected lists. Primarily a Health and Safety Code 121070 question for
+  County Counsel. The same provision also routes duties to **Youth Advocates**, a role that no longer
+  exists, which is the conflict 9 defect class.
+- **90. WIC 875 and the secure youth treatment facility framework.** Scored **Not Evidenced**,
+  because the governing BSCC standards have never been produced. See section 7.
+
+**One structural finding worth more than its row.** OO 1352 **never once references OO 1350.5**, in
+twelve pages. The order that screens for sexual abuse risk and the order that makes the housing, bed
+and program assignments the screening is meant to drive do not cite each other in either direction.
+115.341 requires the screening results to inform exactly those assignments. The link may exist in
+practice; on paper there is nothing for an auditor to follow. Rows 32 and 34.
+
+**And the other half of Revision 9, from the department's answer.** Residents aged 18 to 25 are
+under juvenile court jurisdiction, but **jurisdiction is not age**: PC 11165 defines a child as a
+person under 18, so CANRA does not reach them, and the department does not treat them as dependent
+adults. **Where both residents are 18 or over there is no mandated external reporting duty of any
+kind.** What remains is age-neutral and operationally different: every PREA duty applies unchanged,
+and 15 CCR 1453 with OO 1453 I.A.8 routes sexual assaults to the Sheriff rather than to CPS. But
+that substitute triggers on a higher threshold, binds the Duty Supervisor rather than the employee
+who saw it, carries no personal criminal exposure, and reaches sexual assault only, so the
+harassment, exposure and masturbation tiers have no external route at all. Written into the
+supervisor guide as the **three ages question** asked before the tier chart. Rows 77 and 87.
