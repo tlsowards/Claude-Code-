@@ -2,7 +2,7 @@
  "title": "Youth sexual conduct: what supervisors must do",
  "subtitle": "A decision guide for comments, exposure, and touching between youth",
  "status": "DRAFT FOR COUNTY COUNSEL REVIEW. Not for issuance to supervisors until the CANRA column is confirmed.",
- "register_revision": 9,
+ "register_revision": 10,
  "why": "Staff are getting one-off sexualized comments between youth and do not know whether they have a PREA incident, a CPS report, a rule violation, or none of those. The uncertainty is not a training failure. It is the predictable result of two different legal tests with different thresholds, applied to the same incident, where the department's own documents misstate one of them. This guide separates the tests.",
  "principles": [
   {
@@ -285,7 +285,17 @@
      ]
     },
     {
-     "head": "2. Notify, immediately",
+     "head": "2. Initial statement, and the trap in it",
+     "cite": "OO 1453 I.A.6; WIC 625.6",
+     "items": [
+      "**I.A.6: \"The duty supervisor shall take an initial statement from the victim and suspect.\"** This is directed, not optional, and it is yours.",
+      "**I.A.6 also says all suspects \"shall be read a Miranda Warning, prior to any questioning.\"**",
+      "**STOP THERE IF THE SUSPECT IS 17 OR UNDER.** WIC 625.6 requires that youth to consult legal counsel, in person, by telephone or by video, BEFORE any custodial interrogation and BEFORE waiving Miranda. **The consultation cannot be waived.** The order predates that statute by more than a year and does not mention it. Get the consultation, then question, and write down that you did.",
+      "Note what this does not cover: canvassing other residents to test whether the allegation is true. The order does not direct that, and it is what belongs to a trained investigator."
+     ]
+    },
+    {
+     "head": "3. Notify, immediately",
      "cite": "OO 1453 I.A.8 to I.A.10; PC 11166(a)",
      "items": [
       "**Duty Supervisor notifies the Sheriff's Department immediately** once it is believed a sexual assault occurred.",
@@ -294,7 +304,7 @@
      ]
     },
     {
-     "head": "3. Evidence, if the Sheriff cannot respond at once",
+     "head": "4. Evidence, if the Sheriff cannot respond at once",
      "cite": "OO 1453 I.A.11",
      "items": [
       "Duty Supervisor photographs the scene, gloves up, collects and marks each item with date, time, location, ownership and description.",
@@ -302,7 +312,7 @@
      ]
     },
     {
-     "head": "4. Medical and advocate",
+     "head": "5. Medical and advocate",
      "cite": "OO 1453 I.A.13; PREA Policy VIII.A and XV.A; PC 264.2, PC 679.04",
      "items": [
       "**Evidentiary examination happens off site**, at a health facility separate from the custodial facility.",
@@ -311,7 +321,7 @@
      ]
     },
     {
-     "head": "5. Investigation",
+     "head": "6. Investigation",
      "cite": "28 CFR 115.371(a); OO 1453 I.A.14",
      "items": [
       "**Every allegation gets an administrative or criminal investigation.** There is no threshold of plausibility and no discretion to decide one is unnecessary.",
@@ -319,7 +329,7 @@
      ]
     },
     {
-     "head": "6. Incident review, at the conclusion",
+     "head": "7. Incident review, at the conclusion",
      "cite": "OO 1453 I.A.15; PREA Policy V.A.8; 28 CFR 115.386",
      "items": [
       "Upper management conducts a review, with input from supervisors, investigators and medical or mental health staff.",
@@ -328,7 +338,7 @@
      ]
     },
     {
-     "head": "7. Ongoing, and the part most often missed",
+     "head": "8. Ongoing, and the part most often missed",
      "cite": "28 CFR 115.362, 115.367; PREA Policy XVIII.B",
      "items": [
       "Reassess classification and housing for both youth.",
@@ -339,6 +349,7 @@
    ],
    "gaps_head": "Four things current policy will not tell you",
    "gaps": [
+    "**I.A.6 is a year and a half out of date and it can cost you the case.** It directs a Miranda warning before questioning a suspect and says nothing about the WIC 625.6 counsel consultation, which has been mandatory and unwaivable for youth 17 and under since 01/01/2021. The order was last revised 12/09/2019. Courts weigh noncompliance on admissibility, and weigh a willful violation against the officer's credibility.",
     "**The CPS timeline in policy is wrong.** PREA Policy V.A.4 and OO 1453 I.A.9 say 24 hours. PC 11166(a) says immediately. Follow the law. The exposure for a late report falls on the employee.",
     "**The incident review report has nowhere to go.** OO 1453 I.A.15 directs it to \"the PREA Coordinator,\" a position the department does not have. Send it to the Department Chief and say in the report that the Coordinator role is vacant.",
     "**There is no retaliation monitoring program.** 115.367 requires a designated monitor and at least 90 days. Nothing in current policy sets one up, so if you do not run it yourself it does not happen.",
@@ -361,8 +372,8 @@
     ],
     [
      "**Duty Supervisor**, you",
-     "Classifies the incident against the tier chart. Protects: separation, housing, the 115.362 call. Preserves evidence and video. Notifies out. Documents and hands off.",
-     "**Does not conduct the fact finding.** Does not interview witnesses to test whether the allegation is true. Does not identify residents who asked to stay anonymous. Does not decide the case."
+     "Classifies the incident against the tier chart. Protects: separation, housing, the 115.362 call. Preserves evidence and video. **Takes the initial statement from the victim and the suspect, which OO 1453 I.A.6 directs.** Notifies out. Documents and hands off.",
+     "Does not canvass further witnesses to test whether the allegation is true. That is not directed anywhere in the order and it is what belongs to a trained investigator. Does not identify residents who asked to stay anonymous. Does not decide the case. **And does not Mirandize and question a suspect aged 17 or under without the WIC 625.6 counsel consultation, which I.A.6 does not mention. See the warning below.**"
     ],
     [
      "**Administrative investigator** for youth-on-youth",
@@ -396,8 +407,8 @@
     ],
     [
      "**Victim advocate**, usually a Rape Crisis Center",
-     "Accompanies the youth through the medical examination and through investigatory interviews. PC 264.2 and PC 679.04 give those rights, and OO 1453 I.A.13 recites them.",
-     "Cannot be offered after the fact. If an interview already happened without one, the right was already spent."
+     "Accompanies the youth through the medical examination (PC 264.2) and through investigatory interviews **conducted by law enforcement, the district attorney or defense counsel** (PC 679.04). OO 1453 I.A.13 recites both.",
+     "Does not, on the face of the statute, attach to the I.A.6 initial statement taken by the duty supervisor. The one interview the order assigns to facility staff is the only one in the sequence with no advocate right attached. Cannot be offered after the fact either: if an interview already happened without one, the right was already spent."
     ],
     [
      "**Retaliation monitor**",
@@ -405,15 +416,15 @@
      "**NOT DESIGNATED, and no monitoring period exists in policy.** If the supervisor does not run it, nobody does."
     ]
    ],
-   "stop_head": "The stop-point, stated plainly",
+   "stop_head": "The stop-point, corrected against OO 1453",
    "stop": [
-    "You classify. You protect. You preserve. You notify. You document. **Then you stop and hand off.**",
-    "The handoff is the point of the memo. Write what you observed, what the resident said verbatim, what you did, and what you classified it as. That is a complete supervisor product.",
-    "What turns a response into an investigation is **asking questions to find out whether it is true**. Establishing who was involved and keeping them safe is response. Testing the allegation is investigation, and it belongs to someone trained for it, with the advocate rights attached.",
-    "Three practical reasons, and the third is the one that bites. An untrained interview of a minor about sexual contact becomes the other side's exhibit later. The advocate rights under PC 679.04 attach to investigative interviews and cannot be offered retroactively. And identifying residents who asked for anonymity burns the witnesses and creates the retaliation exposure that 115.367 exists to prevent."
+    "**Corrected on 10/29.** An earlier version of this matrix told supervisors they do not conduct fact finding and do not interview. **OO 1453 I.A.6 says otherwise:** \"The duty supervisor shall take an initial statement from the victim and suspect.\" The order had not been produced when that was written. The stop-point moves; it does not disappear.",
+    "You classify. You protect. You preserve. **You take the initial statement from the victim and the suspect, because I.A.6 directs it.** You notify. You document. **Then you stop and hand off.**",
+    "**What is still on the far side of the line:** canvassing further witnesses to find out whether the allegation is true. Nothing in the order directs that, and it is what belongs to a trained investigator under 115.334. Taking a statement from the two people involved is first response. Working the unit to test the account is investigation.",
+    "**Anonymity is the practical test.** If residents asked not to be identified, do not go and find them. Identifying them burns the witnesses and creates the retaliation exposure 115.367 exists to prevent, and it is not something I.A.6 asks of you."
    ],
-   "decision_head": "The decision the department has to make",
-   "decision": "115.371(a) requires an administrative **or** criminal investigation for every allegation. For the middle band the answer is the administrative branch, and the department has not built it. Internal Affairs is written for employee misconduct. Nothing in the documents reviewed names who investigates a resident-on-resident allegation that is not a criminal callout. So supervisors fill the gap, which is a reasonable thing to do in a vacuum and the wrong place for the duty to sit, because the same person is also protecting, housing and classifying. **Two defensible answers, and the department has to pick one.** Either designate someone to conduct youth-on-youth administrative investigations, which is recommended change 8, or write down that the Duty Supervisor does it and build the 115.334 training, the advocate rights and the anonymity handling around that role. What is not defensible is leaving the duty real, unassigned and absorbed by whoever is on shift."
+   "decision_head": "Two things the department has to fix, one urgent",
+   "decision": "**URGENT, AND IT IS A LEGAL EXPOSURE ON THE SUPERVISOR PERSONALLY.** I.A.6 directs a Miranda warning before questioning a suspect. It says nothing about **WIC 625.6**, which since 01/01/2021 requires a youth **17 or younger** to consult legal counsel, in person, by telephone or by video, **before** a custodial interrogation and **before** waiving Miranda, and which provides that the consultation **may not be waived**. OO 1453 was last revised 12/09/2019, more than a year before that took effect. WIC 625.6(b) directs courts to weigh noncompliance when deciding whether the youth's statements come in, and to weigh a willful violation against the officer's credibility under Evidence Code 780. Until I.A.6 is amended, get the 625.6 consultation before any questioning of a suspect aged 17 or under, and record that you did. **Second, and structural:** 115.371(a) requires an administrative or criminal investigation for every allegation. The Sheriff covers the criminal branch. Nothing names who runs the administrative branch for youth-on-youth allegations, and Internal Affairs is written for employee misconduct. Register rows 60 and 91."
   }
  },
  "flips": {
@@ -641,9 +652,15 @@
      "Scene: [what you saw, and what you did to secure it].",
      "Video reviewed: Camera [  ], [times]. What it showed: [  ].",
      "What the video did NOT establish: [  ].",
-     "Physical evidence: [clothing, bedding, other], and where it is now."
+     "Physical evidence: [clothing, bedding, other], and where it is now.",
+     "Initial statement taken under OO 1453 I.A.6:",
+     "  From the reporting or target resident at [time]: \"[verbatim]\"",
+     "  From the alleged resident at [time]: \"[verbatim]\"",
+     "  Miranda given: [ ] yes at [time]   [ ] not applicable",
+     "  WIC 625.6 counsel consultation (suspect aged 17 or under): [ ] completed at [time], with [who]",
+     "                                                             [ ] N/A, suspect is 18 or over"
     ],
-    "note": "Keep the honest non-verification line. \"The footage did not allow me to verify X\" is a stronger sentence than any hedge, and it protects both the resident and the department. Note that reviewing video is not preserving it. Say what you did to put a hold on it."
+    "note": "Keep the honest non-verification line. \"The footage did not allow me to verify X\" is a stronger sentence than any hedge, and it protects both the resident and the department. Note that reviewing video is not preserving it. Say what you did to put a hold on it. **On the statement:** I.A.6 directs you to take it. If the suspect is 17 or under, WIC 625.6 requires a consultation with counsel before any questioning and before any Miranda waiver, and it cannot be waived. The order predates that statute and does not mention it. Record the consultation here, because the memo is the only place that will show it happened."
    },
    {
     "head": "3. Classification",
@@ -709,7 +726,7 @@
   "avoid": [
    "**Your conclusion about whether it happened.** You are recording what was reported and what you did. Whether the allegation is true is the investigation's answer, and a supervisor's guess in writing becomes the exhibit that undermines the finding either way.",
    "**Characterisations.** Not horseplay, not consensual, not attention seeking, not just talk. Those words decide the case in advance and none of them is a classification on the card.",
-   "**Interviews conducted to test the allegation.** If you asked residents questions to find out whether it really happened, that is fact finding, and it belongs to a trained investigator with the PC 679.04 advocate rights attached. Establishing who was present and keeping people safe is response and belongs here.",
+   "**A witness canvass written up as though it were part of the response.** OO 1453 I.A.6 directs you to take an initial statement from the victim and the suspect, so that belongs in section 3 below. Going on to question other residents to find out whether the allegation is true is not directed anywhere in the order, and it is what belongs to a trained investigator under 115.334.",
    "**The names of residents who asked to stay anonymous.**",
    "**Anything you did not personally do or observe, written as though you did.** Attribute it."
   ],

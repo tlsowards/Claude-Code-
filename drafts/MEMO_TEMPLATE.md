@@ -37,9 +37,15 @@ Scene: [what you saw, and what you did to secure it].
 Video reviewed: Camera [  ], [times]. What it showed: [  ].
 What the video did NOT establish: [  ].
 Physical evidence: [clothing, bedding, other], and where it is now.
+Initial statement taken under OO 1453 I.A.6:
+  From the reporting or target resident at [time]: "[verbatim]"
+  From the alleged resident at [time]: "[verbatim]"
+  Miranda given: [ ] yes at [time]   [ ] not applicable
+  WIC 625.6 counsel consultation (suspect aged 17 or under): [ ] completed at [time], with [who]
+                                                             [ ] N/A, suspect is 18 or over
 ```
 
-> Keep the honest non-verification line. "The footage did not allow me to verify X" is a stronger sentence than any hedge, and it protects both the resident and the department. Note that reviewing video is not preserving it. Say what you did to put a hold on it.
+> Keep the honest non-verification line. "The footage did not allow me to verify X" is a stronger sentence than any hedge, and it protects both the resident and the department. Note that reviewing video is not preserving it. Say what you did to put a hold on it. **On the statement:** I.A.6 directs you to take it. If the suspect is 17 or under, WIC 625.6 requires a consultation with counsel before any questioning and before any Miranda waiver, and it cannot be waived. The order predates that statute and does not mention it. Record the consultation here, because the memo is the only place that will show it happened.
 
 ## 3. Classification
 
@@ -108,7 +114,7 @@ This memo is a response and documentation record. It is not an investigation rep
 
 - **Your conclusion about whether it happened.** You are recording what was reported and what you did. Whether the allegation is true is the investigation's answer, and a supervisor's guess in writing becomes the exhibit that undermines the finding either way.
 - **Characterisations.** Not horseplay, not consensual, not attention seeking, not just talk. Those words decide the case in advance and none of them is a classification on the card.
-- **Interviews conducted to test the allegation.** If you asked residents questions to find out whether it really happened, that is fact finding, and it belongs to a trained investigator with the PC 679.04 advocate rights attached. Establishing who was present and keeping people safe is response and belongs here.
+- **A witness canvass written up as though it were part of the response.** OO 1453 I.A.6 directs you to take an initial statement from the victim and the suspect, so that belongs in section 3 below. Going on to question other residents to find out whether the allegation is true is not directed anywhere in the order, and it is what belongs to a trained investigator under 115.334.
 - **The names of residents who asked to stay anonymous.**
 - **Anything you did not personally do or observe, written as though you did.** Attribute it.
 

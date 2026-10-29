@@ -36,7 +36,7 @@ hedging, and he will catch a wrong citation.
 
 ## 3. Project state
 
-Register is at **Revision 9**. 90 requirements assessed against 17 departmental policies.
+Register is at **Revision 10**. 91 requirements assessed against 17 departmental policies.
 
 Revision 6 verified against the Title 15 edition **effective 01/01/2019** and corrected three
 citations. Revision 7 closed the gap it left, re-reading the six sections still carrying their
@@ -57,10 +57,10 @@ status raised (row 84, Not Addressed to Partial). See section 16.
 | Addressed | 14 |
 | Partial | 41 |
 | Not Addressed | 21 |
-| Conflict (policy states the wrong rule) | 12 |
+| Conflict (policy states the wrong rule) | 13 |
 | Not Evidenced (document exists, not produced) | 2 |
 
-Priority: 21 critical, 39 high, 16 medium, 14 low.
+Priority: 22 critical, 39 high, 16 medium, 14 low.
 
 Full register with gap text is in `prea-register.csv`. Columns `owner`, `target_date`, and
 `disposition` are empty and intended for the department to fill.
@@ -103,10 +103,10 @@ render each page at 200 dpi, and read the PNGs. That works and is the only thing
 therefore captured into `prea-register.csv` or into this file at the time it is read, so the
 finding outlives the PDF. If a citation needs re-checking, the source has to be uploaded again.
 
-## 5. The twelve conflicts (highest priority)
+## 5. The thirteen conflicts (highest priority)
 
 Policy that states a rule contradicting the law or another departmental policy.
-Still twelve after Revision 4. Nothing in the three new documents cured a conflict, and
+**Thirteen after Revision 10**, which added the first new conflict since Revision 4. Nothing in the three new documents cured a conflict, and
 nothing in them created one, though see the near miss recorded at the end of this section.
 
 1. **OO 1352 II.M and III.I, S-8.** Classification created for any LGBTQI youth; single-room
@@ -190,6 +190,17 @@ nothing in them created one, though see the near miss recorded at the end of thi
     Also absent: 243.4, 264.1, 285 and 647.6.
 12. **Detention and Intake Responsibility (J-3.4).** References CYA and CYA parolees throughout.
     No PREA content. Omits the 15 CCR 1350(a) admittance elements added in 2019.
+13. **OO 1453 I.A.6, new in Revision 10 and the first new conflict since Revision 4.**
+    "The duty supervisor shall take an initial statement from the victim and suspect. All suspects
+    involved in a sexual assault shall be read a 'Miranda Warning', prior to any questioning."
+    **It says nothing about WIC 625.6**, which since 01/01/2021 requires a youth **17 or younger**
+    to consult counsel, in person, by telephone or by video, before a custodial interrogation and
+    before waiving Miranda, and which provides that the consultation **may not be waived**. The
+    order was last revised 12/09/2019, more than a year before SB 203 took effect. 625.6(b) directs
+    courts to weigh noncompliance on admissibility and a willful violation against the officer's
+    credibility under Evidence Code 780, so the exposure runs to the supervisor personally.
+    I.A.8 ("after initial inquiry") and I.A.10 ("the reporting/investigating officer (usually a
+    Supervisor)") confirm the design is deliberate. Row 91.
 
 **The near miss (row 58, not scored as a conflict).** Internal Complaints gives the Internal
 Affairs Manager discretion to "determine whether or not a formal investigation is necessary,"
@@ -748,6 +759,44 @@ stands.
 
 ---
 
+## 17. OO 1453 read, and the correction it forced (Revision 10)
+
+Produced and read in full for the first time. Three pages, scanned, rasterized at 200 dpi.
+**Every I.A citation the register carried from the earlier review is confirmed verbatim**, which is
+the second time a produced order has vindicated the register's provenance.
+
+**The finding that matters, and it corrects this project's own published work.** I.A.6 reads: "The
+duty supervisor shall take an initial statement from the victim and suspect. All suspects involved
+in a sexual assault shall be read a 'Miranda Warning', prior to any questioning." The supervisor
+role matrix published on 10/29 told supervisors they do not conduct fact finding and do not
+interview. **The department's own order directs exactly that**, and the order had not been produced
+when the matrix was written. See conflict 13 for the WIC 625.6 defect inside I.A.6.
+
+**The stop-point moved, it did not disappear.** Taking an initial statement from the two residents
+involved is directed by I.A.6 and is first response. Canvassing further witnesses to test whether
+the allegation is true is directed nowhere and is what belongs to a trained investigator under
+115.334. The role matrix, the field card and the memo template were all corrected on 10/29.
+
+**A second correction to this project's work, at row 18.** PC 679.04 as OO 1453 I.A.13 recites it,
+and as the statute reads, gives the advocate right during investigatory interviews conducted by
+**law enforcement, the district attorney or defense counsel**. The guide and the field card had
+stated it more broadly. It does not on its face reach the I.A.6 statement, so **the one interview
+the order assigns to facility staff is the only one in the sequence with no advocate right
+attached.** That makes I.A.6 worse, not better.
+
+**The scope limiter, confirmed by reading the whole order.** The title is Sexual Assault, the stated
+Authority is PREA, and every operative duty is keyed to "sexual assault": the Purpose paragraph's
+staff reporting duty, I.A.9's CPS report, I.A.15's incident review. **Nothing in three pages reaches
+sexual harassment, exposure, or touching not characterised as assault.** So the department has a
+coordinated response plan in all but name for the most serious band and nothing written for the band
+that generates most incidents. Rows 47, 54, 48 and 69.
+
+**New to the register from this order:** I.A.2 (the Duty Supervisor notifies a Chief Deputy or
+Assistant Chief Deputy), I.A.7 (a trauma informed interaction instruction, credited at row 67),
+I.A.12 (the suspect rape exam, the Sheriff's responsibility).
+
+---
+
 ## 16. OO 1352 read, and what it changed (Revision 9)
 
 Produced and read in full on the same day as two other inputs: the department's answer on dependent
@@ -806,3 +855,19 @@ that substitute triggers on a higher threshold, binds the Duty Supervisor rather
 who saw it, carries no personal criminal exposure, and reaches sexual assault only, so the
 harassment, exposure and masturbation tiers have no external route at all. Written into the
 supervisor guide as the **three ages question** asked before the tier chart. Rows 77 and 87.
+
+---
+
+## 18. Do not repeat this one
+
+**Revision 9's supervisor role matrix was published without the governing order in hand.** It told
+supervisors they do not conduct fact finding and do not interview, which is contradicted by OO 1453
+I.A.6. The reasoning was sound on the standards and wrong on the department's own policy, and the
+gap between those two is exactly where a deliverable does damage: a supervisor following the matrix
+would have been ignoring a direct instruction in their own order.
+
+**The rule this produces.** Before publishing operational guidance that tells someone what their
+role is, read the order that assigns the role. Where the order has not been produced, say on the
+face of the document that the role statement rests on the standards and not on departmental policy,
+and name the order that would settle it. The memo template did this correctly for the response
+sequence, flagging that OO 1453 had never been produced. The role matrix did not.

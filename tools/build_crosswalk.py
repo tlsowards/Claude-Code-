@@ -21,7 +21,7 @@ CSV_PATH = os.path.join(ROOT, "prea-register.csv")
 JSON_PATH = os.path.join(ROOT, "tools", "crosswalk.json")
 MD_PATH = os.path.join(ROOT, "deliverables", "PREA_versus_Policy_Crosswalk.md")
 
-REVISION = 9
+REVISION = 10
 
 # Order used by 28 CFR part 115 subpart D, with the California and audit
 # groupings appended, so the document tracks what an auditor scores in order.
@@ -86,7 +86,7 @@ DOCUMENTS = [
 CONFLICTS = [
     {
         "n": 1,
-        "checked": 9,
+        "checked": 10,
         "topic": "Categorical LGBTQI housing (classification S-8)",
         "rows": [36],
         "law": "28 CFR 115.342(c). LGBTI residents shall not be placed in "
@@ -142,7 +142,7 @@ CONFLICTS = [
     },
     {
         "n": 2,
-        "checked": 9,
+        "checked": 10,
         "topic": "Categorical single-room housing for transgender and intersex youth",
         "rows": [37],
         "law": "28 CFR 115.342(d) to (g); 15 CCR 1352.5(a) to (e). Housing and "
@@ -158,7 +158,7 @@ CONFLICTS = [
     },
     {
         "n": 3,
-        "checked": 9,
+        "checked": 10,
         "topic": "Child abuse reporting timeline",
         "rows": [48],
         "law": "PC 11166(a). Telephone report immediately or as soon as "
@@ -166,16 +166,29 @@ CONFLICTS = [
                "SS 8572.",
         "policy": "PREA Policy V.A.4 and OO 1453 I.A.9 both state that sexual "
                   "assault is reported to Child Protective Services verbally "
-                  "within 24 hours.",
+                  "within 24 hours. OO 1453 was produced and read in full in "
+                  "Revision 10, so I.A.9 is now quotable: 'All incidents of "
+                  "sexual assault shall be reported to Child Protective Services "
+                  "verbally within 24 hours. A formal written reported shall be "
+                  "completed and forwarded to Child Protective Services within 36 "
+                  "hours of receiving information concerning the incident.' The "
+                  "36 hour written figure is correct. The 24 hour verbal figure "
+                  "is not.",
         "note": "The error appears in two documents, and OO 1453 restated it on a "
                 "12/2019 revision. Code of Conduct VII.A.1 states the rule "
-                "correctly, so the department is not uniform against itself.",
+                "correctly, so the department is not uniform against itself. "
+                "Revision 10 adds a second defect in the same provision, from "
+                "reading the whole order: every operative duty in OO 1453 is "
+                "keyed to 'sexual assault', so on the face of the order the CPS "
+                "duty does not reach touching, exposure or masturbation even "
+                "where PC 11165.1(b)(4) and (b)(5) require a report. Correct the "
+                "timeline and the scope in the same amendment.",
         "fix": "Recommended change 3: correct the standard and relocate it to a "
                "new department-wide General Order.",
     },
     {
         "n": 4,
-        "checked": 9,
+        "checked": 10,
         "topic": "Cross-facility notification window",
         "rows": [52],
         "law": "28 CFR 115.363(b). Notify the head of the facility where the "
@@ -188,7 +201,7 @@ CONFLICTS = [
     },
     {
         "n": 5,
-        "checked": 9,
+        "checked": 10,
         "topic": "Discipline for allegations found false",
         "rows": [64],
         "law": "28 CFR 115.378(f) protects a good-faith report based on a "
@@ -210,7 +223,7 @@ CONFLICTS = [
     },
     {
         "n": 6,
-        "checked": 9,
+        "checked": 10,
         "topic": "Victimization treated as an indicator of abusiveness",
         "rows": [80],
         "law": "28 CFR 115.341(c). Prior victimization and prior abusiveness are "
@@ -242,7 +255,7 @@ CONFLICTS = [
     },
     {
         "n": 7,
-        "checked": 9,
+        "checked": 10,
         "topic": "Records retention",
         "rows": [59],
         "law": "28 CFR 115.371(j). Retain investigation reports for as long as "
@@ -258,7 +271,7 @@ CONFLICTS = [
     },
     {
         "n": 8,
-        "checked": 9,
+        "checked": 10,
         "topic": "Staffing ratios",
         "rows": [6],
         "law": "28 CFR 115.313(c). At least 1:8 during waking hours and 1:16 "
@@ -274,24 +287,31 @@ CONFLICTS = [
     },
     {
         "n": 9,
-        "checked": 9,
+        "checked": 10,
         "topic": "Duty assigned to a position that does not exist",
         "rows": [2],
         "law": "28 CFR 115.311(b). Designate an upper-level, agency-wide PREA "
                "Coordinator.",
-        "policy": "OO 1453 I.A.15 directs the sexual abuse incident review report "
-                  "to the PREA Coordinator, a position the department does not "
-                  "have.",
+        "policy": "OO 1453 I.A.15, produced and read in full in Revision 10, "
+                  "reads: 'At the conclusion of the sexual assault "
+                  "investigation, an incident review shall be conducted by upper "
+                  "management officials, with input from supervisors, "
+                  "investigators, and medical or mental health practitioners. A "
+                  "report shall be generated and forwarded to the PREA "
+                  "coordinator and Department Chief.' The dead letter is the "
+                  "order's own text.",
         "note": "Two consequences. The required report has nowhere to go, so the "
                 "review terminates in a dead letter. And this is written "
                 "departmental acknowledgment, dated 2019, that the role is "
-                "needed.",
+                "needed. Interim fix confirmed in Revision 10: the report has a "
+                "second addressee that does exist, the Department Chief, so route "
+                "it there and note the vacancy in the report itself.",
         "fix": "Recommended change 8: designate a PREA Coordinator and a facility "
                "Compliance Manager.",
     },
     {
         "n": 10,
-        "checked": 9,
+        "checked": 10,
         "topic": "Policy age and biennial review",
         "rows": [74],
         "law": "15 CCR 1324. The policy and procedure manual is administratively "
@@ -306,7 +326,7 @@ CONFLICTS = [
     },
     {
         "n": 11,
-        "checked": 9,
+        "checked": 10,
         "topic": "Obsolete statutory citations",
         "rows": [78],
         "law": "PC 287. SB 1494 renumbered PC 288a to PC 287 effective "
@@ -328,8 +348,48 @@ CONFLICTS = [
         "fix": "Recommended change 6.",
     },
     {
+        "n": 13,
+        "checked": 10,
+        "topic": "Supervisor directed to question a youth suspect without the mandatory counsel consultation",
+        "rows": [91],
+        "law": "WIC 625.6, as amended by SB 203 and effective 01/01/2021. A youth "
+               "17 years of age or younger shall consult with legal counsel, in "
+               "person, by telephone or by video conference, before a custodial "
+               "interrogation and before waiving any Miranda rights. The "
+               "consultation may not be waived. 625.6(b) directs courts to weigh "
+               "noncompliance on admissibility and to weigh a willful violation "
+               "against the officer's credibility under Evidence Code 780.",
+        "policy": "OO 1453 I.A.6: 'The duty supervisor shall take an initial "
+                  "statement from the victim and suspect. All suspects involved "
+                  "in a sexual assault shall be read a \"Miranda Warning\", prior "
+                  "to any questioning.' The order says nothing about the 625.6 "
+                  "consultation. It was last revised 12/09/2019, more than a year "
+                  "before SB 203 took effect, and has not been updated since.",
+        "note": "New in Revision 10, on reading OO 1453 for the first time. Two "
+                "further provisions confirm the design is deliberate rather than "
+                "an aside: I.A.8 conditions the Sheriff notification on what is "
+                "believed 'after initial inquiry', and I.A.10 refers to 'the "
+                "reporting/investigating officer (usually a Supervisor)'. The "
+                "exposure runs to the supervisor personally, because a statement "
+                "taken without the consultation can be suppressed and a willful "
+                "violation goes to that supervisor's credibility as a witness. "
+                "Two adjacent defects sit in the same provision: 115.334 requires "
+                "specialized training for whoever conducts a sexual abuse "
+                "investigation, and the PC 679.04 advocate right that I.A.13 "
+                "correctly recites attaches to interviews by law enforcement, the "
+                "district attorney or defense counsel, so it does not reach the "
+                "I.A.6 statement. The one interview the order assigns to facility "
+                "staff is the only one in the sequence with no advocate right "
+                "attached.",
+        "fix": "Amend I.A.6 to require the WIC 625.6 consultation before any "
+               "questioning of a suspect aged 17 or under, and to record it. "
+               "Until then, obtain the consultation anyway. This is not a reason "
+               "to tell supervisors to ignore I.A.6: the statement itself is "
+               "directed by the order.",
+    },
+    {
         "n": 12,
-        "checked": 9,
+        "checked": 10,
         "topic": "Intake policy substantively obsolete",
         "rows": [79],
         "law": "15 CCR 1350 and 1350.5. Intake and admittance policy must reflect "
