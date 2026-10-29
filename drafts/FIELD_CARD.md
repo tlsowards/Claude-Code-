@@ -93,7 +93,7 @@ Supervisor: ______________________  Date and time: ______________
 
 ## Step 6. What happens after you call it PREA
 
-Classifying it is the start, not the end. This is the sequence OO 1453 and the PREA Policy set out, in order. Provenance: OO 1453 has never been produced to this review, so these section numbers and their content trace to the gap register, which traces to the earlier review that did read the order. Confirm against the order before relying on a number.
+Classifying it is the start, not the end. This is the sequence OO 1453 and the PREA Policy set out, in order. Provenance: OO 1453 was produced and read in full on 10/29, and every section number below is quoted from the order itself. Note the scope limiter the order carries throughout: every operative duty in it is keyed to "sexual assault", so on its face it does not reach harassment, exposure, or touching not characterised as assault.
 
 **1. First response, immediately**  
 *OO 1453 I.A.1, I.A.3 to I.A.5*

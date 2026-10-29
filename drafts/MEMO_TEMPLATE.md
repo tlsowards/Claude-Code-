@@ -128,6 +128,6 @@ This memo is a response and documentation record. It is not an investigation rep
 
 ---
 
-*This is a template, not legal advice, and statutory questions go to County Counsel. The CANRA and 28 CFR 115.6 references behind it were corroborated by exact-phrase search and have NOT been read from the Penal Code or the Code of Federal Regulations directly. The OO 1453 response sequence it assumes traces to the gap register rather than to the order, which has never been produced to this review. Confirm both before this template issues.*
+*This is a template, not legal advice, and statutory questions go to County Counsel. The CANRA and 28 CFR 115.6 references behind it were corroborated by exact-phrase search and have NOT been read from the Penal Code or the Code of Federal Regulations directly. The OO 1453 sequence it assumes is quoted from the order, produced and read in full on 10/29. Confirm the CANRA and CFR references before this template issues.*
 
 *Generated from `drafts/supervisor-guide.json` by `npm run memo-template`. Do not hand-edit this file or the Word version. Drawn from gap register Revision 10.*
