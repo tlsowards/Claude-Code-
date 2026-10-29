@@ -772,44 +772,6 @@ stands.
 
 ---
 
-## 17. OO 1453 read, and the correction it forced (Revision 10)
-
-Produced and read in full for the first time. Three pages, scanned, rasterized at 200 dpi.
-**Every I.A citation the register carried from the earlier review is confirmed verbatim**, which is
-the second time a produced order has vindicated the register's provenance.
-
-**The finding that matters, and it corrects this project's own published work.** I.A.6 reads: "The
-duty supervisor shall take an initial statement from the victim and suspect. All suspects involved
-in a sexual assault shall be read a 'Miranda Warning', prior to any questioning." The supervisor
-role matrix published on 10/29 told supervisors they do not conduct fact finding and do not
-interview. **The department's own order directs exactly that**, and the order had not been produced
-when the matrix was written. See conflict 13 for the WIC 625.6 defect inside I.A.6.
-
-**The stop-point moved, it did not disappear.** Taking an initial statement from the two residents
-involved is directed by I.A.6 and is first response. Canvassing further witnesses to test whether
-the allegation is true is directed nowhere and is what belongs to a trained investigator under
-115.334. The role matrix, the field card and the memo template were all corrected on 10/29.
-
-**A second correction to this project's work, at row 18.** PC 679.04 as OO 1453 I.A.13 recites it,
-and as the statute reads, gives the advocate right during investigatory interviews conducted by
-**law enforcement, the district attorney or defense counsel**. The guide and the field card had
-stated it more broadly. It does not on its face reach the I.A.6 statement, so **the one interview
-the order assigns to facility staff is the only one in the sequence with no advocate right
-attached.** That makes I.A.6 worse, not better.
-
-**The scope limiter, confirmed by reading the whole order.** The title is Sexual Assault, the stated
-Authority is PREA, and every operative duty is keyed to "sexual assault": the Purpose paragraph's
-staff reporting duty, I.A.9's CPS report, I.A.15's incident review. **Nothing in three pages reaches
-sexual harassment, exposure, or touching not characterised as assault.** So the department has a
-coordinated response plan in all but name for the most serious band and nothing written for the band
-that generates most incidents. Rows 47, 54, 48 and 69.
-
-**New to the register from this order:** I.A.2 (the Duty Supervisor notifies a Chief Deputy or
-Assistant Chief Deputy), I.A.7 (a trauma informed interaction instruction, credited at row 67),
-I.A.12 (the suspect rape exam, the Sheriff's responsibility).
-
----
-
 ## 16. OO 1352 read, and what it changed (Revision 9)
 
 Produced and read in full on the same day as two other inputs: the department's answer on dependent
@@ -868,6 +830,44 @@ that substitute triggers on a higher threshold, binds the Duty Supervisor rather
 who saw it, carries no personal criminal exposure, and reaches sexual assault only, so the
 harassment, exposure and masturbation tiers have no external route at all. Written into the
 supervisor guide as the **three ages question** asked before the tier chart. Rows 77 and 87.
+
+---
+
+## 17. OO 1453 read, and the correction it forced (Revision 10)
+
+Produced and read in full for the first time. Three pages, scanned, rasterized at 200 dpi.
+**Every I.A citation the register carried from the earlier review is confirmed verbatim**, which is
+the second time a produced order has vindicated the register's provenance.
+
+**The finding that matters, and it corrects this project's own published work.** I.A.6 reads: "The
+duty supervisor shall take an initial statement from the victim and suspect. All suspects involved
+in a sexual assault shall be read a 'Miranda Warning', prior to any questioning." The supervisor
+role matrix published on 10/29 told supervisors they do not conduct fact finding and do not
+interview. **The department's own order directs exactly that**, and the order had not been produced
+when the matrix was written. See conflict 13 for the WIC 625.6 defect inside I.A.6.
+
+**The stop-point moved, it did not disappear.** Taking an initial statement from the two residents
+involved is directed by I.A.6 and is first response. Canvassing further witnesses to test whether
+the allegation is true is directed nowhere and is what belongs to a trained investigator under
+115.334. The role matrix, the field card and the memo template were all corrected on 10/29.
+
+**A second correction to this project's work, at row 18.** PC 679.04 as OO 1453 I.A.13 recites it,
+and as the statute reads, gives the advocate right during investigatory interviews conducted by
+**law enforcement, the district attorney or defense counsel**. The guide and the field card had
+stated it more broadly. It does not on its face reach the I.A.6 statement, so **the one interview
+the order assigns to facility staff is the only one in the sequence with no advocate right
+attached.** That makes I.A.6 worse, not better.
+
+**The scope limiter, confirmed by reading the whole order.** The title is Sexual Assault, the stated
+Authority is PREA, and every operative duty is keyed to "sexual assault": the Purpose paragraph's
+staff reporting duty, I.A.9's CPS report, I.A.15's incident review. **Nothing in three pages reaches
+sexual harassment, exposure, or touching not characterised as assault.** So the department has a
+coordinated response plan in all but name for the most serious band and nothing written for the band
+that generates most incidents. Rows 47, 54, 48 and 69.
+
+**New to the register from this order:** I.A.2 (the Duty Supervisor notifies a Chief Deputy or
+Assistant Chief Deputy), I.A.7 (a trauma informed interaction instruction, credited at row 67),
+I.A.12 (the suspect rape exam, the Sheriff's responsibility).
 
 ---
 

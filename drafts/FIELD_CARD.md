@@ -195,4 +195,4 @@ Classification and protection are yours. Fact finding is not. The distinction ma
 
 *This is not legal advice, and statutory questions go to County Counsel. The CANRA and 28 CFR 115.6 text behind this card was corroborated by exact-phrase search and has NOT been read from the Penal Code or the Code of Federal Regulations directly. Confirm before this issues. Two provisions in current departmental orders will mislead you: the CPS timeline in the PREA Policy and OO 1453 says 24 hours, and the law says immediately. Follow the law.*
 
-*Generated from `drafts/supervisor-guide.json` by `npm run field-card`. Do not hand-edit this file or the Word version; the next build overwrites them. Drawn from gap register Revision 9.*
+*Generated from `drafts/supervisor-guide.json` by `npm run field-card`. Do not hand-edit this file or the Word version; the next build overwrites them. Drawn from gap register Revision 10.*
