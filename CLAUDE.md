@@ -78,7 +78,7 @@ Full register with gap text is in `prea-register.csv`. Columns `owner`, `target_
 | 7 | OO 1360 Searches | eff 12/01/2019, rev 03/04/2020 |
 | 8 | OO 1361 Grievances | eff 01/01/2011, rev 04/03/2019 |
 | 9 | OO 1362 Reporting of Incidents | eff 11/01/2019 |
-| 10 | OO 1453 Sexual Assault | eff 04/25/2013, rev 12/09/2019 |
+| 10 | OO 1453 Sexual Assault | eff 04/25/2013, rev 12/09/2019. **Produced and read in full in Revision 10** |
 | 11 | Internal Affairs Administrative Investigations | eff 01/11/2011, no revision |
 | 12 | Code of Conduct, Non-Sworn and Non-County Personnel | eff 06/01/2011 |
 | 13 | Detention and Intake Responsibility (J-3.4) | undated |
@@ -96,7 +96,8 @@ post-rewrite edition, basis for Revision 6) and **PREA, Public Law 108-79, as en
 
 Put the source PDFs in `docs/` so you can read them directly. The 1390/1391 PDF is a
 scan with no text layer, so it has to be rasterized and read as images, not extracted. **So is
-the OO 1352 PDF**: `pypdf` returns 363 characters across its twelve pages. Install `pymupdf`,
+the OO 1352 PDF** (363 characters across twelve pages) **and the OO 1453 PDF** (zero characters
+across three). Install `pymupdf`,
 render each page at 200 dpi, and read the PNGs. That works and is the only thing that does.
 
 **`docs/` is gitignored and does not survive a new container.** Every verified quotation is
@@ -572,8 +573,9 @@ finds an em dash or an out-of-order item number.
 **What the drafting could and could not stand on.** **Updated in Revision 9: OO 1352 has now been
 produced and read in full, so changes 1 and 6 no longer rest on reconstruction.** Both have been
 rewritten against the order's real words, and change 6 gained an item it was missing (II.F.2.d).
-Four of the orders the redlines amend are still **unproduced**: OO 1352.5, the PREA
-Policy, OO 1453, and the Internal Affairs policy. For those, the struck text in each redline is
+**Updated again in Revision 10: OO 1453 has now been produced and read, so the OO 1453 half of
+change 3 quotes the order.** Three of the orders the redlines amend are still **unproduced**:
+OO 1352.5, the PREA Policy, and the Internal Affairs policy. For those, the struck text in each redline is
 a **reconstruction of what the register describes, not a quotation**, and the section numbers
 trace to the register, which traces to the earlier review that did read the orders. Every item
 carries a Before adoption block saying which it is. Do not let a redline circulate as though the
@@ -592,6 +594,17 @@ produced document.
 - **Change 2** makes single occupancy the presumptive outcome of the III.F determination rather
   than a status rule. Flagged in the Why: a presumption applied without a real determination is
   the same defect in better clothes, so the JPIP documentation is what makes it work.
+- **Change 3, updated in Revision 10.** Its two struck provisions now have different provenance and
+  the redline says so on each: I.A.9 is quoted from the produced order, V.A.4 is still a
+  reconstruction. The amendment also gained a scope correction, because reading the whole of OO 1453
+  confirmed every operative duty is keyed to "sexual assault" and therefore misses conduct that
+  PC 11165.1(b)(4) and (b)(5) make reportable. The insert is drafted to the CANRA trigger rather than
+  to the word assault, which fixes the timeline and the scope together.
+- **Change 7 lost a target in Revision 10, and that favours the department.** It had listed "OO 1453
+  Sexual Assault, records provisions". **That order has no records retention provision**: three
+  pages, fifteen items, none setting a retention period. The retention conflict is between Internal
+  Affairs XI.C.1 and PREA Policy XVIII.B, with Internal Complaints alongside. One fewer document to
+  reconcile.
 - **Change 3 is staged.** Stage one corrects PC 11166(a) in place in both PREA Policy V.A.4 and
   OO 1453 I.A.9 now; stage two replaces both with a cross-reference once the General Order
   issues. Paragraph 2 of stage one says internal notification does not satisfy or delay the

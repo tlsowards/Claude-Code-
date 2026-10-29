@@ -9,12 +9,12 @@
     "Internal Complaints (Administrative P&P Manual)",
     "Title 15, Minimum Standards for Juvenile Facilities, rev. 04/01/2014",
     "OO 1352 Classification, eff. 12/09/2019, rev. 02/27/2020 (produced and read in full in Revision 9)",
-    "Title 15, Minimum Standards for Juvenile Facilities, eff. 01/01/2019"
+    "Title 15, Minimum Standards for Juvenile Facilities, eff. 01/01/2019",
+    "OO 1453 Sexual Assault, eff. 04/25/2013, rev. 12/09/2019 (produced and read in full in Revision 10)"
   ],
   "not_produced": [
     "OO 1352.5 Transgender and Intersex Youth",
     "PREA Policy and Procedure, Juvenile Institutions",
-    "OO 1453 Sexual Assault",
     "Internal Affairs Administrative Investigations"
   ],
   "items": [
@@ -149,8 +149,13 @@
       "problem": "The twenty-four hour Child Protective Services timeline appears in two departmental documents. PREA Policy V.A.4 states it, and OO 1453 I.A.9 restates it: all incidents of sexual assault shall be reported to Child Protective Services verbally within twenty-four hours, with the written report within thirty-six hours. Penal Code 11166(a) requires the telephone report immediately or as soon as is practicably possible. OO 1453 was last revised December 9, 2019, six years after the PREA policy, so the department restated the error rather than catching it on review. The Code of Conduct at VII.A.1 states the standard correctly, so three departmental documents address the same duty and two of them are wrong. A policy that tells a mandated reporter a report is timely at twenty-three hours is telling that employee to commit a misdemeanor, and the employee, not the department, carries that exposure.",
       "strike": [
         {
-          "cite": "PREA Policy V.A.4 and OO 1453 I.A.9, the same defect in both",
-          "status": "Described in the register, not read in this review.",
+          "cite": "OO 1453 Sexual Assault, I.A.9",
+          "status": "VERIFIED in Revision 10 against OO 1453 as produced, eff. 04/25/2013, rev. 12/09/2019. This is the order's actual text, including the typographical error in \"written reported\", which is the order's and not a transcription slip.",
+          "text": "All incidents of sexual assault shall be reported to Child Protective Services verbally within 24 hours. A formal written reported shall be completed and forwarded to Child Protective Services within 36 hours of receiving information concerning the incident."
+        },
+        {
+          "cite": "PREA Policy and Procedure, Juvenile Institutions, V.A.4",
+          "status": "Described in the register, not read in this review. The PREA Policy has still never been produced. Replace this with the policy's real words before circulating.",
           "text": "All incidents of sexual assault shall be reported to Child Protective Services verbally within 24 hours, with a written report submitted within 36 hours."
         }
       ],
@@ -177,12 +182,15 @@
         "Do not delete the incident reporting and Duty Supervisor notification duties in either document. Paragraph 2 of stage one is drafted so the internal duties survive alongside the mandated report rather than competing with it.",
         "Conform the Code of Conduct VII.A.1 to the same cross-reference once the General Order issues. It is currently correct, so it is a consistency edit, not a correction.",
         "Add the reporting standard to the Tier 1 training outline and to the annual refresher, and keep a signed acknowledgment on file. Confirm with County Counsel whether Penal Code 11166.5 applies to departmental employees.",
-        "Add a cross-reference for residents aged eighteen and older, who fall outside CANRA, to the existing General Order on Mandatory Reporting of Dependent Adult and Elder Abuse."
+        "Add a cross-reference for residents aged eighteen and older, who fall outside CANRA, to the existing General Order on Mandatory Reporting of Dependent Adult and Elder Abuse.",
+        "CORRECT THE SCOPE AS WELL AS THE TIMELINE, new in Revision 10 from reading the whole of OO 1453. Every operative duty in that order is keyed to \"sexual assault\": the Purpose paragraph's staff reporting duty, I.A.9's CPS report, and I.A.15's incident review. Nothing in the three pages reaches sexual harassment, exposure, or touching not characterised as assault. But PC 11165.1(b)(4) makes the intentional touching of a child's intimate parts for sexual arousal reportable, and (b)(5) makes masturbation in a child's presence reportable on the first occurrence. So the order as written misses reportable conduct. The insert below is drafted to the CANRA trigger rather than to the word \"assault\", which fixes both defects in one amendment.",
+        "While I.A.9 is open, consider amending I.A.6 in the same cycle. It directs a Miranda warning before questioning a suspect and says nothing about the WIC 625.6 consultation with counsel, which has been mandatory and unwaivable for youth 17 and under since 01/01/2021. That is register row 91 and conflict 13, and it is a separate amendment rather than part of this one, but it is in the same order and the same revision cycle."
       ],
       "why": "This ends the practice of restating a legal standard in multiple documents, which is how the error propagated and how it survived a 2019 revision. The relocation matters as much as the correction: a single General Order is one place to amend when the Penal Code changes, and one place for an auditor or a plaintiff to look. Stage one exists because the General Order will take an approval cycle that the current text cannot safely wait through.",
       "before_adoption": [
-        "Neither the PREA Policy nor OO 1453 has been produced to this review. Confirm V.A.4 and I.A.9 against the PDFs.",
-        "Paragraph 4 assumes the department receives mandated reports in its capacity as a county probation department. Penal Code 11165.9 makes that turn on whether the county has designated the probation department to receive them. Confirm the designation with County Counsel before adopting paragraph 4.",
+        "VERIFIED in Revision 10 against OO 1453 as produced, eff. 04/25/2013, rev. 12/09/2019. I.A.9 and its section number are the order's own words and this half of the redline may now circulate as a true redline.",
+        "The PREA Policy has still never been produced. V.A.4 above is a reconstruction of what the register describes, not a quotation, and the section number traces to the register. Confirm it against the policy before circulating.",
+        "Paragraph 4 assumes the department receives mandated reports in its capacity as a county probation department. Penal Code 11165.9 makes that turn on whether the county has designated the probation department to receive them. That designation is still unconfirmed. Confirm before adopting it.",
         "Full contents for the General Order are in the master report at Part 4.1. Model its structure on the existing Dependent Adult and Elder Abuse General Order, which is the department's own working template for this kind of duty."
       ]
     },
@@ -360,8 +368,7 @@
       "targets": [
         "Internal Affairs Administrative Investigations, XI.C.1",
         "PREA Policy and Procedure, Juvenile Institutions, XVIII.B",
-        "Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), retention provision",
-        "OO 1453 Sexual Assault, records provisions"
+        "Internal Complaints (Administrative P&P Manual, rev. 10/30/2013), retention provision"
       ],
       "authority": [
         "28 CFR 115.371(j)",
@@ -411,7 +418,8 @@
       "before_adoption": [
         "Neither the Internal Affairs policy nor the PREA Policy has been produced to this review. Confirm XI.C.1 and XVIII.B against the PDFs.",
         "Internal Complaints has been produced and read, so its retention sentence is the one item in this change that is grounded in the source document.",
-        "Paragraph 2 and paragraph 3 are drafting proposals, not legal advice. Route both to County Counsel before adoption, together with the question of whether the County's own records retention schedule already binds these records to a shorter period."
+        "Paragraph 2 and paragraph 3 are drafting proposals, not legal advice. Route both to County Counsel before adoption, together with the question of whether the County's own records retention schedule already binds these records to a shorter period.",
+        "CORRECTED IN REVISION 10. This change previously listed \"OO 1453 Sexual Assault, records provisions\" among its targets. OO 1453 was produced and read in full in Revision 10 and IT HAS NO RECORDS RETENTION PROVISION. Three pages, fifteen numbered items, none of which sets a retention period. I.A.11.c places evidence in the evidence locker at Intake and Booking, which is chain of custody rather than retention, and I.A.14 forwards investigative reports to the Supervising District Attorney and the Sheriff's Sexual Assaults Unit. The target has been removed. The practical effect narrows this change in the department's favour: the retention conflict is between Internal Affairs XI.C.1 and PREA Policy XVIII.B, with the Internal Complaints provision alongside them, and OO 1453 contributes nothing to reconcile."
       ]
     }
   ]
