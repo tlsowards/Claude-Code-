@@ -145,6 +145,29 @@ def main():
     for g in a['gaps']:
         add('- %s' % g)
     add('')
+    if 'roles' in f:
+        r = f['roles']
+        add('---')
+        add('')
+        add('## %s' % r['head'])
+        add('')
+        add(r['body'])
+        add('')
+        add('| %s |' % ' | '.join(r['columns']))
+        add('|%s' % ('---|' * len(r['columns'])))
+        for row in r['rows']:
+            add('| %s |' % ' | '.join(row))
+        add('')
+        add('### %s' % r['stop_head'])
+        add('')
+        for it in r['stop']:
+            add('- %s' % it)
+        add('')
+        add('### %s' % r['decision_head'])
+        add('')
+        add(r['decision'])
+        add('')
+
     add('---')
     add('')
     add(f['doubt'])

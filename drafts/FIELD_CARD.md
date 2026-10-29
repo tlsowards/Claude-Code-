@@ -152,6 +152,36 @@ Classifying it is the start, not the end. This is the sequence OO 1453 and the P
 
 ---
 
+## Who does what, and where you stop
+
+Classification and protection are yours. Fact finding is not. The distinction matters most in the middle of the chart, tiers 2 through 5, where there is no criminal callout and it feels like nobody else is coming. Somebody else is supposed to be coming. Read the decision note at the end of this section, because the department has not yet said who.
+
+| Role | Does | Does not |
+|---|---|---|
+| **Line staff**, whoever learns of it first | Reports to the Duty Supervisor **immediately**. Separates the youth. Preserves the scene and the clothing. Writes the incident report with **the words used verbatim**. Makes their own CANRA report if they formed the suspicion. | Does not interview anyone. Does not decide whether it is PREA. Does not wait to be asked. |
+| **Duty Supervisor**, you | Classifies the incident against the tier chart. Protects: separation, housing, the 115.362 call. Preserves evidence and video. Notifies out. Documents and hands off. | **Does not conduct the fact finding.** Does not interview witnesses to test whether the allegation is true. Does not identify residents who asked to stay anonymous. Does not decide the case. |
+| **Administrative investigator** for youth-on-youth | Conducts the 115.371(a) administrative investigation. Trained under 115.334. Interviews with the advocate rights attached. Reaches substantiated, unsubstantiated or unfounded. | **NOT CURRENTLY DESIGNATED. This is the hole.** See the decision note below. |
+| **Internal Affairs** | Investigates staff misconduct, with the Lybarger process, the one year clock and the IA disposition taxonomy. Receives the mandatory route for staff reporting. | Is not built for youth-on-youth. Its preponderance standard is written for employee cases only. Its discretion to decide no formal investigation is necessary has no carve-out for sexual abuse. |
+| **Sheriff's Department** | Criminal investigation. Notified **immediately** by the Duty Supervisor once it is believed a sexual assault occurred. Briefed by the reporting officer, given an interview room. | Not the answer for the middle band. A touching or exposure case is usually an administrative matter, and the absence of a Sheriff response does not remove the duty to investigate. |
+| **Chief Deputy and Assistant Chief Deputies** | Receive the memo. Make the agency-level calls. Own the cross-facility notification where a youth reports abuse at another facility, which is **72 hours**, not the 14 days current policy states. | Should not be the first point at which anyone decides whether the incident was PREA. That call is made and written down on the unit. |
+| **PREA Coordinator and facility Compliance Manager** | Would own the data, the incident reviews, the corrective action loop, and the consistency of classification across shifts. OO 1453 I.A.15 already addresses the review report to this role. | **DOES NOT EXIST.** The order routes a required report to a position the department does not have, so the review currently terminates in a dead letter. |
+| **Medical and Mental Health** | Crisis counseling, evaluation and treatment, referral. Clinical input into the incident review. | A mental health referral is not a protection plan and does not discharge the 115.362 duty. |
+| **Victim advocate**, usually a Rape Crisis Center | Accompanies the youth through the medical examination and through investigatory interviews. PC 264.2 and PC 679.04 give those rights, and OO 1453 I.A.13 recites them. | Cannot be offered after the fact. If an interview already happened without one, the right was already spent. |
+| **Retaliation monitor** | Watches the reporter, the target and any corroborating witness for at least **90 days**, with periodic status checks. | **NOT DESIGNATED, and no monitoring period exists in policy.** If the supervisor does not run it, nobody does. |
+
+### The stop-point, stated plainly
+
+- You classify. You protect. You preserve. You notify. You document. **Then you stop and hand off.**
+- The handoff is the point of the memo. Write what you observed, what the resident said verbatim, what you did, and what you classified it as. That is a complete supervisor product.
+- What turns a response into an investigation is **asking questions to find out whether it is true**. Establishing who was involved and keeping them safe is response. Testing the allegation is investigation, and it belongs to someone trained for it, with the advocate rights attached.
+- Three practical reasons, and the third is the one that bites. An untrained interview of a minor about sexual contact becomes the other side's exhibit later. The advocate rights under PC 679.04 attach to investigative interviews and cannot be offered retroactively. And identifying residents who asked for anonymity burns the witnesses and creates the retaliation exposure that 115.367 exists to prevent.
+
+### The decision the department has to make
+
+115.371(a) requires an administrative **or** criminal investigation for every allegation. For the middle band the answer is the administrative branch, and the department has not built it. Internal Affairs is written for employee misconduct. Nothing in the documents reviewed names who investigates a resident-on-resident allegation that is not a criminal callout. So supervisors fill the gap, which is a reasonable thing to do in a vacuum and the wrong place for the duty to sit, because the same person is also protecting, housing and classifying. **Two defensible answers, and the department has to pick one.** Either designate someone to conduct youth-on-youth administrative investigations, which is recommended change 8, or write down that the Duty Supervisor does it and build the 115.334 training, the advocate rights and the anonymity handling around that role. What is not defensible is leaving the duty real, unassigned and absorbed by whoever is on shift.
+
+---
+
 **If you are genuinely unsure, report.** The CANRA threshold is reasonable suspicion, which is deliberately low. Reporters have immunity. Failing to report is a crime. The risk is asymmetric on purpose, so classify fast where the chart is clear and report where it is not.
 
 *This is not legal advice, and statutory questions go to County Counsel. The CANRA and 28 CFR 115.6 text behind this card was corroborated by exact-phrase search and has NOT been read from the Penal Code or the Code of Federal Regulations directly. Confirm before this issues. Two provisions in current departmental orders will mislead you: the CPS timeline in the PREA Policy and OO 1453 says 24 hours, and the law says immediately. Follow the law.*

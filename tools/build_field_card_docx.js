@@ -183,6 +183,33 @@ push(block(WARN_FILL, F.after.gaps.map((g, i) => new Paragraph({
   children: runs(g), bullet: { level: 0 },
   spacing: { before: i ? 40 : 60, after: 60, line: 264 } }))));
 
+// Role matrix
+if (F.roles) {
+  const R = F.roles;
+  const M = [2600, 3740, 3740];
+  push(
+    new Paragraph({ children: [new PageBreak()] }),
+    new Paragraph({ text: R.head, heading: HeadingLevel.HEADING_1 }),
+    p(R.body),
+    table(M, [
+      new TableRow({ tableHeader: true,
+        children: R.columns.map((c, i) => cell(c, { width: M[i], fill: HEAD_FILL, bold: true })) }),
+      ...R.rows.map((row) => new TableRow({
+        children: row.map((c, i) => cell([new Paragraph({
+          children: runs(c, { size: TYPE.CELL }),
+          spacing: { before: 40, after: 40, line: 240 },
+        })], { width: M[i], fill: /NOT CURRENTLY DESIGNATED|DOES NOT EXIST|NOT DESIGNATED/.test(c) ? ABUSE_FILL : undefined })) })),
+    ]),
+    new Paragraph({ text: R.stop_head, heading: HeadingLevel.HEADING_2 }),
+  );
+  R.stop.forEach((it) => push(bullet(it)));
+  push(
+    new Paragraph({ text: R.decision_head, heading: HeadingLevel.HEADING_2 }),
+    block(WARN_FILL, [new Paragraph({ children: runs(R.decision),
+      spacing: { before: 60, after: 60, line: 264 } })]),
+  );
+}
+
 // Close
 push(
   new Paragraph({ children: [new PageBreak()] }),
