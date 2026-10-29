@@ -188,18 +188,6 @@ Thirteen requirements where a departmental document affirmatively states a rule 
 
 **Remediation.** Recommended change 6.
 
-### Conflict 13. Supervisor directed to question a youth suspect without the mandatory counsel consultation
-
-*Register row 91.*
-
-**The law requires.** WIC 625.6, as amended by SB 203 and effective 01/01/2021. A youth 17 years of age or younger shall consult with legal counsel, in person, by telephone or by video conference, before a custodial interrogation and before waiving any Miranda rights. The consultation may not be waived. 625.6(b) directs courts to weigh noncompliance on admissibility and to weigh a willful violation against the officer's credibility under Evidence Code 780.
-
-**The policy says.** OO 1453 I.A.6: 'The duty supervisor shall take an initial statement from the victim and suspect. All suspects involved in a sexual assault shall be read a "Miranda Warning", prior to any questioning.' The order says nothing about the 625.6 consultation. It was last revised 12/09/2019, more than a year before SB 203 took effect, and has not been updated since.
-
-**Why it matters.** New in Revision 10, on reading OO 1453 for the first time. Two further provisions confirm the design is deliberate rather than an aside: I.A.8 conditions the Sheriff notification on what is believed 'after initial inquiry', and I.A.10 refers to 'the reporting/investigating officer (usually a Supervisor)'. The exposure runs to the supervisor personally, because a statement taken without the consultation can be suppressed and a willful violation goes to that supervisor's credibility as a witness. Two adjacent defects sit in the same provision: 115.334 requires specialized training for whoever conducts a sexual abuse investigation, and the PC 679.04 advocate right that I.A.13 correctly recites attaches to interviews by law enforcement, the district attorney or defense counsel, so it does not reach the I.A.6 statement. The one interview the order assigns to facility staff is the only one in the sequence with no advocate right attached.
-
-**Remediation.** Amend I.A.6 to require the WIC 625.6 consultation before any questioning of a suspect aged 17 or under, and to record it. Until then, obtain the consultation anyway. This is not a reason to tell supervisors to ignore I.A.6: the statement itself is directed by the order.
-
 ### Conflict 12. Intake policy substantively obsolete
 
 *Register row 79.*
@@ -211,6 +199,18 @@ Thirteen requirements where a departmental document affirmatively states a rule 
 **Why it matters.** CYA became the Division of Juvenile Justice in 2005 and closed entirely on 06/30/2023 under SB 823.
 
 **Remediation.** Rewrite rather than amend.
+
+### Conflict 13. Supervisor directed to question a youth suspect without the mandatory counsel consultation
+
+*Register row 91.*
+
+**The law requires.** WIC 625.6, as amended by SB 203 and effective 01/01/2021. A youth 17 years of age or younger shall consult with legal counsel, in person, by telephone or by video conference, before a custodial interrogation and before waiving any Miranda rights. The consultation may not be waived. 625.6(b) directs courts to weigh noncompliance on admissibility and to weigh a willful violation against the officer's credibility under Evidence Code 780.
+
+**The policy says.** OO 1453 I.A.6: 'The duty supervisor shall take an initial statement from the victim and suspect. All suspects involved in a sexual assault shall be read a "Miranda Warning", prior to any questioning.' The order says nothing about the 625.6 consultation. It was last revised 12/09/2019, more than a year before SB 203 took effect, and has not been updated since.
+
+**Why it matters.** New in Revision 10, on reading OO 1453 for the first time. Two further provisions confirm the design is deliberate rather than an aside: I.A.8 conditions the Sheriff notification on what is believed 'after initial inquiry', and I.A.10 refers to 'the reporting/investigating officer (usually a Supervisor)'. The exposure runs to the supervisor personally, because a statement taken without the consultation can be suppressed and a willful violation goes to that supervisor's credibility as a witness. Two adjacent defects sit in the same provision: 115.334 requires specialized training for whoever conducts a sexual abuse investigation, and the PC 679.04 advocate right that I.A.13 correctly recites attaches to interviews by law enforcement, the district attorney or defense counsel, so it does not reach the I.A.6 statement. The one interview the order assigns to facility staff is the only one in the sequence with no advocate right attached.
+
+**Remediation.** Amend I.A.6 to require the WIC 625.6 consultation before any questioning of a suspect aged 17 or under, and to record it. Until then, obtain the consultation anyway. This is not a reason to tell supervisors to ignore I.A.6: the statement itself is directed by the order.
 
 ## 4. The crosswalk, requirement by requirement
 

@@ -453,11 +453,16 @@ push(
   p('The owner, target_date, and disposition columns are intentionally empty. Populating them '
     + 'is what turns the register into the corrective action plan, which is the record that '
     + 'matters if anyone asks what the department did after it identified these issues.'),
+  // Every count here is derived. This paragraph carried hardcoded figures from the
+  // first commit of this file and was wrong by two of them, twelve conflicts and
+  // thirty-nine partials, by the time anyone looked. The word() helper used three
+  // times above exists for exactly this.
   labelled('Sequence suggested by this view.',
-    'The twelve conflicts at part 3 first, because seven of them are correctable by amendment '
-    + 'and all twelve are provisions the department can be shown to have published. Then the '
-    + 'eleven requirements with no departmental provision at part 5, because those need '
-    + 'drafting lead time. The 39 partials last, since each already has an anchor to amend.'),
+    `The ${word(data.by_status.Conflict)} conflicts at part 3 first, because each is a provision `
+    + 'the department can be shown to have published and most are correctable by amendment. Then '
+    + `the ${word(data.orphan_none)} requirements with no departmental provision at all at part 5, `
+    + `because those need drafting lead time. The ${word(data.by_status.Partial)} partials last, `
+    + 'since each already has an anchor to amend.'),
 );
 
 /* -------------------------------------------------------------- assemble */

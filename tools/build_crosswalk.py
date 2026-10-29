@@ -348,6 +348,20 @@ CONFLICTS = [
         "fix": "Recommended change 6.",
     },
     {
+        "n": 12,
+        "checked": 10,
+        "topic": "Intake policy substantively obsolete",
+        "rows": [79],
+        "law": "15 CCR 1350 and 1350.5. Intake and admittance policy must reflect "
+               "current law and carry the admittance elements added in 2019.",
+        "policy": "Detention and Intake Responsibility (J-3.4) references CYA and "
+                  "CYA parolees throughout, contains no PREA or sexual abuse "
+                  "screening content, and does not reference OO 1350.5.",
+        "note": "CYA became the Division of Juvenile Justice in 2005 and closed "
+                "entirely on 06/30/2023 under SB 823.",
+        "fix": "Rewrite rather than amend.",
+    },
+    {
         "n": 13,
         "checked": 10,
         "topic": "Supervisor directed to question a youth suspect without the mandatory counsel consultation",
@@ -386,20 +400,6 @@ CONFLICTS = [
                "Until then, obtain the consultation anyway. This is not a reason "
                "to tell supervisors to ignore I.A.6: the statement itself is "
                "directed by the order.",
-    },
-    {
-        "n": 12,
-        "checked": 10,
-        "topic": "Intake policy substantively obsolete",
-        "rows": [79],
-        "law": "15 CCR 1350 and 1350.5. Intake and admittance policy must reflect "
-               "current law and carry the admittance elements added in 2019.",
-        "policy": "Detention and Intake Responsibility (J-3.4) references CYA and "
-                  "CYA parolees throughout, contains no PREA or sexual abuse "
-                  "screening content, and does not reference OO 1350.5.",
-        "note": "CYA became the Division of Juvenile Justice in 2005 and closed "
-                "entirely on 06/30/2023 under SB 823.",
-        "fix": "Rewrite rather than amend.",
     },
 ]
 
@@ -708,6 +708,15 @@ def check_conflicts():
     it, so the only honest control is to make the build stop until someone has
     re-read each entry against the register and said so by bumping "checked".
     """
+    nums = [c["n"] for c in CONFLICTS]
+    if nums != list(range(1, len(nums) + 1)):
+        print("ABORTED, nothing written. The CONFLICTS entries are out of order, or do "
+              "not run from 1: %s" % ", ".join(str(n) for n in nums))
+        print("              Part 3 renders this list in literal order, not sorted by n, "
+              "so a new conflict spliced into the middle prints out of sequence in the "
+              "deliverable. Append new conflicts at the end.")
+        sys.exit(1)
+
     stale = [c["n"] for c in CONFLICTS if c.get("checked") != REVISION]
     if stale:
         print("ABORTED, nothing written. These CONFLICTS narratives were last "
