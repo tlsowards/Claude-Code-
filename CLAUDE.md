@@ -608,6 +608,18 @@ conflict 11, because they sit in the same documents and the same amendment cycle
 carries the OO 1360 search cross-reference. Change 5 carries the bad-faith rule for OO 1361.
 These are labelled as conforming changes, not as part of the numbered change.
 
+**Two supervisor-facing views, one source.** `drafts/supervisor-guide.json` builds both
+`PREA_Supervisor_Decision_Guide.docx` (the full guide, with the statutory text, the authority
+and the reasoning) and `PREA_Supervisor_Field_Card.docx` (the short decision card, about a
+fifth the length). `npm run field-card` fails the build if the two disagree on a tier number,
+on whether a tier is sexual abuse, or on whether its CPS answer is yes.
+
+**Do not hand-edit the Word files.** On 10/29 a copy of the guide came back with two sections
+cut in Word: the citation and verification notes, and the whole pat-search staff-misconduct
+section. The Contents page still listed both, because the TOC is a field and was not
+refreshed. Hand edits to a generated view are lost on the next build and leave the document
+internally inconsistent in the meantime. Changes go in the JSON.
+
 ---
 
 ## 14. Typography and document formatting (standing preference)

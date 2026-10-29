@@ -43,6 +43,8 @@ department did after it identified these issues.
 | `deliverables/PREA_Staffing_Plan_Factors.docx` | `npm run staffing-factors` |
 | `deliverables/PREA_Supervisor_Decision_Guide.docx` | `npm run supervisor-guide` |
 | `drafts/SUPERVISOR_GUIDE.md` | same, Markdown working copy |
+| `deliverables/PREA_Supervisor_Field_Card.docx` | `npm run field-card` |
+| `drafts/FIELD_CARD.md` | same, Markdown working copy |
 
 ```
 npm install          # first run only, installs the docx library
@@ -74,6 +76,13 @@ byte-stable, before concluding that content moved.
 The contents page is a Word field, so page numbers are computed by Word rather
 than written into the file. The document asks Word to refresh its fields on open.
 If the contents page still looks empty or stale, click in it and press F9.
+
+The field card is the short view of the supervisor guide and is built from the **same**
+`drafts/supervisor-guide.json`, not a trimmed copy of the Word file. `npm run field-card`
+**fails the build** if the card and the guide disagree about how many tiers there are, how
+they are numbered, whether a tier is sexual abuse, or whether its CPS answer is yes. A field
+card that contradicts the guide is worse than no field card, and a hand-trimmed copy of a
+generated document cannot be kept honest by anything.
 
 Two more guards exist for the same reason, both added after the bug they catch had
 already shipped. `tools/build_supervisor_guide_docx.js` fails the build if any table's
