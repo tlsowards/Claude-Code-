@@ -169,6 +169,71 @@ def main():
             add(it['body'])
             add('')
 
+    # Moved here from the field card on 10/29. The card is the classification
+    # decision and nothing else; the sequence and the role matrix are read once,
+    # in advance, which is what a guide is for.
+    if data['field'].get('actions'):
+        add('---')
+        add('')
+        add('## What to do, in full')
+        add('')
+        add('The classification card carries one line per block. These are the blocks in '
+            'full. They are cumulative: each one adds to the one above it.')
+        add('')
+        for blk in data['field']['actions']:
+            add('### %s' % blk['head'])
+            add('')
+            for it in blk['items']:
+                add('- %s' % it)
+            add('')
+
+    if data.get('after'):
+        a = data['after']
+        add('---')
+        add('')
+        add('## %s' % a['head'])
+        add('')
+        add(a['body'])
+        add('')
+        add('*%s*' % a['card_pointer'])
+        add('')
+        for ph in a['phases']:
+            add('### %s' % ph['head'])
+            add('')
+            add('*%s*' % ph['cite'])
+            add('')
+            for it in ph['items']:
+                add('- %s' % it)
+            add('')
+        add('### %s' % a['gaps_head'])
+        add('')
+        for g in a['gaps']:
+            add('- %s' % g)
+        add('')
+
+    if data.get('roles'):
+        r = data['roles']
+        add('---')
+        add('')
+        add('## %s' % r['head'])
+        add('')
+        add(r['body'])
+        add('')
+        add('| %s |' % ' | '.join(r['columns']))
+        add('|%s' % ('---|' * len(r['columns'])))
+        for row in r['rows']:
+            add('| %s |' % ' | '.join(c.replace('\n', ' ') for c in row))
+        add('')
+        add('### %s' % r['stop_head'])
+        add('')
+        for it in r['stop']:
+            add('- %s' % it)
+        add('')
+        add('### %s' % r['decision_head'])
+        add('')
+        add(r['decision'])
+        add('')
+
     if data.get('prea'):
         add('## %s' % data['prea']['head'])
         add('')

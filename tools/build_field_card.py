@@ -50,6 +50,51 @@ def check(data):
         sys.exit(1)
 
 
+CARD_STEPS = 5
+
+
+def check_length(f):
+    """Fail the build if the card grows back past one double sided page.
+
+    It was cut to five steps on 10/29 after it had reached six steps plus a ten
+    role matrix and an eight phase response sequence. Those now live in the
+    Supervisor Decision Guide. Length is the whole point of this view, so it is
+    enforced here rather than left to whoever next reads the output.
+    """
+    errs = []
+    if len(f['steps']) != CARD_STEPS:
+        errs.append('the card has %d steps and is built for %d. Added detail goes in the '
+                    'Supervisor Decision Guide, not here.' % (len(f['steps']), CARD_STEPS))
+    for key, what in (('after', 'response sequence'), ('roles', 'role matrix')):
+        if key in f:
+            errs.append('the %s is back under "field". It belongs at the top level of the '
+                        'JSON, where the Decision Guide renders it.' % what)
+    if errs:
+        print('ABORTED, nothing written. The field card is over length:')
+        for e in errs:
+            print('  ' + e)
+        sys.exit(1)
+
+
+def check_actions(f):
+    """Fail the build if the card's compact action rows drift from the full list.
+
+    The card carries one line per block; the Decision Guide carries the blocks in
+    full. Same arrangement as the tier chart, and for the same reason: a card that
+    tells a supervisor something the guide does not is worse than no card.
+    """
+    full = [b['head'] for b in f['actions']]
+    short = [r['head'] for r in f.get('actnow', [])]
+    if full != short:
+        print('ABORTED, nothing written. The card\'s action rows do not match the full '
+              'action blocks the Decision Guide renders:')
+        print('  guide blocks: %s' % ' | '.join(full))
+        print('  card rows:    %s' % ' | '.join(short))
+        print('              Both are field.actions and field.actnow in '
+              'drafts/supervisor-guide.json. One row per block, same heads, same order.')
+        sys.exit(1)
+
+
 def main():
     with open(SRC, encoding='utf-8') as fh:
         data = json.load(fh)
@@ -58,6 +103,8 @@ def main():
         return 1
     check(data)
     f = data['field']
+    check_length(f)
+    check_actions(f)
     L = []
     add = L.append
 
@@ -110,12 +157,11 @@ def main():
     add('')
     add(s['why'])
     add('')
-    for blk in f['actions']:
-        add('**%s**' % blk['head'])
-        add('')
-        for it in blk['items']:
-            add('- %s' % it)
-        add('')
+    add('| When | Do |')
+    add('|---|---|')
+    for r in f['actnow']:
+        add('| **%s** | %s |' % (r['head'], r['line']))
+    add('')
 
     s = steps[5]
     add('## Step %d. %s' % (s['n'], s['head']))
@@ -127,47 +173,6 @@ def main():
         add(line)
     add('```')
     add('')
-    s = steps[6]
-    a = f['after']
-    add('## Step %d. %s' % (s['n'], s['head']))
-    add('')
-    add(s['why'])
-    add('')
-    for ph in a['phases']:
-        add('**%s**  ' % ph['head'])
-        add('*%s*' % ph['cite'])
-        add('')
-        for it in ph['items']:
-            add('- %s' % it)
-        add('')
-    add('### %s' % a['gaps_head'])
-    add('')
-    for g in a['gaps']:
-        add('- %s' % g)
-    add('')
-    if 'roles' in f:
-        r = f['roles']
-        add('---')
-        add('')
-        add('## %s' % r['head'])
-        add('')
-        add(r['body'])
-        add('')
-        add('| %s |' % ' | '.join(r['columns']))
-        add('|%s' % ('---|' * len(r['columns'])))
-        for row in r['rows']:
-            add('| %s |' % ' | '.join(row))
-        add('')
-        add('### %s' % r['stop_head'])
-        add('')
-        for it in r['stop']:
-            add('- %s' % it)
-        add('')
-        add('### %s' % r['decision_head'])
-        add('')
-        add(r['decision'])
-        add('')
-
     add('---')
     add('')
     add(f['doubt'])

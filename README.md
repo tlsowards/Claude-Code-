@@ -36,6 +36,8 @@ department did after it identified these issues.
 
 | Output | Built by |
 |---|---|
+| `deliverables/PREA_Management_Brief.docx` | `npm run brief` |
+| `drafts/MANAGEMENT_BRIEF.md` | same, Markdown working copy |
 | `deliverables/PREA_versus_Policy_Crosswalk.docx` | `npm run crosswalk` |
 | `deliverables/PREA_versus_Policy_Crosswalk.md` | same, Markdown source of the above |
 | `deliverables/PREA_Redlines_Changes_1_to_7.docx` | `npm run redlines` |
@@ -50,6 +52,7 @@ department did after it identified these issues.
 
 ```
 npm install          # first run only, installs the docx library
+npm run brief
 npm run crosswalk
 npm run redlines
 npm run staffing-factors
@@ -85,12 +88,29 @@ categories the tier chart uses, because a memo that lets someone tick a box the 
 does not recognise would quietly reintroduce the misclassification the chart exists to
 prevent.
 
+The management brief is the short view of the **register**, written for managers rather
+than for an auditor: where the exposure is, how the liability runs, and what is blocked on
+a decision rather than on more analysis. It carries no findings of its own, so every
+exposure item names the register rows it rests on. `npm run brief` **fails the build** if
+one of those rows does not exist, or has since been scored Addressed, because the finding
+it was written around has then been cured. It also fails if the register grows a status or
+priority value the brief does not know how to order, which is the case where a new scoring
+category would otherwise be silently dropped from the counts.
+
 The field card is the short view of the supervisor guide and is built from the **same**
 `drafts/supervisor-guide.json`, not a trimmed copy of the Word file. `npm run field-card`
 **fails the build** if the card and the guide disagree about how many tiers there are, how
 they are numbered, whether a tier is sexual abuse, or whether its CPS answer is yes. A field
 card that contradicts the guide is worse than no field card, and a hand-trimmed copy of a
 generated document cannot be kept honest by anything.
+
+The card is **one sheet, printed double sided**, and two further guards keep it that way.
+It had grown to six steps plus a ten role matrix and an eight phase response sequence,
+which is four pages and not a card. Those now live in the Decision Guide, and both builders
+fail if a sixth step appears or if either of them is moved back under the `field` block. The
+card also carries one compact line per block of the action list the guide spells out in
+full, and the build fails if those lines stop matching the blocks they summarise, the same
+arrangement and the same reason as the tier chart.
 
 Two more guards exist for the same reason, both added after the bug they catch had
 already shipped. `tools/build_supervisor_guide_docx.js` fails the build if any table's

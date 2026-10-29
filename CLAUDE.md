@@ -560,6 +560,18 @@ Download these from the prior conversation and keep them in `deliverables/`:
 | `YDF_PREA_Audit_Evidence_Request.xlsx` | 40 document requests and 16 open questions |
 | `YDF_PREA_Gap_Register_Rev3.xlsx` | Excel version of `prea-register.csv` |
 
+Built in this repository, and regenerated rather than edited:
+
+| File | Built by | Contents |
+|---|---|---|
+| `PREA_Management_Brief.docx` | `npm run brief` | **The document to brief managers from.** 18 pages, one section per page. Page 3 is the whole thing in five numbered points; the rest is the backup for each one. Seven exposure items, the liability routes, what the department already has right, the fifteen changes in three waves, and the list of what is blocked on a decision |
+| `PREA_versus_Policy_Crosswalk.docx` | `npm run crosswalk` | The full 91 row register as a document |
+| `PREA_Redlines_Changes_1_to_7.docx` | `npm run redlines` | The drafted amendments |
+| `PREA_Supervisor_Decision_Guide.docx` | `npm run supervisor-guide` | The long form for supervisors, read in advance |
+| `PREA_Supervisor_Field_Card.docx` | `npm run field-card` | **One sheet, double sided.** Five steps and nothing else |
+| `PREA_Supervisor_Memo_Template.docx` | `npm run memo-template` | The memo a supervisor writes after classifying |
+| `PREA_Staffing_Plan_Factors.docx` | `npm run staffing-factors` | The 115.313(a) factors |
+
 The user has said he prefers Word over Excel for reports going forward.
 
 ---
@@ -871,7 +883,49 @@ I.A.12 (the suspect rape exam, the Sheriff's responsibility).
 
 ---
 
-## 18. Do not repeat this one
+## 18. The two audiences, and the split between them (10/29)
+
+Tim named the two jobs the material has to do, and they were fighting each other inside one
+document. **Explain it to supervisors so they can classify an incident, and explain it to
+managers so they can see the shortfalls, the issues and the liability exposure.** Those are
+different documents for different rooms and they now are.
+
+**For supervisors.** `PREA_Supervisor_Field_Card.docx` is one sheet printed double sided.
+Ages, the tier chart, the flip factors, one compact action table, the classification block.
+Nothing else. It had reached four pages carrying a ten role matrix and an eight phase
+response sequence, which is a guide, not a card. Both of those moved into
+`PREA_Supervisor_Decision_Guide.docx`, along with the action list in full, and **two build
+guards now fail if either comes back or a sixth step appears.** The flip list spans the
+fold; keeping it whole costs a third page, which is worse.
+
+**For managers.** `PREA_Management_Brief.docx`, new, built by `npm run brief` from
+`drafts/management-brief.json`. The brief carries no findings of its own: each of its seven
+exposure items names the register rows it rests on, and **the build fails if one of those
+rows does not exist or has since been scored Addressed**, because the finding it was written
+around has then been cured. It also fails if the register grows a status or priority value
+the brief cannot order, so a new scoring category cannot be silently dropped from the counts.
+
+The seven exposure items, and why these seven out of 91 rows: **1.** categorical single room
+housing for LGBTQI and transgender youth, rows 36 and 37, the cleanest adverse finding
+available against the department. **2.** the child abuse reporting timeline, row 48, which is
+personal criminal exposure for the employee rather than an institutional finding. **3.** the
+WIC 625.6 omission, row 91, same, and it runs to the supervisor personally. **4.** no PREA
+Coordinator, rows 2 and 3, where the department's own order is a written acknowledgment that
+the role is needed. **5.** nothing written for the band below sexual assault, rows 47, 54 and
+69, which is where supervisors are improvising. **6.** three retention rules against a claim
+with no limitations period, row 59. **7.** the 2013 policy date, row 74, established on a BSCC
+inspection by reading the cover page.
+
+**Two things the brief does deliberately.** It carries a section on what the department
+already has right, because it is true and because a brief that only lists failures gets
+discounted in the room. And it carries the staffing ratio as **the one thing that cannot be
+called either way**, rather than as a finding, because 15 CCR 1321(h)(1) sets the state floor
+at the written figure and whether a real gap exists depends on rosters that have not been
+produced.
+
+---
+
+## 19. Do not repeat this one
 
 **Revision 9's supervisor role matrix was published without the governing order in hand.** It told
 supervisors they do not conduct fact finding and do not interview, which is contradicted by OO 1453

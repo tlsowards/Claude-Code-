@@ -37,6 +37,13 @@ if (/[—–]/.test(flat)) {
 
 const txt = (t, o = {}) => new TextRun({ text: String(t), color: INK, ...o });
 
+// **bold** spans become bold runs. Three sections split this inline before the
+// helper existed; a bullet that was not splitting it shipped a literal pair of
+// asterisks into the counsel list, which is what the helper is here to stop.
+function runs(t, o = {}) {
+  return String(t).split(/\*\*(.+?)\*\*/g).map((part, i) => txt(part, { ...o, bold: i % 2 === 1 }));
+}
+
 function p(text, opts = {}) {
   const { runs, ...rest } = opts;
   return new Paragraph({
@@ -46,9 +53,9 @@ function p(text, opts = {}) {
   });
 }
 
-function bullet(text, fill) {
+function bullet(text, opts = {}) {
   return new Paragraph({
-    children: [txt(text)],
+    children: runs(text, opts),
     bullet: { level: 0 },
     spacing: { after: 80, line: 264 },
   });
@@ -318,6 +325,82 @@ if (data.mixedage) {
       spacing: { after: 120, line: 276 },
     }),
   ));
+}
+// The full action list. The classification card carries one compact line per
+// block; this is where the blocks live in full.
+if (data.field && data.field.actions) {
+  push(
+    new Paragraph({ children: [new PageBreak()] }),
+    h1('What to do, in full'),
+    p('The classification card carries one line per block. These are the blocks in full. '
+      + 'They are cumulative: each one adds to the one above it.'),
+  );
+  data.field.actions.forEach((blk) => {
+    push(new Paragraph({ text: blk.head, heading: HeadingLevel.HEADING_2 }));
+    blk.items.forEach((it) => push(bullet(it)));
+  });
+}
+// The response sequence and the role matrix, moved here from the field card on
+// 10/29. The card is the classification decision and nothing else. Both of
+// these are read once, in advance, which is what a guide is for.
+if (data.after) {
+  const A = data.after;
+  push(
+    new Paragraph({ children: [new PageBreak()] }),
+    h1(A.head),
+    p(A.body),
+    new Paragraph({ children: [txt(A.card_pointer, { italics: true, color: MUTED, size: TYPE.NOTE })],
+      spacing: { after: 180, line: 264 } }),
+  );
+  A.phases.forEach((ph) => {
+    push(
+      new Paragraph({ text: ph.head, heading: HeadingLevel.HEADING_2 }),
+      new Paragraph({ children: [txt(ph.cite, { italics: true, color: MUTED, size: TYPE.NOTE })],
+        spacing: { after: 90 } }),
+    );
+    ph.items.forEach((it) => push(bullet(it)));
+  });
+  push(
+    new Paragraph({ text: A.gaps_head, heading: HeadingLevel.HEADING_2 }),
+    block(WARN_FILL, A.gaps.map((g, i) => new Paragraph({
+      children: runs(g), bullet: { level: 0 },
+      spacing: { before: i ? 40 : 60, after: 60, line: 264 } }))),
+  );
+}
+// Roles the department has not filled. Shading is keyed off this, so keep it in
+// step with the wording used in the roles block of the JSON.
+const MISSING_ROLE = /NOT CURRENTLY DESIGNATED|DOES NOT EXIST|NOT DESIGNATED/;
+if (data.roles) {
+  const R = data.roles;
+  const M = [2600, 3740, 3740];         // sums to CONTENT_W; table() enforces it
+  push(
+    new Paragraph({ children: [new PageBreak()] }),
+    h1(R.head),
+    p(R.body),
+    table(M, [
+      new TableRow({ tableHeader: true,
+        children: R.columns.map((c, i) => cell(c, { width: M[i], fill: HEAD_FILL, bold: true })) }),
+      ...R.rows.map((row) => {
+        // Shade the WHOLE row where the role does not exist, the same way the
+        // tier chart computes its fill once per row. Testing the regex per cell
+        // only ever shaded the "Does not" column, because that is the only one
+        // the flag phrase appears in, which under-delivers the visual cue.
+        const fill = row.some((c) => MISSING_ROLE.test(c)) ? ABUSE_FILL : undefined;
+        return new TableRow({
+          children: row.map((c, i) => cell([new Paragraph({
+            children: runs(c, { size: TYPE.CELL }),
+            spacing: { before: 40, after: 40, line: 240 },
+          })], { width: M[i], fill })) });
+      }),
+    ]),
+    new Paragraph({ text: R.stop_head, heading: HeadingLevel.HEADING_2 }),
+  );
+  R.stop.forEach((it) => push(bullet(it)));
+  push(
+    new Paragraph({ text: R.decision_head, heading: HeadingLevel.HEADING_2 }),
+    block(WARN_FILL, [new Paragraph({ children: runs(R.decision),
+      spacing: { before: 60, after: 60, line: 264 } })]),
+  );
 }
 if (data.prea) {
   push(
