@@ -9,7 +9,7 @@ const path = require('path');
 const {
   Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, PageBreak,
   Table, TableRow, TableCell, WidthType, ShadingType, BorderStyle,
-  Header, Footer, PageNumber, TableOfContents,
+  Header, Footer, PageNumber,
 } = require('docx');
 const { TYPE } = require('./docx_style');
 
@@ -29,6 +29,16 @@ const CONTENT_W = 10080;
 const data = JSON.parse(fs.readFileSync(SRC, 'utf8'));
 if (!data.field) { console.error('ABORTED: no "field" block in ' + SRC); process.exit(1); }
 const F = data.field;
+
+// Independent of the Python builder's own check, so running this file directly
+// while iterating on Word styling cannot ship a dash. Same guard as
+// build_supervisor_guide_docx.js. The content is hand written, so nothing
+// generated from the register enforces the no-em-dash rule on it.
+if (/[\u2014\u2013]/.test(JSON.stringify(F))) {
+  console.error('ABORTED. Em or en dash in the "field" block of drafts/supervisor-guide.json, '
+    + 'which CLAUDE.md section 1 forbids.');
+  process.exit(1);
+}
 
 function txt(s, opts = {}) {
   return new TextRun({ text: s, size: opts.size || TYPE.BODY, bold: !!opts.bold,
