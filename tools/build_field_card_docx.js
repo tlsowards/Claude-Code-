@@ -183,6 +183,10 @@ push(block(WARN_FILL, F.after.gaps.map((g, i) => new Paragraph({
   children: runs(g), bullet: { level: 0 },
   spacing: { before: i ? 40 : 60, after: 60, line: 264 } }))));
 
+// Roles the department has not filled. Shading is keyed off this, so keep it
+// in step with the wording used in the roles block of the JSON.
+const MISSING_ROLE = /NOT CURRENTLY DESIGNATED|DOES NOT EXIST|NOT DESIGNATED/;
+
 // Role matrix
 if (F.roles) {
   const R = F.roles;
@@ -194,11 +198,20 @@ if (F.roles) {
     table(M, [
       new TableRow({ tableHeader: true,
         children: R.columns.map((c, i) => cell(c, { width: M[i], fill: HEAD_FILL, bold: true })) }),
-      ...R.rows.map((row) => new TableRow({
-        children: row.map((c, i) => cell([new Paragraph({
-          children: runs(c, { size: TYPE.CELL }),
-          spacing: { before: 40, after: 40, line: 240 },
-        })], { width: M[i], fill: /NOT CURRENTLY DESIGNATED|DOES NOT EXIST|NOT DESIGNATED/.test(c) ? ABUSE_FILL : undefined })) })),
+      ...R.rows.map((row) => {
+        // Shade the WHOLE row where the role does not exist, the same way the
+        // tier chart computes its fill once per row. Testing the regex per cell
+        // only ever shaded the "Does not" column, because that is the only one
+        // the flag phrase appears in, which under-delivers the visual cue on a
+        // document whose value is being scannable under pressure.
+        const flagged = row.some((c) => MISSING_ROLE.test(c));
+        const fill = flagged ? ABUSE_FILL : undefined;
+        return new TableRow({
+          children: row.map((c, i) => cell([new Paragraph({
+            children: runs(c, { size: TYPE.CELL }),
+            spacing: { before: 40, after: 40, line: 240 },
+          })], { width: M[i], fill })) });
+      }),
     ]),
     new Paragraph({ text: R.stop_head, heading: HeadingLevel.HEADING_2 }),
   );
