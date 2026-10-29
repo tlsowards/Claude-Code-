@@ -47,8 +47,21 @@ def check(data):
             if w not in flags:
                 errs.append('the tier chart no longer uses the category "%s", '
                             'but the memo still offers it' % w)
+    # The numbered sections carry their numbers as literal text in the heading,
+    # so reordering the list in the JSON would silently produce 1, 2, 4, 3. The
+    # redlines builder already guards its item numbers this way.
+    seen = []
+    for s in data['memo']['sections']:
+        mnum = re.match(r'\s*(\d+)\.', s['head'])
+        if mnum:
+            seen.append((int(mnum.group(1)), s['head']))
+    nums = [n for n, _ in seen]
+    if nums and nums != list(range(1, len(nums) + 1)):
+        errs.append('the numbered memo sections are out of sequence, or do not start at 1: %s'
+                    % ', '.join(str(n) for n in nums))
+
     if errs:
-        print('ABORTED, nothing written. The memo template and the tier chart disagree:')
+        print('ABORTED, nothing written. The memo template does not hold together:')
         for e in errs:
             print('  ' + e)
         sys.exit(1)
