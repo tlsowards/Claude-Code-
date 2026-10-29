@@ -45,6 +45,8 @@ department did after it identified these issues.
 | `drafts/SUPERVISOR_GUIDE.md` | same, Markdown working copy |
 | `deliverables/PREA_Supervisor_Field_Card.docx` | `npm run field-card` |
 | `drafts/FIELD_CARD.md` | same, Markdown working copy |
+| `deliverables/PREA_Supervisor_Memo_Template.docx` | `npm run memo-template` |
+| `drafts/MEMO_TEMPLATE.md` | same, Markdown working copy |
 
 ```
 npm install          # first run only, installs the docx library
@@ -76,6 +78,12 @@ byte-stable, before concluding that content moved.
 The contents page is a Word field, so page numbers are computed by Word rather
 than written into the file. The document asks Word to refresh its fields on open.
 If the contents page still looks empty or stale, click in it and press F9.
+
+The memo template is the third view of that same source. `npm run memo-template` **fails
+the build** if the classification options it offers a supervisor stop matching the
+categories the tier chart uses, because a memo that lets someone tick a box the chart
+does not recognise would quietly reintroduce the misclassification the chart exists to
+prevent.
 
 The field card is the short view of the supervisor guide and is built from the **same**
 `drafts/supervisor-guide.json`, not a trimmed copy of the Word file. `npm run field-card`
