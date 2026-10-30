@@ -34,9 +34,9 @@ These are the items that cannot move without a decision from the department. The
 
 3. **Send WIC 625.6(d) to County Counsel.** It decides whether the interrogation finding is a violation we are carrying or a good practice we should adopt anyway.
 
-4. **Give us the rosters and post assignments.** They settle whether our staffing finding is a real gap or a paperwork gap.
+4. **Give us the rosters and post assignments.** They settle whether the staffing question is a real gap or a paperwork gap.
 
-5. **Produce five documents:** the PREA Policy itself, OO 1354 on separation, the resident handbook, the hiring procedure, and the contractor and volunteer screening procedure. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words.
+5. **Produce six documents:** the PREA Policy itself, OO 1352.5 on transgender and intersex youth, OO 1354 on separation, the resident handbook, the hiring procedure, and the contractor and volunteer screening procedure. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words. OO 1352.5 is the cheapest of the six to act on, because one provision of it is the only thing we are asking to change.
 
 6. **Confirm whether the county has named Probation** as an agency that receives mandated child abuse reports. One paragraph of a drafted amendment depends on it.
 
@@ -64,7 +64,7 @@ Not Evidenced means a document is referenced in a departmental policy but has no
 
 ## What is in this package
 
-Nine documents. Every one is generated from the register or from a single source, so none is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent. Two of them are exceptions, Attachments H and I, which are meant to be worked on in Word: accepting and rejecting their tracked changes is the point of them, and the copy saved afterwards is the department's.
+Ten documents. Every one is generated from the register or from a single source, so none is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent. Two of them are exceptions, Attachments H and I, which are meant to be worked on in Word: accepting and rejecting their tracked changes is the point of them, and the copy saved afterwards is the department's. Attachment J looks like those two and is not one of them: it carries no tracked changes, because the order it addresses has never been produced to the review and so none of its wording is held.
 
 | Tab | Document | Page | Who it is for |
 |---|---|---|---|
@@ -77,6 +77,7 @@ Nine documents. Every one is generated from the register or from a single source
 | **G** | Staffing Plan Factors | 167 | Whoever answers the staffing question. |
 | **H** | OO 1453 with the fixes marked | 169 | Policy revision, County Counsel, and anyone who wants to see the actual words change rather than read about it. |
 | **I** | OO 1352, the provisions that change | 176 | Policy revision, classification staff, and County Counsel. |
+| **J** | OO 1352.5, citations and required actions | 182 | Policy revision, and County Counsel. |
 
 ### Attachment A. Management Brief
 
@@ -131,6 +132,12 @@ The Sexual Assault order itself, with the proposed amendments shown as Word trac
 The Classification order's amended provisions, shown as Word tracked changes the same way Attachment H shows OO 1453. Covers changes 1 and 6: rescinding the S-8 classification and its automatic single room rule, and separating the risk of being abusive from the risk of being victimised.
 
 ***This one is not the whole order, and Attachment H is.** OO 1352 runs to twelve pages. It was read in full, but the PDF did not survive, so only the provisions quoted at the time are held. Six provisions carry real redlines because their words are the order's. Two are marked as described rather than quoted, carry no redline, and state the required action instead. **Upload the OO 1352 PDF again and a complete version can be built, the same way OO 1453 was.***
+
+### Attachment J. OO 1352.5, citations and required actions
+
+The thirteen provisions of the transgender and intersex order that bear on PREA, what each one does, and the action required. Twelve need no amendment and four exceed the federal standard. One provision, III.I, is the whole finding, and the replacement language for it is drafted here.
+
+***This one is not a redline and shows no struck text.** OO 1352.5 has never been produced to the review, so its wording is not held and nothing here is a quotation. Produce the order and this becomes a tracked changes document built like Attachment H.*
 
 ---
 

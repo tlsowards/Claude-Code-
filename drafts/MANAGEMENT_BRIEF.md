@@ -254,9 +254,9 @@ These are the things that cannot move until somebody decides. Shortest first.
 
 3. **Send WIC 625.6(d) to County Counsel.** It decides whether the interrogation finding is a violation we are carrying or a good practice we should adopt anyway.
 
-4. **Give us the rosters and post assignments.** They settle whether our staffing finding is a real gap or a paperwork gap.
+4. **Give us the rosters and post assignments.** They settle whether the staffing question is a real gap or a paperwork gap.
 
-5. **Produce five documents:** the PREA Policy itself, OO 1354 on separation, the resident handbook, the hiring procedure, and the contractor and volunteer screening procedure. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words.
+5. **Produce six documents:** the PREA Policy itself, OO 1352.5 on transgender and intersex youth, OO 1354 on separation, the resident handbook, the hiring procedure, and the contractor and volunteer screening procedure. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words. OO 1352.5 is the cheapest of the six to act on, because one provision of it is the only thing we are asking to change.
 
 6. **Confirm whether the county has named Probation** as an agency that receives mandated child abuse reports. One paragraph of a drafted amendment depends on it.
 

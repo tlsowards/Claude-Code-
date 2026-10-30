@@ -478,6 +478,19 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
   exception, was also missing and is now in the draft amendment. **The lesson: a statute summarised
   from a search result is not a statute read. Read every subdivision before scoring a conflict on
   it, because the exemption subdivision is the one that decides whether there is a conflict at all.**
+- **Redline change 2 told County Counsel that 15 CCR 1352.5 was unconfirmed and to go obtain the
+  current BSCC edition. That edition was obtained and read in Revision 6, which confirmed 1352.5
+  runs (a) to (e). Corrected 10/30.** The authority line and a before-adoption note in a shipped
+  deliverable both carried the Revision 5 state of knowledge. The 1352(e) line in the same item
+  also still cited only the 2014 edition, though Revision 6 confirmed it unchanged in 2019.
+  **The general lesson, and it is the most useful one in this section: Revision 6 corrected the
+  register rows and wrote itself into this file, and did not sweep the redlines, which had been
+  drafted against Revision 5.** A correction that updates the register does not update a
+  deliverable drafted from an earlier revision. When a citation moves from unconfirmed to
+  verified, grep every file in `drafts/` for the old claim, not just the register. A caveat that
+  has been resolved is worse than no caveat: it sends counsel to do work already done, and it
+  invites them to discount the caveats that are still live.
+
 - **Do not assume isolation is available as a disciplinary sanction.** OO 1390/1391 III omits
   it from the consequences list and OO 1354.5 I.C.1 prohibits confinement for punishment. The
   department has excluded it, which is a stronger position than complying with the isolation
@@ -592,6 +605,9 @@ Built in this repository, and regenerated rather than edited:
 | `PREA_Supervisor_Field_Card.docx` | `npm run field-card` | **One sheet, double sided.** Five steps and nothing else |
 | `PREA_Supervisor_Memo_Template.docx` | `npm run memo-template` | The memo a supervisor writes after classifying |
 | `PREA_Staffing_Plan_Factors.docx` | `npm run staffing-factors` | The 115.313(a) factors |
+| `OO_1453_Tracked_Changes.docx` | `npm run tracked-1453` | The whole order with real Word revisions |
+| `OO_1352_Tracked_Changes.docx` | `npm run tracked-1352` | The provisions that change, with real revisions |
+| `OO_1352_5_Citations_and_Actions.docx` | `npm run described-1352-5` | **Not a redline.** Citations and required actions, because the order was never produced |
 
 The user has said he prefers Word over Excel for reports going forward.
 
@@ -957,9 +973,10 @@ stand, the tab schedule, how to use it by role, and what is deliberately not in 
 reasoning stays in the Management Brief at Attachment A and is not restated.
 
 **`PREA_Briefing_Package_Complete.pdf`**, built by `npm run package-pdf`, is the whole thing
-as one bookmarked PDF. 166 pages: cover 1 to 8, then A Management Brief 9, B Redlines 27,
-C Crosswalk 49, D Decision Guide 128, E Classification Card 158, F Memo Template 160,
-G Staffing Factors 165.
+as one bookmarked PDF. **189 pages as of 10/30, ten attachments**: cover 1, A Management Brief 10,
+B Redlines 28, C Crosswalk 50, D Decision Guide 130, E Classification Card 160, F Memo Template 162,
+G Staffing Factors 167, H OO 1453 tracked 169, I OO 1352 tracked 176, **J OO 1352.5 citations and
+actions 182**. Do not hand-maintain those numbers: the build measures them.
 
 **Three things worth knowing before touching it.**
 
@@ -1182,3 +1199,87 @@ only as the quoted provisions, not in full, and its PDF is gone. OO 1352.5, the 
 Internal Affairs policy have never been produced at all. **Building one of these from a
 reconstruction would hand the department a document that looks like their policy and is not.** Do
 not do it. Ask for the source.
+
+---
+
+## 23. The third shape: OO 1352.5, and why it is not a redline (10/30)
+
+Tim asked for tracked changes on OO 1352.5 and the answer was no. **The order has never been
+produced to this review.** Checked before answering rather than after: the register and the
+redlines hold **zero verbatim quotations** of it, only section numbers and descriptions. He then
+asked for the all-described version instead, and that is what
+`OO_1352_5_Citations_and_Actions.docx` is, built by `npm run described-1352-5` from
+`drafts/oo1352-5-described.json`.
+
+**There are now three shapes, and the shape is determined by what text is in hand. Do not mix them.**
+
+| Order | Shape | Why |
+|---|---|---|
+| OO 1453 | The whole order, real Word revisions | Full text produced, read, and captured into the JSON |
+| OO 1352 | The provisions that change, real revisions | Only the quoted provisions survive; the PDF is gone |
+| OO 1352.5 | Citations and required actions, **no revisions at all** | Never produced; no wording held |
+
+**What made the third shape worth building rather than refusing outright.** OO 1352.5 is the
+best documented of the three unproduced orders. Thirteen provisions are described section by
+section across register rows 10, 11, 36, 37, 74 and 75, and **twelve of them need no amendment,
+four exceed the federal standard, and one provision is the entire finding.** That is a strong
+document for the department to receive, because it says their order is right in twelve places and
+wrong in one, which is a different conversation from a list of failures. A redline could not have
+said it; a list of citations can.
+
+**What the document may and may not contain.** It carries this review's **proposed replacement
+language** for III.I, because that text is ours and labelling it ours is honest. It carries no
+struck text, no inserted text, and no `w:ins` or `w:del` anywhere, verified against the XML: zero,
+against 8 and 13 in the two real redlines. Drafting our own language is fine. Fabricating the
+department's current wording in order to strike it is not, and that is the whole distinction.
+
+**Nine guards, and the two worth knowing.**
+
+**The drift guard is the one that earned its place before it ran.** Section 22 records the OO 1352
+tracked document and the redline quietly proposing different amendments under change 6, caught by
+review rather than by a build. So this builder reads `drafts/redlines.json`, finds the item for
+each amended provision's change number, and **aborts if the proposed paragraphs differ from the
+redline's by a single character**, printing both. The lesson from 22 was "when a second deliverable
+is built for a change that already has one, the risk is not that it will be wrong on its own terms
+but that it will quietly propose something different." This is that lesson turned into a build
+failure instead of a note.
+
+**The tab letter guard came from a real bug in the first draft of this document**, caught on reading
+the rendered PDF. It said OO 1453 was at Attachment G. G is the staffing factors; 1453 is H. The fix
+was not to correct the letter but to **ban tab letters from this document entirely**, because a tab
+letter is a fact about the packet's running order, which changes whenever an attachment is added,
+and this document also travels on its own to whoever is producing the order. Name the document, not
+its tab. **Prefer removing a class of error to correcting an instance of it.**
+
+The other seven: `complete` must be false; `is_redline` must be false; the provenance must say both
+that the order was never produced and that the document contains none of its words; the subtitle
+must say in terms that it is not a redline; the output filename may not say tracked changes or
+redline, because a filename is what gets forwarded in an email; no provision may carry the keys the
+redline builders use for the order's own words (`runs`, `sub`, `verbatim`, `kept`, `struck`, `del`,
+`status`), which is how a reconstruction would get started; and every provision must name its
+register rows and a required action, must name a change number if and only if it is marked for
+amendment, and must carry proposed language if and only if it is marked for amendment.
+
+**Nothing in this document is quoted, so the no-dash rule covers every string in the file.** That is
+the opposite of the OO 1453 builder, where the guard had to be rescoped to authored text because the
+order's own paragraph 1 contains an en dash. The rule tracks provenance, not file.
+
+**All nine were tested by reintroducing the defect**, per section 22. All nine fired.
+
+**Two consistency fixes this pass forced, both of the "the prose claims more than the list backs"
+class from section 19.** The attachments paragraph said nine documents and had to say ten. And
+**ask 5 asked for five documents without asking for OO 1352.5**, while the new attachment tells the
+department that producing that order turns the document into a redline. The asks list is what the
+department acts on, so the fix went there: ask 5 now asks for six documents and names OO 1352.5 as
+the cheapest of them to act on. The counted-list guard was tested on the new wording by claiming
+seven and listing six, and it caught it.
+
+**Staffing, per Tim on 10/30.** The 1:8 and 1:16 against 1:10 and 1:30 question is to be carried as
+a concern to look into, not as a finding. The Management Brief already does this correctly: it sits
+in its own section headed "One thing we cannot yet call either way", outside the seven exposure
+items, and says the written ratio is lawful under state law and below the federal standard with the
+real question turning on rosters. One word was stronger than that framing and was changed: an ask
+called it "our staffing finding" and now calls it "the staffing question". **Note what was not done:
+the register still scores this as conflict 8, and rescoring it would move the headline count of
+thirteen conflicts through every deliverable. That is a decision to put to Tim, not to take
+quietly.**

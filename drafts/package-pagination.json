@@ -8,7 +8,8 @@
   "PREA_Supervisor_Memo_Template.docx",
   "PREA_Staffing_Plan_Factors.docx",
   "OO_1453_Tracked_Changes.docx",
-  "OO_1352_Tracked_Changes.docx"
+  "OO_1352_Tracked_Changes.docx",
+  "OO_1352_5_Citations_and_Actions.docx"
  ],
  "starts": {
   "PREA_Management_Brief.docx": 10,
@@ -19,6 +20,7 @@
   "PREA_Supervisor_Memo_Template.docx": 162,
   "PREA_Staffing_Plan_Factors.docx": 167,
   "OO_1453_Tracked_Changes.docx": 169,
-  "OO_1352_Tracked_Changes.docx": 176
+  "OO_1352_Tracked_Changes.docx": 176,
+  "OO_1352_5_Citations_and_Actions.docx": 182
  }
 }

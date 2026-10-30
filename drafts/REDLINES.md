@@ -120,7 +120,7 @@ This is the strongest municipal liability exhibit in the packet and the clearest
 |---|---|
 | **Priority** | Critical |
 | **Document** | OO 1352.5 Transgender and Intersex Youth (eff. 03/01/2019), III.I |
-| **Authority** | 28 CFR 115.342(c)-(g)<br>15 CCR 1352(e), verified against the edition effective 04/01/2014<br>15 CCR 1352.5, cited but not confirmed: absent from the produced edition |
+| **Authority** | 28 CFR 115.342(c)-(g)<br>15 CCR 1352(e), verified against the edition effective 04/01/2014 and confirmed unchanged in the edition effective 01/01/2019<br>15 CCR 1352.5(c), verified in Revision 6 against the edition effective 01/01/2019, which is the operative edition |
 | **Register rows** | 37, 75 |
 
 ### The defect
@@ -164,7 +164,7 @@ Preserves the protective intent that produced III.I while removing the categoric
 ### Before adoption
 
 - OO 1352.5 has never been produced to this review. Confirm the III.I numbering and wording against the PDF.
-- The 15 CCR 1352.5 citation is carried forward unconfirmed. That section does not exist in the produced 04/01/2014 edition of Title 15. Obtain the current BSCC edition before quoting 1352.5 in the amendment's authority line.
+- The 15 CCR 1352.5 citation is verified. It was carried as unconfirmed through Revision 5 because it is absent from the 04/01/2014 edition of Title 15, and Revision 6 confirmed it against the edition effective 01/01/2019, where it runs (a) to (e). The edition effective 01/01/2019 is the operative one. The January 2023 revision is a pending proposal and must not be relied on.
 
 ---
 
