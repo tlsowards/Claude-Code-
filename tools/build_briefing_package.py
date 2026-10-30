@@ -26,6 +26,7 @@ checks only the file it lives in is not checking the document it produces.
 import csv
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -45,6 +46,73 @@ PRIORITY_ORDER = ['Critical', 'High', 'Medium', 'Low']
 # The cover is Attachment 0 and is not itself an attachment, so it is excluded
 # from the directory comparison below.
 COVER = 'PREA_Briefing_Package.docx'
+
+
+def check_phrase_counts(strings):
+    """Fail where the same counted phrase carries two different numbers.
+
+    The contradiction that started this, five documents on one page and six on
+    another about the same list, sat in a sentence with no list after it, so
+    nothing that parses a list could ever have caught it. What it did have was a
+    twin elsewhere in the same file saying something different. Comparing claims
+    against each other catches that without either one needing to be checkable
+    on its own.
+    """
+    seen, errs = {}, []
+    pat = re.compile(r'\b(%s)\s+(documents?|items?|things?)\s+((?:\w+\s+){0,5}\w+)'
+                     % '|'.join(NUMBERS), re.I)
+    for where, text in strings:
+        for m in pat.finditer(text):
+            key = (m.group(2).lower().rstrip('s'), m.group(3).lower())
+            n = NUMBERS[m.group(1).lower()]
+            if key in seen and seen[key][0] != n:
+                errs.append('"%s" at %s contradicts "%s" at %s'
+                            % (m.group(0), where, seen[key][2], seen[key][1]))
+            else:
+                seen.setdefault(key, (n, where, m.group(0)))
+    return errs
+
+
+def check_schedule_counts(data):
+    """Check the counts the attachments paragraph states against the schedule.
+
+    These two numbers are computable, so they should never be taken on trust
+    from prose. The paragraph said "Eight documents" and "The one exception is
+    Attachment H" after a ninth attachment was added and a second tracked
+    changes document with it, and the schedule guard did not look at the prose
+    while the prose guard did not look at this block.
+    """
+    body = data['attachments'].get('body', '')
+    items = data['attachments']['items']
+    tracked = [it['tab'] for it in items if 'Tracked' in it['file']]
+    errs = []
+    said = re.search(r'\b(%s)\s+documents?\b' % '|'.join(NUMBERS), body, re.I)
+    if not said:
+        errs.append('the attachments paragraph states no document count, so the schedule '
+                    'length is unchecked')
+    elif NUMBERS[said.group(1).lower()] != len(items):
+        errs.append('the attachments paragraph says %s documents and the schedule has %d'
+                    % (said.group(1), len(items)))
+    exc = re.search(r'\b(%s)\s+(?:of them\s+)?(?:is|are)?\s*exceptions?\b'
+                    % '|'.join(NUMBERS), body, re.I)
+    if tracked and not exc:
+        errs.append('the schedule carries %d tracked changes documents (%s) and the '
+                    'attachments paragraph counts no exceptions'
+                    % (len(tracked), ', '.join(tracked)))
+    elif exc and NUMBERS[exc.group(1).lower()] != len(tracked):
+        errs.append('the attachments paragraph counts %s exception(s) and the schedule has '
+                    '%d tracked changes documents (%s)'
+                    % (exc.group(1), len(tracked), ', '.join(tracked)))
+    for tab in tracked:
+        if ('Attachment ' + tab) not in body and (' ' + tab + ',') not in body \
+                and not re.search(r'\b%s\b(?=[^a-zA-Z])' % tab, body):
+            errs.append('Attachment %s is a tracked changes document and the attachments '
+                        'paragraph does not name it' % tab)
+    if errs:
+        print('ABORTED, nothing written. The attachments paragraph and the schedule disagree:')
+        for e in errs:
+            print('  ' + e)
+        sys.exit(1)
 
 
 def check_attachments(data):
@@ -213,10 +281,31 @@ def main():
     # another file and are written straight into the cover, so leaving them out
     # of the guard let a dash pass this builder while aborting the Word one.
     asks = load_asks()
-    counted, unchecked = check_counted_lists(
-        [('notincluded[%d]' % i, t)
-         for i, t in enumerate(data['notincluded']['items'], 1)]
-        + [('asks_from_brief[%d]' % i, t) for i, t in enumerate(asks, 1)])
+    # Scan every prose block, not a chosen two. The sentence that caused the
+    # five-versus-six contradiction lived in "purpose", which the first version
+    # of this call never looked at, so the fix for it was by hand and could
+    # drift again. If a block holds prose, it gets checked.
+    # attachments.body is deliberately absent: check_schedule_counts computes
+    # its two numbers from the schedule itself. Where a count can be computed it
+    # is checked exactly and not parsed out of prose, and running both only
+    # produces noise. Parsing it flagged "Do not edit them in Word: the next
+    # build overwrites the edit, and in the meantime..." as a two item list.
+    prose = []
+    for key in ('purpose', 'notincluded', 'howto', 'standing'):
+        block = data.get(key) or {}
+        if isinstance(block.get('body'), str):
+            prose.append(('%s.body' % key, block['body']))
+        for i, t in enumerate(block.get('items', []), 1):
+            if isinstance(t, str):
+                prose.append(('%s[%d]' % (key, i), t))
+    prose += [('asks_from_brief[%d]' % i, t) for i, t in enumerate(asks, 1)]
+    counted, unchecked = check_counted_lists(prose)
+    contradictions = check_phrase_counts(prose)
+    if contradictions:
+        print('ABORTED, nothing written. The same counted phrase carries two numbers:')
+        for c in contradictions:
+            print('  ' + c)
+        sys.exit(1)
     if counted:
         print('ABORTED, nothing written. A written-out count does not match its own list:')
         for e in counted:
@@ -237,6 +326,7 @@ def main():
         return 1
 
     listed = check_attachments(data)
+    check_schedule_counts(data)
     starts = load_pagination(listed)
     by_status = counts(rows, 'status', STATUS_ORDER)
     by_priority = counts(rows, 'priority', PRIORITY_ORDER)

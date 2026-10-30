@@ -64,7 +64,7 @@ Not Evidenced means a document is referenced in a departmental policy but has no
 
 ## What is in this package
 
-Eight documents. Every one is generated from the register or from a single source file, so none is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent. The one exception is Attachment H, which is meant to be worked on in Word: accepting and rejecting its tracked changes is the point of it, and that copy is the department's.
+Nine documents. Every one is generated from the register or from a single source, so none is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent. Two of them are exceptions, Attachments H and I, which are meant to be worked on in Word: accepting and rejecting their tracked changes is the point of them, and the copy saved afterwards is the department's.
 
 | Tab | Document | Page | Who it is for |
 |---|---|---|---|
