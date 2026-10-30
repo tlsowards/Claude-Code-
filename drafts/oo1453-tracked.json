@@ -1,0 +1,270 @@
+{
+ "order": "OO 1453, Sexual Assault, Title XV 1453",
+ "facility": "Sacramento County Probation Department, Youth Detention Facility",
+ "effective": "Effective 04/25/2013. Last revised 12/09/2019. Approved by Chief Deputy Dave Semon.",
+ "authority_line": "Authority: Prison Rape Elimination Act",
+ "register_revision": 11,
+ "provenance": "The base text below is the order's own words, transcribed from the PDF produced to this review. The PDF is a scan with no text layer, so it was rasterized at 200 dpi and read as images. Typographical errors in the order are preserved, including \"written reported\" at paragraph 9, which is the order's and not a transcription slip. Anything marked as an insertion is proposed text and is not departmental policy.",
+ "front": [
+  {
+   "head": "Purpose and Scope",
+   "paras": [
+    "The Sacramento County Probation Department is committed to providing a safe, humane, secure environment, free from sexual misconduct. The Department maintains a zero tolerance for sexual misconduct.",
+    "A sexual assault that occurs in the Youth Detention Facility shall be given top priority for investigation. Timeliness is crucial when reporting and investigating sexual assaults. Staff shall not hesitate to report any such findings of sexual misconduct.",
+    "All employees are responsible for protecting youth in their custody/care and are responsible for the immediate and confidential reporting to the duty supervisor any information and/or suspicion that indicates a youth is being, or has been sexually assaulted."
+   ]
+  },
+  {
+   "head": "Affected Personnel",
+   "paras": [
+    "All Sworn Personnel - YDF"
+   ]
+  },
+  {
+   "head": "Effective Date",
+   "paras": [
+    "December 9, 2019"
+   ]
+  },
+  {
+   "head": "Authority",
+   "paras": [
+    "Prison Rape Elimination Act"
+   ]
+  }
+ ],
+ "lead": "A. Once an employee becomes aware a sexual assault has occurred or allegedly occurred, the following protocol shall be observed when treating the victim, preserving the evidence and contacting local law enforcement.",
+ "items": [
+  {
+   "n": 1,
+   "runs": [
+    [
+     "keep",
+     "Separate the victim and suspect immediately and ensure that the victim and suspect have no contact with one another (no access to toilet – see #5 below)."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "runs": [
+    [
+     "keep",
+     "Immediately notify the Supervisor on duty. The Supervisor on Duty shall notify a facility Chief Deputy or Assistant Chief Deputy."
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "runs": [
+    [
+     "keep",
+     "Unit staff shall protect the crime scene (youth's room/shower area/laundry room, etc.) by sealing off the area and not allowing access by other staff or youth."
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "runs": [
+    [
+     "keep",
+     "Prevent the victim and suspect from showering."
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "runs": [
+    [
+     "keep",
+     "If possible, keep the victim and suspect from using the bathroom. If they use the bathroom, the toilet tissue shall be collected as evidence."
+    ]
+   ]
+  },
+  {
+   "n": 6,
+   "change": 8,
+   "label": "Change 8. Bring the initial statement into line with WIC 625.6 and 625.7",
+   "rows": [
+    "91"
+   ],
+   "runs": [
+    [
+     "keep",
+     "The duty supervisor shall take an initial statement from the "
+    ],
+    [
+     "del",
+     "victim and suspect. All suspects involved in a sexual assault shall be read a “Miranda Warning”, prior to any questioning."
+    ],
+    [
+     "ins",
+     "alleged victim. A statement shall be taken from a suspect only in accordance with subparagraphs a through f below."
+    ]
+   ],
+   "sub": [
+    [
+     "a",
+     "Before any custodial interrogation of a suspect who is 17 years of age or younger, and before any waiver of Miranda rights by such a suspect, the youth shall consult with legal counsel in person, by telephone, or by video conference. That consultation may not be waived by the youth, by a parent or guardian, or by any employee of the Department."
+    ],
+    [
+     "b",
+     "Subparagraph a does not apply where the duty supervisor reasonably believes the information sought is necessary to protect life or property from an imminent threat, and the questions asked are limited to those reasonably necessary to obtain that information. Any reliance on this subparagraph shall be documented in the incident report, stating the threat believed to exist and every question asked."
+    ],
+    [
+     "c",
+     "No employee shall use threats, physical harm, deception, or psychologically manipulative interrogation tactics against a suspect who is 17 years of age or younger."
+    ],
+    [
+     "d",
+     "A suspect who is 18 years of age or older shall be read a Miranda warning prior to any custodial interrogation. Subparagraphs a and c are keyed to age by statute and do not apply to such a suspect."
+    ],
+    [
+     "e",
+     "The statement authorized by this paragraph is limited to what each youth says about the incident. It is not an investigation. Canvassing other youth or staff as witnesses, testing whether an allegation is true, and taking any formal statement are the functions of an investigator who has received the specialized training required for sexual abuse investigations, and of the Sheriff's Department once notified under paragraph 8."
+    ],
+    [
+     "f",
+     "A youth from whom a statement is taken under this paragraph may have a victim advocate or support person of their choosing present, on the same terms paragraph 13 provides for investigatory interviews."
+    ]
+   ]
+  },
+  {
+   "n": 7,
+   "runs": [
+    [
+     "keep",
+     "When interacting with the alleged victim of sexual assault, staff are expected to be professional and display sensitivity towards the victim as the trauma may affect them both physically, emotionally and mentally."
+    ]
+   ]
+  },
+  {
+   "n": 8,
+   "runs": [
+    [
+     "keep",
+     "If after initial inquiry it is believed a sexual assault occurred, the Sheriff's Department will be notified immediately by the duty Supervisor in order to take a report."
+    ]
+   ]
+  },
+  {
+   "n": 9,
+   "change": 3,
+   "label": "Change 3, stage one. Correct the mandated reporting standard",
+   "rows": [
+    "48"
+   ],
+   "runs": [
+    [
+     "keep",
+     "All incidents of "
+    ],
+    [
+     "del",
+     "sexual assault shall be reported to Child Protective Services verbally within 24 hours. A formal written reported shall be completed and forwarded to Child Protective Services within 36 hours of receiving information concerning the incident."
+    ],
+    [
+     "ins",
+     "suspected child abuse or neglect, including any sexual abuse or sexual assault of a resident, shall be reported by the employee who formed the suspicion to an agency specified in Penal Code section 11165.9 immediately, or as soon as is practicably possible, by telephone, with a written follow-up report on Department of Justice form SS 8572 within thirty-six hours of receiving the information concerning the incident. The duty imposed by this paragraph is individual and may not be delegated. Notifying the duty supervisor or any departmental office does not satisfy the duty and does not delay it."
+    ]
+   ]
+  },
+  {
+   "n": 10,
+   "runs": [
+    [
+     "keep",
+     "The reporting/investigating officer (usually a Supervisor) shall brief the responding Sheriff's officers upon their arrival. Sheriff's officers will be provided with a room to conduct any interviews."
+    ]
+   ]
+  },
+  {
+   "n": 11,
+   "runs": [
+    [
+     "keep",
+     "If the Sheriff's Department, C.S.I. (Crime Scene Investigations) or detectives cannot respond immediately, the duty supervisor may need to collect evidence. The following protocol shall be followed:"
+    ]
+   ],
+   "sub": [
+    [
+     "a",
+     "Photograph crime scene."
+    ],
+    [
+     "b",
+     "After putting gloves on, collect evidence, clearly marking date, time, location, ownership and description of item."
+    ],
+    [
+     "c",
+     "Seal all evidence bags and envelopes, log items and place evidence in the evidence locker located in the Property Room at Intake/Booking."
+    ]
+   ]
+  },
+  {
+   "n": 12,
+   "runs": [
+    [
+     "keep",
+     "Non-consensual sexual assault suspects shall undergo a “suspect rape exam”, which shall be the responsibility of the Sheriff's Department as the investigating agency."
+    ]
+   ]
+  },
+  {
+   "n": 13,
+   "runs": [
+    [
+     "keep",
+     "All identified victims involved in a non-consensual sexual assault shall be transported by a Transportation Officer, or designated staff appointed by the duty Supervisor (taking gender into consideration), to a local medical facility for an evidentiary exam. Pursuant to Section 264.2 of the California Penal Code, a sexual assault victim has the right to have a victim advocate and/or victim support person, of the victim's choosing, present during their medical examination. In most cases, the victim advocate will be from a local Rape Crisis Center. Sheriff's Officers will follow Youth Detention Facility staff to the Med Center and fill out all necessary paperwork. Pursuant to Section 679.04, a sexual assault victim has the right to have a victim advocate and/or victim support person, of the victim's choosing, present during all investigatory interviews conducted by law enforcement, the district attorney, or defense counsel."
+    ]
+   ]
+  },
+  {
+   "n": 14,
+   "runs": [
+    [
+     "keep",
+     "If a consensual sex act occurred, all discovery and investigative reports are to be forwarded to the Supervising District Attorney and the Sacramento Sheriff's Sexual Assaults Unit."
+    ]
+   ]
+  },
+  {
+   "n": 15,
+   "runs": [
+    [
+     "keep",
+     "At the conclusion of the sexual assault investigation, an incident review shall be conducted by upper management officials, with input from supervisors, investigators, and medical or mental health practitioners. A report shall be generated and forwarded to the PREA coordinator and Department Chief."
+    ]
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "on": "Paragraph 6",
+   "change": 8,
+   "text": "The order as written directs a Miranda warning and says nothing about Welfare and Institutions Code section 625.6, which since 01/01/2021 requires a youth 17 or younger to consult counsel before a custodial interrogation and before any Miranda waiver, and provides that the consultation may not be waived. The order was last revised 12/09/2019. Subparagraph c addresses a second statute the order also predates, section 625.7, effective 07/01/2024, which bars threats, physical harm, deception and psychologically manipulative tactics in the custodial interrogation of a youth 17 or younger."
+  },
+  {
+   "on": "Paragraph 9",
+   "change": 3,
+   "text": "Penal Code section 11166(a) requires the telephone report immediately or as soon as is practicably possible, not within 24 hours. The same error appears in PREA Policy V.A.4. The insert is drafted to the CANRA trigger rather than to the words sexual assault, because conduct reportable under Penal Code 11165.1(b)(4) and (b)(5) is not necessarily characterised as assault, and the order's scope would otherwise still miss it."
+  },
+  {
+   "on": "Paragraph 15",
+   "change": null,
+   "text": "No amendment is proposed here, because the defect is not in the words. The order directs the incident review report to a PREA coordinator, and the Department advises the position does not exist. The fix is recommended change 8 in the master report, designating the role. Until then this paragraph routes a required report to nobody. Register row 2."
+  },
+  {
+   "on": "The order as a whole",
+   "change": null,
+   "text": "Every operative duty in this order is keyed to sexual assault: the staff reporting duty in the Purpose and Scope paragraph, the Sheriff notification at paragraph 8, the incident review at paragraph 15. Nothing in three pages reaches sexual harassment, exposure, or touching not characterised as assault, which is the band that generates most incidents. Broadening the order is recommended change 12 and is not drafted yet. Register rows 47, 54 and 69."
+  }
+ ],
+ "before_adoption": [
+  "**The base text is the order's own words.** It was transcribed from the PDF produced to this review, which is a scan with no text layer, so it was rasterized and read as images. Check the transcription against the signed original before this is adopted or circulated outside the department.",
+  "**The gating legal question on paragraph 6 is section 625.6(d), and it must go to County Counsel before adoption.** Subdivision (d) provides that the consultation requirement does not apply to a probation officer acting in the normal performance of duties under Welfare and Institutions Code sections 625, 627.5 or 628. Those sections concern taking a minor into temporary custody, advising a minor on delivery to a probation officer, and the decision to release or detain. Taking a statement about a new offence alleged to have occurred inside the facility does not obviously fall within any of them, but the question is genuinely open and this review has found no case deciding it. If Counsel concludes that subdivision (d) covers this activity, the amendment remains sound practice but is not legally compelled, and the finding behind it is a recommendation rather than a conflict.",
+  "**Subparagraph b is written narrowly on purpose.** The imminent threat exception in section 625.6(c) is a real exception and staff need it, but an exception with no documentation requirement becomes the rule. Requiring the threat and every question to be written down is what keeps it narrow.",
+  "**Subparagraph f exceeds what the statute requires and is a policy choice, not a legal obligation.** Penal Code section 679.04, which paragraph 13 correctly recites, attaches the advocate right to investigatory interviews conducted by law enforcement, the district attorney or defense counsel. It does not on its face reach the initial statement this paragraph assigns to facility staff. As the order stands, the one interview conducted by departmental staff is the only one in the sequence with no advocate right attached. Subparagraph f closes that by departmental policy. Strike it if the Department does not want to extend the entitlement.",
+  "**Section 625.7 is cited by section number and effective date only.** This review confirmed its content and its 07/01/2024 effective date by search, and could not read the statute from primary source, because network egress from this environment is restricted. The bill that added it has not been confirmed and is deliberately not cited. Verify both before adoption.",
+  "**Paragraph 9 is stage one of change 3.** Stage two replaces it with a cross-reference once the department wide General Order on child abuse and neglect reporting issues. The same correction is needed in PREA Policy V.A.4, which has never been produced to this review."
+ ]
+}

@@ -1,0 +1,1414 @@
+# YDF PREA Compliance Project
+
+Sacramento County Probation Department, Youth Detention Facility. PREA policy review,
+remediation drafting, and training development. This file is the project memory. Read it
+before doing anything else.
+
+---
+
+## 1. Working rules (non-negotiable)
+
+- **Never use em dashes.** Use commas, colons, or rewrite the sentence.
+- **No hallucination.** If you are not sure, say so and ask. Do not assume.
+- **Verify before asserting.** Statute numbers, section numbers, case citations, and dates
+  get checked, not recalled. This work product goes to administrators, County Counsel, and
+  potentially into litigation. A wrong citation is worse than no citation.
+- **Distinguish "not in the documents" from "not done."** The department frequently performs
+  a practice that is not written down. Findings say "does not appear in the documents
+  reviewed," never "the department fails to."
+- **Flag corrections loudly.** When a new document changes an earlier finding, say so
+  explicitly and record it in the change log column. See section 8 for corrections already made.
+- **This is not legal advice.** Every deliverable carries that caveat and routes statutory
+  questions to County Counsel.
+
+## 2. Who the user is
+
+Tim. 25-year Sacramento County Probation veteran, currently assigned to YDF in a
+supervisory and administrative capacity. Owns use of force training, PREA compliance work,
+and the FTO program. PhD in Public Policy and Administration, MS in Criminal Justice,
+STC-certified instructor, teaches criminal justice at several colleges. Runs Sowards
+Consulting LLC doing expert witness work, use of force training, and corrections consulting.
+
+Practical consequence: he knows use of force, Title 15, and juvenile detention operations
+cold. Do not explain Graham, Kingsley, or Title 15 basics to him. Do explain PREA standards
+in detail, since that is the subject he is building expertise in. He wants substance, not
+hedging, and he will catch a wrong citation.
+
+## 3. Project state
+
+Register is at **Revision 12**. 93 requirements assessed against 17 departmental policies.
+
+**Revision 12 is OO 1352.5, produced and read in full on 10/30.** The third produced order to
+confirm every section number the register carried. Five provisions it had never recorded, two new
+rows (92 and 93), and two corrections to this project's own description of the search provisions.
+No status changed and no new conflict. See section 24.
+
+**Revision 11 is a correction pass on one row, and it runs partly in the department's favour.**
+Row 91 and conflict 13 were recorded in Revision 10 without two subdivisions of the statute they
+rest on. See section 21. No status or priority changed; the register diff is one line.
+
+Revision 6 verified against the Title 15 edition **effective 01/01/2019** and corrected three
+citations. Revision 7 closed the gap it left, re-reading the six sections still carrying their
+04/01/2014 provenance. **Every Title 15 citation in this register is verified against the current
+edition.**
+
+**Revision 8 is the first pass driven by facility facts rather than documents.** See section 15
+for the facts and what they produced: four new rows (84 to 87) and one priority raised.
+
+**Revision 9 is the largest single pass since Revision 4**, and it rests on three things that
+arrived on one day: **OO 1352 Classification, produced and read in full for the first time**; the
+department's answer that residents aged 18 to 25 are **not treated as dependent adults**; and
+**WIC 875**, which corrects a Revision 8 finding. Twelve rows revised, three added (88 to 90), one
+status raised (row 84, Not Addressed to Partial). See section 16.
+
+| Status | Count |
+|---|---|
+| Addressed | 14 |
+| Partial | 43 |
+| Not Addressed | 21 |
+| Conflict (policy states the wrong rule) | 13 |
+| Not Evidenced (document exists, not produced) | 2 |
+
+Priority: 22 critical, 40 high, 17 medium, 14 low.
+
+Full register with gap text is in `prea-register.csv`. Columns `owner`, `target_date`, and
+`disposition` are empty and intended for the department to fill.
+
+## 4. Documents reviewed (17)
+
+| # | Document | Dates |
+|---|---|---|
+| 1 | PREA Policy and Procedure, Juvenile Institutions | eff/rev 04/25/2013 |
+| 2 | OO 1321 Staffing | reviewed 01/16/2020 |
+| 3 | OO 1322 Training and Staff Development | eff 06/15/2015, rev 05/08/2019 |
+| 4 | OO 1350.5 Screening for the Risk of Sexual Abuse | eff 11/10/2019 |
+| 5 | OO 1352 Classification | eff 12/09/2019, rev 02/27/2020. **Produced and read in full in Revision 9** |
+| 6 | OO 1352.5 Transgender and Intersex Youth | eff 03/01/2019. **Produced and read in full in Revision 12** |
+| 7 | OO 1360 Searches | eff 12/01/2019, rev 03/04/2020 |
+| 8 | OO 1361 Grievances | eff 01/01/2011, rev 04/03/2019 |
+| 9 | OO 1362 Reporting of Incidents | eff 11/01/2019 |
+| 10 | OO 1453 Sexual Assault | eff 04/25/2013, rev 12/09/2019. **Produced and read in full in Revision 10** |
+| 11 | Internal Affairs Administrative Investigations | eff 01/11/2011, no revision |
+| 12 | Code of Conduct, Non-Sworn and Non-County Personnel | eff 06/01/2011 |
+| 13 | Detention and Intake Responsibility (J-3.4) | undated |
+| 14 | General Order, Mandatory Reporting: Dependent Adult and Elder Abuse | eff 06/30/2017 |
+| 15 | OO 1354.5 Room Confinement | eff 04/05/2023 |
+| 16 | OO 1390/1391 Discipline and Discipline Process | eff 10/01/2013, rev 05/01/2020 |
+| 17 | Internal Complaints (Administrative P&P Manual) | rev 10/30/2013 |
+
+Documents 15 to 17 were produced after Revision 3 and are assessed in Revision 4.
+Note the dates: 1354.5 is the newest policy in the set by nearly three years, and it shows.
+
+Two further source documents have been produced and read, and are authority rather than
+departmental policy, so they are not numbered above: **Title 15 effective 01/01/2019** (the
+post-rewrite edition, basis for Revision 6) and **PREA, Public Law 108-79, as enacted**.
+
+Put the source PDFs in `docs/` so you can read them directly. The 1390/1391 PDF is a
+scan with no text layer, so it has to be rasterized and read as images, not extracted. **So is
+the OO 1352 PDF** (363 characters across twelve pages) **and the OO 1453 PDF** (zero characters
+across three). Install `pymupdf`,
+render each page at 200 dpi, and read the PNGs. That works and is the only thing that does.
+
+**`docs/` is gitignored and does not survive a new container.** Every verified quotation is
+therefore captured into `prea-register.csv` or into this file at the time it is read, so the
+finding outlives the PDF. If a citation needs re-checking, the source has to be uploaded again.
+
+## 5. The thirteen conflicts (highest priority)
+
+Policy that states a rule contradicting the law or another departmental policy.
+**Thirteen after Revision 10**, which added the first new conflict since Revision 4. Nothing in the three new documents cured a conflict, and
+nothing in them created one, though see the near miss recorded at the end of this section.
+
+1. **OO 1352 II.M and III.I, S-8.** Classification created for any LGBTQI youth; single-room
+   housing at all times. Violates 115.342(c) and 15 CCR 1352(e). Also contradicts OO 1352's
+   own Purpose paragraph, PREA Policy III.E, and OO 1352.5 III.H.
+   **Chronology corrected in Revision 5, and it is worse than previously recorded.**
+   15 CCR 1352(e) is not a product of the 2019 rewrite. It appears in the edition effective
+   **04/01/2014**, verified against source. S-8 was created 12/09/2019 and retained on the
+   02/27/2020 revision, five and a half years after the state rule was already in force.
+   1352(e) also states the lawful alternative on its face: individualized placement, or a
+   single room **at the youth's specific request**.
+   **Second hook, corrected in Revision 6: 15 CCR 1324(k)**, not 1324(h). In the edition
+   effective 01/01/2019, 1324(h) is "trauma-informed approaches" and the non-discrimination
+   provision is **1324(k)**, which is also broader than the 2014 text because it adds
+   immigration status. It requires the policy and procedure manual to bar discrimination on
+   the listed bases "including restrictive housing or classification decisions based solely on
+   any of the above mentioned categories." S-8 is exactly that, so it is both an operational
+   violation of 1352(e) and a defect in the required contents of the manual. The 1324(k) route
+   is the cleaner BSCC inspection finding because it does not depend on whether PREA binds a
+   county facility.
+   **Third hook, new in Revision 6: 15 CCR 1352(f)**, which did not exist in the 2014 edition:
+   "facility staff shall not consider lesbian, gay, bisexual, transgender, questioning or
+   intersex identification or status as an indicator of likelihood of being sexually abusive."
+   If the S-series is a sexual-risk taxonomy, which the S-4 criteria indicate, then placing
+   LGBTQI youth in that series at all is what 1352(f) forbids, independent of the housing
+   consequence. **That reasoning was tested against OO 1352 in Revision 9 and it FAILS. It is
+   withdrawn.** The S-series is a general security taxonomy, not a sexual-risk one: S-3 is suicide,
+   S-5 mental health, S-6 gang, S-7 medical. And II.M.1 states S-8's purpose as protection "against
+   victimization/discrimination," which is the vulnerability framing 1350.5 requires rather than the
+   abusiveness framing 1352(f) forbids. On its face II.M is consistent with 1352(f).
+   **A stronger replacement, from the order's own text.** III.I.1 ("Any youth classified S-8 will
+   require a single room (no roommate) housing at all times") and III.E.1.a ("Any youth classified
+   S-4 high will require a single room (no roommate) housing at all times") are **word for word
+   identical, and are the only two provisions in the entire order imposing that mandate.** Every
+   other classification is written permissively, with supervisor approval and documentation. S-4 High
+   is the documented-sex-offence category, defined by II.F.1 as turning on "the youth's potential for
+   sexually acting out against other youth and/or staff." **So the order gives LGBTQI youth the
+   identical housing restriction it reserves for adjudicated sex offenders, and gives it to no one
+   else.** That is now a scored element of row 36, not a hook.
+   **Fifth internal contradiction, new in Revision 9.** II.M.1.a says "See the Transgender and
+   Intersex Youth Policy for housing guidelines," deferring housing to OO 1352.5. III.I.1 then
+   forecloses it. The same order defers the decision and decides it.
+   **Also confirmed:** page 12 records that this order "Amends/Replaces Previous Order: Classification
+   System Title XV 1352, 10/01/2013," so S-8 was created in the 2019 rewrite, and the III.D.8
+   deviation rule ("Deviation from the above housing patterns must be approved and documented by a
+   supervisor") is attached to the S-3 matrix and is **not** extended to either "at all times"
+   mandate, so neither has a written override path.
+2. **OO 1352.5 III.I.** All transgender and intersex youth get a single room. Same categorical
+   defect, more defensible (privacy rationale, program access preserved at III.K), but
+   contradicts III.B, III.F, III.H of the same order.
+3. **PREA Policy V.A.4 AND OO 1453 I.A.9.** CPS report "within 24 hours." PC 11166(a) requires
+   immediate telephone report. Error in two documents; 1453 restated it on a 12/2019 revision.
+   Code of Conduct VII.A.1 states it correctly.
+4. **PREA Policy V.A.7.** 14 days to notify another facility. 115.363(b) requires 72 hours.
+5. **PREA Policy XIV.A.** Discipline for allegations "found false." 115.378(f) protects
+   good-faith reports; 115.352(g) requires a bad-faith showing.
+6. **OO 1352 II.F.2 note.** History of being a molest victim treated as an indicator of
+   "sexually inappropriate tendencies." Contradicts 115.341(c), which separates victimization
+   risk from abusiveness risk. **Confirmed verbatim in Revision 9, and it is worse than recorded:
+   the inference appears twice.** Besides the bolded note, **II.F.2.d** lists "History of
+   victimization related to sexual abuse or a sexual offense" as a lettered S-4 criterion alongside
+   three abusiveness criteria. Striking the note alone leaves the defect in force, and redline 6 as
+   first drafted struck only the note. The order then contradicts itself on the same fact: **II.H.3**
+   makes being "the victim of any CPS referral relative to sexual abuse" a criterion for S-4 **Low**,
+   which the III.E.2 matrix treats protectively. Same fact, opposite uses, one classification.
+7. **Retention conflict.** IA XI.C.1 = 5 years; PREA Policy XVIII.B = 10 years;
+   115.371(j) = abuser tenure + 5 years. Against AB 452, which eliminated the limitations
+   period for childhood sexual assault occurring on or after 01/01/2024.
+8. **OO 1321.** 1:10 waking / 1:30 sleeping. 115.313(c) requires 1:8 / 1:16 since 10/01/2017.
+   15 CCR 1301 permits exceeding the state floor. **Verify rosters before assuming a gap.**
+9. **OO 1453 I.A.15.** Directs the incident review report to "the PREA coordinator," a position
+   the department does not have. Written 2019 acknowledgment that the role is needed.
+10. **Policy age.** PREA Policy last revised 2013; IA policy 2011. 15 CCR 1324 requires
+    administrative review at least every two years.
+11. **Citations.** PREA Policy I.I.1 cites PC 288a (renumbered to PC 287 by SB 1494 eff
+    01/01/2019). OO 1352 II.C.3 references DJJ, which closed 06/30/2023, and **IV.A carries a second
+    DJJ reference** as the worked example of a legal status change. **Confirmed and broadened in
+    Revision 9:** the S-4 High enumeration is complete at II.G.1 ("a. Sodomy (286 PC); b. Lewd or
+    lascivious acts with child under 14 (288 PC, all sub-divisions)") plus II.G.3 (rape, 261 PC, all
+    subdivisions). **PC 289, sexual penetration, is omitted as well as 287**, and was never flagged.
+    Also absent: 243.4, 264.1, 285 and 647.6.
+12. **Detention and Intake Responsibility (J-3.4).** References CYA and CYA parolees throughout.
+    No PREA content. Omits the 15 CCR 1350(a) admittance elements added in 2019.
+13. **OO 1453 I.A.6, new in Revision 10 and the first new conflict since Revision 4.**
+    "The duty supervisor shall take an initial statement from the victim and suspect. All suspects
+    involved in a sexual assault shall be read a 'Miranda Warning', prior to any questioning."
+    **It says nothing about WIC 625.6**, which since 01/01/2021 requires a youth **17 or younger**
+    to consult counsel, in person, by telephone or by video, before a custodial interrogation and
+    before waiving Miranda, and which provides that the consultation **may not be waived**. The
+    order was last revised 12/09/2019, more than a year before SB 203 took effect. 625.6(b) directs
+    courts to weigh noncompliance on admissibility and a willful violation against the officer's
+    credibility under Evidence Code 780, so the exposure runs to the supervisor personally.
+    I.A.8 ("after initial inquiry") and I.A.10 ("the reporting/investigating officer (usually a
+    Supervisor)") confirm the design is deliberate. Row 91.
+
+**The near miss (row 58, not scored as a conflict).** Internal Complaints gives the Internal
+Affairs Manager discretion to "determine whether or not a formal investigation is necessary,"
+with no carve-out for sexual abuse or sexual harassment. 115.371(a) requires an administrative
+or criminal investigation for **all** such allegations. The policy never says a sexual abuse
+allegation may go uninvestigated, so it is recorded as a defect in the row rather than scored
+as a thirteenth conflict. If a document turns up showing the discretion has been exercised that
+way in practice, it becomes one. Fix is a one-sentence carve-out.
+
+**Conflict 5, state-law defect found in Revision 5, citation corrected in Revision 6.**
+**15 CCR 1391(f)**, not 1391(e). In the edition effective 01/01/2019, 1391(e) is minor rule
+violations handled informally and the due process elements for major rule violations moved to
+**1391(f)**. That subsection attaches those elements to major rule violations **as a class**
+and requires six elements, obtained in full in Revision 7: (1) written notice of violation
+prior to a hearing, (2) accommodations for youth with disabilities, limited literacy and English
+language learners, (3) hearing by a person who is not a party to the incident, (4) opportunity
+for the youth to be heard and present evidence and testimony, (5) provision for the youth to be
+assisted by staff in the hearing process, and (6) **provision for administrative review**. The
+sixth is the element the Revision 6 truncation flag predicted was missing, and that flag is now
+cleared. **1391(g)** also exists: violations resulting in removal from a camp or commitment
+program, short of a return to court, follow the subsection (e) process. OO 1390/1391 IV.A attaches the hearing only where the recommended discipline is
+Program Separation. The department narrowed the trigger from the regulatory class to one
+sanction within it. Recorded in Revision 4 as a PREA observation; now a confirmed Title 15
+defect, actionable on BSCC inspection independent of PREA. Row 64.
+
+**Conflict 5 narrowed in Revision 4.** OO 1390/1391 supplies the formal disciplinary process
+115.378 requires, so the remediation is now extending an existing process rather than drafting
+one. The PREA Policy XIV.A false-allegations defect itself is unchanged.
+
+## 6. The fifteen recommended policy changes
+
+Full text in `YDF_PREA_Policy_Review_Report.docx` Part 4. Summary:
+
+Correctable by amendment (1 to 7):
+1. Rescind the S-8 single-room mandate (OO 1352 II.M, III.I)
+2. Convert OO 1352.5 III.I to a presumptive, documented individualized outcome
+3. Correct the mandated reporting standard and relocate it to a new department-wide General Order
+4. Correct cross-facility notification from 14 days to 72 hours (PREA V.A.7)
+5. Rewrite the false allegations provision to a bad-faith standard (PREA XIV.A)
+6. Delete the S-4 victim-to-perpetrator inference, split the code, add PC 287
+7. Adopt a single reconciled records retention schedule
+
+Requires drafting or an administrative decision (8 to 15):
+8. Designate a PREA Coordinator and facility Compliance Manager
+9. Verify staffing against 1:8 / 1:16 and build the 115.313(a) staffing plan
+10. Rebuild the PREA elements of OO 1361 (emergency grievance track, external reporting,
+    third-party filing, private staff reporting, extension outer bound)
+11. Add the data analysis and corrective action loop (115.387, 115.388)
+12. Complete the incident review and broaden OO 1453 (115.364(b), 115.365, 115.386)
+13. Add retaliation monitoring (115.367)
+14. Add notification duties: family, counsel, and outcome to the resident (115.361(e), 115.373)
+15. Reduce hiring, contractor screening, and staff reporting to writing (115.317, 115.351(e))
+
+## 7. Verified legal authorities (do not re-research)
+
+**Applicability.** PREA covers local government confinement facilities, 34 U.S.C. 30309(7).
+"Agency" includes local units, 28 CFR 115.5. Subpart D covers juvenile facilities. DOJ guidance
+states the standards apply equally to locally operated facilities.
+
+**Enforcement gap.** The 5% grant penalty, **34 U.S.C. 30307(c)(2)** (corrected in Revision 6
+from 30307(e)(2); PREA section 8 has only subsections (a), (b) and (c)), runs through the
+governor's certification, which 28 CFR 115.501(b) limits to state executive branch facilities. AG overview
+at 77 Fed. Reg. 37106, 37115 states it does not encompass county facilities. DOJ: no direct
+federal financial penalty for local facilities. **No private right of action under PREA.**
+
+**Why counties are still exposed.** DJJ closed 06/30/2023 (SB 823), so no CA juvenile facility
+is inside any governor's certification. CA filed an *emergency assurance* for FY2025, and that
+option expired permanently 10/15/2024. Counties are "persons" under 42 U.S.C. 1983 with no
+Eleventh Amendment immunity and no qualified immunity for entities (Owen v. City of
+Independence, 445 U.S. 622). Being county-run is what *creates* the damages exposure.
+
+**California hooks.** WIC 209 biennial BSCC inspection. Title 15 embeds PREA content at
+1324(n), 1350.5, 1352(e)-(f), 1352.5, 1353(c), 1360(g), 1361(h), 1452, 1453.
+
+**WIC 875, secure youth treatment facilities, read in Revision 9.** This is where the 13 to 25 age
+span comes from and it carries duties no reviewed document mentions. **875(c)(1)(A)**: no secure
+confinement beyond 23, or two years from commitment, whichever is later, extending to **25** where
+the offence would carry an aggregate adult sentence of seven or more years. **875(g)(2)**: such a
+facility may be "a unit or portion of an existing county juvenile facility, including a juvenile
+hall." **875(g)(3)**: BSCC was required by 07/01/2023 to adopt standards for such facilities, and
+those standards "shall specify how the facility may be used to serve or to separate juveniles,
+other than juveniles described in subdivision (a) serving baseline confinement terms, who may also
+be detained in or committed to the facility." **That is an express state separation mandate for a
+mixed population.** **875(g)(4)**: BSCC biennial WIC 209 inspection of each such facility.
+**875(j)**: a person 25 or older "shall not be committed to or detained in a county juvenile
+facility" absent court findings of best interest **and** no "risk to the other youth in the juvenile
+facility." **875(k)**: same bar for a person returning to local custody who was previously sentenced
+to state prison or committed to DJJ. **875(a)(3)(E)**: the court weighs age, developmental maturity,
+mental and emotional health, sexual orientation, gender identity and expression, and disabilities.
+
+**SB 824 (Menjivar, 2025-2026) is NOT law.** It would have amended 875 to add transition-planning
+duties to the individual rehabilitation plan. It **failed on 02/02/2026**, returned to the Secretary
+of the Senate under Joint Rule 56. Everything quoted above is existing law it left untouched. Do not
+cite SB 824 for any proposition.
+
+**Title 15 verification status, as of Revision 6.** Two editions have been read in full:
+`title15-bscc-juvenile.pdf`, **rev. 04/01/2014**, and `title15-bscc-juvenile-2019.pdf`,
+**effective 01/01/2019**, the post-rewrite edition.
+
+*Confirmed against the 2019 edition in Revision 6, quotable now:* **1324** running (a) to (n),
+including **1324(k)** (non-discrimination, restrictive housing and classification, now adding
+immigration status) and **1324(n)** (the manual must carry a policy prohibiting all forms of
+sexual abuse, sexual assault and sexual harassment, with an approach to prevention, detection,
+response and retaliation, and reporting by youth, staff or a third party); **1350.5** (screening
+within 72 hours against eleven factors, LGBTQI status treated as vulnerability and never as
+abusiveness); **1352(e)** (unchanged from 2014) and **1352(f)** (LGBTQI status is not an
+indicator of likelihood of being sexually abusive); **1352.5** (a) to (e), including **1352.5(c)**
+(house youth in the unit or room that best meets their individual needs, no automatic housing by
+external anatomy, documented reasons, youth preference and provider recommendations considered);
+**1353(c)** (age appropriate information on the sexual abuse policy and how to report, which
+resolves the Revision 5 flag on row 25); **1354.5** (room confinement, tracking WIC 208.3);
+**1360(g)** (cross-gender pat-down and strip searches prohibited except exigent or medical,
+documented); **1361(h)** (multiple internal and external reporting methods; concerns of parents,
+guardians, staff or other parties addressed and documented on a timeframe); **1391(e)** (minor
+rule violations, informal) and **1391(f)** (due process for major rule violations as a class).
+
+*Also confirmed against the 2019 edition, in Revision 7:* **1301** ("meet or exceed and do not
+conflict with", unchanged); **1321(h)(1)** (A) 1:10 waking, (B) 1:30 sleeping, (E) the exclusion
+of administrative, instructional, clerical, kitchen and maintenance personnel, plus **(C)** at
+least two wide-awake youth supervision staff at all times absent a backup arrangement and
+**(D)** at least one staff member of the same gender as youth housed, both new to this register;
+**1354** now (a) to (f), with new **(d)** routing disciplinary separation to 1390 and new **(e)**
+routing room-confinement separation to WIC 208.3 and 1354.5; **1390** (see the correction in
+section 8, the floor is eleven items); **1391(f)** in full, six elements; **1452** and **1453**
+unchanged. **No Title 15 citation in this register now rests on the 2014 edition alone.**
+
+**The edition effective 01/01/2019 is still the operative one. Do not draft against the pending
+revision.** The department advises that the **January 2023 juvenile regulations text is still under
+consideration and not approved**, and that its contents may change. It is a proposed revision in an
+open rulemaking by the Juvenile Regulations Revision Executive Steering Committee, not an adopted
+edition. **Do not cite it for any proposition.** Every Title 15 citation in this register is
+verified against the operative edition and is sound.
+
+What is genuinely open is narrower, and it is a finding about the state rather than the department.
+WIC 875(g)(3) required BSCC to adopt secure youth treatment facility standards, including separation
+standards, by 07/01/2023, and the revision that would carry them is still pending. Whether anything
+SYTF-specific was adopted separately, including by emergency rulemaking, has not been established.
+875(g)(3) answers part of it on its face: "Pending the final adoption of these modified standards, a
+secure youth treatment facility shall comply with applicable minimum standards for juvenile
+facilities in Title 15 and Title 24." So the 2019 edition governs such a unit by operation of the
+statute. See row 90.
+
+**Neither edition read contains any PREA reference or any facility audit requirement.** In the 2019
+edition the strings PREA, Prison Rape, 28 CFR and Part 115 return zero hits, and the only "audit"
+matches are section 1403, Health Care Monitoring and Audits. California has not adopted a PREA
+audit requirement for juvenile facilities.
+
+A trap for the next reader: in the 2019 PDF the section headers for **1352.5 and 1354.5 print
+without a period after the number**, so a regex expecting `§ 1352.5.` misses them and reports a
+false negative. Match on the title.
+
+The word "PREA" does not appear anywhere in the 2014 edition. Two case-insensitive matches
+are the letters inside "spread". Adult local
+detention standard 15 CCR 1041(b) expressly cross-references 34 U.S.C. 30303(a)(1). Gov Code
+815.6 mandatory duty liability; "enactment" includes a regulation (Gov Code 810.6); CACI 423.
+Gov Code 818.2 is the County's defense.
+
+**Civil exposure.** AB 452 eliminated the SOL for childhood sexual assault occurring on or
+after 01/01/2024 (CCP 340.1). CCP 352 tolls during minority for earlier incidents. Gov Code
+905(m) exempts these claims from the Government Claims Act presentation requirement. CCP 340.1
+provides treble damages for a cover-up. Farmer v. Brennan, 511 U.S. 825; Kingsley v.
+Hendrickson, 576 U.S. 389; Castro v. County of Los Angeles, 833 F.3d 1060 (9th Cir. 2016)
+(en banc, objective standard for pretrial detainee failure-to-protect); Monell, 436 U.S. 658.
+
+**Mandated reporting (CANRA).** PC 11166(a): telephone immediately or as soon as practicably
+possible, written report within 36 hours on DOJ form SS 8572. PC 11165.9: recipients are any
+police or sheriff's department, the county probation department if designated, or the county
+welfare department. PC 11166(i)(1): duty is individual, no supervisor may impede or inhibit,
+no sanction for reporting. **PC 11166(j): a county probation department that receives a report
+must itself cross-report to law enforcement with jurisdiction, the WIC 300 agency, and the DA,
+written within 36 hours.** PC 11172(a) immunity. PC 11166(c) penalties. PC 11166.5 signed
+acknowledgment (confirm applicability with counsel).
+
+**Other.** OYCR Ombudsperson: WIC 2200, 2200.2, 2200.5, 2200.7. Youth Bill of Rights: WIC
+224.70 to 224.74, extended to all juvenile facilities by AB 2417; 224.72 posting and parent
+packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CACI 2528.
+
+## 8. Corrections already made (do not repeat these errors)
+
+- **Rev 1 said no 15 CCR 1352.5 policy existed.** It does, effective 03/01/2019, and it is
+  comprehensive. Monthly reassessment exceeds the twice-yearly federal minimum.
+- **Rev 1 and 2 scored 115.364 and 115.365 as gaps.** OO 1453 largely closes both.
+- **Rev 2 said "seven of eleven" 115.331(a) topics are covered.** Wrong count. PREA Policy
+  II.A.2 has seven lettered bullets but (c) and (d) map to a single federal topic.
+  **Six of eleven covered, five missing:** (1) zero tolerance, (2) how to fulfill
+  responsibilities under agency procedures, (3) residents' right to be free from abuse,
+  (4) freedom from retaliation, (11) age of consent.
+- **Rev 2 inferred no employee duty to disclose existed.** Wrong. Employees are required to
+  report; that supplies 115.317(f). Open question is whether the duty reaches non-criminal
+  conduct.
+- **Rev 2 flagged an OO 1360 / 1352.5 search conflict.** They reconcile. OO 1352.5 IV.A.3.b
+  supplies the exception (preferred gender staff conducts, second staff within hearing but out
+  of view). Recommend only a cross-reference in 1360.
+- **Youth advocates no longer exist.** External access is the OYCR Ombudsperson plus counsel.
+  115.351(e) staff private reporting reverted to Not Addressed.
+- **Rev 3 said 115.351(e) had no departmental route at all.** Corrected in 4. Internal
+  Complaints supplies an express, mandatory route to the Assistant Division Chief of Internal
+  Affairs, which is one of the three fixes rev 3 itself named as sufficient. Now **Partial**,
+  priority held at High. What is missing is the word confidential, not the channel.
+- **Rev 1 to 3 scored the WIC 208.3 room confinement interaction as unaddressed.** OO 1354.5,
+  eff 04/05/2023, supplies the four-hour review cycle, documented supervisor and manager
+  authorization, and the prohibition on punitive confinement. Do not re-raise those.
+- **Rev 1 to 4 treated the Title 15 LGBTQI housing rule as part of the 2019 rewrite.** It is
+  not. 15 CCR 1352(e) is in the edition effective 04/01/2014. This materially worsens
+  conflict 1: S-8 postdates the state rule by five and a half years, not one. Corrected in 5.
+- **Rev 5 cited the non-discrimination hook as 15 CCR 1324(h). It is 1324(k).** In the
+  edition effective 01/01/2019, 1324(h) is "trauma-informed approaches." Corrected in 6.
+  This one was load-bearing: it is the second hook on conflict 1 and it was in the authority
+  line of redline change 1 as first drafted.
+- **Rev 5 cited the major rule violation due process elements as 15 CCR 1391(e). It is
+  1391(f).** In the 2019 edition 1391(e) is minor rule violations handled informally.
+  Corrected in 6. The finding is unchanged; the subsection letter is not.
+- **Rev 1 to 5 cited the five percent grant penalty as 34 U.S.C. 30307(e)(2). It is
+  30307(c)(2).** Verified against Public Law 108-79 as enacted: PREA section 8 has only
+  subsections (a), (b) and (c), and the penalty with its certification-or-assurance choice is
+  section 8(c)(2). Corrected in 6.
+- **Rev 5 could not confirm eight citations and carried them forward unconfirmed. All eight
+  exist.** 1350.5, 1352.5, 1354.5, 1324(n), 1352(f), 1360(g), 1361(h) and the 1353(c) pinpoint
+  are all in the 2019 edition, now quoted into their rows. Do not re-flag them.
+- **Revision 6 first stated the 15 CCR 1391(f) element list as though it were complete. It is
+  not.** The text extraction behind it was truncated inside the fifth item, and the 2014
+  predecessor carried an administrative review element that is not among those five. Corrected
+  immediately after Revision 6 in both the register and this file. The lesson generalises: a
+  quotation taken from a truncated extraction must be marked as partial at the moment it is
+  written, not assumed complete because it reads like a list.
+- **Rev 5 credited OO 1390/1391 I.A with exceeding the 15 CCR 1390 deprivation floor by adding
+  rehabilitative programming as an eleventh item. It does not exceed it.** The 2019 edition's
+  floor runs (a) to **(k)**, eleven items, and **(k) is "rehabilitative programming."** The order
+  matches the regulation. Corrected in 7. Note the direction: this removes a credit previously
+  given to the department, which is the direction a correction is least likely to be noticed in.
+  No amendment should describe OO 1390/1391 as exceeding anything here.
+- **The Revision 6 flag that the 1391(f) element list was truncated is resolved, and it was
+  right.** The full subsection has six elements and the sixth is "provision for administrative
+  review." Obtained in Revision 7. The hedge was correct and is now cleared.
+- **Rev 6 recorded a 15 CCR 1352(f) hook on conflict 1 reasoned on the S-series being a
+  sexual-risk taxonomy. That reasoning fails and is withdrawn in 9.** OO 1352 shows the S-series is a
+  general security taxonomy, and II.M.1 frames S-8 as protection against victimization, which is the
+  framing 1352(f) requires rather than the one it forbids. A stronger textual replacement is recorded
+  at conflict 1, so the conclusion survives and the reasoning does not. Note the direction: this
+  correction removes a theory the department would have had to answer.
+- **Rev 8 said nothing in federal or state law keys separation to age in this facility. Overbroad,
+  corrected in 9.** It is true of the Title 15 edition effective 01/01/2019, which is all that was
+  searched, but **WIC 875(j) and (k)** bar detaining a person 25 or older, or one returning from
+  state prison or DJJ, absent court findings including no "risk to the other youth," and **875(g)(3)**
+  directs BSCC to adopt standards specifying how a secure youth treatment facility separates its
+  wards from other detained juveniles. The narrow finding survives, because those are admission and
+  commitment controls exercised by the court rather than housing rules. The broad one does not. The
+  lesson: a search of one edition of one regulation is not a search of state law.
+- **Redline 6 struck the II.F.2 note only. The same inference is also at II.F.2.d.** Found in 9 on
+  reading the order. A redline drafted from a register row inherits whatever that row did not record.
+- **Revision 9 called the January 2023 BSCC juvenile regulations text an adopted edition and the
+  2019 one stale. It is a pending proposal, still under consideration. Corrected by the department
+  immediately after 9.** The error was inferring adoption from document titles returned by a search,
+  without confirming status. **New standing rule: a proposed or pending regulation is not authority.
+  Confirm adoption before citing any regulation, and never draft against a text that can still
+  change.** The practical consequence is good news: the edition effective 01/01/2019 is operative, so
+  every Title 15 citation in this register stands.
+- **Revision 10 recorded conflict 13 and row 91 without WIC 625.6(c) or 625.6(d). Corrected in
+  11, and the correction narrows the finding.** The statute was summarised from research rather
+  than read to the end. **625.6(d) provides that the consultation requirement does not apply to a
+  probation officer acting in the normal performance of duties under WIC 625, 627.5 or 628.** A
+  duty supervisor is a probation officer. Those three sections concern taking a minor into
+  temporary custody, advising a minor on delivery to a probation officer, and the decision to
+  release or detain, so on the better reading none of them covers questioning a resident about a
+  new offence inside the facility, and the finding survives. But it is materially more contestable
+  than Revision 10 recorded, no case deciding it was found, and it is the first argument the
+  department or opposing counsel would raise. **It is now the gating County Counsel question.**
+  Status held at Conflict rather than lowered, because the order is silent on a statute that on
+  the better reading applies to it, and silence is not an exemption. 625.6(c), the imminent threat
+  exception, was also missing and is now in the draft amendment. **The lesson: a statute summarised
+  from a search result is not a statute read. Read every subdivision before scoring a conflict on
+  it, because the exemption subdivision is the one that decides whether there is a conflict at all.**
+- **Redline change 2 told County Counsel that 15 CCR 1352.5 was unconfirmed and to go obtain the
+  current BSCC edition. That edition was obtained and read in Revision 6, which confirmed 1352.5
+  runs (a) to (e). Corrected 10/30.** The authority line and a before-adoption note in a shipped
+  deliverable both carried the Revision 5 state of knowledge. The 1352(e) line in the same item
+  also still cited only the 2014 edition, though Revision 6 confirmed it unchanged in 2019.
+  **The general lesson, and it is the most useful one in this section: Revision 6 corrected the
+  register rows and wrote itself into this file, and did not sweep the redlines, which had been
+  drafted against Revision 5.** A correction that updates the register does not update a
+  deliverable drafted from an earlier revision. When a citation moves from unconfirmed to
+  verified, grep every file in `drafts/` for the old claim, not just the register. A caveat that
+  has been resolved is worse than no caveat: it sends counsel to do work already done, and it
+  invites them to discount the caveats that are still live.
+
+- **Do not assume isolation is available as a disciplinary sanction.** OO 1390/1391 III omits
+  it from the consequences list and OO 1354.5 I.C.1 prohibits confinement for punishment. The
+  department has excluded it, which is a stronger position than complying with the isolation
+  safeguards. Say so rather than leaving it to inference.
+
+## 9. Open questions for the department
+
+1. How many juvenile facilities does the department operate? (drives 115.311(c))
+2. Any agreement housing youth for another jurisdiction, or any federal grant referencing
+   28 CFR Part 115? (would make PREA contractually binding)
+3. Actual staffing ratios against rosters (blocks recommended change 9)
+4. Does a General Order on child abuse reporting exist? (see report Part 4.1)
+5. Which "Office of the Inspector General" does OO 1361 I.C mean? CA OIG oversight runs to CDCR.
+6. Does the OYCR Ombudsperson forward reports to the agency, and allow anonymity on request?
+7. Does a child abuse registry check occur in hiring? Are contractors and volunteers screened?
+8. Exact language of the employee reporting duty: does it reach non-criminal conduct?
+9. Has any PREA audit or consultant review ever been done at YDF?
+10. Is the annual public data publication required by PREA Policy XVIII.C actually happening?
+11. Does the CBA contain anything limiting removal of an alleged staff abuser? (115.366)
+12. **Confirm the subsection lettering inside 115.378 against the CFR before quoting it.**
+    Only 115.378(f), the good-faith reporting protection, is verified. The register describes
+    the other elements of that standard by content rather than by letter for this reason.
+    This environment's network egress is restricted, so eCFR and Cornell could not be reached.
+13. **Does 115.387 data collection reach sexual harassment, or only sexual abuse?** The standard
+    is written around allegations of sexual abuse. The supervisor guide originally asserted that
+    a sexual harassment incident "enters the PREA data set"; that is now stated as the safe
+    default rather than a confirmed requirement, because the CFR text could not be read from
+    this environment. It decides whether the department's collection instrument has one scope or
+    two. See register row 70.
+14. ~~Does the Dependent Adult and Elder Abuse General Order reach a resident aged 18 to 25?~~
+    **Answered in Revision 9: the department does not treat them as dependent adults.** The
+    consequence is recorded at rows 77 and 87. **The narrowed question that replaces it:** is a
+    resident over 18 who carries the OO 1352 **S-5 Mental Health** classification a dependent adult
+    under WIC 15610.23(a)? The blanket position is defensible as to 15610.23(b), since a juvenile
+    hall is not a 24-hour health facility, but 15610.23(a) is an individualized test and S-5 tracks
+    its language closely. Narrow question, not a broad one.
+15. **Does any YDF unit operate as a secure youth treatment facility under WIC 875(g)(2)?** This
+    decides whether the 875(g)(3) separation standards apply, and those standards may already supply
+    the written rule rows 84 and 86 say is missing.
+16. **Do WIC 875(j) findings exist for any resident who is 25 or older?** The department has
+    confirmed the hall houses to 25. 875(j) bites **at** 25, not at 26, so each such resident needs a
+    court finding of best interest and no risk to other youth. Confirm whether the population in fact
+    tops out at 24, and if not, where those findings are filed.
+
+## 10. Documents still outstanding
+
+Referenced in reviewed policies but never produced. Several may close findings.
+
+- General Order on child abuse and neglect reporting, if one exists
+- Resident Orientation Handbook (confirmed to carry the Youth Bill of Rights)
+- Hiring process, arrest notification protocol, written employee reporting requirement
+- Institutional Policy on Documentation, Confidentiality and Maintenance of Records
+- Institutional Policy on Video Recording and Photograph System
+- Interrogations of Department Personnel policy
+- Institutional Incident Report User's Guide
+- **Any adopted SYTF-specific BSCC standards, if they exist.** Not the full regulations: the
+  edition effective 01/01/2019 is operative and has been read. The narrow question is whether
+  anything was adopted under WIC 875(g)(3), including by emergency rulemaking. **The January 2023
+  revision is a pending proposal and must not be drafted against.** See row 90.
+- ~~Current BSCC Title 15 edition (post January 2019).~~ **Produced and read in Revision 6.**
+  All eight citations are confirmed. One question it raised is still worth asking internally:
+  whether the policy shop has been drafting against the 2014 text, since two of the
+  department's own citations match the superseded numbering. Note also that the edition
+  produced is effective 01/01/2019 and BSCC published a standards matrix revised January 2023,
+  so a later amendment may exist and has not been seen.
+- OO 1354 (separation). **Now the highest-value outstanding document.** OO 1354.5 defines
+  Separation to include protective custody and then regulates only room confinement, so the
+  placement 115.342(b) and 115.368 actually govern is the one with the fewest written
+  safeguards. See rows 35 and 57.
+- **The two attachments to OO 1352.5**, both named on its last page and neither produced: the
+  **Identity Preference Form** and a document titled **Ensuring Fairness and Respect for the
+  LGBTQI**. The form is the instrument III.A and IV.A.3.a both run on, so what it asks the youth
+  decides whether those provisions work. New in Revision 12.
+- Volunteer, intern, and contractor onboarding and clearance procedure
+- Medical and mental health service policies / Health Services agreement
+- Staffing rosters and post assignments
+
+## 11. Likely next tasks
+
+1. ~~Draft the redlines for changes 1 to 7.~~ **Done.** `drafts/redlines.json` is the source;
+   `drafts/REDLINES.md` and `deliverables/PREA_Redlines_Changes_1_to_7.docx` are generated
+   from it by `npm run redlines`. Do not hand-edit either output. Section 13 records what the
+   drafting assumed and what has to be confirmed before any of it is adopted.
+2. **Draft the new General Order on child abuse and neglect reporting.** Contents specified in
+   report Part 4.1. Model the structure on the existing Dependent Adult and Elder Abuse GO.
+   Redline 3 stage two is the cross-reference that replaces the interim text once this issues.
+3. **Draft the rewritten PREA Policy** to Subpart D order so each provision maps to what an
+   auditor scores.
+4. **Build the Tier 1 and supervisor lesson plans** from report Parts 5 and 6.
+5. **Update the register** as documents arrive. Increment the revision number, record every
+   change in the `change_log` column, and tell the user what moved and in which direction.
+
+## 12. Deliverables already produced
+
+Download these from the prior conversation and keep them in `deliverables/`:
+
+| File | Contents |
+|---|---|
+| `YDF_PREA_Policy_Review_Report.docx` | **The master document.** Findings, 12 conflicts, 11 critical gaps, the 15 changes, all-staff training, supervisor curriculum, implementation sequence, full 83-row inventory |
+| `YDF_PREA_Applicability_Memo.docx` | Whether PREA binds a county-run juvenile hall, and by what mechanism |
+| `YDF_PREA_Liability_Exposure_Assessment.docx` | Nine theories of liability. **Carries a handling warning: route through County Counsel before circulating** |
+| `YDF_PREA_Training_Gap_and_Curriculum_Plan.docx` | Longer-form training analysis (report Part 5 is the condensed version) |
+| `YDF_PREA_Audit_Evidence_Request.xlsx` | 40 document requests and 16 open questions |
+| `YDF_PREA_Gap_Register_Rev3.xlsx` | Excel version of `prea-register.csv` |
+
+Built in this repository, and regenerated rather than edited:
+
+| File | Built by | Contents |
+|---|---|---|
+| `PREA_Briefing_Package.docx` | `npm run package` | **The cover for a handover to the department.** What the package is, what we need decided, and a tab by tab schedule with the start page of each attachment. A transmittal, not a second brief |
+| `PREA_Briefing_Package_Complete.pdf` | `npm run package-pdf` | **The whole thing as one 166 page bookmarked PDF**, cover then attachments A to G. This is the single file to hand over |
+| `PREA_Management_Brief.docx` | `npm run brief` | **The document to brief managers from.** 18 pages, one section per page. Page 3 is the whole thing in five numbered points; the rest is the backup for each one. Seven exposure items, the liability routes, what the department already has right, the fifteen changes in three waves, and the list of what is blocked on a decision |
+| `PREA_versus_Policy_Crosswalk.docx` | `npm run crosswalk` | The full 91 row register as a document |
+| `PREA_Redlines_Changes_1_to_7.docx` | `npm run redlines` | The drafted amendments |
+| `PREA_Supervisor_Decision_Guide.docx` | `npm run supervisor-guide` | The long form for supervisors, read in advance |
+| `PREA_Supervisor_Field_Card.docx` | `npm run field-card` | **One sheet, double sided.** Five steps and nothing else |
+| `PREA_Supervisor_Memo_Template.docx` | `npm run memo-template` | The memo a supervisor writes after classifying |
+| `PREA_Staffing_Plan_Factors.docx` | `npm run staffing-factors` | The 115.313(a) factors |
+| `OO_1453_Tracked_Changes.docx` | `npm run tracked-1453` | The whole order with real Word revisions |
+| `OO_1352_Tracked_Changes.docx` | `npm run tracked-1352` | The provisions that change, with real revisions |
+| `OO_1352_5_Tracked_Changes.docx` | `npm run tracked-1352-5` | The whole order with real Word revisions |
+
+The user has said he prefers Word over Excel for reports going forward.
+
+---
+
+## 13. The redlines for changes 1 to 7
+
+Drafted against register Revision 5. Source is `drafts/redlines.json`; run `npm run redlines`
+to regenerate the Markdown and the Word file. The builder aborts rather than writing if it
+finds an em dash or an out-of-order item number.
+
+**What the drafting could and could not stand on.** **Updated in Revision 9: OO 1352 has now been
+produced and read in full, so changes 1 and 6 no longer rest on reconstruction.** Both have been
+rewritten against the order's real words, and change 6 gained an item it was missing (II.F.2.d).
+**Updated again in Revision 10: OO 1453 has now been produced and read, so the OO 1453 half of
+change 3 quotes the order.** **Updated again in Revision 12: OO 1352.5 has now been produced and
+read, so change 2 quotes the order, and the text it strikes turned out to be longer than the
+reconstruction this project had been carrying. See section 24.** Two of the orders the redlines
+amend are still **unproduced**: the PREA Policy and the Internal Affairs policy. For those, the struck text in each redline is
+a **reconstruction of what the register describes, not a quotation**, and the section numbers
+trace to the register, which traces to the earlier review that did read the orders. Every item
+carries a Before adoption block saying which it is. Do not let a redline circulate as though the
+struck text were the order's real words.
+
+The one exception is the Internal Complaints piece of change 7, which is grounded in the
+produced document.
+
+**Drafting decisions worth knowing before touching them again.**
+
+- **Change 1** replaces OO 1352 II.M in place rather than striking it, so no renumbering is
+  needed. The insert tracks the 15 CCR 1352(e) list verbatim and carries the regulation's own
+  carve-out, single occupancy at the youth's specific request, documented. It adds a fourth
+  paragraph barring any classification code that carries an automatic housing consequence, which
+  is what stops S-8 from reappearing under another letter.
+- **Change 2** makes single occupancy the presumptive outcome of the III.F determination rather
+  than a status rule. Flagged in the Why: a presumption applied without a real determination is
+  the same defect in better clothes, so the JPIP documentation is what makes it work.
+- **Change 3, updated in Revision 10.** Its two struck provisions now have different provenance and
+  the redline says so on each: I.A.9 is quoted from the produced order, V.A.4 is still a
+  reconstruction. The amendment also gained a scope correction, because reading the whole of OO 1453
+  confirmed every operative duty is keyed to "sexual assault" and therefore misses conduct that
+  PC 11165.1(b)(4) and (b)(5) make reportable. The insert is drafted to the CANRA trigger rather than
+  to the word assault, which fixes the timeline and the scope together.
+- **Change 7 lost a target in Revision 10, and that favours the department.** It had listed "OO 1453
+  Sexual Assault, records provisions". **That order has no records retention provision**: three
+  pages, fifteen items, none setting a retention period. The retention conflict is between Internal
+  Affairs XI.C.1 and PREA Policy XVIII.B, with Internal Complaints alongside. One fewer document to
+  reconcile.
+- **Change 3 is staged.** Stage one corrects PC 11166(a) in place in both PREA Policy V.A.4 and
+  OO 1453 I.A.9 now; stage two replaces both with a cross-reference once the General Order
+  issues. Paragraph 2 of stage one says internal notification does not satisfy or delay the
+  mandated report, which is the operationally important sentence. Paragraph 4 (the PC 11166(j)
+  cross-report duty) assumes the county has designated Probation to receive mandated reports
+  under PC 11165.9. **That designation is unconfirmed.** Confirm before adopting paragraph 4.
+- **Change 4** adds the receiving side of 115.363 (paragraph 3), which the current policy does
+  not address at all, and it references the change 7 retention schedule. If 7 is deferred, that
+  reference has to point somewhere else.
+- **Change 5** keeps the ability to discipline a fabricated report, with the burden on the
+  department, so nothing operational is lost. It expressly does not add a false reporting rule
+  violation to OO 1390/1391, which would recreate the defect in a second document.
+- **Change 6** splits S-4 into **S-4A** (risk of being sexually abusive) and **S-4B** (risk of
+  being sexually victimized). PC 261.5, 288.5 and 289.6 in the S-4A offense list are the drafter's
+  judgment, not from the order, and are flagged as such. The list ends with a successor-statute
+  catch-all so the next renumbering does not reopen the 287 gap.
+- **Change 7** is the one the department cannot fully solve itself. Paragraph 3 is drafted as a
+  **destruction moratorium** for conduct on or after 01/01/2024, because AB 452 left that class
+  of claim with no limitations period and no fixed retention figure can cover it. County Counsel
+  sets the schedule, not a policy revision.
+
+**Conforming items folded in that were not in the report's change list.** Change 6 carries the
+PREA Policy I.I.1 (288a to 287) correction and the OO 1352 II.C.3 DJJ deletion, both from
+conflict 11, because they sit in the same documents and the same amendment cycle. Change 2
+carries the OO 1360 search cross-reference. Change 5 carries the bad-faith rule for OO 1361.
+These are labelled as conforming changes, not as part of the numbered change.
+
+**Two supervisor-facing views, one source.** `drafts/supervisor-guide.json` builds both
+`PREA_Supervisor_Decision_Guide.docx` (the full guide, with the statutory text, the authority
+and the reasoning) and `PREA_Supervisor_Field_Card.docx` (the short decision card, about a
+fifth the length). `npm run field-card` fails the build if the two disagree on a tier number,
+on whether a tier is sexual abuse, or on whether its CPS answer is yes.
+
+**Do not hand-edit the Word files.** On 10/29 a copy of the guide came back with two sections
+cut in Word: the citation and verification notes, and the whole pat-search staff-misconduct
+section. The Contents page still listed both, because the TOC is a field and was not
+refreshed. Hand edits to a generated view are lost on the next build and leave the document
+internally inconsistent in the meantime. Changes go in the JSON.
+
+---
+
+## 14. Typography and document formatting (standing preference)
+
+Tim's stated preference, and it applies to everything produced for this project.
+
+| Element | Size |
+|---|---|
+| Body text and paragraphs | **12pt minimum** |
+| Headings | **14pt minimum** |
+| PowerPoint body wording | **16pt minimum**, larger where it fits |
+
+These are floors, not targets. Heading levels ascend from the floor so hierarchy
+survives: H3 at 14pt, H2 at 15pt, H1 at 17pt, title 24pt, subtitle 16pt.
+
+**Where this is enforced.** `tools/docx_style.js` holds the single type scale that all
+four Word builders import. It converts points to the half-points the `docx` library
+wants, so nobody has to do that arithmetic again, and it **fails the build** if any body
+or heading value is edited below its floor. Do not reintroduce numeric font sizes into
+the builders; add a name to the scale instead.
+
+That file exists because the four builders previously carried their own literals, and
+the result drifted to 10.5pt body text and 9.5pt table cells without anyone deciding to.
+Table cell text counts as body text and sits at 12pt.
+
+**The one deliberate exception.** Running heads and page numbers are set at 9pt. They
+are document furniture rather than paragraphs of the report, and at 12pt they compete
+with the text. That call is a single line in `docx_style.js` if it is ever revisited.
+
+**Consequence worth expecting.** Raising body from 10.5pt and cells from 9.5pt makes
+every document meaningfully longer. The crosswalk in particular is a long document with
+large tables. That is the intended trade: legibility over page count.
+
+**No PowerPoint generator exists yet.** When the Tier 1 and supervisor lesson plans are
+built, the 16pt floor applies, and the scale belongs in a sibling module rather than in
+the deck builder.
+
+---
+
+## 15. The facility, and what knowing it changed (Revision 8)
+
+Confirmed by the department. Everything before Revision 8 was inferred from documents; this is
+the first pass that rests on how the place actually runs.
+
+- The **Juvenile Hall houses residents aged 13 to 25.** A twelve year span in one facility.
+- **17 units, 12 in use.**
+- **Girls are housed separately from boys.**
+- **Boys are grouped by age.**
+- A resident **under 16 housed with one over 18 is uncommon but not prohibited.**
+
+**The headline finding, row 84.** Title 15 defines "Youth" as any person in the custody of the
+facility, expressly including persons over 18, so every state duty applies identically to a 13
+year old and a 25 year old. Searched the full 2019 text: separation under 1354 is keyed to
+behavior and status, and **no provision anywhere keys separation to age.** On the federal side
+neither 115.14 nor 115.114 applies in a juvenile facility. **Nothing in the 2019 Title 15 edition
+or in 28 CFR Part 115 requires sight and sound separation of a 13 year old from a 25 year old
+here.** *(Revision 8 stated this as "nothing in federal or state law," which was overbroad. See the
+WIC 875 correction in section 8 and row 90. The narrow finding stands: 875(j) and (k) are admission
+controls exercised by the court, and 875(g)(3) directs BSCC to write separation standards that have
+never been produced to this project. None of the three is a housing rule binding the facility
+today.)* Classification is
+the only control, and it sits in OO 1352, **produced and read in full in Revision 9**, which carries
+both documented classification defects. Reading it confirmed the finding rather than closing it: the
+order weights age as a factor but contains no age-based housing rule. See section 16.
+
+**Row 85. Title 15 has its own definition of sexual abuse and it is broader than PREA's.** It
+counts coercion by **manipulation**, where the federal resident-on-resident definition requires
+coercion by overt or implied threats of violence, and it reaches **voyeurism between residents**,
+which the federal definition treats as a staff-only prong. 1324(n) makes it enforceable. A
+department screening only against the federal test will close conduct the state standard reaches.
+
+**Row 86. Every separation control the department relies on is practice, not policy.** Sex
+separation, age grouping, and keeping under-16s away from over-18s are all in daily use and none
+appears in the documents reviewed. Title 15 requires none of them, so the department is exceeding
+the standard and recording none of it. The remediation is the cheapest in the register: write
+down what is already done, plus a written override path for the uncommon cases, because a rule
+with no stated exception is not a control.
+
+**Row 87. The mixed-age consent collision.** PREA's "unable to consent or refuse" limb governs,
+so apparent willingness does not take a minor-with-adult incident out of PREA. CANRA's
+voluntary-conduct exception is narrower than it looks: it reaches only 286, 287 and 289, not
+touching under 11165.1(b)(4) and not 261.5; it requires a finding of no indicators of abuse,
+which is a post-investigation conclusion rather than a unit observation; and it is unavailable
+outright for a person 21 or older with a minor under 16, a live pairing here. **The rule to write
+down: staff do not apply consent analysis, and the CANRA exception is never applied at facility
+level.**
+
+**A distinction to have ready, added to row 36.** Someone will ask why sex-segregated housing is
+lawful if categorical housing on a listed basis is not, since gender is on the 1352(e) and
+1324(k) lists. 1352(e) bars separating a youth **from the general population** or assigning to a
+**single occupancy room** solely on a listed basis. A girls unit is a general population
+assignment and is neither. S-8 is a single occupancy assignment on a listed basis and is both.
+Same list, opposite result.
+
+**What this did to the supervisor guide.** The tier chart was written assuming both residents
+are minors, which in a 13 to 25 facility is often wrong, so Revision 8 added age qualifiers to
+the chart itself rather than leaving them in prose nobody reads under pressure.
+
+- **Tier 4** (masturbation in view) now reads **YES if the youth who saw it is under 18.**
+  11165.1(b)(5)'s element is masturbation in the presence of a **child**. Two adult residents,
+  no CANRA duty, however many times it happens.
+- **Tiers 5 and 6** now read **YES if either resident is under 18.** (b)(4) reaches touching the
+  intimate parts "of a child, **or of the perpetrator by a child**," so it is keyed to a child on
+  either side of the contact. Which resident is the victim is an investigative conclusion, not a
+  floor call, and PC 11172(a) gives the reporter immunity. Where both are 18 or over, CANRA does
+  not apply at all, because there is no child.
+- A new **mixed ages section** carries the consent rule, the three limits on the CANRA voluntary
+  conduct exception, and a worked example: **repeated masturbation in view, both residents over
+  18.** CANRA no, PREA yes, and the repetition is what does it, because that conduct is not a
+  resident-on-resident abuse prong but repeated unwelcome actions of a derogatory or offensive
+  sexual nature are sexual harassment under 115.6. Live alongside it: PC 314, which is
+  age-neutral; OO 1390/1391 II.B.4, which still does not define sexual misconduct; and open
+  question 14.
+- **One claim walked back.** Tier 2 asserted that a sexual harassment incident enters the PREA
+  data set. 115.387 is written around sexual abuse and could not be read from here, so the guide
+  now says log it, treat inclusion as the safe default, and confirm the scope. Open question 13.
+
+**The state-side point raised and deliberately not resolved.** Title 15's definition reaches
+voyeurism between residents, but voyeurism describes the watcher, not the person exposing
+himself. Whether it reaches exhibitionist conduct between residents is not answered on the face
+of the text. Recorded as a County Counsel question rather than scored.
+
+**Still open.** Twelve units in use describes one facility's size; it does not answer how many
+juvenile facilities the department operates, which is what 115.311(c) turns on. Open question 1
+stands.
+
+---
+
+## 16. OO 1352 read, and what it changed (Revision 9)
+
+Produced and read in full on the same day as two other inputs: the department's answer on dependent
+adult status, and WIC 875. Twelve pages, scanned, no text layer. Rasterize at 200 dpi with
+`pymupdf` and read the images; `pypdf` returns 363 characters.
+
+**The register's citations to this order were accurate.** Every section number the earlier review
+recorded, II.C.3, II.F.2, II.G.1, II.H, II.M, III.E.1.a, III.I, I.B.3, I.B.6, I.B.12, V.A-C, is
+right. That is worth knowing about the provenance of the rest of the register.
+
+**What is now quotable rather than reconstructed.** The S-8 text, the III.I.1 single-room mandate,
+the Purpose and Scope paragraph tracking 1352(e), the II.F.2 molest-victim note, and the S-4 High
+offence list. Conflicts 1, 6 and 11 all carry the order's real words now.
+
+**The three findings that changed direction.**
+
+1. **The 1352(f) theory on conflict 1 is withdrawn and replaced with a better one.** See section 5.
+   Reasoning out, conclusion stronger.
+2. **Conflict 6 is bigger.** The victim-to-perpetrator inference is at II.F.2.d as well as the note,
+   and the order uses the same fact for the opposite purpose at II.H.3.
+3. **Row 84 is smaller, and that favours the department.** The Purpose paragraph weights age and
+   III.C.1 weights physical stature, so the factors exist. Status raised Not Addressed to Partial.
+   What is still missing is an age-based housing **rule**, which is a narrower claim.
+
+**Three new rows.**
+
+- **88. S-1 is written for male youth only.** II.C opens "Any **male** youth who meets the following
+  criteria will be housed in a high-security unit." Every criterion under it is behavioural or legal
+  and none is sex-specific. A female youth who meets them has no high-security path on the face of
+  the order. May reflect physical plant rather than intent; ask before assuming.
+- **89. The S-7 communicable disease log.** A daily list naming residents and their "exact medical
+  condition," HIV among them, on a clipboard in every unit and distributed to the kitchen, SCOE,
+  volunteers, contractors, the Juvenile Court Expeditor and the Sheriff's Bailiffs. HIV status is on
+  the 1352(e) and 1324(k) protected lists. Primarily a Health and Safety Code 121070 question for
+  County Counsel. The same provision also routes duties to **Youth Advocates**, a role that no longer
+  exists, which is the conflict 9 defect class.
+- **90. WIC 875 and the secure youth treatment facility framework.** Scored **Not Evidenced**.
+  **Corrected immediately after Revision 9 by the department**: this row first said the January 2023
+  BSCC text was an adopted edition making the 2019 one stale. It is a pending proposal. The 2019
+  edition is operative and the register's Title 15 citations are sound. See section 7 and the
+  correction in section 8.
+
+**One structural finding worth more than its row.** OO 1352 **never once references OO 1350.5**, in
+twelve pages. The order that screens for sexual abuse risk and the order that makes the housing, bed
+and program assignments the screening is meant to drive do not cite each other in either direction.
+115.341 requires the screening results to inform exactly those assignments. The link may exist in
+practice; on paper there is nothing for an auditor to follow. Rows 32 and 34.
+
+**And the other half of Revision 9, from the department's answer.** Residents aged 18 to 25 are
+under juvenile court jurisdiction, but **jurisdiction is not age**: PC 11165 defines a child as a
+person under 18, so CANRA does not reach them, and the department does not treat them as dependent
+adults. **Where both residents are 18 or over there is no mandated external reporting duty of any
+kind.** What remains is age-neutral and operationally different: every PREA duty applies unchanged,
+and 15 CCR 1453 with OO 1453 I.A.8 routes sexual assaults to the Sheriff rather than to CPS. But
+that substitute triggers on a higher threshold, binds the Duty Supervisor rather than the employee
+who saw it, carries no personal criminal exposure, and reaches sexual assault only, so the
+harassment, exposure and masturbation tiers have no external route at all. Written into the
+supervisor guide as the **three ages question** asked before the tier chart. Rows 77 and 87.
+
+---
+
+## 17. OO 1453 read, and the correction it forced (Revision 10)
+
+Produced and read in full for the first time. Three pages, scanned, rasterized at 200 dpi.
+**Every I.A citation the register carried from the earlier review is confirmed verbatim**, which is
+the second time a produced order has vindicated the register's provenance.
+
+**The finding that matters, and it corrects this project's own published work.** I.A.6 reads: "The
+duty supervisor shall take an initial statement from the victim and suspect. All suspects involved
+in a sexual assault shall be read a 'Miranda Warning', prior to any questioning." The supervisor
+role matrix published on 10/29 told supervisors they do not conduct fact finding and do not
+interview. **The department's own order directs exactly that**, and the order had not been produced
+when the matrix was written. See conflict 13 for the WIC 625.6 defect inside I.A.6.
+
+**The stop-point moved, it did not disappear.** Taking an initial statement from the two residents
+involved is directed by I.A.6 and is first response. Canvassing further witnesses to test whether
+the allegation is true is directed nowhere and is what belongs to a trained investigator under
+115.334. The role matrix, the field card and the memo template were all corrected on 10/29.
+
+**A second correction to this project's work, at row 18.** PC 679.04 as OO 1453 I.A.13 recites it,
+and as the statute reads, gives the advocate right during investigatory interviews conducted by
+**law enforcement, the district attorney or defense counsel**. The guide and the field card had
+stated it more broadly. It does not on its face reach the I.A.6 statement, so **the one interview
+the order assigns to facility staff is the only one in the sequence with no advocate right
+attached.** That makes I.A.6 worse, not better.
+
+**The scope limiter, confirmed by reading the whole order.** The title is Sexual Assault, the stated
+Authority is PREA, and every operative duty is keyed to "sexual assault": the Purpose paragraph's
+staff reporting duty, I.A.9's CPS report, I.A.15's incident review. **Nothing in three pages reaches
+sexual harassment, exposure, or touching not characterised as assault.** So the department has a
+coordinated response plan in all but name for the most serious band and nothing written for the band
+that generates most incidents. Rows 47, 54, 48 and 69.
+
+**New to the register from this order:** I.A.2 (the Duty Supervisor notifies a Chief Deputy or
+Assistant Chief Deputy), I.A.7 (a trauma informed interaction instruction, credited at row 67),
+I.A.12 (the suspect rape exam, the Sheriff's responsibility).
+
+---
+
+## 18. The two audiences, and the split between them (10/29)
+
+Tim named the two jobs the material has to do, and they were fighting each other inside one
+document. **Explain it to supervisors so they can classify an incident, and explain it to
+managers so they can see the shortfalls, the issues and the liability exposure.** Those are
+different documents for different rooms and they now are.
+
+**For supervisors.** `PREA_Supervisor_Field_Card.docx` is one sheet printed double sided.
+Ages, the tier chart, the flip factors, one compact action table, the classification block.
+Nothing else. It had reached four pages carrying a ten role matrix and an eight phase
+response sequence, which is a guide, not a card. Both of those moved into
+`PREA_Supervisor_Decision_Guide.docx`, along with the action list in full, and **two build
+guards now fail if either comes back or a sixth step appears.** The flip list spans the
+fold; keeping it whole costs a third page, which is worse.
+
+**For managers.** `PREA_Management_Brief.docx`, new, built by `npm run brief` from
+`drafts/management-brief.json`. The brief carries no findings of its own: each of its seven
+exposure items names the register rows it rests on, and **the build fails if one of those
+rows does not exist or has since been scored Addressed**, because the finding it was written
+around has then been cured. It also fails if the register grows a status or priority value
+the brief cannot order, so a new scoring category cannot be silently dropped from the counts.
+
+The seven exposure items, and why these seven out of 91 rows: **1.** categorical single room
+housing for LGBTQI and transgender youth, rows 36 and 37, the cleanest adverse finding
+available against the department. **2.** the child abuse reporting timeline, row 48, which is
+personal criminal exposure for the employee rather than an institutional finding. **3.** the
+WIC 625.6 omission, row 91, same, and it runs to the supervisor personally. **4.** no PREA
+Coordinator, rows 2 and 3, where the department's own order is a written acknowledgment that
+the role is needed. **5.** nothing written for the band below sexual assault, rows 47, 54 and
+69, which is where supervisors are improvising. **6.** three retention rules against a claim
+with no limitations period, row 59. **7.** the 2013 policy date, row 74, established on a BSCC
+inspection by reading the cover page.
+
+**Two things the brief does deliberately.** It carries a section on what the department
+already has right, because it is true and because a brief that only lists failures gets
+discounted in the room. And it carries the staffing ratio as **the one thing that cannot be
+called either way**, rather than as a finding, because 15 CCR 1321(h)(1) sets the state floor
+at the written figure and whether a real gap exists depends on rosters that have not been
+produced.
+
+---
+
+## 19. The handover package (10/30)
+
+Tim asked for a briefing document for the department with everything else attached to it, so
+he can show them what is needed. Two outputs, one source.
+
+**`PREA_Briefing_Package.docx`**, built by `npm run package` from `drafts/briefing-package.json`,
+is the cover. It is a **transmittal, not a second brief**: purpose, what we need, where we
+stand, the tab schedule, how to use it by role, and what is deliberately not in it. The
+reasoning stays in the Management Brief at Attachment A and is not restated.
+
+**`PREA_Briefing_Package_Complete.pdf`**, built by `npm run package-pdf`, is the whole thing
+as one bookmarked PDF. **191 pages as of 10/30, ten attachments**: cover 1, A Management Brief 10,
+B Redlines 28, C Crosswalk 50, D Decision Guide 132, E Classification Card 162, F Memo Template 164,
+G Staffing Factors 169, H OO 1453 tracked 171, I OO 1352 tracked 178, **J OO 1352.5 tracked 184**.
+Do not hand-maintain those numbers: the build measures them.
+
+**Three things worth knowing before touching it.**
+
+**The schedule is checked against the directory, both ways.** The build fails if the schedule
+lists a document that is not in `deliverables/`, if a document is there and unlisted, or if
+the tab letters skip or repeat. A tab with nothing behind it is the error that makes a reader
+distrust the rest of the binder.
+
+**The What we need list is read out of `drafts/management-brief.json`, not restated.** The
+cover and the brief cannot come to disagree about what is being asked for. **The no-dash rule
+covers that borrowed list too, and at first it did not**: review caught that a dash in an ask
+passed the Markdown build and aborted the Word one, so the two views of the same cover said
+different things. The lesson generalises past this file: a guard that checks only the file it
+lives in is not checking the document it produces.
+
+**Review also caught the cover asserting something its own ask list did not back.** It called
+the PREA Policy the highest value undelivered document while ask 4 asked only for OO 1354, the
+handbook and the screening procedures. The gap was in the asks, not the cover, so the fix went
+there: **ask 4 now asks for the PREA Policy by name**, because producing it is what moves three
+drafted amendments off a reconstruction and onto the order's real words. Reading a list from one
+source stops the two copies diverging; it does not stop the prose around it claiming more than
+the list supports.
+
+**The PDF build iterates to a fixpoint on purpose.** A start page cannot be printed until the
+attachments are rendered, and rebuilding the cover to carry those numbers changes the cover's
+length, which moves the numbers it just printed. Each pass writes what it measured, rebuilds
+the cover, renders again, and stops when a pass measures what the cover already says. It
+settles on pass 2. Convergence is checked, not assumed, and stale pagination is dropped rather
+than printed, because a contents page pointing at the wrong document is worse than no page
+numbers.
+
+**What the package does not contain, and the cover says so.** The six documents from the
+earlier conversation are **not in this container**: `deliverables/YDF_PREA_*` is gitignored
+and did not survive. The cover lists them as available on request rather than attaching them,
+and repeats the handling warning on the Liability Exposure Assessment. Do not let the schedule
+claim them.
+
+---
+
+## 20. Never name the machinery in a deliverable
+
+Tim caught this on 10/30 and it had leaked into **nine of nine documents**. Footers reading
+"Generated from `drafts/x.json` by `npm run y`". The project memory file named inside the
+supervisor guide's citation note. The register's own path in the crosswalk prose.
+
+**Why it matters more than it looks.** These documents go to administrators, County Counsel and
+potentially into litigation. A reader who finds a build command in one of them learns something
+true and irrelevant about how it was made, and the document stops reading as a departmental work
+product. It reads as output.
+
+**`tools/check_deliverables.py`, run by `npm run check`, now fails on any of it**, and
+`npm run package-pdf` is gated on it so the handover artifact cannot be assembled while a leak
+exists. It bans build commands, source directories and filenames, the project memory file, the
+register filename, version control, the tooling vendor, and the phrase "hand-edit". **It is a sweep
+over the finished files rather than a check inside each builder**, so a builder written later
+cannot forget to call it and what it checks is what actually ships.
+
+It earned itself immediately: the first clean run still caught two more leaks in the crosswalk's
+Word view, which carries its own copy of prose the Markdown builder also holds.
+
+**Write about the work, not the toolchain.** "This copy is regenerated from source; edits made here
+are not carried forward" says everything the reader needs and names nothing.
+
+---
+
+## 21. Do not repeat this one
+
+**Revision 9's supervisor role matrix was published without the governing order in hand.** It told
+supervisors they do not conduct fact finding and do not interview, which is contradicted by OO 1453
+I.A.6. The reasoning was sound on the standards and wrong on the department's own policy, and the
+gap between those two is exactly where a deliverable does damage: a supervisor following the matrix
+would have been ignoring a direct instruction in their own order.
+
+**The rule this produces.** Before publishing operational guidance that tells someone what their
+role is, read the order that assigns the role. Where the order has not been produced, say on the
+face of the document that the role statement rests on the standards and not on departmental policy,
+and name the order that would settle it. The memo template did this correctly for the response
+sequence, flagging that OO 1453 had never been produced. The role matrix did not.
+
+---
+
+## 22. Revision 11, and the tracked changes orders (10/30)
+
+**The correction.** See section 8. Revision 10 scored conflict 13 on WIC 625.6 without reading
+625.6(c) or 625.6(d). (d) exempts a probation officer acting in the normal performance of duties
+under WIC 625, 627.5 or 628, and a duty supervisor is a probation officer. The finding survives on
+the better reading, and it is now the gating question for County Counsel rather than a settled
+violation. Status held at Conflict. Row 91, conflict 13, and the management brief's exposure item 3
+all carry the qualifier now.
+
+**A new defect in the same paragraph. WIC 625.7, effective 07/01/2024**, bars threats, physical
+harm, deception and psychologically manipulative tactics in the custodial interrogation of a youth
+17 or younger. OO 1453 I.A.6 predates it by more than four years and omits it too. Content and
+effective date confirmed by search, not read from primary source. **The bill that added it is
+deliberately not cited, because it could not be confirmed.** Do not cite a bill number for 625.7
+until somebody checks it.
+
+**Change 8 is drafted**, as both a redline entry and something new.
+
+**`OO_1453_Tracked_Changes.docx`, built by `npm run tracked-1453` from `drafts/oo1453-tracked.json`.**
+This is the order's own text carrying real Word revisions, `w:ins` and `w:del` with `w:delText`, so
+the department opens it in Word, uses Review, and accepts or rejects each change. Accepting them all
+leaves a clean amended order. Two paragraphs are amended: I.A.6 for change 8 and I.A.9 for change 3.
+Three further defects are recorded in its notes and deliberately **not** amended, because the fix
+for those is not a change of wording.
+
+**Three guards on it, and one of them taught something general.**
+
+**The base text must be the order's own words**, and the build refuses if the provenance statement
+saying so is removed. A tracked changes document asserts "this is your policy, with edits". That
+claim is only safe while it is true.
+
+**Every amended paragraph must name its change number and its register rows**, because that is what
+the department correlates against the briefing packet.
+
+**The no-dash rule had to be rescoped, and this is the general lesson.** Paragraph 1 of OO 1453
+contains an en dash in "no access to toilet, see #5 below". The project rule forbids dashes, so the
+first build aborted on the department's own punctuation. Silently correcting it would have
+misrepresented the base text, which is the one thing this document must not do. **The guard now runs
+over authored text only: inserts, notes, labels and the before-adoption block. Quoted text is exempt
+by construction, not by an allowlist.** A house style rule governs what this project writes and
+cannot govern what it quotes.
+
+**Full text of OO 1453 is now captured** in `drafts/oo1453-tracked.json`, all fifteen items plus the
+front matter, transcribed from the PDF. That outlives `docs/`, which does not survive a container.
+
+**Two bugs review caught in this same pass, and the second one is instructive.**
+
+**A bad splice duplicated a sentence into the shipped crosswalk.** The new conflict 13 fix text
+ended with the same trailing fragment the old text began with, so the old continuation glued on and
+the deliverable read "This is not a reason Until then, obtain the consultation anyway." When
+replacing the tail of a string, check what follows the replacement, not just what matched.
+
+**A written-out count disagreed with its own list.** An ask announced five documents and listed
+four, because "the hiring and contractor screening procedures" collapsed two separate outstanding
+documents into one phrase. There is now a guard, `check_counted_lists`, in both the brief and the
+package builders. **It took four attempts and every failure is worth remembering.**
+A lookbehind of `(?<![A-Z])` under `re.IGNORECASE` matches any letter rather than any capital, so
+the first version silently never fired. The second split a prose list on a bare "and", which cannot
+tell a separator from a conjunction inside one item, so it counted a four-item list as five and
+passed the bug it was written for. The third required the colon to sit immediately after the count
+phrase, which held for the brief's wording and not the package cover's, so **five of six count
+claims across the two files went unchecked**, and a real contradiction hid in the gap: the cover's
+purpose section said five documents and its own schedule two pages later said six, about the same
+list.
+
+**The fix that mattered was not a better regex. It was refusing to be silently partial.** The guard
+now reports every count claim it could not check, as a note in the build output, so an unchecked
+claim is visible instead of invisible. Proportions like "three of the thirteen" and locators like
+"wrong in two documents" are excluded by shape rather than quietly dropped. A fifth pass fixed the
+last known gap: the guard took the first colon after the count, and review pointed out an unrelated
+one arriving first would be parsed as the list. It now takes the first colon whose span contains a
+comma, which is what separates a list-introducing colon from an explanatory one. A genuine
+single-item list has no comma and is reported as unchecked rather than guessed at. **Comma
+presence is a proxy for list-ness, not the same thing**, so an explanatory colon followed by a
+clause that happens to contain a comma would still be misread. It does not occur in the current
+text and the guard would produce a false failure rather than a false pass, but the next person
+editing this prose should know the limit.
+
+**The guard lives in `tools/prose_counts.py` now.** It was duplicated in both builders and needed
+the same fix five times, four of them applied twice by hand. Verified the two copies were still
+identical before pulling them out, so nothing had silently diverged. Per-builder independence is
+this project's usual preference and it was the wrong trade here: a guard that has been wrong four
+times should exist once. **A guard that does not
+fail on the bug it was written for is worse than no guard, because it buys false confidence, and
+three versions of this one survived precisely because nobody could see what they were skipping.
+Test a new guard by reintroducing the original defect, and make it say what it did not look at.**
+
+**OO 1352 got the same treatment on 10/30, in a deliberately different shape.** Its PDF did not
+survive, so only the provisions quoted in Revision 9 are held. `OO_1352_Tracked_Changes.docx`,
+built by `npm run tracked-1352`, is therefore **the provisions that change, not the order**: six
+carry real redlines because their words are the order's, and two, the III.E housing matrix and
+II.C.3, are marked as described rather than quoted, carry no redline at all, and state the required
+action instead. **Review then found the two deliverables disagreeing about change 6.** The redline proposed adding
+six Penal Code sections to the S-4A list; the tracked document proposed two. The symptom was a
+caveat warning County Counsel to confirm or strike 288.5 and 289.6, carried over from the redline
+into a document that did not contain them. The tracked document now carries the redline's list, so
+both describe the same amendment. **The lesson is about shape: when a second deliverable is built
+for a change that already has one, the risk is not that it will be wrong on its own terms but that
+it will quietly propose something different.** A guard now fails the build if the before-adoption
+notes name a code section that appears nowhere in the provisions actually drafted, which is the
+cheap mechanical catch for that class.
+
+**Four guards enforce that distinction**, and the one that matters most refuses to build if a
+provision marked described carries kept or struck text, because **a redline on wording nobody
+captured is invented policy**. The other three require `complete` to be false, require the document
+to say what is not reproduced, and require every described provision to state an action.
+
+**Three further guards check other things and are easy to miscount as part of that set.** Review
+caught this paragraph claiming five after the first caveat guard was added, which checks a
+different property entirely. The three are: every provision must name its change number, label and
+register rows; no code section may be named in the before-adoption notes unless it appears in the
+drafted provisions; and no code section may be inserted into the drafted text unless it is either
+declared a verified addition or named in those notes. The last two are the same consistency
+property in opposite directions, and both were needed, because the first one could not catch a
+section in the text with no caveat.
+
+**The caveat drift happened twice, and the second time was predictable.** Review found 261.5 in the
+tracked document's inserted list with no caveat, which was fixed. The same list is proposed in the
+redline for change 6, and **that document said nothing about any of the three unverified sections**,
+so Attachment B told a reader less than Attachment I about the identical amendment. The redline
+builder now carries the same check, scoped to an enumerated Penal Code offence list.
+
+**Five attempts on that check, and every failure was a coincidence passing for a result.** Taking every three digit
+number in every insert flagged CCP 340.1, AB 452 and WIC 300, all verified authorities, and a guard
+that fires on correct text gets switched off. Then a lazy capture stopped at the first comma and
+only ever saw one section, so the guard passed the bug it was written for. Then a three digit
+pattern with no trailing boundary matched the front of "Penal Code section 11165.9" and invented a
+section 111, **and the build passed only because the string "111" happens to sit inside "11165.9"
+where that section is discussed in the notes**. And the notes membership test was a plain substring
+search, so a caveat naming 261.5 would have silently satisfied the check for 261. **Test by
+reintroducing the defect, every time, and when a check passes ask why it passed.** Four of these
+five versions reported success; two of them for reasons that had nothing to do with the thing being
+checked. The field means a reader need not take it to County Counsel, which covers
+both sections the order already enumerates and sections this review confirmed as omissions.
+
+**What is needed to do this for the remaining orders.** A complete tracked changes document can
+only be built for a policy whose full text is in hand. That is OO 1453 and nothing else. OO 1352's text was captured
+only as the quoted provisions, not in full, and its PDF is gone. OO 1352.5, the PREA Policy and the
+Internal Affairs policy have never been produced at all. **Building one of these from a
+reconstruction would hand the department a document that looks like their policy and is not.** Do
+not do it. Ask for the source.
+
+---
+
+## 23. The third shape, and the day it lasted (10/30)
+
+**Superseded the same day by section 24. OO 1352.5 was produced, so the document described below
+no longer exists and its builder and source are deleted.** The section is kept because the
+reasoning is the part worth keeping, and because the shape will be needed again for the PREA
+Policy and the Internal Affairs policy if either is ever amended before it is produced.
+
+
+Tim asked for tracked changes on OO 1352.5 and the answer was no. **The order has never been
+produced to this review.** Checked before answering rather than after: the register and the
+redlines hold **zero verbatim quotations** of it, only section numbers and descriptions. He then
+asked for the all-described version instead, and that is what
+`OO_1352_5_Citations_and_Actions.docx` is, built by `npm run described-1352-5` from
+`drafts/oo1352-5-described.json`.
+
+**There are now three shapes, and the shape is determined by what text is in hand. Do not mix them.**
+
+| Order | Shape | Why |
+|---|---|---|
+| OO 1453 | The whole order, real Word revisions | Full text produced, read, and captured into the JSON |
+| OO 1352 | The provisions that change, real revisions | Only the quoted provisions survive; the PDF is gone |
+| OO 1352.5 | Citations and required actions, **no revisions at all** | Never produced; no wording held |
+
+**What made the third shape worth building rather than refusing outright.** OO 1352.5 is the
+best documented of the three unproduced orders. Thirteen provisions are described section by
+section across register rows 10, 11, 36, 37, 74 and 75, and **twelve of them need no amendment,
+four exceed the federal standard, and one provision is the entire finding.** That is a strong
+document for the department to receive, because it says their order is right in twelve places and
+wrong in one, which is a different conversation from a list of failures. A redline could not have
+said it; a list of citations can.
+
+**What the document may and may not contain.** It carries this review's **proposed replacement
+language** for III.I, because that text is ours and labelling it ours is honest. It carries no
+struck text, no inserted text, and no `w:ins` or `w:del` anywhere, verified against the XML: zero,
+against 8 and 13 in the two real redlines. Drafting our own language is fine. Fabricating the
+department's current wording in order to strike it is not, and that is the whole distinction.
+
+**Nine guards, and the two worth knowing.**
+
+**The drift guard is the one that earned its place before it ran.** Section 22 records the OO 1352
+tracked document and the redline quietly proposing different amendments under change 6, caught by
+review rather than by a build. So this builder reads `drafts/redlines.json`, finds the item for
+each amended provision's change number, and **aborts if the proposed paragraphs differ from the
+redline's by a single character**, printing both. The lesson from 22 was "when a second deliverable
+is built for a change that already has one, the risk is not that it will be wrong on its own terms
+but that it will quietly propose something different." This is that lesson turned into a build
+failure instead of a note.
+
+**The tab letter guard came from a real bug in the first draft of this document**, caught on reading
+the rendered PDF. It said OO 1453 was at Attachment G. G is the staffing factors; 1453 is H. The fix
+was not to correct the letter but to **ban tab letters from this document entirely**, because a tab
+letter is a fact about the packet's running order, which changes whenever an attachment is added,
+and this document also travels on its own to whoever is producing the order. Name the document, not
+its tab. **Prefer removing a class of error to correcting an instance of it.**
+
+The other seven: `complete` must be false; `is_redline` must be false; the provenance must say both
+that the order was never produced and that the document contains none of its words; the subtitle
+must say in terms that it is not a redline; the output filename may not say tracked changes or
+redline, because a filename is what gets forwarded in an email; no provision may carry the keys the
+redline builders use for the order's own words (`runs`, `sub`, `verbatim`, `kept`, `struck`, `del`,
+`status`), which is how a reconstruction would get started; and every provision must name its
+register rows and a required action, must name a change number if and only if it is marked for
+amendment, and must carry proposed language if and only if it is marked for amendment.
+
+**Nothing in this document is quoted, so the no-dash rule covers every string in the file.** That is
+the opposite of the OO 1453 builder, where the guard had to be rescoped to authored text because the
+order's own paragraph 1 contains an en dash. The rule tracks provenance, not file.
+
+**All nine were tested by reintroducing the defect**, per section 22. All nine fired.
+
+**Two consistency fixes this pass forced, both of the "the prose claims more than the list backs"
+class from section 19.** The attachments paragraph said nine documents and had to say ten. And
+**ask 5 asked for five documents without asking for OO 1352.5**, while the new attachment tells the
+department that producing that order turns the document into a redline. The asks list is what the
+department acts on, so the fix went there: ask 5 now asks for six documents and names OO 1352.5 as
+the cheapest of them to act on. The counted-list guard was tested on the new wording by claiming
+seven and listing six, and it caught it.
+
+**Two guards added on review of this pass, and both are the same shape: a check that compares one
+document against another rather than against itself.**
+
+**The cover understated what the review is waiting on.** The ask list was updated to name OO 1352.5
+and the cover's own outstanding list was not, so both said six documents, both passed
+`check_counted_lists`, and the cover omitted the one order an entire attachment exists because it was
+never produced. **A count guard checks a list against its own number and cannot see that two
+documents' lists of the same thing disagree.** The new guard is directional on purpose: the cover may
+carry items the ask list does not, such as the rosters, which are their own ask, but it may not name
+fewer outstanding orders, because the cover is the page the department reads to decide what to go and
+find. Matching is on order designations and on the PREA Policy by name, since those are unambiguous
+tokens; the prose around them differs by design and is not compared. Fixing it surfaced a **third**
+copy of the same claim in the purpose section, caught by the existing phrase-count guard. Six to
+seven in both places.
+
+**A new deliverable shipped with no README row.** `npm run check` now fails if any file in
+`deliverables/` is absent from the README table, directional the same way: the README may list
+Markdown working copies that are not deliverables, but it may not omit one that is. Both guards were
+tested by reintroducing the defect and both fired.
+
+**One process note on that testing.** The first run of the cover guard looked like a pass because the
+test piped the build through `head -6` and cut the abort message off. The guard had fired. **A guard
+test that truncates its own output is not a guard test**, and the standing rule in section 22 says to
+ask why a check passed, which is what caught it.
+
+**Staffing, per Tim on 10/30.** The 1:8 and 1:16 against 1:10 and 1:30 question is to be carried as
+a concern to look into, not as a finding. The Management Brief already does this correctly: it sits
+in its own section headed "One thing we cannot yet call either way", outside the seven exposure
+items, and says the written ratio is lawful under state law and below the federal standard with the
+real question turning on rosters. One word was stronger than that framing and was changed: an ask
+called it "our staffing finding" and now calls it "the staffing question". **Note what was not done:
+the register still scores this as conflict 8, and rescoring it would move the headline count of
+thirteen conflicts through every deliverable. That is a decision to put to Tim, not to take
+quietly.**
+
+---
+
+## 24. OO 1352.5 read, and what four pages changed (Revision 12, 10/30)
+
+Produced hours after the citations-and-actions document shipped. Four pages, scanned, no text
+layer, rasterized at 200 dpi. **`pypdf` returns zero characters.** Full verbatim text is captured
+in `drafts/oo1352-5-tracked.json`, which outlives `docs/`.
+
+**Every section number the register carried is confirmed.** II.A to II.D, III.A to III.K,
+IV.A.1 to IV.A.3, IV.A.3.a to c. Third produced order in a row to vindicate the register's
+provenance, after OO 1352 and OO 1453.
+
+**`OO_1352_5_Tracked_Changes.docx`, built by `npm run tracked-1352-5`.** The whole order with real
+Word revisions. One provision amended, III.I, under change 2. Six findings recorded and
+deliberately not amended. **The citations-and-actions document, its source and its builder are
+deleted**, because its provenance statement asserted the order had never been produced, and that
+is now false. A document whose own disclaimer has become a lie cannot ship.
+
+**Five things in the order that no revision had recorded.**
+
+1. **III.I is longer than the reconstruction.** The order reads "All transgender and intersex
+   youth shall be provided a single room **in order to ensure their privacy and safety**." The
+   redline had been striking a version without the rationale. Finding unchanged, struck text
+   longer. **A reconstruction can be right about the rule and wrong about the words, and only the
+   words can be struck.**
+2. **III.H carries a proviso**: "however, staff may consider the youth's past and present behavior
+   (i.e.: past or present sexual advances, sexually acting out)." It does not weaken the case
+   against S-8. It sharpens it: this order knew how to write a behaviour-based exception and did,
+   and OO 1352 assigned on status instead.
+3. **III.D and III.E are new to the register.** III.E weights "background, age, developmental
+   status, sophistication, social skills, charges, behavioral history". A third place age is a
+   documented housing factor, and more evidence that change 2 needs to create nothing new.
+4. **IV.A.3's first sentence was never recorded, and it is the operative rule.** "Staff will
+   conduct searches based on biological sex except under exigent circumstances, when performed by
+   a medical professional, or if a transgender or intersex youth makes a request for a preferred
+   gender staff." The register had recorded only the second sentence, about respecting preference
+   whenever feasible, and scored the area closed. Row 92, **routed to County Counsel rather than
+   scored as a conflict**, because whether searching a transgender girl by male staff is a cross
+   gender search under 15 CCR 1360(g) is not answered on the face of either text and this review
+   does not answer it.
+5. **IV.A.3.b.3 and b.4 pull against each other**, and the patdown rule has no privacy element at
+   all. Row 93. Not scored as a conflict, on the row 58 near miss reasoning: b.3 governs whether
+   the youth can see the second staff and b.4 governs whether the second staff can see the
+   searcher, so they are awkward rather than strictly contradictory.
+
+**Two corrections to this project's own work, both in row 11, and both ran in the department's
+favour.** The register described IV.A.3 as respecting the youth's preference, which is its second
+sentence and not its rule. And it credited IV.A.3.b and c together with an out-of-view second
+staff member. That is b.3 only, it is strip searches only, and **"out of view of the youth" means
+the youth cannot see the staff member, not that the staff member cannot see the youth.** The
+patdown rule at c.1 says the second staff "remains present and observes". The privacy protection
+this project had credited for patdowns is not in the order.
+
+**The guard that caught the reconstruction, and it is new.** The tracked builder reads
+`drafts/redlines.json` and **fails if the text it strikes does not match the redline's strike
+entry character for character**. Both documents strike the same provision, so both must strike the
+same words. It fired on the first build, because the redline still held the reconstruction, which
+is exactly what it is for.
+
+**One guard had to be rescoped rather than obeyed.** The cover guard added earlier that day reads
+the asks and requires the cover to name every order asked for. The new ask explains that OO 1352.5
+came in and what producing it bought, and the guard read that mention as a request and aborted.
+**It was reading all ask prose instead of the document list.** It now reads only the list after a
+Produce ask's colon, cut at the first period followed by a space, so an order number inside the
+list survives the cut and the explanatory prose after it is ignored. Retested by dropping OO 1354
+from the cover while the ask still asked for it: still fires. **A guard that fires on correct text
+gets switched off, so a false positive is a bug in the guard, not an instruction to reword the
+document.**
+
+**One thing review caught that was not a bug yet.** The cover block stated "One provision is
+amended, III.I" and "Six further findings", both correct and both hardcoded, which is the
+stale-count class this project has already caught in its own prose twice. Both are now derived
+from the data, with the citation list and the singular and plural agreement derived too. Verified
+by adding a second amended provision and a seventh note and watching the sentence become "Two
+provisions are amended, III.I and III.J" and "Seven further findings". The rendered document is
+byte identical after the refactor, so the change is structural only. **A correct hardcoded count
+is a bug with a date on it.**
+
+**What the department should be asked for next.** The two attachments OO 1352.5 names and neither
+of which has been produced: the Identity Preference Form, and a document titled Ensuring Fairness
+and Respect for the LGBTQI. The form is what III.A and IV.A.3.a both run on. Added as a ninth ask.
+
+**Still unproduced, and the only two left that the redlines amend:** the PREA Policy and the
+Internal Affairs policy. Three drafted amendments rest on a reconstruction until the PREA Policy
+arrives, and Revision 12 is the evidence for what producing it would be worth: five unrecorded
+provisions and two corrections, from four pages.

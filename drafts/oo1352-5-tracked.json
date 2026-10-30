@@ -1,0 +1,408 @@
+{
+  "order": "OO 1352.5, Transgender and Intersex Youth, Title XV 1352.5",
+  "facility": "Sacramento County Probation Department, Youth Detention Facility",
+  "effective": "Effective March 1, 2019. Approved by Dave Semon. Authorized by signature dated 5/2019.",
+  "authority_line": "Authority: Title 15 – 1352.5, BSCC",
+  "register_revision": 12,
+  "complete": true,
+  "provenance": "The base text below is the order's own words, transcribed from the four page PDF produced to this review on 10/30. The PDF is a scan with no text layer and was rasterized at 200 dpi and read as images. Struck text is proposed for deletion and underlined text is proposed to replace it. Everything not marked is the order as it stands.",
+  "front": [
+    "Purpose and Scope. The Sacramento County Youth Detention Facility (YDF) is dedicated to ensuring respectful and equitable treatment of all transgender and intersex youth, by creating a safe environment for all youth, and ensuring all youth have equal access to all available services, care and treatment.",
+    "Affected Personnel. All Sworn Personnel-YDF",
+    "Authority. Title 15 – 1352.5",
+    "Effective Date. March 1, 2019"
+  ],
+  "sections": [
+    {
+      "n": "I",
+      "title": "Definitions",
+      "preamble": [
+        "Transgender: A youth whose gender identity different from the youth's assigned sex at birth."
+      ],
+      "items": [
+        {
+          "label": "A",
+          "runs": [
+            [
+              "keep",
+              "A transgender girl (Male to Female or MTF) is someone whose birth sex was male but who understands herself to be female."
+            ]
+          ]
+        },
+        {
+          "label": "B",
+          "runs": [
+            [
+              "keep",
+              "A transgender boy (Female to male or FTM) is someone whose birth sex was female but who understands himself to be male."
+            ]
+          ]
+        }
+      ],
+      "postamble": [
+        "Intersex: A person who's sexual or reproductive anatomy or chromosomal pattern does not fit typical definitions of male or female."
+      ]
+    },
+    {
+      "n": "II",
+      "title": "Guidelines",
+      "items": [
+        {
+          "label": "A",
+          "runs": [
+            [
+              "keep",
+              "Staff shall respect every youth's gender identity, and regardless of the youth's legal name, shall refer to a youth by last name and preferred gender pronoun. Staff may prohibit the use of gang or slang names or names that otherwise compromise facility operation as determined by a Supervisor, and shall document any decisions made on this basis."
+            ]
+          ]
+        },
+        {
+          "label": "B",
+          "runs": [
+            [
+              "keep",
+              "Staff shall permit youth to dress and present themselves in a manner consistent with their gender identity, and shall provide the youth with the facility's undergarments consistent with their gender identity."
+            ]
+          ]
+        },
+        {
+          "label": "C",
+          "runs": [
+            [
+              "keep",
+              "Facility Administrators shall ensure transgender and intersex youth have access to medical and behavioral health providers qualified to provide care and treatment to transgender and intersex youth."
+            ]
+          ]
+        },
+        {
+          "label": "D",
+          "runs": [
+            [
+              "keep",
+              "Staff shall make every effort to ensure the safety and privacy of transgender and intersex youth when the youth are utilizing the bathroom, shower, or dressing, and undressing."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "n": "III",
+      "title": "Housing",
+      "items": [
+        {
+          "label": "A",
+          "runs": [
+            [
+              "keep",
+              "Probation staff shall make an individualized assessment during the admission process (see Admission Policy) and complete the Identity Preference Form for each youth at the time of classification, when considering housing unit placement. Transgender youth may be identified during admission based on:"
+            ]
+          ],
+          "children": [
+            {
+              "label": "1",
+              "runs": [
+                [
+                  "keep",
+                  "A youth's statements;"
+                ]
+              ]
+            },
+            {
+              "label": "2",
+              "runs": [
+                [
+                  "keep",
+                  "A youth's request to be called by a name that is not traditionally associated with his or her birth sex."
+                ]
+              ]
+            },
+            {
+              "label": "3",
+              "runs": [
+                [
+                  "keep",
+                  "Any statements in arrest reports indicating the youth may be transgender or intersex."
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "B",
+          "runs": [
+            [
+              "keep",
+              "Staff may not automatically house a youth according to the youth's external anatomy, and shall document the reasons for any decision to house youth in a unit that does not match the youth's gender identity."
+            ]
+          ]
+        },
+        {
+          "label": "C",
+          "runs": [
+            [
+              "keep",
+              "Staff shall consider the youth's preferences, as well as any recommendations from the youth's health or behavioral health provider."
+            ]
+          ]
+        },
+        {
+          "label": "D",
+          "runs": [
+            [
+              "keep",
+              "The safety and well-being of all the youth shall be the primary concern when staff is deciding where to place the transgender/intersex youth within the housing unit."
+            ]
+          ]
+        },
+        {
+          "label": "E",
+          "runs": [
+            [
+              "keep",
+              "Staff shall consider the youth's background, age, developmental status, sophistication, social skills, charges, behavioral history and the factors that might influence the youth's adjustment and contribute to an overall safe and successful experience for the youth, as well as all other youth in the unit."
+            ]
+          ]
+        },
+        {
+          "label": "F",
+          "runs": [
+            [
+              "keep",
+              "Housing decisions for transgender and intersex youth shall be based on the youth's individualized needs and should prioritize the youth's emotional and physical safety while considering the youth's perception of where the youth will be most secure. Housing determination will be documented in the JPIP under the classification comments section, and will include the date and justification."
+            ]
+          ]
+        },
+        {
+          "label": "G",
+          "runs": [
+            [
+              "keep",
+              "Placement and program assignment of transgender or intersex youth will be assessed on a monthly basis or as needed."
+            ]
+          ]
+        },
+        {
+          "label": "H",
+          "runs": [
+            [
+              "keep",
+              "Staff shall not consider a youth's sexual orientation or gender identity as a reason to isolate or withhold program options; however, staff may consider the youth's past and present behavior (i.e.: past or present sexual advances, sexually acting out)."
+            ]
+          ]
+        },
+        {
+          "label": "I",
+          "change": 2,
+          "change_label": "Change 2. Convert the single room rule to a presumptive, documented outcome",
+          "rows": [
+            "36",
+            "37",
+            "75"
+          ],
+          "runs": [
+            [
+              "del",
+              "All transgender and intersex youth shall be provided a single room in order to ensure their privacy and safety."
+            ],
+            [
+              "ins",
+              "Room assignment for a transgender or intersex youth shall be determined under subparagraphs 1 through 5 below."
+            ]
+          ],
+          "sub": [
+            [
+              "1",
+              "The room assignment of a transgender or intersex youth shall be determined individually under III.B and III.F. It shall not be determined by the youth's status as transgender or intersex."
+            ],
+            [
+              "2",
+              "Single occupancy housing is the presumptive outcome of that determination, and the presumption is overcome where the individualized determination supports shared housing consistent with the youth's own perception of where the youth will be most secure. The determination shall be revisited at each reassessment required by III.G."
+            ],
+            [
+              "3",
+              "Whether the determination results in single occupancy or shared housing, the reasons shall be documented in the JPIP classification comments with the date and justification required by III.F, including the youth's stated preference and, where the assignment departs from that preference, the reason it does."
+            ],
+            [
+              "4",
+              "A single occupancy assignment made under this section shall not reduce the youth's access to programming, education, recreation, visiting, or any other activity, as III.K requires."
+            ],
+            [
+              "5",
+              "Nothing in this section limits a youth's right to request single occupancy housing. A request shall be documented under III.F and honored where operationally feasible."
+            ]
+          ]
+        },
+        {
+          "label": "J",
+          "runs": [
+            [
+              "keep",
+              "All youth will be provided access to private showers."
+            ]
+          ]
+        },
+        {
+          "label": "K",
+          "runs": [
+            [
+              "keep",
+              "Private accommodations shall not prevent transgender and intersex youth from participating in YDF program."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "n": "IV",
+      "title": "Searches",
+      "items": [
+        {
+          "label": "A",
+          "runs": [
+            [
+              "keep",
+              "All searches will be conducted in a professional and respectful manner by staff. Searches shall, to the extent possible, be performed in a way that preserves the privacy and dignity of the person being searched."
+            ]
+          ],
+          "children": [
+            {
+              "label": "1",
+              "runs": [
+                [
+                  "keep",
+                  "Youth shall not be physically searched for the purpose of determining the youth's anatomical sex."
+                ]
+              ]
+            },
+            {
+              "label": "2",
+              "runs": [
+                [
+                  "keep",
+                  "In situations where the genital status of a youth is unknown, staff will attempt to determine the genital status through conversations with the youth or through a review conducted by medical personnel of medical records."
+                ]
+              ]
+            },
+            {
+              "label": "3",
+              "runs": [
+                [
+                  "keep",
+                  "Staff will conduct searches based on biological sex except under exigent circumstances, when performed by a medical professional, or if a transgender or intersex youth makes a request for a preferred gender staff to conduct the search. Whenever feasible, YDF will respect the youth's preference regarding the gender of the staff who conducts any search of the youth."
+                ]
+              ],
+              "children": [
+                {
+                  "label": "a",
+                  "runs": [
+                    [
+                      "keep",
+                      "Upon intake, the Identification Preference Form will be filled out for all youth. If a transgender or intersex youth makes a request that either a male or female staff member be present or conduct the search (patdown and/or strip search), the request will be forwarded to the on-duty supervisor to consider alternate arrangements in conducting the search consistent with maintaining safety and security. Prior to authorizing the search, the on-duty supervisor must meet directly with the youth and ensure the youth understands the stated preferred gender staff will be performing the search. The request, resolution with rationalization for the decision, and outcome including who ultimately conducted the search, will be documented in the youth's file, the Juvenile Probation Information Program (JPIP) and the YDF Strip Search Authorization Application, if applicable."
+                    ]
+                  ]
+                },
+                {
+                  "label": "b",
+                  "runs": [
+                    [
+                      "keep",
+                      "When conducting a strip search on a transgender or intersex youth:"
+                    ]
+                  ],
+                  "children": [
+                    {
+                      "label": "1",
+                      "runs": [
+                        [
+                          "keep",
+                          "Two (2) staff members shall be present, a preferred gender staff and second staff who will be of the opposite biological sex from the preferred gender staff."
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "2",
+                      "runs": [
+                        [
+                          "keep",
+                          "The supervisor authorizing the strip search will brief the two staff members prior to the search to ensure each staff understands their role."
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "3",
+                      "runs": [
+                        [
+                          "keep",
+                          "The preferred gender staff will conduct the search while the second staff remains within hearing, but out of view of the youth (absent exigent circumstances)."
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "4",
+                      "runs": [
+                        [
+                          "keep",
+                          "For safety and security purposes, the secondary staff shall be in a position to view searcher so as to offer aid if necessary."
+                        ]
+                      ]
+                    },
+                    {
+                      "label": "5",
+                      "runs": [
+                        [
+                          "keep",
+                          "Immediately following the strip search, the supervisor will debrief with the staff involved to determine if the process was completed without issue."
+                        ]
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "c",
+                  "runs": [
+                    [
+                      "keep",
+                      "When conducting a patdown search on a transgender or intersex youth:"
+                    ]
+                  ],
+                  "children": [
+                    {
+                      "label": "1",
+                      "runs": [
+                        [
+                          "keep",
+                          "Two staff shall be present for the search. The staff with the preferred gender of the youth conducts the search while the second staff remains present and observes."
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "back": [
+    "Attachments: Identity Preference Form; Ensuring Fairness and Respect for the LGBTQI",
+    "Amends/Replaces Previous Order: (blank on the signed order)"
+  ],
+  "heading_quoted": "Transgender and Intersex Youth – Title XV 1352.5",
+  "notes": [
+    "**Not amended, recorded instead: IV.A.3.b.3 and IV.A.3.b.4 cannot both be complied with.** Subparagraph 3 places the second staff member \"within hearing, but out of view of the youth\". Subparagraph 4 requires that same staff member to be \"in a position to view searcher\". In a single room during a strip search the searcher and the youth occupy the same space, so a position that sees the searcher will ordinarily see the youth. Staff are given two rules and can follow one. This is a new finding from reading the order and it is a wording fix, but it is not inside any numbered change, so it is recorded here rather than drafted into the redline. The fix is one sentence: state which rule governs, and say what the second staff member does when the two cannot both be met.",
+    "**Not amended, and it is a County Counsel question rather than a drafting one: IV.A.3 makes biological sex the default basis for searches.** The preferred gender of staff is available only where the youth requests it and a supervisor approves, under IV.A.3.a. The register had recorded this provision as respecting the youth's preference whenever feasible, which is the second sentence of IV.A.3 and not the rule the first sentence states. 15 CCR 1360(g) prohibits cross gender pat down and strip searches except in exigent or medical circumstances. Whether a search of a transgender girl by male staff is a cross gender search for the purpose of 1360(g) is not answered on the face of either text, and this review does not answer it. Route it to County Counsel before any amendment is drafted.",
+    "**Not amended: the order names the same form two ways.** III.A and the attachment list call it the Identity Preference Form. IV.A.3.a calls it the Identification Preference Form. One form, two names, in one order. Worth correcting in the same amendment cycle, and not worth a tracked revision on its own.",
+    "**Not amended: two attachments are named and neither has been produced to this review.** The Identity Preference Form and a document titled Ensuring Fairness and Respect for the LGBTQI. The first is the instrument III.A and IV.A.3.a both run on, so what it actually asks the youth decides whether those provisions work. Both are now on the outstanding list.",
+    "**Not amended: this order does not reference OO 1352 or OO 1350.5 anywhere in four pages.** OO 1352 II.M.1.a points here for housing guidelines. Nothing here points back, and nothing here points at the screening order whose results are supposed to drive the housing decision. The cross reference runs one way only. Same structural finding recorded against OO 1352 at register rows 32 and 34.",
+    "**Noted, not a defect: the signature is dated after the effective date.** The order takes effect March 1, 2019 and the authorizing signature is dated 5/2019. Recorded because the effective date is what the register cites and someone will ask."
+  ],
+  "before_adoption": [
+    "**This is the order's own text, transcribed from the PDF produced on 10/30.** Compare it against the signed original before adopting anything. The transcription preserves the order's own wording, punctuation and two grammatical slips in Section I, because a base text that has been tidied is no longer the base text.",
+    "**The struck text in III.I is now the order's real words, and it is longer than this project previously recorded.** Through Revision 11 the redline struck a reconstruction reading \"All transgender and intersex youth shall be provided a single room.\" The order reads \"All transgender and intersex youth shall be provided a single room in order to ensure their privacy and safety.\" The stated rationale was missing from the reconstruction. The finding is unchanged; the text being replaced is not.",
+    "The replacement language is this review's drafting, not the order's. It is the same five paragraphs proposed for change 2 in the redlines, and a build guard fails if the two ever differ.",
+    "Paragraph 2 makes single occupancy presumptive rather than automatic. A presumption applied without a real determination is the same defect in better clothes, so audit the JPIP entries required by paragraph 3 after adoption.",
+    "III.E, III.F and III.H already state the individualized rule this amendment points at. Confirm all three survive unchanged in the current version before the amendment relies on them.",
+    "Not legal advice. Route to County Counsel before adoption."
+  ]
+}

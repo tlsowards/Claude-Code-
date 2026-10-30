@@ -1,0 +1,199 @@
+{
+ "order": "OO 1352, Classification",
+ "facility": "Sacramento County Probation Department, Youth Detention Facility",
+ "effective": "Effective 12/09/2019. Revised 02/27/2020.",
+ "register_revision": 11,
+ "complete": false,
+ "provenance": "**This is not the whole order. It is the provisions that change.** The order runs to twelve pages and was produced and read in full in Revision 9, but the PDF did not survive the container it was read in. What survives is every provision quoted at the time, word for word, and those are reproduced below. Everything between them is not reproduced and is marked as such. Each provision says whether its text is the order's own words or a description from the register, and a redline is shown only where the words are the order's.",
+ "not_reproduced": "Eleven of the order's twelve pages are not reproduced here. That includes the Purpose and Scope paragraph, the S-1, S-2, S-3, S-5, S-6 and S-7 criteria, the III.E housing matrix in full, the III.D deviation rules, section IV on legal status changes, and section V. None of them is amended by changes 1 or 6, but their absence is why this document cannot be handed over as the order. **To produce a complete tracked changes copy of OO 1352, the PDF has to be uploaded again.** That is a single step and it would take about an hour.",
+ "provisions": [
+  {
+   "cite": "II.M",
+   "change": 1,
+   "rows": [
+    "36"
+   ],
+   "label": "Change 1. Rescind the S-8 classification",
+   "status": "verbatim",
+   "status_note": "Verified in Revision 9 against the order as produced. The order's own words, including subparagraph a.",
+   "runs": [
+    [
+     "del",
+     "Any Lesbian, Gay, Bisexual, Transgender, Questioning and Intersex (LGBTQI) youth to further protect against victimization/discrimination within the unit setting. a. See the Transgender and Intersex Youth Policy for housing guidelines."
+    ],
+    [
+     "ins",
+     "Prohibited bases for separation and single occupancy assignment."
+    ]
+   ],
+   "sub": [
+    [
+     "1",
+     "Staff shall not separate a youth from the general population, and shall not assign a youth to a single occupancy room, based solely on the youth's actual or perceived race, ethnic group identification, ancestry, national origin, color, religion, gender, sexual orientation, gender identity, gender expression, immigration status, mental or physical disability, or medical condition."
+    ],
+    [
+     "2",
+     "Nothing in this section prohibits placing a youth in a single occupancy room at the youth's own specific request, or in accordance with the separation provisions of this order, OO 1354, and OO 1354.5. A request under this paragraph shall be documented in JPIP with the date, the substance of the request, and the staff member who received it."
+    ],
+    [
+     "3",
+     "Where a youth's sexual orientation, gender identity, or gender expression is known to staff, that information shall be used as one input to the individualized housing determination required by OO 1352.5 III.B and III.F. It shall not by itself determine a housing assignment, a program assignment, or a classification code."
+    ],
+    [
+     "4",
+     "No classification code shall be created or maintained whose assignment carries an automatic housing consequence on any basis listed in paragraph 1."
+    ]
+   ]
+  },
+  {
+   "cite": "III.I.1",
+   "change": 1,
+   "rows": [
+    "36"
+   ],
+   "label": "Change 1. Strike the automatic single room mandate",
+   "status": "verbatim",
+   "status_note": "Verified in Revision 9. This sentence and III.E.1.a, which applies to S-4 High, are word for word identical and are the only two provisions in the entire order imposing that mandate.",
+   "runs": [
+    [
+     "del",
+     "Any youth classified S-8 will require a single room (no roommate) housing at all times."
+    ],
+    [
+     "ins",
+     "Housing for a youth whose sexual orientation, gender identity, or gender expression is known to staff shall be determined individually under OO 1352.5 III.B and III.F, and documented. No housing consequence follows automatically from that status."
+    ]
+   ]
+  },
+  {
+   "cite": "III.E, the housing matrix, every S-8 entry",
+   "change": 1,
+   "rows": [
+    "36"
+   ],
+   "label": "Change 1. Remove S-8 from the housing matrix",
+   "status": "described",
+   "status_note": "The matrix itself was not quoted into the register when the order was read, so its words are not held and no redline can honestly be shown for it. The action required is nonetheless clear and is stated below.",
+   "action": "Remove every S-8 row and column from the III.E housing matrix, and remove S-8 from the JPIP classification code table, the classification worksheet, and any intake screen that offers it, so the code cannot be assigned after the order is amended. Separately, identify every youth currently carrying S-8 and re-determine housing individually under OO 1352.5 III.B and III.F within a stated number of days, documenting each outcome. Without that step the order changes and the practice does not."
+  },
+  {
+   "cite": "II.F.2, the note",
+   "change": 6,
+   "rows": [
+    "34"
+   ],
+   "label": "Change 6. Delete the victim to perpetrator inference",
+   "status": "verbatim",
+   "status_note": "Verified in Revision 9. Bolded in the original.",
+   "runs": [
+    [
+     "del",
+     "Youth with a history of victim of molest, arson, or cruelty to animals should alert the Classification Officer for possible sexually inappropriate tendencies."
+    ],
+    [
+     "ins",
+     "A youth's history of sexual victimization shall be assessed and recorded as a risk of victimization under II.H. It shall not be treated as an indicator that the youth is likely to be sexually abusive toward others, and it shall not be used to assign a code under II.G."
+    ]
+   ]
+  },
+  {
+   "cite": "II.F.2.d",
+   "change": 6,
+   "rows": [
+    "34"
+   ],
+   "label": "Change 6. Delete the same inference where it appears as a lettered criterion",
+   "status": "verbatim",
+   "status_note": "Verified in Revision 9. **This one was missed by the redline as first drafted.** Striking the note alone leaves the defect in force, because the same inference is also a lettered criterion sitting alongside three abusiveness criteria.",
+   "runs": [
+    [
+     "del",
+     "d. History of victimization related to sexual abuse or a sexual offense;"
+    ]
+   ]
+  },
+  {
+   "cite": "II.G.1, the enumerated offences",
+   "change": 6,
+   "rows": [
+    "34"
+   ],
+   "label": "Change 6. Add the missing Penal Code sections and split the code",
+   "status": "verbatim",
+   "status_note": "Verified in Revision 9. The enumeration is complete at II.G.1 plus II.G.3 (rape, 261 PC, all subdivisions). **Penal Code 287 and 289 are both absent and neither was flagged before Revision 9.** 243.4, 264.1, 285 and 647.6 are absent as well. The inserted list matches the one drafted at change 6 in the redlines, so the two documents propose the same amendment. They did not at first: this document named only 287 and 289 while the redline named six additions, and the mismatch was found in review.",
+   "runs": [
+    [
+     "keep",
+     "a. Sodomy (286 PC); b. Lewd or lascivious acts with child under 14 (288 PC, all sub-divisions)"
+    ],
+    [
+     "ins",
+     "; c. Unlawful sexual intercourse with a minor (261.5 PC); d. Oral copulation (287 PC, formerly 288a, renumbered by SB 1494 effective 01/01/2019); e. Continuous sexual abuse of a child (288.5 PC); f. Sexual penetration (289 PC); g. Sexual penetration by a person confined in a state hospital or custodial facility (289.6 PC); h. any successor or equivalent statute to those listed."
+    ]
+   ],
+   "sub": [
+    [
+     "S-4A",
+     "Assign S-4A, risk of being sexually abusive toward other youth, where the youth has a sustained petition, conviction, or documented finding for an offense listed above, or has documented sexually aggressive or sexually coercive conduct toward another person while in custody, in placement, or in the community, whether or not it resulted in a petition. The basis shall be recorded in JPIP with the source of the information and the date."
+    ]
+   ],
+   "verified_additions": [
+    "287",
+    "289"
+   ]
+  },
+  {
+   "cite": "II.H",
+   "change": 6,
+   "rows": [
+    "34"
+   ],
+   "label": "Change 6. Separate victimization risk into its own code",
+   "status": "verbatim",
+   "status_note": "II.H.2 verified in Revision 9. It places perpetrator conduct in the same S-4 Low tier as II.H.3 and II.H.4, both of which are victimization criteria. II.H.3 makes being the victim of a CPS referral relative to sexual abuse a criterion, so the order uses the same fact protectively here and as an abusiveness indicator at II.F.2. Same fact, opposite uses, one order.",
+   "runs": [
+    [
+     "keep",
+     "Sexually inappropriate acting out in front of other youth or staff (i.e., masturbation in front of others, exposing genitals, or continued sexual comments for the purpose of arousal),"
+    ],
+    [
+     "ins",
+     " which shall be assessed under II.G as abusiveness rather than under this section."
+    ]
+   ],
+   "sub": [
+    [
+     "S-4B",
+     "Assign S-4B, risk of being sexually abused by other youth, where screening under OO 1350.5 identifies the youth as at risk of sexual victimization, including prior sexual victimization whether or not it occurred in custody."
+    ],
+    [
+     "i",
+     "An S-4A assignment and an S-4B assignment are independent. A youth may carry both, one, or neither, and each shall be assessed, coded, and documented separately."
+    ],
+    [
+     "ii",
+     "Information obtained under this section shall be used only to inform housing, bed, education, and program assignments, and to determine appropriate services and supervision. It shall not be used to discipline the youth or to justify a more restrictive placement than the individualized determination supports."
+    ]
+   ]
+  },
+  {
+   "cite": "II.C.3",
+   "change": 6,
+   "rows": [
+    "34"
+   ],
+   "label": "Conforming change. Delete the closed institution reference",
+   "status": "described",
+   "status_note": "The register records that II.C.3 references a pending commitment to the Division of Juvenile Justice, verified in Revision 9, but the surrounding sentence was not quoted, so no redline is shown.",
+   "action": "Delete the reference to a pending commitment to the Division of Juvenile Justice. DJJ closed 06/30/2023 under SB 823. Section IV.A carries a second DJJ reference, used as the worked example of a legal status change, and needs replacing with a current example at the same time."
+  }
+ ],
+ "before_adoption": [
+  "**This document shows the provisions that change, not the order.** It cannot be circulated as a copy of OO 1352, and it is not a substitute for amending the order itself. Upload the PDF and a complete tracked changes version can be built the same way the OO 1453 one was.",
+  "**Two provisions carry no redline because their words are not held.** The III.E housing matrix and II.C.3 are marked as described rather than quoted, and each states the action required instead of showing struck text. Do not let either be read as though the wording had been checked.",
+  "**Change 1 replaces II.M in place rather than striking it**, so the balance of section II does not need renumbering. The replacement tracks the 15 CCR 1352(e) list and carries the regulation's own carve-out, single occupancy at the youth's specific request, documented. Paragraph 4 is the one that stops S-8 reappearing under a different letter.",
+  "**The operational half of change 1 is not in the text.** Removing the code from the order does nothing for a youth already carrying it. Re-determining housing for every current S-8 youth, within a stated number of days and documented, is what makes the amendment real.",
+  "**Penal Code 261.5, 288.5 and 289.6 in the S-4A offence list are the drafter's judgment**, not sections the order enumerates and not sections this review has verified as the right additions. Only 287 and 289 are confirmed omissions, recorded against the order's own enumeration at II.G.1 and II.G.3. The other three come from the drafted amendment at change 6 and carry the same status there. Confirm all three with County Counsel, or strike them and keep the successor-statute catch-all, which is what stops the next renumbering reopening the gap that 287 left.",
+  "**This review found the Purpose and Scope paragraph of OO 1352, PREA Policy III.E, and OO 1352.5 III.H already state the correct rule.** The amendment brings II.M and III.I into line with three provisions the department has already written correctly, which is worth saying when the change is put to anyone."
+ ]
+}
