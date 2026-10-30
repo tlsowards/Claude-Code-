@@ -94,6 +94,27 @@ if (describedNoAction.length) {
     + describedNoAction.map((p) => p.cite).join(', '));
   process.exit(1);
 }
+// Every Penal Code section the before-adoption notes talk about has to actually
+// appear in the provisions. Review caught this document warning County Counsel
+// to confirm or strike two sections it did not contain, because the caveat was
+// carried over from the redline without being adapted to the narrower list
+// drafted here. The deeper fault was that the two deliverables proposed
+// different amendments for the same numbered change; this is the cheap
+// mechanical check that catches the symptom.
+const sectionsIn = (s) => new Set((s.match(/\b\d{3}(?:\.\d+)?\b/g) || []));
+const provText = (data.provisions || []).map((pr) =>
+  (pr.runs || []).map((r) => r[1]).join(' ') + ' '
+  + (pr.sub || []).map((x) => x[1]).join(' ') + ' ' + (pr.action || '')).join(' ');
+const inProvisions = sectionsIn(provText);
+const orphan = [...sectionsIn((data.before_adoption || []).join(' '))]
+  .filter((n) => !inProvisions.has(n));
+if (orphan.length) {
+  console.error('ABORTED. The before-adoption notes name code sections that appear nowhere in '
+    + 'the provisions this document actually drafts: ' + orphan.join(', ')
+    + '. A caveat about text the document does not contain reads as an error to whoever '
+    + 'checks the document against it. Adapt the note, or draft the text it assumes.');
+  process.exit(1);
+}
 const unlabelled = (data.provisions || []).filter(
   (pr) => !pr.change || !pr.label || !(pr.rows || []).length);
 if (unlabelled.length) {

@@ -120,7 +120,7 @@
    ],
    "label": "Change 6. Add the missing Penal Code sections and split the code",
    "status": "verbatim",
-   "status_note": "Verified in Revision 9. The enumeration is complete at II.G.1 plus II.G.3 (rape, 261 PC, all subdivisions). **Penal Code 287 and 289 are both absent and neither was flagged before Revision 9.** 243.4, 264.1, 285 and 647.6 are absent as well.",
+   "status_note": "Verified in Revision 9. The enumeration is complete at II.G.1 plus II.G.3 (rape, 261 PC, all subdivisions). **Penal Code 287 and 289 are both absent and neither was flagged before Revision 9.** 243.4, 264.1, 285 and 647.6 are absent as well. The inserted list matches the one drafted at change 6 in the redlines, so the two documents propose the same amendment. They did not at first: this document named only 287 and 289 while the redline named six additions, and the mismatch was found in review.",
    "runs": [
     [
      "keep",
@@ -128,7 +128,7 @@
     ],
     [
      "ins",
-     "; c. Oral copulation (287 PC, formerly 288a, renumbered by SB 1494 effective 01/01/2019); d. Sexual penetration (289 PC); e. any successor or equivalent statute to those listed."
+     "; c. Unlawful sexual intercourse with a minor (261.5 PC); d. Oral copulation (287 PC, formerly 288a, renumbered by SB 1494 effective 01/01/2019); e. Continuous sexual abuse of a child (288.5 PC); f. Sexual penetration (289 PC); g. Sexual penetration by a person confined in a state hospital or custodial facility (289.6 PC); h. any successor or equivalent statute to those listed."
     ]
    ],
    "sub": [

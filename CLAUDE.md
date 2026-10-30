@@ -1119,7 +1119,17 @@ survive, so only the provisions quoted in Revision 9 are held. `OO_1352_Tracked_
 built by `npm run tracked-1352`, is therefore **the provisions that change, not the order**: six
 carry real redlines because their words are the order's, and two, the III.E housing matrix and
 II.C.3, are marked as described rather than quoted, carry no redline at all, and state the required
-action instead. Four guards enforce that distinction. The one that matters most refuses to build if
+action instead. **Review then found the two deliverables disagreeing about change 6.** The redline proposed adding
+six Penal Code sections to the S-4A list; the tracked document proposed two. The symptom was a
+caveat warning County Counsel to confirm or strike 288.5 and 289.6, carried over from the redline
+into a document that did not contain them. The tracked document now carries the redline's list, so
+both describe the same amendment. **The lesson is about shape: when a second deliverable is built
+for a change that already has one, the risk is not that it will be wrong on its own terms but that
+it will quietly propose something different.** A guard now fails the build if the before-adoption
+notes name a code section that appears nowhere in the provisions actually drafted, which is the
+cheap mechanical catch for that class.
+
+Five guards enforce that distinction. The one that matters most refuses to build if
 a provision marked described carries kept or struck text, because **a redline on wording nobody
 captured is invented policy**. The others require `complete` to be false, require the document to
 say what is not reproduced, and require every described provision to state an action.
