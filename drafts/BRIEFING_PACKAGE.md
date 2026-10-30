@@ -34,7 +34,7 @@ These are the items that cannot move without a decision from the department. The
 
 3. **Produce the rosters and post assignments.** Settles whether the staffing finding is a real gap or a documentation gap, and unblocks change 9.
 
-4. **Produce OO 1354 on separation**, the orientation handbook, and the hiring and contractor screening procedures. Several findings may close on production rather than on remediation.
+4. **Produce the PREA Policy itself, OO 1354 on separation**, the orientation handbook, and the hiring and contractor screening procedures. Several findings may close on production rather than on remediation. The PREA Policy is the most valuable of the four: three of the drafted amendments are written against it, and until it is produced those three rest on a reconstruction of what it says rather than on its real words.
 
 5. **Confirm whether the county has designated Probation to receive mandated reports** under PC 11165.9. One paragraph of a drafted redline depends on it.
 

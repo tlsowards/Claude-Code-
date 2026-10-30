@@ -104,7 +104,11 @@ listing a document that is not in the package, or a document in the package that
 schedule does not mention, is the error a reader cannot recover from: it makes them
 distrust the rest of the binder. The cover also reads its What we need list out of
 `drafts/management-brief.json` rather than restating it, so the two cannot come to
-disagree about what is being asked for.
+disagree about what is being asked for. The no-dash rule covers that borrowed list as
+well as the cover's own text. It did not at first, so a dash in an ask passed the Markdown
+build and aborted the Word one, leaving the two views of the same cover saying different
+things. A guard that checks only the file it lives in is not checking the document it
+produces.
 
 `npm run package-pdf` renders the cover and every attachment with LibreOffice and merges
 them into one bookmarked PDF, in schedule order. It runs **more than once on purpose**: a

@@ -950,7 +950,19 @@ the tab letters skip or repeat. A tab with nothing behind it is the error that m
 distrust the rest of the binder.
 
 **The What we need list is read out of `drafts/management-brief.json`, not restated.** The
-cover and the brief cannot come to disagree about what is being asked for.
+cover and the brief cannot come to disagree about what is being asked for. **The no-dash rule
+covers that borrowed list too, and at first it did not**: review caught that a dash in an ask
+passed the Markdown build and aborted the Word one, so the two views of the same cover said
+different things. The lesson generalises past this file: a guard that checks only the file it
+lives in is not checking the document it produces.
+
+**Review also caught the cover asserting something its own ask list did not back.** It called
+the PREA Policy the highest value undelivered document while ask 4 asked only for OO 1354, the
+handbook and the screening procedures. The gap was in the asks, not the cover, so the fix went
+there: **ask 4 now asks for the PREA Policy by name**, because producing it is what moves three
+drafted amendments off a reconstruction and onto the order's real words. Reading a list from one
+source stops the two copies diverging; it does not stop the prose around it claiming more than
+the list supports.
 
 **The PDF build iterates to a fixpoint on purpose.** A start page cannot be printed until the
 attachments are rendered, and rebuilding the cover to carry those numbers changes the cover's

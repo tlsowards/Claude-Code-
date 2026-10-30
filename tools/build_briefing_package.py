@@ -6,7 +6,7 @@ department is being asked to decide, and a tab by tab schedule of what is
 attached. It is a transmittal, not a second brief. The reasoning lives in the
 Management Brief at Attachment A and is not restated here.
 
-Two guards, and they are the reason the cover is generated rather than typed.
+Three guards, and they are the reason the cover is generated rather than typed.
 
 The attachment schedule is checked against the deliverables directory in both
 directions. A schedule listing a document that is not in the package, or a
@@ -16,6 +16,11 @@ that makes a reader distrust everything else in the binder.
 The What we need list is read out of drafts/management-brief.json rather than
 restated, so the cover and the brief cannot come to disagree about what is being
 asked for.
+
+The no-dash rule covers that borrowed list as well as this file's own text. It
+did not at first, so a dash in an ask passed this builder and aborted the Word
+one, leaving the two views of the cover saying different things. A guard that
+checks only the file it lives in is not checking the document it produces.
 """
 
 import csv
@@ -136,16 +141,23 @@ def main():
     with open(REG, encoding='utf-8') as fh:
         rows = list(csv.DictReader(fh))
 
-    bad = [(p, s) for p, s in walk(data) if '—' in s or '–' in s]
+    # Load the asks before the dash check rather than after it. They come from
+    # another file and are written straight into the cover, so leaving them out
+    # of the guard let a dash pass this builder while aborting the Word one.
+    asks = load_asks()
+    bad = [(p, s) for p, s in walk({'package': data, 'asks_from_brief': asks})
+           if '—' in s or '–' in s]
     if bad:
         print('ABORTED. Em or en dash found, which CLAUDE.md section 1 forbids:')
         for p, s in bad:
             print('  %s: %s' % (p, s[:90]))
+        if any(p.startswith('$.asks_from_brief') for p, _ in bad):
+            print('              A path under $.asks_from_brief is in '
+                  'drafts/management-brief.json, not in this file.')
         return 1
 
     listed = check_attachments(data)
     starts = load_pagination(listed)
-    asks = load_asks()
     by_status = counts(rows, 'status', STATUS_ORDER)
     by_priority = counts(rows, 'priority', PRIORITY_ORDER)
 
