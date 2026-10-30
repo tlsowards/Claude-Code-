@@ -41,6 +41,7 @@ department did after it identified these issues.
 | `deliverables/PREA_Briefing_Package_Complete.pdf` | `npm run package-pdf` |
 | `deliverables/OO_1453_Tracked_Changes.docx` | `npm run tracked-1453` |
 | `deliverables/OO_1352_Tracked_Changes.docx` | `npm run tracked-1352` |
+| `deliverables/OO_1352_5_Citations_and_Actions.docx` | `npm run described-1352-5` |
 | `deliverables/PREA_Management_Brief.docx` | `npm run brief` |
 | `drafts/MANAGEMENT_BRIEF.md` | same, Markdown working copy |
 | `deliverables/PREA_versus_Policy_Crosswalk.docx` | `npm run crosswalk` |

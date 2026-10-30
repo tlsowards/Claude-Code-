@@ -18,7 +18,7 @@ A review of the department's PREA posture at the Youth Detention Facility, and t
 
 - **Most of the remediation is drafted.** Amended policy text exists for seven of the fifteen recommended changes, written out and ready to be marked up.
 
-- **What is left needs decisions, not analysis.** A designation, an assignment, and six documents the review asked for and has not received. Those are listed at the end.
+- **What is left needs decisions, not analysis.** A designation, an assignment, and seven documents the review asked for and has not received. Those are listed at the end.
 
 - **Nothing here is a finding that the department failed to do something.** The review can only speak to the documents produced to it. Where a practice is not written down, the finding says it does not appear in the documents reviewed, which is a different statement. Several findings will close on production of a document rather than on any change in practice.
 
@@ -161,9 +161,9 @@ Stated so the package is not mistaken for the whole file.
 
 - **Six earlier documents** are part of this work and are not attached here: the master Policy Review Report, the Applicability Memo, the Liability Exposure Assessment, the Training Gap and Curriculum Plan, the Audit Evidence Request, and the Excel version of the register. They can be supplied on request. **The Liability Exposure Assessment carries its own handling warning and should route through County Counsel before it is circulated at all.**
 
-- **Six documents the review asked for and has not received.** Several findings may close on production rather than on any remediation, so producing them is the cheapest work available: the PREA Policy itself, the separation order OO 1354, the Resident Orientation Handbook, the hiring procedure, the contractor and volunteer screening procedure, and staffing rosters with post assignments.
+- **Seven documents the review asked for and has not received.** Several findings may close on production rather than on any remediation, so producing them is the cheapest work available: the PREA Policy itself, OO 1352.5 on transgender and intersex youth, the separation order OO 1354, the Resident Orientation Handbook, the hiring procedure, the contractor and volunteer screening procedure, and staffing rosters with post assignments.
 
-- **The PREA Policy is the highest value of those.** It carries three of the thirteen conflicts and it is the document three of the drafted amendments at Attachment B are written against, which is why those three rest on a reconstruction rather than on the order's real words.
+- **The PREA Policy is the highest value of those.** It carries three of the thirteen conflicts and it is the document three of the drafted amendments at Attachment B are written against, which is why those three rest on a reconstruction rather than on the order's real words. **OO 1352.5 is the cheapest of them.** Attachment J sets out its provisions and the one amendment wanted, and producing the order turns that attachment into a redline like Attachment H.
 
 - **Training lesson plans are not built yet.** The curriculum analysis exists in one of the six documents above. The all staff and supervisor lesson plans are the next build after the items under What we need are answered.
 

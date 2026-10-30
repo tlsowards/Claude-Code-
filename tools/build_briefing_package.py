@@ -117,6 +117,45 @@ def check_schedule_counts(data):
         sys.exit(1)
 
 
+def check_outstanding_is_not_understated(data, asks):
+    """The cover's not-received list must name every order the asks ask for.
+
+    Directional on purpose. The cover legitimately carries items the brief's
+    document ask does not, such as the rosters, which are their own ask. What it
+    may not do is name fewer outstanding orders than the brief asks for, because
+    the cover is the page the department reads to decide what to go and find.
+
+    Review caught the case this exists for: the commit that added the OO 1352.5
+    attachment updated the brief's ask to six documents including that order and
+    left the cover's own list at six without it. Both lists passed the counted
+    list guard, which checks a count against its own list and cannot see that two
+    documents' lists of the same thing disagree. So the cover told the department
+    it was waiting on six documents while omitting the one order an entire
+    attachment exists because it was never produced.
+
+    Matching is on order designations and on the PREA Policy by name, because
+    those are unambiguous tokens. The prose around them is worded differently in
+    the two documents by design and is not compared.
+    """
+    block = data.get('notincluded') or {}
+    cover = ' '.join([block.get('body') or ''] + list(block.get('items') or []))
+    asked = ' '.join(asks)
+    orders = re.compile(r'OO \d+(?:\.\d+)?')
+    missing = sorted(set(orders.findall(asked)) - set(orders.findall(cover)))
+    errs = ["the asks ask for %s and the cover's outstanding list does not name it" % o
+            for o in missing]
+    if re.search(r'\bPREA Policy\b', asked) and not re.search(r'\bPREA Policy\b', cover):
+        errs.append("the asks ask for the PREA Policy and the cover's outstanding list does "
+                    "not name it")
+    if errs:
+        print('ABORTED, nothing written. The cover understates what the review is waiting on:')
+        for e in errs:
+            print('  ' + e)
+        print('              The cover is where the department decides what to go and find. '
+              'A document the asks ask for and the cover omits is a document nobody produces.')
+        sys.exit(1)
+
+
 def check_attachments(data):
     """The schedule and the directory have to agree, both ways."""
     listed = [it['file'] for it in data['attachments']['items']]
@@ -264,6 +303,7 @@ def main():
 
     listed = check_attachments(data)
     check_schedule_counts(data)
+    check_outstanding_is_not_understated(data, asks)
     starts = load_pagination(listed)
     by_status = counts(rows, 'status', STATUS_ORDER)
     by_priority = counts(rows, 'priority', PRIORITY_ORDER)

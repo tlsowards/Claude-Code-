@@ -47,6 +47,32 @@ def text_of(path):
     return re.sub(r'<[^>]+>', '', xml)
 
 
+def check_readme_lists_every_deliverable():
+    """Every file in deliverables/ must appear in README.md's table.
+
+    The sweep above checks what ships for leaked machinery. This checks the
+    other direction: that a new output is not built and then left undocumented.
+    Review caught the OO 1352.5 document shipping with no README row, and this
+    project has already been burned by README drift once, when its row count
+    sat three revisions behind the register.
+
+    Directional. The README may carry rows for Markdown working copies under
+    drafts/ that are not in deliverables/; what it may not do is omit a file
+    that is.
+    """
+    readme = os.path.join(ROOT, 'README.md')
+    if not os.path.exists(readme):
+        return []
+    text = open(readme, encoding='utf-8').read()
+    missing = [os.path.basename(f) for f in sorted(glob.glob(os.path.join(DELIV, '*')))
+               if os.path.isfile(f) and os.path.basename(f) not in text]
+    if missing:
+        return ['README.md does not list %s, which is in deliverables/. A build that produces '
+                'an undocumented output is a build the next person does not know to run.'
+                % ', '.join(missing)]
+    return []
+
+
 def main():
     files = sorted(glob.glob(os.path.join(DELIV, '*.docx')))
     if not files:
@@ -68,7 +94,13 @@ def main():
         print('              These documents go outside the department. Rewrite the text so it '
               'describes the work rather than the toolchain.')
         return 1
-    print('checked %d deliverables, no build machinery named' % len(files))
+    undocumented = check_readme_lists_every_deliverable()
+    if undocumented:
+        print('ABORTED. A deliverable is not documented:')
+        for u in undocumented:
+            print('  ' + u)
+        return 1
+    print('checked %d deliverables, no build machinery named, all listed in README' % len(files))
     return 0
 
 

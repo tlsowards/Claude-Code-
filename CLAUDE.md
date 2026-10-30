@@ -1274,6 +1274,31 @@ department acts on, so the fix went there: ask 5 now asks for six documents and 
 the cheapest of them to act on. The counted-list guard was tested on the new wording by claiming
 seven and listing six, and it caught it.
 
+**Two guards added on review of this pass, and both are the same shape: a check that compares one
+document against another rather than against itself.**
+
+**The cover understated what the review is waiting on.** The ask list was updated to name OO 1352.5
+and the cover's own outstanding list was not, so both said six documents, both passed
+`check_counted_lists`, and the cover omitted the one order an entire attachment exists because it was
+never produced. **A count guard checks a list against its own number and cannot see that two
+documents' lists of the same thing disagree.** The new guard is directional on purpose: the cover may
+carry items the ask list does not, such as the rosters, which are their own ask, but it may not name
+fewer outstanding orders, because the cover is the page the department reads to decide what to go and
+find. Matching is on order designations and on the PREA Policy by name, since those are unambiguous
+tokens; the prose around them differs by design and is not compared. Fixing it surfaced a **third**
+copy of the same claim in the purpose section, caught by the existing phrase-count guard. Six to
+seven in both places.
+
+**A new deliverable shipped with no README row.** `npm run check` now fails if any file in
+`deliverables/` is absent from the README table, directional the same way: the README may list
+Markdown working copies that are not deliverables, but it may not omit one that is. Both guards were
+tested by reintroducing the defect and both fired.
+
+**One process note on that testing.** The first run of the cover guard looked like a pass because the
+test piped the build through `head -6` and cut the abort message off. The guard had fired. **A guard
+test that truncates its own output is not a guard test**, and the standing rule in section 22 says to
+ask why a check passed, which is what caught it.
+
 **Staffing, per Tim on 10/30.** The 1:8 and 1:16 against 1:10 and 1:30 question is to be carried as
 a concern to look into, not as a finding. The Management Brief already does this correctly: it sits
 in its own section headed "One thing we cannot yet call either way", outside the seven exposure
