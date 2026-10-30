@@ -12,6 +12,7 @@ because the amendment language is meant to be pasted into departmental orders.
 
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,6 +38,58 @@ def walk(node, path='$'):
             yield from walk(v, '%s.%s' % (path, k))
 
 
+def check_unverified_sections(data):
+    """Every offence an insert enumerates must be verified or caveated.
+
+    "Verified" here means the reader need not take it to County Counsel, for
+    either of two reasons: the order already enumerates it, or this review
+    confirmed it as an omission against that enumeration. Everything else in an
+    offence list is the drafter's judgment and has to say so.
+
+    The tracked changes copy of OO 1352 carries this check already. This
+    document did not, and the two drifted: the tracked copy told the reader that
+    three of the sections it adds are the drafter's judgment, and this one,
+    proposing the identical list, said nothing. A reader of the redlines alone
+    had no reason to send any of them to County Counsel.
+
+    The lesson is the one this project keeps relearning. A guard written for one
+    document does not protect its sibling, and two views of a single proposed
+    change drift apart exactly where nobody is comparing them.
+    """
+    errs = []
+    # Scoped to an enumerated Penal Code offence list, which is the thing this
+    # is about. A first attempt took every three digit number in every insert
+    # and flagged CCP 340.1, AB 452 and WIC 300, all of them verified
+    # authorities carrying no drafter's judgment at all. A guard that fires on
+    # correct text gets switched off.
+    # A lazy capture stopped at the first comma and only ever saw the first
+    # section, so the guard built from it passed the bug it was written for.
+    # Verified against the real list that this reads all eight, including the
+    # last one after "or".
+    offences = re.compile(
+        r'Penal Code sections?\s+((?:\d{3}(?:\.\d+)?(?:\s*,\s*)?(?:or\s+)?)+)', re.I)
+    for item in data['items']:
+        verified = set(item.get('verified_sections', []))
+        inserted = set()
+        for ins in item.get('insert', []):
+            for t in ins.get('text', []):
+                for m in offences.finditer(t):
+                    inserted |= set(re.findall(r'\b\d{3}(?:\.\d+)?\b', m.group(1)))
+        notes = ' '.join(item.get('before_adoption', []))
+        missing = sorted(n for n in inserted
+                         if n not in verified and n not in notes)
+        if missing:
+            errs.append('change %s inserts %s, which are neither declared verified nor named '
+                        'in its before adoption notes' % (item['n'], ', '.join(missing)))
+    if errs:
+        print('ABORTED, nothing written. A reader would not know which cited sections still '
+              'need confirming:')
+        for e in errs:
+            print('  ' + e)
+        print('              Name them in before_adoption, or add them to verified_sections.')
+        sys.exit(1)
+
+
 def main():
     with open(SRC, encoding='utf-8') as fh:
         data = json.load(fh)
@@ -53,6 +106,8 @@ def main():
     if seen != sorted(seen) or len(set(seen)) != len(seen):
         print('ABORTED. Item numbers are not unique and ascending: %s' % seen)
         return 1
+
+    check_unverified_sections(data)
 
     L = []
     add = L.append

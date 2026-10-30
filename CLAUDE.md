@@ -651,7 +651,7 @@ produced document.
   department, so nothing operational is lost. It expressly does not add a false reporting rule
   violation to OO 1390/1391, which would recreate the defect in a second document.
 - **Change 6** splits S-4 into **S-4A** (risk of being sexually abusive) and **S-4B** (risk of
-  being sexually victimized). PC 288.5 and 289.6 in the S-4A offense list are the drafter's
+  being sexually victimized). PC 261.5, 288.5 and 289.6 in the S-4A offense list are the drafter's
   judgment, not from the order, and are flagged as such. The list ends with a successor-statute
   catch-all so the next renumbering does not reopen the 287 gap.
 - **Change 7** is the one the department cannot fully solve itself. Paragraph 3 is drafted as a
@@ -1156,6 +1156,19 @@ drafted provisions; and no code section may be inserted into the drafted text un
 declared a verified addition or named in those notes. The last two are the same consistency
 property in opposite directions, and both were needed, because the first one could not catch a
 section in the text with no caveat.
+
+**The caveat drift happened twice, and the second time was predictable.** Review found 261.5 in the
+tracked document's inserted list with no caveat, which was fixed. The same list is proposed in the
+redline for change 6, and **that document said nothing about any of the three unverified sections**,
+so Attachment B told a reader less than Attachment I about the identical amendment. The redline
+builder now carries the same check, scoped to an enumerated Penal Code offence list.
+
+**Three attempts on that check, and the first two are the usual lesson.** Taking every three digit
+number in every insert flagged CCP 340.1, AB 452 and WIC 300, all verified authorities, and a guard
+that fires on correct text gets switched off. Then a lazy capture stopped at the first comma and
+only ever saw one section, so the guard passed the bug it was written for. **Test by reintroducing
+the defect, every time.** The field means a reader need not take it to County Counsel, which covers
+both sections the order already enumerates and sections this review confirmed as omissions.
 
 **What is needed to do this for the remaining orders.** A complete tracked changes document can
 only be built for a policy whose full text is in hand. That is OO 1453 and nothing else. OO 1352's text was captured

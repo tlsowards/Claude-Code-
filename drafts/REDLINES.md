@@ -416,6 +416,7 @@ Two problems in the S-4 classification. First, the note at II.F.2 states that a 
 - VERIFIED in Revision 9 against OO 1352 as produced, eff. 12/09/2019, rev. 02/27/2020. II.F.2, II.G, II.H and III.E are confirmed as cited and the struck text is the order's own words. This redline may now circulate as a true redline.
 - The S-4 High and S-4 Low split the register describes is confirmed and is sounder than its label suggests, so the insert below is a relabeling and separation of an existing structure rather than the invention of a new one. Say that to the policy shop.
 - OO 1352 never references OO 1350.5 anywhere in its twelve pages. The insert at II.H.1 creates that cross-reference for the first time. Confirm OO 1350.5's section numbering before adopting it.
+- **Penal Code 261.5, 288.5 and 289.6 in the S-4A offence list are the drafter's judgment**, not sections the order enumerates and not sections this review has verified as the right additions. Only 287 and 289 are confirmed omissions, recorded against the order's own enumeration at II.G.1 and II.G.3. Confirm all three with County Counsel, or strike them and keep the successor-statute catch-all, which is what stops the next renumbering reopening the gap that 287 left. **The same caveat appears on the tracked changes copy of OO 1352, and the two say the same thing on purpose.**
 
 ---
 
