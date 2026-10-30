@@ -1113,7 +1113,17 @@ claim is visible instead of invisible. Proportions like "three of the thirteen" 
 last known gap: the guard took the first colon after the count, and review pointed out an unrelated
 one arriving first would be parsed as the list. It now takes the first colon whose span contains a
 comma, which is what separates a list-introducing colon from an explanatory one. A genuine
-single-item list has no comma and is reported as unchecked rather than guessed at. **A guard that does not
+single-item list has no comma and is reported as unchecked rather than guessed at. **Comma
+presence is a proxy for list-ness, not the same thing**, so an explanatory colon followed by a
+clause that happens to contain a comma would still be misread. It does not occur in the current
+text and the guard would produce a false failure rather than a false pass, but the next person
+editing this prose should know the limit.
+
+**The guard lives in `tools/prose_counts.py` now.** It was duplicated in both builders and needed
+the same fix five times, four of them applied twice by hand. Verified the two copies were still
+identical before pulling them out, so nothing had silently diverged. Per-builder independence is
+this project's usual preference and it was the wrong trade here: a guard that has been wrong four
+times should exist once. **A guard that does not
 fail on the bug it was written for is worse than no guard, because it buys false confidence, and
 three versions of this one survived precisely because nobody could see what they were skipping.
 Test a new guard by reintroducing the original defect, and make it say what it did not look at.**

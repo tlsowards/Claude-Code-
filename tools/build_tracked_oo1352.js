@@ -115,6 +115,31 @@ if (orphan.length) {
     + 'checks the document against it. Adapt the note, or draft the text it assumes.');
   process.exit(1);
 }
+// And the other direction. The first version of this guard only checked that
+// every section the notes mention appears in the provisions. Review pointed out
+// the gap that leaves: a section inserted into the text with no matching
+// caveat. 261.5 went into the S-4A list by the same "match the redline" step
+// that added 288.5 and 289.6, and only those two were named, so a reader
+// confirming what the caveat told them to confirm would have missed the third.
+// A provision declares which of its inserted sections this review verified;
+// every other one has to be named in the notes.
+const noteText = (data.before_adoption || []).join(' ');
+const uncaveated = [];
+(data.provisions || []).forEach((pr) => {
+  const verified = new Set(pr.verified_additions || []);
+  const inserted = sectionsIn((pr.runs || []).filter((r) => r[0] === 'ins')
+    .map((r) => r[1]).join(' '));
+  [...inserted].forEach((n) => {
+    if (!verified.has(n) && !noteText.includes(n)) uncaveated.push(pr.cite + ': ' + n);
+  });
+});
+if (uncaveated.length) {
+  console.error('ABORTED. These code sections are inserted into the drafted text, are not '
+    + 'declared as verified additions, and are named nowhere in the before-adoption notes: '
+    + uncaveated.join(', ') + '. Whoever reconfirms the sections the notes list would miss '
+    + 'them. Name them, or declare them verified.');
+  process.exit(1);
+}
 const unlabelled = (data.provisions || []).filter(
   (pr) => !pr.change || !pr.label || !(pr.rows || []).length);
 if (unlabelled.length) {
