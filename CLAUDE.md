@@ -564,6 +564,8 @@ Built in this repository, and regenerated rather than edited:
 
 | File | Built by | Contents |
 |---|---|---|
+| `PREA_Briefing_Package.docx` | `npm run package` | **The cover for a handover to the department.** What the package is, what we need decided, and a tab by tab schedule with the start page of each attachment. A transmittal, not a second brief |
+| `PREA_Briefing_Package_Complete.pdf` | `npm run package-pdf` | **The whole thing as one 166 page bookmarked PDF**, cover then attachments A to G. This is the single file to hand over |
 | `PREA_Management_Brief.docx` | `npm run brief` | **The document to brief managers from.** 18 pages, one section per page. Page 3 is the whole thing in five numbered points; the rest is the backup for each one. Seven exposure items, the liability routes, what the department already has right, the fifteen changes in three waves, and the list of what is blocked on a decision |
 | `PREA_versus_Policy_Crosswalk.docx` | `npm run crosswalk` | The full 91 row register as a document |
 | `PREA_Redlines_Changes_1_to_7.docx` | `npm run redlines` | The drafted amendments |
@@ -925,7 +927,48 @@ produced.
 
 ---
 
-## 19. Do not repeat this one
+## 19. The handover package (10/30)
+
+Tim asked for a briefing document for the department with everything else attached to it, so
+he can show them what is needed. Two outputs, one source.
+
+**`PREA_Briefing_Package.docx`**, built by `npm run package` from `drafts/briefing-package.json`,
+is the cover. It is a **transmittal, not a second brief**: purpose, what we need, where we
+stand, the tab schedule, how to use it by role, and what is deliberately not in it. The
+reasoning stays in the Management Brief at Attachment A and is not restated.
+
+**`PREA_Briefing_Package_Complete.pdf`**, built by `npm run package-pdf`, is the whole thing
+as one bookmarked PDF. 166 pages: cover 1 to 8, then A Management Brief 9, B Redlines 27,
+C Crosswalk 49, D Decision Guide 128, E Classification Card 158, F Memo Template 160,
+G Staffing Factors 165.
+
+**Three things worth knowing before touching it.**
+
+**The schedule is checked against the directory, both ways.** The build fails if the schedule
+lists a document that is not in `deliverables/`, if a document is there and unlisted, or if
+the tab letters skip or repeat. A tab with nothing behind it is the error that makes a reader
+distrust the rest of the binder.
+
+**The What we need list is read out of `drafts/management-brief.json`, not restated.** The
+cover and the brief cannot come to disagree about what is being asked for.
+
+**The PDF build iterates to a fixpoint on purpose.** A start page cannot be printed until the
+attachments are rendered, and rebuilding the cover to carry those numbers changes the cover's
+length, which moves the numbers it just printed. Each pass writes what it measured, rebuilds
+the cover, renders again, and stops when a pass measures what the cover already says. It
+settles on pass 2. Convergence is checked, not assumed, and stale pagination is dropped rather
+than printed, because a contents page pointing at the wrong document is worse than no page
+numbers.
+
+**What the package does not contain, and the cover says so.** The six documents from the
+earlier conversation are **not in this container**: `deliverables/YDF_PREA_*` is gitignored
+and did not survive. The cover lists them as available on request rather than attaching them,
+and repeats the handling warning on the Liability Exposure Assessment. Do not let the schedule
+claim them.
+
+---
+
+## 20. Do not repeat this one
 
 **Revision 9's supervisor role matrix was published without the governing order in hand.** It told
 supervisors they do not conduct fact finding and do not interview, which is contradicted by OO 1453

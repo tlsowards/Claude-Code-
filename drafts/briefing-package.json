@@ -1,0 +1,108 @@
+{
+ "title": "YDF PREA Compliance",
+ "subtitle": "Briefing and document package",
+ "status": "WORKING DRAFT for departmental review. Not legal advice. Route to County Counsel before circulating outside the department.",
+ "register_revision": 10,
+ "purpose": {
+  "head": "What this package is",
+  "body": "A review of the department's PREA posture at the Youth Detention Facility, and the documents produced from it. Everything here traces to one worksheet, the gap register, which assesses 91 requirements from 28 CFR Part 115 Subpart D and California Title 15 against the 17 departmental documents produced to the review.",
+  "items": [
+   "**The analysis is complete.** Nothing in this package is waiting on further review.",
+   "**Most of the remediation is drafted.** Amended policy text exists for seven of the fifteen recommended changes, written out and ready to be marked up.",
+   "**What is left needs decisions, not analysis.** A designation, an assignment, and five documents the review asked for and has not received. Those are listed at the end.",
+   "**Nothing here is a finding that the department failed to do something.** The review can only speak to the documents produced to it. Where a practice is not written down, the finding says it does not appear in the documents reviewed, which is a different statement. Several findings will close on production of a document rather than on any change in practice."
+  ]
+ },
+ "ask": {
+  "head": "What we need",
+  "body": "These are the items that cannot move without a decision from the department. They are reproduced from the management brief at Attachment A, which carries the reasoning behind each one."
+ },
+ "standing": {
+  "head": "Where we stand",
+  "body": "Read the Conflict line first. Not Addressed means a requirement is not written down yet. Conflict means a departmental document states a rule that contradicts the law or another departmental document. The second is the more serious of the two: it is already in staff hands, it is harder to defend, and it is usually cheaper to fix.",
+  "note": "Not Evidenced means a document is referenced in a departmental policy but has not been produced to this review, so no finding is made either way."
+ },
+ "howto": {
+  "head": "How to use this package",
+  "body": "Nobody needs to read all of it. By role:",
+  "items": [
+   "**Administrators and managers: Attachment A, and page 3 of it is the whole review in five numbered points.** The rest of A is the backup for each point, one page apiece. Twenty minutes.",
+   "**Whoever owns policy revision: Attachment B**, the amended text for the first seven changes, then **Attachment C** for the full requirement by requirement record.",
+   "**Supervisors: Attachment E**, one sheet printed double sided. Attachment D is the longer version behind it, read once in advance rather than during an incident, and Attachment F is the memo written after an incident is classified.",
+   "**Whoever answers the staffing question: Attachment G.**"
+  ]
+ },
+ "attachments": {
+  "head": "What is in this package",
+  "body": "Seven documents. Every one is generated from the register or from a single source file, so none of them is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent.",
+  "items": [
+   {
+    "tab": "A",
+    "file": "PREA_Management_Brief.docx",
+    "name": "Management Brief",
+    "what": "The document to brief from. Where the exposure is, how the liability runs, what the department already has right, and the fifteen recommended changes in three waves. Seven exposure items out of 91 requirements, one page each.",
+    "who": "Administrators, managers, and anyone who has to decide something.",
+    "note": "Start here. Page 3 is the entire review in five numbered points."
+   },
+   {
+    "tab": "B",
+    "file": "PREA_Redlines_Changes_1_to_7.docx",
+    "name": "Redlines, Changes 1 to 7",
+    "what": "The amended policy text for the seven changes correctable by amendment, with the legal authority for each and a note on what has to be confirmed before adoption.",
+    "who": "Policy revision, and County Counsel.",
+    "note": "Three of the orders amended here have not been produced to the review. For those, the struck text is a reconstruction of what the register describes rather than a quotation of the order, and each item says so on its face. **Do not let any of it circulate as though the struck text were the order's real words.**"
+   },
+   {
+    "tab": "C",
+    "file": "PREA_versus_Policy_Crosswalk.docx",
+    "name": "PREA versus Policy Crosswalk",
+    "what": "The complete record. All 91 requirements with the departmental provision beside each one, then the same findings regrouped under each of the 17 policies so one document can be worked at a time.",
+    "who": "Reference. Nobody reads it front to back.",
+    "note": "The second view is the one to use when opening a specific order: it answers what has to change inside that document."
+   },
+   {
+    "tab": "D",
+    "file": "PREA_Supervisor_Decision_Guide.docx",
+    "name": "Supervisor Decision Guide",
+    "what": "The long form behind the classification card: the six conduct tiers with the statutory basis for each, the mixed age rules, the full action list, the response sequence after an incident is classified, and who does what.",
+    "who": "Supervisors, read once in advance. Training.",
+    "note": "Carries the three ages question, which decides the reporting answer before the conduct is even looked at."
+   },
+   {
+    "tab": "E",
+    "file": "PREA_Supervisor_Field_Card.docx",
+    "name": "Supervisor Classification Card",
+    "what": "One sheet, printed double sided. Ages, the tier chart, the factors that move an incident up a tier, what to do, and the classification block that goes in the incident report.",
+    "who": "Every supervisor, on shift.",
+    "note": "Built from the same source as Attachment D, and the build fails if the two ever disagree about a tier."
+   },
+   {
+    "tab": "F",
+    "file": "PREA_Supervisor_Memo_Template.docx",
+    "name": "Supervisor Incident Memo Template",
+    "what": "The memo a supervisor writes after classifying an incident, with the classification options matched to the tier chart.",
+    "who": "Supervisors.",
+    "note": "The referral line is blank on purpose. The department has not yet said who conducts youth on youth administrative investigations in the band below sexual assault, which is one of the items under What we need."
+   },
+   {
+    "tab": "G",
+    "file": "PREA_Staffing_Plan_Factors.docx",
+    "name": "Staffing Plan Factors",
+    "what": "The factors the federal standard requires a documented staffing plan to address.",
+    "who": "Whoever answers the staffing question.",
+    "note": "The staffing finding cannot be called either way until rosters are produced. The state floor sits at the department's written ratio, so the gap may be documentation rather than staffing. That is a materially different conversation and it is cheap to settle."
+   }
+  ]
+ },
+ "notincluded": {
+  "head": "What is not in this package",
+  "body": "Stated so the package is not mistaken for the whole file.",
+  "items": [
+   "**Six earlier documents** are part of this work and are not attached here: the master Policy Review Report, the Applicability Memo, the Liability Exposure Assessment, the Training Gap and Curriculum Plan, the Audit Evidence Request, and the Excel version of the register. They can be supplied on request. **The Liability Exposure Assessment carries its own handling warning and should route through County Counsel before it is circulated at all.**",
+   "**Five documents the review asked for and has not received.** Several findings may close on production rather than on any remediation, so producing them is the cheapest work available: the separation order OO 1354, the PREA Policy itself, the Resident Orientation Handbook, the hiring and contractor screening procedures, and staffing rosters with post assignments.",
+   "**The PREA Policy is the highest value of those.** It carries three of the thirteen conflicts and it is the document three of the drafted amendments at Attachment B are written against, which is why those three rest on a reconstruction rather than on the order's real words.",
+   "**Training lesson plans are not built yet.** The curriculum analysis exists in one of the six documents above. The all staff and supervisor lesson plans are the next build after the items under What we need are answered."
+  ]
+ },
+ "caveat": "This package is a policy and standards analysis prepared for internal departmental use. It is not legal advice, and no part of it should be treated as a legal opinion. Statutory questions, and the records retention schedule in particular, route to County Counsel. Citations have been verified against the operative text rather than recalled, and where a source could not be reached from the review environment the affected statement says so rather than asserting more than was checked."
+}

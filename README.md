@@ -36,6 +36,9 @@ department did after it identified these issues.
 
 | Output | Built by |
 |---|---|
+| `deliverables/PREA_Briefing_Package.docx` | `npm run package` |
+| `drafts/BRIEFING_PACKAGE.md` | same, Markdown working copy |
+| `deliverables/PREA_Briefing_Package_Complete.pdf` | `npm run package-pdf` |
 | `deliverables/PREA_Management_Brief.docx` | `npm run brief` |
 | `drafts/MANAGEMENT_BRIEF.md` | same, Markdown working copy |
 | `deliverables/PREA_versus_Policy_Crosswalk.docx` | `npm run crosswalk` |
@@ -52,6 +55,8 @@ department did after it identified these issues.
 
 ```
 npm install          # first run only, installs the docx library
+npm run package      # the cover; run the attachment builds first
+npm run package-pdf  # renders the whole package into one PDF
 npm run brief
 npm run crosswalk
 npm run redlines
@@ -87,6 +92,29 @@ the build** if the classification options it offers a supervisor stop matching t
 categories the tier chart uses, because a memo that lets someone tick a box the chart
 does not recognise would quietly reintroduce the misclassification the chart exists to
 prevent.
+
+The briefing package is the cover for a handover: what the package is, what the department
+is being asked to decide, and a tab by tab schedule of what is attached. It is a
+transmittal, not a second brief, so the reasoning stays in the management brief at
+Attachment A. Two guards sit behind it.
+
+`npm run package` **fails the build** if the attachment schedule and the `deliverables/`
+directory disagree in either direction, or if the tab letters skip or repeat. A schedule
+listing a document that is not in the package, or a document in the package that the
+schedule does not mention, is the error a reader cannot recover from: it makes them
+distrust the rest of the binder. The cover also reads its What we need list out of
+`drafts/management-brief.json` rather than restating it, so the two cannot come to
+disagree about what is being asked for.
+
+`npm run package-pdf` renders the cover and every attachment with LibreOffice and merges
+them into one bookmarked PDF, in schedule order. It runs **more than once on purpose**: a
+start page cannot be printed in the schedule until the attachments have been rendered, and
+rebuilding the cover to carry those numbers can change the cover's own length, which moves
+every number it just printed. Each pass writes what it measured, rebuilds the cover, and
+renders again, until a pass measures what the cover already says. Convergence is checked
+rather than assumed, and if it has not settled after four passes nothing is written and the
+mismatch is printed. Stale pagination is also dropped rather than printed, since a contents
+page pointing at the wrong document is worse than one with no page numbers at all.
 
 The management brief is the short view of the **register**, written for managers rather
 than for an auditor: where the exposure is, how the liability runs, and what is blocked on

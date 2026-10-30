@@ -1,0 +1,20 @@
+{
+ "files": [
+  "PREA_Management_Brief.docx",
+  "PREA_Redlines_Changes_1_to_7.docx",
+  "PREA_versus_Policy_Crosswalk.docx",
+  "PREA_Supervisor_Decision_Guide.docx",
+  "PREA_Supervisor_Field_Card.docx",
+  "PREA_Supervisor_Memo_Template.docx",
+  "PREA_Staffing_Plan_Factors.docx"
+ ],
+ "starts": {
+  "PREA_Management_Brief.docx": 9,
+  "PREA_Redlines_Changes_1_to_7.docx": 27,
+  "PREA_versus_Policy_Crosswalk.docx": 49,
+  "PREA_Supervisor_Decision_Guide.docx": 128,
+  "PREA_Supervisor_Field_Card.docx": 158,
+  "PREA_Supervisor_Memo_Template.docx": 160,
+  "PREA_Staffing_Plan_Factors.docx": 165
+ }
+}
