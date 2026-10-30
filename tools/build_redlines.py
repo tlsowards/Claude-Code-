@@ -66,8 +66,13 @@ def check_unverified_sections(data):
     # section, so the guard built from it passed the bug it was written for.
     # Verified against the real list that this reads all eight, including the
     # last one after "or".
+    # (?!\d) stops a three digit run matching the front of a longer statute
+    # number. Without it "Penal Code section 11165.9" yielded a phantom section
+    # 111, and the build passed only because "111" happens to sit inside
+    # "11165.9" where that section is discussed in the notes. Coincidence, not
+    # a check.
     offences = re.compile(
-        r'Penal Code sections?\s+((?:\d{3}(?:\.\d+)?(?:\s*,\s*)?(?:or\s+)?)+)', re.I)
+        r'Penal Code sections?\s+((?:\b\d{3}(?:\.\d+)?(?!\d)(?:\s*,\s*)?(?:or\s+)?)+)', re.I)
     for item in data['items']:
         verified = set(item.get('verified_sections', []))
         inserted = set()
@@ -76,8 +81,13 @@ def check_unverified_sections(data):
                 for m in offences.finditer(t):
                     inserted |= set(re.findall(r'\b\d{3}(?:\.\d+)?\b', m.group(1)))
         notes = ' '.join(item.get('before_adoption', []))
+        # Whole number match, not substring. "261" sits inside "261.5", so a
+        # caveat naming only the subsection would have silently satisfied the
+        # check for the parent section, which is the same coincidence one level
+        # down.
         missing = sorted(n for n in inserted
-                         if n not in verified and n not in notes)
+                         if n not in verified
+                         and not re.search(r'\b%s\b(?!\.)' % re.escape(n), notes))
         if missing:
             errs.append('change %s inserts %s, which are neither declared verified nor named '
                         'in its before adoption notes' % (item['n'], ', '.join(missing)))

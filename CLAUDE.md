@@ -1163,11 +1163,17 @@ redline for change 6, and **that document said nothing about any of the three un
 so Attachment B told a reader less than Attachment I about the identical amendment. The redline
 builder now carries the same check, scoped to an enumerated Penal Code offence list.
 
-**Three attempts on that check, and the first two are the usual lesson.** Taking every three digit
+**Five attempts on that check, and every failure was a coincidence passing for a result.** Taking every three digit
 number in every insert flagged CCP 340.1, AB 452 and WIC 300, all verified authorities, and a guard
 that fires on correct text gets switched off. Then a lazy capture stopped at the first comma and
-only ever saw one section, so the guard passed the bug it was written for. **Test by reintroducing
-the defect, every time.** The field means a reader need not take it to County Counsel, which covers
+only ever saw one section, so the guard passed the bug it was written for. Then a three digit
+pattern with no trailing boundary matched the front of "Penal Code section 11165.9" and invented a
+section 111, **and the build passed only because the string "111" happens to sit inside "11165.9"
+where that section is discussed in the notes**. And the notes membership test was a plain substring
+search, so a caveat naming 261.5 would have silently satisfied the check for 261. **Test by
+reintroducing the defect, every time, and when a check passes ask why it passed.** Four of these
+five versions reported success; two of them for reasons that had nothing to do with the thing being
+checked. The field means a reader need not take it to County Counsel, which covers
 both sections the order already enumerates and sections this review confirmed as omissions.
 
 **What is needed to do this for the remaining orders.** A complete tracked changes document can
