@@ -118,13 +118,13 @@
  ],
  "field": {
   "title": "PREA Incident Classification Card",
-  "subtitle": "Supervisor field version. One page. Classify it, act, write it down.",
-  "intro": "Five steps, in order. Ages first, because age decides the CPS column before you look at the conduct. Everything past the classification decision, who investigates and where your role stops, is in the Supervisor Decision Guide.",
+  "subtitle": "One page. Five steps. Work them in order.",
+  "intro": "Ages first. Age decides the CPS answer before you even look at what happened. Everything else, who investigates and where you stop, is in the Decision Guide.",
   "steps": [
    {
     "n": 1,
-    "head": "Ages, before anything else",
-    "why": "Settle this first. Residents 18 and over are not children for CANRA, whatever the court jurisdiction, and the department does not treat them as dependent adults.",
+    "head": "Ages first",
+    "why": "Settle this first. Anyone 18 or over is not a child for CANRA, whatever the court says.",
     "columns": [
      "Who is involved",
      "What happens to the CPS column"
@@ -136,86 +136,86 @@
      ],
      [
       "One under 18, one over",
-      "**Still reports**, on every tier the chart says YES. **Never run consent analysis.** A minor cannot lawfully consent with an adult, so apparent willingness changes nothing."
+      "Use the chart as written. **Never ask whether they consented.** A minor cannot consent with an adult."
      ],
      [
       "Both 18 or over",
-      "**No CPS report on any tier.** No child, so no CANRA. PREA is unchanged. The external report goes to the **Sheriff**, not CPS, and only for sexual assault."
+      "**No CPS report, any tier.** No child, no CANRA. PREA still applies. Sexual assault goes to the **Sheriff**."
      ]
     ]
    },
    {
     "n": 2,
-    "head": "Find the conduct",
-    "why": "Two separate tests. They line up on touching and come apart everywhere else. Answering one never answers the other."
+    "head": "What happened",
+    "why": "Two separate questions. They match on touching and part company everywhere else."
    },
    {
     "n": 3,
     "head": "Check for a flip",
-    "why": "Any one of these moves the incident up and forces a deliberate CPS call, whatever tier the conduct looked like."
+    "why": "Any one of these moves it up a tier and forces a CPS call."
    },
    {
     "n": 4,
     "head": "Act",
-    "why": "Cumulative: each row adds to the one above it. Spelled out in full in the guide."
+    "why": "Each row adds to the one above it."
    },
    {
     "n": 5,
-    "head": "Write the classification down",
-    "why": "Every time, including when you decide it is nothing. Sexual harassment requires repetition, and repetition only exists if the first one was written down."
+    "head": "Write it down",
+    "why": "Every time. Even when you decide it is nothing."
    }
   ],
   "tiers": [
    {
     "n": 1,
-    "what": "One sexualized comment. No contact, no exposure, no threat.",
+    "what": "One sexual comment. No contact, no exposure, no threat.",
     "prea": "Not PREA",
     "cps": "No"
    },
    {
     "n": 2,
-    "what": "Sexualized comments or gestures, repeated and unwelcome, at the same youth.",
-    "prea": "PREA sexual harassment",
+    "what": "Sexual comments or gestures, repeated, same youth.",
+    "prea": "Sexual harassment",
     "cps": "No"
    },
    {
     "n": 3,
-    "what": "Exposes genitals. No masturbation, no contact.",
-    "prea": "Harassment only if repeated",
-    "cps": "No. Read tier 4 first"
+    "what": "Exposes genitals. Nothing else.",
+    "prea": "Harassment if repeated",
+    "cps": "No. Read tier 4"
    },
    {
     "n": 4,
-    "what": "Masturbates in view of another youth.",
-    "prea": "Harassment only if repeated",
+    "what": "Masturbates where another youth can see.",
+    "prea": "Harassment if repeated",
     "cps": "YES if the youth who saw it is under 18"
    },
    {
     "n": 5,
-    "what": "Touches genitals, anus, groin, breast, inner thigh or buttocks. Through clothing counts.",
-    "prea": "PREA SEXUAL ABUSE",
-    "cps": "YES if either resident is under 18"
+    "what": "Touches genitals, anus, groin, breast, inner thigh, buttocks. Clothed counts.",
+    "prea": "SEXUAL ABUSE",
+    "cps": "YES if either is under 18"
    },
    {
     "n": 6,
-    "what": "Oral, anal or penetrative contact, attempted or completed. Or anything above by force, threat or coercion.",
-    "prea": "PREA SEXUAL ABUSE",
-    "cps": "YES if either resident is under 18"
+    "what": "Oral, anal or penetrative contact. Or anything above by force.",
+    "prea": "SEXUAL ABUSE",
+    "cps": "YES if either is under 18"
    }
   ],
   "flips": [
-   "Force, threat, coercion or leverage of any kind, including debt, protection or commissary.",
-   "Any sign it happened before, reported or not.",
+   "Force, threat, or leverage of any kind. Debt, protection, commissary.",
+   "Any sign it happened before.",
    "The target is under 14.",
-   "A significant age, size, developmental or cognitive gap between the two.",
-   "The target discloses prior sexual abuse, inside or outside the facility.",
-   "Reason to suspect the youth who acted has himself been abused. That is a separate report about a different child.",
-   "A pattern by the same youth toward more than one target.",
-   "**Any staff involvement at all.** Off this chart entirely, and it reports regardless of tier."
+   "A big age, size, or ability gap.",
+   "The target mentions past abuse, here or outside.",
+   "You suspect the youth who acted was abused too. **That is a second report, about a different child.**",
+   "Same youth, more than one target.",
+   "**Any staff involvement.** Off this chart. Always reports."
   ],
   "actions": [
    {
-    "head": "Every tier, including tier 1",
+    "head": "Every tier",
     "items": [
      "Separate the youth. Check the target is safe.",
      "Staff tells the Duty Supervisor immediately.",
@@ -225,7 +225,7 @@
     ]
    },
    {
-    "head": "Add at tier 2 and above",
+    "head": "Tier 2 and up",
     "items": [
      "Log it as a PREA incident.",
      "Decide whether the target is at substantial risk of imminent sexual abuse. If yes, act to protect now, separately from any investigation.",
@@ -234,7 +234,7 @@
     ]
    },
    {
-    "head": "Add at tier 4, where a CPS report is due",
+    "head": "Tier 4 and up, where CPS is due",
     "items": [
      "**Telephone the mandated report immediately**, or as soon as practicably possible. Written report on form SS 8572 within 36 hours.",
      "Do not wait for the investigation, the end of shift, or anyone's approval.",
@@ -242,7 +242,7 @@
     ]
    },
    {
-    "head": "Add at tiers 5 and 6",
+    "head": "Tiers 5 and 6",
     "items": [
      "Treat it as a sexual abuse allegation from the first moment.",
      "**Preserve evidence.** No showering, changing or cleaning up. Secure the area.",
@@ -264,24 +264,24 @@
     "Supervisor: ______________________  Date and time: ______________"
    ]
   },
-  "doubt": "**If you are genuinely unsure, report.** The CANRA threshold is reasonable suspicion, which is deliberately low. Reporters have immunity. Failing to report is a crime. The risk is asymmetric on purpose, so classify fast where the chart is clear and report where it is not.",
-  "caveat": "Not legal advice. Statutory questions, and every CANRA call in the grey, go to County Counsel.",
+  "doubt": "**Not sure? Report.** The threshold is reasonable suspicion, which is low on purpose. You have immunity. Not reporting is a crime.",
+  "caveat": "Not legal advice. Grey calls go to County Counsel.",
   "actnow": [
    {
-    "head": "Every tier, including tier 1",
-    "line": "Separate the youth, check the target is safe, tell the Duty Supervisor. Incident report naming both youth, **the words used verbatim**. Record your classification and your reason, including a decision not to report."
+    "head": "Every tier",
+    "line": "Separate them. Check the target is safe. Tell the Duty Supervisor. Write an incident report naming both youth, **with the words they used**. Record your tier and why, even if you decide it is nothing."
    },
    {
-    "head": "Add at tier 2 and above",
-    "line": "Log it as a PREA incident. If the target is at **substantial risk of imminent sexual abuse**, protect now, separately from any investigation. Reassess housing for both. Retaliation monitoring if anyone reported."
+    "head": "Tier 2 and up",
+    "line": "Log it as a PREA incident. If the target is at risk right now, protect them now, before anyone investigates. Reassess housing for both. Start retaliation checks if anyone reported."
    },
    {
-    "head": "Add at tier 4, where a CPS report is due",
-    "line": "**Telephone the report immediately**, form SS 8572 within 36 hours. Do not wait for the investigation, the end of shift, or approval. The duty belongs to whoever formed the suspicion, and telling you does not discharge it."
+    "head": "Tier 4 and up, where CPS is due",
+    "line": "**Phone it in now.** Form SS 8572 within 36 hours. Do not wait for the investigation, the end of shift, or permission. It belongs to whoever formed the suspicion. Telling you does not discharge it."
    },
    {
-    "head": "Add at tiers 5 and 6",
-    "line": "Sexual abuse from the first moment. **Preserve evidence**, no showering or cleaning up. Refer for investigation, every allegation gets one. Tier 6 adds law enforcement, forensic exam off site, notice to parent or guardian and counsel."
+    "head": "Tiers 5 and 6",
+    "line": "Treat it as abuse from the first minute. **Keep the evidence.** No showering, no cleaning up. Refer it. Every allegation gets investigated. Tier 6 also means law enforcement, a forensic exam off site, and notice to parent or guardian and counsel."
    }
   ]
  },

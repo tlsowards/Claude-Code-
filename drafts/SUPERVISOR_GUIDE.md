@@ -271,7 +271,7 @@ Run the tier chart on the conduct, not on the ages. Tiers 1 through 4 do not bec
 
 The classification card carries one line per block. These are the blocks in full. They are cumulative: each one adds to the one above it.
 
-### Every tier, including tier 1
+### Every tier
 
 - Separate the youth. Check the target is safe.
 - Staff tells the Duty Supervisor immediately.
@@ -279,20 +279,20 @@ The classification card carries one line per block. These are the blocks in full
 - Record your classification and the reason, including a decision not to make a CPS report.
 - Treat it as classification information on both youth, and check the target's history for a repeat.
 
-### Add at tier 2 and above
+### Tier 2 and up
 
 - Log it as a PREA incident.
 - Decide whether the target is at substantial risk of imminent sexual abuse. If yes, act to protect now, separately from any investigation.
 - Reassess classification and housing for both youth.
 - If anyone reported it, start retaliation monitoring: at least 90 days, with checks.
 
-### Add at tier 4, where a CPS report is due
+### Tier 4 and up, where CPS is due
 
 - **Telephone the mandated report immediately**, or as soon as practicably possible. Written report on form SS 8572 within 36 hours.
 - Do not wait for the investigation, the end of shift, or anyone's approval.
 - The duty belongs to the employee who formed the suspicion. Telling you does not discharge it, and no supervisor may impede it.
 
-### Add at tiers 5 and 6
+### Tiers 5 and 6
 
 - Treat it as a sexual abuse allegation from the first moment.
 - **Preserve evidence.** No showering, changing or cleaning up. Secure the area.
