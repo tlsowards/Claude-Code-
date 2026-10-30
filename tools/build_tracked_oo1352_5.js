@@ -150,9 +150,10 @@ eachItem((it, sec, trail) => {
 // The cover sentence states two counts. Derive them, because a hardcoded count
 // that is correct today is the bug this project has caught in its own prose more
 // than once. Review flagged these two as the next instance waiting to happen.
-const WORDS = ['no', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight',
+const WORDS = ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight',
   'Nine', 'Ten'];
 const word = (n) => (n < WORDS.length ? WORDS[n] : String(n));
+const noteCount = (data.notes || []).length;
 const amendedCites = [];
 const amendedChanges = new Set();
 eachItem((it, sec, trail) => {
@@ -169,8 +170,7 @@ const howToRead = '**How to read this.** Struck text is proposed for deletion an
   + word(amendedCites.length) + ' provision' + (amendedCites.length === 1 ? ' is' : 's are')
   + ' amended, ' + list(amendedCites) + ', under change' + (changeList.length === 1 ? ' ' : 's ')
   + list(changeList.map(String)) + ' of the briefing packet. '
-  + word((data.notes || []).length) + ' further finding'
-  + ((data.notes || []).length === 1 ? ' is' : 's are')
+  + word(noteCount) + ' further finding' + (noteCount === 1 ? ' is' : 's are')
   + ' recorded at the end and deliberately not amended.';
 
 let revId = 3000;
@@ -279,8 +279,8 @@ push(spacer(200));
 
 push(new Paragraph({ children: [new PageBreak()] }),
   new Paragraph({ text: 'Findings recorded and not amended', heading: HeadingLevel.HEADING_1 }));
-push(p('Reading the whole order produced ' + word((data.notes || []).length).toLowerCase()
-  + ' finding' + ((data.notes || []).length === 1 ? '' : 's') + ' that are not changes of wording, '
+push(p('Reading the whole order produced ' + word(noteCount).toLowerCase()
+  + ' finding' + (noteCount === 1 ? '' : 's') + ' that are not changes of wording, '
   + 'or not inside any numbered change. They are recorded here rather than drafted into the '
   + 'text.'));
 (data.notes || []).forEach((t) => push(
