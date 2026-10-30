@@ -1395,6 +1395,15 @@ from the cover while the ask still asked for it: still fires. **A guard that fir
 gets switched off, so a false positive is a bug in the guard, not an instruction to reword the
 document.**
 
+**One thing review caught that was not a bug yet.** The cover block stated "One provision is
+amended, III.I" and "Six further findings", both correct and both hardcoded, which is the
+stale-count class this project has already caught in its own prose twice. Both are now derived
+from the data, with the citation list and the singular and plural agreement derived too. Verified
+by adding a second amended provision and a seventh note and watching the sentence become "Two
+provisions are amended, III.I and III.J" and "Seven further findings". The rendered document is
+byte identical after the refactor, so the change is structural only. **A correct hardcoded count
+is a bug with a date on it.**
+
 **What the department should be asked for next.** The two attachments OO 1352.5 names and neither
 of which has been produced: the Identity Preference Form, and a document titled Ensuring Fairness
 and Respect for the LGBTQI. The form is what III.A and IV.A.3.a both run on. Added as a ninth ask.

@@ -147,6 +147,32 @@ eachItem((it, sec, trail) => {
   }
 });
 
+// The cover sentence states two counts. Derive them, because a hardcoded count
+// that is correct today is the bug this project has caught in its own prose more
+// than once. Review flagged these two as the next instance waiting to happen.
+const WORDS = ['no', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight',
+  'Nine', 'Ten'];
+const word = (n) => (n < WORDS.length ? WORDS[n] : String(n));
+const amendedCites = [];
+const amendedChanges = new Set();
+eachItem((it, sec, trail) => {
+  if ((it.runs || []).some((r) => r[0] !== 'keep') || (it.sub || []).length) {
+    amendedCites.push(trail + '.' + it.label);
+    if (it.change) amendedChanges.add(it.change);
+  }
+});
+const list = (a) => (a.length < 2 ? a.join('') : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1]);
+const changeList = [...amendedChanges].sort((a, b) => a - b);
+const howToRead = '**How to read this.** Struck text is proposed for deletion and underlined '
+  + 'text is proposed to replace it. In Word, use Review, then Accept or Reject, one change at a '
+  + 'time. Accepting every change leaves a clean amended order. '
+  + word(amendedCites.length) + ' provision' + (amendedCites.length === 1 ? ' is' : 's are')
+  + ' amended, ' + list(amendedCites) + ', under change' + (changeList.length === 1 ? ' ' : 's ')
+  + list(changeList.map(String)) + ' of the briefing packet. '
+  + word((data.notes || []).length) + ' further finding'
+  + ((data.notes || []).length === 1 ? ' is' : 's are')
+  + ' recorded at the end and deliberately not amended.';
+
 let revId = 3000;
 const txt = (t, o = {}) => new TextRun({ text: String(t), size: o.size || TYPE.BODY,
   bold: !!o.bold, italics: !!o.italics, color: o.color || INK });
@@ -196,11 +222,7 @@ push(
   block(GAP_FILL, [new Paragraph({ children: runs(data.provenance),
     spacing: { before: 60, after: 60, line: 272 } })]),
   spacer(),
-  block(WARN_FILL, [new Paragraph({ children: runs('**How to read this.** Struck text is proposed '
-    + 'for deletion and underlined text is proposed to replace it. In Word, use Review, then '
-    + 'Accept or Reject, one change at a time. Accepting every change leaves a clean amended '
-    + 'order. One provision is amended, III.I, under change 2 of the briefing packet. Six '
-    + 'further findings are recorded at the end and deliberately not amended.'),
+  block(WARN_FILL, [new Paragraph({ children: runs(howToRead),
     spacing: { before: 60, after: 60, line: 272 } })]),
   new Paragraph({ children: [txt('NOT LEGAL ADVICE. A working draft for departmental review. '
     + 'Route to County Counsel before adoption.', { bold: true, size: TYPE.NOTE })],
@@ -257,8 +279,10 @@ push(spacer(200));
 
 push(new Paragraph({ children: [new PageBreak()] }),
   new Paragraph({ text: 'Findings recorded and not amended', heading: HeadingLevel.HEADING_1 }));
-push(p('Reading the whole order produced six findings that are not changes of wording, or not '
-  + 'inside any numbered change. They are recorded here rather than drafted into the text.'));
+push(p('Reading the whole order produced ' + word((data.notes || []).length).toLowerCase()
+  + ' finding' + ((data.notes || []).length === 1 ? '' : 's') + ' that are not changes of wording, '
+  + 'or not inside any numbered change. They are recorded here rather than drafted into the '
+  + 'text.'));
 (data.notes || []).forEach((t) => push(
   block(GAP_FILL, [new Paragraph({ children: runs(t),
     spacing: { before: 60, after: 60, line: 272 } })]), spacer()));
