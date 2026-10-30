@@ -84,7 +84,10 @@ def check_unverified_sections(data):
         # Whole number match, not substring. "261" sits inside "261.5", so a
         # caveat naming only the subsection would have silently satisfied the
         # check for the parent section, which is the same coincidence one level
-        # down.
+        # down. The (?!\.) fails closed on purpose: a section written at the end
+        # of a sentence, as "confirm 261.", reads as not named and aborts. That
+        # is the safe direction for a document going to County Counsel, and the
+        # fix is to reword the note rather than to loosen this.
         missing = sorted(n for n in inserted
                          if n not in verified
                          and not re.search(r'\b%s\b(?!\.)' % re.escape(n), notes))
