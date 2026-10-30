@@ -1143,10 +1143,19 @@ it will quietly propose something different.** A guard now fails the build if th
 notes name a code section that appears nowhere in the provisions actually drafted, which is the
 cheap mechanical catch for that class.
 
-Five guards enforce that distinction. The one that matters most refuses to build if
-a provision marked described carries kept or struck text, because **a redline on wording nobody
-captured is invented policy**. The others require `complete` to be false, require the document to
-say what is not reproduced, and require every described provision to state an action.
+**Four guards enforce that distinction**, and the one that matters most refuses to build if a
+provision marked described carries kept or struck text, because **a redline on wording nobody
+captured is invented policy**. The other three require `complete` to be false, require the document
+to say what is not reproduced, and require every described provision to state an action.
+
+**Three further guards check other things and are easy to miscount as part of that set.** Review
+caught this paragraph claiming five after the first caveat guard was added, which checks a
+different property entirely. The three are: every provision must name its change number, label and
+register rows; no code section may be named in the before-adoption notes unless it appears in the
+drafted provisions; and no code section may be inserted into the drafted text unless it is either
+declared a verified addition or named in those notes. The last two are the same consistency
+property in opposite directions, and both were needed, because the first one could not catch a
+section in the text with no caveat.
 
 **What is needed to do this for the remaining orders.** A complete tracked changes document can
 only be built for a policy whose full text is in hand. That is OO 1453 and nothing else. OO 1352's text was captured
