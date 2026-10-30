@@ -1096,14 +1096,23 @@ replacing the tail of a string, check what follows the replacement, not just wha
 **A written-out count disagreed with its own list.** An ask announced five documents and listed
 four, because "the hiring and contractor screening procedures" collapsed two separate outstanding
 documents into one phrase. There is now a guard, `check_counted_lists`, in both the brief and the
-package builders. **It took three attempts and the first two failures are worth remembering.**
+package builders. **It took four attempts and every failure is worth remembering.**
 A lookbehind of `(?<![A-Z])` under `re.IGNORECASE` matches any letter rather than any capital, so
-it silently never fired and the guard passed the bug it was written for. And splitting a prose list
-on a bare "and" cannot tell a separator from a conjunction inside one item, which is the very
-ambiguity that caused the bug: splitting that way counted the four-item list as five and passed it
-again. It splits on commas only now, which works because this project writes lists with the Oxford
-comma. **A guard that does not fail on the bug it was written for is worse than no guard, because
-it buys false confidence. Always test a new guard by reintroducing the original defect.**
+the first version silently never fired. The second split a prose list on a bare "and", which cannot
+tell a separator from a conjunction inside one item, so it counted a four-item list as five and
+passed the bug it was written for. The third required the colon to sit immediately after the count
+phrase, which held for the brief's wording and not the package cover's, so **five of six count
+claims across the two files went unchecked**, and a real contradiction hid in the gap: the cover's
+purpose section said five documents and its own schedule two pages later said six, about the same
+list.
+
+**The fix that mattered was not a better regex. It was refusing to be silently partial.** The guard
+now reports every count claim it could not check, as a note in the build output, so an unchecked
+claim is visible instead of invisible. Proportions like "three of the thirteen" and locators like
+"wrong in two documents" are excluded by shape rather than quietly dropped. **A guard that does not
+fail on the bug it was written for is worse than no guard, because it buys false confidence, and
+three versions of this one survived precisely because nobody could see what they were skipping.
+Test a new guard by reintroducing the original defect, and make it say what it did not look at.**
 
 **OO 1352 got the same treatment on 10/30, in a deliberately different shape.** Its PDF did not
 survive, so only the provisions quoted in Revision 9 are held. `OO_1352_Tracked_Changes.docx`,
