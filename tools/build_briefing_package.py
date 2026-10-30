@@ -170,14 +170,30 @@ def check_counted_lists(strings):
             tail = text[m.end():m.end() + 10].lower()
             if lead.endswith('in ') or tail.startswith(' of '):
                 continue                      # a proportion or a locator, not a list
-            colon = text.find(':', m.end())
-            if colon == -1:
+            # Take the first colon that actually introduces a list, not simply
+            # the first colon. A count and its list can sit two sentences apart,
+            # so the search cannot be scoped to one sentence, but an unrelated
+            # colon arriving first would otherwise be parsed as the list: review
+            # found "Note: these matter." being read as a one-item list. A list
+            # introducing colon is followed by a span containing a comma, which
+            # separates it from an explanatory one. A genuine single item list
+            # has no comma and is reported as unchecked rather than guessed at.
+            body, colon = None, m.end()
+            while True:
+                colon = text.find(':', colon)
+                if colon == -1:
+                    break
+                rest = text[colon + 1:].lstrip('* ')
+                stop = rest.find('. ')
+                span = rest if stop == -1 else rest[:stop]
+                if ',' in span:
+                    body = span
+                    break
+                colon += 1
+            if body is None:
                 unchecked.append('%s: "%s" introduces no list in this string'
                                  % (where, m.group(0)))
                 continue
-            rest = text[colon + 1:].lstrip('* ')
-            stop = rest.find('. ')
-            body = rest if stop == -1 else rest[:stop]
             parts = [re.sub(r'^and\s+', '', x.strip())
                      for x in body.split(',') if x.strip()]
             claimed = NUMBERS[m.group(1).lower()]

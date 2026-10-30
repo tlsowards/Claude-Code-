@@ -1109,7 +1109,11 @@ list.
 **The fix that mattered was not a better regex. It was refusing to be silently partial.** The guard
 now reports every count claim it could not check, as a note in the build output, so an unchecked
 claim is visible instead of invisible. Proportions like "three of the thirteen" and locators like
-"wrong in two documents" are excluded by shape rather than quietly dropped. **A guard that does not
+"wrong in two documents" are excluded by shape rather than quietly dropped. A fifth pass fixed the
+last known gap: the guard took the first colon after the count, and review pointed out an unrelated
+one arriving first would be parsed as the list. It now takes the first colon whose span contains a
+comma, which is what separates a list-introducing colon from an explanatory one. A genuine
+single-item list has no comma and is reported as unchecked rather than guessed at. **A guard that does not
 fail on the bug it was written for is worse than no guard, because it buys false confidence, and
 three versions of this one survived precisely because nobody could see what they were skipping.
 Test a new guard by reintroducing the original defect, and make it say what it did not look at.**
