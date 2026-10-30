@@ -11,7 +11,7 @@ overwrite `CLAUDE.md` with a generated one.
 
 ```
 CLAUDE.md            project memory: working rules, findings, verified authorities
-prea-register.csv    the working record. 91 requirements, register Revision 11
+prea-register.csv    the working record. 93 requirements, register Revision 12
 docs/                the 17 source policy documents (not in the repository)
 deliverables/        finished work product
 drafts/              redlines and new policy drafts, generated from redlines.json
@@ -41,7 +41,7 @@ department did after it identified these issues.
 | `deliverables/PREA_Briefing_Package_Complete.pdf` | `npm run package-pdf` |
 | `deliverables/OO_1453_Tracked_Changes.docx` | `npm run tracked-1453` |
 | `deliverables/OO_1352_Tracked_Changes.docx` | `npm run tracked-1352` |
-| `deliverables/OO_1352_5_Citations_and_Actions.docx` | `npm run described-1352-5` |
+| `deliverables/OO_1352_5_Tracked_Changes.docx` | `npm run tracked-1352-5` |
 | `deliverables/PREA_Management_Brief.docx` | `npm run brief` |
 | `drafts/MANAGEMENT_BRIEF.md` | same, Markdown working copy |
 | `deliverables/PREA_versus_Policy_Crosswalk.docx` | `npm run crosswalk` |

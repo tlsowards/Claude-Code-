@@ -131,9 +131,9 @@ OO 1352.5 is otherwise a strong order. It supplies individualized assessment at 
 
 **OO 1352.5 III.I**
 
-> ~~All transgender and intersex youth shall be provided a single room.~~
+> ~~All transgender and intersex youth shall be provided a single room in order to ensure their privacy and safety.~~
 
-*Described in the register, not read in this review.*
+*Quoted from the order, produced and read in full on 10/30.*
 
 ### Insert
 
@@ -163,8 +163,9 @@ Preserves the protective intent that produced III.I while removing the categoric
 
 ### Before adoption
 
-- OO 1352.5 has never been produced to this review. Confirm the III.I numbering and wording against the PDF.
+- OO 1352.5 was produced and read in full on 10/30, so the struck text above is the order's own words rather than a reconstruction. Through Revision 11 this item struck a reconstruction reading "All transgender and intersex youth shall be provided a single room," which omitted the order's stated rationale. The finding is unchanged; the text being replaced is longer than this project previously recorded.
 - The 15 CCR 1352.5 citation is verified. It was carried as unconfirmed through Revision 5 because it is absent from the 04/01/2014 edition of Title 15, and Revision 6 confirmed it against the edition effective 01/01/2019, where it runs (a) to (e). The edition effective 01/01/2019 is the operative one. The January 2023 revision is a pending proposal and must not be relied on.
+- III.B, III.F and III.H were confirmed verbatim on reading the order, so paragraphs 1 to 3 of the insert point at provisions that exist and say what this amendment assumes they say. III.E, not previously in the register, adds background, age, developmental status, sophistication, social skills, charges and behavioral history to the same determination.
 
 ---
 

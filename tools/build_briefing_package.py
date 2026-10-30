@@ -139,7 +139,20 @@ def check_outstanding_is_not_understated(data, asks):
     """
     block = data.get('notincluded') or {}
     cover = ' '.join([block.get('body') or ''] + list(block.get('items') or []))
-    asked = ' '.join(asks)
+    # Only the document-ask lists, not every sentence in every ask. The first
+    # version read all ask prose and fired on an ask that mentioned OO 1352.5 as
+    # having just been produced, which is the opposite of asking for it. An ask
+    # names documents in the list after its colon; the prose after that list
+    # explains why, and explaining why an order mattered is not a request for it.
+    asked_spans = []
+    for t in asks:
+        if not t.lstrip('*').startswith('Produce'):
+            continue
+        _, _, tail = t.partition(':')
+        # '. ' ends the list. A period inside an order number is not followed by
+        # a space, so OO 1352.5 in a list survives this cut.
+        asked_spans.append(tail.split('. ')[0])
+    asked = ' '.join(asked_spans)
     orders = re.compile(r'OO \d+(?:\.\d+)?')
     missing = sorted(set(orders.findall(asked)) - set(orders.findall(cover)))
     errs = ["the asks ask for %s and the cover's outstanding list does not name it" % o

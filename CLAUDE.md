@@ -36,7 +36,12 @@ hedging, and he will catch a wrong citation.
 
 ## 3. Project state
 
-Register is at **Revision 11**. 91 requirements assessed against 17 departmental policies.
+Register is at **Revision 12**. 93 requirements assessed against 17 departmental policies.
+
+**Revision 12 is OO 1352.5, produced and read in full on 10/30.** The third produced order to
+confirm every section number the register carried. Five provisions it had never recorded, two new
+rows (92 and 93), and two corrections to this project's own description of the search provisions.
+No status changed and no new conflict. See section 24.
 
 **Revision 11 is a correction pass on one row, and it runs partly in the department's favour.**
 Row 91 and conflict 13 were recorded in Revision 10 without two subdivisions of the statute they
@@ -59,12 +64,12 @@ status raised (row 84, Not Addressed to Partial). See section 16.
 | Status | Count |
 |---|---|
 | Addressed | 14 |
-| Partial | 41 |
+| Partial | 43 |
 | Not Addressed | 21 |
 | Conflict (policy states the wrong rule) | 13 |
 | Not Evidenced (document exists, not produced) | 2 |
 
-Priority: 22 critical, 39 high, 16 medium, 14 low.
+Priority: 22 critical, 40 high, 17 medium, 14 low.
 
 Full register with gap text is in `prea-register.csv`. Columns `owner`, `target_date`, and
 `disposition` are empty and intended for the department to fill.
@@ -78,7 +83,7 @@ Full register with gap text is in `prea-register.csv`. Columns `owner`, `target_
 | 3 | OO 1322 Training and Staff Development | eff 06/15/2015, rev 05/08/2019 |
 | 4 | OO 1350.5 Screening for the Risk of Sexual Abuse | eff 11/10/2019 |
 | 5 | OO 1352 Classification | eff 12/09/2019, rev 02/27/2020. **Produced and read in full in Revision 9** |
-| 6 | OO 1352.5 Transgender and Intersex Youth | eff 03/01/2019 |
+| 6 | OO 1352.5 Transgender and Intersex Youth | eff 03/01/2019. **Produced and read in full in Revision 12** |
 | 7 | OO 1360 Searches | eff 12/01/2019, rev 03/04/2020 |
 | 8 | OO 1361 Grievances | eff 01/01/2011, rev 04/03/2019 |
 | 9 | OO 1362 Reporting of Incidents | eff 11/01/2019 |
@@ -560,6 +565,10 @@ Referenced in reviewed policies but never produced. Several may close findings.
   Separation to include protective custody and then regulates only room confinement, so the
   placement 115.342(b) and 115.368 actually govern is the one with the fewest written
   safeguards. See rows 35 and 57.
+- **The two attachments to OO 1352.5**, both named on its last page and neither produced: the
+  **Identity Preference Form** and a document titled **Ensuring Fairness and Respect for the
+  LGBTQI**. The form is the instrument III.A and IV.A.3.a both run on, so what it asks the youth
+  decides whether those provisions work. New in Revision 12.
 - Volunteer, intern, and contractor onboarding and clearance procedure
 - Medical and mental health service policies / Health Services agreement
 - Staffing rosters and post assignments
@@ -607,7 +616,7 @@ Built in this repository, and regenerated rather than edited:
 | `PREA_Staffing_Plan_Factors.docx` | `npm run staffing-factors` | The 115.313(a) factors |
 | `OO_1453_Tracked_Changes.docx` | `npm run tracked-1453` | The whole order with real Word revisions |
 | `OO_1352_Tracked_Changes.docx` | `npm run tracked-1352` | The provisions that change, with real revisions |
-| `OO_1352_5_Citations_and_Actions.docx` | `npm run described-1352-5` | **Not a redline.** Citations and required actions, because the order was never produced |
+| `OO_1352_5_Tracked_Changes.docx` | `npm run tracked-1352-5` | The whole order with real Word revisions |
 
 The user has said he prefers Word over Excel for reports going forward.
 
@@ -623,8 +632,10 @@ finds an em dash or an out-of-order item number.
 produced and read in full, so changes 1 and 6 no longer rest on reconstruction.** Both have been
 rewritten against the order's real words, and change 6 gained an item it was missing (II.F.2.d).
 **Updated again in Revision 10: OO 1453 has now been produced and read, so the OO 1453 half of
-change 3 quotes the order.** Three of the orders the redlines amend are still **unproduced**:
-OO 1352.5, the PREA Policy, and the Internal Affairs policy. For those, the struck text in each redline is
+change 3 quotes the order.** **Updated again in Revision 12: OO 1352.5 has now been produced and
+read, so change 2 quotes the order, and the text it strikes turned out to be longer than the
+reconstruction this project had been carrying. See section 24.** Two of the orders the redlines
+amend are still **unproduced**: the PREA Policy and the Internal Affairs policy. For those, the struck text in each redline is
 a **reconstruction of what the register describes, not a quotation**, and the section numbers
 trace to the register, which traces to the earlier review that did read the orders. Every item
 carries a Before adoption block saying which it is. Do not let a redline circulate as though the
@@ -973,10 +984,10 @@ stand, the tab schedule, how to use it by role, and what is deliberately not in 
 reasoning stays in the Management Brief at Attachment A and is not restated.
 
 **`PREA_Briefing_Package_Complete.pdf`**, built by `npm run package-pdf`, is the whole thing
-as one bookmarked PDF. **189 pages as of 10/30, ten attachments**: cover 1, A Management Brief 10,
-B Redlines 28, C Crosswalk 50, D Decision Guide 130, E Classification Card 160, F Memo Template 162,
-G Staffing Factors 167, H OO 1453 tracked 169, I OO 1352 tracked 176, **J OO 1352.5 citations and
-actions 182**. Do not hand-maintain those numbers: the build measures them.
+as one bookmarked PDF. **191 pages as of 10/30, ten attachments**: cover 1, A Management Brief 10,
+B Redlines 28, C Crosswalk 50, D Decision Guide 132, E Classification Card 162, F Memo Template 164,
+G Staffing Factors 169, H OO 1453 tracked 171, I OO 1352 tracked 178, **J OO 1352.5 tracked 184**.
+Do not hand-maintain those numbers: the build measures them.
 
 **Three things worth knowing before touching it.**
 
@@ -1202,7 +1213,13 @@ not do it. Ask for the source.
 
 ---
 
-## 23. The third shape: OO 1352.5, and why it is not a redline (10/30)
+## 23. The third shape, and the day it lasted (10/30)
+
+**Superseded the same day by section 24. OO 1352.5 was produced, so the document described below
+no longer exists and its builder and source are deleted.** The section is kept because the
+reasoning is the part worth keeping, and because the shape will be needed again for the PREA
+Policy and the Internal Affairs policy if either is ever amended before it is produced.
+
 
 Tim asked for tracked changes on OO 1352.5 and the answer was no. **The order has never been
 produced to this review.** Checked before answering rather than after: the register and the
@@ -1308,3 +1325,81 @@ called it "our staffing finding" and now calls it "the staffing question". **Not
 the register still scores this as conflict 8, and rescoring it would move the headline count of
 thirteen conflicts through every deliverable. That is a decision to put to Tim, not to take
 quietly.**
+
+---
+
+## 24. OO 1352.5 read, and what four pages changed (Revision 12, 10/30)
+
+Produced hours after the citations-and-actions document shipped. Four pages, scanned, no text
+layer, rasterized at 200 dpi. **`pypdf` returns zero characters.** Full verbatim text is captured
+in `drafts/oo1352-5-tracked.json`, which outlives `docs/`.
+
+**Every section number the register carried is confirmed.** II.A to II.D, III.A to III.K,
+IV.A.1 to IV.A.3, IV.A.3.a to c. Third produced order in a row to vindicate the register's
+provenance, after OO 1352 and OO 1453.
+
+**`OO_1352_5_Tracked_Changes.docx`, built by `npm run tracked-1352-5`.** The whole order with real
+Word revisions. One provision amended, III.I, under change 2. Six findings recorded and
+deliberately not amended. **The citations-and-actions document, its source and its builder are
+deleted**, because its provenance statement asserted the order had never been produced, and that
+is now false. A document whose own disclaimer has become a lie cannot ship.
+
+**Five things in the order that no revision had recorded.**
+
+1. **III.I is longer than the reconstruction.** The order reads "All transgender and intersex
+   youth shall be provided a single room **in order to ensure their privacy and safety**." The
+   redline had been striking a version without the rationale. Finding unchanged, struck text
+   longer. **A reconstruction can be right about the rule and wrong about the words, and only the
+   words can be struck.**
+2. **III.H carries a proviso**: "however, staff may consider the youth's past and present behavior
+   (i.e.: past or present sexual advances, sexually acting out)." It does not weaken the case
+   against S-8. It sharpens it: this order knew how to write a behaviour-based exception and did,
+   and OO 1352 assigned on status instead.
+3. **III.D and III.E are new to the register.** III.E weights "background, age, developmental
+   status, sophistication, social skills, charges, behavioral history". A third place age is a
+   documented housing factor, and more evidence that change 2 needs to create nothing new.
+4. **IV.A.3's first sentence was never recorded, and it is the operative rule.** "Staff will
+   conduct searches based on biological sex except under exigent circumstances, when performed by
+   a medical professional, or if a transgender or intersex youth makes a request for a preferred
+   gender staff." The register had recorded only the second sentence, about respecting preference
+   whenever feasible, and scored the area closed. Row 92, **routed to County Counsel rather than
+   scored as a conflict**, because whether searching a transgender girl by male staff is a cross
+   gender search under 15 CCR 1360(g) is not answered on the face of either text and this review
+   does not answer it.
+5. **IV.A.3.b.3 and b.4 pull against each other**, and the patdown rule has no privacy element at
+   all. Row 93. Not scored as a conflict, on the row 58 near miss reasoning: b.3 governs whether
+   the youth can see the second staff and b.4 governs whether the second staff can see the
+   searcher, so they are awkward rather than strictly contradictory.
+
+**Two corrections to this project's own work, both in row 11, and both ran in the department's
+favour.** The register described IV.A.3 as respecting the youth's preference, which is its second
+sentence and not its rule. And it credited IV.A.3.b and c together with an out-of-view second
+staff member. That is b.3 only, it is strip searches only, and **"out of view of the youth" means
+the youth cannot see the staff member, not that the staff member cannot see the youth.** The
+patdown rule at c.1 says the second staff "remains present and observes". The privacy protection
+this project had credited for patdowns is not in the order.
+
+**The guard that caught the reconstruction, and it is new.** The tracked builder reads
+`drafts/redlines.json` and **fails if the text it strikes does not match the redline's strike
+entry character for character**. Both documents strike the same provision, so both must strike the
+same words. It fired on the first build, because the redline still held the reconstruction, which
+is exactly what it is for.
+
+**One guard had to be rescoped rather than obeyed.** The cover guard added earlier that day reads
+the asks and requires the cover to name every order asked for. The new ask explains that OO 1352.5
+came in and what producing it bought, and the guard read that mention as a request and aborted.
+**It was reading all ask prose instead of the document list.** It now reads only the list after a
+Produce ask's colon, cut at the first period followed by a space, so an order number inside the
+list survives the cut and the explanatory prose after it is ignored. Retested by dropping OO 1354
+from the cover while the ask still asked for it: still fires. **A guard that fires on correct text
+gets switched off, so a false positive is a bug in the guard, not an instruction to reword the
+document.**
+
+**What the department should be asked for next.** The two attachments OO 1352.5 names and neither
+of which has been produced: the Identity Preference Form, and a document titled Ensuring Fairness
+and Respect for the LGBTQI. The form is what III.A and IV.A.3.a both run on. Added as a ninth ask.
+
+**Still unproduced, and the only two left that the redlines amend:** the PREA Policy and the
+Internal Affairs policy. Three drafted amendments rest on a reconstruction until the PREA Policy
+arrives, and Revision 12 is the evidence for what producing it would be worth: five unrecorded
+provisions and two corrections, from four pages.

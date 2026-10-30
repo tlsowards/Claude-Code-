@@ -9,7 +9,7 @@
     "items": [
       "**The analysis is complete.** Nothing in this package is waiting on further review.",
       "**Most of the remediation is drafted.** Amended policy text exists for seven of the fifteen recommended changes, written out and ready to be marked up.",
-      "**What is left needs decisions, not analysis.** A designation, an assignment, and seven documents the review asked for and has not received. Those are listed at the end.",
+      "**What is left needs decisions, not analysis.** A designation, an assignment, and six documents the review asked for and has not received. Those are listed at the end.",
       "**Nothing here is a finding that the department failed to do something.** The review can only speak to the documents produced to it. Where a practice is not written down, the finding says it does not appear in the documents reviewed, which is a different statement. Several findings will close on production of a document rather than on any change in practice."
     ]
   },
@@ -34,7 +34,7 @@
   },
   "attachments": {
     "head": "What is in this package",
-    "body": "Ten documents. Every one is generated from the register or from a single source, so none is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent. Two of them are exceptions, Attachments H and I, which are meant to be worked on in Word: accepting and rejecting their tracked changes is the point of them, and the copy saved afterwards is the department's. Attachment J looks like those two and is not one of them: it carries no tracked changes, because the order it addresses has never been produced to the review and so none of its wording is held.",
+    "body": "Ten documents. Every one is generated from the register or from a single source, so none is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent. Three of them are exceptions, Attachments H, I and J, which are meant to be worked on in Word: accepting and rejecting their tracked changes is the point of them, and the copy saved afterwards is the department's. Attachment J joined them on 10/30, when the order it covers was produced.",
     "items": [
       {
         "tab": "A",
@@ -110,11 +110,11 @@
       },
       {
         "tab": "J",
-        "file": "OO_1352_5_Citations_and_Actions.docx",
-        "name": "OO 1352.5, citations and required actions",
-        "what": "The thirteen provisions of the transgender and intersex order that bear on PREA, what each one does, and the action required. Twelve need no amendment and four exceed the federal standard. One provision, III.I, is the whole finding, and the replacement language for it is drafted here.",
+        "file": "OO_1352_5_Tracked_Changes.docx",
+        "name": "OO 1352.5 with the fix marked",
+        "what": "The whole transgender and intersex order, four pages, with the single room rule at III.I struck and the replacement language inserted as real Word revisions. Six further findings from reading the order are recorded at the end and deliberately not amended.",
         "who": "Policy revision, and County Counsel.",
-        "note": "**This one is not a redline and shows no struck text.** OO 1352.5 has never been produced to the review, so its wording is not held and nothing here is a quotation. Produce the order and this becomes a tracked changes document built like Attachment H."
+        "note": "Produced on 10/30, which is what turned this attachment from a list of citations into a redline. Reading it confirmed every section number the review had carried and turned up five things the review had not recorded, including two subparagraphs on strip searches that cannot both be complied with."
       }
     ]
   },
@@ -123,8 +123,8 @@
     "body": "Stated so the package is not mistaken for the whole file.",
     "items": [
       "**Six earlier documents** are part of this work and are not attached here: the master Policy Review Report, the Applicability Memo, the Liability Exposure Assessment, the Training Gap and Curriculum Plan, the Audit Evidence Request, and the Excel version of the register. They can be supplied on request. **The Liability Exposure Assessment carries its own handling warning and should route through County Counsel before it is circulated at all.**",
-      "**Seven documents the review asked for and has not received.** Several findings may close on production rather than on any remediation, so producing them is the cheapest work available: the PREA Policy itself, OO 1352.5 on transgender and intersex youth, the separation order OO 1354, the Resident Orientation Handbook, the hiring procedure, the contractor and volunteer screening procedure, and staffing rosters with post assignments.",
-      "**The PREA Policy is the highest value of those.** It carries three of the thirteen conflicts and it is the document three of the drafted amendments at Attachment B are written against, which is why those three rest on a reconstruction rather than on the order's real words. **OO 1352.5 is the cheapest of them.** Attachment J sets out its provisions and the one amendment wanted, and producing the order turns that attachment into a redline like Attachment H.",
+      "**Six documents the review asked for and has not received.** Several findings may close on production rather than on any remediation, so producing them is the cheapest work available: the PREA Policy itself, the separation order OO 1354, the Resident Orientation Handbook, the hiring procedure, the contractor and volunteer screening procedure, and staffing rosters with post assignments.",
+      "**The PREA Policy is the highest value of those.** It carries three of the thirteen conflicts and it is the document three of the drafted amendments at Attachment B are written against, which is why those three rest on a reconstruction rather than on the order's real words.",
       "**Training lesson plans are not built yet.** The curriculum analysis exists in one of the six documents above. The all staff and supervisor lesson plans are the next build after the items under What we need are answered."
     ]
   },

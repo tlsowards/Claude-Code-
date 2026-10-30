@@ -4,7 +4,7 @@
 
 > WORKING DRAFT for departmental review. Not legal advice. Route to County Counsel before circulating outside the department.
 
-Sacramento County Probation Department, Youth Detention Facility. Gap register Revision 11, 91 requirements against 17 departmental documents.
+Sacramento County Probation Department, Youth Detention Facility. Gap register Revision 11, 93 requirements against 17 departmental documents.
 
 Generated from `drafts/briefing-package.json` by `npm run package`. Edit the JSON, not this file.
 
@@ -18,7 +18,7 @@ A review of the department's PREA posture at the Youth Detention Facility, and t
 
 - **Most of the remediation is drafted.** Amended policy text exists for seven of the fifteen recommended changes, written out and ready to be marked up.
 
-- **What is left needs decisions, not analysis.** A designation, an assignment, and seven documents the review asked for and has not received. Those are listed at the end.
+- **What is left needs decisions, not analysis.** A designation, an assignment, and six documents the review asked for and has not received. Those are listed at the end.
 
 - **Nothing here is a finding that the department failed to do something.** The review can only speak to the documents produced to it. Where a practice is not written down, the finding says it does not appear in the documents reviewed, which is a different statement. Several findings will close on production of a document rather than on any change in practice.
 
@@ -36,13 +36,15 @@ These are the items that cannot move without a decision from the department. The
 
 4. **Give us the rosters and post assignments.** They settle whether the staffing question is a real gap or a paperwork gap.
 
-5. **Produce six documents:** the PREA Policy itself, OO 1352.5 on transgender and intersex youth, OO 1354 on separation, the resident handbook, the hiring procedure, and the contractor and volunteer screening procedure. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words. OO 1352.5 is the cheapest of the six to act on, because one provision of it is the only thing we are asking to change.
+5. **Produce five documents:** the PREA Policy itself, OO 1354 on separation, the resident handbook, the hiring procedure, and the contractor and volunteer screening procedure. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words. OO 1352.5 came in on 10/30 and is the proof of what that buys: reading it turned a list of citations into a marked up order and found five things we had not recorded.
 
 6. **Confirm whether the county has named Probation** as an agency that receives mandated child abuse reports. One paragraph of a drafted amendment depends on it.
 
 7. **Put a name and a date against each of the 22 critical items.** The register has the columns and they are empty on purpose, because they are yours to fill.
 
 8. **Approve rewriting the PREA Policy** instead of another round of patches, and put the two year review on a calendar.
+
+9. **Produce the two attachments to OO 1352.5:** the Identity Preference Form and the document titled Ensuring Fairness and Respect for the LGBTQI. The form is the instrument two provisions of that order run on, so what it asks the youth decides whether those provisions work.
 
 ---
 
@@ -53,8 +55,8 @@ Read the Conflict line first. Not Addressed means a requirement is not written d
 | Status | Requirements | | Priority | Requirements |
 |---|---|---|---|---|
 | **Conflict** | 13 | | **Critical** | 22 |
-| **Not Addressed** | 21 | | **High** | 39 |
-| **Partial** | 41 | | **Medium** | 16 |
+| **Not Addressed** | 21 | | **High** | 40 |
+| **Partial** | 43 | | **Medium** | 17 |
 | **Addressed** | 14 | | **Low** | 14 |
 | **Not Evidenced** | 2 | |  |  |
 
@@ -64,20 +66,20 @@ Not Evidenced means a document is referenced in a departmental policy but has no
 
 ## What is in this package
 
-Ten documents. Every one is generated from the register or from a single source, so none is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent. Two of them are exceptions, Attachments H and I, which are meant to be worked on in Word: accepting and rejecting their tracked changes is the point of them, and the copy saved afterwards is the department's. Attachment J looks like those two and is not one of them: it carries no tracked changes, because the order it addresses has never been produced to the review and so none of its wording is held.
+Ten documents. Every one is generated from the register or from a single source, so none is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent. Three of them are exceptions, Attachments H, I and J, which are meant to be worked on in Word: accepting and rejecting their tracked changes is the point of them, and the copy saved afterwards is the department's. Attachment J joined them on 10/30, when the order it covers was produced.
 
 | Tab | Document | Page | Who it is for |
 |---|---|---|---|
 | **A** | Management Brief | 10 | Administrators, managers, and anyone who has to decide something. |
 | **B** | Redlines, Changes 1 to 7 | 28 | Policy revision, and County Counsel. |
 | **C** | PREA versus Policy Crosswalk | 50 | Reference. Nobody reads it front to back. |
-| **D** | Supervisor Decision Guide | 130 | Supervisors, read once in advance. Training. |
-| **E** | Supervisor Classification Card | 160 | Every supervisor, on shift. |
-| **F** | Supervisor Incident Memo Template | 162 | Supervisors. |
-| **G** | Staffing Plan Factors | 167 | Whoever answers the staffing question. |
-| **H** | OO 1453 with the fixes marked | 169 | Policy revision, County Counsel, and anyone who wants to see the actual words change rather than read about it. |
-| **I** | OO 1352, the provisions that change | 176 | Policy revision, classification staff, and County Counsel. |
-| **J** | OO 1352.5, citations and required actions | 182 | Policy revision, and County Counsel. |
+| **D** | Supervisor Decision Guide | 132 | Supervisors, read once in advance. Training. |
+| **E** | Supervisor Classification Card | 162 | Every supervisor, on shift. |
+| **F** | Supervisor Incident Memo Template | 164 | Supervisors. |
+| **G** | Staffing Plan Factors | 169 | Whoever answers the staffing question. |
+| **H** | OO 1453 with the fixes marked | 171 | Policy revision, County Counsel, and anyone who wants to see the actual words change rather than read about it. |
+| **I** | OO 1352, the provisions that change | 178 | Policy revision, classification staff, and County Counsel. |
+| **J** | OO 1352.5 with the fix marked | 184 | Policy revision, and County Counsel. |
 
 ### Attachment A. Management Brief
 
@@ -133,11 +135,11 @@ The Classification order's amended provisions, shown as Word tracked changes the
 
 ***This one is not the whole order, and Attachment H is.** OO 1352 runs to twelve pages. It was read in full, but the PDF did not survive, so only the provisions quoted at the time are held. Six provisions carry real redlines because their words are the order's. Two are marked as described rather than quoted, carry no redline, and state the required action instead. **Upload the OO 1352 PDF again and a complete version can be built, the same way OO 1453 was.***
 
-### Attachment J. OO 1352.5, citations and required actions
+### Attachment J. OO 1352.5 with the fix marked
 
-The thirteen provisions of the transgender and intersex order that bear on PREA, what each one does, and the action required. Twelve need no amendment and four exceed the federal standard. One provision, III.I, is the whole finding, and the replacement language for it is drafted here.
+The whole transgender and intersex order, four pages, with the single room rule at III.I struck and the replacement language inserted as real Word revisions. Six further findings from reading the order are recorded at the end and deliberately not amended.
 
-***This one is not a redline and shows no struck text.** OO 1352.5 has never been produced to the review, so its wording is not held and nothing here is a quotation. Produce the order and this becomes a tracked changes document built like Attachment H.*
+*Produced on 10/30, which is what turned this attachment from a list of citations into a redline. Reading it confirmed every section number the review had carried and turned up five things the review had not recorded, including two subparagraphs on strip searches that cannot both be complied with.*
 
 ---
 
@@ -161,9 +163,9 @@ Stated so the package is not mistaken for the whole file.
 
 - **Six earlier documents** are part of this work and are not attached here: the master Policy Review Report, the Applicability Memo, the Liability Exposure Assessment, the Training Gap and Curriculum Plan, the Audit Evidence Request, and the Excel version of the register. They can be supplied on request. **The Liability Exposure Assessment carries its own handling warning and should route through County Counsel before it is circulated at all.**
 
-- **Seven documents the review asked for and has not received.** Several findings may close on production rather than on any remediation, so producing them is the cheapest work available: the PREA Policy itself, OO 1352.5 on transgender and intersex youth, the separation order OO 1354, the Resident Orientation Handbook, the hiring procedure, the contractor and volunteer screening procedure, and staffing rosters with post assignments.
+- **Six documents the review asked for and has not received.** Several findings may close on production rather than on any remediation, so producing them is the cheapest work available: the PREA Policy itself, the separation order OO 1354, the Resident Orientation Handbook, the hiring procedure, the contractor and volunteer screening procedure, and staffing rosters with post assignments.
 
-- **The PREA Policy is the highest value of those.** It carries three of the thirteen conflicts and it is the document three of the drafted amendments at Attachment B are written against, which is why those three rest on a reconstruction rather than on the order's real words. **OO 1352.5 is the cheapest of them.** Attachment J sets out its provisions and the one amendment wanted, and producing the order turns that attachment into a redline like Attachment H.
+- **The PREA Policy is the highest value of those.** It carries three of the thirteen conflicts and it is the document three of the drafted amendments at Attachment B are written against, which is why those three rest on a reconstruction rather than on the order's real words.
 
 - **Training lesson plans are not built yet.** The curriculum analysis exists in one of the six documents above. The all staff and supervisor lesson plans are the next build after the items under What we need are answered.
 

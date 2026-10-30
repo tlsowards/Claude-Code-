@@ -4,7 +4,7 @@
 
 > WORKING DRAFT. Not legal advice. Route to County Counsel before circulating outside the department.
 
-Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 11, 91 requirements against 17 documents.
+Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 11, 93 requirements against 17 documents.
 
 Generated from `drafts/management-brief.json` by `npm run brief`. Edit the JSON, not this file.
 
@@ -47,8 +47,8 @@ This gets asked first every time, so it is settled here. The answer has two halv
 | Status | Rows | | Priority | Rows |
 |---|---|---|---|---|
 | **Conflict** | 13 | | **Critical** | 22 |
-| **Not Addressed** | 21 | | **High** | 39 |
-| **Partial** | 41 | | **Medium** | 16 |
+| **Not Addressed** | 21 | | **High** | 40 |
+| **Partial** | 43 | | **Medium** | 17 |
 | **Addressed** | 14 | | **Low** | 14 |
 | **Not Evidenced** | 2 | |  |  |
 
@@ -256,13 +256,15 @@ These are the things that cannot move until somebody decides. Shortest first.
 
 4. **Give us the rosters and post assignments.** They settle whether the staffing question is a real gap or a paperwork gap.
 
-5. **Produce six documents:** the PREA Policy itself, OO 1352.5 on transgender and intersex youth, OO 1354 on separation, the resident handbook, the hiring procedure, and the contractor and volunteer screening procedure. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words. OO 1352.5 is the cheapest of the six to act on, because one provision of it is the only thing we are asking to change.
+5. **Produce five documents:** the PREA Policy itself, OO 1354 on separation, the resident handbook, the hiring procedure, and the contractor and volunteer screening procedure. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words. OO 1352.5 came in on 10/30 and is the proof of what that buys: reading it turned a list of citations into a marked up order and found five things we had not recorded.
 
 6. **Confirm whether the county has named Probation** as an agency that receives mandated child abuse reports. One paragraph of a drafted amendment depends on it.
 
 7. **Put a name and a date against each of the 22 critical items.** The register has the columns and they are empty on purpose, because they are yours to fill.
 
 8. **Approve rewriting the PREA Policy** instead of another round of patches, and put the two year review on a calendar.
+
+9. **Produce the two attachments to OO 1352.5:** the Identity Preference Form and the document titled Ensuring Fairness and Respect for the LGBTQI. The form is the instrument two provisions of that order run on, so what it asks the youth decides whether those provisions work.
 
 ---
 

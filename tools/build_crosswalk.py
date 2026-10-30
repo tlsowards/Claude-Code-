@@ -21,7 +21,7 @@ CSV_PATH = os.path.join(ROOT, "prea-register.csv")
 JSON_PATH = os.path.join(ROOT, "tools", "crosswalk.json")
 MD_PATH = os.path.join(ROOT, "deliverables", "PREA_versus_Policy_Crosswalk.md")
 
-REVISION = 11
+REVISION = 12
 
 # Order used by 28 CFR part 115 subpart D, with the California and audit
 # groupings appended, so the document tracks what an auditor scores in order.
@@ -86,7 +86,7 @@ DOCUMENTS = [
 CONFLICTS = [
     {
         "n": 1,
-        "checked": 11,
+        "checked": 12,
         "topic": "Categorical LGBTQI housing (classification S-8)",
         "rows": [36],
         "law": "28 CFR 115.342(c). LGBTI residents shall not be placed in "
@@ -106,7 +106,17 @@ CONFLICTS = [
                   "times.\" Both quoted verbatim from the order, produced and "
                   "read in full in Revision 9.",
         "note": "Also contradicts OO 1352's own Purpose and Scope paragraph, PREA "
-                "Policy III.E, and OO 1352.5 III.H. The chronology is worse than "
+                "Policy III.E, and OO 1352.5 III.H, which was confirmed verbatim "
+                "in Revision 12 and reads: \"Staff shall not consider a youth's "
+                "sexual orientation or gender identity as a reason to isolate or "
+                "withhold program options; however, staff may consider the "
+                "youth's past and present behavior (i.e.: past or present sexual "
+                "advances, sexually acting out).\" The proviso is new to this "
+                "register and does not weaken the finding. It permits "
+                "consideration of behaviour, which 15 CCR 1352(f) allows, while "
+                "S-8 is assigned on status, which 1352(e) and 1352(f) forbid. "
+                "This order knew how to write a behaviour-based exception and "
+                "wrote one; OO 1352 did not. The chronology is worse than "
                 "earlier revisions recorded. 15 CCR 1352(e) was not added by the "
                 "2019 Title 15 rewrite; it is in the edition effective "
                 "04/01/2014. S-8 was created 12/09/2019 and retained on the "
@@ -142,23 +152,38 @@ CONFLICTS = [
     },
     {
         "n": 2,
-        "checked": 11,
+        "checked": 12,
         "topic": "Categorical single-room housing for transgender and intersex youth",
         "rows": [37],
         "law": "28 CFR 115.342(d) to (g); 15 CCR 1352.5(a) to (e). Housing and "
                "program assignments are decided case by case.",
-        "policy": "OO 1352.5 III.I gives all transgender and intersex youth a "
-                  "single room.",
+        "policy": "OO 1352.5 III.I reads: \"All transgender and intersex youth "
+                  "shall be provided a single room in order to ensure their "
+                  "privacy and safety.\" Quoted verbatim from the order, "
+                  "produced and read in full in Revision 12.",
         "note": "The same categorical defect as conflict 1 but more defensible: "
-                "there is a privacy rationale and program access is preserved at "
-                "III.K. It still contradicts III.B, III.F, and III.H of the same "
-                "order.",
+                "the order states its own privacy and safety rationale and "
+                "program access is preserved at III.K. It still contradicts "
+                "III.B, III.F, and III.H of the same order, all three of which "
+                "were confirmed verbatim in Revision 12. Reading the order "
+                "strengthened the fix rather than the finding: III.E, new to the "
+                "register in Revision 12, already requires staff to weigh "
+                "background, age, developmental status, sophistication, social "
+                "skills, charges and behavioral history, and III.F already "
+                "requires the determination to be documented in JPIP with a date "
+                "and a justification. The individualized machinery III.I "
+                "overrides is already written and already adequate, so the "
+                "amendment creates nothing new. Note also that through Revision "
+                "11 this project struck a reconstruction of III.I that omitted "
+                "the words \"in order to ensure their privacy and safety\". The "
+                "finding never moved; the text being replaced is longer than "
+                "recorded.",
         "fix": "Recommended change 2: convert to a presumptive, documented, "
                "individualized outcome.",
     },
     {
         "n": 3,
-        "checked": 11,
+        "checked": 12,
         "topic": "Child abuse reporting timeline",
         "rows": [48],
         "law": "PC 11166(a). Telephone report immediately or as soon as "
@@ -188,7 +213,7 @@ CONFLICTS = [
     },
     {
         "n": 4,
-        "checked": 11,
+        "checked": 12,
         "topic": "Cross-facility notification window",
         "rows": [52],
         "law": "28 CFR 115.363(b). Notify the head of the facility where the "
@@ -201,7 +226,7 @@ CONFLICTS = [
     },
     {
         "n": 5,
-        "checked": 11,
+        "checked": 12,
         "topic": "Discipline for allegations found false",
         "rows": [64],
         "law": "28 CFR 115.378(f) protects a good-faith report based on a "
@@ -223,7 +248,7 @@ CONFLICTS = [
     },
     {
         "n": 6,
-        "checked": 11,
+        "checked": 12,
         "topic": "Victimization treated as an indicator of abusiveness",
         "rows": [80],
         "law": "28 CFR 115.341(c). Prior victimization and prior abusiveness are "
@@ -255,7 +280,7 @@ CONFLICTS = [
     },
     {
         "n": 7,
-        "checked": 11,
+        "checked": 12,
         "topic": "Records retention",
         "rows": [59],
         "law": "28 CFR 115.371(j). Retain investigation reports for as long as "
@@ -271,7 +296,7 @@ CONFLICTS = [
     },
     {
         "n": 8,
-        "checked": 11,
+        "checked": 12,
         "topic": "Staffing ratios",
         "rows": [6],
         "law": "28 CFR 115.313(c). At least 1:8 during waking hours and 1:16 "
@@ -287,7 +312,7 @@ CONFLICTS = [
     },
     {
         "n": 9,
-        "checked": 11,
+        "checked": 12,
         "topic": "Duty assigned to a position that does not exist",
         "rows": [2],
         "law": "28 CFR 115.311(b). Designate an upper-level, agency-wide PREA "
@@ -311,7 +336,7 @@ CONFLICTS = [
     },
     {
         "n": 10,
-        "checked": 11,
+        "checked": 12,
         "topic": "Policy age and biennial review",
         "rows": [74],
         "law": "15 CCR 1324. The policy and procedure manual is administratively "
@@ -326,7 +351,7 @@ CONFLICTS = [
     },
     {
         "n": 11,
-        "checked": 11,
+        "checked": 12,
         "topic": "Obsolete statutory citations",
         "rows": [78],
         "law": "PC 287. SB 1494 renumbered PC 288a to PC 287 effective "
@@ -349,7 +374,7 @@ CONFLICTS = [
     },
     {
         "n": 12,
-        "checked": 11,
+        "checked": 12,
         "topic": "Intake policy substantively obsolete",
         "rows": [79],
         "law": "15 CCR 1350 and 1350.5. Intake and admittance policy must reflect "
@@ -363,7 +388,7 @@ CONFLICTS = [
     },
     {
         "n": 13,
-        "checked": 11,
+        "checked": 12,
         "topic": "Supervisor directed to question a youth suspect without the mandatory counsel consultation",
         "rows": [91],
         "law": "WIC 625.6, as amended by SB 203 and effective 01/01/2021. A youth "
