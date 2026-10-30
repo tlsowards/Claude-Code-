@@ -4,7 +4,7 @@
 
 > WORKING DRAFT. Not legal advice. Route to County Counsel before circulating outside the department.
 
-Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 10, 91 requirements against 17 documents.
+Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 11, 91 requirements against 17 documents.
 
 Generated from `drafts/management-brief.json` by `npm run brief`. Edit the JSON, not this file.
 
@@ -12,17 +12,17 @@ Generated from `drafts/management-brief.json` by `npm run brief`. Edit the JSON,
 
 ## The short version
 
-Five things, and then the detail behind each one.
+Five things. Then the detail behind each one.
 
-1. **PREA applies to us.** It covers local government confinement facilities. There is no federal fine for a county and no private lawsuit under PREA itself, so the standards are not the risk. They are the measuring stick somebody else uses.
+1. **PREA applies to us.** It covers county juvenile facilities. But there is no federal fine for a county and no one can sue us under PREA itself. So the standards are not the risk. They are the yardstick somebody else measures us with.
 
-2. **The risk is state law and civil liability.** Title 15 embeds PREA content in about ten sections, and BSCC inspects against it every two years. AB 452 removed the limitations period for childhood sexual assault occurring on or after 01/01/2024, so a claim arising from a resident today has no deadline and never will.
+2. **The risk is state law and getting sued.** Title 15 writes PREA content into about ten sections, and BSCC inspects us against it every two years. And a 2024 law removed the deadline for suing over childhood sexual assault. A claim from a resident in our care today never expires.
 
-3. **The documents are mostly there. The problem is what they say.** Of 91 requirements assessed against 17 policies, thirteen are not gaps at all: the policy states a rule that contradicts the law or another one of our own orders. Those are the expensive ones, because a written wrong rule is evidence, and most of them are correctable by amendment.
+3. **We have the policies. The problem is what some of them say.** We checked 91 requirements against 17 of our policies. Thirteen are not missing pieces. They are places where our own policy tells staff to do something the law does not allow, or tells them the opposite of what another one of our policies says. Those are the expensive ones, because a written wrong rule is evidence. Most are fixable by amending a paragraph.
 
-4. **Three of the thirteen create personal exposure for staff, not just the County.** The mandated reporting timeline is wrong in two documents. One order directs supervisors to question a youth in a way that omits a statute that took effect in 2021. Both are correctable this quarter.
+4. **Three of the thirteen put individual staff at risk, not just the County.** Our child abuse reporting deadline is wrong in two documents. One order tells supervisors to question a youth without mentioning a law that took effect in 2021. Both can be fixed this quarter.
 
-5. **Seven of the fifteen recommended changes are drafted and ready to review.** The other eight need a decision from this room, not more analysis. That is the ask.
+5. **Seven of the fifteen fixes are already written and ready to review.** The other eight need a decision from this room, not more analysis. That is the ask.
 
 ---
 
@@ -58,19 +58,19 @@ This gets asked first every time, so it is settled here. The answer has two halv
 
 ## Where the real exposure is
 
-Not 91 rows. These seven. Each one is in the register with the policy text behind it, and each is written the same way: what our policy says, what the rule says, why it costs us, and what the fix is.
+Not 91 items. These seven. Each one is in the register with the policy language behind it. Each reads the same way: what our policy says, what the law says, what it costs us, the fix, and what we need from you.
 
 ### 1. Automatic single room housing for LGBTQI, transgender and intersex youth
 
 *Register rows 36, 37*
 
-**What our policy says.** OO 1352 II.M creates classification S-8 for any LGBTQI youth, and III.I.1 requires single room housing at all times. OO 1352.5 III.I does the same for all transgender and intersex youth.
+**What our policy says.** OO 1352 II.M puts every LGBTQI youth in classification S-8. III.I.1 then says every S-8 youth gets a single room at all times. OO 1352.5 III.I does the same for every transgender and intersex youth.
 
-**What the rule says.** 15 CCR 1352(e) bars separating a youth from the general population or assigning a single occupancy room solely on a listed basis, and states the lawful alternative on its face: individualized placement, or a single room at the youth's specific request. 115.342(c) is to the same effect. 15 CCR 1324(k) separately requires the policy manual itself to bar classification and restrictive housing decisions on those bases.
+**What the rule says.** 15 CCR 1352(e) says you cannot pull a youth out of general population, or put them in a single room, just because of who they are. It spells out the lawful alternative: decide case by case, or give a single room when the youth asks for one. 115.342(c) says the same. 15 CCR 1324(k) separately says our policy manual itself cannot contain a rule like this.
 
-**Why it costs us.** This is the cleanest adverse finding available against us, for three reasons. **The timing.** 1352(e) is not new: it is in the edition effective 04/01/2014. S-8 was created 12/09/2019 and retained on the 02/27/2020 revision, five and a half years after the state rule was already in force. **The comparison, from our own order.** III.I.1 for S-8 and III.E.1.a for S-4 High are word for word identical, and they are the only two provisions in the entire order imposing that mandate. S-4 High is the documented sex offence category. So the order gives LGBTQI youth the identical housing restriction it reserves for adjudicated sex offenders, and gives it to no one else. **And the order contradicts itself:** II.M.1.a defers housing to OO 1352.5, and III.I.1 then forecloses it.
+**Why it costs us.** This is the easiest finding anyone could make against us, for three reasons. **The dates.** The state rule is not new. It has been in force since April 2014. We created S-8 in December 2019 and kept it on a February 2020 revision. That is five and a half years after the rule existed. **Our own order convicts us.** The single room sentence for S-8 and the single room sentence for S-4 High are word for word identical. They are the only two in the whole order. S-4 High is the category for youth with documented sex offences. So we give LGBTQI youth the exact housing restriction we reserve for adjudicated sex offenders, and we give it to nobody else. **The order argues with itself.** II.M.1.a says go look at the transgender policy for housing. III.I.1 then decides housing anyway.
 
-**The fix.** Recommended changes 1 and 2, drafted. Rescind the S-8 mandate and replace it with the 1352(e) list verbatim, carrying the regulation's own carve out for single occupancy at the youth's request, documented. Convert OO 1352.5 III.I to a presumptive, documented, individualized outcome. A fourth paragraph bars any classification code that carries an automatic housing consequence, which is what stops this reappearing under another letter.
+**The fix.** Changes 1 and 2, already written. Strike the automatic single room rule and replace it with the state rule word for word, including its own exception for a youth who asks for a single room. Make single occupancy something you decide and document, not something a label triggers. A fourth paragraph stops this coming back under a different letter.
 
 **What I need.** Nothing. This one is ready to move.
 
@@ -78,85 +78,85 @@ Not 91 rows. These seven. Each one is in the register with the policy text behin
 
 *Register row 48*
 
-**What our policy says.** PREA Policy V.A.4 and OO 1453 I.A.9 both state that sexual assault is reported to Child Protective Services verbally within 24 hours. OO 1453 restated it on a 12/09/2019 revision.
+**What our policy says.** PREA Policy V.A.4 and OO 1453 I.A.9 both say we call Child Protective Services within 24 hours. OO 1453 repeated it on a December 2019 revision.
 
-**What the rule says.** Penal Code 11166(a) requires a telephone report immediately or as soon as practicably possible, with the written report on form SS 8572 within 36 hours.
+**What the rule says.** Penal Code 11166(a) says telephone immediately, or as soon as you practically can. The written report on form SS 8572 goes in within 36 hours.
 
-**Why it costs us.** **This is personal criminal exposure for the employee, not an institutional finding.** The duty under 11166(i)(1) is individual, no supervisor may impede it, and 11166(c) carries penalties. A staff member who follows our written policy exactly can be the one prosecuted. The Code of Conduct VII.A.1 states the standard correctly, so the department contradicts itself in writing, which removes any argument that this was simply never considered.
+**Why it costs us.** **This one can get a staff member prosecuted, not just sued.** The duty belongs to the person who formed the suspicion. No supervisor can get in the way of it. There are criminal penalties for not reporting. So a staff member who follows our written policy exactly is the one exposed. And our Code of Conduct states the rule correctly, so we cannot argue nobody here knew.
 
-**The fix.** Recommended change 3, drafted and staged. Stage one corrects both provisions in place now. Stage two replaces both with a cross reference once a department wide General Order on child abuse reporting issues. Reading OO 1453 in full added a scope correction: every duty in it is keyed to sexual assault, so the insert is drafted to the CANRA trigger instead, which fixes the timeline and the scope together.
+**The fix.** Change 3, written and staged. Fix both documents now. Replace both with a pointer to one new department wide General Order once it issues. Reading OO 1453 in full also showed the order only ever talks about sexual assault, so the new wording is keyed to the reporting trigger in the law instead. That fixes the deadline and the scope together.
 
-**What I need.** Confirm whether the county has designated Probation to receive mandated reports under PC 11165.9. One paragraph of the draft depends on it and it is unconfirmed.
+**What I need.** Find out whether the county has named Probation as an agency that receives these reports. One paragraph of the draft depends on it and nobody has confirmed it.
 
 ### 3. The interrogation instruction omits a statute that took effect in 2021
 
 *Register row 91*
 
-**What our policy says.** OO 1453 I.A.6: the duty supervisor shall take an initial statement from the victim and suspect, and all suspects involved in a sexual assault shall be read a Miranda warning prior to any questioning.
+**What our policy says.** OO 1453 I.A.6: the duty supervisor takes an initial statement from the victim and the suspect, and reads the suspect a Miranda warning before any questioning.
 
-**What the rule says.** WIC 625.6, effective 01/01/2021, requires a youth 17 or younger to consult counsel, in person, by telephone or by video, before a custodial interrogation and before any waiver of Miranda. The consultation may not be waived.
+**What the rule says.** WIC 625.6, in force since January 2021, says a youth 17 or younger has to talk to a lawyer before a custodial interrogation and before giving up Miranda rights. The youth cannot waive that conversation. WIC 625.7, in force since July 2024, separately bars deception and psychologically manipulative questioning of a youth 17 or younger.
 
-**Why it costs us.** **The order says nothing about it**, because it was last revised 12/09/2019, more than a year before the statute took effect. 625.6(b) directs courts to weigh noncompliance on admissibility, and to weigh a willful violation against the officer's credibility under Evidence Code 780. So the exposure runs to the supervisor personally, and the practical cost is that a statement taken under our own order can sink the case it was meant to support. Two further provisions, I.A.8 and I.A.10, confirm the design is deliberate rather than an oversight in drafting.
+**Why it costs us.** **Our order says nothing about either law.** It was last revised in December 2019, before both. The practical cost is that a statement taken under our own order can sink the case it was meant to build, and a judge can weigh a deliberate violation against the supervisor's credibility as a witness. **One important qualifier, and it may matter a lot.** WIC 625.6(d) says the rule does not apply to a probation officer doing normal duties under three specific sections of the code. Those sections are about booking a youth in and deciding whether to hold them, not about questioning a youth over a new offence inside the facility. We think the exemption does not cover this. But we have found no court decision either way, and County Counsel should answer it before we rely on anything here.
 
-**The fix.** Not yet drafted. It is a short amendment to I.A.6 plus a line in the supervisor guidance. Newest of the thirteen, found on reading the order on 10/29.
+**The fix.** Change 8, drafted today, and you have it as a tracked changes copy of the order. It splits the victim statement from the suspect statement, adds the lawyer consultation, writes the emergency exception narrowly and requires it to be documented, adds the ban on deception, and says plainly where a supervisor stops and an investigator starts.
 
-**What I need.** This is the one I would move first, because it is cheap, it is current, and it exposes individual supervisors every time it is followed.
+**What I need.** Send WIC 625.6(d) to County Counsel. That one answer decides whether this is a violation we are carrying or a good practice we should adopt anyway.
 
 ### 4. We have no PREA Coordinator, and one of our own orders routes work to one
 
 *Register rows 2, 3*
 
-**What our policy says.** OO 1453 I.A.15 directs the incident review report to the PREA coordinator. The department advises the position does not exist.
+**What our policy says.** OO 1453 I.A.15 says the incident review report goes to the PREA Coordinator. We do not have one.
 
-**What the rule says.** 115.311(b) requires an upper level, agency wide PREA Coordinator with sufficient time and authority. 115.311(c) requires a compliance manager at each facility where an agency operates more than one.
+**What the rule says.** 115.311(b) requires an agency wide PREA Coordinator with real authority and real time for the job. 115.311(c) requires a compliance manager at each facility if we run more than one.
 
-**Why it costs us.** Two consequences, and the second is the serious one. The required report has nowhere to go, so the incident review process terminates in a position that is not filled. And the order is a **written departmental acknowledgment, dated 12/09/2019, that the role is needed.** That is considerably harder to answer than a silent gap would have been.
+**Why it costs us.** Two problems, and the second is the bad one. The report has nowhere to go, so our incident review process ends at an empty chair. And the order is a **signed departmental document, dated December 2019, saying we need the role.** That is much harder to answer than simply never having mentioned it.
 
-**The fix.** Recommended change 8. This is a designation and an allocation of time, not a drafting exercise.
+**The fix.** Change 8 in the master report. This is naming somebody and giving them the hours. It is not a drafting job.
 
-**What I need.** Name a PREA Coordinator and a facility compliance manager. Blocked on this room, not on analysis.
+**What I need.** Name a PREA Coordinator and a facility compliance manager. Nothing else is blocking this.
 
 ### 5. Nothing is written for the band of conduct that generates most incidents
 
 *Register rows 47, 54, 69*
 
-**What our policy says.** OO 1453 is titled Sexual Assault, its stated authority is PREA, and every operative duty in it is keyed to sexual assault: the staff reporting duty, the CPS report at I.A.9, the incident review at I.A.15.
+**What our policy says.** OO 1453 is titled Sexual Assault. Every duty in it is keyed to those words: the staff reporting duty, the CPS call, the incident review.
 
-**What the rule says.** 115.361(a) requires staff to report knowledge, suspicion or information regarding sexual abuse **or sexual harassment**. 115.6 defines sexual harassment to include repeated unwelcome sexual advances and repeated verbal comments of a derogatory or offensive sexual nature. Title 15 goes further than the federal definition in two respects: it counts coercion by manipulation, and it reaches voyeurism between residents.
+**What the rule says.** 115.361(a) requires staff to report sexual abuse **or sexual harassment**. 115.6 defines harassment to include repeated unwelcome comments of a sexual nature. Title 15 goes further than the federal rule in two ways: it counts coercion by manipulation, and it reaches residents watching other residents.
 
-**Why it costs us.** Read across three pages and fifteen items, nothing in OO 1453 reaches sexual harassment, exposure, or touching not characterised as assault. So we have a coordinated response plan in all but name for the most serious band, and nothing written for the band that produces the volume. **That is where supervisors are improvising**, and improvisation is what later reads as deliberate indifference. It is also the band where, with two residents both 18 or over, there is no external reporting duty of any kind, so the only control is the one we write.
+**Why it costs us.** Across three pages and fifteen items, nothing in OO 1453 reaches harassment, indecent exposure, or touching that is not called assault. So we have a solid response plan for the worst band and nothing written for the band that produces most of the incidents. **That is where supervisors are making it up as they go**, and improvising is what later reads as not caring. It is also the band where, if both residents are 18 or over, there is no outside reporting duty at all. The only control is the one we write.
 
-**The fix.** Recommended change 12, broaden OO 1453, plus recommended change 10 on the grievance route. The supervisor tier chart and classification card already do this operationally and can carry the load while the order is amended.
+**The fix.** Change 12, broaden OO 1453, plus change 10 on grievances. The supervisor tier chart and the classification card already do this job day to day and can carry it while the order is amended.
 
-**What I need.** Decide who conducts youth on youth administrative investigations in this band. It is not written anywhere, and it is the one answer the supervisor materials cannot supply for themselves.
+**What I need.** Decide who investigates youth on youth cases in this band. It is not written down anywhere, and it is the one answer the supervisor materials cannot supply for themselves.
 
 ### 6. Three retention rules govern the same records, against a claim with no deadline
 
 *Register row 59*
 
-**What our policy says.** Internal Affairs XI.C.1 retains complaint and investigation records at least five years. PREA Policy XVIII.B retains case records associated with claims of sexual abuse at least ten years.
+**What our policy says.** Internal Affairs XI.C.1 keeps complaint and investigation records five years. PREA Policy XVIII.B keeps sexual abuse case records ten years.
 
-**What the rule says.** 115.371(j) requires retention for as long as the alleged abuser is employed or incarcerated, plus five years.
+**What the rule says.** 115.371(j) says keep them as long as the alleged abuser is here, plus five years.
 
-**Why it costs us.** Any of the three can be read as authority to destroy a record the other two require. Against AB 452 that is the costly version of a filing question: the limitations period for childhood sexual assault occurring on or after 01/01/2024 is eliminated, so a claim arising from a resident today has no deadline. CCP 340.1 also provides treble damages for a cover up, and a destruction that followed one of our own schedules is exactly the fact pattern that argument is built from.
+**Why it costs us.** Any one of the three can be read as permission to destroy a record the other two require us to keep. Put that against the 2024 law: for childhood sexual assault on or after January 1 2024, there is no deadline to sue, ever. A claim from a resident today has no expiry. The law also allows treble damages where there has been a cover up, and destroying records on our own written schedule is exactly the fact pattern that argument is built from.
 
-**The fix.** Recommended change 7, drafted. One reconciled schedule, and paragraph 3 is written as a destruction moratorium for conduct on or after 01/01/2024, because no fixed retention figure can cover a claim with no limitations period.
+**The fix.** Change 7, written. One schedule, reconciled. Paragraph 3 is a hold on destruction for anything on or after January 1 2024, because no fixed number of years can cover a claim with no deadline.
 
-**What I need.** County Counsel sets the schedule. A policy revision cannot.
+**What I need.** County Counsel sets the schedule. A policy revision cannot do it.
 
 ### 7. The governing PREA policy has not been revised since 2013
 
 *Register row 74*
 
-**What our policy says.** The PREA Policy and Procedure for Juvenile Institutions carries an effective and revision date of 04/25/2013. The Internal Affairs policy dates to 01/11/2011. The Detention and Intake responsibility document is undated and references CYA throughout.
+**What our policy says.** Our PREA Policy says effective and revised April 25, 2013. The Internal Affairs policy dates to 2011. The intake document has no date at all and still refers to CYA.
 
-**What the rule says.** 15 CCR 1324 requires the policy and procedure manual to be administratively reviewed at least every two years and updated as necessary.
+**What the rule says.** 15 CCR 1324 says the policy manual gets an administrative review at least every two years, and gets updated when it needs it.
 
-**Why it costs us.** This is the finding that needs no argument at all. The policy predates the 01/01/2019 Title 15 rewrite that added 1350.5, 1352.5, 1324(n) and 1361(h), and it predates WIC 208.3 and the renumbering of PC 288a to PC 287. **On a BSCC inspection this is established by reading the cover page.** It also carries three of the thirteen conflicts on its own, so the review is not a formality.
+**Why it costs us.** This is the finding that needs no argument. The policy predates the January 2019 Title 15 rewrite that added four sections we now have to comply with. It predates the room confinement law. It predates a Penal Code section being renumbered. **On a BSCC inspection this is proved by reading the cover page.** And the policy carries three of the thirteen conflicts by itself, so the review is not a formality.
 
-**The fix.** Recommended change 3 covers the reporting standard. Beyond that the policy is worth rewriting to Subpart D order so each provision maps to what an auditor scores, rather than amended item by item.
+**The fix.** Change 3 fixes the reporting standard. Beyond that the policy is worth rewriting in the order an auditor scores it, rather than patching it item by item.
 
-**What I need.** Approve the rewrite rather than another round of amendments, and set the biennial review on a calendar so this does not recur.
+**What I need.** Approve the rewrite instead of another round of amendments, and put the two year review on a calendar so we do not end up here again.
 
 ---
 
@@ -246,21 +246,23 @@ Drafting projects rather than amendments. Each needs an owner and a date.
 
 ## What I need from you
 
-Everything above is either drafted or blocked. These are the blockages, shortest first.
+These are the things that cannot move until somebody decides. Shortest first.
 
-1. **Name a PREA Coordinator and a facility compliance manager.** Blocks recommended change 8, and our own order already routes work to the position.
+1. **Name a PREA Coordinator and a facility compliance manager.** Our own order already sends work to that position.
 
-2. **Decide who conducts youth on youth administrative investigations** in the band below sexual assault. Not written anywhere. It is the one answer the supervisor materials cannot supply for themselves.
+2. **Decide who investigates youth on youth cases** below the level of sexual assault. It is not written down anywhere.
 
-3. **Produce the rosters and post assignments.** Settles whether the staffing finding is a real gap or a documentation gap, and unblocks change 9.
+3. **Send WIC 625.6(d) to County Counsel.** It decides whether the interrogation finding is a violation we are carrying or a good practice we should adopt anyway.
 
-4. **Produce the PREA Policy itself, OO 1354 on separation**, the orientation handbook, and the hiring and contractor screening procedures. Several findings may close on production rather than on remediation. The PREA Policy is the most valuable of the four: three of the drafted amendments are written against it, and until it is produced those three rest on a reconstruction of what it says rather than on its real words.
+4. **Give us the rosters and post assignments.** They settle whether our staffing finding is a real gap or a paperwork gap.
 
-5. **Confirm whether the county has designated Probation to receive mandated reports** under PC 11165.9. One paragraph of a drafted redline depends on it.
+5. **Produce five documents:** the PREA Policy itself, OO 1354 on separation, the resident handbook, and the hiring and contractor screening procedures. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words.
 
-6. **Owners and target dates for the 22 critical rows.** The register has the columns and they are empty by design, because they are the department's to fill.
+6. **Confirm whether the county has named Probation** as an agency that receives mandated child abuse reports. One paragraph of a drafted amendment depends on it.
 
-7. **Approve the PREA Policy rewrite** rather than a further round of item by item amendments, and put the 15 CCR 1324 biennial review on a calendar.
+7. **Put a name and a date against each of the 22 critical items.** The register has the columns and they are empty on purpose, because they are yours to fill.
+
+8. **Approve rewriting the PREA Policy** instead of another round of patches, and put the two year review on a calendar.
 
 ---
 

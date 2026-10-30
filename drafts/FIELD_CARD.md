@@ -76,4 +76,4 @@ Supervisor: ______________________  Date and time: ______________
 
 *Not legal advice. Statutory questions, and every CANRA call in the grey, go to County Counsel.*
 
-*Generated from `drafts/supervisor-guide.json` by `npm run field-card`. Do not hand-edit this file or the Word version; the next build overwrites them. Drawn from gap register Revision 10.*
+*Generated from `drafts/supervisor-guide.json` by `npm run field-card`. Do not hand-edit this file or the Word version; the next build overwrites them. Drawn from gap register Revision 11.*

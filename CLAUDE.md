@@ -36,7 +36,11 @@ hedging, and he will catch a wrong citation.
 
 ## 3. Project state
 
-Register is at **Revision 10**. 91 requirements assessed against 17 departmental policies.
+Register is at **Revision 11**. 91 requirements assessed against 17 departmental policies.
+
+**Revision 11 is a correction pass on one row, and it runs partly in the department's favour.**
+Row 91 and conflict 13 were recorded in Revision 10 without two subdivisions of the statute they
+rest on. See section 21. No status or priority changed; the register diff is one line.
 
 Revision 6 verified against the Title 15 edition **effective 01/01/2019** and corrected three
 citations. Revision 7 closed the gap it left, re-reading the six sections still carrying their
@@ -459,6 +463,21 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
   Confirm adoption before citing any regulation, and never draft against a text that can still
   change.** The practical consequence is good news: the edition effective 01/01/2019 is operative, so
   every Title 15 citation in this register stands.
+- **Revision 10 recorded conflict 13 and row 91 without WIC 625.6(c) or 625.6(d). Corrected in
+  11, and the correction narrows the finding.** The statute was summarised from research rather
+  than read to the end. **625.6(d) provides that the consultation requirement does not apply to a
+  probation officer acting in the normal performance of duties under WIC 625, 627.5 or 628.** A
+  duty supervisor is a probation officer. Those three sections concern taking a minor into
+  temporary custody, advising a minor on delivery to a probation officer, and the decision to
+  release or detain, so on the better reading none of them covers questioning a resident about a
+  new offence inside the facility, and the finding survives. But it is materially more contestable
+  than Revision 10 recorded, no case deciding it was found, and it is the first argument the
+  department or opposing counsel would raise. **It is now the gating County Counsel question.**
+  Status held at Conflict rather than lowered, because the order is silent on a statute that on
+  the better reading applies to it, and silence is not an exemption. 625.6(c), the imminent threat
+  exception, was also missing and is now in the draft amendment. **The lesson: a statute summarised
+  from a search result is not a statute read. Read every subdivision before scoring a conflict on
+  it, because the exemption subdivision is the one that decides whether there is a conflict at all.**
 - **Do not assume isolation is available as a disciplinary sanction.** OO 1390/1391 III omits
   it from the consequences list and OO 1354.5 I.C.1 prohibits confinement for punishment. The
   department has excluded it, which is a stronger position than complying with the isolation
@@ -993,3 +1012,57 @@ role is, read the order that assigns the role. Where the order has not been prod
 face of the document that the role statement rests on the standards and not on departmental policy,
 and name the order that would settle it. The memo template did this correctly for the response
 sequence, flagging that OO 1453 had never been produced. The role matrix did not.
+
+---
+
+## 21. Revision 11, and the first tracked changes document (10/30)
+
+**The correction.** See section 8. Revision 10 scored conflict 13 on WIC 625.6 without reading
+625.6(c) or 625.6(d). (d) exempts a probation officer acting in the normal performance of duties
+under WIC 625, 627.5 or 628, and a duty supervisor is a probation officer. The finding survives on
+the better reading, and it is now the gating question for County Counsel rather than a settled
+violation. Status held at Conflict. Row 91, conflict 13, and the management brief's exposure item 3
+all carry the qualifier now.
+
+**A new defect in the same paragraph. WIC 625.7, effective 07/01/2024**, bars threats, physical
+harm, deception and psychologically manipulative tactics in the custodial interrogation of a youth
+17 or younger. OO 1453 I.A.6 predates it by more than four years and omits it too. Content and
+effective date confirmed by search, not read from primary source. **The bill that added it is
+deliberately not cited, because it could not be confirmed.** Do not cite a bill number for 625.7
+until somebody checks it.
+
+**Change 8 is drafted**, as both a redline entry and something new.
+
+**`OO_1453_Tracked_Changes.docx`, built by `npm run tracked-1453` from `drafts/oo1453-tracked.json`.**
+This is the order's own text carrying real Word revisions, `w:ins` and `w:del` with `w:delText`, so
+the department opens it in Word, uses Review, and accepts or rejects each change. Accepting them all
+leaves a clean amended order. Two paragraphs are amended: I.A.6 for change 8 and I.A.9 for change 3.
+Three further defects are recorded in its notes and deliberately **not** amended, because the fix
+for those is not a change of wording.
+
+**Three guards on it, and one of them taught something general.**
+
+**The base text must be the order's own words**, and the build refuses if the provenance statement
+saying so is removed. A tracked changes document asserts "this is your policy, with edits". That
+claim is only safe while it is true.
+
+**Every amended paragraph must name its change number and its register rows**, because that is what
+the department correlates against the briefing packet.
+
+**The no-dash rule had to be rescoped, and this is the general lesson.** Paragraph 1 of OO 1453
+contains an en dash in "no access to toilet, see #5 below". The project rule forbids dashes, so the
+first build aborted on the department's own punctuation. Silently correcting it would have
+misrepresented the base text, which is the one thing this document must not do. **The guard now runs
+over authored text only: inserts, notes, labels and the before-adoption block. Quoted text is exempt
+by construction, not by an allowlist.** A house style rule governs what this project writes and
+cannot govern what it quotes.
+
+**Full text of OO 1453 is now captured** in `drafts/oo1453-tracked.json`, all fifteen items plus the
+front matter, transcribed from the PDF. That outlives `docs/`, which does not survive a container.
+
+**What is needed to do this for the other orders.** A tracked changes document can only be built for
+a policy whose real text is in hand. That is OO 1453 and nothing else. OO 1352's text was captured
+only as the quoted provisions, not in full, and its PDF is gone. OO 1352.5, the PREA Policy and the
+Internal Affairs policy have never been produced at all. **Building one of these from a
+reconstruction would hand the department a document that looks like their policy and is not.** Do
+not do it. Ask for the source.

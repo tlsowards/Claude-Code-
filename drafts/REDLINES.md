@@ -2,7 +2,7 @@
 
 Amendment language for the seven changes correctable without new policy
 
-Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 10.
+Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 11.
 
 > This is not legal advice. It is proposed amendment language prepared for internal remediation planning. Statutory questions, and every item in a *Before adoption* block, route to County Counsel.
 

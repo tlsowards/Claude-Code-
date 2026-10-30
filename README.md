@@ -11,7 +11,7 @@ overwrite `CLAUDE.md` with a generated one.
 
 ```
 CLAUDE.md            project memory: working rules, findings, verified authorities
-prea-register.csv    the working record. 91 requirements, register Revision 10
+prea-register.csv    the working record. 91 requirements, register Revision 11
 docs/                the 17 source policy documents (not in the repository)
 deliverables/        finished work product
 drafts/              redlines and new policy drafts, generated from redlines.json

@@ -4,7 +4,7 @@
 
 > WORKING DRAFT for departmental review. Not legal advice. Route to County Counsel before circulating outside the department.
 
-Sacramento County Probation Department, Youth Detention Facility. Gap register Revision 10, 91 requirements against 17 departmental documents.
+Sacramento County Probation Department, Youth Detention Facility. Gap register Revision 11, 91 requirements against 17 departmental documents.
 
 Generated from `drafts/briefing-package.json` by `npm run package`. Edit the JSON, not this file.
 
@@ -28,19 +28,21 @@ A review of the department's PREA posture at the Youth Detention Facility, and t
 
 These are the items that cannot move without a decision from the department. They are reproduced from the management brief at Attachment A, which carries the reasoning behind each one.
 
-1. **Name a PREA Coordinator and a facility compliance manager.** Blocks recommended change 8, and our own order already routes work to the position.
+1. **Name a PREA Coordinator and a facility compliance manager.** Our own order already sends work to that position.
 
-2. **Decide who conducts youth on youth administrative investigations** in the band below sexual assault. Not written anywhere. It is the one answer the supervisor materials cannot supply for themselves.
+2. **Decide who investigates youth on youth cases** below the level of sexual assault. It is not written down anywhere.
 
-3. **Produce the rosters and post assignments.** Settles whether the staffing finding is a real gap or a documentation gap, and unblocks change 9.
+3. **Send WIC 625.6(d) to County Counsel.** It decides whether the interrogation finding is a violation we are carrying or a good practice we should adopt anyway.
 
-4. **Produce the PREA Policy itself, OO 1354 on separation**, the orientation handbook, and the hiring and contractor screening procedures. Several findings may close on production rather than on remediation. The PREA Policy is the most valuable of the four: three of the drafted amendments are written against it, and until it is produced those three rest on a reconstruction of what it says rather than on its real words.
+4. **Give us the rosters and post assignments.** They settle whether our staffing finding is a real gap or a paperwork gap.
 
-5. **Confirm whether the county has designated Probation to receive mandated reports** under PC 11165.9. One paragraph of a drafted redline depends on it.
+5. **Produce five documents:** the PREA Policy itself, OO 1354 on separation, the resident handbook, and the hiring and contractor screening procedures. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words.
 
-6. **Owners and target dates for the 22 critical rows.** The register has the columns and they are empty by design, because they are the department's to fill.
+6. **Confirm whether the county has named Probation** as an agency that receives mandated child abuse reports. One paragraph of a drafted amendment depends on it.
 
-7. **Approve the PREA Policy rewrite** rather than a further round of item by item amendments, and put the 15 CCR 1324 biennial review on a calendar.
+7. **Put a name and a date against each of the 22 critical items.** The register has the columns and they are empty on purpose, because they are yours to fill.
+
+8. **Approve rewriting the PREA Policy** instead of another round of patches, and put the two year review on a calendar.
 
 ---
 
@@ -62,17 +64,18 @@ Not Evidenced means a document is referenced in a departmental policy but has no
 
 ## What is in this package
 
-Seven documents. Every one is generated from the register or from a single source file, so none of them is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent.
+Eight documents. Every one is generated from the register or from a single source file, so none is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent. The one exception is Attachment H, which is meant to be worked on in Word: accepting and rejecting its tracked changes is the point of it, and that copy is the department's.
 
 | Tab | Document | Page | Who it is for |
 |---|---|---|---|
 | **A** | Management Brief | 9 | Administrators, managers, and anyone who has to decide something. |
 | **B** | Redlines, Changes 1 to 7 | 27 | Policy revision, and County Counsel. |
 | **C** | PREA versus Policy Crosswalk | 49 | Reference. Nobody reads it front to back. |
-| **D** | Supervisor Decision Guide | 128 | Supervisors, read once in advance. Training. |
-| **E** | Supervisor Classification Card | 158 | Every supervisor, on shift. |
-| **F** | Supervisor Incident Memo Template | 160 | Supervisors. |
-| **G** | Staffing Plan Factors | 165 | Whoever answers the staffing question. |
+| **D** | Supervisor Decision Guide | 129 | Supervisors, read once in advance. Training. |
+| **E** | Supervisor Classification Card | 159 | Every supervisor, on shift. |
+| **F** | Supervisor Incident Memo Template | 161 | Supervisors. |
+| **G** | Staffing Plan Factors | 166 | Whoever answers the staffing question. |
+| **H** | OO 1453 with the fixes marked | 168 | Policy revision, County Counsel, and anyone who wants to see the actual words change rather than read about it. |
 
 ### Attachment A. Management Brief
 
@@ -115,6 +118,12 @@ The memo a supervisor writes after classifying an incident, with the classificat
 The factors the federal standard requires a documented staffing plan to address.
 
 *The staffing finding cannot be called either way until rosters are produced. The state floor sits at the department's written ratio, so the gap may be documentation rather than staffing. That is a materially different conversation and it is cheap to settle.*
+
+### Attachment H. OO 1453 with the fixes marked
+
+The Sexual Assault order itself, with the proposed amendments shown as Word tracked changes. Struck text is what comes out, underlined text is what goes in. Open it in Word, use Review, and accept or reject each change one at a time. Accepting them all leaves a clean amended order.
+
+*The base text is the order's own words, transcribed from the PDF produced to this review. Two paragraphs are amended: I.A.6 for the youth interrogation statutes (change 8) and I.A.9 for the child abuse reporting deadline (change 3). Three further defects are recorded in its notes and deliberately not amended, because the fix for those is not a change of wording. **Read its Before adoption page first: one open legal question has to go to County Counsel before any of it is relied on.***
 
 ---
 

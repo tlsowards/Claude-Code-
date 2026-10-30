@@ -21,7 +21,7 @@ CSV_PATH = os.path.join(ROOT, "prea-register.csv")
 JSON_PATH = os.path.join(ROOT, "tools", "crosswalk.json")
 MD_PATH = os.path.join(ROOT, "deliverables", "PREA_versus_Policy_Crosswalk.md")
 
-REVISION = 10
+REVISION = 11
 
 # Order used by 28 CFR part 115 subpart D, with the California and audit
 # groupings appended, so the document tracks what an auditor scores in order.
@@ -86,7 +86,7 @@ DOCUMENTS = [
 CONFLICTS = [
     {
         "n": 1,
-        "checked": 10,
+        "checked": 11,
         "topic": "Categorical LGBTQI housing (classification S-8)",
         "rows": [36],
         "law": "28 CFR 115.342(c). LGBTI residents shall not be placed in "
@@ -142,7 +142,7 @@ CONFLICTS = [
     },
     {
         "n": 2,
-        "checked": 10,
+        "checked": 11,
         "topic": "Categorical single-room housing for transgender and intersex youth",
         "rows": [37],
         "law": "28 CFR 115.342(d) to (g); 15 CCR 1352.5(a) to (e). Housing and "
@@ -158,7 +158,7 @@ CONFLICTS = [
     },
     {
         "n": 3,
-        "checked": 10,
+        "checked": 11,
         "topic": "Child abuse reporting timeline",
         "rows": [48],
         "law": "PC 11166(a). Telephone report immediately or as soon as "
@@ -188,7 +188,7 @@ CONFLICTS = [
     },
     {
         "n": 4,
-        "checked": 10,
+        "checked": 11,
         "topic": "Cross-facility notification window",
         "rows": [52],
         "law": "28 CFR 115.363(b). Notify the head of the facility where the "
@@ -201,7 +201,7 @@ CONFLICTS = [
     },
     {
         "n": 5,
-        "checked": 10,
+        "checked": 11,
         "topic": "Discipline for allegations found false",
         "rows": [64],
         "law": "28 CFR 115.378(f) protects a good-faith report based on a "
@@ -223,7 +223,7 @@ CONFLICTS = [
     },
     {
         "n": 6,
-        "checked": 10,
+        "checked": 11,
         "topic": "Victimization treated as an indicator of abusiveness",
         "rows": [80],
         "law": "28 CFR 115.341(c). Prior victimization and prior abusiveness are "
@@ -255,7 +255,7 @@ CONFLICTS = [
     },
     {
         "n": 7,
-        "checked": 10,
+        "checked": 11,
         "topic": "Records retention",
         "rows": [59],
         "law": "28 CFR 115.371(j). Retain investigation reports for as long as "
@@ -271,7 +271,7 @@ CONFLICTS = [
     },
     {
         "n": 8,
-        "checked": 10,
+        "checked": 11,
         "topic": "Staffing ratios",
         "rows": [6],
         "law": "28 CFR 115.313(c). At least 1:8 during waking hours and 1:16 "
@@ -287,7 +287,7 @@ CONFLICTS = [
     },
     {
         "n": 9,
-        "checked": 10,
+        "checked": 11,
         "topic": "Duty assigned to a position that does not exist",
         "rows": [2],
         "law": "28 CFR 115.311(b). Designate an upper-level, agency-wide PREA "
@@ -311,7 +311,7 @@ CONFLICTS = [
     },
     {
         "n": 10,
-        "checked": 10,
+        "checked": 11,
         "topic": "Policy age and biennial review",
         "rows": [74],
         "law": "15 CCR 1324. The policy and procedure manual is administratively "
@@ -326,7 +326,7 @@ CONFLICTS = [
     },
     {
         "n": 11,
-        "checked": 10,
+        "checked": 11,
         "topic": "Obsolete statutory citations",
         "rows": [78],
         "law": "PC 287. SB 1494 renumbered PC 288a to PC 287 effective "
@@ -349,7 +349,7 @@ CONFLICTS = [
     },
     {
         "n": 12,
-        "checked": 10,
+        "checked": 11,
         "topic": "Intake policy substantively obsolete",
         "rows": [79],
         "law": "15 CCR 1350 and 1350.5. Intake and admittance policy must reflect "
@@ -363,7 +363,7 @@ CONFLICTS = [
     },
     {
         "n": 13,
-        "checked": 10,
+        "checked": 11,
         "topic": "Supervisor directed to question a youth suspect without the mandatory counsel consultation",
         "rows": [91],
         "law": "WIC 625.6, as amended by SB 203 and effective 01/01/2021. A youth "
@@ -372,14 +372,43 @@ CONFLICTS = [
                "interrogation and before waiving any Miranda rights. The "
                "consultation may not be waived. 625.6(b) directs courts to weigh "
                "noncompliance on admissibility and to weigh a willful violation "
-               "against the officer's credibility under Evidence Code 780.",
+               "against the officer's credibility under Evidence Code 780. "
+               "625.6(c) excepts questioning where the officer reasonably "
+               "believes the information is necessary to protect life or property "
+               "from an imminent threat and the questions are limited to what is "
+               "reasonably necessary. 625.6(d) provides that subdivision (a) does "
+               "not apply to a probation officer acting in the normal performance "
+               "of duties under WIC 625, 627.5 or 628. Separately, WIC 625.7, "
+               "effective 07/01/2024, bars threats, physical harm, deception and "
+               "psychologically manipulative tactics in the custodial "
+               "interrogation of a youth 17 or younger.",
         "policy": "OO 1453 I.A.6: 'The duty supervisor shall take an initial "
                   "statement from the victim and suspect. All suspects involved "
                   "in a sexual assault shall be read a \"Miranda Warning\", prior "
                   "to any questioning.' The order says nothing about the 625.6 "
                   "consultation. It was last revised 12/09/2019, more than a year "
                   "before SB 203 took effect, and has not been updated since.",
-        "note": "New in Revision 10, on reading OO 1453 for the first time. Two "
+        "note": "CORRECTED IN REVISION 11, AND THE CORRECTION RUNS PARTLY IN THE "
+                "DEPARTMENT'S FAVOUR. Revision 10 recorded this conflict without "
+                "625.6(c) or 625.6(d), because the statute was summarised rather "
+                "than read to the end. 625.6(d) is the one that matters: a duty "
+                "supervisor is a probation officer, and if taking this statement "
+                "is normal performance of duties under WIC 625, 627.5 or 628 then "
+                "the consultation requirement does not reach it at all. Those "
+                "three sections concern taking a minor into temporary custody, "
+                "advising a minor on delivery to a probation officer, and the "
+                "decision to release or detain, none of which obviously covers "
+                "questioning a resident about a new offence alleged to have "
+                "occurred inside the facility. The finding survives on the better "
+                "reading, and it is materially more contestable than Revision 10 "
+                "recorded. This review found no case deciding it, and it is the "
+                "first argument the department or opposing counsel would raise. "
+                "It is the gating question for County Counsel, and the status is "
+                "held at Conflict pending the answer rather than lowered, because "
+                "the order is silent on a statute that on the better reading "
+                "applies to it and silence is not an exemption. WIC 625.7 is a "
+                "second statute the same paragraph predates and also omits. "
+                "First recorded in Revision 10, on reading OO 1453. Two "
                 "further provisions confirm the design is deliberate rather than "
                 "an aside: I.A.8 conditions the Sheriff notification on what is "
                 "believed 'after initial inquiry', and I.A.10 refers to 'the "
@@ -395,8 +424,14 @@ CONFLICTS = [
                 "I.A.6 statement. The one interview the order assigns to facility "
                 "staff is the only one in the sequence with no advocate right "
                 "attached.",
-        "fix": "Amend I.A.6 to require the WIC 625.6 consultation before any "
-               "questioning of a suspect aged 17 or under, and to record it. "
+        "fix": "Drafted in Revision 11 as recommended change 8, and available as "
+               "a tracked changes copy of the order built from its own words. The "
+               "amendment splits the victim statement from the suspect statement, "
+               "adds the 625.6 consultation, writes the 625.6(c) exception "
+               "narrowly and requires it to be documented, adds the 625.7 "
+               "prohibition, and states where the supervisor stops and a trained "
+               "investigator starts. Until adopted, obtain the consultation "
+               "anyway. This is not a reason "
                "Until then, obtain the consultation anyway. This is not a reason "
                "to tell supervisors to ignore I.A.6: the statement itself is "
                "directed by the order.",

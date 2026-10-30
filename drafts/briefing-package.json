@@ -2,7 +2,7 @@
  "title": "YDF PREA Compliance",
  "subtitle": "Briefing and document package",
  "status": "WORKING DRAFT for departmental review. Not legal advice. Route to County Counsel before circulating outside the department.",
- "register_revision": 10,
+ "register_revision": 11,
  "purpose": {
   "head": "What this package is",
   "body": "A review of the department's PREA posture at the Youth Detention Facility, and the documents produced from it. Everything here traces to one worksheet, the gap register, which assesses 91 requirements from 28 CFR Part 115 Subpart D and California Title 15 against the 17 departmental documents produced to the review.",
@@ -34,7 +34,7 @@
  },
  "attachments": {
   "head": "What is in this package",
-  "body": "Seven documents. Every one is generated from the register or from a single source file, so none of them is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent.",
+  "body": "Eight documents. Every one is generated from the register or from a single source file, so none is hand-maintained and none can drift out of step with the others. Do not edit them in Word: the next build overwrites the edit, and in the meantime the document is internally inconsistent. The one exception is Attachment H, which is meant to be worked on in Word: accepting and rejecting its tracked changes is the point of it, and that copy is the department's.",
   "items": [
    {
     "tab": "A",
@@ -91,6 +91,14 @@
     "what": "The factors the federal standard requires a documented staffing plan to address.",
     "who": "Whoever answers the staffing question.",
     "note": "The staffing finding cannot be called either way until rosters are produced. The state floor sits at the department's written ratio, so the gap may be documentation rather than staffing. That is a materially different conversation and it is cheap to settle."
+   },
+   {
+    "tab": "H",
+    "file": "OO_1453_Tracked_Changes.docx",
+    "name": "OO 1453 with the fixes marked",
+    "what": "The Sexual Assault order itself, with the proposed amendments shown as Word tracked changes. Struck text is what comes out, underlined text is what goes in. Open it in Word, use Review, and accept or reject each change one at a time. Accepting them all leaves a clean amended order.",
+    "who": "Policy revision, County Counsel, and anyone who wants to see the actual words change rather than read about it.",
+    "note": "The base text is the order's own words, transcribed from the PDF produced to this review. Two paragraphs are amended: I.A.6 for the youth interrogation statutes (change 8) and I.A.9 for the child abuse reporting deadline (change 3). Three further defects are recorded in its notes and deliberately not amended, because the fix for those is not a change of wording. **Read its Before adoption page first: one open legal question has to go to County Counsel before any of it is relied on.**"
    }
   ]
  },
