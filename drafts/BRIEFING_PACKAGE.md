@@ -36,7 +36,7 @@ These are the items that cannot move without a decision from the department. The
 
 4. **Give us the rosters and post assignments.** They settle whether our staffing finding is a real gap or a paperwork gap.
 
-5. **Produce five documents:** the PREA Policy itself, OO 1354 on separation, the resident handbook, and the hiring and contractor screening procedures. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words.
+5. **Produce five documents:** the PREA Policy itself, OO 1354 on separation, the resident handbook, the hiring procedure, and the contractor and volunteer screening procedure. Some findings close on handing the document over, with nothing else to fix. The PREA Policy matters most: three of the written amendments are aimed at it, and until we see it those three are written against our best reconstruction of what it says rather than its real words.
 
 6. **Confirm whether the county has named Probation** as an agency that receives mandated child abuse reports. One paragraph of a drafted amendment depends on it.
 
@@ -147,7 +147,7 @@ Stated so the package is not mistaken for the whole file.
 
 - **Six earlier documents** are part of this work and are not attached here: the master Policy Review Report, the Applicability Memo, the Liability Exposure Assessment, the Training Gap and Curriculum Plan, the Audit Evidence Request, and the Excel version of the register. They can be supplied on request. **The Liability Exposure Assessment carries its own handling warning and should route through County Counsel before it is circulated at all.**
 
-- **Five documents the review asked for and has not received.** Several findings may close on production rather than on any remediation, so producing them is the cheapest work available: the separation order OO 1354, the PREA Policy itself, the Resident Orientation Handbook, the hiring and contractor screening procedures, and staffing rosters with post assignments.
+- **Six documents the review asked for and has not received.** Several findings may close on production rather than on any remediation, so producing them is the cheapest work available: the PREA Policy itself, the separation order OO 1354, the Resident Orientation Handbook, the hiring procedure, the contractor and volunteer screening procedure, and staffing rosters with post assignments.
 
 - **The PREA Policy is the highest value of those.** It carries three of the thirteen conflicts and it is the document three of the drafted amendments at Attachment B are written against, which is why those three rest on a reconstruction rather than on the order's real words.
 

@@ -431,10 +431,8 @@ CONFLICTS = [
                "narrowly and requires it to be documented, adds the 625.7 "
                "prohibition, and states where the supervisor stops and a trained "
                "investigator starts. Until adopted, obtain the consultation "
-               "anyway. This is not a reason "
-               "Until then, obtain the consultation anyway. This is not a reason "
-               "to tell supervisors to ignore I.A.6: the statement itself is "
-               "directed by the order.",
+               "anyway. This is not a reason to tell supervisors to ignore "
+               "I.A.6: the statement itself is directed by the order.",
     },
 ]
 

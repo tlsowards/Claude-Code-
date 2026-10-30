@@ -1060,6 +1060,25 @@ cannot govern what it quotes.
 **Full text of OO 1453 is now captured** in `drafts/oo1453-tracked.json`, all fifteen items plus the
 front matter, transcribed from the PDF. That outlives `docs/`, which does not survive a container.
 
+**Two bugs review caught in this same pass, and the second one is instructive.**
+
+**A bad splice duplicated a sentence into the shipped crosswalk.** The new conflict 13 fix text
+ended with the same trailing fragment the old text began with, so the old continuation glued on and
+the deliverable read "This is not a reason Until then, obtain the consultation anyway." When
+replacing the tail of a string, check what follows the replacement, not just what matched.
+
+**A written-out count disagreed with its own list.** An ask announced five documents and listed
+four, because "the hiring and contractor screening procedures" collapsed two separate outstanding
+documents into one phrase. There is now a guard, `check_counted_lists`, in both the brief and the
+package builders. **It took three attempts and the first two failures are worth remembering.**
+A lookbehind of `(?<![A-Z])` under `re.IGNORECASE` matches any letter rather than any capital, so
+it silently never fired and the guard passed the bug it was written for. And splitting a prose list
+on a bare "and" cannot tell a separator from a conjunction inside one item, which is the very
+ambiguity that caused the bug: splitting that way counted the four-item list as five and passed it
+again. It splits on commas only now, which works because this project writes lists with the Oxford
+comma. **A guard that does not fail on the bug it was written for is worse than no guard, because
+it buys false confidence. Always test a new guard by reintroducing the original defect.**
+
 **What is needed to do this for the other orders.** A tracked changes document can only be built for
 a policy whose real text is in hand. That is OO 1453 and nothing else. OO 1352's text was captured
 only as the quoted provisions, not in full, and its PDF is gone. OO 1352.5, the PREA Policy and the

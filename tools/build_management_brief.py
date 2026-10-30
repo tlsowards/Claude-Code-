@@ -85,6 +85,45 @@ def walk(node, path='$'):
             yield from walk(v, '%s.%s' % (path, k))
 
 
+NUMBERS = {
+    'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
+    'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11, 'twelve': 12,
+}
+
+
+def check_counted_lists(strings):
+    """Fail the build where prose says "N documents:" and then lists a different N.
+
+    Review caught an ask that announced five documents and listed four, because
+    two of them had been collapsed into one phrase. Nothing checked it, since the
+    count and the list are both prose. They are checkable where the list follows
+    a colon in the same sentence, which is the shape this project writes them in.
+
+    Two things this got wrong on the first attempt, both worth keeping in mind.
+    A lookbehind of (?<![A-Z]) under re.IGNORECASE matches any letter, not any
+    capital, so it silently never fired. And splitting the list on a bare "and"
+    cannot tell a separator from a conjunction inside one item, which is exactly
+    the ambiguity that produced the bug: "the hiring and contractor screening
+    procedures" is one phrase that reads as two. This project writes its lists
+    with the Oxford comma, so commas alone delimit them.
+    """
+    import re
+    errs = []
+    head = re.compile(r'(%s)\s+(documents?|items?|things?)\**:' % '|'.join(NUMBERS), re.I)
+    for where, text in strings:
+        for m in head.finditer(text):
+            rest = text[m.end():].lstrip('* ')
+            stop = rest.find('. ')
+            body = rest if stop == -1 else rest[:stop]
+            parts = [re.sub(r'^and\s+', '', p.strip())
+                     for p in body.split(',') if p.strip()]
+            claimed = NUMBERS[m.group(1).lower()]
+            if len(parts) != claimed:
+                errs.append('%s says %s %s and then lists %d: %s'
+                            % (where, m.group(1), m.group(2), len(parts), ' | '.join(parts)))
+    return errs
+
+
 def main():
     with open(SRC, encoding='utf-8') as fh:
         data = json.load(fh)
@@ -106,6 +145,16 @@ def main():
         return 1
 
     check_rows(data, rows)
+    counted = check_counted_lists(
+        [('asks[%d]' % i, t) for i, t in enumerate(data['asks']['items'], 1)]
+        + [('bottom_line[%d]' % i, t)
+           for i, t in enumerate(data['bottom_line']['items'], 1)])
+    if counted:
+        print('ABORTED, nothing written. A written-out count does not match its own list:')
+        for e in counted:
+            print('  ' + e)
+        sys.exit(1)
+
 
     by_status = counts(rows, 'status', STATUS_ORDER)
     by_priority = counts(rows, 'priority', PRIORITY_ORDER)
