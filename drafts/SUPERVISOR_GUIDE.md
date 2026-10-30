@@ -10,7 +10,7 @@ Sacramento County Probation Department, Youth Detention Facility. Drawn from gap
 
 Generated from `drafts/supervisor-guide.json` by `npm run supervisor-guide`. Edit the JSON, not this file.
 
-> **Citation note.** The due process provision for major rule violations is cited here as 15 CCR 1391(f), its numbering in the edition effective 01/01/2019. Revision 6 has now brought the gap register and CLAUDE.md into line with that numbering, so this guide and the register agree. Two further citations were corrected in the same pass: 15 CCR 1324(h) is 1324(k), and 34 U.S.C. 30307(e)(2) is 30307(c)(2). Neither is used in this guide.
+> **Citation note.** The due process provision for major rule violations is cited here as 15 CCR 1391(f), its numbering in the edition effective 01/01/2019. Revision 6 brought the gap register into line with that numbering, so this guide and the register agree. Two further citations were corrected in the same pass: 15 CCR 1324(h) is 1324(k), and 34 U.S.C. 30307(e)(2) is 30307(c)(2). Neither is used in this guide.
 
 > **Verification note.** The CANRA and 28 CFR 115.6 text quoted here is corroborated from search, including exact-phrase matches against the Cornell, eCFR, FindLaw and Justia listings, and has NOT been read from the Penal Code or the Code of Federal Regulations directly, because network access to those sources is blocked from the drafting environment. The Title 15 citations are different: those were read in full from the edition effective 01/01/2019 and are quoted into the gap register. Confirm the CANRA and federal quotations against primary source before this issues.
 

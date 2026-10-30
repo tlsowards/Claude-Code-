@@ -999,7 +999,33 @@ claim them.
 
 ---
 
-## 20. Do not repeat this one
+## 20. Never name the machinery in a deliverable
+
+Tim caught this on 10/30 and it had leaked into **nine of nine documents**. Footers reading
+"Generated from `drafts/x.json` by `npm run y`". The project memory file named inside the
+supervisor guide's citation note. The register's own path in the crosswalk prose.
+
+**Why it matters more than it looks.** These documents go to administrators, County Counsel and
+potentially into litigation. A reader who finds a build command in one of them learns something
+true and irrelevant about how it was made, and the document stops reading as a departmental work
+product. It reads as output.
+
+**`tools/check_deliverables.py`, run by `npm run check`, now fails on any of it**, and
+`npm run package-pdf` is gated on it so the handover artifact cannot be assembled while a leak
+exists. It bans build commands, source directories and filenames, the project memory file, the
+register filename, version control, the tooling vendor, and the phrase "hand-edit". **It is a sweep
+over the finished files rather than a check inside each builder**, so a builder written later
+cannot forget to call it and what it checks is what actually ships.
+
+It earned itself immediately: the first clean run still caught two more leaks in the crosswalk's
+Word view, which carries its own copy of prose the Markdown builder also holds.
+
+**Write about the work, not the toolchain.** "This copy is regenerated from source; edits made here
+are not carried forward" says everything the reader needs and names nothing.
+
+---
+
+## 21. Do not repeat this one
 
 **Revision 9's supervisor role matrix was published without the governing order in hand.** It told
 supervisors they do not conduct fact finding and do not interview, which is contradicted by OO 1453
@@ -1015,7 +1041,7 @@ sequence, flagging that OO 1453 had never been produced. The role matrix did not
 
 ---
 
-## 21. Revision 11, and the first tracked changes document (10/30)
+## 22. Revision 11, and the tracked changes orders (10/30)
 
 **The correction.** See section 8. Revision 10 scored conflict 13 on WIC 625.6 without reading
 625.6(c) or 625.6(d). (d) exempts a probation officer acting in the normal performance of duties
@@ -1079,8 +1105,18 @@ again. It splits on commas only now, which works because this project writes lis
 comma. **A guard that does not fail on the bug it was written for is worse than no guard, because
 it buys false confidence. Always test a new guard by reintroducing the original defect.**
 
-**What is needed to do this for the other orders.** A tracked changes document can only be built for
-a policy whose real text is in hand. That is OO 1453 and nothing else. OO 1352's text was captured
+**OO 1352 got the same treatment on 10/30, in a deliberately different shape.** Its PDF did not
+survive, so only the provisions quoted in Revision 9 are held. `OO_1352_Tracked_Changes.docx`,
+built by `npm run tracked-1352`, is therefore **the provisions that change, not the order**: six
+carry real redlines because their words are the order's, and two, the III.E housing matrix and
+II.C.3, are marked as described rather than quoted, carry no redline at all, and state the required
+action instead. Four guards enforce that distinction. The one that matters most refuses to build if
+a provision marked described carries kept or struck text, because **a redline on wording nobody
+captured is invented policy**. The others require `complete` to be false, require the document to
+say what is not reproduced, and require every described provision to state an action.
+
+**What is needed to do this for the remaining orders.** A complete tracked changes document can
+only be built for a policy whose full text is in hand. That is OO 1453 and nothing else. OO 1352's text was captured
 only as the quoted provisions, not in full, and its PDF is gone. OO 1352.5, the PREA Policy and the
 Internal Affairs policy have never been produced at all. **Building one of these from a
 reconstruction would hand the department a document that looks like their policy and is not.** Do

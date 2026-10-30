@@ -117,9 +117,9 @@ push(block(GOOD_FILL, M.keep.map((it, i) => new Paragraph({
 push(
   new Paragraph({ children: runs(M.caveat, { italics: true, size: TYPE.NOTE }),
     spacing: { before: 280, after: 120, line: 264 } }),
-  new Paragraph({ children: [txt('Generated from drafts/supervisor-guide.json by '
-    + 'npm run memo-template. Do not hand-edit this file. Drawn from gap register Revision '
-    + data.register_revision + '.', { italics: true, size: TYPE.NOTE, color: MUTED })],
+  new Paragraph({ children: [txt('Drawn from gap register Revision '
+    + data.register_revision + '. This copy is regenerated from source; edits made here are '
+    + 'not carried forward.', { italics: true, size: TYPE.NOTE, color: MUTED })],
     spacing: { after: 120, line: 264 } }),
 );
 

@@ -1658,5 +1658,5 @@ All rows: 38, 41, 42, 47, 56, 58, 59, 61, 62
 
 ## 6. How to use this against the register
 
-`prea-register.csv` remains the working record. This document is generated from it by `tools/build_crosswalk.py`, so it is a view, not a second source of truth. When a finding changes, edit the CSV, record the change in the `change_log` column, and regenerate. The `owner`, `target_date`, and `disposition` columns are intentionally empty and are what turn the register into the corrective action plan.
+The gap register remains the working record. This document is generated from it, so it is a view rather than a second source of truth. When a finding changes, the register is edited, the change is recorded in its change log, and this document is regenerated. The owner, target date, and disposition columns of the register are intentionally empty and are what turn it into the corrective action plan.
 

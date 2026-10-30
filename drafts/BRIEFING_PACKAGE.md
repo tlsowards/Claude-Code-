@@ -68,14 +68,15 @@ Eight documents. Every one is generated from the register or from a single sourc
 
 | Tab | Document | Page | Who it is for |
 |---|---|---|---|
-| **A** | Management Brief | 9 | Administrators, managers, and anyone who has to decide something. |
-| **B** | Redlines, Changes 1 to 7 | 27 | Policy revision, and County Counsel. |
-| **C** | PREA versus Policy Crosswalk | 49 | Reference. Nobody reads it front to back. |
-| **D** | Supervisor Decision Guide | 129 | Supervisors, read once in advance. Training. |
-| **E** | Supervisor Classification Card | 159 | Every supervisor, on shift. |
-| **F** | Supervisor Incident Memo Template | 161 | Supervisors. |
-| **G** | Staffing Plan Factors | 166 | Whoever answers the staffing question. |
-| **H** | OO 1453 with the fixes marked | 168 | Policy revision, County Counsel, and anyone who wants to see the actual words change rather than read about it. |
+| **A** | Management Brief | 10 | Administrators, managers, and anyone who has to decide something. |
+| **B** | Redlines, Changes 1 to 7 | 28 | Policy revision, and County Counsel. |
+| **C** | PREA versus Policy Crosswalk | 50 | Reference. Nobody reads it front to back. |
+| **D** | Supervisor Decision Guide | 130 | Supervisors, read once in advance. Training. |
+| **E** | Supervisor Classification Card | 160 | Every supervisor, on shift. |
+| **F** | Supervisor Incident Memo Template | 162 | Supervisors. |
+| **G** | Staffing Plan Factors | 167 | Whoever answers the staffing question. |
+| **H** | OO 1453 with the fixes marked | 169 | Policy revision, County Counsel, and anyone who wants to see the actual words change rather than read about it. |
+| **I** | OO 1352, the provisions that change | 176 | Policy revision, classification staff, and County Counsel. |
 
 ### Attachment A. Management Brief
 
@@ -124,6 +125,12 @@ The factors the federal standard requires a documented staffing plan to address.
 The Sexual Assault order itself, with the proposed amendments shown as Word tracked changes. Struck text is what comes out, underlined text is what goes in. Open it in Word, use Review, and accept or reject each change one at a time. Accepting them all leaves a clean amended order.
 
 *The base text is the order's own words, transcribed from the PDF produced to this review. Two paragraphs are amended: I.A.6 for the youth interrogation statutes (change 8) and I.A.9 for the child abuse reporting deadline (change 3). Three further defects are recorded in its notes and deliberately not amended, because the fix for those is not a change of wording. **Read its Before adoption page first: one open legal question has to go to County Counsel before any of it is relied on.***
+
+### Attachment I. OO 1352, the provisions that change
+
+The Classification order's amended provisions, shown as Word tracked changes the same way Attachment H shows OO 1453. Covers changes 1 and 6: rescinding the S-8 classification and its automatic single room rule, and separating the risk of being abusive from the risk of being victimised.
+
+***This one is not the whole order, and Attachment H is.** OO 1352 runs to twelve pages. It was read in full, but the PDF did not survive, so only the provisions quoted at the time are held. Six provisions carry real redlines because their words are the order's. Two are marked as described rather than quoted, carry no redline, and state the required action instead. **Upload the OO 1352 PDF again and a complete version can be built, the same way OO 1453 was.***
 
 ---
 

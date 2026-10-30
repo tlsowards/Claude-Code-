@@ -195,8 +195,8 @@ push(
     spacing: { before: 60, after: 60, line: 252 } })]),
   new Paragraph({ children: [
     txt(F.caveat + '  ', { italics: true, size: TYPE.NOTE }),
-    txt('Generated from drafts/supervisor-guide.json by npm run field-card, from gap register '
-      + 'Revision ' + data.register_revision + '. Do not hand-edit.',
+    txt('Drawn from gap register Revision ' + data.register_revision + '. This copy is regenerated '
+      + 'from source; edits made here are not carried forward.',
       { italics: true, size: TYPE.NOTE, color: MUTED }),
   ], spacing: { before: 140, line: 252 } }),
 );

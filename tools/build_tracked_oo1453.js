@@ -229,10 +229,9 @@ data.before_adoption.forEach((t) => push(
     spacing: { before: 60, after: 60, line: 272 } })]),
   new Paragraph({ text: '', spacing: { after: 120 } }),
 ));
-push(new Paragraph({ children: [txt('Generated from drafts/oo1453-tracked.json by npm run '
-  + 'tracked-1453, from gap register Revision ' + data.register_revision + '. Do not hand-edit: '
-  + 'the next build overwrites it. Accepting or rejecting the tracked changes in Word is the '
-  + 'intended way to use this file, and that copy is the department\'s, not this build\'s.',
+push(new Paragraph({ children: [txt('Drawn from gap register Revision ' + data.register_revision + '. Accepting or rejecting '
+  + 'the tracked changes in Word is the intended way to use this file, and the copy you save '
+  + 'afterwards is the department\'s.',
   { italics: true, size: TYPE.NOTE, color: MUTED })], spacing: { before: 200, line: 268 } }));
 
 const doc = new Document({

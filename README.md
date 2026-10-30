@@ -39,6 +39,8 @@ department did after it identified these issues.
 | `deliverables/PREA_Briefing_Package.docx` | `npm run package` |
 | `drafts/BRIEFING_PACKAGE.md` | same, Markdown working copy |
 | `deliverables/PREA_Briefing_Package_Complete.pdf` | `npm run package-pdf` |
+| `deliverables/OO_1453_Tracked_Changes.docx` | `npm run tracked-1453` |
+| `deliverables/OO_1352_Tracked_Changes.docx` | `npm run tracked-1352` |
 | `deliverables/PREA_Management_Brief.docx` | `npm run brief` |
 | `drafts/MANAGEMENT_BRIEF.md` | same, Markdown working copy |
 | `deliverables/PREA_versus_Policy_Crosswalk.docx` | `npm run crosswalk` |
@@ -119,6 +121,20 @@ renders again, until a pass measures what the cover already says. Convergence is
 rather than assumed, and if it has not settled after four passes nothing is written and the
 mismatch is printed. Stale pagination is also dropped rather than printed, since a contents
 page pointing at the wrong document is worse than one with no page numbers at all.
+
+Two orders carry their proposed amendments as **real Word tracked changes**, `w:ins` and `w:del`
+with `w:delText`, so the department opens the file in Word and accepts or rejects each change.
+These are the only deliverables meant to be edited in Word rather than regenerated.
+
+They are deliberately different shapes, and the guards enforce the difference. **OO 1453 is the
+whole order**, because its PDF was re-read and all fifteen paragraphs are held; its build refuses
+unless the provenance statement claims the base text is the order's own words. **OO 1352 is the
+provisions that change only**, because its PDF did not survive the container it was read in and
+only the quoted provisions remain; its build refuses unless `complete` is false and the document
+says what is not reproduced. Most importantly, **a provision marked as described rather than quoted
+cannot carry a redline at all**: showing struck text for wording nobody captured would be inventing
+the department's policy and marking it up, which is the one thing this format must never do. Such a
+provision prints the required action instead.
 
 The management brief is the short view of the **register**, written for managers rather
 than for an auditor: where the exposure is, how the liability runs, and what is blocked on

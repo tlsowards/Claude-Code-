@@ -317,8 +317,8 @@ push(new Paragraph({ children: [new PageBreak()] }));
 push(
   new Paragraph({ text: '4. The crosswalk, requirement by requirement', heading: HeadingLevel.HEADING_1 }),
   p('Grouped by the area an auditor scores. Within an area, worst divergence first. The '
-    + 'numbering is the register row, so any entry can be traced straight back to '
-    + 'prea-register.csv.'),
+    + 'numbering is the register row, so any entry can be traced straight back to the '
+    + 'gap register.'),
 );
 
 data.sections.forEach((sec) => {
@@ -446,13 +446,14 @@ push(new Paragraph({ children: [new PageBreak()] }));
 
 push(
   new Paragraph({ text: '6. How to use this against the register', heading: HeadingLevel.HEADING_1 }),
-  p('prea-register.csv remains the working record. This document is generated from it by '
-    + 'tools/build_crosswalk.py and tools/build_crosswalk_docx.js, so it is a view, not a '
-    + 'second source of truth. When a finding changes, edit the CSV, record what changed in '
-    + 'the change_log column using the convention already in the file, then regenerate.'),
-  p('The owner, target_date, and disposition columns are intentionally empty. Populating them '
-    + 'is what turns the register into the corrective action plan, which is the record that '
-    + 'matters if anyone asks what the department did after it identified these issues.'),
+  p('The gap register remains the working record. This document is generated from it, so it '
+    + 'is a view rather than a second source of truth. When a finding changes, the register '
+    + 'is edited, what changed is recorded in its change log using the convention already in '
+    + 'use, and this document is regenerated.'),
+  p('The owner, target date, and disposition columns of the register are intentionally empty. '
+    + 'Populating them is what turns the register into the corrective action plan, which is '
+    + 'the record that matters if anyone asks what the department did after it identified '
+    + 'these issues.'),
   // Every count here is derived. This paragraph carried hardcoded figures from the
   // first commit of this file and was wrong by two of them, twelve conflicts and
   // thirty-nine partials, by the time anyone looked. The word() helper used three

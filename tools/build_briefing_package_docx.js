@@ -239,8 +239,8 @@ push(
   new Paragraph({ text: '', spacing: { after: 200 } }),
   block(ABUSE_FILL, [new Paragraph({ children: runs(data.caveat, { italics: true }),
     spacing: { before: 60, after: 60, line: 268 } })]),
-  new Paragraph({ children: [txt('Generated from drafts/briefing-package.json by npm run '
-    + 'package, from gap register Revision ' + data.register_revision + '. Do not hand-edit.',
+  new Paragraph({ children: [txt('Generated document, drawn from gap register Revision ' + data.register_revision
+    + '. This copy is regenerated from source; edits made here are not carried forward.',
     { italics: true, size: TYPE.NOTE, color: MUTED })], spacing: { before: 200, line: 264 } }),
 );
 
