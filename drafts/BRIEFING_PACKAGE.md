@@ -18,7 +18,7 @@ A review of the department's PREA posture at the Youth Detention Facility, and t
 
 - **Most of the remediation is drafted.** Amended policy text exists for seven of the fifteen recommended changes, written out and ready to be marked up.
 
-- **What is left needs decisions, not analysis.** A designation, an assignment, and five documents the review asked for and has not received. Those are listed at the end.
+- **What is left needs decisions, not analysis.** A designation, an assignment, and six documents the review asked for and has not received. Those are listed at the end.
 
 - **Nothing here is a finding that the department failed to do something.** The review can only speak to the documents produced to it. Where a practice is not written down, the finding says it does not appear in the documents reviewed, which is a different statement. Several findings will close on production of a document rather than on any change in practice.
 

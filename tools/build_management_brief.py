@@ -92,36 +92,49 @@ NUMBERS = {
 
 
 def check_counted_lists(strings):
-    """Fail the build where prose says "N documents:" and then lists a different N.
+    """Check a written-out count against the list it introduces, and never skip silently.
 
-    Review caught an ask that announced five documents and listed four, because
-    two of them had been collapsed into one phrase. Nothing checked it, since the
-    count and the list are both prose. They are checkable where the list follows
-    a colon in the same sentence, which is the shape this project writes them in.
+    Three attempts before this one, each failing differently, and the failures
+    are the useful part. A lookbehind of (?<![A-Z]) under re.IGNORECASE matches
+    any letter rather than any capital, so the first version never fired at all.
+    The second split the list on a bare "and", which cannot tell a separator from
+    a conjunction inside one item, so it counted a four-item list as five and
+    passed the bug it was written for. The third required the colon to sit
+    immediately after the count, which held for one file's phrasing and not the
+    other's, so five of six count claims went unchecked and a real contradiction
+    hid in the gap: one page said five documents and another said six.
 
-    Two things this got wrong on the first attempt, both worth keeping in mind.
-    A lookbehind of (?<![A-Z]) under re.IGNORECASE matches any letter, not any
-    capital, so it silently never fired. And splitting the list on a bare "and"
-    cannot tell a separator from a conjunction inside one item, which is exactly
-    the ambiguity that produced the bug: "the hiring and contractor screening
-    procedures" is one phrase that reads as two. This project writes its lists
-    with the Oxford comma, so commas alone delimit them.
+    What this version does differently is report what it could not check. A
+    guard that is silently partial is how all three earlier versions survived,
+    so claims with no enumeration to compare against are returned as notes
+    rather than dropped. Proportions ("three of the thirteen") and locators
+    ("wrong in two documents") are not enumerations and are excluded by shape.
     """
     import re
-    errs = []
-    head = re.compile(r'(%s)\s+(documents?|items?|things?)\**:' % '|'.join(NUMBERS), re.I)
+    nums = '|'.join(NUMBERS)
+    claim = re.compile(r'\b(%s)\s+(?:(\w+)\s+)?(documents?|items?|things?)\b' % nums, re.I)
+    errs, unchecked = [], []
     for where, text in strings:
-        for m in head.finditer(text):
-            rest = text[m.end():].lstrip('* ')
+        for m in claim.finditer(text):
+            lead = text[max(0, m.start() - 4):m.start()].lower()
+            tail = text[m.end():m.end() + 10].lower()
+            if lead.endswith('in ') or tail.startswith(' of '):
+                continue                      # a proportion or a locator, not a list
+            colon = text.find(':', m.end())
+            if colon == -1:
+                unchecked.append('%s: "%s" introduces no list in this string'
+                                 % (where, m.group(0)))
+                continue
+            rest = text[colon + 1:].lstrip('* ')
             stop = rest.find('. ')
             body = rest if stop == -1 else rest[:stop]
-            parts = [re.sub(r'^and\s+', '', p.strip())
-                     for p in body.split(',') if p.strip()]
+            parts = [re.sub(r'^and\s+', '', x.strip())
+                     for x in body.split(',') if x.strip()]
             claimed = NUMBERS[m.group(1).lower()]
             if len(parts) != claimed:
-                errs.append('%s says %s %s and then lists %d: %s'
-                            % (where, m.group(1), m.group(2), len(parts), ' | '.join(parts)))
-    return errs
+                errs.append('%s says %s and then lists %d: %s'
+                            % (where, m.group(0), len(parts), ' | '.join(parts)))
+    return errs, unchecked
 
 
 def main():
@@ -145,7 +158,7 @@ def main():
         return 1
 
     check_rows(data, rows)
-    counted = check_counted_lists(
+    counted, unchecked = check_counted_lists(
         [('asks[%d]' % i, t) for i, t in enumerate(data['asks']['items'], 1)]
         + [('bottom_line[%d]' % i, t)
            for i, t in enumerate(data['bottom_line']['items'], 1)])
@@ -154,6 +167,8 @@ def main():
         for e in counted:
             print('  ' + e)
         sys.exit(1)
+    for u in unchecked:
+        print('  note: count not checked, %s' % u)
 
 
     by_status = counts(rows, 'status', STATUS_ORDER)
