@@ -79,7 +79,7 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
     <itunes:category text="${esc(channel.category)}" />
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
-    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <lastBuildDate>${rfc822(episodes[0].date)}</lastBuildDate>
 ${items}
   </channel>
 </rss>
