@@ -1,0 +1,186 @@
+{
+  "snapshotNote": "Catalog snapshot taken from the September 2026 department outreach flyer and the online course build notes. STC numbers are listed only where they appear in those documents. The catalog will sync from the live LifterLMS site once the app is connected to sowardsconsulting.com.",
+  "courses": [
+    {
+      "id": "uof-institution",
+      "title": "Defensible Use of Force: Standards, Decisions, and Documentation",
+      "track": "Institution track",
+      "stcNumber": "02096560",
+      "hours": "4 hr",
+      "format": "Online, asynchronous. Scenarios, knowledge checks, written skill test, graded final, certificate.",
+      "audience": "Juvenile and adult institution staff",
+      "summary": "Make force decisions that hold up on the reasonable-officer standard, apply the Graham factors and Title 15 to custody encounters, and document decisions so they are deposition-ready.",
+      "outcomes": [
+        "Apply the reasonable-officer standard to custody encounters",
+        "Apply Graham factors and Title 15 to institutional force decisions",
+        "Document decisions with the 8355 Framework"
+      ],
+      "status": "live",
+      "url": "https://sowardsconsulting.com/courses/"
+    },
+    {
+      "id": "uof-field",
+      "title": "Defensible Use of Force: Standards, Decisions, and Documentation",
+      "track": "Field services track",
+      "stcNumber": "02096560",
+      "hours": "4 hr",
+      "format": "Online, asynchronous. Scenarios, knowledge checks, written skill test, graded final, certificate.",
+      "audience": "Probation field and community corrections officers",
+      "summary": "Judge force by the reasonable-officer standard and handle force-or-disengage decisions that survive review.",
+      "outcomes": [
+        "Judge force by the reasonable-officer standard",
+        "Handle force-or-disengage decisions that survive review",
+        "Document field force decisions defensibly"
+      ],
+      "status": "live",
+      "url": "https://sowardsconsulting.com/courses/"
+    },
+    {
+      "id": "deesc-juvenile",
+      "title": "De-escalation and Crisis Intervention for Juvenile Institutions",
+      "track": "Institution track",
+      "stcNumber": "02726193",
+      "hours": "4 hr",
+      "format": "Online, asynchronous. Scenarios, knowledge checks, written skill test, graded final, certificate.",
+      "audience": "Juvenile institution staff",
+      "summary": "Lower the temperature before force becomes the only option, and document de-escalation under Title 15, PC 835a, and SB 230.",
+      "outcomes": [
+        "Recognize escalation early and intervene",
+        "Document de-escalation under Title 15, PC 835a, and SB 230"
+      ],
+      "status": "live",
+      "url": "https://sowardsconsulting.com/courses/"
+    },
+    {
+      "id": "deesc-field",
+      "title": "De-escalation and Crisis Intervention for Probation Field Operations",
+      "track": "Field services track",
+      "stcNumber": "09296735",
+      "hours": "4 hr",
+      "format": "Online, asynchronous. Scenarios, knowledge checks, written skill test, graded final, certificate.",
+      "audience": "Probation field operations",
+      "summary": "De-escalate on the street using a documented, defensible process, and turn a good decision into a provable one on the record.",
+      "outcomes": [
+        "De-escalate in the field with a documented process",
+        "Turn a good decision into a provable one on the record"
+      ],
+      "status": "live",
+      "url": "https://sowardsconsulting.com/courses/"
+    },
+    {
+      "id": "ironclad-institution",
+      "title": "Ironclad: Report Writing That Holds Up",
+      "track": "Institution track",
+      "stcNumber": "03894586",
+      "hours": "Online CBT, also 8 hr in person",
+      "format": "Online computer-based training with certificate. Also offered as an 8-hour in-person course.",
+      "audience": "Institution staff and supervisors",
+      "summary": "Write reports that hold up under cross-examination and audit, and document force and de-escalation to the 8355 standard.",
+      "outcomes": [
+        "Write reports that hold up under cross-examination and audit",
+        "Document force and de-escalation to the 8355 standard"
+      ],
+      "status": "live",
+      "url": "https://sowardsconsulting.com/courses/"
+    },
+    {
+      "id": "ironclad-field",
+      "title": "Ironclad: Report Writing That Holds Up",
+      "track": "Field services track",
+      "stcNumber": "06444732",
+      "hours": "Online CBT, also 8 hr in person",
+      "format": "Online computer-based training with certificate. Also offered as an 8-hour in-person course.",
+      "audience": "Field officers and supervisors",
+      "summary": "Turn field observations into court-ready reports and standardize defensible documentation across units.",
+      "outcomes": [
+        "Turn field observations into court-ready reports",
+        "Standardize defensible documentation across your units"
+      ],
+      "status": "live",
+      "url": "https://sowardsconsulting.com/courses/"
+    },
+    {
+      "id": "manipulation",
+      "title": "Preventing Manipulation and Grooming in Juvenile Facilities",
+      "hours": "Online",
+      "format": "Online, asynchronous, with knowledge checks and certificate.",
+      "audience": "Juvenile facility staff, supervisors, and training officers",
+      "summary": "How youth in custody identify, target, and compromise staff, and how to interrupt the process early. Built around the Downing the Duck six-stage framework.",
+      "outcomes": [
+        "Recognize the six stages of staff manipulation",
+        "Report early-stage indicators without hesitation",
+        "Supervise for isolation and rule-bending indicators"
+      ],
+      "status": "live",
+      "url": "https://sowardsconsulting.com/courses/"
+    },
+    {
+      "id": "prea",
+      "title": "PREA Compliance for Juvenile Facilities",
+      "hours": "Online",
+      "format": "Online, asynchronous, with knowledge checks and certificate.",
+      "audience": "Juvenile facility staff and supervisors",
+      "summary": "Prison Rape Elimination Act standards applied to juvenile facilities: duty to protect, risk identification, classification and housing, supervision, reporting, and response.",
+      "outcomes": [
+        "Apply PREA standards to daily supervision",
+        "Identify risk and respond to reports correctly",
+        "Document compliance defensibly"
+      ],
+      "status": "live",
+      "url": "https://sowardsconsulting.com/courses/"
+    },
+    {
+      "id": "ada",
+      "title": "Interacting with Americans with Disabilities",
+      "hours": "4 hr classroom, 8 hr with practical block",
+      "format": "STC-approved in-person course in 4-hour and 8-hour formats. Online version of the 4-hour classroom block in development.",
+      "audience": "Probation, corrections, and juvenile staff",
+      "summary": "Title II obligations, hidden disabilities, the safety-first threshold, the four-step interactive process, effective communication, mobility, search and transport, and defensible documentation.",
+      "outcomes": [
+        "Explain when the duty to accommodate attaches",
+        "Run and document the four-step interactive process",
+        "Search and transport a person with a mobility device"
+      ],
+      "status": "in-person"
+    },
+    {
+      "id": "cultural-diversity",
+      "title": "Cultural Diversity and Bias",
+      "hours": "In person",
+      "format": "STC-approved in-person course. Online version fully scripted and in production.",
+      "audience": "All sworn and institution staff",
+      "summary": "Bias awareness and cultural competence for supervision and custody settings, taught for defensibility and daily practice.",
+      "outcomes": ["Recognize bias in decisions and documentation", "Apply culturally competent communication"],
+      "status": "in-person"
+    },
+    {
+      "id": "leadership",
+      "title": "Building Ethical Leaders and Professionalism",
+      "hours": "In person",
+      "format": "STC-approved in-person course. Online version fully scripted and in production.",
+      "audience": "Supervisors and emerging leaders",
+      "summary": "A four-step ethical decision model, duty to intervene, and a repeatable structure for hard conversations with subordinates and peers.",
+      "outcomes": ["Apply a four-step ethical decision model", "Deliver a correction using a repeatable structure"],
+      "status": "in-person"
+    },
+    {
+      "id": "chemical-agents",
+      "title": "Chemical Agents",
+      "hours": "8 hr",
+      "format": "In-person, with POST expanded course outline.",
+      "audience": "Institution and field staff authorized to carry chemical agents",
+      "summary": "Deployment, decontamination, documentation, and liability for chemical agents in custody and field settings.",
+      "outcomes": ["Deploy and decontaminate correctly", "Document deployments defensibly"],
+      "status": "stc-review"
+    }
+  ],
+  "pricing": [
+    { "name": "Preview", "seats": "Any course preview", "price": "$0", "perOfficer": "No seat", "note": "Preview any course free before you buy." },
+    { "name": "Solo", "seats": "1 seat", "price": "$80", "perOfficer": "$80 per officer" },
+    { "name": "Squad", "seats": "10 seats", "price": "$750", "perOfficer": "$75 per officer" },
+    { "name": "Shift", "seats": "25 seats", "price": "$1,800", "perOfficer": "$72 per officer" },
+    { "name": "Department", "seats": "50 seats", "price": "$3,500", "perOfficer": "$70 per officer" },
+    { "name": "Agency", "seats": "100 seats", "price": "$6,500", "perOfficer": "$65 per officer" }
+  ],
+  "pricingNote": "Bundles are per course, 4 hours, asynchronous. Multi-course and multi-year discounts on request. Agency coordinators get a dashboard with every licensed course, one row per officer, with status and certificate links, plus roster export."
+}

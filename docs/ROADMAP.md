@@ -1,0 +1,28 @@
+# Roadmap
+
+## Phase 1 (this repository): web app with static content
+
+Done: brand shell, installable PWA, five weekly briefs, podcast page and RSS feed, training catalog and pricing, resource center, Downing the Duck, PC 835a reference, subscribe page.
+
+Open items that need information from Sowards Consulting:
+
+- Audio host URL for the podcast MP3 files.
+- MailerLite form action for the Subscribe page.
+- Which California instructors and training centers to list in the resource center.
+- Confirmation of the full live course list and STC numbers for the Manipulation and PREA courses.
+- Decide whether the two Force of Law books should appear in the app as products.
+
+## Phase 2: connect to sowardsconsulting.com (WordPress and LifterLMS)
+
+The live site already runs the LMS: courses, enrollment, quizzes, certificates, agency dashboards, and pricing. The app should read from it rather than duplicate it.
+
+- Register two custom post types in WordPress: `weekly_brief` (with the same fields as the JSON) and `podcast_episode`. Publish from the WordPress editor, and the app reads them through the REST API.
+- Read the course catalog from LifterLMS so the Training page matches the live site automatically.
+- Sign-in: let a student log in with their existing site account and see their enrolled courses, progress, and certificates inside the app.
+- This needs the site allowed in the build environment and a WordPress application password entered through the secure credential form.
+
+## Phase 3: notifications and native apps
+
+- Web push notifications for new briefs and episodes (needs a small server component or a push service).
+- Wrap the same web app for iOS and Android with Capacitor and submit under Sowards Consulting's Apple and Google developer accounts.
+- Offline reading of the most recent briefs.
