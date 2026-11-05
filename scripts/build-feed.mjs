@@ -11,8 +11,8 @@ function loadEnv() {
   for (const name of ['.env', '.env.local']) {
     try {
       for (const line of readFileSync(resolve(root, name), 'utf8').split('\n')) {
-        const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/);
-        if (m && env[m[1]] === undefined) env[m[1]] = m[2].replace(/^["']|["']$/g, '');
+        const m = line.match(/^\s*(?:export\s+)?([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
+        if (m && env[m[1]] === undefined) env[m[1]] = m[2].replace(/^["']|["']$/g, '').trim();
       }
     } catch {
       /* file is optional */

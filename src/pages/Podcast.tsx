@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/Seo';
 import { episodes, getEpisode, getBrief, formatDate } from '../data/content';
 import { site } from '../config';
+import NotFound from './NotFound';
 
 function audioUrl(file: string) {
   if (!site.audioBaseUrl) return '';
@@ -11,6 +12,7 @@ function audioUrl(file: string) {
 export default function Podcast() {
   const { id } = useParams();
   const selected = id ? getEpisode(id) : episodes[0];
+  if (id && !selected) return <NotFound />;
   const feedUrl = `${import.meta.env.BASE_URL}podcast/feed.xml`;
 
   return (

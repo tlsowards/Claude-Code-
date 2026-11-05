@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/Seo';
 import CaseCard from '../components/CaseCard';
 import { getBrief, getEpisode, formatRange, formatDate } from '../data/content';
+import type { Episode } from '../data/types';
 import { site } from '../config';
 import NotFound from './NotFound';
 
@@ -19,7 +20,7 @@ export default function BriefDetail() {
   const brief = id ? getBrief(id) : undefined;
   if (!brief) return <NotFound />;
 
-  const episodeLinks = brief.episodeIds.map(getEpisode).filter(Boolean);
+  const episodeLinks = brief.episodeIds.map(getEpisode).filter((e): e is Episode => Boolean(e));
 
   return (
     <>
@@ -66,9 +67,9 @@ export default function BriefDetail() {
         <div className="callout">
           <strong>Listen.</strong>{' '}
           {episodeLinks.map((e, i) => (
-            <span key={e!.id}>
+            <span key={e.id}>
               {i > 0 ? ' · ' : ''}
-              <Link to={`/podcast/${e!.id}`}>{formatDate(e!.date)} episode</Link>
+              <Link to={`/podcast/${e.id}`}>{formatDate(e.date)} episode</Link>
             </span>
           ))}
         </div>
