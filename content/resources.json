@@ -6,8 +6,16 @@
       "title": "Sowards Consulting free reference cards",
       "description": "Printable one-page references built from the Sowards frameworks. The two below are available inside this app.",
       "links": [
-        { "title": "PC 835a After AB 392", "url": "/reference/pc835a", "description": "What the law actually requires of California officers, the four framing errors, and the post-AB 392 documentation checklist." },
-        { "title": "Downing the Duck", "url": "/downing-the-duck", "description": "The six-stage staff manipulation framework for juvenile facilities, with warning signs and supervisor duties." }
+        {
+          "title": "PC 835a After AB 392",
+          "url": "/reference/pc835a",
+          "description": "What the law actually requires of California officers, the four framing errors, and the post-AB 392 documentation checklist."
+        },
+        {
+          "title": "Downing the Duck",
+          "url": "/downing-the-duck",
+          "description": "The six-stage staff manipulation framework for juvenile facilities, with warning signs and supervisor duties."
+        }
       ]
     },
     {
@@ -15,12 +23,64 @@
       "title": "Find and read the opinions",
       "description": "Primary sources. Read the opinion itself before relying on a summary, including the ones in this app.",
       "links": [
-        { "title": "CourtListener", "url": "https://www.courtlistener.com/", "description": "Free full-text search of federal and state opinions from the Free Law Project, with docket alerts." },
-        { "title": "Supreme Court of the United States", "url": "https://www.supremecourt.gov/", "description": "Slip opinions, order lists, and dockets." },
-        { "title": "Ninth Circuit Court of Appeals", "url": "https://www.ca9.uscourts.gov/", "description": "Published opinions and unpublished memoranda for California, Oregon, Washington, Arizona, Nevada, and the rest of the circuit." },
-        { "title": "California Courts: Opinions", "url": "https://www.courts.ca.gov/", "description": "California Supreme Court and Court of Appeal opinions, published and unpublished." },
-        { "title": "Legal Information Institute (Cornell)", "url": "https://www.law.cornell.edu/", "description": "Free U.S. Code, Constitution, Supreme Court opinions, and plain-language explanations." },
-        { "title": "Justia", "url": "https://law.justia.com/", "description": "Free case law, codes, and regulations." }
+        {
+          "title": "CourtListener",
+          "url": "https://www.courtlistener.com/",
+          "description": "Free full-text search of federal and state opinions from the Free Law Project, with docket alerts."
+        },
+        {
+          "title": "Supreme Court of the United States",
+          "url": "https://www.supremecourt.gov/",
+          "description": "Slip opinions, order lists, and dockets."
+        },
+        {
+          "title": "Ninth Circuit Court of Appeals",
+          "url": "https://www.ca9.uscourts.gov/",
+          "description": "Published opinions and unpublished memoranda for California, Oregon, Washington, Arizona, Nevada, and the rest of the circuit."
+        },
+        {
+          "title": "California Courts: Opinions",
+          "url": "https://www.courts.ca.gov/",
+          "description": "California Supreme Court and Court of Appeal opinions, published and unpublished."
+        },
+        {
+          "title": "Legal Information Institute (Cornell)",
+          "url": "https://www.law.cornell.edu/",
+          "description": "Free U.S. Code, Constitution, Supreme Court opinions, and plain-language explanations."
+        },
+        {
+          "title": "Justia",
+          "url": "https://law.justia.com/",
+          "description": "Free case law, codes, and regulations."
+        }
+      ]
+    },
+    {
+      "id": "legal-updates",
+      "title": "Other legal update publishers",
+      "description": "National case law digests worth reading alongside the weekly brief. Most are written for policing; the weekly brief here adds the custody, probation, and juvenile layer and ends every case with how to train it.",
+      "links": [
+        {
+          "title": "Xiphos (Lexipol)",
+          "url": "https://www.lexipol.com/author/kenwallentine/",
+          "description": "Ken Wallentine's monthly criminal procedure and use of force newsletter. Free for public safety officers, educators, and public attorneys."
+        },
+        {
+          "title": "LLRMI Legal Updates",
+          "url": "https://www.llrmi.com/legal-update-archive/",
+          "description": "Jack Ryan's frequent case summaries on search, seizure, use of force, and jail liability, with Supreme Court roundups."
+        },
+        {
+          "title": "Daigle Law Group Legal Updates",
+          "url": "https://daiglelawgroup.com/category/legal-update/",
+          "description": "Case law posts, on-demand courses, and an annual Use of Force Summit.",
+          "paid": true
+        },
+        {
+          "title": "CPOA Legislative and Legal Digest",
+          "url": "https://cpoa.org/",
+          "description": "The California Peace Officers' Association annual digest of new California laws, prepared with the Attorney General's office and the CHP."
+        }
       ]
     },
     {
@@ -28,11 +88,31 @@
       "title": "California statutes and standards",
       "description": "The California layer that sits on top of federal law. Train to this standard, not to the most forgiving federal circuit.",
       "links": [
-        { "title": "Penal Code section 835a", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=835a.&lawCode=PEN", "description": "Use of force by peace officers, as amended by AB 392." },
-        { "title": "Government Code section 7286", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7286.&lawCode=GOV", "description": "Required agency use-of-force policy contents, including the feasibility language." },
-        { "title": "California Legislative Information", "url": "https://leginfo.legislature.ca.gov/", "description": "Search every California code section and bill, including Penal Code 69, 148, 417.3, and Welfare and Institutions Code provisions." },
-        { "title": "Commission on POST", "url": "https://post.ca.gov/", "description": "Peace Officer Standards and Training: regulations, learning domains, and certified course catalog." },
-        { "title": "Board of State and Community Corrections (BSCC)", "url": "https://www.bscc.ca.gov/", "description": "Standards and Training for Corrections (STC), Title 15 regulations, and facility inspection standards." }
+        {
+          "title": "Penal Code section 835a",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=835a.&lawCode=PEN",
+          "description": "Use of force by peace officers, as amended by AB 392."
+        },
+        {
+          "title": "Government Code section 7286",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7286.&lawCode=GOV",
+          "description": "Required agency use-of-force policy contents, including the feasibility language."
+        },
+        {
+          "title": "California Legislative Information",
+          "url": "https://leginfo.legislature.ca.gov/",
+          "description": "Search every California code section and bill, including Penal Code 69, 148, 417.3, and Welfare and Institutions Code provisions."
+        },
+        {
+          "title": "Commission on POST",
+          "url": "https://post.ca.gov/",
+          "description": "Peace Officer Standards and Training: regulations, learning domains, and certified course catalog."
+        },
+        {
+          "title": "Board of State and Community Corrections (BSCC)",
+          "url": "https://www.bscc.ca.gov/",
+          "description": "Standards and Training for Corrections (STC), Title 15 regulations, and facility inspection standards."
+        }
       ]
     },
     {
@@ -40,21 +120,89 @@
       "title": "Liability, research, and policy organizations",
       "description": "National organizations that publish case digests, research, and model policy. Some are membership or subscription based.",
       "links": [
-        { "title": "AELE (Americans for Effective Law Enforcement)", "url": "https://www.aele.org/", "description": "Legal publications, case summaries, and seminars for police, corrections, and public employment law." },
-        { "title": "Force Science Institute", "url": "https://www.forcescience.com/", "description": "Human factors research on reaction time, perception, memory under stress, and force encounters.", "paid": true },
-        { "title": "Police Executive Research Forum (PERF)", "url": "https://www.policeforum.org/", "description": "Integrating Communications, Assessment, and Tactics (ICAT) and the Critical Decision-Making Model." },
-        { "title": "International Association of Chiefs of Police (IACP)", "url": "https://www.theiacp.org/", "description": "Model policies, training keys, and the National Consensus Policy on Use of Force." },
-        { "title": "National Institute of Justice", "url": "https://nij.ojp.gov/", "description": "Federal research on use of force, less-lethal technology, and officer safety." },
-        { "title": "National Institute of Corrections", "url": "https://nicic.gov/", "description": "Free corrections training, technical assistance, and a research library." },
-        { "title": "PREA Resource Center", "url": "https://www.prearesourcecenter.org/", "description": "PREA standards, audit instruments, and training for adult and juvenile facilities." },
-        { "title": "Lexipol", "url": "https://www.lexipol.com/", "description": "Policy, training, and the Police1 and Corrections1 news sites.", "paid": true }
+        {
+          "title": "Police1 videos and Use of Force section",
+          "url": "https://www.police1.com/use-of-force",
+          "description": "News, legal analysis, and video series including Reality Training and Bodycam Briefings that walk through real encounters. Free with registration; Lexipol owns the site."
+        },
+        {
+          "title": "Police1 original videos",
+          "url": "https://www.police1.com/videos",
+          "description": "The video library: Reality Training with Dave Smith, body camera breakdowns, and tactical debriefs for roll call and classroom use. Link to them; do not download or re-host."
+        },
+        {
+          "title": "Corrections1",
+          "url": "https://www.corrections1.com/",
+          "description": "The corrections side of the same network: custody news, legal columns, and training articles for jails, prisons, and juvenile facilities."
+        },
+        {
+          "title": "AELE (Americans for Effective Law Enforcement)",
+          "url": "https://www.aele.org/",
+          "description": "Legal publications, case summaries, and seminars for police, corrections, and public employment law."
+        },
+        {
+          "title": "Force Science Institute",
+          "url": "https://www.forcescience.com/",
+          "description": "Human factors research on reaction time, perception, memory under stress, and force encounters.",
+          "paid": true
+        },
+        {
+          "title": "Police Executive Research Forum (PERF)",
+          "url": "https://www.policeforum.org/",
+          "description": "Integrating Communications, Assessment, and Tactics (ICAT) and the Critical Decision-Making Model."
+        },
+        {
+          "title": "International Association of Chiefs of Police (IACP)",
+          "url": "https://www.theiacp.org/",
+          "description": "Model policies, training keys, and the National Consensus Policy on Use of Force."
+        },
+        {
+          "title": "National Institute of Justice",
+          "url": "https://nij.ojp.gov/",
+          "description": "Federal research on use of force, less-lethal technology, and officer safety."
+        },
+        {
+          "title": "National Institute of Corrections",
+          "url": "https://nicic.gov/",
+          "description": "Free corrections training, technical assistance, and a research library."
+        },
+        {
+          "title": "PREA Resource Center",
+          "url": "https://www.prearesourcecenter.org/",
+          "description": "PREA standards, audit instruments, and training for adult and juvenile facilities."
+        },
+        {
+          "title": "Lexipol",
+          "url": "https://www.lexipol.com/",
+          "description": "Policy, training, and the Police1 and Corrections1 news sites.",
+          "paid": true
+        }
       ]
     },
     {
       "id": "california-instructors",
       "title": "California use-of-force instructors and training centers",
-      "description": "This section is reserved for California instructors and regional training centers that Sowards Consulting chooses to list. Entries are added by the site owner, not by automated collection.",
-      "links": []
+      "description": "California instructors and training centers that teach use of force law and tactics. Listings are chosen by Sowards Consulting. Some are also competitors for training budgets; they are listed because trainers will look for them anyway.",
+      "links": [
+        {
+          "title": "Savage Training Group",
+          "url": "https://savagetraininggroup.com/",
+          "description": "POST-certified use of force decision-making and legal update workshops, supervisor courses, and an online PC 835a course. Based in California.",
+          "paid": true
+        },
+        {
+          "title": "CSU Long Beach Center for Criminal Justice Research and Training",
+          "url": "https://www.csulb.edu/college-of-health-human-services/center-for-criminal-justice-research-and-training/use-of-force",
+          "description": "The 24-hour Use of Force Train the Trainer course that meets the POST instructor requirement in CCR section 1070.",
+          "paid": true
+        },
+        {
+          "title": "Chief Probation Officers of California (CPOC) STC courses",
+          "url": "https://www.cpoc.org/post/standard-and-training-corrections-stc-certified-courses",
+          "description": "Short STC-certified online courses for probation staff, including new laws updates and felony sentencing.",
+          "paid": true
+        }
+      ]
     }
   ]
 }

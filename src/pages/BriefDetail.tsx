@@ -2,7 +2,17 @@ import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/Seo';
 import CaseCard from '../components/CaseCard';
 import { getBrief, getEpisode, formatRange, formatDate } from '../data/content';
+import { site } from '../config';
 import NotFound from './NotFound';
+
+function shareBrief(title: string, text: string) {
+  const url = window.location.href;
+  if (navigator.share) {
+    navigator.share({ title, text, url }).catch(() => undefined);
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(() => alert('Link copied. Paste it into an email or message.'));
+  }
+}
 
 export default function BriefDetail() {
   const { id } = useParams();
@@ -14,11 +24,44 @@ export default function BriefDetail() {
   return (
     <>
       <Seo title={brief.title} description={brief.summary} />
-      <div className="eyebrow">Weekly brief · {formatDate(brief.date)}</div>
-      <h1>{brief.title}</h1>
-      <div className="meta">Decisions from {formatRange(brief.coverageStart, brief.coverageEnd)}</div>
-      <p className="lead" style={{ marginTop: 12 }}>{brief.summary}</p>
+      <div className="screen-only">
+        <div className="eyebrow">Weekly brief · {formatDate(brief.date)}</div>
+        <h1>{brief.title}</h1>
+        <div className="meta">Decisions from {formatRange(brief.coverageStart, brief.coverageEnd)}</div>
+        <p className="lead" style={{ marginTop: 12 }}>{brief.summary}</p>
+      </div>
 
+      <div className="btn-row no-print">
+        <button className="btn" onClick={() => window.print()}>Print roll call brief</button>
+        <button className="btn secondary" onClick={() => shareBrief(brief.title, brief.summary)}>Share with your training sergeant</button>
+      </div>
+
+      <div className="print-only roll-call">
+        <div className="roll-call-head">
+          <div><strong>{site.name}</strong> · Weekly Use of Force Roll Call Brief · {formatDate(brief.date)}</div>
+          <div>Read the full brief and listen to the episode at {site.publicUrl.replace(/^https?:\/\//, '')}/briefs/{brief.id}</div>
+        </div>
+        <h2 style={{ marginTop: 8 }}>{brief.title}</h2>
+        <p className="meta">Decisions from {formatRange(brief.coverageStart, brief.coverageEnd)}. Unpublished decisions are not precedent. Educational material, not legal advice. Confirm with agency policy and counsel.</p>
+        <table className="roll-call-table">
+          <thead><tr><th>Case</th><th>What happened</th><th>Train it</th></tr></thead>
+          <tbody>
+            {brief.sections.flatMap((s) => s.cases).map((c) => (
+              <tr key={c.id}>
+                <td><strong>{c.name}</strong><br /><span className="meta">{c.court}, {c.decided}{c.status !== 'published' ? ' (unpublished)' : ''}</span></td>
+                <td>{c.inPractice}</td>
+                <td>{c.trainIt}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <h3>This week in the briefing room</h3>
+        <ol>
+          {brief.applications.map((a, i) => <li key={i}><strong>{a.title}.</strong> {a.body}</li>)}
+        </ol>
+      </div>
+
+      <div className="screen-only">
       {episodeLinks.length > 0 && (
         <div className="callout">
           <strong>Listen.</strong>{' '}
@@ -69,6 +112,7 @@ export default function BriefDetail() {
       </section>
 
       <p><Link to="/briefs">All weekly briefs</Link></p>
+      </div>
     </>
   );
 }

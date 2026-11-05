@@ -36,3 +36,4 @@ Copy `.env.example` to `.env` to set the public URL, the audio host, and the Mai
 - [Content workflow](docs/CONTENT-WORKFLOW.md): how to publish a weekly brief and a podcast episode.
 - [Deployment](docs/DEPLOYMENT.md): hosting options, audio hosting, and podcast directory submission.
 - [Roadmap](docs/ROADMAP.md): connecting to the WordPress and LifterLMS site, push notifications, native app wrappers.
+- [Market landscape and growth plan](docs/MARKET-AND-GROWTH.md): who competes for the same sign-ups, where Sowards is different, and how to draw people to the app.
