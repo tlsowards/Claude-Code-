@@ -3,6 +3,9 @@ name: Deploy app to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Nightly rebuild so the course catalog stays in sync with sowardsconsulting.com.
+    - cron: '17 10 * * *'
   workflow_dispatch:
 
 permissions:
@@ -31,6 +34,8 @@ jobs:
           VITE_PUBLIC_URL: https://${{ github.repository_owner }}.github.io
           VITE_AUDIO_BASE_URL: ${{ vars.AUDIO_BASE_URL }}
           VITE_MAILERLITE_FORM_ACTION: ${{ vars.MAILERLITE_FORM_ACTION }}
+          VITE_PAYWALL: ${{ vars.PAYWALL }}
+          VITE_SUBSCRIBE_URL: ${{ vars.SUBSCRIBE_URL }}
         run: npm run build
       - uses: actions/configure-pages@v5
         with:

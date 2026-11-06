@@ -42,7 +42,7 @@ export default function Home() {
         <Link to="/training" className="card card-link">
           <div className="eyebrow">STC-certified training</div>
           <h3>Online courses with certificates</h3>
-          <div className="meta">Use of force, de-escalation, report writing, PREA, manipulation. Preview any course free.</div>
+          <div className="meta">Twelve courses live on the course portal. Preview any course free, or sign in to pick up where you left off.</div>
         </Link>
         <Link to="/downing-the-duck" className="card card-link">
           <div className="eyebrow">Free framework</div>

@@ -1,66 +1,62 @@
 import Seo from '../components/Seo';
-import { courses, pricing, pricingNote, catalogNote } from '../data/content';
+import { liveCourses, upcomingCourses, pricing, pricingNote, catalogNote, catalogFetchedAt, formatDate } from '../data/content';
 import { site } from '../config';
 
-const statusText: Record<string, string> = {
-  live: 'Online now',
-  'stc-review': 'In STC review',
-  'in-development': 'In development',
-  'in-person': 'In person',
-};
-
 export default function Training() {
-  const online = courses.filter((c) => c.status === 'live');
-  const other = courses.filter((c) => c.status !== 'live');
   return (
     <>
-      <Seo title="STC-certified training" description="STC-certified online and in-person courses from Sowards Consulting: use of force, de-escalation, report writing, PREA, and more." />
+      <Seo title="STC-certified training" description="STC-certified online and in-person courses from Sowards Consulting: use of force, de-escalation, report writing, PREA, Title 15, and more." />
       <div className="eyebrow">Training</div>
       <h1>STC-certified training. One discipline: defensibility.</h1>
       <p className="lead">
-        Online courses are 3 to 4 hours, asynchronous, with scenarios, knowledge checks, a written skill test, and a graded final. Students receive a certificate with the STC course number for agency credit filing. Preview any course free.
+        Online courses are 3 to 4 hours, asynchronous, with avatar-led video lessons, knowledge checks, a written skill test, and a graded final. Students receive a certificate with the STC course number for agency credit filing. Preview any course free.
       </p>
       <div className="btn-row">
-        <a className="btn" href={site.coursesUrl}>Open the course portal</a>
-        <a className="btn secondary" href={site.contactUrl}>Schedule in-person training</a>
+        <a className="btn" href={site.dashboardUrl}>Sign in to my courses</a>
+        <a className="btn secondary" href={site.managerDashboardUrl}>Agency coordinator dashboard</a>
       </div>
-      <p className="callout">{catalogNote}</p>
+      <p className="meta">
+        {catalogNote}
+        {catalogFetchedAt ? ` Last synced ${formatDate(catalogFetchedAt.slice(0, 10))}.` : ''}
+      </p>
 
-      <div className="section-title"><h2>Online courses</h2></div>
+      <div className="section-title"><h2>Online courses ({liveCourses.length})</h2></div>
       <div className="grid two">
-        {online.map((c) => (
-          <div className="card" key={c.id}>
+        {liveCourses.map((c) => (
+          <a className="card card-link course-card" key={c.id} href={c.url}>
+            {c.image && <img className="course-image" src={c.image} alt={c.title} loading="lazy" />}
             <div className="eyebrow">{c.track ?? 'All populations'}</div>
             <h3>{c.title}</h3>
             <div style={{ marginBottom: 8 }}>
               {c.stcNumber && <span className="pill">STC {c.stcNumber}</span>}
-              {c.hours && <span className="pill muted">{c.hours}</span>}
-              <span className="pill muted">{statusText[c.status]}</span>
+              {(c.hours || c.totalTime) && <span className="pill muted">{c.hours ?? c.totalTime}</span>}
+              <span className="pill muted">Online now</span>
             </div>
-            <p style={{ fontSize: '0.93rem' }}>{c.summary}</p>
-            <ul style={{ fontSize: '0.9rem', marginBottom: 10 }}>
-              {c.outcomes.map((o) => <li key={o}>{o}</li>)}
-            </ul>
-            <div className="meta">{c.audience}</div>
-            {c.url && <p style={{ marginTop: 10, marginBottom: 0 }}><a href={c.url}>Preview this course</a></p>}
-          </div>
+            <p style={{ fontSize: '0.93rem' }}>{c.excerpt}</p>
+            {c.audience && <div className="meta">{c.audience}</div>}
+            <p style={{ marginTop: 10, marginBottom: 0 }}><span className="btn secondary" style={{ padding: '6px 12px', fontSize: '0.85rem' }}>Preview free on the course portal</span></p>
+          </a>
         ))}
       </div>
 
-      <div className="section-title"><h2>In-person and upcoming</h2></div>
-      <div className="grid two">
-        {other.map((c) => (
-          <div className="card" key={c.id}>
-            <h3>{c.title}</h3>
-            <div style={{ marginBottom: 8 }}>
-              {c.hours && <span className="pill muted">{c.hours}</span>}
-              <span className="pill">{statusText[c.status]}</span>
-            </div>
-            <p style={{ fontSize: '0.93rem' }}>{c.summary}</p>
-            <div className="meta">{c.format}</div>
+      {upcomingCourses.length > 0 && (
+        <>
+          <div className="section-title"><h2>In review and upcoming</h2></div>
+          <div className="grid two">
+            {upcomingCourses.map((c) => (
+              <div className="card" key={c.id}>
+                <h3>{c.title}</h3>
+                <div style={{ marginBottom: 8 }}>
+                  {c.hours && <span className="pill muted">{c.hours}</span>}
+                  <span className="pill">{c.status === 'stc-review' ? 'In STC review' : 'Upcoming'}</span>
+                </div>
+                <p style={{ fontSize: '0.93rem' }}>{c.summary}</p>
+                <div className="meta">{c.format}</div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </>
+      )}
 
       <div className="section-title"><h2>Per-officer licensing, one course</h2></div>
       <div className="card">

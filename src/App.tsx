@@ -11,6 +11,8 @@ import DowningTheDuck from './pages/DowningTheDuck';
 import PC835a from './pages/PC835a';
 import Subscribe from './pages/Subscribe';
 import About from './pages/About';
+import SignIn from './pages/SignIn';
+import Account from './pages/Account';
 import NotFound from './pages/NotFound';
 
 export default function App() {
@@ -29,6 +31,8 @@ export default function App() {
         <Route path="reference/pc835a" element={<PC835a />} />
         <Route path="subscribe" element={<Subscribe />} />
         <Route path="about" element={<About />} />
+        <Route path="signin" element={<SignIn />} />
+        <Route path="account" element={<Account />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

@@ -10,6 +10,9 @@ export const site = {
   website: 'https://sowardsconsulting.com',
   coursesUrl: 'https://sowardsconsulting.com/courses/',
   contactUrl: 'https://sowardsconsulting.com/contact/',
+  dashboardUrl: 'https://sowardsconsulting.com/dashboard/',
+  managerDashboardUrl: 'https://sowardsconsulting.com/manager-dashboard/',
+  loginUrl: 'https://sowardsconsulting.com/dashboard/',
   location: 'Rancho Cordova, CA, serving agencies statewide',
   // MailerLite embedded form action URL. Leave empty until the form is created in MailerLite.
   mailerLiteFormAction: import.meta.env.VITE_MAILERLITE_FORM_ACTION ?? '',
@@ -17,6 +20,19 @@ export const site = {
   publicUrl: import.meta.env.VITE_PUBLIC_URL ?? 'https://app.sowardsconsulting.com',
   // Base URL where podcast MP3 files are hosted (Bunny Stream or another host).
   audioBaseUrl: import.meta.env.VITE_AUDIO_BASE_URL ?? '',
+  // WordPress app API (see wordpress/sowards-app-api.php).
+  apiBase: import.meta.env.VITE_API_BASE ?? 'https://sowardsconsulting.com/wp-json/sowards/v1',
+  // Where "Start your free 30 days" sends people: the LifterLMS membership checkout on the site.
+  subscribeUrl: import.meta.env.VITE_SUBSCRIBE_URL ?? 'https://sowardsconsulting.com/memberships/',
+};
+
+/** Subscription offer and whether the paywall is enforced. Off until the membership exists on the site. */
+export const subscription = {
+  enforced: import.meta.env.VITE_PAYWALL === 'on',
+  trialDays: 30,
+  price: '$9.99',
+  period: 'month',
+  name: 'Use of Force Case Law Update',
 };
 
 export const disclaimer =

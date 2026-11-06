@@ -69,8 +69,10 @@ export interface Episode {
   title: string;
   date: string;
   description: string;
-  /** File name under the audio base URL. */
+  /** File name under the audio base URL, used when audioUrl is not set. */
   file: string;
+  /** Full URL of the MP3 when it is hosted somewhere specific, such as the website's media library. */
+  audioUrl?: string;
   bytes: number;
   /** Seconds, when measured. */
   durationSeconds?: number;
@@ -89,6 +91,24 @@ export interface Course {
   outcomes: string[];
   status: 'live' | 'stc-review' | 'in-development' | 'in-person';
   url?: string;
+}
+
+export interface LiveCourse {
+  id: number;
+  slug: string;
+  title: string;
+  url: string;
+  excerpt: string;
+  audience: string;
+  totalTime: string;
+  modules: string[];
+  plans: { name: string; price: string }[];
+  image: string;
+  updated: string;
+  /** Merged from content/courses.meta.json */
+  stcNumber?: string;
+  track?: string;
+  hours?: string;
 }
 
 export interface PricingTier {

@@ -43,7 +43,7 @@ Upload `dist/` to the `app` folder and add a rewrite rule so `/app/*` serves `/a
 
 ## Audio hosting
 
-Podcast MP3 files are not stored in this repository. Host them on Bunny Stream (already used for course video) or any CDN, then set `VITE_AUDIO_BASE_URL` to the folder URL. The RSS feed and the in-app player build each episode URL as `VITE_AUDIO_BASE_URL/<file>`.
+Episode MP3s live in the sowardsconsulting.com media library and each episode in `content/episodes.json` points at its file with `audioUrl`. To publish a new episode, upload the MP3 in WordPress (Media, Add New), copy the file URL, and add it to the episode entry. `VITE_AUDIO_BASE_URL` remains available as a fallback for episodes that only have a `file` name.
 
 ## Podcast directories
 
