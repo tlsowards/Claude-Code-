@@ -34,6 +34,7 @@ export default function Layout() {
             </NavLink>
           ))}
           <NavLink to="/subscribe" className={({ isActive }) => (isActive ? 'active' : '')}>Subscribe</NavLink>
+          <a href={site.dashboardUrl}>Sign in</a>
         </nav>
       </header>
       <main>

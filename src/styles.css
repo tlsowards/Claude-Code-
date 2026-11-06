@@ -173,6 +173,8 @@ th { font-family: var(--font-heading); font-size: 0.78rem; letter-spacing: 0.05e
 .footer a { color: var(--muted); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 
+.course-card { padding-top: 0; overflow: hidden; }
+.course-image { display: block; width: calc(100% + 32px); margin: 0 -16px 12px; aspect-ratio: 16 / 9; object-fit: cover; background: var(--navy); }
 .quiz-options { display: grid; gap: 8px; margin: 10px 0 12px; }
 .quiz-option { text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; font-family: inherit; font-size: 0.95rem; color: var(--text); cursor: pointer; display: flex; gap: 10px; align-items: flex-start; }
 .quiz-option:hover:not(:disabled) { border-color: var(--gold); }

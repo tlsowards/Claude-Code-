@@ -1,0 +1,442 @@
+{
+  "site": "https://sowardsconsulting.com",
+  "fetchedAt": "2026-11-06T05:40:59.086Z",
+  "courses": [
+    {
+      "id": 2594,
+      "slug": "defensible-use-of-force",
+      "title": "Defensible Use of Force: Standards, Decisions, and Documentation",
+      "url": "https://sowardsconsulting.com/course/defensible-use-of-force/",
+      "excerpt": "STC-certified, on-demand training for California probation officers and supervisors. Master the Sowards 8355 Articulation Framework — the legal foundations, decision-making, perceptual lenses, and documentation that hold up in court and in the moment. Four modules, 100 lessons, capstone written scenario, AI-graded.",
+      "audience": "California probation officers, juvenile corrections officers, and first-line supervisors.",
+      "totalTime": "approximately 4 hours, self-paced",
+      "modules": [
+        "Module 1 — Legal Foundations (~60 min)",
+        "Module 2 — Pre-Force Decisions and Tactical Considerations (~55 min)",
+        "Module 3 — Acute Stress and Decision-Making (~55 min)",
+        "Module 4 — Application and Documentation (~75 min, bifurcated by track)"
+      ],
+      "plans": [
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        },
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/09/up2_duf-768x432.jpg",
+      "updated": "2026-09-12 02:00:14"
+    },
+    {
+      "id": 4728,
+      "slug": "de-escalation-and-crisis-intervention-for-juvenile-institutions",
+      "title": "De-escalation and Crisis Intervention for Juvenile Institutions",
+      "url": "https://sowardsconsulting.com/course/de-escalation-and-crisis-intervention-for-juvenile-institutions/",
+      "excerpt": "California STC-aligned de-escalation and crisis intervention training for juvenile institution staff. Four modules, avatar-led video lessons, knowledge checks, a branching scenario, a written skill test, and a final examination.",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        },
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/09/up2_instdeesc-768x432.jpg",
+      "updated": "2026-09-12 02:00:16"
+    },
+    {
+      "id": 5301,
+      "slug": "de-escalation-and-crisis-intervention-for-probation-field-operations",
+      "title": "De-escalation and Crisis Intervention for Probation Field Operations",
+      "url": "https://sowardsconsulting.com/course/de-escalation-and-crisis-intervention-for-probation-field-operations/",
+      "excerpt": "California STC-aligned de-escalation and crisis intervention training for probation field officers (juvenile and adult). Four modules, avatar-led video lessons, knowledge checks, a branching scenario, a written skill test, and a final examination.",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        },
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/07/Field-Descalation-768x432.png",
+      "updated": "2026-07-06 00:30:15"
+    },
+    {
+      "id": 5721,
+      "slug": "preventing-manipulation-and-grooming-in-juvenile-facilities-boundaries-ethics-and-safety",
+      "title": "Preventing Manipulation and Grooming in Juvenile Facilities: Boundaries, Ethics, and Safety",
+      "url": "https://sowardsconsulting.com/course/preventing-manipulation-and-grooming-in-juvenile-facilities-boundaries-ethics-and-safety/",
+      "excerpt": "California STC-aligned training on preventing manipulation and grooming in juvenile facilities, for line staff, supervisors, and training officers. It teaches professional boundaries, ethics, the warning signs of grooming and manipulation, and safe, defensible practice, with avatar-led video lessons, knowledge checks, scenarios, and a final examination.",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        },
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/09/up2_manip-768x432.jpg",
+      "updated": "2026-09-12 02:00:17"
+    },
+    {
+      "id": 5989,
+      "slug": "prea-compliance-for-juvenile-facilities-preventing-detecting-and-responding-to-sexual-abuse",
+      "title": "PREA Compliance for Juvenile Facilities: Preventing, Detecting, and Responding to Sexual Abuse",
+      "url": "https://sowardsconsulting.com/course/prea-compliance-for-juvenile-facilities-preventing-detecting-and-responding-to-sexual-abuse/",
+      "excerpt": "This STC-certified course prepares juvenile institution staff and supervisors to prevent, detect, and respond to sexual abuse and sexual harassment of youth in custody. It is built on two layers of law that operate at the same time: the federal Prison Rape Elimination Act national standards for juvenile facilities (28 CFR Part 115, Subpart D) [&hellip;]",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        },
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/07/Prea-Compliance--768x512.png",
+      "updated": "2026-08-14 03:53:31"
+    },
+    {
+      "id": 6638,
+      "slug": "beyond-bias",
+      "title": "Beyond Bias: Culture, Discretion, and Fair Treatment",
+      "url": "https://sowardsconsulting.com/course/beyond-bias/",
+      "excerpt": "California STC-aligned implicit bias and fair-treatment training for corrections and probation staff. Four modules, avatar-led video lessons, knowledge checks, branching You Decide scenarios, a written skill test, and a final examination.",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        },
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/08/Beyond-Bias-768x432.png",
+      "updated": "2026-09-12 01:13:02"
+    },
+    {
+      "id": 6916,
+      "slug": "the-standard-you-walk-past",
+      "title": "The Standard You Walk Past: Ethics, Professionalism, and Leadership",
+      "url": "https://sowardsconsulting.com/course/the-standard-you-walk-past/",
+      "excerpt": "California STC-aligned ethics, professionalism, and leadership training for corrections and probation staff. Four modules, avatar-led video lessons, knowledge checks, branching You Decide scenarios, a written skill test, and a final examination.",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        },
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/08/Leadership-768x432.png",
+      "updated": "2026-09-12 00:09:36"
+    },
+    {
+      "id": 7173,
+      "slug": "secure-then-serve",
+      "title": "Secure, Then Serve: Interacting with People with Disabilities",
+      "url": "https://sowardsconsulting.com/course/secure-then-serve/",
+      "excerpt": "California STC-aligned training on interacting with people who have disabilities, for corrections and probation staff. Four modules, avatar-led video lessons, knowledge checks, branching You Decide scenarios, a written skill test, and a final examination.",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        },
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/08/ADA-768x432.png",
+      "updated": "2026-09-12 01:03:10"
+    },
+    {
+      "id": 8147,
+      "slug": "ironclad-report-writing-that-holds-up-institutions-online-cbt",
+      "title": "Ironclad: Report Writing That Holds Up (Institutions, Online CBT)",
+      "url": "https://sowardsconsulting.com/course/ironclad-report-writing-that-holds-up-institutions-online-cbt/",
+      "excerpt": "Ironclad is a four-hour online course that teaches custodial officers to write reports that hold up in court, in a Section 1983 lawsuit, and in a BSCC inspection. It is built on the Sowards DEFENSIBLE Model and the 5C Method, and it moves from objective writing and the custodial report toolbox to high-liability documentation of [&hellip;]",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        },
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/09/Iornclad-instituitions-report-writing-768x432.png",
+      "updated": "2026-09-12 00:06:23"
+    },
+    {
+      "id": 8328,
+      "slug": "ironclad-report-writing-that-holds-up-field-online-cbt",
+      "title": "Ironclad: Report Writing That Holds Up (Field, Online CBT)",
+      "url": "https://sowardsconsulting.com/course/ironclad-report-writing-that-holds-up-field-online-cbt/",
+      "excerpt": "Ironclad is a four-hour online course that teaches probation and field officers to write reports that hold up in court, in a suppression motion, and in a Section 1983 lawsuit. It is built on the Sowards DEFENSIBLE Model and the 5C Method, and it moves from objective writing and the field report toolbox to high-liability [&hellip;]",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        },
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/09/Iornclad-reprot-wrting-field-768x432.png",
+      "updated": "2026-09-12 00:05:27"
+    },
+    {
+      "id": 8836,
+      "slug": "the-last-line-reviewing-use-of-force-for-probation-supervisors",
+      "title": "The Last Line: Reviewing Use of Force for Probation Supervisors",
+      "url": "https://sowardsconsulting.com/course/the-last-line-reviewing-use-of-force-for-probation-supervisors/",
+      "excerpt": "A four-hour course training probation supervisors and internal-affairs reviewers to review use-of-force and incident reports against the law, the policy, and the report-writing standard, across field and institution settings. Agency-neutral: taught to the California legal floor (PC 835a/AB 392, Graham v. Connor, GC 7286/7286.5, AB 1196, Title 15) and a general probation use-of-force policy model. [&hellip;]",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [
+        {
+          "name": "Course Preview (Free)",
+          "price": "FREE"
+        },
+        {
+          "name": "Solo – Single Officer Seat",
+          "price": "$80"
+        },
+        {
+          "name": "Squad – 10 Officer Seats",
+          "price": "$750"
+        },
+        {
+          "name": "Shift – 25 Officer Seats",
+          "price": "$1,800"
+        },
+        {
+          "name": "Department – 50 Officer Seats",
+          "price": "$3,500"
+        },
+        {
+          "name": "Agency – 100 Officer Seats",
+          "price": "$6,500"
+        }
+      ],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/09/The-Last-Line-Reviewing-Use-of-Force-for-Probation-Supervisors-768x432.png",
+      "updated": "2026-11-04 06:44:46"
+    },
+    {
+      "id": 9199,
+      "slug": "on-the-unit-title-15-rights-the-clock-and-the-paper-trail",
+      "title": "On the Unit: Title 15 Rights, the Clock, and the Paper Trail",
+      "url": "https://sowardsconsulting.com/course/on-the-unit-title-15-rights-the-clock-and-the-paper-trail/",
+      "excerpt": "A 3-hour Title 15 course for juvenile facility line staff, built around what staff actually get wrong on the unit and the findings that get written. Three parts: rights and daily entitlements; the clock (confinement, crisis, discipline); and the high-liability work (force, restraints, searches, the paper trail). Nineteen interactive You Decide scenarios, three knowledge checks, [&hellip;]",
+      "audience": "",
+      "totalTime": "",
+      "modules": [],
+      "plans": [],
+      "image": "https://sowardsconsulting.com/wp-content/uploads/2026/10/On-the-Unit_-Rights-Time-Documentation-768x432.png",
+      "updated": "2026-10-25 06:18:41"
+    }
+  ]
+}

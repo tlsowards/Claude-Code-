@@ -1,0 +1,17 @@
+{
+  "note": "Hand-maintained details that the site does not expose through its API, keyed by LifterLMS course id. STC numbers come from the September 2026 outreach flyer.",
+  "byId": {
+    "2594": { "stcNumber": "02096560", "track": "Institution and field services tracks", "hours": "4 hr" },
+    "4728": { "stcNumber": "02726193", "track": "Juvenile institutions", "hours": "4 hr" },
+    "5301": { "stcNumber": "09296735", "track": "Probation field operations", "hours": "4 hr" },
+    "5721": { "track": "Juvenile facilities", "hours": "Online" },
+    "5989": { "track": "Juvenile facilities", "hours": "Online" },
+    "6638": { "track": "All populations", "hours": "4 hr" },
+    "6916": { "track": "Supervisors and emerging leaders", "hours": "4 hr" },
+    "7173": { "track": "All populations", "hours": "4 hr classroom block" },
+    "8147": { "stcNumber": "03894586", "track": "Institutions", "hours": "4 hr online, also 8 hr in person" },
+    "8328": { "stcNumber": "06444732", "track": "Field services", "hours": "4 hr online, also 8 hr in person" },
+    "8836": { "track": "Probation supervisors and reviewers", "hours": "4 hr" },
+    "9199": { "track": "Juvenile facility line staff", "hours": "3 hr" }
+  }
+}

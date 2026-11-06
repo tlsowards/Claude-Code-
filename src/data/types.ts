@@ -91,6 +91,24 @@ export interface Course {
   url?: string;
 }
 
+export interface LiveCourse {
+  id: number;
+  slug: string;
+  title: string;
+  url: string;
+  excerpt: string;
+  audience: string;
+  totalTime: string;
+  modules: string[];
+  plans: { name: string; price: string }[];
+  image: string;
+  updated: string;
+  /** Merged from content/courses.meta.json */
+  stcNumber?: string;
+  track?: string;
+  hours?: string;
+}
+
 export interface PricingTier {
   name: string;
   seats: string;

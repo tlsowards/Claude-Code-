@@ -14,6 +14,8 @@ Open items that need information from Sowards Consulting:
 
 ## Phase 2: connect to sowardsconsulting.com (WordPress and LifterLMS)
 
+Status and findings are in [Site integration](SITE-INTEGRATION.md). The course catalog, pricing, and sign-in links now come from the live site. Student progress in the app and the site podcast are blocked on the items listed there.
+
 The live site already runs the LMS: courses, enrollment, quizzes, certificates, agency dashboards, and pricing. The app should read from it rather than duplicate it.
 
 - Register two custom post types in WordPress: `weekly_brief` (with the same fields as the JSON) and `podcast_episode`. Publish from the WordPress editor, and the app reads them through the REST API.

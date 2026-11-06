@@ -10,6 +10,9 @@ export const site = {
   website: 'https://sowardsconsulting.com',
   coursesUrl: 'https://sowardsconsulting.com/courses/',
   contactUrl: 'https://sowardsconsulting.com/contact/',
+  dashboardUrl: 'https://sowardsconsulting.com/dashboard/',
+  managerDashboardUrl: 'https://sowardsconsulting.com/manager-dashboard/',
+  loginUrl: 'https://sowardsconsulting.com/dashboard/',
   location: 'Rancho Cordova, CA, serving agencies statewide',
   // MailerLite embedded form action URL. Leave empty until the form is created in MailerLite.
   mailerLiteFormAction: import.meta.env.VITE_MAILERLITE_FORM_ACTION ?? '',

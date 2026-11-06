@@ -3,6 +3,9 @@ name: Deploy app to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Nightly rebuild so the course catalog stays in sync with sowardsconsulting.com.
+    - cron: '17 10 * * *'
   workflow_dispatch:
 
 permissions:
