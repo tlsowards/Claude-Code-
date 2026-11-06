@@ -30,11 +30,12 @@ export const site = {
 export const subscription = {
   enforced: import.meta.env.VITE_PAYWALL === 'on',
   trialDays: 30,
-  price: '$9.99',
-  period: 'month',
+  monthlyPrice: '$9.99',
   annualPrice: '$59.99',
   /** Short offer line used wherever the price is shown. */
-  offer: '$9.99 a month or $59.99 a year',
+  get offer() {
+    return `${this.monthlyPrice} a month or ${this.annualPrice} a year`;
+  },
   name: 'Use of Force Case Law Update',
 };
 
