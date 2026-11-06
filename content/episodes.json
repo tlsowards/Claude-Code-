@@ -3,19 +3,12 @@
     "id": "2026-10-03",
     "title": "Use of Force Case Law Update: September 26 to October 3, 2026",
     "date": "2026-10-03",
-    "description": "Edwards v. Brown on pepper spray decontamination and grievance tolling, Mason v. Talley on restraint to a fixed object, Hyttinen v. Frantti on warrant entry, Fambrough v. City of East Cleveland on orders from the top, and Andrade v. Collier County Sheriff.",
+    "description": "Edwards v. Brown on pepper spray decontamination and grievance tolling, Mason v. Talley on restraint to a fixed object, Hyttinen v. Frantti on warrant entry, Fambrough v. City of East Cleveland on orders from the top, and Andrade v. Collier County Sheriff. The October 4 follow-up sweep of the circuits, the Supreme Court order lists, and the California Court of Appeal is folded into the written brief for this week.",
     "file": "2026-10-03-use-of-force-case-law-update.mp3",
     "bytes": 19038217,
-    "briefId": "2026-w40"
-  },
-  {
-    "id": "2026-10-04",
-    "title": "Use of Force Case Law Update: September 28 to October 4, 2026",
-    "date": "2026-10-04",
-    "description": "A full sweep of the circuits, the Supreme Court order lists, and every California Court of Appeal opinion for the week, with the Mason v. Talley dissent, Johnson v. Tarrant County on contraband and Monell, and People v. Floresmata on frisks.",
-    "file": "2026-10-04-use-of-force-case-law-update.mp3",
-    "bytes": 17160745,
-    "briefId": "2026-w40"
+    "briefId": "2026-w40",
+    "audioUrl": "https://sowardsconsulting.com/wp-content/uploads/2026/10/2026-10-03-episode.mp3",
+    "durationSeconds": 1190
   },
   {
     "id": "2026-10-11",
@@ -33,7 +26,9 @@
     "description": "Vision Bank v. Avery and Burke v. Pitts on deadly force and hostile motion, Rockett v. Eighmy on locking children in holding cells, Martinez v. Hidalgo County, Bailey v. Michigan Department of Corrections, and Estate of Stinson v. Streicher.",
     "file": "2026-10-18-use-of-force-case-law-update.mp3",
     "bytes": 18789949,
-    "briefId": "2026-w42"
+    "briefId": "2026-w42",
+    "audioUrl": "https://sowardsconsulting.com/wp-content/uploads/2026/10/2026-10-18-episode.mp3",
+    "durationSeconds": 1174
   },
   {
     "id": "2026-10-25",
@@ -42,7 +37,9 @@
     "description": "Astorga v. Villanueva on supervisor liability for crowd control, Kilnapp v. City of Cleveland on an officer shot by her partner, Bond v. Sheriff of Ottawa County and a $33 million jail death verdict, Garcia v. United States on a hostage killed in a rescue, and two published California search decisions.",
     "file": "2026-10-25-use-of-force-case-law-update.mp3",
     "bytes": 18623183,
-    "briefId": "2026-w43"
+    "briefId": "2026-w43",
+    "audioUrl": "https://sowardsconsulting.com/wp-content/uploads/2026/10/2026-10-25-episode.mp3",
+    "durationSeconds": 1164
   },
   {
     "id": "2026-11-01",
@@ -51,6 +48,8 @@
     "description": "United States v. Zamora on when a seizure starts, Collazo v. Otsego County on control holds at a shots-fired call, Merrill v. Seagraves on a second Taser cycle, People v. Ball, People v. Steele, People v. Hicks on prone restraint, and Turner v. Sims on supervision language.",
     "file": "2026-11-01-use-of-force-case-law-update.mp3",
     "bytes": 18502393,
-    "briefId": "2026-w44"
+    "briefId": "2026-w44",
+    "audioUrl": "https://sowardsconsulting.com/wp-content/uploads/2026/11/2026-11-01-episode.mp3",
+    "durationSeconds": 1156
   }
 ]

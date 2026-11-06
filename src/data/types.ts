@@ -69,8 +69,10 @@ export interface Episode {
   title: string;
   date: string;
   description: string;
-  /** File name under the audio base URL. */
+  /** File name under the audio base URL, used when audioUrl is not set. */
   file: string;
+  /** Full URL of the MP3 when it is hosted somewhere specific, such as the website's media library. */
+  audioUrl?: string;
   bytes: number;
   /** Seconds, when measured. */
   durationSeconds?: number;

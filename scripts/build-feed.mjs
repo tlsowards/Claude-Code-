@@ -47,9 +47,13 @@ const channel = {
   language: 'en-us',
 };
 
-const items = episodes
+const withAudio = episodes.filter((e) => e.audioUrl || audioBase);
+const skipped = episodes.length - withAudio.length;
+if (skipped > 0) console.warn(`Feed: ${skipped} episode(s) have no audio yet and are left out of the RSS feed.`);
+
+const items = withAudio
   .map((e) => {
-    const url = audioBase ? `${audioBase}/${e.file}` : `${publicUrl}${basePath}/audio/${e.file}`;
+    const url = e.audioUrl ?? `${audioBase}/${e.file}`;
     const guid = `${publicUrl}${basePath}/podcast/${e.id}`;
     return `    <item>
       <title>${esc(e.title)}</title>
@@ -79,7 +83,7 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
     <itunes:category text="${esc(channel.category)}" />
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
-    <lastBuildDate>${rfc822(episodes[0].date)}</lastBuildDate>
+    <lastBuildDate>${rfc822((withAudio[0] ?? episodes[0]).date)}</lastBuildDate>
 ${items}
   </channel>
 </rss>
@@ -87,4 +91,4 @@ ${items}
 
 mkdirSync(resolve(root, 'public/podcast'), { recursive: true });
 writeFileSync(resolve(root, 'public/podcast/feed.xml'), xml);
-console.log(`Wrote public/podcast/feed.xml with ${episodes.length} episodes.`);
+console.log(`Wrote public/podcast/feed.xml with ${withAudio.length} episodes.`);

@@ -26,8 +26,8 @@ Briefs are written for the general training population, not to any one person. N
 
 ## Publish a podcast episode
 
-1. Upload the MP3 to the audio host (see [Deployment](DEPLOYMENT.md)). Name it `YYYY-MM-DD-use-of-force-case-law-update.mp3`.
-2. Add an entry to `content/episodes.json` with `id`, `title`, `date`, `description`, `file`, `bytes` (file size in bytes), and `briefId`. Add `durationSeconds` once measured.
+1. Upload the MP3 to the WordPress media library on sowardsconsulting.com (Media, Add New) and copy its file URL.
+2. Add an entry to `content/episodes.json` with `id`, `title`, `date`, `description`, `audioUrl` (the media library URL), `bytes` (file size in bytes), `durationSeconds`, and `briefId`.
 3. Run `npm run build`. The feed at `public/podcast/feed.xml` is regenerated.
 
 ## Update the catalog, resources, or references
