@@ -12,7 +12,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['icons/*.png', 'podcast/feed.xml', 'podcast/cover.png'],
+      includeAssets: ['icons/*.png', 'podcast/feed.xml'],
       manifest: {
         name: 'Sowards Consulting Training',
         short_name: 'Sowards',
@@ -32,6 +32,8 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,xml,woff2}'],
+        // Large images are fetched on demand, not precached on install.
+        globIgnores: ['**/podcast/cover.png', '**/icons/icon-1024.png'],
         navigateFallback: `${base}index.html`,
         runtimeCaching: [
           {
