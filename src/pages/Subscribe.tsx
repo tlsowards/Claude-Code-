@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Seo from '../components/Seo';
-import { site } from '../config';
+import { site, subscription } from '../config';
+import { Link } from 'react-router-dom';
 
 export default function Subscribe() {
   const [canInstall, setCanInstall] = useState<null | (() => void)>(null);
@@ -23,8 +24,21 @@ export default function Subscribe() {
     <>
       <Seo title="Subscribe" description="Get the weekly use of force brief and new podcast episodes by email, and install the app on your phone." />
       <div className="eyebrow">Subscribe</div>
-      <h1>Free. Every week.</h1>
-      <p className="lead">The weekly brief and new podcast episodes, sent to your inbox. No cost, unsubscribe any time.</p>
+      {subscription.enforced ? (
+        <>
+          <h1>Free for {subscription.trialDays} days, then {subscription.price} a {subscription.period}.</h1>
+          <p className="lead">The weekly use of force case law brief, the audio episode, the printable roll call version, and the knowledge check. Every week. Cancel any time.</p>
+          <div className="btn-row">
+            <a className="btn" href={site.subscribeUrl}>Start your free {subscription.trialDays} days</a>
+            <Link className="btn secondary" to="/signin">Already subscribed? Sign in</Link>
+          </div>
+        </>
+      ) : (
+        <>
+          <h1>Free. Every week.</h1>
+          <p className="lead">The weekly brief and new podcast episodes, sent to your inbox. No cost, unsubscribe any time.</p>
+        </>
+      )}
 
       <div className="card">
         <h2>Email updates</h2>

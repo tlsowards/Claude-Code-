@@ -23,6 +23,10 @@ The live site already runs the LMS: courses, enrollment, quizzes, certificates, 
 - Sign-in: let a student log in with their existing site account and see their enrolled courses, progress, and certificates inside the app.
 - This needs the site allowed in the build environment and a WordPress application password entered through the secure credential form.
 
+## Subscription
+
+Built: sign-in with the site account, account page with subscription status and course progress, paywall on briefs, cases, audio, print, and knowledge checks with a free preview. Setup steps are in [Subscription](SUBSCRIPTION.md). The paywall is off until the membership exists on the site.
+
 ## Phase 3: notifications and native apps
 
 - Web push notifications for new briefs and episodes (needs a small server component or a push service).

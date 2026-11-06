@@ -1,8 +1,10 @@
 import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/Seo';
 import { episodes, getEpisode, getBrief, formatDate } from '../data/content';
-import { site } from '../config';
+import { site, subscription } from '../config';
 import NotFound from './NotFound';
+import Paywall from '../components/Paywall';
+import { useAuth } from '../data/auth';
 
 function audioUrl(e: { file: string; audioUrl?: string }) {
   if (e.audioUrl) return e.audioUrl;
@@ -16,6 +18,7 @@ function minutes(sec?: number) {
 
 export default function Podcast() {
   const { id } = useParams();
+  const { canAccess } = useAuth();
   const selected = id ? getEpisode(id) : episodes[0];
   if (id && !selected) return <NotFound />;
   const feedUrl = `${import.meta.env.BASE_URL}podcast/feed.xml`;
@@ -38,7 +41,9 @@ export default function Podcast() {
           <div className="eyebrow gold">Now playing</div>
           <h2 style={{ color: '#fff' }}>{selected.title}</h2>
           <div style={{ opacity: 0.85, fontSize: '0.9rem' }}>{formatDate(selected.date)}{selected.durationSeconds ? ` · ${minutes(selected.durationSeconds)}` : ''}</div>
-          {audioUrl(selected) ? (
+          {audioUrl(selected) && !canAccess ? (
+            <p style={{ marginTop: 10, marginBottom: 0, fontSize: '0.9rem' }}>Episodes play for subscribers. Start your free {subscription.trialDays} days below.</p>
+          ) : audioUrl(selected) ? (
             <audio controls preload="metadata" src={audioUrl(selected)} />
           ) : (
             <p style={{ marginTop: 10, marginBottom: 0, fontSize: '0.9rem' }}>
@@ -53,6 +58,8 @@ export default function Podcast() {
           )}
         </div>
       )}
+
+      {!canAccess && <Paywall what="every episode" />}
 
       <div className="section-title"><h2>All episodes</h2></div>
       {episodes.map((e) => (

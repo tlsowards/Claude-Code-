@@ -30,6 +30,7 @@ Copy `.env.example` to `.env` to set the public URL, the audio host, and the Mai
 | `scripts/sync-site.mjs` | Reads the live course catalog from the site. |
 | `scripts/build-feed.mjs` | Generates `public/podcast/feed.xml` from the episode list. |
 | `scripts/build-sitemap.mjs` | Generates `public/sitemap.xml` and `public/robots.txt` for search engines. |
+| `wordpress/sowards-app-api.php` | WPCode snippet for the site: sign-in, subscription check, courses and certificates for the app. |
 | `.github/workflows/deploy-pages.yml` | Builds and deploys to GitHub Pages on every push to `main`. |
 | `src/pages/` | One React component per screen. |
 | `src/config.ts` | Site name, contact details, and environment-driven settings. |
@@ -45,5 +46,6 @@ Merging to `main` deploys the app to GitHub Pages automatically. See [Deployment
 - [Content workflow](docs/CONTENT-WORKFLOW.md): how to publish a weekly brief and a podcast episode.
 - [Deployment](docs/DEPLOYMENT.md): hosting options, audio hosting, and podcast directory submission.
 - [Roadmap](docs/ROADMAP.md): connecting to the WordPress and LifterLMS site, push notifications, native app wrappers.
+- [Subscription](docs/SUBSCRIPTION.md): how the free 30 days, then $9.99 a month, is set up on the site and enforced in the app.
 - [Site integration](docs/SITE-INTEGRATION.md): what the app reads from sowardsconsulting.com and what still needs to change on the site.
 - [Market landscape and growth plan](docs/MARKET-AND-GROWTH.md): who competes for the same sign-ups, where Sowards is different, and how to draw people to the app.

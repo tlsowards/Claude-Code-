@@ -1,6 +1,7 @@
 import { NavLink, Outlet, Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { site, disclaimer } from '../config';
+import { useAuth } from '../data/auth';
 import { HomeIcon, BriefIcon, PodcastIcon, TrainingIcon, ResourcesIcon } from './Icons';
 
 const nav = [
@@ -13,6 +14,7 @@ const nav = [
 
 export default function Layout() {
   const { pathname } = useLocation();
+  const { me } = useAuth();
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [pathname]);
@@ -34,7 +36,11 @@ export default function Layout() {
             </NavLink>
           ))}
           <NavLink to="/subscribe" className={({ isActive }) => (isActive ? 'active' : '')}>Subscribe</NavLink>
-          <a href={site.dashboardUrl}>Sign in</a>
+          {me ? (
+            <NavLink to="/account" className={({ isActive }) => (isActive ? 'active' : '')}>Account</NavLink>
+          ) : (
+            <NavLink to="/signin" className={({ isActive }) => (isActive ? 'active' : '')}>Sign in</NavLink>
+          )}
         </nav>
       </header>
       <main>
