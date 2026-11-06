@@ -1,0 +1,174 @@
+{
+  "id": "2026-w41",
+  "title": "A Taser on a 70-year-old with dementia, shooting into a slow-moving car, and a jail overdose",
+  "date": "2026-10-11",
+  "coverageStart": "2026-10-05",
+  "coverageEnd": "2026-10-11",
+  "summary": "The Fifth Circuit protected a single Taser deployment on an elderly man with dementia who died from the fall, and a shooting into a car moving at walking speed, in both cases without saying the force was reasonable. The Sixth Circuit let a failure-to-train claim go forward after a jail death on video. The Supreme Court declined the Terence Crutcher shooting case, which means nothing on the merits.",
+  "coverage": [
+    "The Ninth Circuit's full opinions list and full memoranda list for the week were reviewed. No published or unpublished use of force decision.",
+    "The Supreme Court's first order list of the term, October 5, was reviewed, and the Shelby v. Manning docket was confirmed on the Court's own site.",
+    "The Tenth Circuit opinion in the Shelby matter was not read this week. The facts of that case below come from news reporting and are flagged as unconfirmed.",
+    "The search of California Court of Appeal opinion pages was more limited than usual this week. No published use of force decision was identified, but treat that as not fully confirmed."
+  ],
+  "sections": [
+    {
+      "heading": "Ninth Circuit",
+      "note": "Nothing new on use of force. Schmidt v. City of Pasadena, a published opinion involving a police forensic specialist, concerned the city's COVID testing and masking policy and PREP Act immunity. Tabi v. Stephenson, an unpublished memorandum involving a Los Angeles County deputy who directed a voter registration worker to leave Walmart property, was a First Amendment case.",
+      "cases": []
+    },
+    {
+      "heading": "Supreme Court",
+      "cases": [
+        {
+          "id": "shelby-v-manning",
+          "name": "Shelby v. Manning",
+          "court": "Supreme Court of the United States (review of the Tenth Circuit)",
+          "courtKey": "scotus",
+          "docket": "25-1420",
+          "decided": "Review denied October 5, 2026",
+          "status": "cert-denied",
+          "topic": "Deadly force, qualified immunity",
+          "settings": [
+            "field"
+          ],
+          "caution": "The Court's docket confirms the petition was distributed for the September 28 conference and denied October 5. The Tenth Circuit opinion of March 30, 2026 was not read this week, so the facts below come from news reporting and are not confirmed against the opinion.",
+          "facts": "Betty Jo Shelby, the former Tulsa officer involved in the 2016 shooting of Terence Crutcher, asked the Court to review a Tenth Circuit decision that reportedly reversed summary judgment and denied her qualified immunity. According to reporting, Mr. Crutcher was unarmed, was not suspected of a violent crime, was not fleeing, and another officer deployed a Taser at about the moment Shelby fired. Her petition argued the Tenth Circuit defined clearly established law at too high a level of generality and relied on the Court's recent decision in Zorn v. Linton.",
+          "holding": "Review denied, without reasons. The denial of qualified immunity stands and the case returns to the district court. News reports put trial in February 2027; that date is not independently confirmed.",
+          "notDecided": "Everything. A cert denial says nothing about whether the Tenth Circuit was right.",
+          "inPractice": "The core Graham questions still drive these cases. Was the person a threat right now? Were they fleeing? What was the crime? When the answers are no, no, and nothing serious, deadly force gets very close scrutiny.",
+          "trainIt": "Do not let anyone in a briefing room describe a cert denial as the Supreme Court endorsing or rejecting anything. Use the three Graham questions as the spine of every deadly force debrief."
+        }
+      ]
+    },
+    {
+      "heading": "Other federal circuits",
+      "cases": [
+        {
+          "id": "navejas-v-el-paso",
+          "name": "Navejas v. City of El Paso",
+          "court": "Fifth Circuit",
+          "courtKey": "ca5",
+          "docket": "25-51061",
+          "decided": "October 8, 2026",
+          "status": "published",
+          "topic": "Single Taser deployment, mental impairment, Monell",
+          "settings": [
+            "field",
+            "all"
+          ],
+          "facts": "At about 2:14 a.m. on October 24, 2021, El Paso officer Steven Jaso was dispatched to a family violence call classified as an assault in progress. The caller said her husband, Armando Navejas, became violent when she tried to give him his medication and tried to strangle her. Armando was 70, with dementia and Alzheimer's disease, and officers had returned him home after he wandered off just hours earlier. Dispatch noted no access to weapons and that the wife was not then in immediate danger. Surveillance video from across the street showed Armando pick up an object, make a throwing motion, then step toward Jaso with a much larger object held in both hands, apparently a potted plant, and heave it, striking the hood of a parked car. The plaintiff disputed the officer's account that he had been struck in the shin and said at least one object was a lightweight piece of shrub. Within seconds Jaso ran around the car and tased Armando once in the back. He fell forward, was knocked unconscious by the fall, was handcuffed, taken to the hospital, and later died.",
+          "holding": "Affirmed summary judgment for the officer and the city. On the officer, the court used only the second prong of qualified immunity. It assumed without deciding that the tasing violated the Fourth Amendment, then held no precedent clearly established that a single Taser deployment against an erratic, actively resisting, unrestrained person who had thrown objects was unlawful. Age, mental condition, and the availability of de-escalation did not make the force clearly unlawful, and the Fourth Amendment does not require officers to delay responding to a potentially serious threat because the person has a mental illness. On the city, there was no pattern evidence of deliberate indifference, new pattern evidence raised for the first time on appeal was not considered, and the single-incident exception from Connick v. Thompson did not apply. Opinion by Judge Duncan, joined by Judges Jones and Southwick. No dissent.",
+          "notDecided": "This was a prong-two decision. The court did not say the tasing was reasonable. It said the law was not clearly established. Anyone who testifies needs to keep those two things straight.",
+          "inPractice": "In the Fifth Circuit, a single Taser cycle on an unrestrained person who is throwing things at an officer is very likely protected by qualified immunity, even when that person is elderly and cognitively impaired. The officer was protected in large part because video corroborated active resistance.",
+          "trainIt": "A man died, and nobody should walk away thinking this went well. With a 70-year-old, 130-pound man with dementia, the fall is the danger. Train that a probe deployment on an elderly person, from behind, while he is moving, carries a real risk of a head strike when he goes down. Train dementia and cognitive impairment recognition. Train time, distance, and cover, and train officers to use that time when the threat level allows. And train documentation: officers who cannot articulate and document what the person was actually doing will not get the benefit this officer got."
+        },
+        {
+          "id": "fischer-v-phillips",
+          "name": "Fischer v. Phillips",
+          "court": "Fifth Circuit",
+          "courtKey": "ca5",
+          "docket": "25-11267",
+          "decided": "October 8, 2026",
+          "status": "unpublished",
+          "topic": "Deadly force at a vehicle",
+          "settings": [
+            "field"
+          ],
+          "facts": "On October 20, 2021, in Arlington, Texas, officers responded to a 911 call about a man, Jesse Fischer, slumped over in his car. Told to get out so medics could check him, he started the car, asked if he was under arrest, got no answer, and drove away at about 20 miles per hour. Officer Robert Phillips said he was swerving and driving on the sidewalk, possibly intoxicated. In the slow pursuit that followed, Jesse stopped at a red light and every stop sign, though he rolled past the lines. At the red light he hung both hands out the window and asked what he had done. Phillips told him it was not going to end well if he did not drop the keys. Jesse pulled a hand back in and officers drew their guns. He drove on and into a cul-de-sac. Officers parked at the entrance and blocked his only way out. Jesse made a U-turn at about five miles per hour toward the police vehicles, within 10 to 15 feet. Phillips got out of his car, raised his pistol, yelled \"don't you do it,\" and fired six shots through the windshield. Jesse died.",
+          "holding": "Affirmed dismissal at the pleading stage on qualified immunity. Because body camera and dash camera video were incorporated into the complaint, the court relied on the video. The shooting was not objectively unreasonable: under Fifth Circuit law suspected driving under the influence is a serious crime under Graham, Jesse was actively evading, and the car was coming toward the officers. The court distinguished Lytle v. Bexar County, where the officer may have fired into the back of a car driving away, and relied on Fraire v. City of Arlington and Hathaway v. Bazany, where officers fired at cars coming toward them at close range. Declining to keep the state law claims was not an abuse of discretion. Panel: Judges Stewart, Higginson, and Ho. No dissent.",
+          "notDecided": "The city had been voluntarily dismissed on appeal, so municipal liability was not decided. Unpublished, so not precedent even in the Fifth Circuit.",
+          "inPractice": "The Fifth Circuit gives officers a lot of room when a vehicle is moving toward them at close range, even at walking speed. That is not the standard California officers should be training to.",
+          "trainIt": "California Penal Code section 835a requires that deadly force be necessary in light of the totality of the circumstances, and most modern policies tell officers to move out of the path of a vehicle rather than shoot at it. Look at the tactics here: the officers boxed the car in and then an officer stepped into the space the car had to move through. Train officers to plan a block before they make it, to stay out of the path of travel, and to recognize that shooting the driver of a moving car rarely stops the car. Being protected in court is not the same thing as being tactically sound."
+        },
+        {
+          "id": "byrum-v-knox-county",
+          "name": "Byrum v. Knox County",
+          "court": "Sixth Circuit",
+          "courtKey": "ca6",
+          "docket": "25-5830",
+          "decided": "October 8, 2026",
+          "status": "published",
+          "topic": "Jail medical response, failure to train",
+          "settings": [
+            "custody",
+            "juvenile",
+            "supervisors"
+          ],
+          "caution": "The opinion describes an earlier en banc Sixth Circuit decision, Poynter, as raising the deliberate indifference standard for pretrial detainees to require knowledge rather than recklessness. Poynter itself was not read for this brief; treat that description as reported, not independently confirmed.",
+          "facts": "Early on May 25, 2023, Ricky Lynn Lewis was arrested for drug possession and booked into the Roger D. Wilson Detention Facility in Knoxville at about 5 a.m. He was unstable on his feet and hunched over, had to be moved in a wheelchair, and at times lay on a bench unconscious. No initial medical screen was done. About two hours later staff did a sternum rub; his breathing was labored, slow, and shallow. Instead of naloxone, staff used smelling salts to keep him awake while taking vital signs. One staff member joked that he must be dying of bone cancer. He was then locked in a holding cell for about nine hours and essentially not monitored. He died of a drug overdose after about 17 hours in custody. His daughter had dropped her claims against individual staff, so only county claims remained.",
+          "holding": "Reversed the dismissal of the failure-to-train claim. The allegations, together with the jail video, supported a reasonable inference that the county did not adequately train jail staff to recognize and respond to drug-related medical emergencies. Dismissal of the other county theories, a custom of not screening, overcrowding, and underfunding, was affirmed. Applying the more demanding standard described from Poynter did not change the result. Opinion by Judge Bloomekatz, joined by Judge Stranch.",
+          "dissent": "Judge Hermandorfer, concurring in part and dissenting in part, would have dismissed the failure-to-train claim too, because the complaint said nothing specific about the county's training program beyond calling it inadequate.",
+          "notDecided": "Whether the county is actually liable. This was the pleading stage only. No qualified immunity issue, because no individual was sued.",
+          "inPractice": "In the Sixth Circuit, video showing obvious, prolonged medical distress with no meaningful response can carry a failure-to-train claim past a motion to dismiss, even without details about the training curriculum.",
+          "trainIt": "Intake medical screening happens every time, no exceptions, no matter how busy booking is. Every officer recognizes the signs of overdose and withdrawal. Naloxone is available and staff know how to use it. Required safety checks happen on time and are documented honestly. And nobody mocks a person in distress. Juvenile detention faces the same issues at intake and in room confinement, and the documentation of checks is what protects the youth, the staff, and the agency."
+        }
+      ]
+    },
+    {
+      "heading": "California",
+      "note": "No published California Supreme Court or Court of Appeal use of force decision was identified for October 5 through 11. The search of the California opinion pages was more limited than usual this week, so treat that as not fully confirmed.",
+      "cases": []
+    }
+  ],
+  "applications": [
+    {
+      "title": "Keep the legal question and the training question separate",
+      "body": "Qualified immunity turned on the second prong in Navejas and on video at the pleading stage in Fischer. In neither case did the court say the tactics were good. When reviewing a use of force, or testifying about one, say which question is being answered."
+    },
+    {
+      "title": "Mental illness and cognitive impairment are factors, not a shield either way",
+      "body": "Courts weigh them, but in the Fifth Circuit they do not by themselves make a single Taser deployment clearly unlawful. That does not change what good practice looks like: recognize it, slow it down when the threat allows, and plan for the fall."
+    },
+    {
+      "title": "Train vehicle shootings to California law and policy, not to the most forgiving circuit",
+      "body": "Federal law in some circuits is more permissive than Penal Code section 835a and more permissive than most modern policies. Plan the block before making it, stay out of the path of travel, and remember that shooting the driver rarely stops the car."
+    },
+    {
+      "title": "Custody exposure often is not force at all",
+      "body": "Byrum is a reminder that intake screening, medical response, and monitoring carry a large share of detention liability, and that video can carry those claims a long way. Screen everyone, recognize overdose, stock and train naloxone, and document checks honestly."
+    },
+    {
+      "title": "A cert denial is not a merits ruling",
+      "body": "Shelby v. Manning leaves the Tenth Circuit's decision in place. It did not become Supreme Court law, and nobody in the briefing room should say otherwise."
+    }
+  ],
+  "episodeIds": [
+    "2026-10-11"
+  ],
+  "quiz": [
+    {
+      "q": "On what basis did the Fifth Circuit protect the officer in Navejas v. City of El Paso?",
+      "options": [
+        "It held the single Taser deployment was objectively reasonable",
+        "It assumed a violation but held the law was not clearly established",
+        "It found the man was armed",
+        "It found the officer gave three warnings"
+      ],
+      "answer": 1,
+      "teach": "This was a prong-two decision. The court did not say the tasing was reasonable. Anyone who reviews or testifies about force has to keep the legal question and the training question separate."
+    },
+    {
+      "q": "Fischer v. Phillips protected a shooting into a car moving at about five miles per hour. What should California officers train to instead?",
+      "options": [
+        "Fifth Circuit law, because federal law controls",
+        "Penal Code section 835a and agency policy that says move out of the path of the vehicle",
+        "Whatever the most forgiving circuit allows",
+        "The Lytle v. Bexar County standard"
+      ],
+      "answer": 1,
+      "teach": "Section 835a requires that deadly force be necessary under the totality of the circumstances, and most modern policies direct officers out of the path of travel. Being protected in court is not the same as being tactically sound."
+    },
+    {
+      "q": "In Byrum v. Knox County, what carried the failure-to-train claim past a motion to dismiss?",
+      "options": [
+        "A detailed description of the county's training curriculum",
+        "Jail video showing obvious, prolonged medical distress with no meaningful response",
+        "Testimony from the jail's medical director",
+        "A prior consent decree"
+      ],
+      "answer": 1,
+      "teach": "Video of a person in distress with staff doing nothing can carry a county claim even without curriculum details. Intake screening every time, naloxone on hand, checks on time and documented honestly."
+    }
+  ]
+}

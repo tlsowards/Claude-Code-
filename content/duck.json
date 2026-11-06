@@ -1,0 +1,67 @@
+{
+  "title": "Downing the Duck",
+  "subtitle": "How youth in custody manipulate staff, and how to stop it. A six-stage framework for juvenile facility staff, supervisors, and training officers.",
+  "intro": [
+    "In law enforcement and corrections, a great deal of training time goes to threats from the outside: aggressive behavior, weapons, physical confrontations. One of the most dangerous threats to officers working in juvenile facilities, probation camps, and detention environments comes from a different direction. It is the slow, deliberate process by which youth in custody identify, target, and compromise staff.",
+    "This process is known as grooming, or staff manipulation. It is not random and it is not accidental. It is a learned skill that many youth in custody have developed over years of navigating difficult environments, and it is devastatingly effective against untrained staff.",
+    "\"Downing the Duck\" is a term that has circulated in the corrections community for years to describe the deliberate, multi-stage process by which youth or inmates wear down a staff member until that staff member is compromised. This framework adapts that informal concept into six stages that staff, supervisors, and trainers can use to recognize and interrupt the process."
+  ],
+  "preaConnection": "The Prison Rape Elimination Act (PREA) established national standards to prevent, detect, and respond to sexual abuse in confinement settings. A significant portion of PREA violations involving staff do not begin with a sudden act of misconduct. They begin with a gradual process of boundary erosion, a process that looks, at each individual step, like nothing more than a staff member being friendly, flexible, or compassionate. By the time the conduct rises to the level of a PREA violation, the staff member often cannot identify exactly when things went wrong, because the manipulation was designed to obscure that line. Understanding the six stages is the most effective tool available for identifying the line before it is crossed.",
+  "stages": [
+    {
+      "number": 1,
+      "title": "Target Selection",
+      "body": "Youth in custody are skilled observers. Before any manipulation begins, they assess the staff around them to identify who is most likely to be susceptible. They look for:",
+      "bullets": [
+        "Staff who appear lonely, stressed, or emotionally disconnected from colleagues",
+        "Staff who seem to need approval or validation from youth",
+        "New staff who are still establishing their identity in the facility",
+        "Staff who have shared personal information, even casually, with youth"
+      ],
+      "warningSign": "A youth is paying unusually close attention to a specific staff member, watching their reactions, testing their responses to small requests or comments."
+    },
+    {
+      "number": 2,
+      "title": "Trust Building",
+      "body": "Once a target is identified, the youth begins building a relationship. This stage looks entirely benign, even positive. The youth may be helpful, compliant, respectful, and engaging. They may share personal stories designed to elicit sympathy. They may position themselves as different from \"the other kids.\"",
+      "warningSign": "A youth is going out of their way to be helpful to one specific staff member, or a staff member is beginning to describe a particular youth as \"not like the others\" or \"one of the good ones.\""
+    },
+    {
+      "number": 3,
+      "title": "Boundary Testing",
+      "body": "With trust established, the youth begins testing boundaries. Small violations designed to measure how the staff member responds. These tests are deliberately minor: asking for an extra snack, requesting a small rule exception, asking a personal question. The goal is not the favor itself. The goal is to see whether the staff member will bend.",
+      "warningSign": "A staff member is making small exceptions for a specific youth that they would not make for others, or is rationalizing rule bending as \"not a big deal.\""
+    },
+    {
+      "number": 4,
+      "title": "Isolation",
+      "body": "The youth works to create a sense of special connection between themselves and the staff member, and to subtly separate the staff member from their colleagues. This may involve encouraging the staff member to keep conversations private, suggesting that other staff \"do not understand\" the youth the way this staff member does, or creating situations where the staff member and youth are alone together.",
+      "warningSign": "A staff member is having private conversations with a youth that they have not disclosed to supervisors, or is spending disproportionate time alone with a specific youth."
+    },
+    {
+      "number": 5,
+      "title": "Leverage",
+      "body": "By this stage, the youth has accumulated enough information, trust, and compromising behavior to begin applying pressure. They may remind the staff member of rule exceptions that were made. They may hint at what they could report. They may escalate requests, knowing the staff member is now invested in the relationship and afraid of the consequences of the prior boundary violations.",
+      "warningSign": "A staff member appears anxious, avoidant, or is changing their behavior around a specific youth. They may be making increasingly significant exceptions or covering up prior violations."
+    },
+    {
+      "number": 6,
+      "title": "Compromise",
+      "body": "The manipulation has reached its goal. The staff member is now engaged in conduct that violates policy, law, or both, and the youth has leverage to ensure continued compliance or silence. At this stage the staff member is typically aware that something has gone wrong but feels trapped. Reporting obligations under PREA and agency policy still apply, and the sooner the conduct is disclosed to a supervisor or PREA coordinator, the better the outcome for everyone involved.",
+      "warningSign": "Any conduct that would constitute a PREA violation, criminal act, or serious policy violation."
+    }
+  ],
+  "interventionPrinciple": {
+    "title": "The Intervention Principle: Stop It at Stage 2 or 3",
+    "body": "The manipulation is easiest to stop in the early stages and nearly impossible to stop in the late stages. A staff member who recognizes Stage 2 trust-building behavior and reports it to a supervisor has done their job. A staff member who reaches Stage 5 before recognizing the pattern is already in serious jeopardy. Training staff to recognize Stages 1 through 3, and to report observations without shame or hesitation, is the single most effective PREA prevention strategy available to facility administrators."
+  },
+  "supervisors": {
+    "title": "What Supervisors Must Do",
+    "bullets": [
+      "Create a culture where staff feel safe reporting concerns about their own behavior or the behavior of youth without fear of punishment",
+      "Conduct regular check-ins that ask staff directly about their relationships with youth",
+      "Monitor for behavioral indicators at each stage, particularly isolation and rule bending",
+      "Act immediately when Stage 3 or Stage 4 indicators are observed, before the situation escalates"
+    ]
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "id": "2026-w44",
+  "title": "When a seizure starts, a second Taser cycle on a prone subject, and words that become evidence",
+  "date": "2026-11-01",
+  "coverageStart": "2026-10-26",
+  "coverageEnd": "2026-11-01",
+  "summary": "A thin week: no published Ninth Circuit force opinion, no Supreme Court merits opinion, no published California force decision. The unpublished decisions still teach. The Ninth Circuit applied Torres and Hodari D. to a driver who fled a cruiser. The Sixth Circuit protected control holds at a shots-fired call. The Tenth Circuit sent a second Taser cycle on a prone, controlled subject to a jury. The California Supreme Court held that brandishing requires only objective fear, and three unpublished California cases show how officer words and positional asphyxia awareness decide cases.",
+  "coverage": [
+    "Checked: the Ninth Circuit, the Supreme Court, the Fifth Circuit, every California appellate opinion, and the government's official opinion database for the other circuits.",
+    "Two of the tools normally used to sweep every federal circuit were unavailable, and the Second Circuit's website could not be accessed. Coverage of the Second, Fourth, Eighth, and D.C. Circuits for this week is not confirmed.",
+    "No new juvenile force decision and no new Kingsley or Eighth Amendment force decision were found in the courts checked.",
+    "Most of this week's decisions are unpublished and not binding precedent. They are included because they show how judges are reading the facts officers deal with every day."
+  ],
+  "sections": [
+    {
+      "heading": "Ninth Circuit",
+      "note": "One published order deserves a mention for agencies that do encampment work: Berkeley Homeless Union v. City of Berkeley, filed October 26, is not a force case. The panel let the city clear one encampment because of a leptospirosis outbreak, and Judge Bumatay, dissenting in part, would have applied the community caretaker exception to the vehicle claim. The merits will be argued in February.",
+      "cases": [
+        {
+          "id": "us-v-zamora",
+          "name": "United States v. Zamora",
+          "court": "Ninth Circuit (from the District of Montana)",
+          "courtKey": "ca9",
+          "docket": "25-4625",
+          "decided": "October 29, 2026",
+          "status": "unpublished",
+          "topic": "When a seizure begins, flight",
+          "settings": [
+            "field"
+          ],
+          "facts": "A Yellowstone County sheriff's sergeant pulled his cruiser in close behind Zamora's parked car at a gas station near Billings. Zamora drove around the cruiser and led officers on a high-speed chase, finally surrendering at a dead end. He moved to suppress, arguing he was seized the moment the cruiser pulled in behind him and that the sergeant had no basis for that seizure. Argued in Missoula October 15; panel of Judges Tallman, Bress, and Forrest.",
+          "holding": "Affirmed. The court assumed without deciding that pulling in behind the car was a show of authority. A show of authority is not a seizure unless the person submits or is physically taken into custody, under Torres v. Madrid, California v. Hodari D., Brendlin v. California, and Florida v. Bostick. Zamora did not submit; he drove away. By the time he was seized at the dead end, the flight itself supplied reasonable suspicion and probable cause. The denial of suppression stood, along with his conviction for possessing 500 grams or more of methamphetamine with intent to distribute. No dissent.",
+          "notDecided": "The court never held that pulling in behind a parked car is a show of authority; it only assumed it. There was no force question in the case.",
+          "inPractice": "When a person does not yield, the Fourth Amendment clock does not start until he submits or the officer gets physical control. What he does while fleeing can supply the justification for the eventual seizure.",
+          "trainIt": "Teach Hodari D. and Torres together, because officers tend to remember only half the rule. A show of authority without submission is not a seizure. But under Torres, physical force applied with intent to restrain is a seizure the instant it lands, even if the person breaks free. A grab, a Taser probe, a vehicle contact: all are seizures on contact. The justification has to exist at the moment hands go on, not five minutes later at the end of the pursuit."
+        }
+      ]
+    },
+    {
+      "heading": "Supreme Court",
+      "note": "Nothing this week. No merits opinions, no regular order list on October 26, and the one miscellaneous order had nothing to do with force or custody. The November sitting had not started.",
+      "cases": []
+    },
+    {
+      "heading": "Other federal circuits",
+      "note": "The Fifth Circuit's full list of opinions for the week was checked, and none decided a force claim.",
+      "cases": [
+        {
+          "id": "collazo-v-otsego-county",
+          "name": "Collazo v. Otsego County",
+          "court": "Sixth Circuit",
+          "courtKey": "ca6",
+          "docket": "25-1899",
+          "decided": "October 29, 2026",
+          "status": "unpublished",
+          "topic": "Control holds at a shots-fired call, qualified immunity",
+          "settings": [
+            "field"
+          ],
+          "facts": "On August 1, 2021, a 911 caller reported three gunshots and yelling at the Collazo home in Michigan. Officers knew about prior domestic violence calls at the house and knew the husband had once threatened a state trooper with a shotgun. On arrival they saw buckshot marks. Nobody had found the shooter or the gun. Ms. Collazo did not want her husband, who had an outstanding warrant, in more trouble, so instead of telling officers what happened she ordered them off her property, seven times in about a minute, and waved her hands in an officer's face. Officer LaGrandeur took her wrist. She grabbed the deck railing. He pulled her off the railing with a trooper's help. Only after that did she say she had just been to the emergency room for her knee. On the way to the car she fell twice; nobody pushed her, and officers helped her up. She later had surgery for a torn meniscus.",
+          "holding": "Qualified immunity affirmed on both prongs. All three Graham factors favored the officers in a shots-fired emergency with the gun still unaccounted for. The force was grabs, pulls, and handcuffs, proportionate to resistance that went from verbal noncompliance to physically holding onto the railing. Officers are judged by what they knew at the time, and they did not know about the knee. The court rejected the argument that officers must announce an arrest before using force, applying the totality-of-the-circumstances approach from Barnes v. Felix. On the clearly-established prong, her cases involved Tasers, pepper spray, takedowns, or beatings, passive resisters, or non-emergency calls, and unpublished cases cannot clearly establish the law. Failure to intervene failed because there was no excessive force; false arrest was barred because a state judge found probable cause at the preliminary hearing; the county claim failed with no underlying violation. Opinion by Judge McKeague, with Judges Stranch and Mathis. No dissent.",
+          "notDecided": "Whether anything more, a takedown or a Taser, would have been reasonable on these facts. Do not read this case as a blank check.",
+          "inPractice": "In a true emergency with an outstanding firearm, courts give officers room to detain an uncooperative person at the scene, and low-level control holds matched to resistance are very defensible.",
+          "trainIt": "Teach the step up and the step down: verbal direction, escort hold, separation from an anchor point like a railing or door frame, handcuffs, and then stop. The moment someone reports an injury or medical condition, change what you are doing and say so on camera. The body camera here captured the officers explaining why they were not leaving: shots fired, gun not found."
+        },
+        {
+          "id": "merrill-v-seagraves",
+          "name": "Merrill v. Seagraves",
+          "court": "Tenth Circuit",
+          "courtKey": "ca10",
+          "docket": "25-7060 and 25-7061",
+          "decided": "October 27, 2026",
+          "status": "unpublished",
+          "topic": "Second Taser cycle on a prone subject",
+          "settings": [
+            "field",
+            "custody"
+          ],
+          "facts": "Facts are viewed in the plaintiff's favor because the case is at summary judgment. On December 3, 2020, Broken Arrow, Oklahoma officer Jonathan Seagraves stopped Merrill for an expired tag and a brake light. Merrill would not roll down his window, and after about ten minutes drove off at normal speed to his house. On his porch, holding a phone with his arms up and saying he could not hear the commands, he was tased; the district court granted immunity on that first use. He ended up face down with an officer holding each arm. He tensed up but, on his version, was not twisting or pushing. About 15 seconds later the officer tased him again, allegedly with no warning and no time to comply. The district court denied qualified immunity on that second cycle.",
+          "holding": "The officer's appeal was dismissed for lack of jurisdiction. Whether Merrill was effectively subdued is a factual dispute, and on an interlocutory appeal the court of appeals cannot reweigh the evidence or second-guess the district court's reading of the record. The plaintiff's cross-appeal on the first Taser use was also dismissed. Order and judgment by Judge Tymkovich, with Chief Judge Holmes and Judge Moritz. No dissent. The failure-to-train claim against the city remains pending in the district court.",
+          "inPractice": "A second Taser cycle on a person who is face down and controlled by two officers, without a warning and time to comply, is going to a jury when the facts about whether he was subdued are disputed. The officer does not get the appellate court to rescue him before trial.",
+          "trainIt": "Every additional Taser cycle is a new use of force that needs its own justification. Tensing up while two officers hold the arms is usually not a reason for another cycle. Warn, give time to comply, transition to hands-on control, and in the report articulate each cycle separately."
+        }
+      ]
+    },
+    {
+      "heading": "California",
+      "note": "No published California force decision this week. One California Supreme Court decision on brandishing, and three unpublished Court of Appeal decisions that cannot be cited in California courts but carry clear training points.",
+      "cases": [
+        {
+          "id": "people-v-ball",
+          "name": "People v. Ball",
+          "court": "California Supreme Court",
+          "courtKey": "calsupreme",
+          "docket": "S292969",
+          "decided": "October 26, 2026",
+          "status": "published",
+          "topic": "Brandishing at a vehicle occupant, objective fear",
+          "settings": [
+            "field"
+          ],
+          "facts": "On January 11, 2020, an off-duty peace officer in Mission Viejo watched Ball speeding, tailgating, and cutting off other drivers, and photographed his car. Ball then pulled up next to the officer at a stoplight and pointed a Glock in the officer's direction. The trial court threw out the felony charge under Penal Code section 417.3, brandishing a firearm at a motor vehicle occupant, because there was no evidence the officer was actually afraid. The Court of Appeal reinstated it.",
+          "holding": "Affirmed, unanimously, in an opinion by Justice Evans. The statute requires only objective fear, meaning conduct that would cause a reasonable person to fear bodily harm. The prosecution does not have to prove the victim was personally afraid.",
+          "inPractice": "A trained officer who stays calm with a gun pointed at him is still a victim.",
+          "trainIt": "In reports, describe exactly what the suspect did and how a reasonable person would perceive it, then describe the officer's own reaction honestly, whatever it was."
+        },
+        {
+          "id": "people-v-steele",
+          "name": "People v. Steele, with In re Steele",
+          "court": "California Court of Appeal, Fourth District, Division One",
+          "courtKey": "calapp",
+          "docket": "D086182 and D087757",
+          "decided": "October 30, 2026",
+          "status": "unpublished",
+          "topic": "Resisting, lawful force, officer commentary, Racial Justice Act",
+          "settings": [
+            "field"
+          ],
+          "facts": "On December 13, 2024, Escondido officers Jeff Bolton and Christian Baechli responded to a trespass call at the Felicita Village Shopping Center. Steele threatened to swing on an officer and to crack his neck. An officer pointed a Taser at him. Officers made comments the defense later highlighted, asking what work he does and telling him to go fly his flag at the intersection. He was told to leave about two dozen times. When they went to handcuff him, he tensed and dropped his weight, and Officer Maxwell used a leg sweep. On January 1, 2025, deputies arrested him on a felony bench warrant without showing him the warrant; he honestly believed his case had been dismissed. He threatened and elbowed a deputy and kicked. At the jail, deputies used a leg sweep and a WRAP restraint. A jury convicted him of two counts of resisting an executive officer under Penal Code section 69, one count of trespass, and three counts of threatening a public officer under section 71.",
+          "holding": "Substantial evidence showed the officers were lawfully performing their duties and used reasonable force, applying the Graham factors and Penal Code section 835a. Convictions affirmed except one: in the habeas case the court reversed the threat count tied to the bench warrant arrest because defense counsel never asked for a mistake-of-fact instruction on a specific-intent charge, and Steele believed his case was over. The prosecution may retry that count. The court referred defense counsel to the State Bar. Steele's Racial Justice Act claim, pointing to one officer's alleged bias and arrest rate data, was denied without prejudice and can be refiled in superior court. Presiding Justice McConnell, with Justices Castillo and Rubin.",
+          "notDecided": "The merits of the Racial Justice Act claim. Whether the officers' comments were appropriate.",
+          "inPractice": "Section 835a gives officers the same reasonableness framework in a criminal case as in a civil one, and a leg sweep on a subject who tenses and drops his weight after repeated orders will hold up. But officer words become evidence, and a subject's honest belief about his legal status can matter on a specific-intent charge.",
+          "trainIt": "Count the warnings and get them on camera; two dozen orders to leave made this case. Keep commentary out of the contact. When arresting on a warrant, confirm it and, when practical, explain it or show it. That calms people down and removes a mistake-of-fact defense."
+        },
+        {
+          "id": "people-v-hicks",
+          "name": "People v. Hicks",
+          "court": "California Court of Appeal, Second District, Division Two (on remand from the California Supreme Court)",
+          "courtKey": "calapp",
+          "docket": "B291307",
+          "decided": "October 29, 2026",
+          "status": "unpublished",
+          "topic": "Prone restraint, positional asphyxia, resisting",
+          "settings": [
+            "field",
+            "custody"
+          ],
+          "facts": "In November 2017, Los Angeles County sheriff's deputies contacted Hicks in Palmdale. He showed signs of stimulant use, with a resting pulse of 132. He complied with handcuffing. A few steps into the escort he planted his feet, tensed up, and pushed his torso back and to the side. Deputies used body weight to put him face down on a sofa and, per the opinion, immediately turned him onto his side so he could breathe. He kept screaming, squirming, and kicking, and kicked one deputy in the arm. A deputy put a nylon strap around his legs and, when he kept kicking, attached the leg strap to his handcuffs. With firefighters' help he was strapped into a soft restraint chair and moved down the stairs. The case returned from the California Supreme Court for reconsideration of fines and fees under People v. Kopp.",
+          "holding": "Section 69 convictions affirmed. Section 69 is a general-intent crime; cooperating at the start does not immunize resistance later. The defense argument that he was only flailing because he could not breathe failed on the facts, because the deputies had turned him on his side. Fines and fees were sent back for an ability-to-pay hearing. Presiding Justice Lui, with Justices Chavez and Goorvitch.",
+          "notDecided": "Whether attaching a leg strap to handcuffs was appropriate. The court did not address it.",
+          "inPractice": "The deputies' quick move from face down to the side position defeated the defense theory. Awareness of positional asphyxia protects the person in custody, and it protects the case.",
+          "trainIt": "When you see stimulant intoxication and a racing pulse, minimize time face down, roll the person to the side as soon as you have control, call for medical, and narrate what you are doing. Attaching a leg strap to handcuffs puts a person in a hog-tie style position, and many agencies restrict or prohibit it because of positional asphyxia risk. If it is ever used, keep it brief, keep the person off his chest, and get him upright or into a restraint chair, as these deputies did."
+        },
+        {
+          "id": "turner-v-sims",
+          "name": "Turner v. Sims",
+          "court": "California Court of Appeal, First District, Division Two",
+          "courtKey": "calapp",
+          "docket": "A172219",
+          "decided": "October 26, 2026",
+          "status": "unpublished",
+          "topic": "Bane Act, supervision language",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "facts": "A parolee sued his parole agent's supervisor under the Bane Act over the statement that \"bad things are going to happen.\" The jury found there was no threat of violence.",
+          "holding": "Affirmed. Under the Bane Act, speech alone is a violation only if it threatens violence.",
+          "inPractice": "A vague warning is not automatically a civil rights violation, but it invites a lawsuit.",
+          "trainIt": "Tell the person the actual consequence, a violation report, a hearing, a return to custody, rather than saying bad things will happen. Professional, specific, consequence-based language protects staff and the people they supervise."
+        }
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "title": "Every application of force is its own decision",
+      "body": "The second Taser cycle in Merrill, each grab and pull in Collazo. Train officers to articulate each escalation and each step down separately in the report."
+    },
+    {
+      "title": "What you know at the moment controls",
+      "body": "In Collazo the court did not count an injury the officer did not know about. In Hicks the deputies reacted to the breathing risk right away, and that won the case. When you learn about an injury, a medical condition, or breathing distress, change what you are doing and document that you changed it."
+    },
+    {
+      "title": "Prone restraint: roll to the side as soon as you have control",
+      "body": "Two officers holding a prone person's arms are already in a strong position. Another Taser cycle in that moment will be scrutinized."
+    },
+    {
+      "title": "No submission, no seizure, but force is a seizure the moment it lands",
+      "body": "That is Torres, as applied in Zamora. The justification has to exist when hands go on."
+    },
+    {
+      "title": "Section 835a is the yardstick in criminal cases too",
+      "body": "It is the measure of lawful performance of duty in a section 69 prosecution. Sloppy force can cost the prosecutor the resisting charge."
+    },
+    {
+      "title": "Words matter as much as hands",
+      "body": "Offhand remarks became Racial Justice Act evidence in Steele, and a vague warning about bad things happening put a parole supervisor in front of a jury in Turner. Professional, specific, consequence-based language protects staff and the people they supervise."
+    }
+  ],
+  "episodeIds": [
+    "2026-11-01"
+  ],
+  "quiz": [
+    {
+      "q": "In United States v. Zamora, when was the driver seized for Fourth Amendment purposes?",
+      "options": [
+        "When the cruiser pulled in behind his parked car",
+        "When the sergeant activated his lights",
+        "When he submitted at the dead end after the chase",
+        "When officers ran his plate"
+      ],
+      "answer": 2,
+      "teach": "A show of authority without submission is not a seizure. But under Torres v. Madrid, physical force applied with intent to restrain is a seizure the instant it lands, so the justification has to exist when hands go on."
+    },
+    {
+      "q": "Why did the Tenth Circuit dismiss the officer's appeal in Merrill v. Seagraves?",
+      "options": [
+        "The second Taser cycle was held reasonable",
+        "Whether Merrill was effectively subdued was a disputed fact, and an appeals court cannot reweigh the evidence on an interlocutory appeal",
+        "The officer missed the appeal deadline",
+        "The city had already settled"
+      ],
+      "answer": 1,
+      "teach": "A second cycle on a face-down person held by two officers, with no warning and no time to comply, goes to a jury when the facts are disputed. Articulate each cycle separately."
+    },
+    {
+      "q": "In People v. Hicks, what defeated the defense argument that Hicks was only flailing because he could not breathe?",
+      "options": [
+        "A medical expert's testimony",
+        "The deputies immediately turned him onto his side after placing him face down",
+        "He never complained",
+        "The restraint chair was padded"
+      ],
+      "answer": 1,
+      "teach": "Minimize time face down, roll to the side as soon as you have control, call for medical, and narrate what you are doing. Positional asphyxia awareness protects the person and the case."
+    }
+  ]
+}

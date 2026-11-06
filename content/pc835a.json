@@ -1,0 +1,63 @@
+{
+  "title": "PC 835a After AB 392",
+  "subtitle": "What the law actually requires of California law enforcement and probation officers, framed correctly. The standard remains reasonable force.",
+  "intro": [
+    "California Penal Code 835a was amended by Assembly Bill 392, signed into law in 2019. The amendments did not replace the reasonable force standard. They clarified how that standard applies when deadly force is involved, added a duty to consider alternatives where feasible, and required officers to give due consideration to apparent mental health and disability conditions when conditions allow.",
+    "Many agencies and training programs have misframed the changes. This reference corrects four common framing errors that show up in reports, training materials, and litigation. It is written for officers, supervisors, and training coordinators in probation, corrections, municipal policing, and juvenile services."
+  ],
+  "sections": [
+    {
+      "title": "1. The standard is reasonable force. \"Necessary\" is defined by the reasonable officer.",
+      "body": [
+        "PC 835a, as amended by AB 392, did not create a separate \"necessary\" standard that operates independently of the reasonable force standard. The legal touchstone in California remains reasonable force, evaluated under the totality of the circumstances and consistent with the federal objective reasonableness standard from Graham v. Connor (1989).",
+        "When the statute uses the word \"necessary\" in the deadly force context, it is asking the same question reasonableness has always asked: would a reasonable officer in the same situation, knowing what this officer knew, have concluded that deadly force was necessary in defense of human life? Force is necessary if a reasonable officer would have deemed it so. The definition is of the reasonable officer, not of a separate necessity test."
+      ],
+      "whatThisMeans": "Your use-of-force documentation should answer the reasonable officer question directly. Articulate what the officer perceived, what threats were apparent, what options were realistically available in the moment, and why a reasonable officer with the same information would have concluded the force used was necessary. Reports framed around a standalone \"necessity\" analysis miss the actual legal test."
+    },
+    {
+      "title": "2. The duty to consider alternatives is limited by what is \"feasible\".",
+      "body": [
+        "PC 835a requires officers to use \"other available resources and techniques if reasonably safe and feasible\" before resorting to deadly force. The key word is feasible. It is not a vague preference. California law gives it a working definition.",
+        "Government Code 7286, which governs agency use-of-force policies, frames feasibility around officer and public safety. An alternative is feasible only if an officer can use it without endangering themselves or others. If using a lesser level of force would expose the officer, a partner, or the public to additional risk, that alternative is not feasible, and the duty to consider it does not require the officer to attempt it."
+      ],
+      "whatThisMeans": "When an officer bypasses an alternative, the report must explain why. The standard is not \"did you try every option\" but \"could you have safely tried another option without endangering yourself or others.\" Document the safety calculus. Training coordinators should make sure officers can articulate feasibility in those terms."
+    },
+    {
+      "title": "3. Mental health consideration is required when it is safe and feasible.",
+      "body": [
+        "PC 835a includes language requiring officers to give due consideration to the possibility that a subject may be experiencing a mental health crisis, be under the influence of a controlled substance, or have a physical or developmental disability that affects their behavior. This is a real duty.",
+        "It is also a conditional duty. Officers are required to recognize and address apparent mental health conditions when it is safe and feasible to do so. The Americans with Disabilities Act and case law applying it to police encounters draw the same line. ADA accommodations apply once the scene is stabilized. They do not require an officer to absorb additional risk during an active threat.",
+        "A practical example. A subject on the street holding a knife, threatening others, and exhibiting clear behavioral indicators of crisis presents an immediate threat. The officer is not required to pause the response and attempt mental health de-escalation while the threat to others is active. The duty to address the mental health condition kicks in when conditions allow it to be addressed safely.",
+        "One bright-line limit deserves emphasis. Officers are not authorized to use deadly force against a person whose threat is solely to themselves. A subject who poses a danger only to their own safety is a mental health response, not a deadly force response. Deadly force requires a threat of death or serious bodily injury to the officer or to another person."
+      ],
+      "whatThisMeans": "Document mental health considerations the same way you document the rest of the threat assessment. When you addressed the apparent condition, document what you did. When you could not address it safely during the active threat, document why. When the threat was directed only at the subject themselves, deadly force is not on the table, and the report should reflect a mental health response framework instead."
+    },
+    {
+      "title": "4. Documentation requirements have expanded.",
+      "body": [
+        "The reasonable officer test as applied to deadly force, the duty to consider feasible alternatives, and the conditional duty to address apparent mental health conditions all translate directly into expanded documentation obligations. A use-of-force report that was adequate before AB 392 may be legally insufficient under PC 835a as amended."
+      ],
+      "checklist": [
+        { "element": "Threat assessment", "why": "Establishes what a reasonable officer would have perceived in the moment" },
+        { "element": "Alternatives considered", "why": "Demonstrates compliance with the duty to consider feasible alternatives" },
+        { "element": "Subject's apparent condition", "why": "Addresses the mental health and disability consideration requirement" },
+        { "element": "Escalation and de-escalation steps taken", "why": "Supports the reasonable officer analysis" },
+        { "element": "Outcome and medical response", "why": "Establishes proportionality" }
+      ],
+      "whatThisMeans": "If your agency's use-of-force report template has not been updated since 2019, it is likely missing required elements. Supervisors should audit their current templates against this checklist."
+    },
+    {
+      "title": "5. Training implications your agency should be acting on.",
+      "body": [
+        "The legal changes in PC 835a require corresponding changes in training. Agencies that continue to train officers using pre-AB 392 curricula are creating significant liability exposure for individual officers and for the agency itself."
+      ],
+      "training": [
+        { "area": "Use-of-force decision making", "detail": "Training scenarios must put officers in the reasonable officer position. Officers should be able to articulate what they perceived, what options were realistically available, and why a reasonable officer with the same information would have concluded the force used was necessary in defense of human life." },
+        { "area": "Documentation training", "detail": "Officers at all levels need updated training on how to write use-of-force reports that satisfy the PC 835a documentation requirements." },
+        { "area": "De-escalation integration", "detail": "While de-escalation is not explicitly mandated in every encounter by PC 835a, the duty to consider alternatives creates a strong training imperative to integrate de-escalation techniques into use-of-force curricula." },
+        { "area": "Mental health awareness", "detail": "Officers need training to recognize behavioral indicators of mental health crisis and to document their observations appropriately." }
+      ]
+    }
+  ],
+  "footer": "All Sowards Consulting training courses are STC-certified through the Board of State and Community Corrections. Students receive a certificate with the STC course number upon completion for agency credit filing."
+}
