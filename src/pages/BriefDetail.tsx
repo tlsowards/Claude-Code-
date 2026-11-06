@@ -3,7 +3,7 @@ import Seo from '../components/Seo';
 import CaseCard from '../components/CaseCard';
 import Quiz from '../components/Quiz';
 import Paywall from '../components/Paywall';
-import { getBrief, getEpisode, formatRange, formatDate } from '../data/content';
+import { getBrief, getEpisode, formatRange, formatDate, previewCaseId } from '../data/content';
 import type { Episode } from '../data/types';
 import { site } from '../config';
 import { useAuth } from '../data/auth';
@@ -31,7 +31,9 @@ export default function BriefDetail() {
   const episodeLinks = brief.episodeIds.map(getEpisode).filter((e): e is Episode => Boolean(e));
   const briefUrl = `${site.publicUrl.replace(/\/$/, '')}${import.meta.env.BASE_URL}briefs/${brief.id}`;
   const caseCount = brief.sections.reduce((n, sec) => n + sec.cases.length, 0);
-  const firstSection = brief.sections.find((sec) => sec.cases.length > 0);
+  const previewId = previewCaseId(brief);
+  const previewCase = brief.sections.flatMap((sec) => sec.cases).find((c) => c.id === previewId);
+  const firstSection = brief.sections.find((sec) => sec.cases.some((c) => c.id === previewId));
 
   return (
     <>
@@ -72,11 +74,11 @@ export default function BriefDetail() {
 
         {!canAccess && (
           <>
-            {firstSection && (
+            {firstSection && previewCase && (
               <section>
                 <div className="section-title"><h2>{firstSection.heading}</h2></div>
                 <p className="meta">Preview: the first case of this week's brief.</p>
-                <CaseCard c={firstSection.cases[0]} briefId={brief.id} />
+                <CaseCard c={previewCase} briefId={brief.id} />
               </section>
             )}
             <Paywall what={`every case in this brief, ${caseCount} this week`} />

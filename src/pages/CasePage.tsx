@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/Seo';
 import CaseCard from '../components/CaseCard';
-import { getBrief, formatDate } from '../data/content';
+import { getBrief, formatDate, previewCaseId } from '../data/content';
 import NotFound from './NotFound';
 import Paywall from '../components/Paywall';
 import { useAuth } from '../data/auth';
@@ -12,7 +12,7 @@ export default function CasePage() {
   const c = brief?.sections.flatMap((s) => s.cases).find((x) => x.id === caseId);
   const { canAccess } = useAuth();
   if (!brief || !c) return <NotFound />;
-  const isPreview = brief.sections.find((s) => s.cases.length > 0)?.cases[0]?.id === c.id;
+  const isPreview = previewCaseId(brief) === c.id;
 
   return (
     <>

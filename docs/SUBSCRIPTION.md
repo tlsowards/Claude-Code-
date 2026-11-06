@@ -29,7 +29,7 @@ In WordPress:
 ## 2. Install the app API on the site
 
 1. WPCode, Add Snippet, PHP Snippet. Paste the contents of `wordpress/sowards-app-api.php` (everything below the opening comment, without a second `<?php` tag). Auto Insert, Run Everywhere, Activate.
-2. Edit the CONFIG block at the top: set `SOWARDS_APP_MEMBERSHIP_ID` to the membership ID from step 1, and leave the origins unless the app moves to another address.
+2. Edit the CONFIG block at the top: set `SOWARDS_APP_MEMBERSHIP_ID` to the membership ID from step 1. The origins list holds the two production addresses; add `http://localhost:5173` only while developing locally, and remove it after.
 3. Test: `https://sowardsconsulting.com/wp-json/sowards/v1/app-me` should answer with a 401 "Sign in again" message. That proves the endpoints are live.
 
 The snippet exposes three endpoints: sign in (username and password, or an application password), who am I (subscription status, trial end, next payment, enrolled courses with progress and certificates), and sign out. Tokens are random, stored only as hashes, expire after 90 days, and travel in an `X-Sowards-Token` header so a host that strips `Authorization` does not break sign-in. Sign-in is rate limited to 10 attempts per 15 minutes per IP. Administrators always have access so the owner can test.
@@ -50,6 +50,8 @@ In the repository, Settings, Secrets and variables, Actions, Variables:
 Re-run the deploy workflow or wait for the nightly build. From then on, readers see the preview and the offer, and subscribers sign in once on each device.
 
 ## Notes
+
+- The app keeps the sign-in token in the phone's browser storage for up to 90 days. The app renders only its own content, never user-submitted HTML, which is what keeps that storage safe. Keep it that way if new features are added.
 
 - Cancelling and billing changes happen on the site's dashboard, through LifterLMS and Stripe. The app links there.
 - When the app later ships to the App Store or Google Play, Apple's and Google's rules on outside payments for digital content need a fresh look. The web app has no such restriction.

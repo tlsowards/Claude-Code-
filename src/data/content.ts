@@ -86,3 +86,8 @@ export function formatRange(start: string, end: string): string {
   const eStr = e.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
   return `${sStr} to ${eStr}`;
 }
+
+/** The one case of a brief that everyone can read without a subscription: the first case of the first section that has cases. */
+export function previewCaseId(brief: WeeklyBrief): string | undefined {
+  return brief.sections.find((s) => s.cases.length > 0)?.cases[0]?.id;
+}
