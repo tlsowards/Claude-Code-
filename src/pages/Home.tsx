@@ -38,7 +38,7 @@ export default function Home() {
       <div className="grid two">
         {latestEpisode && (
           <Link to={`/podcast/${latestEpisode.id}`} className="card card-link card-with-image">
-            <img className="card-image" src={`${import.meta.env.BASE_URL}images/podcast-cover.jpg`} alt="" width="800" height="800" loading="lazy" />
+            <img className="card-image card-image-square" src={`${import.meta.env.BASE_URL}images/podcast-cover.jpg`} alt="" width="800" height="800" loading="lazy" />
             <div className="eyebrow">Latest episode</div>
             <h3>{latestEpisode.title}</h3>
             <div className="meta">{formatDate(latestEpisode.date)}</div>
