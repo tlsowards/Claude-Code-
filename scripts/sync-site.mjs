@@ -24,8 +24,27 @@ function text(html) {
     .trim();
 }
 
+const EXPECTED_PLANS = 6;
+
+/** Only keep links and images served from the site itself (or its uploads host). Anything else is dropped. */
+function siteUrl(value) {
+  if (typeof value !== 'string' || !value) return '';
+  try {
+    const u = new URL(value);
+    const origin = new URL(site).hostname;
+    if (u.protocol !== 'https:') return '';
+    if (u.hostname !== origin && !u.hostname.endsWith(`.${origin}`)) return '';
+    return u.toString();
+  } catch {
+    return '';
+  }
+}
+
 async function getJson(url) {
-  const r = await fetch(url, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(60000) });
+  const r = await fetch(url, {
+    headers: { accept: 'application/json', 'user-agent': 'sowards-consulting-app build (+https://github.com/tlsowards/Claude-Code-)' },
+    signal: AbortSignal.timeout(60000),
+  });
   if (!r.ok) throw new Error(`${r.status} ${url}`);
   return r.json();
 }
@@ -51,17 +70,23 @@ async function main() {
       id: c.id,
       slug: c.slug,
       title: text(c.title?.rendered ?? ''),
-      url: c.permalink,
+      url: siteUrl(c.permalink),
       excerpt: text(c.excerpt?.rendered ?? ''),
       audience: audience ?? '',
       totalTime: totalTime ?? '',
       modules,
       plans: dedupe(plans),
-      image,
+      image: siteUrl(image),
       updated: c.date_updated_gmt ?? c.date_updated ?? '',
     });
   }
   result.sort((a, b) => a.id - b.id);
+  const withPlans = result.filter((c) => c.plans.length >= 5);
+  if (withPlans.length === 0) console.warn('WARNING: no course exposed a full set of plans; the pricing table will be empty. Check the plan regex against the site copy.');
+  for (const c of result) {
+    if (c.plans.length > 0 && c.plans.length !== EXPECTED_PLANS) console.warn(`WARNING: ${c.title} parsed ${c.plans.length} plans, expected ${EXPECTED_PLANS}.`);
+    if (!c.url) console.warn(`WARNING: ${c.title} has no site URL after validation.`);
+  }
   writeFileSync(out, JSON.stringify({ site, fetchedAt: new Date().toISOString(), courses: result }, null, 2) + '\n');
   console.log(`Synced ${result.length} live courses from ${site}.`);
 }

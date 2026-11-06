@@ -24,7 +24,7 @@ export default function Training() {
       <div className="grid two">
         {liveCourses.map((c) => (
           <a className="card card-link course-card" key={c.id} href={c.url}>
-            {c.image && <img className="course-image" src={c.image} alt="" loading="lazy" />}
+            {c.image && <img className="course-image" src={c.image} alt={c.title} loading="lazy" />}
             <div className="eyebrow">{c.track ?? 'All populations'}</div>
             <h3>{c.title}</h3>
             <div style={{ marginBottom: 8 }}>
