@@ -51,7 +51,8 @@ export default function Layout() {
         <div>
           {site.name} LLC · <a href={site.website}>sowardsconsulting.com</a> · <a href={`mailto:${site.email}`}>{site.email}</a> · <a href={site.phoneHref}>{site.phone}</a>
         </div>
-        <div>{site.location}. STC-certified training for California probation and corrections. <Link to="/about">About</Link></div>
+        <div>{site.location}. STC-certified training for California probation and corrections. <Link to="/about">About</Link> · <a href={`${site.website}/privacy-policy/`}>Privacy policy</a></div>
+        <div>Subscriptions renew monthly after the free trial and can be cancelled any time from your account on sowardsconsulting.com. Educational material, not legal advice.</div>
       </footer>
       <nav className="bottomnav" aria-label="Primary">
         {nav.map((n) => {
