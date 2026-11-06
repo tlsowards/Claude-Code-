@@ -17,13 +17,13 @@ The paywall is **off** until you turn it on (step 4), so the live app keeps work
 
 In WordPress:
 
-1. LifterLMS, Memberships, Add New. Title: **Use of Force Case Law Update**. Publish.
+1. LifterLMS, Memberships, Add New. Title: **Sowards' Briefing Room**. Publish. (The podcast keeps its own name, Use of Force Case Law Update; the membership is the subscription that unlocks it and the weekly bulletins.)
 2. On the membership, under Access Plans, add two plans:
    - **Monthly**: price 9.99, frequency every 1 month, length until cancelled, trial enabled, trial price 0, trial length 30 days.
    - **Annual**: price 59.99, frequency every 1 year, length until cancelled, trial enabled, trial price 0, trial length 30 days. Mark it Featured so it stands out in the pricing table.
    - Payment gateway: Stripe (the site's course plans already use it).
 3. Note the membership's post ID (hover the title in the Memberships list; the ID is in the link).
-4. The subscribe link in the app is the membership page, which shows both plans in a pricing table: `https://sowardsconsulting.com/membership/use-of-force-case-law-update/`. Each plan also has its own checkout URL of the form `https://sowardsconsulting.com/purchase/?plan=<plan id>`.
+4. The subscribe link in the app is the membership page, which shows both plans in a pricing table: `https://sowardsconsulting.com/membership/sowards-briefing-room/`. Each plan also has its own checkout URL of the form `https://sowardsconsulting.com/purchase/?plan=<plan id>`.
 
 ## 2. Install the app API on the site
 

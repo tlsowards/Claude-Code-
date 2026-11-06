@@ -11,7 +11,7 @@ export default function Paywall({ what = 'the full brief' }: { what?: string }) 
       <div className="eyebrow">Subscribers only</div>
       <h2>Free for {subscription.trialDays} days, then {subscription.offer}</h2>
       <p>
-        The {subscription.name} gives you {what}, the audio episode, the printable roll call brief, and the knowledge check every week. Cancel any time from your account on sowardsconsulting.com.
+        {subscription.name} gives you {what}, the audio episode, the printable roll call brief, and the knowledge check every week. Cancel any time from your account on sowardsconsulting.com.
       </p>
       <div className="btn-row">
         <a className="btn" href={site.subscribeUrl}>Start your free {subscription.trialDays} days</a>
