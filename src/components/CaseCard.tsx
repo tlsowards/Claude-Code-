@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import type { BriefCase } from '../data/types';
 import { courtSites, courtListenerSearch } from '../data/courts';
 
@@ -17,7 +18,7 @@ const settingLabel: Record<string, string> = {
   all: 'All settings',
 };
 
-export default function CaseCard({ c }: { c: BriefCase }) {
+export default function CaseCard({ c, briefId, standalone }: { c: BriefCase; briefId: string; standalone?: boolean }) {
   const court = courtSites[c.courtKey];
   return (
     <article className="case" id={c.id}>
@@ -45,6 +46,9 @@ export default function CaseCard({ c }: { c: BriefCase }) {
       <div className="meta">
         Read the opinion: <a href={court.url} target="_blank" rel="noopener">{court.name}</a> ·{' '}
         <a href={courtListenerSearch(c.name)} target="_blank" rel="noopener">search CourtListener</a>
+        {!standalone && (
+          <> · <Link to={`/briefs/${briefId}/${c.id}`}>link to this case</Link></>
+        )}
       </div>
     </article>
   );

@@ -24,7 +24,10 @@
           "decided": "October 21, 2026",
           "status": "unpublished",
           "topic": "Supervisor liability, less-lethal munitions at a protest",
-          "settings": ["supervisors", "field"],
+          "settings": [
+            "supervisors",
+            "field"
+          ],
           "facts": "In 2020 the plaintiffs attended a protest in South Los Angeles. The Los Angeles County Sheriff's Department declared an unlawful assembly and ordered the crowd to disperse. The plaintiffs say that as they were retreating, deputies fired less-lethal munitions and injured them. They sued former Sheriff Alex Villanueva personally for Fourth Amendment excessive force. The Sheriff was not at the protest. The district court denied him qualified immunity.",
           "holding": "Reversed; qualified immunity granted on the clearly established prong. Under Chavez v. United States (9th Cir. 2012), a supervisor is liable under the Fourth Amendment only where it would be clear to a reasonable supervisor that his own conduct was unlawful, which requires a particularized showing about the supervisor's actions, not the deputies'. The panel also quoted Zorn v. Linton for the rule that officers get immunity unless they could have read the precedent beforehand and known it prohibited their specific conduct. Nelson v. City of Davis and Deorle v. Rutherford concern the officers who pulled the trigger, not a supervisor. Larez v. City of Los Angeles (1991) involved a chief who signed a letter saying nobody would be disciplined; Sheriff Villanueva took no affirmative action to condone, ratify, or encourage the deputies after the fact and dismissed no complaints. Panel: Judge Ryan Nelson, Judge Desai, and District Judge Schreier sitting by designation. No dissent.",
           "notDecided": "The Sheriff's other arguments. Whether the deputies used excessive force. The County's liability. Unpublished, so not precedent.",
@@ -47,7 +50,9 @@
           "decided": "Review denied October 19, 2026",
           "status": "cert-denied",
           "topic": "Officer shot by partner, who is seized",
-          "settings": ["field"],
+          "settings": [
+            "field"
+          ],
           "facts": "Early on July 20, 2020, Cleveland officers Jennifer Kilnapp and Bailey Gannon went to a boarding house on a report that a man had a gun and had fired a round into the floor. The building was completely dark. Only Gannon's body camera turned on. Gannon opened a bathroom door, retreated, and ran down the stairs while firing. He later admitted he could not see the suspect when he opened fire. One of his rounds hit his partner, Officer Kilnapp.",
           "holding": "The Sixth Circuit held that when an officer intentionally fires in circumstances that objectively show an intent to restrain, anyone struck by the bullet is seized under the Fourth Amendment, even if that person was not the intended target, building on Brower, Brendlin, and Torres v. Madrid. Because Torres came after this shooting, the rule was not clearly established in 2020, and Gannon received qualified immunity on the Fourth Amendment claim. The case was remanded for a Fourteenth Amendment claim never decided. Opinion by Judge Moore. The Supreme Court denied review with no noted dissent.",
           "dissent": "Judge Bush, concurring in part and dissenting in part below, would follow older Sixth Circuit law treating unintended victims of police gunfire as due process claimants rather than Fourth Amendment claimants, and noted the majority's rule splits from other circuits.",
@@ -65,7 +70,10 @@
           "decided": "Review denied October 19, 2026",
           "status": "cert-denied",
           "topic": "Jail medical death, county liability, verdict",
-          "settings": ["custody", "supervisors"],
+          "settings": [
+            "custody",
+            "supervisors"
+          ],
           "facts": "Terral Ellis II, 26, turned himself in on a warrant at the Ottawa County, Oklahoma jail on October 10, 2015. He reportedly had a seizure on October 21 and was moved to administrative segregation for observation. He died the next day of septic shock from pneumonia. His estate sued the Sheriff in his official capacity, meaning the county, for deliberate indifference to medical needs. After an eight-day trial, the jury awarded $33 million in compensatory damages. In rebuttal, plaintiff's counsel urged the jury to send a message, although punitive damages are not available against a county.",
           "holding": "The Tenth Circuit, in a published opinion by Judge Rossman, affirmed everything: the verdict, the jury instructions, the jail standards evidence, and the denial of a reduced award. It assumed the closing argument was improper but found no basis to reverse. The Supreme Court declined review without comment. No individual officer and no qualified immunity question were in the appeal.",
           "inPractice": "One in-custody medical death can produce an eight-figure verdict against a county.",
@@ -85,7 +93,9 @@
           "decided": "October 21, 2026",
           "status": "published",
           "topic": "Hostage killed in rescue, Federal Tort Claims Act",
-          "settings": ["field"],
+          "settings": [
+            "field"
+          ],
           "facts": "On January 24, 2018, kidnappers took Ulises Valladares from his home in Houston. An FBI SWAT team, briefed on the FBI deadly force policy, went in at night to rescue him. One agent broke a window with a Halligan tool and dropped the tool inside. He said he saw a silhouette leaning out of the window in what looked like a shooting stance. A second agent fired. The man he shot was the hostage, and he died. A witness in the room testified the hostage was blindfolded with his hands bound the entire time; when the glass broke, he stood up from a couch under the window, pushed the curtain aside, and was shot. An earlier claim against the agent personally had already failed because the Fifth Circuit held in 2021 that accidentally shooting a hostage is not a Fourth Amendment seizure. The family then sued the United States under the Federal Tort Claims Act.",
           "holding": "After a three-day bench trial, the district judge found the agent negligent and held the discretionary function exception did not protect the government. The Fifth Circuit affirmed liability, deferring to the trial judge's credibility findings, and reversed the damages: the trial court had raised the award from about $1.9 million to about $2.4 million to cover attorney's fees, and the panel ordered the original award reinstated with fees capped at 25 percent as the statute requires. Opinion by Judge Stewart.",
           "dissent": "Judge Ho would have applied the discretionary function exception and found the trial judge's findings clearly wrong, writing that courts need to stop blaming law enforcement and start blaming criminals.",
@@ -102,7 +112,10 @@
           "decided": "October 20, 2026",
           "status": "published",
           "topic": "Over-detention after sentence served",
-          "settings": ["custody", "supervisors"],
+          "settings": [
+            "custody",
+            "supervisors"
+          ],
           "facts": "By the time he was sentenced, Seabrook already had more than seven and a half years of jail credit on a sentence of three and a half to seven years. He should have walked out. Instead the city jail kept him 17 more days at Rikers waiting for a transfer to the state prison system for release processing.",
           "holding": "Revived. He plausibly alleged an Eighth Amendment over-detention claim; city policies behind it, namely requiring a physical transfer instead of asking the state for immediate release authority and having no expedited review process; deliberate indifference by a captain; and a due process claim. Qualified immunity was left for the district court.",
           "inPractice": "Release date auditing is a constitutional function.",
@@ -117,7 +130,9 @@
           "decided": "October 19, 2026",
           "status": "unpublished",
           "topic": "Prison medical care, deliberate indifference",
-          "settings": ["custody"],
+          "settings": [
+            "custody"
+          ],
           "facts": "A Tennessee prisoner developed a spinal infection that ended in paralysis. An MRI request was denied by utilization review. He kept putting in sick calls saying he could not take a full breath and could barely move. He ended up in a wheelchair, his X-rays raised concern for infection, fractures, or cancer, and he received pain medication.",
           "holding": "Reversed summary judgment for the treating doctor on the Eighth Amendment claim; affirmed for the nurse practitioner and for the medical contractor on the policy claim. Judge Bush would have affirmed for the doctor as well.",
           "inPractice": "Worsening complaints that are documented and passed along are the difference between a case that ends at summary judgment and one that does not.",
@@ -131,7 +146,9 @@
           "decided": "October 22, 2026",
           "status": "summary-order",
           "topic": "Protest arrest, handcuffs, video",
-          "settings": ["field"],
+          "settings": [
+            "field"
+          ],
           "facts": "A protester said an assistant chief shoved her into a wall and that her handcuffs were too tight.",
           "holding": "Affirmed summary judgment. The body camera video utterly discredited the shove claim, and the video showed loose cuffs and no sign of distress.",
           "inPractice": "When the force is clean, the camera wins the case.",
@@ -152,7 +169,9 @@
           "decided": "October 22, 2026",
           "status": "published",
           "topic": "Impound and inventory search as pretext",
-          "settings": ["field"],
+          "settings": [
+            "field"
+          ],
           "facts": "Officers saw Thomas speeding and crossing the center line but never wrote him a ticket. They approached after he parked legally. Their plate check came back with no information because they typed the plate wrong. They decided to impound the car under a Vehicle Code section that applies to illegally parked cars with no plates, but this car was legally parked and had plates. The officer testified that her intent was to impound the vehicle and conduct further investigation. The inventory search found a gun. The car was his mother's rental, as he had said.",
           "holding": "The gun was ordered suppressed. An inventory search does not give police a blank check to investigate their hunches. Police must develop probable cause when they suspect someone is a criminal and think a search will prove it. Opinion by Acting Presiding Justice Wiley.",
           "inPractice": "An impound needs a real caretaking reason and the right statute. \"Something seemed off about the car\" is not probable cause.",
@@ -167,7 +186,9 @@
           "decided": "October 20, 2026",
           "status": "published",
           "topic": "Warrantless emergency location request",
-          "settings": ["field"],
+          "settings": [
+            "field"
+          ],
           "facts": "After an armed carjacking and robbery in San Jose, detectives sent the phone company an emergency request for Andrade's location data without a warrant. The detective was already drafting a warrant and testified that warrants are usually approved quickly. Investigators also had the likely location under surveillance.",
           "holding": "No exigency and no good faith. The state electronic privacy law's emergency procedure assumes there really is an emergency. The location data was suppressed, and the case went back to sort out what else falls with it.",
           "inPractice": "An armed suspect at large is not automatically an emergency.",
@@ -181,7 +202,9 @@
           "decided": "October 23, 2026",
           "status": "unpublished",
           "topic": "Resisting, lawful performance element",
-          "settings": ["field"],
+          "settings": [
+            "field"
+          ],
           "facts": "West Sacramento officers detained an intoxicated man suspected of grabbing a teenage girl's hand. When he insisted on sitting on the curb and an officer steered him into the patrol car, he headbutted and kicked the officer. On appeal he argued the jury should have been instructed on its own initiative about lawful performance, meaning that officers who detain unlawfully or use excessive force are not lawfully performing their duties.",
           "holding": "No error. There was no evidence of unlawful conduct, and disagreeing with an officer's order is not evidence that the order was unlawful. Unpublished, so it cannot be cited in California courts.",
           "inPractice": "Lawful performance, including reasonable force, is an element of every resisting charge.",
@@ -191,10 +214,59 @@
     }
   ],
   "applications": [
-    { "title": "Unintended targets", "body": "Kilnapp and Garcia together say that a round that hits the wrong person creates liability, whether under the Fourth Amendment in the Sixth Circuit or under tort law everywhere. Build low-light target identification, backstop, and crossfire drills into qualification and scenario training." },
-    { "title": "Supervisors", "body": "Astorga protects a sheriff who was absent and did not ratify, but ratification is still a route to liability. After-action reviews and discipline decisions are evidence. Make them real." },
-    { "title": "Custody", "body": "Bond, Seabrook, and Horton are all custody cases, and in each one the exposure came from medical escalation, release processing, or documentation, not from a dramatic use of force. Those are the systems to audit first." },
-    { "title": "California searches", "body": "Thomas and Andrade are reminders that pretext and manufactured emergencies do not survive review. Teach officers to say why they are doing what they are doing, and to get the warrant when there is time." }
+    {
+      "title": "Unintended targets",
+      "body": "Kilnapp and Garcia together say that a round that hits the wrong person creates liability, whether under the Fourth Amendment in the Sixth Circuit or under tort law everywhere. Build low-light target identification, backstop, and crossfire drills into qualification and scenario training."
+    },
+    {
+      "title": "Supervisors",
+      "body": "Astorga protects a sheriff who was absent and did not ratify, but ratification is still a route to liability. After-action reviews and discipline decisions are evidence. Make them real."
+    },
+    {
+      "title": "Custody",
+      "body": "Bond, Seabrook, and Horton are all custody cases, and in each one the exposure came from medical escalation, release processing, or documentation, not from a dramatic use of force. Those are the systems to audit first."
+    },
+    {
+      "title": "California searches",
+      "body": "Thomas and Andrade are reminders that pretext and manufactured emergencies do not survive review. Teach officers to say why they are doing what they are doing, and to get the warrant when there is time."
+    }
   ],
-  "episodeIds": ["2026-10-25"]
+  "episodeIds": [
+    "2026-10-25"
+  ],
+  "quiz": [
+    {
+      "q": "Under the Sixth Circuit's rule in Kilnapp v. City of Cleveland, what claim does an officer's partner have when struck by a round the officer fired on purpose at a suspect?",
+      "options": [
+        "No claim, because the partner was not the target",
+        "A Fourth Amendment seizure claim judged under Graham reasonableness",
+        "Only a workers' compensation claim",
+        "A First Amendment claim"
+      ],
+      "answer": 1,
+      "teach": "Anyone struck by a round fired with intent to restrain is seized in the Sixth Circuit going forward. Target identification, backstop, and crossfire planning are liability rules, not just range rules."
+    },
+    {
+      "q": "Why did the Ninth Circuit grant former Sheriff Villanueva qualified immunity in Astorga v. Villanueva?",
+      "options": [
+        "The deputies' force was found reasonable",
+        "He was not at the protest and took no action to condone, ratify, or encourage the force, and supervisor liability requires a particularized showing about his own conduct",
+        "The protest was unlawful",
+        "The plaintiffs missed the filing deadline"
+      ],
+      "answer": 1,
+      "teach": "Absence plus no ratification protected the sheriff. What command staff do after an event is evidence: review every deployment, document it, and never announce that nobody will be disciplined."
+    },
+    {
+      "q": "Why did the Court of Appeal suppress the phone location data in People v. Andrade?",
+      "options": [
+        "The carrier refused the request",
+        "There was no real exigency and no good faith, since the detective was already drafting a warrant and the location was under surveillance",
+        "The suspect was a juvenile",
+        "The request was sent to the wrong carrier"
+      ],
+      "answer": 1,
+      "teach": "An armed suspect at large is not automatically an emergency. If there is time to write the warrant, write the warrant."
+    }
+  ]
 }

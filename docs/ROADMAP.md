@@ -2,7 +2,7 @@
 
 ## Phase 1 (this repository): web app with static content
 
-Done: brand shell, installable PWA, five weekly briefs, podcast page and RSS feed, training catalog and pricing, resource center, Downing the Duck, PC 835a reference, subscribe page.
+Done: brand shell, installable PWA, five weekly briefs with printable roll call versions, share buttons, and knowledge checks, case-level pages with a sitemap for search, podcast page and RSS feed, training catalog and pricing, resource center, Downing the Duck, PC 835a reference, subscribe page, and automatic deployment to GitHub Pages on merge.
 
 Open items that need information from Sowards Consulting:
 

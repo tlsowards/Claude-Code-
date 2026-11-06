@@ -6,9 +6,10 @@
   "description": "Sowards Consulting training app: weekly use of force briefs, podcast, STC-certified training catalog, and trainer resource center.",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/build-feed.mjs && tsc -b && vite build",
+    "build": "node scripts/build-feed.mjs && node scripts/build-sitemap.mjs && tsc -b && vite build && node scripts/postbuild.mjs",
     "preview": "vite preview",
     "feed": "node scripts/build-feed.mjs",
+    "sitemap": "node scripts/build-sitemap.mjs",
     "check": "tsc -b"
   },
   "dependencies": {

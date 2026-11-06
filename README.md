@@ -26,10 +26,16 @@ Copy `.env.example` to `.env` to set the public URL, the audio host, and the Mai
 | `content/duck.json` | Downing the Duck six-stage framework. |
 | `content/pc835a.json` | PC 835a after AB 392 quick reference. |
 | `scripts/build-feed.mjs` | Generates `public/podcast/feed.xml` from the episode list. |
+| `scripts/build-sitemap.mjs` | Generates `public/sitemap.xml` and `public/robots.txt` for search engines. |
+| `.github/workflows/deploy-pages.yml` | Builds and deploys to GitHub Pages on every push to `main`. |
 | `src/pages/` | One React component per screen. |
 | `src/config.ts` | Site name, contact details, and environment-driven settings. |
 | `src/styles.css` | Brand tokens (navy, red, gold, Inter, Montserrat) and layout. |
 | `docs/` | Content workflow, deployment, and roadmap. |
+
+## Deployment
+
+Merging to `main` deploys the app to GitHub Pages automatically. See [Deployment](docs/DEPLOYMENT.md) for the live address, optional variables, and moving to a custom domain.
 
 ## Documentation
 

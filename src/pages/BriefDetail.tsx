@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/Seo';
 import CaseCard from '../components/CaseCard';
+import Quiz from '../components/Quiz';
 import { getBrief, getEpisode, formatRange, formatDate } from '../data/content';
 import type { Episode } from '../data/types';
 import { site } from '../config';
@@ -21,6 +22,7 @@ export default function BriefDetail() {
   if (!brief) return <NotFound />;
 
   const episodeLinks = brief.episodeIds.map(getEpisode).filter((e): e is Episode => Boolean(e));
+  const briefUrl = `${site.publicUrl.replace(/\/$/, '')}${import.meta.env.BASE_URL}briefs/${brief.id}`;
 
   return (
     <>
@@ -40,7 +42,7 @@ export default function BriefDetail() {
       <div className="print-only roll-call">
         <div className="roll-call-head">
           <div><strong>{site.name}</strong> · Weekly Use of Force Roll Call Brief · {formatDate(brief.date)}</div>
-          <div>Read the full brief and listen to the episode at {site.publicUrl.replace(/^https?:\/\//, '')}/briefs/{brief.id}</div>
+          <div>Read the full brief and listen to the episode at {briefUrl.replace(/^https?:\/\//, '')}</div>
         </div>
         <h2 style={{ marginTop: 8 }}>{brief.title}</h2>
         <p className="meta">Decisions from {formatRange(brief.coverageStart, brief.coverageEnd)}. Unpublished decisions are not precedent. Educational material, not legal advice. Confirm with agency policy and counsel.</p>
@@ -96,7 +98,7 @@ export default function BriefDetail() {
           <div className="section-title"><h2>{s.heading}</h2></div>
           {s.note && <p className="meta">{s.note}</p>}
           {s.cases.map((c) => (
-            <CaseCard key={c.id} c={c} />
+            <CaseCard key={c.id} c={c} briefId={brief.id} />
           ))}
         </section>
       ))}
@@ -111,6 +113,8 @@ export default function BriefDetail() {
           </div>
         ))}
       </section>
+
+      {brief.quiz && brief.quiz.length > 0 && <Quiz questions={brief.quiz} />}
 
       <p><Link to="/briefs">All weekly briefs</Link></p>
       </div>

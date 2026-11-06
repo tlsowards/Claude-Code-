@@ -173,6 +173,14 @@ th { font-family: var(--font-heading); font-size: 0.78rem; letter-spacing: 0.05e
 .footer a { color: var(--muted); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 
+.quiz-options { display: grid; gap: 8px; margin: 10px 0 12px; }
+.quiz-option { text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; font-family: inherit; font-size: 0.95rem; color: var(--text); cursor: pointer; display: flex; gap: 10px; align-items: flex-start; }
+.quiz-option:hover:not(:disabled) { border-color: var(--gold); }
+.quiz-option:disabled { cursor: default; opacity: 0.85; }
+.quiz-option.correct { border-color: #1a7f47; background: rgba(26,127,71,0.1); opacity: 1; }
+.quiz-option.wrong { border-color: var(--red); background: rgba(207,46,46,0.08); opacity: 1; }
+.quiz-letter { font-family: var(--font-heading); font-weight: 700; color: var(--heading); min-width: 1.2em; }
+
 .print-only { display: none; }
 @media print {
   @page { margin: 0.5in; }

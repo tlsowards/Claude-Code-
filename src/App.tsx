@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Briefs from './pages/Briefs';
 import BriefDetail from './pages/BriefDetail';
+import CasePage from './pages/CasePage';
 import Podcast from './pages/Podcast';
 import Training from './pages/Training';
 import Resources from './pages/Resources';
@@ -19,6 +20,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="briefs" element={<Briefs />} />
         <Route path="briefs/:id" element={<BriefDetail />} />
+        <Route path="briefs/:id/:caseId" element={<CasePage />} />
         <Route path="podcast" element={<Podcast />} />
         <Route path="podcast/:id" element={<Podcast />} />
         <Route path="training" element={<Training />} />

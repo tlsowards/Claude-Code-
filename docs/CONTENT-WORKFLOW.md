@@ -17,7 +17,8 @@ Every piece of content is a JSON file under `content/`. Nothing is hard-coded in
    - `settings`: which audiences it applies to (`field`, `custody`, `juvenile`, `supervisors`, `all`)
 5. Write the `applications` list: the points to take into a briefing room this week.
 6. Set `episodeIds` to the matching podcast episode ids.
-7. Run `npm run build`. The build fails if the JSON is malformed.
+7. Add three `quiz` questions: `q`, four `options`, the `answer` index, and a `teach` sentence shown after the reader answers.
+8. Run `npm run build`. The build fails if the JSON is malformed. Each case also gets its own page at `/briefs/<brief id>/<case id>` and an entry in the sitemap.
 
 ### Voice
 

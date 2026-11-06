@@ -51,6 +51,17 @@ export interface WeeklyBrief {
   /** The training application block. */
   applications: { title: string; body: string }[];
   episodeIds: string[];
+  /** Short knowledge check shown at the end of the brief. */
+  quiz?: QuizQuestion[];
+}
+
+export interface QuizQuestion {
+  q: string;
+  options: string[];
+  /** Index into options. */
+  answer: number;
+  /** Teaching point shown after the reader answers. */
+  teach: string;
 }
 
 export interface Episode {

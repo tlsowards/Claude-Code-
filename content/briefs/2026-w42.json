@@ -30,7 +30,9 @@
           "decided": "Review denied October 13, 2026",
           "status": "cert-denied",
           "topic": "Taser without warning, deadly force on an unarmed person",
-          "settings": ["field"],
+          "settings": [
+            "field"
+          ],
           "facts": "In June 2019, two Bartlesville, Oklahoma officers responded to a domestic disturbance call from a father who said his son, Thomas Gay, was acting erratically and might be on drugs. The father said Thomas was unarmed but warned that he kept making movements toward his back pocket. Inside, Thomas was sweating and holding what appears to have been a ventriloquist doll. One officer told him once to drop it, pointed a Taser, and with no further commands tased him. Thomas backed into a bedroom, started to lie down, stood back up, and was tased again. The Taser did not incapacitate him, which the district court found was due to user error. After a brief struggle, Thomas moved toward the bedroom door and moved his hand toward his back pocket, and the second officer shot him twice. He was dead within about three minutes of the officers' arrival. Whether he was holding anything when he was shot is disputed. The National Sheriffs' Association and the National Fraternal Order of Police filed briefs supporting the officers, and the Court asked for a response in April.",
           "holding": "The Tenth Circuit affirmed the denial of qualified immunity for both officers. On the Taser, it was clearly established that repeatedly tasing, without warning, a person who is not resisting and has not been told he is being detained violates the Fourth Amendment. On the shooting, relying on Tennessee v. Garner and circuit precedent, it was clearly established that an officer may not shoot a moving but unarmed and unthreatening person. The court rejected the argument that the autopsy and the officers' testimony blatantly contradicted the district court's findings, and approved consideration of whether the officers recklessly created the need for force. The Supreme Court denied review with no noted dissent.",
           "notDecided": "A cert denial is not a ruling on the merits. The case goes back to the trial court.",
@@ -46,7 +48,10 @@
           "decided": "Review denied October 13, 2026",
           "status": "cert-denied",
           "topic": "Deadly force at a vehicle, expert witness disclosure",
-          "settings": ["field", "supervisors"],
+          "settings": [
+            "field",
+            "supervisors"
+          ],
           "facts": "Shortly after midnight in January 2023, a neighbor reported flashlights and silhouettes in a building he thought was vacant. In fact, the family of a woman who had recently died was cleaning out her apartment. Three officers responded. Behind the building, one officer found the father next to a van and his son Joe in the driver's seat and ordered Joe out. The van backed into an obstruction, then accelerated forward, and the officer had to jump out of the way. As the van drove toward a slope where a second officer was running, that officer and a third fired. Joe was struck in the head and died. About five seconds passed between the van accelerating and the shots.",
           "holding": "The Sixth Circuit, in an unpublished opinion, held the plaintiffs had not identified clearly established law specific enough to put these officers on notice, distinguishing its earlier vehicle cases where the officer was never in the path of the car. The district court had excluded the plaintiffs' police practices expert for failing to meet federal disclosure rules; the Sixth Circuit said any error was harmless and noted that the report offered better approaches that were apparent with hindsight. The Supreme Court denied review.",
           "notDecided": "Nothing on the merits from the Supreme Court. Unpublished below.",
@@ -67,7 +72,9 @@
           "decided": "October 13, 2026",
           "status": "published",
           "topic": "Deadly force, civil standby, impact weapon",
-          "settings": ["field"],
+          "settings": [
+            "field"
+          ],
           "facts": "In July 2020, an officer was assigned a civil standby so a woman could pick up her belongings from a home where Christopher Poor was drinking. She described him as mean. Christopher walked in yelling, \"where's the police,\" holding an aluminum baseball bat down at his side. The officer drew his gun and ordered him to drop it. Christopher said he would, now that the officer was there. He walked away, turned back, said he was putting it down, switched the bat between his hands, and pointed a finger at the officer. As the officer gave his third command to set it down, Christopher took one step in the officer's general direction while moving the bat back to his right hand. The officer fired three shots and killed him. Sixteen seconds passed from the moment Christopher walked in to the moment he was shot.",
           "holding": "Affirmed the denial of qualified immunity. None of the Graham factors supported deadly force: there was no crime at issue on a civil standby, Christopher was not resisting or fleeing, and a jury could find he made no hostile motion with the bat. The officer argued the video blatantly contradicted that finding; the court said the video shows at most a single step, and the moment the officer pointed to was the same second he was firing. Three earlier Tenth Circuit cases clearly established that an officer may not use deadly force against a person holding something other than a gun who is not charging and makes no slicing, stabbing, or hostile motion. No dissent. The city had already won summary judgment, so the case proceeds against the officer alone.",
           "inPractice": "A weapon held down is not a weapon raised. A person who says he is going to comply deserves a moment to do it.",
@@ -82,7 +89,11 @@
           "decided": "October 13, 2026",
           "status": "published",
           "topic": "Seizure of children, juvenile holding cells",
-          "settings": ["juvenile", "custody", "supervisors"],
+          "settings": [
+            "juvenile",
+            "custody",
+            "supervisors"
+          ],
           "facts": "After a custody hearing in Missouri, two children refused to leave the courthouse with their mother. The judge took them to a conference room and threatened them with foster care. Then he took them to the juvenile division, led them to two holding cells, and had a juvenile officer lock them up. The officer patted them down and had them remove their shoes and socks. After 20 to 40 minutes they agreed to go with their mother. A jury awarded each child $5,000, and the court awarded more than $326,000 in attorney fees.",
           "holding": "Affirmed. Ordering the children locked in cells was a seizure, even though someone else closed the doors. It was unreasonable because there was no probable cause, no court order, and no emergency. Refusing to leave with a parent is not a jailable offense. The law was clearly established and this was an obvious case. The judge's good faith belief that he was helping did not change the answer. No dissent.",
           "notDecided": "The juvenile officer's own liability was not before the court.",
@@ -98,7 +109,9 @@
           "decided": "October 15, 2026",
           "status": "unpublished",
           "topic": "Deadly force, knife, mental health crisis, forced entry",
-          "settings": ["field"],
+          "settings": [
+            "field"
+          ],
           "facts": "In 2021, deputies in Weslaco, Texas responded to a domestic call. A mother said her son had punched her, had bipolar disorder, was off his medication, and had locked himself inside. A window shattered from inside. A woman outside shouted at the deputies in Spanish to break down the door, and they forced entry. Inside, the son held an eight-inch kitchen knife, pointed it at them, shut his bedroom door, and ignored commands. About a minute later he opened the door and walked toward the deputies with the knife in a small, cluttered space. They fired 11 times and stopped when he fell. He died that day.",
           "holding": "Affirmed summary judgment for the deputies. Valid consent to enter from the mother, probable cause to arrest, and deadly force was reasonable when he approached with the knife at close range. The deputies were not required to try less lethal options first. No dissent. The court called the possibility that the deputies did not follow the county's high-risk and barricaded subject policy concerning, though it did not change the constitutional result.",
           "inPractice": "The constitutional floor is not the standard. A person in crisis, alone in his own home, with the person he hurt safely outside, is a candidate for containment, time, and a crisis team.",
@@ -113,7 +126,10 @@
           "decided": "October 15, 2026",
           "status": "published",
           "topic": "Conditions of confinement, environmental hazard",
-          "settings": ["custody", "supervisors"],
+          "settings": [
+            "custody",
+            "supervisors"
+          ],
           "facts": "Women held at the Huron Valley prison in Michigan allege pervasive mold for years, including mold dripping from shower ceilings onto them, with breathing problems, rashes, infections, and in one case seizures. They allege they filed grievances and wrote letters, that officials had the mold painted over, and that the warden refused to provide fungus remover and said that if they scrubbed harder the mold would be gone. These are allegations at the pleading stage.",
           "holding": "Qualified immunity denied to nine officials, including the department director, the warden, deputy wardens, and the physical plant staff who allegedly painted over the problem. Immunity granted to five central office administrators because the complaint lumped them together with no specific facts.",
           "dissent": "Judge Gilman would have kept the five central office administrators in the case.",
@@ -129,7 +145,10 @@
           "decided": "October 14, 2026",
           "status": "unpublished",
           "topic": "Failure to protect, cell assignment",
-          "settings": ["custody", "juvenile"],
+          "settings": [
+            "custody",
+            "juvenile"
+          ],
           "facts": "A man in a Georgia prison was assaulted, then reported threats against his life. Staff moved him twice, ending in an administrative segregation unit. Twenty days later his cellmate killed him overnight.",
           "holding": "Affirmed dismissal. Moving him away from known threats was a reasonable response, and the complaint did not allege that anyone knew this particular cellmate was a danger to him. Qualified immunity was not reached.",
           "inPractice": "A protective move is only as good as the screening of the new cellmate.",
@@ -144,7 +163,10 @@
           "decided": "October 14, 2026 (amended the following week to correct the spelling of Ceasar Stinson's name and adjust one sentence; result unchanged)",
           "status": "published",
           "topic": "Distracted driving, substantive due process",
-          "settings": ["field", "supervisors"],
+          "settings": [
+            "field",
+            "supervisors"
+          ],
           "facts": "A Milwaukee County deputy on routine patrol, driving at the speed limit, looked down at his phone or dashboard computer for about 15 and a half seconds, ran a red light, and killed another driver.",
           "holding": "Reversed the denial of qualified immunity. Under County of Sacramento v. Lewis, a crash violates due process only if it shocks the conscience. Distracted driving was negligence, perhaps gross negligence, but not deliberate indifference, and no case clearly established otherwise. State law claims were not before the court.",
           "inPractice": "The constitutional claim failed, but a person is dead and state tort exposure remains. The lesson is about vehicle operations, not the Constitution.",
@@ -159,7 +181,9 @@
           "decided": "October 13, 2026",
           "status": "unpublished",
           "topic": "Obstruction arrest, handcuff tightness",
-          "settings": ["field"],
+          "settings": [
+            "field"
+          ],
           "facts": "A city obtained an administrative warrant to inspect a rental home. A tenant refused to unlock the door or produce identification. The officer arrested her for obstruction, then opened the lock himself with a credit card. The charge was later dismissed.",
           "holding": "Qualified immunity granted on the arrest because no clearly established law said the command to unlock the door was unlawful. The claim that the handcuffs were too tight failed because the video and her own testimony showed she never complained about them.",
           "inPractice": "An arrest that adds nothing to a lawful entry adds risk without benefit, and a handcuff claim lives or dies on whether the person complained and what the camera shows.",
@@ -174,12 +198,67 @@
     }
   ],
   "applications": [
-    { "title": "A weapon held down is not a weapon raised", "body": "Vision Bank and Burke both turned on whether there was a hostile motion. Train officers to articulate the specific motion they saw, and train supervisors to look for it on the video." },
-    { "title": "Warnings and commands matter", "body": "One command followed by repeated Taser cycles without warning, on someone who was not resisting and had not been told he was being detained, was held clearly unlawful. Warn when you can, tell the person he is being detained, and give time to comply." },
-    { "title": "The video is the record", "body": "In both Tenth Circuit cases the court rejected the officers' arguments that the evidence blatantly contradicted the findings. Teach officers to describe what they perceived honestly and not to overclaim what the camera captured." },
-    { "title": "Federal immunity varies by circuit; California law does not", "body": "The Fifth and Sixth Circuits protected close-range knife and vehicle shootings this week. California officers answer to Penal Code section 835a and their own policies. Train to that standard, not to the most forgiving court in the country." },
-    { "title": "In custody, no legal basis means no cell", "body": "Rockett is a lesson for every juvenile hall and court holding area. Bailey and Bonner show where custodial liability usually lives: ignored hazards, housing decisions, and documentation." },
-    { "title": "A cert denial is not a merits ruling", "body": "Pitts and Frasure leave the lower court decisions in place, but neither became Supreme Court law." }
+    {
+      "title": "A weapon held down is not a weapon raised",
+      "body": "Vision Bank and Burke both turned on whether there was a hostile motion. Train officers to articulate the specific motion they saw, and train supervisors to look for it on the video."
+    },
+    {
+      "title": "Warnings and commands matter",
+      "body": "One command followed by repeated Taser cycles without warning, on someone who was not resisting and had not been told he was being detained, was held clearly unlawful. Warn when you can, tell the person he is being detained, and give time to comply."
+    },
+    {
+      "title": "The video is the record",
+      "body": "In both Tenth Circuit cases the court rejected the officers' arguments that the evidence blatantly contradicted the findings. Teach officers to describe what they perceived honestly and not to overclaim what the camera captured."
+    },
+    {
+      "title": "Federal immunity varies by circuit; California law does not",
+      "body": "The Fifth and Sixth Circuits protected close-range knife and vehicle shootings this week. California officers answer to Penal Code section 835a and their own policies. Train to that standard, not to the most forgiving court in the country."
+    },
+    {
+      "title": "In custody, no legal basis means no cell",
+      "body": "Rockett is a lesson for every juvenile hall and court holding area. Bailey and Bonner show where custodial liability usually lives: ignored hazards, housing decisions, and documentation."
+    },
+    {
+      "title": "A cert denial is not a merits ruling",
+      "body": "Pitts and Frasure leave the lower court decisions in place, but neither became Supreme Court law."
+    }
   ],
-  "episodeIds": ["2026-10-18"]
+  "episodeIds": [
+    "2026-10-18"
+  ],
+  "quiz": [
+    {
+      "q": "In Vision Bank v. Avery, the officer argued the video blatantly contradicted the finding that Christopher Poor made no hostile motion. What did the court say the video showed at most?",
+      "options": [
+        "A full swing of the bat",
+        "Christopher charging the officer",
+        "A single step, in the same second the officer was firing",
+        "Christopher raising the bat above his shoulder"
+      ],
+      "answer": 2,
+      "teach": "A weapon held down is not a weapon raised. Train officers to articulate the specific hostile motion they saw, and train supervisors to look for it on the video before signing off."
+    },
+    {
+      "q": "Why was locking two children in courthouse holding cells an unreasonable seizure in Rockett v. Eighmy?",
+      "options": [
+        "The cells were not inspected",
+        "There was no probable cause, no court order, and no emergency, and refusing to leave with a parent is not a jailable offense",
+        "The judge lacked jurisdiction over the custody case",
+        "The children were under ten"
+      ],
+      "answer": 1,
+      "teach": "No legal basis means no cell. Train staff to stop and call a supervisor when an instruction to confine a young person has no paperwork behind it, whoever gives the instruction."
+    },
+    {
+      "q": "What did the Tenth Circuit hold was clearly established about the Taser use in Burke v. Pitts, which the Supreme Court left in place?",
+      "options": [
+        "One Taser cycle always requires a written warning",
+        "Repeatedly tasing, without warning, a person who is not resisting and has not been told he is being detained violates the Fourth Amendment",
+        "Tasers may not be used inside a home",
+        "A Taser may be used whenever a person reaches toward a pocket"
+      ],
+      "answer": 1,
+      "teach": "Warn when you can, tell the person he is being detained, and give time to comply. Each cycle is its own use of force."
+    }
+  ]
 }

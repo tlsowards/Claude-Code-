@@ -2,7 +2,24 @@
 
 The build output in `dist/` is static files. It can be hosted anywhere that serves static files over HTTPS. HTTPS is required for the install prompt and the service worker.
 
-## Option A: subdomain (recommended first step)
+## Default: GitHub Pages, automatic
+
+The workflow at `.github/workflows/deploy-pages.yml` builds and deploys the app to GitHub Pages on every push to `main`. The first run enables Pages on the repository. The app is then live at:
+
+```
+https://tlsowards.github.io/Claude-Code-/
+```
+
+Optional repository variables (Settings, Secrets and variables, Actions, Variables) are read at build time:
+
+| Variable | Purpose |
+|---|---|
+| `AUDIO_BASE_URL` | Folder URL where the podcast MP3s are hosted. |
+| `MAILERLITE_FORM_ACTION` | MailerLite embedded form action for the Subscribe page. |
+
+To move to your own domain later, add `app.sowardsconsulting.com` as the custom domain in the repository's Pages settings, create the CNAME record at your DNS host pointing to `tlsowards.github.io`, and change `BASE_PATH` in the workflow to `/` and `VITE_PUBLIC_URL` to `https://app.sowardsconsulting.com`.
+
+## Option A: subdomain on another static host
 
 Host the app at `app.sowardsconsulting.com` on a static host (Cloudflare Pages, Netlify, Vercel, or the SiteGround account that already hosts the site). Set in `.env`:
 
