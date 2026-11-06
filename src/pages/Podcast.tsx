@@ -26,11 +26,16 @@ export default function Podcast() {
   return (
     <>
       <Seo title="Use of Force Case Law Update podcast" description="The weekly Use of Force Case Law Update podcast from Dr. Timothy Sowards." />
-      <div className="eyebrow">Podcast</div>
-      <h1>Use of Force Case Law Update</h1>
-      <p className="lead">
-        A weekly walk through the use of force decisions that matter to officers, custody staff, supervisors, and trainers. Hosted by {site.owner}.
-      </p>
+      <div className="page-intro">
+        <img className="page-cover" src={`${import.meta.env.BASE_URL}images/podcast-cover.jpg`} alt="Use of Force Case Law Update podcast cover" width="800" height="800" />
+        <div>
+          <div className="eyebrow">Podcast</div>
+          <h1>Use of Force Case Law Update</h1>
+          <p className="lead">
+            A weekly walk through the use of force decisions that matter to officers, custody staff, supervisors, and trainers. Hosted by {site.owner}.
+          </p>
+        </div>
+      </div>
       <div className="btn-row">
         <a className="btn secondary" href={feedUrl}>RSS feed</a>
         <Link className="btn secondary" to="/subscribe">Get new episodes by email</Link>

@@ -9,6 +9,7 @@ export default function DowningTheDuck() {
       <div className="eyebrow">Free quick reference</div>
       <h1>{duck.title}</h1>
       <p className="lead">{duck.subtitle}</p>
+      <img className="page-banner" src={`${import.meta.env.BASE_URL}images/banner-manipulation.jpg`} alt="Manipulation and boundary violations: recognize, interrupt, prevent" width="1280" height="720" />
       {duck.intro.map((p, i) => <p key={i}>{p}</p>)}
 
       <div className="card">
