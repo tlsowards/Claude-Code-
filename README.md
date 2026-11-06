@@ -46,6 +46,6 @@ Merging to `main` deploys the app to GitHub Pages automatically. See [Deployment
 - [Content workflow](docs/CONTENT-WORKFLOW.md): how to publish a weekly brief and a podcast episode.
 - [Deployment](docs/DEPLOYMENT.md): hosting options, audio hosting, and podcast directory submission.
 - [Roadmap](docs/ROADMAP.md): connecting to the WordPress and LifterLMS site, push notifications, native app wrappers.
-- [Subscription](docs/SUBSCRIPTION.md): how the free 30 days, then $9.99 a month, is set up on the site and enforced in the app.
+- [Subscription](docs/SUBSCRIPTION.md): how the free 30 days, then $9.99 a month or $59.99 a year, is set up on the site and enforced in the app.
 - [Site integration](docs/SITE-INTEGRATION.md): what the app reads from sowardsconsulting.com and what still needs to change on the site.
 - [Market landscape and growth plan](docs/MARKET-AND-GROWTH.md): who competes for the same sign-ups, where Sowards is different, and how to draw people to the app.

@@ -26,8 +26,8 @@ export default function Subscribe() {
       <div className="eyebrow">Subscribe</div>
       {subscription.enforced ? (
         <>
-          <h1>Free for {subscription.trialDays} days, then {subscription.price} a {subscription.period}.</h1>
-          <p className="lead">The weekly use of force case law brief, the audio episode, the printable roll call version, and the knowledge check. Every week. Cancel any time.</p>
+          <h1>Free for {subscription.trialDays} days, then {subscription.offer}.</h1>
+          <p className="lead">The weekly use of force case law brief, the audio episode, the printable roll call version, and the knowledge check. Every week. Pay monthly, or save with the annual plan. Cancel any time.</p>
           <div className="btn-row">
             <a className="btn" href={site.subscribeUrl}>Start your free {subscription.trialDays} days</a>
             <Link className="btn secondary" to="/signin">Already subscribed? Sign in</Link>
