@@ -51,7 +51,7 @@ After the feed is live at `<public URL>/podcast/feed.xml`:
 
 1. Validate the feed with a podcast feed validator.
 2. Submit it in Apple Podcasts Connect and Spotify for Podcasters under the Sowards Consulting accounts. Both read the same RSS feed.
-3. The cover art at `public/podcast/cover.png` is 1400 by 1400 pixels, the minimum Apple accepts. Replace it with a designed version when ready.
+3. The cover art at `public/podcast/cover.png` is 3000 by 3000 pixels, the size Apple recommends, with the Sowards shield above the title.
 
 ## Email signup
 

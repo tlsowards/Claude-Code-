@@ -29,7 +29,7 @@ export default function Account() {
         {sub.active ? (
           <>
             <p><span className="pill">Active</span>{sub.status === 'staff' && <span className="pill muted">Staff access</span>}</p>
-            {sub.trialEndsAt && <p>Free trial ends {formatDate(sub.trialEndsAt.slice(0, 10))}. After that, {subscription.price} a {subscription.period}.</p>}
+            {sub.trialEndsAt && <p>Free trial ends {formatDate(sub.trialEndsAt.slice(0, 10))}. After that, your plan renews at {subscription.offer}.</p>}
             {sub.nextPayment && <p>Next payment: {formatDate(sub.nextPayment.slice(0, 10))}.</p>}
             <p className="meta" style={{ marginBottom: 0 }}>Manage or cancel from <a href={site.dashboardUrl}>your dashboard on sowardsconsulting.com</a>.</p>
           </>

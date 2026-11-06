@@ -23,7 +23,7 @@ export default function Layout() {
     <div className="app">
       <header className="topbar">
         <Link to="/" className="brand" aria-label={`${site.name} home`}>
-          <span className="brand-mark">S</span>
+          <img className="brand-mark" src={`${import.meta.env.BASE_URL}icons/brand-mark.png`} alt="" width="40" height="44" />
           <span>
             <span className="brand-name">{site.name}</span>
             <span className="brand-sub">{site.tagline}</span>

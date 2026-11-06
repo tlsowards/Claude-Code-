@@ -1,4 +1,4 @@
-# Subscription: free for 30 days, then $9.99 a month
+# Subscription: free for 30 days, then $9.99 a month or $59.99 a year
 
 The subscription is sold on sowardsconsulting.com through LifterLMS and Stripe, which the site already runs. The app checks the subscription when a reader signs in with their site account. Nothing is charged inside the app, so there is no app store commission.
 
@@ -17,14 +17,13 @@ The paywall is **off** until you turn it on (step 4), so the live app keeps work
 
 In WordPress:
 
-1. LifterLMS, Memberships, Add New. Title: **Use of Force Case Law Update**. Publish.
-2. On the membership, under Access Plans, add a plan:
-   - Title: Monthly
-   - Price: 9.99, Frequency: every 1 month, Length: until cancelled
-   - Trial: enabled, trial price 0, trial length 30 days
-   - Payment gateway: Stripe
+1. LifterLMS, Memberships, Add New. Title: **Sowards' Briefing Room**. Publish. (The podcast keeps its own name, Use of Force Case Law Update; the membership is the subscription that unlocks it and the weekly bulletins.)
+2. On the membership, under Access Plans, add two plans:
+   - **Monthly**: price 9.99, frequency every 1 month, length until cancelled, trial enabled, trial price 0, trial length 30 days.
+   - **Annual**: price 59.99, frequency every 1 year, length until cancelled, trial enabled, trial price 0, trial length 30 days. Mark it Featured so it stands out in the pricing table.
+   - Payment gateway: Stripe (the site's course plans already use it).
 3. Note the membership's post ID (hover the title in the Memberships list; the ID is in the link).
-4. Copy the membership's checkout URL. The membership page URL plus the plan works, for example `https://sowardsconsulting.com/membership/use-of-force-case-law-update/`.
+4. The subscribe link in the app is the membership page, which shows both plans in a pricing table: `https://sowardsconsulting.com/membership/sowards-briefing-room/`. Each plan also has its own checkout URL of the form `https://sowardsconsulting.com/purchase/?plan=<plan id>`.
 
 ## 2. Install the app API on the site
 

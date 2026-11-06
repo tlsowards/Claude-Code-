@@ -23,16 +23,20 @@ export const site = {
   // WordPress app API (see wordpress/sowards-app-api.php).
   apiBase: import.meta.env.VITE_API_BASE ?? 'https://sowardsconsulting.com/wp-json/sowards/v1',
   // Where "Start your free 30 days" sends people: the LifterLMS membership checkout on the site.
-  subscribeUrl: import.meta.env.VITE_SUBSCRIBE_URL ?? 'https://sowardsconsulting.com/memberships/',
+  subscribeUrl: import.meta.env.VITE_SUBSCRIBE_URL ?? 'https://sowardsconsulting.com/membership/sowards-briefing-room/',
 };
 
 /** Subscription offer and whether the paywall is enforced. Off until the membership exists on the site. */
 export const subscription = {
   enforced: import.meta.env.VITE_PAYWALL === 'on',
   trialDays: 30,
-  price: '$9.99',
-  period: 'month',
-  name: 'Use of Force Case Law Update',
+  monthlyPrice: '$9.99',
+  annualPrice: '$59.99',
+  /** Short offer line used wherever the price is shown. */
+  get offer() {
+    return `${this.monthlyPrice} a month or ${this.annualPrice} a year`;
+  },
+  name: "Sowards' Briefing Room",
 };
 
 export const disclaimer =
