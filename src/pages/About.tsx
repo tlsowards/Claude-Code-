@@ -8,7 +8,8 @@ export default function About() {
       <div className="eyebrow">About</div>
       <h1>{site.owner}</h1>
       <p className="lead">{site.tagline}</p>
-      <div className="card">
+      <div className="card about-card">
+        <img className="about-portrait" src={`${import.meta.env.BASE_URL}images/tim-sowards.jpg`} alt="Dr. Timothy Sowards" width="720" height="1020" />
         <p>
           Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and serves as a lead training officer and Lead Use of Force Instructor for the Sacramento County Probation Department. He holds a Doctorate in Public Policy and Administration with a criminal justice focus, has been a POST-certified instructor since 2004, and is a BSCC STC-certified trainer serving probation departments, corrections facilities, and law enforcement agencies throughout California.
         </p>

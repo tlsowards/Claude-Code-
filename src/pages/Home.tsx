@@ -9,21 +9,25 @@ export default function Home() {
   return (
     <>
       <Seo />
-      <section className="hero">
-        <div className="eyebrow gold">Sowards Consulting</div>
-        <h1>Training built for defensibility.</h1>
-        <div className="gold-line" />
-        <p>
-          Weekly use of force case law briefs written for the people who do the work and the people who train them. The podcast, STC-certified courses, and a resource center for trainers, in one place.
-        </p>
-        <div className="btn-row">
-          <Link className="btn" to="/briefs">Read this week's brief</Link>
-          <Link className="btn secondary" to="/subscribe">Subscribe free</Link>
+      <section className="hero hero-figure">
+        <div>
+          <div className="eyebrow gold">Sowards Consulting</div>
+          <h1>Training built for defensibility.</h1>
+          <div className="gold-line" />
+          <p>
+            Weekly use of force case law briefs written for the people who do the work and the people who train them. The podcast, STC-certified courses, and a resource center for trainers, in one place.
+          </p>
+          <div className="btn-row">
+            <Link className="btn" to="/briefs">Read this week's brief</Link>
+            <Link className="btn secondary" to="/subscribe">Subscribe free</Link>
+          </div>
         </div>
+        <img className="hero-portrait" src={`${import.meta.env.BASE_URL}images/tim-sowards.jpg`} alt="Dr. Timothy Sowards" width="720" height="1020" />
       </section>
 
       {latest && (
-        <Link to={`/briefs/${latest.id}`} className="card card-link">
+        <Link to={`/briefs/${latest.id}`} className="card card-link card-with-image">
+          <img className="card-image" src={`${import.meta.env.BASE_URL}images/banner-use-of-force.jpg`} alt="" width="1280" height="720" loading="lazy" />
           <div className="eyebrow">Latest weekly brief</div>
           <h2>{latest.title}</h2>
           <div className="meta">Decisions from {formatRange(latest.coverageStart, latest.coverageEnd)}</div>
@@ -33,18 +37,21 @@ export default function Home() {
 
       <div className="grid two">
         {latestEpisode && (
-          <Link to={`/podcast/${latestEpisode.id}`} className="card card-link">
+          <Link to={`/podcast/${latestEpisode.id}`} className="card card-link card-with-image">
+            <img className="card-image card-image-square" src={`${import.meta.env.BASE_URL}images/podcast-cover.jpg`} alt="" width="800" height="800" loading="lazy" />
             <div className="eyebrow">Latest episode</div>
             <h3>{latestEpisode.title}</h3>
             <div className="meta">{formatDate(latestEpisode.date)}</div>
           </Link>
         )}
-        <Link to="/training" className="card card-link">
+        <Link to="/training" className="card card-link card-with-image">
+          <img className="card-image" src={`${import.meta.env.BASE_URL}images/banner-de-escalation.jpg`} alt="" width="1280" height="720" loading="lazy" />
           <div className="eyebrow">STC-certified training</div>
           <h3>Online courses with certificates</h3>
           <div className="meta">Twelve courses live on the course portal. Preview any course free, or sign in to pick up where you left off.</div>
         </Link>
-        <Link to="/downing-the-duck" className="card card-link">
+        <Link to="/downing-the-duck" className="card card-link card-with-image">
+          <img className="card-image" src={`${import.meta.env.BASE_URL}images/banner-manipulation.jpg`} alt="" width="1280" height="720" loading="lazy" />
           <div className="eyebrow">Free framework</div>
           <h3>Downing the Duck</h3>
           <div className="meta">The six stages of staff manipulation in juvenile facilities, and where to stop it.</div>
