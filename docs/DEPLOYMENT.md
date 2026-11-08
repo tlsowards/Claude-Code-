@@ -7,7 +7,7 @@ The build output in `dist/` is static files. It can be hosted anywhere that serv
 The workflow at `.github/workflows/deploy-pages.yml` builds and deploys the app to GitHub Pages on every push to `main`. The first run enables Pages on the repository. The app is then live at:
 
 ```
-https://tlsowards.github.io/Claude-Code-/
+https://app.sowardsconsulting.com/ (the old address https://tlsowards.github.io/Claude-Code-/ redirects there)
 ```
 
 Optional repository variables (Settings, Secrets and variables, Actions, Variables) are read at build time:
@@ -17,7 +17,7 @@ Optional repository variables (Settings, Secrets and variables, Actions, Variabl
 | `AUDIO_BASE_URL` | Folder URL where the podcast MP3s are hosted. |
 | `MAILERLITE_FORM_ACTION` | MailerLite embedded form action for the Subscribe page. |
 
-To move to your own domain later, add `app.sowardsconsulting.com` as the custom domain in the repository's Pages settings, create the CNAME record at your DNS host pointing to `tlsowards.github.io`, and change `BASE_PATH` in the workflow to `/` and `VITE_PUBLIC_URL` to `https://app.sowardsconsulting.com`.
+The custom domain is set up in two places: a CNAME record at the DNS host (`app` pointing to `tlsowards.github.io`) and the custom domain field in the repository's Pages settings, with "Enforce HTTPS" on. The workflow builds with `BASE_PATH=/` and `VITE_PUBLIC_URL=https://app.sowardsconsulting.com` to match. If the domain is ever removed, set those two back to `/<repo>/` and the GitHub Pages address.
 
 ## Option A: subdomain on another static host
 
