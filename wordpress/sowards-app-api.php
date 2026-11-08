@@ -121,12 +121,21 @@ function sowards_app_key_user() {
 	if ( sowards_app_key_attempts( false ) ) {
 		return null;
 	}
-	$admins = get_users( array( 'role' => 'administrator', 'number' => 10, 'fields' => array( 'ID', 'user_login' ) ) );
+	// Verify against each administrator's stored Application Passwords directly, the same check
+	// WordPress core runs, but without core's side effect of recording a failed attempt for every
+	// administrator the key does not belong to (that recorded failure would turn into a 401 later).
+	$plain  = preg_replace( '/[^a-z\d]/i', '', $key );
+	$admins = get_users( array( 'role' => 'administrator', 'number' => 10, 'fields' => array( 'ID' ) ) );
 	foreach ( $admins as $admin ) {
-		$check = wp_authenticate_application_password( null, $admin->user_login, $key );
-		if ( $check instanceof WP_User ) {
-			$resolved = $check;
-			return $check;
+		$user = get_user_by( 'id', (int) $admin->ID );
+		if ( ! $user || ! wp_is_application_passwords_available_for_user( $user ) ) {
+			continue;
+		}
+		foreach ( WP_Application_Passwords::get_user_application_passwords( $user->ID ) as $item ) {
+			if ( ! empty( $item['password'] ) && wp_check_password( $plain, $item['password'], $user->ID ) ) {
+				$resolved = $user;
+				return $user;
+			}
 		}
 	}
 	sowards_app_key_attempts( true );
@@ -141,12 +150,14 @@ add_filter( 'determine_current_user', function ( $user_id ) {
 }, 20 );
 // If another plugin resolved the current user before this snippet loaded, apply the key when the REST server starts.
 add_filter( 'rest_authentication_errors', function ( $result ) {
-	if ( null !== $result || get_current_user_id() ) {
+	if ( true === $result ) {
 		return $result;
 	}
 	$user = sowards_app_key_user();
 	if ( $user ) {
-		wp_set_current_user( $user->ID );
+		if ( get_current_user_id() !== (int) $user->ID ) {
+			wp_set_current_user( $user->ID );
+		}
 		return true;
 	}
 	return $result;
