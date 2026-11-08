@@ -1,0 +1,173 @@
+{
+  "id": "2026-w35",
+  "title": "The canine warning as the hinge: an armed standoff in the Tenth Circuit, per-shot analysis after Barnes, and two bite cases that draw the line",
+  "date": "2026-08-29",
+  "coverageStart": "2026-08-24",
+  "coverageEnd": "2026-08-29",
+  "summary": "One new federal appellate force decision this week, at the meeting point of the police service dog and the firearm. In DeWeese v. Hancock, decided August 19, the Tenth Circuit granted qualified immunity to officers who sent a dog at an armed, stationary man 20 minutes into a standoff and shot him when he drew, without deciding whether the force was reasonable. Spencer v. Glaser, Fourth Circuit, August 4, applies Barnes v. Felix to help the officer on later shots and limits what body camera video can prove. Two canine cases, Harold v. Hagan from the Fourth Circuit and Cameron v. City of Des Moines from the Eighth, draw the line on when a warning is required before a dog is sent. The through line is the warning and the chance to comply: given and refused, the officers won; feasible and skipped, or the subject already passive, they lost. Nothing new from the Ninth Circuit, the Supreme Court, or California.",
+  "coverage": [
+    "The episode presented one new federal appellate decision for the week, DeWeese v. Hancock from the Tenth Circuit, and paired it with three earlier canine and shooting decisions from the Fourth and Eighth Circuits. It did not describe a sweep of the Ninth Circuit, the Supreme Court, or the California courts, and reported nothing from them.",
+    "Harold v. Hagan is a panel opinion with a petition for rehearing en banc filed May 12, 2026, so the episode treated it as instructive rather than final. Facts in DeWeese and Harold are as alleged in the complaints, because both cases were decided on the pleadings or on qualified immunity before trial.",
+    "The source is a machine transcript. The caption of the Tenth Circuit case was rendered as 'a state of DeWeese v. Hancock' and is probably 'Estate of DeWeese v. Hancock'; the Fourth Circuit canine case appears as both 'Harold' and 'Herald'; and the Des Moines handler's name was garbled and is omitted. No docket numbers were given, and publication status was not expressly stated for any case.",
+    "This brief was rebuilt from the episode originally published on August 29, 2026; it was not re-researched, so verify every citation against the opinion before relying on it."
+  ],
+  "sections": [
+    {
+      "heading": "Ninth Circuit",
+      "note": "Nothing from this court in this episode. The episode referred back to Smith v. Olvera, a July 2026 Ninth Circuit decision covered earlier, as an example of the same posture seen in DeWeese: qualified immunity granted on the clearly established prong without any holding on whether the force was reasonable. The structural problem is the same in both circuits. An immunity win generates no guidance, so the next officer is in exactly the same position of uncertainty.",
+      "cases": []
+    },
+    {
+      "heading": "Supreme Court",
+      "note": "No new Supreme Court decision this week. Barnes v. Felix, decided in May 2025, runs through the whole episode. Barnes tells courts they may not isolate the moment of threat and must consider the totality of the circumstances leading up to the force, an inquiry the Court said has no time limit. Both DeWeese and Spencer apply that rule in a direction that helped the officers, because the earlier conduct that filled the wider window was the subject's: commands refused, a warning rejected, a stated threat to shoot the dog, an approach with a knife.",
+      "cases": []
+    },
+    {
+      "heading": "Other federal circuits",
+      "note": "Four decisions, one new and three earlier, that line up into a coherent rule on canine deployment. Armed, warned, refused: immunity (DeWeese). Dangerous but unwarned when a warning was feasible: jury question (Cameron). Unarmed, secured, passive, gratuitous force: no immunity (Harold). The compliance opportunity is the hinge. The episode tested the rule with a hypothetical: a man against a wall in a parking lot holding a folding knife at his side, not advancing, held at gunpoint at 15 yards for 11 minutes; a handler arrives, warns that the dog will be sent and will bite if he does not drop the knife and go to the ground; he says he will cut the dog; two minutes later the dog is released, the subject raises the knife toward the dog, and an officer fires. Under DeWeese the three predicate facts are present and the immunity posture is probably sound in the Tenth Circuit today. Under Cameron the warning was given. Under Harold this is nowhere near gratuitous force against a secured, passive, unarmed man. But the question the courts declined to answer remains: was it reasonable? Nobody was moving, the subject was contained, and nobody was hurt at minute 11 who was not hurt at minute 1. The dog deployment converted a static containment into a shooting, and the agency chose the moment. Immunity may protect the officers. It will not protect the agency in a Monell claim, in a state court action where the state immunity defense has been abolished, or in front of a police commission.",
+      "cases": [
+        {
+          "id": "deweese-v-hancock",
+          "name": "DeWeese v. Hancock",
+          "court": "Tenth Circuit (from the District of Colorado, Chief Judge Daniel Domenico)",
+          "courtKey": "ca10",
+          "decided": "August 19, 2026",
+          "status": "unknown",
+          "topic": "Canine deployment against an armed, stationary subject, deadly force when he draws, qualified immunity on the clearly established prong only",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "The transcript rendered the caption as 'a state of DeWeese v. Hancock', which is probably 'Estate of DeWeese v. Hancock'; the plaintiffs were DeWeese's surviving relatives. Verify the caption. No docket number was stated. The episode did not say whether the opinion is published. Facts are as alleged in the complaint. The judges' first names are as the transcript gave them.",
+          "facts": "Manitou Springs, Colorado, April 2022. Wilford DeWeese, traveling between California and his Florida home, was ejected from two bars. When he returned to the first to retrieve items he had left, the bartender confronted him physically and another patron knocked him down. On the ground, DeWeese tried to pull out his handgun to show he was prepared to defend himself, and the bartender yelled for someone to call 911. DeWeese walked down Manitou Avenue, where two Manitou Springs officers confronted him at gunpoint and gave commands. According to the complaint, he said he had done nothing wrong, had been assaulted, and that they had no right to treat him that way. He then stayed put for 13 minutes, when El Paso County sheriff's deputies arrived, among them Deputy Ronnie Hancock and his police service dog, Jinx. The complaint alleges DeWeese stayed frozen in part because Jinx was barking aggressively at him. Officers told him the dog would bite if he did not move. DeWeese answered that if the dog came at him he would shoot it. Twenty minutes into the standoff, Hancock commanded Jinx to apprehend. DeWeese pulled his handgun. Officers fired, striking him 22 times. DeWeese fatally shot the dog. Both died. His surviving relatives sued under the Fourth Amendment, and the district court granted qualified immunity.",
+          "holding": "Affirmed, 3-0, in an opinion by Judge Joel Carson joined by Judges Scott Matheson and Allison Eade. The panel did not hold that the force was constitutional. It expressly declined to decide whether the officers used excessive force and resolved the case entirely on the clearly established prong. On the shooting, Judge Carson wrote that the plaintiffs cited no case clearly establishing that shooting a suspect who points a gun at a police canine in the presence of officers is unlawful. On the dog, the panel wrote that prior decisions would not put a reasonable officer on notice that it is unconstitutional to order a police canine to attack an armed suspect who failed to comply with lawful orders after officers warned him of their impending use of force. The plaintiffs also pressed Barnes v. Felix and lost. Barnes requires the totality of the circumstances leading up to the force, with no time limit, and here the wider window helped the officers: the 20-minute standoff contained repeated commands, a canine warning, and DeWeese's stated intention to shoot the dog. At argument Judge Matheson said one could argue the response was excessive, but dismissing the idea that officers reasonably perceived a threat did not square with the facts.",
+          "notDecided": "Whether ordering a bite on a stationary, armed man 20 minutes into a static standoff is reasonable force, and whether the shooting itself was reasonable. The panel skipped the first prong entirely, so the opinion says nothing about reasonableness and gives the next handler in the Tenth Circuit no guidance.",
+          "inPractice": "Three facts, stacked in order, produced immunity: the subject was armed, he failed to comply with lawful orders, and he was warned of the impending use of force. The opinion specifically credited that officers gave DeWeese a chance to comply before using force. But an immunity win is not a finding that the force was reasonable. A subject who is armed, stationary, contained, non-advancing, and verbally engaged presents the hard question the panel refused to answer, and deploying a bite dog against a man holding a firearm predictably forces his hand and predictably produces a shooting. The officers, not the subject, chose the moment the static standoff went kinetic.",
+          "trainIt": "For line officers, the canine warning is not a courtesy. It is a documented decision point that changes the constitutional analysis. Make it audible, specific about what is going to happen, and leave a real window to comply. Narrate it on body camera: say what the dog will do and give a count. For field training officers, work the transition problem. This incident was static for 20 minutes and went kinetic in under two seconds because an officer initiated the change. Give recruits reps where the officers control the timing of escalation and must articulate why now rather than five minutes from now. Ask what the deadline was and who set it. For command staff, most canine policies permit deployment against a non-compliant armed subject, but if the policy does not separately address deployment against a subject known to be armed with a firearm, that gap is the exposure. DeWeese will not fill it, because DeWeese decided nothing about reasonableness. Write the standard yourself."
+        },
+        {
+          "id": "spencer-v-glaser",
+          "name": "Spencer v. Glaser",
+          "court": "Fourth Circuit",
+          "courtKey": "ca4",
+          "decided": "August 4, 2026",
+          "status": "unknown",
+          "topic": "Second and third shots after the subject went down, Barnes totality applied to the subject's earlier conduct, limits of body camera video at the pleading stage",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "The episode did not state a docket number, the panel, or the ultimate disposition of the appeal beyond saying the case was resolved at the pleading stage and the Barnes analysis helped the officer. It did not say whether the opinion is published. Verify before citing.",
+          "facts": "Manteo, North Carolina. Deputies responded to a 911 call requesting medical assistance for Sylvester Selby. Selby came out of the house carrying a kitchen knife in one hand and an apple in the other, bleeding from what appeared to be a chest wound. Deputy Edward Glaser and another deputy repeatedly ordered him to drop the knife. He did not. He came down the porch steps and moved toward the deputies. Glaser fired once. Selby stumbled backward, tripped over a bicycle, went to the ground, and dropped both the apple and the knife. He then thrashed on the ground for roughly 12 seconds, got to his hands and knees, and lunged toward Glaser. Glaser fired two more shots. Selby died. The estate did not seriously contest the first shot. The fight was over shots two and three, fired after Selby was on the ground and no longer holding the knife. The estate's theory was that the threat justifying shot one had ended, so shots two and three had to stand or fall on the circumstances existing at that later instant, stripped of everything that came before. The case was decided at the pleading stage, and the complaint incorporated the body camera footage.",
+          "holding": "The Fourth Circuit rejected that theory and noted the irony. Barnes v. Felix killed the moment-of-threat rule because it let courts ignore what officers did before firing. Spencer applies the same rule in reverse: if the totality inquiry has no time limit, it has none when the earlier conduct is the subject's. Glaser did not have to evaluate Selby's renewed movement as though the encounter began at that instant. But the court kept the other half of the rule intact. Each application of force must be justified when it occurs. Deadly force does not stay authorized because it was authorized a moment ago; if the threat ends, the justification ends. Analyzing each shot separately is not analyzing it in isolation. On the video, the court held that where footage clearly contradicts an allegation a court need not accept it, but it policed the limits. The trial court had concluded the video showed uneven terrain caused the deputies to stumble as Selby approached; the Fourth Circuit said the recording did not establish that clearly enough to override the complaint. Video may show that an officer moved backward, not why; an arm moving, not intent. Because a camera records from a different position with different optics than the human eye, it does not establish what the officer actually perceived.",
+          "inPractice": "This is the case that gives an officer a defensible way to talk about the second and third rounds. Do not say the threat continued. Say what you saw: he had come at me with the knife, he got to his hands and knees, he lunged. That is a per-shot articulation built out of observable conduct, and the 12 seconds of history are properly part of it. The other edge is just as sharp. If the subject goes down and stays down, the justification is gone, and neither Spencer nor Barnes will save the officer who keeps firing.",
+          "trainIt": "Run reassessment drills where the threat genuinely ends: subject goes down, stays down, hands visible, no movement. Officers need reps at stopping, not only at shooting. In reports, articulate each shot from observable conduct and carry the earlier conduct into how the next movement was read. For command staff and anyone doing force review, take the video holding seriously. Reviewers routinely draw conclusions from footage about perception, intent, and causation that the Fourth Circuit said footage cannot support. Video is evidence of what the camera captured. It is not a transcript of what the officer knew."
+        },
+        {
+          "id": "harold-v-hagan",
+          "name": "Harold v. Hagan",
+          "court": "Fourth Circuit",
+          "courtKey": "ca4",
+          "decided": "Late April 2026 (exact date not stated in the source)",
+          "status": "unknown",
+          "topic": "Canine bite on an unarmed, passive, surrounded subject, right defined at the level of the facts, dog as an 'other weapon' under Myers",
+          "settings": [
+            "field"
+          ],
+          "caution": "The episode's closing remarks rendered the name as 'Herald'; 'Harold' is the spelling used throughout and is adopted here. No exact decision date or docket number was stated. A petition for rehearing en banc was filed May 12, 2026, so the panel opinion should be treated as instructive rather than final and may be unsettled. Facts are as alleged in the complaint. The episode did not say whether this opinion is published. This case is also covered in the September 5 brief.",
+          "facts": "Richard Harold, an amputee missing his lower left leg below the knee and suffering a medical episode, broke into a Chesterfield County, Virginia car dealership and was found in an upstairs storage room. He was unarmed except for a utility knife in his pocket that he never removed. He called out words to the effect of 'I am not a threat' and was on the floor in a submissive fetal position, head down, with backup officers surrounding the enclosed room. Officer Louis Hagan signaled his dog, Kona, to apprehend. The complaint describes a prolonged and violent attack focused on Harold's buttocks, groin, and amputation stump, producing life-threatening blood loss and destroying his prosthetic leg. The district court found a plausible Fourth Amendment violation but granted qualified immunity on the clearly established prong.",
+          "holding": "Reversed, in an opinion by Judge Robert King joined by Judge Pamela Harris, with Judge Julius Richardson dissenting. The panel defined the right at the level of the facts alleged: the right of a non-threatening, unarmed, passively resisting suspect to be free from unnecessary, gratuitous, and disproportionate force by deployment of a police canine. It found that right clearly established since 2013 by Myers v. Baltimore County, which held that unnecessary, gratuitous, and disproportionate force, whether from a gun, a baton, a Taser, or other weapon, defeats immunity when the subject is unarmed and secured. The panel treated the dog as an 'other weapon' within Myers. Because the district court had already found a plausible constitutional violation, the reversal on the clearly established prong sends the claim forward.",
+          "dissent": "Judge Richardson dissented. The episode did not describe the grounds of the dissent.",
+          "inPractice": "A canine is a weapon for constitutional purposes. A general excessive force precedent about guns, batons, and Tasers applied directly to a dog. Against a subject who is unarmed, secured by officers surrounding an enclosed room, passive on the floor, and announcing that he is not a threat, a bite is gratuitous force and immunity is gone.",
+          "trainIt": "Train handlers on force proportionality, not just on canine tactics. Before the send, ask whether the subject is contained, whether he is resisting at all, and what the dog adds that the surrounding officers cannot do by hand. A medical episode and a visible disability belong in that calculus. Watch the rehearing petition; it could unsettle the canine analysis in the Fourth Circuit."
+        },
+        {
+          "id": "cameron-v-city-of-des-moines",
+          "name": "Cameron v. City of Des Moines",
+          "court": "Eighth Circuit",
+          "courtKey": "ca8",
+          "decided": "February 26, 2026",
+          "status": "unknown",
+          "topic": "Canine release without a warning on a fleeing homicide suspect, bite duration, removal technique, failure to intervene",
+          "settings": [
+            "field"
+          ],
+          "caution": "The handler's name was garbled in the machine transcript and is omitted here; the dog's name was rendered as 'Barrow'. No docket number was stated, and the episode did not say whether this opinion is published. The outcome of the surviving failure-to-warn claim after remand was not covered.",
+          "facts": "Officers surrounded a house to arrest Tyrone Cameron on a first-degree murder warrant. He had a violent history. He went off the roof and ran. The handler released his dog without a warning. The dog caught Cameron about five seconds later and held roughly 15 seconds until he was handcuffed. Cameron was in fact carrying a knife. He sued over the failure to warn, the length of the bite, the technique used to remove the dog, and the failure of other officers to intervene.",
+          "holding": "The Eighth Circuit split the claims in a way that is very teachable. The failure-to-warn claim survived. In that circuit officers are generally required to give a warning and an opportunity to surrender before deploying a bite dog unless a warning is unsafe or impractical, and the defense never explained why a warning would have created additional danger. The court noted that warnings often reduce confrontation by increasing the chance of surrender. The bite-duration claim failed: a roughly 15-second hold until handcuffing was reasonable given a fleeing homicide suspect believed to be armed. The removal-technique claim failed for lack of clearly established law. The failure-to-intervene claims failed because the alleged harm was complete the instant the dog was released, and there is no duty to intervene against force that is not clearly unlawful.",
+          "inPractice": "Danger does not excuse the warning. A subject can be armed, wanted for homicide, fleeing, and dangerous, and the question is still whether a warning was feasible, not whether he deserved one. Once the dog is on, a short hold until handcuffing against that kind of suspect is defensible, and officers who could not have stopped a release that was already complete are not liable for failing to intervene.",
+          "trainIt": "Build the warning into the release sequence so that skipping it is a conscious, articulated exception rather than a habit. If the handler skips it, the report has to say why a warning was unsafe or impractical on those facts; the defense here lost that claim because nobody explained it. Articulate duration and removal separately, with the time to handcuffing and the reason for the hold."
+        }
+      ]
+    },
+    {
+      "heading": "California",
+      "note": "Nothing from this court in this episode. The episode's worked hypothetical noted that a qualified immunity win for the officers will not protect the agency in a state court action where the state immunity defense has been abolished, or in front of a police commission, but it did not identify any California decision.",
+      "cases": []
+    }
+  ],
+  "applications": [
+    {
+      "title": "Warn specifically and leave a real window",
+      "body": "Say what tool is coming, say what it will do, and give the subject time to act on it. DeWeese turned on that warning. Cameron turned on its absence."
+    },
+    {
+      "title": "Danger does not excuse the warning",
+      "body": "A subject can be armed, wanted for homicide, fleeing, and dangerous, and the question is still whether a warning was feasible, not whether he deserved one. If the handler skips it, the report must say why it was unsafe or impractical."
+    },
+    {
+      "title": "A canine is a weapon for constitutional purposes",
+      "body": "Harold applied a general excessive force precedent about guns, batons, and Tasers directly to a dog. Train handlers on force proportionality, not just on canine tactics."
+    },
+    {
+      "title": "Articulate per application of force, but do not amputate the history",
+      "body": "Spencer permits an officer to carry what he saw 12 seconds ago into how he reads the next movement. It does not permit him to keep firing after the threat is gone. Analyzing each shot separately is not analyzing it in isolation."
+    },
+    {
+      "title": "Do not confuse an immunity win with a training standard",
+      "body": "DeWeese and Smith v. Olvera both granted immunity without ever holding the force reasonable. Teaching either case as permission teaches officers something the court specifically declined to say. If the canine policy does not separately address deployment against a subject known to be armed with a firearm, that is the gap DeWeese exposes and does not fill. Fix it this month."
+    },
+    {
+      "title": "Body camera footage proves position and motion, not perception",
+      "body": "Video shows that an officer moved and that an arm moved. It does not show why, what was intended, or what the officer perceived from a different vantage point. Force review boards should stop using it that way."
+    }
+  ],
+  "episodeIds": [
+    "2026-08-29"
+  ],
+  "quiz": [
+    {
+      "q": "On what basis did the Tenth Circuit grant qualified immunity in DeWeese v. Hancock?",
+      "options": [
+        "It held that sending the dog and shooting DeWeese was reasonable force",
+        "It held that no prior case clearly established the conduct was unlawful, without deciding whether the force was reasonable",
+        "It held that DeWeese had no Fourth Amendment rights once he drew a weapon",
+        "It held that the 13 minutes of stillness made the warning unnecessary"
+      ],
+      "answer": 1,
+      "teach": "The panel skipped the first prong entirely. Armed, failed to comply with lawful orders, and warned of the impending use of force were the three facts that produced immunity, but the opinion says nothing about whether the force was reasonable, so it is not a training standard."
+    },
+    {
+      "q": "In Spencer v. Glaser, how did the Fourth Circuit treat shots two and three, fired after Selby was on the ground without the knife?",
+      "options": [
+        "They had to be judged solely on the instant they were fired, stripped of everything before",
+        "They were automatically justified because the first shot was justified",
+        "Each shot had to be justified when it occurred, but the deputy could consider Selby's earlier approach with the knife under the Barnes totality inquiry",
+        "They were unconstitutional because the knife had been dropped"
+      ],
+      "answer": 2,
+      "teach": "Barnes v. Felix has no time limit in either direction. The 12 seconds of history were properly part of reading the lunge from hands and knees, but deadly force does not stay authorized because it was authorized a moment ago. Analyzing each shot separately is not analyzing it in isolation."
+    },
+    {
+      "q": "In Cameron v. City of Des Moines, why did the failure-to-warn claim survive even though Cameron was a fleeing homicide suspect carrying a knife?",
+      "options": [
+        "Because the dog held him for too long",
+        "Because the Eighth Circuit generally requires a warning and a chance to surrender before a bite dog is deployed, and the defense never explained why a warning would have been unsafe or impractical",
+        "Because other officers failed to intervene",
+        "Because the removal technique was clearly unlawful"
+      ],
+      "answer": 1,
+      "teach": "Danger does not excuse the warning; feasibility does. The 15-second hold and the removal technique claims failed, but nobody articulated why a warning could not be given, and the court noted that warnings often reduce confrontation by increasing the chance of surrender."
+    }
+  ]
+}

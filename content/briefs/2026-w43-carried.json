@@ -1,0 +1,179 @@
+{
+  "id": "2026-w43-carried",
+  "title": "Training supplement on carried cases: armed subjects, a mistaken launcher round, and a pending petition",
+  "date": "2026-10-24",
+  "coverageStart": "2026-10-19",
+  "coverageEnd": "2026-10-24",
+  "summary": "No new published circuit opinion on deadly or excessive force could be verified for the week ending October 24, 2026, so this brief is a training supplement built on three earlier decisions carried forward, not a report of new rulings; that week's new decisions are covered in the 2026-w43 brief. Handy v. Jones, Ninth Circuit, filed September 15, 2026, granted immunity to four Anchorage officers who shot a man waving a shotgun as he advanced on them. Ruffin v. Davis, Fourth Circuit, filed April 29, 2026, denied immunity to an officer who shot a fleeing armed teenager who made no threatening movement with the gun. Hart v. City of Grand Rapids, Sixth Circuit, filed May 15, 2025, treated a close range tear gas canister from a 40mm launcher as deadly force though the officer believed he loaded a crowd control round; the Supreme Court denied review May 26, 2026. A status check on the pending Moore v. Romero petition follows.",
+  "coverage": [
+    "Checked: the Supreme Court order lists, the circuit sources, and the practitioner sites for published use of force opinions filed in roughly the ten days before October 24, 2026. No new published circuit opinion on deadly or excessive force could be verified, so the episode worked through three earlier decisions carried forward for training and a status check on a pending petition. None of the three cases was decided during the week this brief covers.",
+    "For all three carried cases, the episode worked from the opinions as retrieved and summarized, not from a line-by-line read. Verify every quotation against the slip opinion before using it in a report or in testimony. The Byers v. Painter reference comes from a news report only, and the reporter citation for the Sixth Circuit opinion was garbled in the source and is omitted.",
+    "Not screened exhaustively: unpublished circuit memoranda and the state high courts in Washington, Oregon, and California, so something may have been filed that was missed. No October 16 short circuit installment was found. An October 19 report that the Alabama Supreme Court sent a Decatur officer's shooting immunity question back to the trial court because it applied the wrong statute is noted only; it concerns state criminal immunity, not the federal reasonableness standard.",
+    "This brief was rebuilt from the episode originally published on October 24, 2026; it was not re-researched, so verify every citation against the opinion before relying on it."
+  ],
+  "sections": [
+    {
+      "heading": "Ninth Circuit",
+      "note": "One carried case, decided September 15, 2026, not during the week covered. Read it next to Ruffin v. Davis in the Other federal circuits section: same framework, Graham, the totality of the circumstances, the immediate threat factor, and opposite results. The difference is what each man was doing with the gun and toward the officers. A worked hypothetical for the classroom: two officers respond to a report that a man is outside a house waving a shotgun after neighbors heard what sounded like shots. He is at the end of the driveway, refuses orders to drop the weapon and raise his hands, curses, swings the shotgun up over his head with one hand, and steps toward the officers. Then change one fact. A second man, also carrying a handgun, runs from the same house away from the officers, ignores commands, crouches by a fence, and turns his head toward them, with the gun in his hand but hanging at his side. Ask the class three questions. For each man, what exactly did the weapon do and where was he moving? Which looks more like Handy and which more like Ruffin, and what in the officer's articulation would make the difference? For a launcher situation, what steps stand between the officer and an unintended round? Then give the class a crowd control deployment and ask what the load verification step is and who witnesses it.",
+      "cases": [
+        {
+          "id": "handy-v-jones",
+          "name": "Handy v. Jones",
+          "court": "Ninth Circuit (from the District of Alaska)",
+          "courtKey": "ca9",
+          "docket": "25-5105",
+          "decided": "September 15, 2026",
+          "status": "published",
+          "topic": "Deadly force on an armed, advancing subject who never pointed the weapon, qualified immunity on a motion to dismiss",
+          "settings": [
+            "field"
+          ],
+          "caution": "Carried forward for training; this opinion was filed September 15, 2026, not during the week this brief covers. The summary was built from the opinion as retrieved and summarized, not from a line-by-line read, so verify any quotation against the slip opinion before using it in a report or in testimony. Judge Callahan wrote the opinion; the names of the two judges who joined her were not clear in the source and are omitted here. This case is also covered in the September 26 brief.",
+          "facts": "Around midnight on May 13, 2024, a neighbor in Anchorage called 911 more than once. She reported screaming, a thud against a wall, and what sounded like two shots from Christopher Handy's apartment, and she said Handy was standing at the end of the driveway holding a shotgun, waiting for police. Four Anchorage officers arrived, announced themselves, and ordered Handy out. He came out with the shotgun. He refused repeated orders to raise his hands and drop it, waved the weapon overhead, and cursed at the officers. As he stepped off the curb toward the parking area, the four officers fired and shot him nine times. He died. His family sued for excessive force under the Fourth Amendment and for loss of familial association. The officers moved to dismiss on qualified immunity, and the district court denied the motion.",
+          "holding": "Reversed in two steps, in an opinion by Judge Callahan. First, applying the Graham v. Connor factors and the totality of the circumstances approach the Supreme Court required in Barnes v. Felix, the panel held there was no constitutional violation. Officers had reason to suspect a violent crime, possibly shots fired inside a home. Handy was resisting by refusing to drop a shotgun. Most important, he posed an immediate threat by waving that shotgun while advancing toward the officers. The panel said the district court used the wrong standard when it asked whether a reasonable fact finder could conclude there was no immediate threat, and it reasoned that officers do not have to wait for a suspect to aim a gun at them before they act. Second, even if there had been a violation, the law was not clearly established. The plaintiffs cited cases in which the Ninth Circuit had denied immunity, and the panel distinguished each on its facts; no cited case required officers to wait until a weapon was aimed. The court vacated the denial of immunity and sent the case back with instructions to grant qualified immunity to all four officers. It also held it had jurisdiction over the interlocutory appeal even though the officers had moved to dismiss rather than for summary judgment.",
+          "inPractice": "An armed, belligerent person can pose an immediate threat even when the gun is never pointed at an officer. What made the threat immediate in Handy was the combination: a visible long gun, a call history that included possible shots fired, repeated refusal to drop the weapon, waving it overhead, and forward movement toward four officers. Armed plus belligerent plus defiance of commands plus advancing can be enough, even with the muzzle never pointed at anyone. Handy binds only in the Ninth Circuit. Elsewhere it is persuasive, and agencies should check their own circuit's law.",
+          "trainIt": "Teach the vocabulary of the weapon. Not that he had a gun, but where the muzzle was pointed, what the hands were doing, which way the person was moving, and what he said or did in response to commands. Teach that defiance is not a threat by itself. In Handy, ignoring commands became meaningful only because it was paired with a visible long gun, a violent call history, and forward movement. The officer has to be able to say in specific physical terms what the person did with the weapon and toward the officers. The training point is not that armed means shoot, and it is not that armed means wait."
+        }
+      ]
+    },
+    {
+      "heading": "Supreme Court",
+      "note": "No merits decision on police force in this episode. Status check on Moore v. Romero, No. 25-1295, the Lansing petition about shot-by-shot analysis after Barnes v. Felix: the Supreme Court docket showed it distributed for the October 16 conference, and no disposition could be found on the docket or on the Monday, October 19 order list. Whether it was relisted or held could not be determined, so treat it as unresolved until the docket or a later order list shows otherwise. The result will show whether the Court intends to speak on multi-volley analysis after Barnes. Related background: on June 22, the Court declined to review a 6 to 5 Ninth Circuit ruling in a Los Angeles case against former officer Tony McBride (spelling as rendered in the source), who fired two more shots after four earlier shots and a pause of about one second. Justices Thomas and Alito noted they would have heard it. As with all denials, that is not precedent, but it is a useful teaching case for the second volley problem.",
+      "cases": [
+        {
+          "id": "reinink-v-hart",
+          "name": "Reinink v. Hart",
+          "court": "Supreme Court of the United States",
+          "courtKey": "scotus",
+          "docket": "25-179",
+          "decided": "May 26, 2026",
+          "status": "cert-denied",
+          "topic": "Certiorari denied on whether an officer's intended level of force matters, mistaken launcher round",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "This denial was issued May 26, 2026, not during the week this brief covers; it is carried forward for training. Built from the materials as retrieved and summarized, not a line-by-line read. The officer's name was rendered as both Reinink and Rehnink in the source transcript; Reinink is the spelling used most often and is used here.",
+          "facts": "Officer Reinink petitioned for review of the Sixth Circuit's published decision in Hart v. City of Grand Rapids, which denied him qualified immunity for firing a Speed Heat tear gas canister from a 40mm launcher at close range at an unarmed protester, after Reinink said he believed he had loaded a Muzzle Blast crowd control round instead. The petition asked two questions: whether the officer's intended level of force matters in choosing between the deadly force standard and the general force standard, and whether an officer who used more force than he intended can still claim qualified immunity if his mistake was reasonable. The full facts and the Sixth Circuit's reasoning, including Judge Larson's partial dissent, are in the Other federal circuits section of this brief.",
+          "holding": "Certiorari denied on May 26, 2026. A cert denial is not a merits ruling and is not precedent. Justices Thomas and Alito would have granted the petition and summarily reversed, essentially for the reasons in Judge Larson's separate opinion below. The Court did not answer either question presented, so for now the operative decision is the Sixth Circuit's published opinion, under which the force is judged by what the munition could do at that range, not by what the officer meant to fire. That rule governs in the Sixth Circuit; the denial itself adds nothing to it and settles nothing for other circuits.",
+          "inPractice": "The Supreme Court has not said whether an officer's intent affects which force standard applies, or whether a reasonable mistake about the munition supports immunity. Until it does, the Sixth Circuit answer stands: an honest mistake about the round does not change how a court analyzes the shot.",
+          "trainIt": "Teach officers that the intent question is unresolved at the Supreme Court and that the Sixth Circuit's answer is the one in force there. Do not teach a cert denial as if it were a ruling. Pull each opinion from the court's own website before citing it in a lesson plan."
+        }
+      ]
+    },
+    {
+      "heading": "Other federal circuits",
+      "note": "Both cases here were decided earlier and are carried forward for training: Ruffin v. Davis in April 2026 and Hart v. City of Grand Rapids in May 2025. A related Fourth Circuit case, Byers v. Painter, filed in April, points the same way as Ruffin. According to a Police1 news report, a man in a mental health crisis holding a hatchet and backing away at least 25 feet from the officer was shot after a Taser failed, and the court affirmed the denial of immunity. Only the news report of that case was read, not the opinion. No new published circuit opinion on deadly or excessive force filed in roughly the ten days before October 24, 2026 could be verified.",
+      "cases": [
+        {
+          "id": "ruffin-v-davis",
+          "name": "Ruffin v. Davis",
+          "court": "Fourth Circuit (from the District of South Carolina)",
+          "courtKey": "ca4",
+          "docket": "25-1318",
+          "decided": "April 29, 2026",
+          "status": "published",
+          "topic": "Deadly force on a fleeing armed suspect who made no threatening movement, qualified immunity denied",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "Carried forward for training; filed April 29, 2026, not during the week this brief covers. Built from the opinion as retrieved and summarized, not a line-by-line read, so verify quotations against the slip opinion. The episode also corrected its own earlier description from May 9 that the Fourth Circuit held an officer cannot shoot because a suspect glanced backward. That overstated the holding: the opinion does not announce a standalone rule about head turns, and the earlier phrasing should be disregarded. The May 9 brief carries this case as first reported.",
+          "facts": "In April 2020, during a curfew, Columbia, South Carolina officer Kevin Davis saw a high school senior, identified in the opinion by the initials JR, walking alone. JR ran. Davis chased him for roughly 42 seconds, shouting commands that JR ignored. JR crouched briefly near a parking lot fence; the parties dispute whether that was deliberate or a trip. He stood and kept running. Davis fired 10 shots, and one struck JR in the forehead and killed him. A gun was recovered near JR's hand, and forensic evidence showed it had not been fired. Davis told investigators that JR turned his head toward him in what Davis believed was an attempt to turn his body and raise the firearm. The court noted that the only undisputed movement in the final moments was JR turning to face Davis, and, viewing that in the plaintiff's favor, said it was not a movement that could reasonably be perceived as dangerous. The district court denied qualified immunity and Davis appealed.",
+          "holding": "Affirmed, in an opinion by Chief Judge Diaz, joined by Judges Thacker and Berner. On the merits, the severity of the crime factor favored JR, the evading arrest factor favored Davis, and the immediate threat factor, the most important, favored JR. Being armed and ignoring commands was not enough without a furtive or threatening movement with the weapon. On clearly established law, the court held that by April 2020 it was clearly established that an officer could not use deadly force on a fleeing, armed suspect who made no furtive or threatening movement with the weapon. One procedural point matters. The Fourth Circuit could not review the district court's finding that facts were genuinely disputed; it could only ask whether the undisputed facts showed a violation of clearly established law. The opinion does not announce a standalone rule about head turns. It holds that on this record, the head turn was not a movement reasonably perceived as dangerous.",
+          "inPractice": "Armed alone is not enough under Ruffin. A fleeing person whose gun is never pointed, never raised, and never fired, and who makes no threatening movement with it, cannot be shot under Fourth Circuit law, and that was clearly established by April 2020. An officer's account of a head turn or a perceived intent can be set against what was undisputed and viewed in the plaintiff's favor. Ruffin binds only in the Fourth Circuit and is persuasive elsewhere; agencies in other circuits should check their own circuit law.",
+          "trainIt": "Teach the pause. Ruffin involved 10 shots at a person who was running, and the question after each shot is the same as it has always been: what is he doing right now? For command staff, review how reports and interviews capture the final second. Interview protocols should ask what the officer saw, not what the officer concluded the person intended. Review the policy on foot pursuits of armed suspects, including when to stop, contain, and call for resources, because a 42-second chase ended in a 10-shot shooting."
+        },
+        {
+          "id": "hart-v-city-of-grand-rapids",
+          "name": "Hart v. City of Grand Rapids",
+          "court": "Sixth Circuit",
+          "courtKey": "ca6",
+          "decided": "May 15, 2025",
+          "status": "published",
+          "topic": "Tear gas canister fired from a 40mm launcher at close range, mistaken round, deadly force classification, municipal liability",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "Carried forward for training; filed May 15, 2025, not during the week this brief covers. The reporter citation was garbled in the source transcript and is omitted; the Sixth Circuit docket number was not stated. Built from the opinion as retrieved and summarized, not a line-by-line read, so verify quotations against the slip opinion. The officer's name was rendered as both Reinink and Rehnink in the source; Reinink is used here. The Supreme Court denied review in Reinink v. Hart on May 26, 2026, covered in the Supreme Court section.",
+          "facts": "On May 30, 2020, during a demonstration in Grand Rapids that had turned violent, Sean Hart walked toward a police line with his left hand in his pocket. He was unarmed. Sergeant Bush pepper sprayed him from eight to ten feet away. Hart turned, retreated, and began turning back. Officer Reinink then left the line and fired a Speed Heat canister at him at close range, striking his left shoulder. Hart suffered an abrasion and bruising. The detail that makes this a training case: Muzzle Blast and Speed Heat fire from the same 40mm launcher, and the cartridges look similar. Muzzle Blast is a powder dispersion round meant for crowd control. Speed Heat is a tear gas canister designed to be launched into an area, not directly at a person. Reinink said he believed he had loaded Muzzle Blast. The opinion says he loaded without a witness, contrary to policy, and that his body camera was off. The department sustained an excessive force charge against him and suspended him two days without pay. Hart also sued the city, Sergeant Bush, and an officer who pointed a launcher at a car.",
+          "holding": "The Sixth Circuit affirmed qualified immunity for the officer who pointed a launcher at the car and for Sergeant Bush on the pepper spray, finding no clearly established law against either on those facts. It affirmed summary judgment for the city, because a spreadsheet of about 90 excessive force complaints with generic entries lacked the detail to show a pattern, and the failure to train theory was treated as abandoned. It reversed as to Reinink. Because his own training and his supervisors said Speed Heat could be deadly, and because intent is irrelevant under Graham, the court viewed the evidence in Hart's favor and treated a close range Speed Heat shot as deadly force. The court reasoned that it is the nature of the force, not the label on the weapon, that matters. Against an unarmed man who was not advancing and was eight to ten feet away, a jury could find that force excessive, and the court held that was clearly established in May 2020.",
+          "dissent": "Judge Larson concurred in part and dissented in part. She would have granted immunity to Reinink too. She argued that the plaintiff has the burden of identifying a case on point, that the case relied on involved a man who had surrendered with raised hands, and that Hart, by contrast, had been advancing and refusing to comply. She also noted that one case the plaintiff cited was unpublished and cannot clearly establish law.",
+          "notDecided": "The Supreme Court did not answer whether the officer's intended level of force matters in choosing between the deadly force standard and the general force standard, or whether an officer who used more force than he intended can still claim qualified immunity if his mistake was reasonable. It denied certiorari on May 26, 2026.",
+          "inPractice": "In the Sixth Circuit, the force is judged by what the munition could do at that range, not by what the officer meant to fire. An honest mistake about the munition does not change how a court analyzes the shot; the classification follows the weapon, the range, and the target area. The unwitnessed load, the body camera that was off, and the sustained internal affairs finding all appear in the factual record. The city won here because the complaint spreadsheet was too generic and the failure to train theory was abandoned, but a differently pleaded case may not come out the same way.",
+          "trainIt": "Load verification is a use of force skill. An officer issued a launcher that can fire both a crowd control round and a round that can injure badly at close range must be able to identify the round by sight and by procedure every time. Teach the witnessed load as a safety control, not paperwork; the policy that required a second person to witness the load was violated here, and that violation is in the record. For command staff: audit munition storage and issue, separate crowd control rounds from rounds not meant to be fired at people with distinct colors, markings, and containers, and require the witnessed load. Audit body camera activation for civil disturbance deployments. Review how internal affairs findings are drafted, because a sustained excessive force finding appears in the factual record, and review training records, because a failure to train theory that is properly pleaded will be tested against them."
+        }
+      ]
+    },
+    {
+      "heading": "California",
+      "note": "Nothing from California in this episode. The episode said it could not exhaustively screen the state high courts in Washington, Oregon, and California, so something may have been filed that was missed.",
+      "cases": []
+    }
+  ],
+  "applications": [
+    {
+      "title": "Armed is not enough, and waiting for the muzzle is not required",
+      "body": "Teach officers to articulate the weapon's position, the person's movement, the commands given, and the call history. Handy turned on a shotgun waved overhead by a man walking toward four officers after a report of shots; Ruffin turned on a gun that never moved."
+    },
+    {
+      "title": "Know which circuit binds you",
+      "body": "Handy is binding in the Ninth Circuit and persuasive elsewhere; Ruffin is binding in the Fourth Circuit and persuasive elsewhere. Agencies in other circuits should check their own circuit law before training to either."
+    },
+    {
+      "title": "Capture the last second",
+      "body": "Rewrite report templates and interview protocols to record what the officer saw and what changed between shots, not what the officer concluded the person intended. Ruffin shows how an account of a head turn can be set against the undisputed facts viewed in the plaintiff's favor."
+    },
+    {
+      "title": "Audit less lethal munitions and body cameras",
+      "body": "Audit munition identification, storage, and witnessed loading, and audit body camera use in civil disturbances. In Hart, an unwitnessed load and a camera that was off are both in the record, and the sustained internal finding followed the shot into the lawsuit."
+    },
+    {
+      "title": "Watch the Moore v. Romero docket",
+      "body": "The Lansing petition on shot-by-shot analysis after Barnes v. Felix was distributed for the October 16 conference, with no disposition found as of the October 19 order list. The result will show whether the Court intends to speak on multi-volley analysis after Barnes."
+    },
+    {
+      "title": "Pull the opinion before you cite it",
+      "body": "This episode worked from summaries. Pull each opinion from the court's own website and verify every quotation before it goes into a lesson plan, a report, or testimony."
+    }
+  ],
+  "episodeIds": [
+    "2026-10-24"
+  ],
+  "quiz": [
+    {
+      "q": "In Handy v. Jones, why did the Ninth Circuit find Handy posed an immediate threat even though he never pointed the shotgun at an officer?",
+      "options": [
+        "Because any person holding a long gun is an immediate threat",
+        "Because he was waving the shotgun overhead while advancing toward the officers after refusing orders to drop it, following a report of possible shots fired",
+        "Because the district court had already found a threat",
+        "Because the officers had a warrant for his arrest"
+      ],
+      "answer": 1,
+      "teach": "Officers do not have to wait for a suspect to aim a gun at them before they act. The combination of a visible weapon, defiance of commands, a violent call history, and forward movement is what made the threat immediate."
+    },
+    {
+      "q": "What was missing in Ruffin v. Davis that made the officer's deadly force unreasonable under the Fourth Circuit's analysis?",
+      "options": [
+        "A verbal warning before shooting",
+        "Probable cause that JR had committed a crime",
+        "A furtive or threatening movement with the weapon",
+        "Body camera footage of the chase"
+      ],
+      "answer": 2,
+      "teach": "Being armed and ignoring commands was not enough. The only undisputed movement was JR turning to face the officer, which the court said could not reasonably be perceived as dangerous on this record."
+    },
+    {
+      "q": "In Hart v. City of Grand Rapids, why did it not matter that Officer Reinink believed he had loaded a crowd control round rather than a tear gas canister?",
+      "options": [
+        "Because the court found he was not telling the truth",
+        "Because intent is irrelevant under Graham, and the force is judged by what the munition could do at that range",
+        "Because the department had already suspended him",
+        "Because the Supreme Court had decided the question"
+      ],
+      "answer": 1,
+      "teach": "The Sixth Circuit said it is the nature of the force, not the label on the weapon, that matters. The Supreme Court denied review on May 26, 2026, which left the Sixth Circuit's rule in place; a denial is not precedent."
+    }
+  ]
+}
