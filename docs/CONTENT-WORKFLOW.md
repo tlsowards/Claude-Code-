@@ -39,7 +39,7 @@ One command does the whole thing when the site episode already exists: `scripts/
 
 1. Upload the MP3 to the WordPress media library on sowardsconsulting.com (Media, Add New) and copy its file URL.
 2. Add an entry to `content/episodes.json` with `id`, `title`, `date`, `description`, `audioUrl` (the media library URL), `bytes` (file size in bytes), `durationSeconds`, and `briefId`.
-3. Run `npm run build`. The feed at `public/podcast/feed.xml` is regenerated.
+3. Run `npm run build`. The feed at `public/podcast/feed.xml` is regenerated. The public feed is a funnel for podcast directories: an episode appears in it 28 days after its date (`FEED_DELAY_DAYS` overrides this; `0` disables the delay), and every item carries a line pointing listeners to the app for current episodes. Subscribers always hear the newest episode in the app on the day it is published. The nightly deploy rebuilds the feed, so held-back episodes appear on schedule without a commit.
 
 ## Update the catalog, resources, or references
 
