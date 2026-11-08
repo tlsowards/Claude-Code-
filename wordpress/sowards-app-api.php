@@ -38,6 +38,18 @@ if ( ! defined( 'SOWARDS_APP_TOKEN_DAYS' ) ) {
 }
 // ------------------------------------------------------------------------
 
+/**
+ * Ask for HTTP Basic credentials on REST 401s. WordPress core answers unauthenticated REST calls
+ * with a bare 401, so clients and proxies that wait for a WWW-Authenticate challenge before sending
+ * an Application Password never send it. Adding the challenge lets them log in normally.
+ */
+add_filter( 'rest_post_dispatch', function ( $response ) {
+	if ( $response instanceof WP_REST_Response && 401 === $response->get_status() && empty( $_SERVER['PHP_AUTH_USER'] ) ) {
+		$response->header( 'WWW-Authenticate', 'Basic realm="WordPress REST API"' );
+	}
+	return $response;
+} );
+
 add_action( 'rest_api_init', function () {
 	register_rest_route( 'sowards/v1', '/app-login', array(
 		'methods'             => 'POST',
