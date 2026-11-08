@@ -24,7 +24,7 @@ export default function Briefs() {
       <p className="lead">
         One brief a week. Federal first, then California, then application. Each case ends with what it means in practice and how to train it.
       </p>
-      <img className="page-banner" src={`${import.meta.env.BASE_URL}images/banner-use-of-force.jpg`} alt="Defensible use of force: law, action, justification" width="1280" height="720" />
+      <img className="page-banner" src={`${import.meta.env.BASE_URL}images/art/briefs-hero.jpg`} alt="Scales of justice, gavel and casebook in front of a shield" width="1536" height="1024" />
       <label className="sr-only" htmlFor="brief-search">Search briefs</label>
       <input id="brief-search" className="search" type="search" placeholder="Search cases, topics, or training points" value={q} onChange={(e) => setQ(e.target.value)} />
       {results.length === 0 && <p className="meta">No briefs match that search.</p>}

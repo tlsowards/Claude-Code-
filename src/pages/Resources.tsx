@@ -9,6 +9,7 @@ export default function Resources() {
       <div className="eyebrow">Resource center</div>
       <h1>Resources for trainers</h1>
       <p className="lead">{resourceIntro}</p>
+      <img className="page-banner" src={`${import.meta.env.BASE_URL}images/art/resources-hero.jpg`} alt="Law books, a compass, a magnifying glass over a document and an outline of California" width="1536" height="1024" />
       <div className="photo-row">
         <img className="photo" src={`${import.meta.env.BASE_URL}images/training/training-gear.jpg`} alt="Training suit and protective gear hanging in the mat room" width="1050" height="1400" loading="lazy" />
         <img className="photo" src={`${import.meta.env.BASE_URL}images/training/mat-room-wide.jpg`} alt="Officers training on the mats in a wide shot of the room" width="1050" height="1400" loading="lazy" />

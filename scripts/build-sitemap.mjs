@@ -17,8 +17,8 @@ function loadEnv() {
   return env;
 }
 const env = loadEnv();
-const publicUrl = (env.VITE_PUBLIC_URL ?? 'https://app.sowardsconsulting.com').replace(/\/$/, '');
-const base = (env.BASE_PATH ?? '/').replace(/\/$/, '');
+const publicUrl = (env.VITE_PUBLIC_URL?.trim() || 'https://app.sowardsconsulting.com').replace(/\/$/, '');
+const base = (env.BASE_PATH?.trim() || '/').replace(/\/$/, '');
 const origin = `${publicUrl}${base}`;
 
 const staticRoutes = ['/', '/briefs', '/podcast', '/training', '/resources', '/downing-the-duck', '/reference/pc835a', '/subscribe', '/about'];

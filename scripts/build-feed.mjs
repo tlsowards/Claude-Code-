@@ -22,8 +22,8 @@ function loadEnv() {
 }
 
 const env = loadEnv();
-const publicUrl = (env.VITE_PUBLIC_URL ?? 'https://app.sowardsconsulting.com').replace(/\/$/, '');
-const basePath = (env.BASE_PATH ?? '/').replace(/\/$/, '');
+const publicUrl = (env.VITE_PUBLIC_URL?.trim() || 'https://app.sowardsconsulting.com').replace(/\/$/, '');
+const basePath = (env.BASE_PATH?.trim() || '/').replace(/\/$/, '');
 const audioBase = (env.VITE_AUDIO_BASE_URL ?? '').replace(/\/$/, '');
 
 const episodes = JSON.parse(readFileSync(resolve(root, 'content/episodes.json'), 'utf8'))

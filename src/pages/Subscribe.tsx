@@ -24,6 +24,7 @@ export default function Subscribe() {
     <>
       <Seo title="Subscribe" description="Get the weekly use of force brief and new podcast episodes by email, and install the app on your phone." />
       <div className="eyebrow">Subscribe</div>
+      <img className="page-banner" src={`${import.meta.env.BASE_URL}images/art/subscribe-hero.jpg`} alt="Officer listening to the weekly update on earbuds before shift" width="1536" height="1024" />
       {subscription.enforced ? (
         <>
           <h1>Free for {subscription.trialDays} days, then {subscription.offer}.</h1>
