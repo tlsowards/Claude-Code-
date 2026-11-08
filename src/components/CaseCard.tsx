@@ -2,12 +2,13 @@ import { Link } from 'react-router-dom';
 import type { BriefCase } from '../data/types';
 import { courtSites, courtListenerSearch } from '../data/courts';
 
-const statusLabel: Record<BriefCase['status'], string> = {
+export const statusLabel: Record<BriefCase['status'], string> = {
   published: 'Published',
   unpublished: 'Unpublished, not precedent',
   order: 'Order',
   'cert-denied': 'Review denied',
   'summary-order': 'Summary order',
+  unknown: 'Publication status not confirmed',
 };
 
 const settingLabel: Record<string, string> = {

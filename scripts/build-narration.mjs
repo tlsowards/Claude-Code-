@@ -40,6 +40,7 @@ const statusLine = {
   order: 'This is an order, not a full opinion.',
   'cert-denied': 'The Supreme Court declined to review this case, which is not a ruling on the merits.',
   'summary-order': 'This is a summary order, not a precedential opinion.',
+  unknown: 'Whether this decision is published was not confirmed when this brief was prepared; check before citing it.',
 };
 
 function narrate(brief) {
@@ -71,7 +72,7 @@ function narrate(brief) {
   }
   p.push(`Now the application, the part to take into a briefing room or a training block this week.`);
   brief.applications.forEach((a, i) => p.push(`${['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth'][i] ?? `Number ${i + 1}`}, ${a.title.replace(/\.$/, '')}. ${a.body}`));
-  p.push(`That is the update for this week. Everything here comes from the courts' own opinions. Read the full opinion before relying on any case, confirm unpublished decisions with counsel before citing them, and check every point against your agency's policy. The written brief, a printable roll call version, and a short knowledge check are in the Sowards Consulting app. This has been the Use of Force Case Law Update from Sowards Consulting, at sowardsconsulting dot com. Train hard, document everything, and stay safe out there.`);
+  p.push(`That is the update for this week. Everything here comes from the courts' own opinions unless the brief says otherwise. Read the full opinion before relying on any case, confirm unpublished decisions with counsel before citing them, and check every point against your agency's policy. The written brief, a printable roll call version, and a short knowledge check are in the Sowards Consulting app. This has been the Use of Force Case Law Update from Sowards Consulting, at sowardsconsulting dot com. Train hard, document everything, and stay safe out there.`);
   return p.join('\n\n');
 }
 

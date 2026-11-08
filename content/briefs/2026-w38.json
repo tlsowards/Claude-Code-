@@ -1,0 +1,139 @@
+{
+  "id": "2026-w38",
+  "title": "Immunity is not a finding of reasonable force: a fire ant mound, baton strikes in the dark, and Kentucky good faith",
+  "date": "2026-09-19",
+  "coverageStart": "2026-09-14",
+  "coverageEnd": "2026-09-19",
+  "summary": "Three cases this week share something uncomfortable: in all three the officer won, and in none of them did a court hold that the force was reasonable. The lead case is Rogers v. City of Santa Fe, an unpublished Fifth Circuit decision filed August 6 that became public on September 9 when the plaintiff's counsel released body camera footage. The panel granted immunity to an officer who held a handcuffed woman face down on a fire ant mound because no prior case was close enough on the facts, and a petition for rehearing en banc is pending. Two decisions from earlier this year make the same point: Smith v. Olvera, the divided Ninth Circuit baton case covered in full on August 8, and Mitchell v. Conrad, where the Sixth Circuit applied Kentucky's subjective good faith immunity to a vehicle shooting. The Supreme Court remains in recess until October.",
+  "coverage": [
+    "The episode covered one Fifth Circuit decision that became public in the days before September 19 and two decisions from earlier in 2026 that the show had not previously covered. It did not describe a sweep of the other circuits or of the California courts for the week, so nothing in this brief should be read as a finding that those courts decided nothing.",
+    "Rogers v. City of Santa Fe is unpublished. A petition for rehearing en banc has been filed, with a stated intent to seek Supreme Court review if it fails, and the episode said to treat the decision as one that may not be final.",
+    "The Supreme Court was in its summer recess; the new term opens the first Monday in October, and the episode planned to review the use of force docket when the term convenes.",
+    "This brief was rebuilt from the episode originally published on September 19, 2026; it was not re-researched, so verify every citation against the opinion before relying on it."
+  ],
+  "sections": [
+    {
+      "heading": "Ninth Circuit",
+      "note": "Nothing new from the Ninth Circuit this week. The episode returned to Smith v. Olvera, the divided July 2026 decision covered in full in the August 8 brief, which the court filed as an unpublished memorandum, because it is the Ninth Circuit's version of the same move the Fifth Circuit makes in Rogers below: immunity granted because no prior case was close enough, with no holding that the force was reasonable. In Olvera a two to one panel granted immunity to an Elko, Nevada officer who struck a prone, just-crashed subject in the head with a baton in the dark; the disputed fact was where the subject's hands were, and Judge Thomas dissented that whether the man was taking furtive or threatening actions or was simply lying there incapacitated was a jury question. The training points from this episode stand on their own. Baton strikes to the head are deadly force in the policy manual of essentially every agency, and the majority did not say otherwise; policy is stricter than the constitutional floor and is what an officer is judged against internally, criminally, and by the community. Narrate hand position in real time, out loud, on the recording. Use the dissent as the training document: the majority says what the officer can survive, the dissent says what a serious judge thinks the rule ought to be, and Ninth Circuit dissents have a way of becoming the clearly established law that decides the next case.",
+      "cases": []
+    },
+    {
+      "heading": "Supreme Court",
+      "note": "Nothing this week. The Supreme Court was still in its summer recess. The new term opens the first Monday in October, and the episode planned to look at the use of force docket for the new term when it convenes.",
+      "cases": []
+    },
+    {
+      "heading": "Other federal circuits",
+      "note": "Two decisions. The lead case of the episode is the Fifth Circuit's unpublished Rogers decision, which became public in the days before September 19 and is headed for an en banc petition. The Sixth Circuit's Mitchell decision from May adds the state immunity track: an officer can lose one immunity system and win the other, because the tests are not the same.",
+      "cases": [
+        {
+          "id": "rogers-v-city-of-santa-fe",
+          "name": "Rogers v. City of Santa Fe",
+          "court": "Fifth Circuit",
+          "courtKey": "ca5",
+          "decided": "August 6, 2026 (opinion filed); publicly surfaced September 9, 2026",
+          "status": "unpublished",
+          "topic": "Prone leg leverage restraint on a handcuffed subject held on a fire ant mound, qualified immunity, failure to intervene",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "Unpublished. A petition for rehearing en banc has been filed and counsel has said he will petition the Supreme Court if it fails; the episode said to treat this as a decision that may not be final and not to build a lesson plan around it as settled circuit law. The facts are as the Fifth Circuit's opinion and the released recording were described in the episode. No docket number was given. The names Taylor Rogers and Christian Carranza come from a machine transcript; verify the spelling against the opinion.",
+          "facts": "In 2021, Taylor Rogers drove erratically through a school parking lot in Santa Fe, Texas, and did not stop when officers told her to. Santa Fe Independent School District police officers arrested her. According to the Fifth Circuit's opinion, after she was handcuffed she continued to thrash and resist in what the court described as a state of hysteria. Officer Christian Carranza took her to the ground and held her face down on a fire ant mound while twisting her legs up and behind her body, which is functionally a hog tie. A second officer was involved, and other officers were present and watched. On the recording she is begging him to stop and saying the ants are on her face. She received hundreds of bites across her face, her neck, and her upper chest. She is 5 feet 7 inches tall and weighs about 130 pounds. She later pleaded guilty to felony evading arrest, then sued under Section 1983 for excessive force, failure to intervene, and related claims. In the summer of 2025 the district judge denied qualified immunity, finding disputed facts that a jury needed to sort out.",
+          "holding": "A three-judge panel reversed and granted qualified immunity. The panel held that Rogers could not point to analogous case law establishing that using a leg leverage restraint technique on a resisting suspect who happened to be on top of a fire ant mound was unconstitutional excessive force. No prior case, no clearly established right, immunity granted, lawsuit over. The failure to intervene claim against the officers who watched went away along with everything else. The panel did not say the force was reasonable. It said the plaintiff could not find a case close enough on the facts, and those are different sentences with different consequences. The opinion is unpublished, which is part of why it sat quietly for a month until the plaintiff's counsel held a press conference on September 9 and released the body camera footage. Her attorney has asked the full Fifth Circuit to rehear the case en banc and has said he will petition the Supreme Court if that fails.",
+          "notDecided": "Whether holding a handcuffed, resisting person face down on a fire ant mound in a leg leverage restraint was objectively reasonable. The panel decided only that no prior case clearly established the right. Whether the en banc court will take the case was unknown as of the episode.",
+          "inPractice": "A use of force review board that reads this outcome as validation of the technique has misread a legal document. Clearly established law is built out of incidents like this: the first agency gets immunity, the second one pays, because the next time this happens there will be a case close enough on the facts, and this one will be it. The environment is part of the force. Every prone control technique an agency teaches was validated on a mat, in a gym, in good light. The street adds gravel, hot asphalt in August, broken glass, standing water, or a fire ant mound, and the surface can convert a technique that is within policy into something a jury will call gratuitous. Immunity from a federal damages suit is not immunity from a policy violation, a state tort claim, or a chief who has to stand in front of a school board.",
+          "trainIt": "Teach the scan. When you put a person prone and intend to hold them there, look at what you are holding them on and move them if you can; moving a controlled subject three feet takes about two seconds and is almost always possible. Train it as part of the technique, not as a separate judgment call, because under adrenaline officers will not make a separate judgment call. Teach duration and communication: a restrained person reporting a novel, specific problem is information. Ants on my face is a report about the environment, not a complaint about the control, and it costs nothing to look. Train bystander officers that the presence of witnesses in uniform is the presence of witnesses in court; they are the corroboration or the contradiction, and the standard is not whether they would have done it but whether they would explain it under oath. Check prone restraint and hobble policy: leg leverage restraint on a prone handcuffed subject sits close to prone restraint asphyxia doctrine, and many agencies have limits stricter than the constitutional floor. If policy already prohibits it, say so in roll call, because officers will hear about the immunity ruling and draw the wrong conclusion."
+        },
+        {
+          "id": "mitchell-v-conrad",
+          "name": "Mitchell v. Conrad",
+          "court": "Sixth Circuit",
+          "courtKey": "ca6",
+          "decided": "May 14, 2026",
+          "status": "unknown",
+          "topic": "Deadly force at a moving vehicle, Kentucky qualified official immunity, subjective good faith",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "The name Dewantez Mitchell is spelled as the machine transcript rendered it and is uncertain. The episode gave no docket number, did not say whether the opinion was published, so the status shown here is not confirmed by the source, and did not state the date of the incident. The episode covered only the Kentucky immunity holding.",
+          "facts": "In Louisville, Kentucky, officers were attempting to arrest Dewantez Mitchell as a possible suspect in a string of six armed robberies. Officers surrounded his vehicle and repeatedly ordered him to put the car in park and to show his hands. The vehicle moved forward. It drove into one officer and toward another. An officer fired and killed Mitchell. The plaintiffs sued, and the part of the case the episode focused on was the claim under Kentucky law. To defeat the officer's state immunity defense, the plaintiffs pointed to claimed inconsistencies in the officer's testimony and to affidavits describing the officer's general racial animus. Video of the encounter was in the record and showed the vehicle moving with officers in its path.",
+          "holding": "The Sixth Circuit held that the officer was entitled to qualified official immunity under Kentucky law. Kentucky protects officers performing discretionary acts unless the plaintiff can show bad faith. The court held that the use of deadly force here was a discretionary act and that the plaintiffs had not produced evidence sufficient to rebut the presumption that the officer acted in good faith. Claimed inconsistencies in the officer's testimony did not do it. Affidavits about the officer's general racial animus did not do it, because general animus is not evidence about his subjective intent in this particular encounter. And the video showed that the officer and another officer were in imminent danger when the vehicle moved. The officer won on a presumption of good faith that the plaintiffs could not rebut, not on a holding that this is how the job should be done.",
+          "notDecided": "The episode described only the Kentucky immunity holding and did not describe how the court resolved any federal excessive force claim.",
+          "inPractice": "There are two immunity systems running in parallel, the federal one and whatever the state provides, and they are not the same test. Kentucky's turns on subjective good faith; federal qualified immunity is objective and does not care about the officer's state of mind. An officer can lose one and win the other, and the discovery in a subjective good faith case looks nothing like a federal excessive force case. What carried the day was the video, not the officer's account, not his reputation, and not the plaintiff's characterization of him.",
+          "trainIt": "Camera position is the difference between summary judgment and a trial; the recording showed the vehicle moving and officers in its path. Be honest with officers about why the animus affidavits failed: they were general, and said something about the man rather than about the moment. An agency with an officer who has a documented pattern should not take comfort in this holding, because the next plaintiffs will build the record moment specific, and the early intervention system is the document they will build it out of. Vehicle as weapon encounters remain the fact pattern where officers get hurt while the tactics are still being argued about. Position matters more than doctrine: if officers approaching a vehicle occupied by a robbery suspect are standing in the path of the front wheels, the legal analysis afterward is a distraction from the training failure beforehand."
+        }
+      ]
+    },
+    {
+      "heading": "California",
+      "note": "Nothing from this court in this episode.",
+      "cases": []
+    }
+  ],
+  "applications": [
+    {
+      "title": "A qualified immunity win is not a finding that the force was reasonable",
+      "body": "Tell command staff and the review board in plain words. Since Pearson, courts may skip the constitutional question and decide only whether a prior case was close enough, and most do. All three cases this week were won that way. Novelty is a one-time asset that burns off: once an opinion is published and cited, the conduct it describes becomes clearly established for everyone who comes after, so training to the immunity line is training to a line that moves against you every year."
+    },
+    {
+      "title": "Add a surface scan to every prone control technique",
+      "body": "What is under them, and can I move them? Two seconds, trained as part of the technique, not as a separate decision. And treat a restrained person's specific environmental complaint, ants on my face rather than you are hurting me, as information to be checked, not resistance to be ignored."
+    },
+    {
+      "title": "Reconcile prone restraint and hobble policy against Rogers",
+      "body": "Leg leverage restraint on a prone handcuffed subject sits close to prone restraint asphyxia doctrine, and many policies are stricter than the constitutional floor. If policy already prohibits it, say so in roll call, because officers will hear about the immunity ruling and draw the wrong conclusion."
+    },
+    {
+      "title": "Baton strikes to the head are deadly force under policy",
+      "body": "Reaffirm it in writing and say that the Ninth Circuit's holding in Smith v. Olvera changed nothing about it. The majority held only that no prior case put the officer on notice; the dissent is the better statement of the standard to train to."
+    },
+    {
+      "title": "Narrate hand position in real time during prone control",
+      "body": "Show me your hands, your right hand is under you, stop reaching. Hand position is the disputed fact in almost every prone subject case, and a two to one appellate split turned on a few inches of it in the dark. Contemporaneous narration on the recording is the cheapest evidentiary improvement available."
+    },
+    {
+      "title": "Know whether your state's immunity runs on subjective good faith",
+      "body": "Kentucky's test asks about the officer's state of mind; federal qualified immunity does not. In Mitchell, general animus affidavits failed because they were about the man rather than the moment, but an officer with a documented pattern will face a moment-specific record built from the early intervention file. Discovery and cross-examination in such a case look nothing like a federal excessive force case."
+    }
+  ],
+  "episodeIds": [
+    "2026-09-19"
+  ],
+  "quiz": [
+    {
+      "q": "Why did the Fifth Circuit panel grant qualified immunity in Rogers v. City of Santa Fe?",
+      "options": [
+        "It held that the leg leverage restraint was objectively reasonable force",
+        "Rogers could not point to analogous case law clearly establishing that the restraint on a fire ant mound was unconstitutional",
+        "Rogers had pleaded guilty to felony evading arrest, which barred her civil claims",
+        "The officers were not acting under color of state law"
+      ],
+      "answer": 1,
+      "teach": "The panel did not say the force was reasonable; it said no prior case was close enough on the facts. Those are different sentences with different consequences, and the next agency will face a case that is close enough, because this one will be it."
+    },
+    {
+      "q": "In Smith v. Olvera, what was the central disputed fact that divided the Ninth Circuit panel?",
+      "options": [
+        "Whether Smith had actually driven the truck during the pursuit",
+        "Where Smith's hands were when the baton strikes landed",
+        "How many baton strikes the officer delivered",
+        "Whether the encounter took place in daylight"
+      ],
+      "answer": 1,
+      "teach": "Smith said his hands were stretched out at his sides; Olvera said one hand was near his waist. That is the disputed fact in almost every prone subject force case, which is why officers should narrate hand position out loud on the recording."
+    },
+    {
+      "q": "In Mitchell v. Conrad, why did affidavits about the officer's general racial animus fail to defeat Kentucky qualified official immunity?",
+      "options": [
+        "Kentucky immunity is an objective test that ignores state of mind",
+        "General animus is not evidence of the officer's subjective intent in this particular encounter",
+        "The affidavits were filed after the deadline",
+        "The court excluded the video and the affidavits together"
+      ],
+      "answer": 1,
+      "teach": "Kentucky's test turns on subjective good faith, and the plaintiffs had to rebut a presumption of it with evidence about the moment, not the man. The video showing officers in the vehicle's path carried the day."
+    }
+  ]
+}

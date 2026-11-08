@@ -1,6 +1,6 @@
 {
   "site": "https://sowardsconsulting.com",
-  "fetchedAt": "2026-11-06T06:37:47.661Z",
+  "fetchedAt": "2026-11-08T07:06:32.519Z",
   "courses": [
     {
       "id": 2594,
@@ -17,14 +17,6 @@
         "Module 4 — Application and Documentation (~75 min, bifurcated by track)"
       ],
       "plans": [
-        {
-          "name": "Course Preview (Free)",
-          "price": "FREE"
-        },
-        {
-          "name": "Solo – Single Officer Seat",
-          "price": "$80"
-        },
         {
           "name": "Squad – 10 Officer Seats",
           "price": "$750"
@@ -56,14 +48,6 @@
       "modules": [],
       "plans": [
         {
-          "name": "Course Preview (Free)",
-          "price": "FREE"
-        },
-        {
-          "name": "Solo – Single Officer Seat",
-          "price": "$80"
-        },
-        {
           "name": "Squad – 10 Officer Seats",
           "price": "$750"
         },
@@ -94,14 +78,6 @@
       "modules": [],
       "plans": [
         {
-          "name": "Course Preview (Free)",
-          "price": "FREE"
-        },
-        {
-          "name": "Solo – Single Officer Seat",
-          "price": "$80"
-        },
-        {
           "name": "Squad – 10 Officer Seats",
           "price": "$750"
         },
@@ -130,32 +106,7 @@
       "audience": "",
       "totalTime": "",
       "modules": [],
-      "plans": [
-        {
-          "name": "Solo – Single Officer Seat",
-          "price": "$80"
-        },
-        {
-          "name": "Squad – 10 Officer Seats",
-          "price": "$750"
-        },
-        {
-          "name": "Shift – 25 Officer Seats",
-          "price": "$1,800"
-        },
-        {
-          "name": "Department – 50 Officer Seats",
-          "price": "$3,500"
-        },
-        {
-          "name": "Agency – 100 Officer Seats",
-          "price": "$6,500"
-        },
-        {
-          "name": "Course Preview (Free)",
-          "price": "FREE"
-        }
-      ],
+      "plans": [],
       "image": "https://sowardsconsulting.com/wp-content/uploads/2026/09/up2_manip-768x432.jpg",
       "updated": "2026-09-12 02:00:17"
     },
@@ -169,14 +120,6 @@
       "totalTime": "",
       "modules": [],
       "plans": [
-        {
-          "name": "Course Preview (Free)",
-          "price": "FREE"
-        },
-        {
-          "name": "Solo – Single Officer Seat",
-          "price": "$80"
-        },
         {
           "name": "Squad – 10 Officer Seats",
           "price": "$750"
@@ -208,14 +151,6 @@
       "modules": [],
       "plans": [
         {
-          "name": "Course Preview (Free)",
-          "price": "FREE"
-        },
-        {
-          "name": "Solo – Single Officer Seat",
-          "price": "$80"
-        },
-        {
           "name": "Squad – 10 Officer Seats",
           "price": "$750"
         },
@@ -246,14 +181,6 @@
       "modules": [],
       "plans": [
         {
-          "name": "Course Preview (Free)",
-          "price": "FREE"
-        },
-        {
-          "name": "Solo – Single Officer Seat",
-          "price": "$80"
-        },
-        {
           "name": "Squad – 10 Officer Seats",
           "price": "$750"
         },
@@ -283,14 +210,6 @@
       "totalTime": "",
       "modules": [],
       "plans": [
-        {
-          "name": "Course Preview (Free)",
-          "price": "FREE"
-        },
-        {
-          "name": "Solo – Single Officer Seat",
-          "price": "$80"
-        },
         {
           "name": "Squad – 10 Officer Seats",
           "price": "$750"
@@ -396,32 +315,7 @@
       "audience": "",
       "totalTime": "",
       "modules": [],
-      "plans": [
-        {
-          "name": "Course Preview (Free)",
-          "price": "FREE"
-        },
-        {
-          "name": "Solo – Single Officer Seat",
-          "price": "$80"
-        },
-        {
-          "name": "Squad – 10 Officer Seats",
-          "price": "$750"
-        },
-        {
-          "name": "Shift – 25 Officer Seats",
-          "price": "$1,800"
-        },
-        {
-          "name": "Department – 50 Officer Seats",
-          "price": "$3,500"
-        },
-        {
-          "name": "Agency – 100 Officer Seats",
-          "price": "$6,500"
-        }
-      ],
+      "plans": [],
       "image": "https://sowardsconsulting.com/wp-content/uploads/2026/09/The-Last-Line-Reviewing-Use-of-Force-for-Probation-Supervisors-768x432.png",
       "updated": "2026-11-04 06:44:46"
     },

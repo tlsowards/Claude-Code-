@@ -1,4 +1,4 @@
-export type CaseStatus = 'published' | 'unpublished' | 'order' | 'cert-denied' | 'summary-order';
+export type CaseStatus = 'published' | 'unpublished' | 'order' | 'cert-denied' | 'summary-order' | 'unknown';
 
 export interface BriefCase {
   id: string;
@@ -109,14 +109,6 @@ export interface LiveCourse {
   stcNumber?: string;
   track?: string;
   hours?: string;
-}
-
-export interface PricingTier {
-  name: string;
-  seats: string;
-  price: string;
-  perOfficer: string;
-  note?: string;
 }
 
 export interface ResourceLink {

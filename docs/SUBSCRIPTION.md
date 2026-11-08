@@ -59,6 +59,16 @@ In the repository, Settings, Secrets and variables, Actions, Variables:
 
 Re-run the deploy workflow or wait for the nightly build. From then on, readers see the preview and the offer, and subscribers sign in once on each device.
 
+## 5. The Briefing Room on the website
+
+The weekly case law page on the site (`/use-of-force-case-law/`, now titled "Sowards' Briefing Room", menu item of the same name) and every weekly episode (the `podcast` post type) are members-only. The gate is in the same snippet, under BRIEFING ROOM GATE:
+
+- A signed-in member of the Briefing Room membership, or an administrator, sees the content.
+- Anyone else, signed in or not, is redirected to the app's subscribe page (`SOWARDS_APP_SUBSCRIBE_URL`, with `from=site` and the slug of what they tried to open), which explains the free trial and sends them to the site checkout. After checkout they come back as members.
+- Feeds, the admin screens, AJAX, and REST are left alone, so the podcast RSS feed and the app's own API are unaffected.
+
+Until the gate is live, the page and the episodes are protected by a shared post password. Once the gated snippet is active and verified (a signed-out visit to an episode URL answers 302 to the app), the post passwords can be cleared so members are not asked for a password after they sign in.
+
 ## Notes
 
 - The app keeps the sign-in token in the phone's browser storage for up to 90 days. The app renders only its own content, never user-submitted HTML, which is what keeps that storage safe. Keep it that way if new features are added.

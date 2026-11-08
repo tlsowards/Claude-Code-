@@ -379,3 +379,52 @@ function sowards_app_payload( WP_User $user ) {
 		'courses'      => $courses,
 	);
 }
+
+// ---------------------------------------------------------------- BRIEFING ROOM GATE
+/**
+ * Sowards' Briefing Room on the website. The weekly case law page and every weekly episode
+ * (the "podcast" post type) are members-only. Members of the Briefing Room membership and site
+ * administrators see the content. Everyone else is sent to the app's subscribe page, which
+ * explains the free trial and brings them back to the site checkout.
+ */
+if ( ! defined( 'SOWARDS_BRIEFING_ROOM_PAGE_ID' ) ) {
+	define( 'SOWARDS_BRIEFING_ROOM_PAGE_ID', 6568 ); // the "Sowards' Briefing Room" page (/use-of-force-case-law/)
+}
+if ( ! defined( 'SOWARDS_APP_SUBSCRIBE_URL' ) ) {
+	define( 'SOWARDS_APP_SUBSCRIBE_URL', 'https://tlsowards.github.io/Claude-Code-/subscribe' );
+}
+
+/** True when the given user may read Briefing Room content. */
+function sowards_briefing_room_allows( $user_id ) {
+	if ( ! $user_id ) {
+		return false;
+	}
+	if ( user_can( $user_id, 'manage_options' ) ) {
+		return true;
+	}
+	return function_exists( 'llms_is_user_enrolled' ) && llms_is_user_enrolled( $user_id, (int) SOWARDS_APP_MEMBERSHIP_ID );
+}
+
+add_action( 'template_redirect', function () {
+	if ( is_admin() || is_feed() || wp_doing_ajax() || ( defined( 'REST_REQUEST' ) && REST_REQUEST ) ) {
+		return;
+	}
+	if ( ! is_singular() ) {
+		return;
+	}
+	$post = get_queried_object();
+	if ( ! $post instanceof WP_Post ) {
+		return;
+	}
+	$gated = ( (int) $post->ID === (int) SOWARDS_BRIEFING_ROOM_PAGE_ID ) || ( 'podcast' === $post->post_type );
+	if ( ! $gated || sowards_briefing_room_allows( get_current_user_id() ) ) {
+		return;
+	}
+	$to = add_query_arg(
+		array( 'from' => 'site', 'content' => rawurlencode( $post->post_name ) ),
+		SOWARDS_APP_SUBSCRIBE_URL
+	);
+	nocache_headers();
+	wp_redirect( $to, 302 ); // phpcs:ignore WordPress.Security.SafeRedirect -- the app lives on another host by design.
+	exit;
+} );
