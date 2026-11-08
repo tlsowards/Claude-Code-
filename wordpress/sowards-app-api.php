@@ -62,28 +62,59 @@ add_filter( 'rest_post_dispatch', function ( $response ) {
 } );
 
 /**
- * Admin API access with a header, for automation that cannot use HTTP Basic auth.
- * The X-Sowards-App-Key header carries one of an administrator's WordPress Application Passwords.
- * It is checked with WordPress's own application-password verification, so nothing secret is stored
- * here and the key can be revoked at any time from Users, Profile, Application Passwords.
+ * Admin API access with a header, for automation that cannot complete HTTP Basic authentication
+ * (the Claude cloud proxy injects fixed headers but cannot answer a Basic challenge). The
+ * X-Sowards-App-Key header carries one of an administrator's WordPress Application Passwords and is
+ * checked with WordPress's own application-password verification, so nothing secret is stored here
+ * and the key is revoked from Users, Profile, Application Passwords. Scope: REST requests only.
+ * Failed keys count against the same per-IP limit as sign-in attempts.
  */
-add_filter( 'determine_current_user', function ( $user_id ) {
-	if ( $user_id ) {
-		return $user_id;
+function sowards_app_key_user() {
+	static $resolved = null;
+	if ( null !== $resolved ) {
+		return $resolved ?: null;
 	}
+	$resolved = false;
 	$key = isset( $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) ? trim( (string) $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) : '';
 	if ( '' === $key || ! function_exists( 'wp_authenticate_application_password' ) ) {
-		return $user_id;
+		return null;
+	}
+	$uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '';
+	if ( 0 !== strpos( $uri, '/' . rest_get_url_prefix() . '/' ) && ! isset( $_GET['rest_route'] ) ) {
+		return null; // Not a REST request.
+	}
+	if ( sowards_app_rate_limited() ) {
+		return null;
 	}
 	$admins = get_users( array( 'role' => 'administrator', 'number' => 10, 'fields' => array( 'ID', 'user_login' ) ) );
 	foreach ( $admins as $admin ) {
 		$check = wp_authenticate_application_password( null, $admin->user_login, $key );
 		if ( $check instanceof WP_User ) {
-			return (int) $check->ID;
+			$resolved = $check;
+			return $check;
 		}
 	}
-	return $user_id;
+	return null;
+}
+add_filter( 'determine_current_user', function ( $user_id ) {
+	if ( $user_id ) {
+		return $user_id;
+	}
+	$user = sowards_app_key_user();
+	return $user ? (int) $user->ID : $user_id;
 }, 20 );
+// If another plugin resolved the current user before this snippet loaded, apply the key when the REST server starts.
+add_filter( 'rest_authentication_errors', function ( $result ) {
+	if ( null !== $result || get_current_user_id() ) {
+		return $result;
+	}
+	$user = sowards_app_key_user();
+	if ( $user ) {
+		wp_set_current_user( $user->ID );
+		return true;
+	}
+	return $result;
+}, 5 );
 
 add_action( 'rest_api_init', function () {
 	register_rest_route( 'sowards/v1', '/app-login', array(
