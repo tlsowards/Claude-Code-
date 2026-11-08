@@ -63,6 +63,14 @@ export default function Home() {
         </Link>
       </div>
 
+      <div className="section-title"><h2>From the mat</h2><Link to="/training">See the courses</Link></div>
+      <div className="photo-strip" aria-label="Training photos">
+        <img className="photo" src={`${import.meta.env.BASE_URL}images/training/ground-control-1.jpg`} alt="Instructor demonstrating a ground control position on the mat" width="1050" height="1400" loading="lazy" />
+        <img className="photo" src={`${import.meta.env.BASE_URL}images/training/handcuffing.jpg`} alt="Handcuffing technique practice during a defensive tactics course" width="1050" height="1400" loading="lazy" />
+        <img className="photo" src={`${import.meta.env.BASE_URL}images/training/standing-control-2.jpg`} alt="Standing control hold practice between two officers" width="1050" height="1400" loading="lazy" />
+        <img className="photo" src={`${import.meta.env.BASE_URL}images/training/whiteboard-ground-control.jpg`} alt="Ground control lesson notes on the training room wall" width="1050" height="1400" loading="lazy" />
+      </div>
+
       <div className="card">
         <h2>How each brief is built</h2>
         <p>

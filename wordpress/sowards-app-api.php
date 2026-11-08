@@ -27,7 +27,7 @@
 
 // ---------------------------------------------------------------- CONFIG
 if ( ! defined( 'SOWARDS_APP_MEMBERSHIP_ID' ) ) {
-	define( 'SOWARDS_APP_MEMBERSHIP_ID', 0 ); // set after the membership is created
+	define( 'SOWARDS_APP_MEMBERSHIP_ID', 9639 ); // Sowards' Briefing Room membership on sowardsconsulting.com
 }
 if ( ! defined( 'SOWARDS_APP_ORIGINS' ) ) {
 	// Production origins only. Add http://localhost:5173 while developing, and remove it again.
@@ -37,6 +37,128 @@ if ( ! defined( 'SOWARDS_APP_TOKEN_DAYS' ) ) {
 	define( 'SOWARDS_APP_TOKEN_DAYS', 90 );
 }
 // ------------------------------------------------------------------------
+
+/**
+ * Ask for HTTP Basic credentials on REST 401s. WordPress core answers unauthenticated REST calls
+ * with a bare 401, so clients and proxies that wait for a WWW-Authenticate challenge before sending
+ * an Application Password never send it. Adding the challenge lets them log in normally.
+ */
+add_filter( 'rest_post_dispatch', function ( $response ) {
+	if ( ! empty( $_SERVER['PHP_AUTH_USER'] ) ) {
+		return $response;
+	}
+	$status = 0;
+	if ( $response instanceof WP_REST_Response ) {
+		$status = (int) $response->get_status();
+	} elseif ( is_wp_error( $response ) ) {
+		// Core hands permission failures to this filter as a WP_Error, not a response object.
+		$data   = $response->get_error_data();
+		$status = is_array( $data ) && isset( $data['status'] ) ? (int) $data['status'] : 0;
+	}
+	if ( 401 === $status && ! headers_sent() ) {
+		header( 'WWW-Authenticate: Basic realm="WordPress REST API"' );
+	}
+	return $response;
+} );
+
+/**
+ * Admin API access with a header, for automation that cannot complete HTTP Basic authentication
+ * (the Claude cloud proxy injects fixed headers but cannot answer a Basic challenge). The
+ * X-Sowards-App-Key header carries one of an administrator's WordPress Application Passwords and is
+ * checked with WordPress's own application-password verification, so nothing secret is stored here
+ * and the key is revoked from Users, Profile, Application Passwords. Scope: REST requests only.
+ * Failed keys count against the same per-IP limit as sign-in attempts.
+ */
+function sowards_app_key_attempts( $record = false ) {
+	$ip = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( $_SERVER['REMOTE_ADDR'] ) : 'unknown';
+	foreach ( array( 'HTTP_CF_CONNECTING_IP', 'HTTP_X_REAL_IP', 'HTTP_X_FORWARDED_FOR' ) as $h ) {
+		if ( ! empty( $_SERVER[ $h ] ) ) {
+			$ip = sanitize_text_field( trim( explode( ',', $_SERVER[ $h ] )[0] ) );
+			break;
+		}
+	}
+	$key = 'sowards_app_key_ip_' . md5( $ip );
+	$n   = (int) get_transient( $key );
+	if ( $record ) {
+		set_transient( $key, $n + 1, 15 * MINUTE_IN_SECONDS ); // only failed keys are recorded
+		$n++;
+	}
+	return $n >= 10;
+}
+
+/** Why a key did or did not work. Booleans only; never the key, never counts or IDs. */
+function sowards_app_key_diagnose() {
+	$key  = isset( $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) ? trim( (string) $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) : '';
+	$uri  = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '';
+	$rest = 0 === strpos( $uri, '/' . rest_get_url_prefix() . '/' ) || isset( $_GET['rest_route'] );
+	return array(
+		'headerPresent' => '' !== $key,
+		'restRequest'   => $rest,
+		'rateLimited'   => sowards_app_key_attempts( false ),
+		'appPasswords'  => function_exists( 'wp_is_application_passwords_available' ) ? (bool) wp_is_application_passwords_available() : false,
+		'ssl'           => (bool) is_ssl(),
+		'matched'       => (bool) sowards_app_key_user(),
+	);
+}
+
+function sowards_app_key_user() {
+	static $resolved = null;
+	if ( null !== $resolved ) {
+		return $resolved ?: null;
+	}
+	$resolved = false;
+	$key = isset( $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) ? trim( (string) $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) : '';
+	if ( '' === $key || ! class_exists( 'WP_Application_Passwords' ) ) {
+		return null;
+	}
+	$uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '';
+	if ( 0 !== strpos( $uri, '/' . rest_get_url_prefix() . '/' ) && ! isset( $_GET['rest_route'] ) ) {
+		return null; // Not a REST request.
+	}
+	if ( sowards_app_key_attempts( false ) ) {
+		return null;
+	}
+	// Verify against each administrator's stored Application Passwords directly, the same check
+	// WordPress core runs, but without core's side effect of recording a failed attempt for every
+	// administrator the key does not belong to (that recorded failure would turn into a 401 later).
+	$plain  = preg_replace( '/[^a-z\d]/i', '', $key );
+	$admins = get_users( array( 'role' => 'administrator', 'number' => 10, 'fields' => array( 'ID' ) ) );
+	foreach ( $admins as $admin ) {
+		$user = get_user_by( 'id', (int) $admin->ID );
+		if ( ! $user || ! wp_is_application_passwords_available_for_user( $user ) ) {
+			continue;
+		}
+		foreach ( WP_Application_Passwords::get_user_application_passwords( $user->ID ) as $item ) {
+			if ( ! empty( $item['password'] ) && wp_check_password( $plain, $item['password'], $user->ID ) ) {
+				$resolved = $user;
+				return $user;
+			}
+		}
+	}
+	sowards_app_key_attempts( true );
+	return null;
+}
+add_filter( 'determine_current_user', function ( $user_id ) {
+	if ( $user_id ) {
+		return $user_id;
+	}
+	$user = sowards_app_key_user();
+	return $user ? (int) $user->ID : $user_id;
+}, 20 );
+// If another plugin resolved the current user before this snippet loaded, apply the key when the REST server starts.
+add_filter( 'rest_authentication_errors', function ( $result ) {
+	if ( true === $result ) {
+		return $result;
+	}
+	$user = sowards_app_key_user();
+	if ( $user ) {
+		if ( get_current_user_id() !== (int) $user->ID ) {
+			wp_set_current_user( $user->ID );
+		}
+		return true;
+	}
+	return $result;
+}, 5 );
 
 add_action( 'rest_api_init', function () {
 	register_rest_route( 'sowards/v1', '/app-login', array(
@@ -48,6 +170,11 @@ add_action( 'rest_api_init', function () {
 		'methods'             => 'GET',
 		'permission_callback' => '__return_true',
 		'callback'            => 'sowards_app_me',
+	) );
+	register_rest_route( 'sowards/v1', '/app-keycheck', array(
+		'methods'             => 'GET',
+		'permission_callback' => '__return_true',
+		'callback'            => function () { return rest_ensure_response( sowards_app_key_diagnose() ); },
 	) );
 	register_rest_route( 'sowards/v1', '/app-logout', array(
 		'methods'             => 'POST',

@@ -2,10 +2,11 @@
 // Usage: OPENAI_API_KEY=... node scripts/make-audio.mjs <brief id> [--voice onyx] [--out dir]
 // The text is split at paragraph boundaries into requests under 4,000 characters, each chunk is
 // rendered, and ffmpeg joins the chunks and writes ID3 tags. Requires ffmpeg on the PATH.
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
+import { loadNarration, chunkText } from './lib/narration.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -27,23 +28,8 @@ if (!apiKey) {
   process.exit(1);
 }
 
-const brief = JSON.parse(readFileSync(resolve(root, 'content/briefs', `${id}.json`), 'utf8'));
-const text = readFileSync(resolve(root, 'content/narration', `${id}.txt`), 'utf8').trim();
-const paragraphs = text.split(/\n\s*\n/);
-const LIMIT = 3800;
-const chunks = [];
-let cur = '';
-for (const p of paragraphs) {
-  if (p.length > LIMIT) {
-    // Split an oversized paragraph at sentence ends.
-    for (const sentence of p.match(/[^.!?]+[.!?]+(\s|$)/g) ?? [p]) {
-      if ((cur + ' ' + sentence).length > LIMIT) { chunks.push(cur.trim()); cur = sentence; } else cur += ' ' + sentence;
-    }
-    continue;
-  }
-  if ((cur + '\n\n' + p).length > LIMIT) { chunks.push(cur.trim()); cur = p; } else cur = cur ? cur + '\n\n' + p : p;
-}
-if (cur.trim()) chunks.push(cur.trim());
+const { brief, text } = loadNarration(root, id);
+const chunks = chunkText(text, 3800);
 
 const instructions =
   'You are a calm, authoritative law enforcement training instructor reading a weekly case law update to officers, supervisors, and trainers. Measured pace, clear articulation, serious but conversational, no dramatization. Read case names and numbers slowly and clearly. Pause briefly at section changes.';

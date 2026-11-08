@@ -220,3 +220,11 @@ th { font-family: var(--font-heading); font-size: 0.78rem; letter-spacing: 0.05e
 .about-card { display: grid; grid-template-columns: 1fr; gap: 14px; }
 .about-portrait { width: 180px; height: auto; border-radius: 12px; border: 2px solid var(--gold); }
 @media (min-width: 560px) { .about-card { grid-template-columns: 180px 1fr; } .about-card p { grid-column: 2; } .about-portrait { grid-row: 1 / span 3; } }
+
+/* Training photos */
+.photo-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 14px; }
+@media (min-width: 640px) { .photo-strip { grid-template-columns: repeat(4, 1fr); } }
+.photo-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 4px 0 16px; }
+.photo-row .photo.wide { grid-column: span 3; aspect-ratio: 16 / 9; }
+@media (min-width: 640px) { .photo-row .photo.wide { grid-column: span 1; aspect-ratio: 4 / 3; } .photo-row:has(.photo.wide) { grid-template-columns: repeat(2, 1fr); } }
+.photo { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); background: var(--card); }

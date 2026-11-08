@@ -26,9 +26,10 @@ export const site = {
   subscribeUrl: import.meta.env.VITE_SUBSCRIBE_URL ?? 'https://sowardsconsulting.com/membership/sowards-briefing-room/',
 };
 
-/** Subscription offer and whether the paywall is enforced. Off until the membership exists on the site. */
+/** Subscription offer and whether the paywall is enforced. */
 export const subscription = {
-  enforced: import.meta.env.VITE_PAYWALL === 'on',
+  // On by default. Set the PAYWALL repository variable to "off" to open everything up again.
+  enforced: import.meta.env.VITE_PAYWALL !== 'off',
   trialDays: 30,
   monthlyPrice: '$9.99',
   annualPrice: '$59.99',
