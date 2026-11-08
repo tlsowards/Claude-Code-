@@ -47,11 +47,19 @@ const channel = {
   language: 'en-us',
 };
 
+// The public feed is a funnel: episodes appear in podcast directories only after a delay, while
+// subscribers hear each episode in the app the day it is published. FEED_DELAY_DAYS=0 disables the delay.
+const delayDays = Number(env.FEED_DELAY_DAYS?.trim() || 28);
+const cutoff = new Date(Date.now() - delayDays * 86400000).toISOString().slice(0, 10);
+const funnel = `This public feed carries each episode ${delayDays === 0 ? 'as it airs' : `${Math.round(delayDays / 7)} weeks after it airs`}. Current episodes, the written briefs, and the knowledge checks are in the Sowards Consulting app, free for the first 30 days, at ${publicUrl.replace(/^https?:\/\//, '')}.`;
+
 const withAudio = episodes.filter((e) => e.audioUrl || audioBase);
 const skipped = episodes.length - withAudio.length;
 if (skipped > 0) console.warn(`Feed: ${skipped} episode(s) have no audio yet and are left out of the RSS feed.`);
+const released = delayDays > 0 ? withAudio.filter((e) => e.date <= cutoff) : withAudio;
+if (released.length < withAudio.length) console.log(`Feed: ${withAudio.length - released.length} episode(s) newer than ${cutoff} are held back from the public feed for ${delayDays} days.`);
 
-const items = withAudio
+const items = released
   .map((e) => {
     const url = e.audioUrl ?? `${audioBase}/${e.file}`;
     const guid = `${publicUrl}${basePath}/podcast/${e.id}`;
@@ -60,8 +68,8 @@ const items = withAudio
       <link>${esc(guid)}</link>
       <guid isPermaLink="true">${esc(guid)}</guid>
       <pubDate>${rfc822(e.date)}</pubDate>
-      <description>${esc(e.description)}</description>
-      <itunes:summary>${esc(e.description)}</itunes:summary>
+      <description>${esc(`${e.description} ${funnel}`)}</description>
+      <itunes:summary>${esc(`${e.description} ${funnel}`)}</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>${e.durationSeconds ? `\n      <itunes:duration>${hms(e.durationSeconds)}</itunes:duration>` : ''}
       <enclosure url="${esc(url)}" length="${e.bytes}" type="audio/mpeg" />
@@ -76,14 +84,14 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
     <link>${esc(channel.link)}</link>
     <atom:link href="${esc(`${publicUrl}${basePath}/podcast/feed.xml`)}" rel="self" type="application/rss+xml" />
     <language>${channel.language}</language>
-    <description>${esc(channel.description)}</description>
+    <description>${esc(`${channel.description} ${funnel}`)}</description>
     <itunes:author>${esc(channel.author)}</itunes:author>
     <itunes:owner><itunes:name>${esc(channel.author)}</itunes:name><itunes:email>${esc(channel.email)}</itunes:email></itunes:owner>
     <itunes:image href="${esc(channel.image)}" />
     <itunes:category text="${esc(channel.category)}" />
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
-    <lastBuildDate>${rfc822((withAudio[0] ?? episodes[0]).date)}</lastBuildDate>
+    <lastBuildDate>${rfc822((released[0] ?? withAudio[0] ?? episodes[0]).date)}</lastBuildDate>
 ${items}
   </channel>
 </rss>
@@ -91,4 +99,4 @@ ${items}
 
 mkdirSync(resolve(root, 'public/podcast'), { recursive: true });
 writeFileSync(resolve(root, 'public/podcast/feed.xml'), xml);
-console.log(`Wrote public/podcast/feed.xml with ${withAudio.length} episodes.`);
+console.log(`Wrote public/podcast/feed.xml with ${released.length} episodes.`);
