@@ -28,7 +28,12 @@ if (!apiKey) {
 }
 
 const brief = JSON.parse(readFileSync(resolve(root, 'content/briefs', `${id}.json`), 'utf8'));
-const text = readFileSync(resolve(root, 'content/narration', `${id}.txt`), 'utf8').trim();
+const pronunciations = JSON.parse(readFileSync(resolve(root, 'content/pronunciations.json'), 'utf8'));
+let text = readFileSync(resolve(root, 'content/narration', `${id}.txt`), 'utf8').trim();
+for (const [written, spoken] of Object.entries(pronunciations)) {
+  if (written.startsWith('_')) continue;
+  text = text.replace(new RegExp(`\\b${written}\\b`, 'g'), spoken);
+}
 const paragraphs = text.split(/\n\s*\n/);
 const LIMIT = 3800;
 const chunks = [];

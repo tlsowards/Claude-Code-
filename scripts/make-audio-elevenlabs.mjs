@@ -27,7 +27,12 @@ if (!id || !voice || !apiKey) {
 }
 
 const brief = JSON.parse(readFileSync(resolve(root, 'content/briefs', `${id}.json`), 'utf8'));
-const text = readFileSync(resolve(root, 'content/narration', `${id}.txt`), 'utf8').trim();
+const pronunciations = JSON.parse(readFileSync(resolve(root, 'content/pronunciations.json'), 'utf8'));
+let text = readFileSync(resolve(root, 'content/narration', `${id}.txt`), 'utf8').trim();
+for (const [written, spoken] of Object.entries(pronunciations)) {
+  if (written.startsWith('_')) continue;
+  text = text.replace(new RegExp(`\\b${written}\\b`, 'g'), spoken);
+}
 const paragraphs = text.split(/\n\s*\n/);
 const LIMIT = 9000;
 const chunks = [];
@@ -59,19 +64,27 @@ for (let i = 0; i < chunks.length; i++) {
     voice_settings: { stability: 0.5, similarity_boost: 0.8, style: 0, use_speaker_boost: true },
   };
   let r;
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voice}?output_format=mp3_44100_128`, {
-      method: 'POST',
-      headers: { 'xi-api-key': apiKey, 'Content-Type': 'application/json', Accept: 'audio/mpeg' },
-      body: JSON.stringify(body),
-    });
-    if (r.ok) break;
-    const msg = await r.text();
-    console.error(`  part ${i + 1}: HTTP ${r.status} ${msg.slice(0, 300)}`);
-    if (r.status < 500 && r.status !== 429) process.exit(1);
-    await new Promise((res) => setTimeout(res, 5000 * attempt));
+  const attempts = 3;
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    try {
+      r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voice}?output_format=mp3_44100_128`, {
+        method: 'POST',
+        headers: { 'xi-api-key': apiKey, 'Content-Type': 'application/json', Accept: 'audio/mpeg' },
+        body: JSON.stringify(body),
+      });
+    } catch (err) {
+      r = undefined;
+      console.error(`  part ${i + 1}: network error ${err.message}`);
+    }
+    if (r?.ok) break;
+    if (r) {
+      const msg = await r.text();
+      console.error(`  part ${i + 1}: HTTP ${r.status} ${msg.slice(0, 300)}`);
+      if (r.status < 500 && r.status !== 429) process.exit(1);
+    }
+    if (attempt < attempts) await new Promise((res) => setTimeout(res, 5000 * attempt));
   }
-  if (!r.ok) process.exit(1);
+  if (!r?.ok) process.exit(1);
   writeFileSync(file, Buffer.from(await r.arrayBuffer()));
   console.log(`  part ${i + 1}: ${chunks[i].length} chars rendered`);
 }
