@@ -13,7 +13,7 @@ export default function Training() {
       </p>
       <div className="photo-row">
         <img className="photo wide" src={`${import.meta.env.BASE_URL}images/training/classroom.jpg`} alt="Dr. Sowards teaching a probation training class" width="1050" height="1400" loading="lazy" />
-        <img className="photo wide" src={`${import.meta.env.BASE_URL}images/training/class-group.jpg`} alt="Defensive tactics instructor course class photo" width="1050" height="1400" loading="lazy" />
+        <img className="photo wide" src={`${import.meta.env.BASE_URL}images/training/class-group.jpg`} alt="Defensive tactics instructor course class photo" width="1400" height="1050" loading="lazy" />
       </div>
       <div className="btn-row">
         <a className="btn" href={site.dashboardUrl}>Sign in to my courses</a>
