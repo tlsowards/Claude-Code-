@@ -47,6 +47,7 @@ for (let i = 0; i < chunks.length; i++) {
     voice_settings: { stability: 0.5, similarity_boost: 0.8, style: 0, use_speaker_boost: true },
   };
   let r;
+  let audio;
   const attempts = 3;
   for (let attempt = 1; attempt <= attempts; attempt++) {
     try {
@@ -59,16 +60,24 @@ for (let i = 0; i < chunks.length; i++) {
       r = undefined;
       console.error(`  part ${i + 1}: network error ${err.message}`);
     }
-    if (r?.ok) break;
-    if (r) {
+    if (r?.ok) {
+      // The streamed body can still be cut off mid-transfer; treat that as a retryable failure.
+      try {
+        audio = Buffer.from(await r.arrayBuffer());
+        break;
+      } catch (err) {
+        audio = undefined;
+        console.error(`  part ${i + 1}: transfer interrupted ${err.message}`);
+      }
+    } else if (r) {
       const msg = await r.text();
       console.error(`  part ${i + 1}: HTTP ${r.status} ${msg.slice(0, 300)}`);
       if (r.status < 500 && r.status !== 429) process.exit(1);
     }
     if (attempt < attempts) await new Promise((res) => setTimeout(res, 5000 * attempt));
   }
-  if (!r?.ok) process.exit(1);
-  writeFileSync(file, Buffer.from(await r.arrayBuffer()));
+  if (!audio) process.exit(1);
+  writeFileSync(file, audio);
   console.log(`  part ${i + 1}: ${chunks[i].length} chars rendered`);
 }
 
