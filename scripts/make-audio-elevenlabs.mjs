@@ -5,10 +5,11 @@
 // the neighbouring text so the voice stays consistent across the joins, then ffmpeg concatenates the
 // parts and writes ID3 tags. Requires ffmpeg on the PATH. The key may be a placeholder when a proxy
 // injects the real one.
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
+import { loadNarration, chunkText } from './lib/narration.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -26,27 +27,8 @@ if (!id || !voice || !apiKey) {
   process.exit(1);
 }
 
-const brief = JSON.parse(readFileSync(resolve(root, 'content/briefs', `${id}.json`), 'utf8'));
-const pronunciations = JSON.parse(readFileSync(resolve(root, 'content/pronunciations.json'), 'utf8'));
-let text = readFileSync(resolve(root, 'content/narration', `${id}.txt`), 'utf8').trim();
-for (const [written, spoken] of Object.entries(pronunciations)) {
-  if (written.startsWith('_')) continue;
-  text = text.replace(new RegExp(`\\b${written}\\b`, 'g'), spoken);
-}
-const paragraphs = text.split(/\n\s*\n/);
-const LIMIT = 9000;
-const chunks = [];
-let cur = '';
-for (const p of paragraphs) {
-  if (p.length > LIMIT) {
-    for (const sentence of p.match(/[^.!?]+[.!?]+(\s|$)/g) ?? [p]) {
-      if ((cur + ' ' + sentence).length > LIMIT) { chunks.push(cur.trim()); cur = sentence; } else cur += ' ' + sentence;
-    }
-    continue;
-  }
-  if ((cur + '\n\n' + p).length > LIMIT) { chunks.push(cur.trim()); cur = p; } else cur = cur ? cur + '\n\n' + p : p;
-}
-if (cur.trim()) chunks.push(cur.trim());
+const { brief, text } = loadNarration(root, id);
+const chunks = chunkText(text, 9000);
 
 const work = resolve(outDir, `${id}-elevenlabs`);
 mkdirSync(work, { recursive: true });
