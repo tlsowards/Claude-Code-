@@ -40,6 +40,7 @@ const statusLine = {
   order: 'This is an order, not a full opinion.',
   'cert-denied': 'The Supreme Court declined to review this case, which is not a ruling on the merits.',
   'summary-order': 'This is a summary order, not a precedential opinion.',
+  unknown: 'Whether this decision is published was not confirmed when this brief was prepared; check before citing it.',
 };
 
 function narrate(brief) {

@@ -1,0 +1,157 @@
+{
+  "id": "2026-w20",
+  "title": "Garner is still the floor: a Tulsa shooting goes to a jury, Barnes v. Felix ends, and body camera footage becomes a two-way street",
+  "date": "2026-05-16",
+  "coverageStart": "2026-05-11",
+  "coverageEnd": "2026-05-16",
+  "summary": "A corrective week after a spring of Supreme Court decisions that broadened merits review and narrowed qualified immunity. In Manning v. City of Tulsa, a published Tenth Circuit opinion filed March 30, the court denied qualified immunity to former Tulsa officer Betty Shelby in the September 2016 shooting of Terrence Crutcher, holding that Tennessee v. Garner, a Supreme Court deadly force decision squarely on point, put the unlawfulness of shooting an unarmed, non-dangerous subject beyond debate without any further specificity. The case now goes to a jury. On April 27 the Supreme Court denied certiorari a second time in Barnes v. Felix, ending that case with the officer winning under the totality framework the Court itself announced a year earlier. And on April 9 the Colorado Court of Appeals held that Boulder could not charge more than $8,000 for body camera footage of a fatal officer-involved shooting. Nothing from the Ninth Circuit and nothing from California in this episode.",
+  "coverage": [
+    "The episode did not describe which courts or databases it swept for the week of May 11 to 16, 2026. It covered three items: the Tenth Circuit's Manning v. City of Tulsa opinion, the Supreme Court's second certiorari denial in Barnes v. Felix, and a Colorado Court of Appeals ruling on body camera fees. It reported nothing from the Ninth Circuit and nothing from California.",
+    "All three decisions predate the coverage window as the episode dated them: Manning was filed March 30, 2026, the Colorado decision was issued April 9, 2026, and the certiorari denial came April 27, 2026. The episode did not say when it learned of them or whether anything was filed during the week itself.",
+    "No docket numbers, panel compositions, or dissents were given for any item, and the episode did not say whether it read the opinions in full or worked from summaries. Case names and personal names are spelled as the machine transcript rendered them.",
+    "This brief was rebuilt from the episode originally published on May 16, 2026; it was not re-researched, so verify every citation against the opinion before relying on it."
+  ],
+  "sections": [
+    {
+      "heading": "Ninth Circuit",
+      "note": "Nothing from this court in this episode.",
+      "cases": []
+    },
+    {
+      "heading": "Supreme Court",
+      "note": "No merits decision this week. The episode's one Supreme Court item is the April 27 certiorari denial that ends Barnes v. Felix. It framed the week against the spring term's qualified immunity decisions covered the week before, Smith v. Scott on the shadow docket and Zorn: the picture then was that merits review got broader, immunity got narrower, and the agency carried the practical compliance load. As the Tenth Circuit described them in Manning, Smith involved a behavioral health restraint where the prior precedent was lower court excessive force law, and Zorn involved a wrist lock where the prior precedent was a different circuit's pain compliance ruling. Neither reaches a deadly force shooting governed by Tennessee v. Garner.",
+      "cases": [
+        {
+          "id": "barnes-v-felix",
+          "name": "Barnes v. Felix",
+          "court": "Supreme Court (second certiorari denial, after the Fifth Circuit's decision on remand)",
+          "courtKey": "scotus",
+          "decided": "April 27, 2026 (certiorari denied)",
+          "status": "cert-denied",
+          "topic": "Totality of the circumstances in deadly force cases, doctrine versus outcome",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "The episode gave no docket number for either certiorari petition or for the Fifth Circuit remand decision, and did not quote from the remand opinion. The timeline and the characterization of the remand reasoning are the episode's own summary.",
+          "facts": "Officer Roberto Felix shot Ashton Barnes during a 2016 traffic stop. Barnes had begun driving away with Felix on the running board of the moving vehicle; Felix fired into the vehicle and killed Barnes. The Fifth Circuit originally granted Felix qualified immunity under its moment of threat rule, which looked only at the seconds when Felix was in danger on the moving vehicle. On May 15, 2025, a unanimous Supreme Court, in an opinion by Justice Kagan, rejected the moment of threat rule and held that Fourth Amendment reasonableness in deadly force cases requires a totality of the circumstances analysis that includes events before, during, and after the application of force. The case went back to the Fifth Circuit, and the civil rights community treated the decision as a major victory. On September 18, 2025, the Fifth Circuit on remand applied the new framework to the same facts, reviewing the entire encounter from the initial stop through the shooting, and again held that Felix was entitled to qualified immunity. The plaintiff filed a second petition for certiorari.",
+          "holding": "The Supreme Court denied the plaintiff's second petition on April 27, 2026, leaving the Fifth Circuit's remand decision in place. That ends the case, and Officer Felix wins. On remand the Fifth Circuit had concluded that the deadly force was still reasonable under the totality of the circumstances and that the plaintiff had not raised a genuine dispute of material fact, because the pre-engagement record supported Felix's perception of imminent danger. The episode's reading is that doctrine and outcome are not the same thing. Barnes was important: it abolished a legal test that had been letting bad shootings escape constitutional review on procedural grounds, and the doctrine moved. But the same officer, on the same facts, won under both frameworks. When the underlying record genuinely supports the officer's perception of threat, expanding the temporal scope of the analysis does not necessarily produce a different result.",
+          "inPractice": "Do not let anyone oversell a Supreme Court ruling as an immediate game changer. Barnes was a doctrinal shift, not a results shift. Officers need to understand the totality framework, but they do not need to believe it flipped the litigation environment overnight. The same framework that produced Felix's win will sometimes produce officer losses: officers whose pre-engagement record is sloppy, whose dispatch communications are unclear, or whose tactical decisions before force are not defensible will fare worse under totality than they did under moment of threat.",
+          "trainIt": "Teach the totality framework as a reason to get the front end of the encounter right, because the court will now review everything from the initial contact forward. The lever is training and documentation: clear dispatch communications, defensible tactical decisions before any force, and a clean contemporaneous record of why the officer perceived danger. Use the Barnes timeline, the May 2025 opinion, the September 2025 remand, and the April 2026 denial, to show trainees how a doctrinal change plays out in practice."
+        }
+      ]
+    },
+    {
+      "heading": "Other federal circuits",
+      "note": "The Tenth Circuit's Manning decision is the lead item of the week. The Fifth Circuit's September 18, 2025 decision on remand in Barnes v. Felix, which again granted Officer Felix qualified immunity under the totality framework, is described with the Supreme Court's certiorari denial above. This section also carries the Colorado Court of Appeals body camera decision, a state court ruling, because the brief has no separate section for state courts outside California.",
+      "cases": [
+        {
+          "id": "manning-v-city-of-tulsa",
+          "name": "Manning v. City of Tulsa",
+          "court": "Tenth Circuit",
+          "courtKey": "ca10",
+          "decided": "March 30, 2026",
+          "status": "published",
+          "topic": "Deadly force against an unarmed subject, qualified immunity, Garner as clearly established law",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "The episode gave no docket number, no panel composition, and did not say whether there was a dissent. It did not explain who the named plaintiff Manning is. The \"big bad dude\" quotation is the episode's rendering of the helicopter officer's narration. The spellings of Crutcher and Shelby follow the machine transcript. The episode called this the first major federal appellate decision since Smith v. Scott to deny qualified immunity in a deadly force case; that is its characterization, not a verified count. Verify against the slip opinion before quoting it.",
+          "facts": "On the night of September 16, 2016, Terrence Crutcher, a 40-year-old Black man, was driving home in North Tulsa when his SUV stalled in the road. He left the vehicle and was walking near it when officers responded to reports of an abandoned vehicle. Officer Betty Shelby arrived first; other officers joined within minutes, a police helicopter recorded from above, and a dash camera in a second cruiser was also recording. The video shows Crutcher walking away from Shelby toward his vehicle with his hands raised above his head, not moving aggressively and not advancing on any officer. The helicopter officer narrated that Crutcher looked like a \"big bad dude\" and might be on something. As Crutcher reached the driver's side window, Shelby fired one shot from about 15 feet away as another officer deployed a Taser. Crutcher collapsed and died at the scene. He was unarmed, there was no weapon in the vehicle, and he was not suspected of any crime. Shelby was charged with manslaughter and acquitted in 2017. In 2024 the district court granted her qualified immunity, holding that no clearly established law prohibited deadly force where, as Shelby described it, the officer perceived the subject reaching into a vehicle window for a possible weapon. The district court treated Shelby's perception as the determinative fact.",
+          "holding": "Reversed, in a published opinion filed March 30, 2026. The case now heads to a jury trial nearly ten years after the shooting. The Tenth Circuit held that the district court got the specificity inquiry wrong. The court did not need a prior case with identical facts; it needed a prior case that placed the unlawfulness of Shelby's conduct beyond debate at the level of generality the conduct actually presented. That case was Tennessee v. Garner, the Supreme Court's 1985 decision holding that an officer may not seize an unarmed, non-dangerous suspect by shooting him dead unless the suspect poses a threat of serious physical harm to the officer or others. Crutcher was unarmed, and a reasonable jury could find he was non-dangerous, particularly given the dash camera and helicopter footage showing him walking with his hands raised as he approached his vehicle. If a jury could find those facts, Garner placed the unlawfulness of the shooting beyond debate. The panel distinguished Smith v. Scott, a behavioral health restraint case where the prior precedent was lower court excessive force law, and Zorn, a wrist lock case where the prior precedent was a different circuit's pain compliance ruling. Here the prior precedent was a Supreme Court deadly force decision squarely on point, so no further specificity was required.",
+          "notDecided": "Whether Shelby in fact reasonably perceived a threat. The panel held only that a reasonable jury could reject her account on the video; her perception of threat remains the central question at trial.",
+          "inPractice": "The Garner floor is still the floor. Whatever the doctrinal complexity of Smith and Zorn, an officer may not use deadly force against an unarmed, non-dangerous subject, and that rule has been clearly established for forty years. The post-Smith narrowing of qualified immunity does not reach Garner-type facts. Video was decisive here: without the dash camera and helicopter footage, Shelby's subjective perception would have been the primary record of what happened, and with the video her perception became one piece of evidence among several. The helicopter officer's contemporaneous, recorded, and arguably racialized narration became part of the record the appellate court reviewed.",
+          "trainIt": "Teach deadly force authority on the Garner framework first, then layer on the post-Smith specificity inquiry. Train officers that under Barnes and the totality framework the universe of evidence about an encounter is getting larger, not smaller; body cameras, dash cameras, and helicopter footage are part of the agency's risk posture both for and against the officer. Train officers that whatever they say while a recording device is rolling will be heard by everyone who reviews the case, including what other officers in the encounter say, and train command staff and FTOs to coach officers out of language that makes a defense difficult. Finally, train officers to document their threat perception cleanly, in body camera narration, in the post-incident report, and in the threat assessment they articulate to dispatch and other officers. Officers whose stated perception is undermined by contemporaneous video lose that advantage."
+        },
+        {
+          "id": "boulder-body-camera-fees",
+          "name": "Boulder body camera fee ruling (Yellow Scene Magazine request)",
+          "court": "Colorado Court of Appeals (state court)",
+          "courtKey": "other",
+          "decided": "April 9, 2026",
+          "status": "unknown",
+          "topic": "Public access to body camera footage, agency fees in misconduct cases",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "The episode did not give the case caption, a docket number, the citation of the Colorado statute, or the publication status of the decision. The spelling of Jeanette Alatorre follows the machine transcript. The episode did not say whether the ruling is published.",
+          "facts": "Yellow Scene Magazine sought body camera footage from a December 2023 fatal officer-involved shooting in Boulder that killed a woman named Jeanette Alatorre. The City of Boulder demanded more than $8,000 to release the footage, and the case arose from that demand. Colorado has a statute requiring release of body camera evidence in officer-involved shooting cases, so the question was whether the city could condition release of that footage on a fee of that size. The episode described this as a smaller story than the two federal items, but one that quietly shifts the landscape for misconduct litigation across the country, because the fight over access to footage is part of how misconduct cases get built.",
+          "holding": "On April 9, 2026, the Colorado Court of Appeals ruled that the City of Boulder cannot charge fees for body camera footage related to police misconduct complaints. The court said the fee was inconsistent with Colorado's statute requiring release of body camera evidence in officer-involved shooting cases. The decision binds only Colorado, but the episode read it as a signal of a trend. Several states have passed laws over the past five years requiring release of body camera footage in misconduct cases, and courts are increasingly hostile to agency fee structures that effectively price journalists and plaintiffs out of access. The episode expects the trend to spread to other states and circuits.",
+          "inPractice": "Body camera footage in misconduct cases is going to be released, often quickly and at low cost. Agencies that have built budgets around fee revenue from public records requests should plan for that change. Footage that is missing because the camera was off, or that ends abruptly mid-incident, is going to be a litigation problem. And video that helps the officer becomes available on the same terms as video that hurts.",
+          "trainIt": "Review retention and access policies so they anticipate fast, low-cost release in misconduct cases. Tighten activation discipline: activate early, leave the camera on through the entire encounter, and narrate decisions in real time. Train officers to use body camera narration to document their threat perception, the alternatives they considered, the warnings they issued, and the medical monitoring they performed. Under Barnes and the totality framework, that real-time narration is high-quality evidence in the officer's favor when the encounter is otherwise difficult."
+        }
+      ]
+    },
+    {
+      "heading": "California",
+      "note": "Nothing from this court in this episode.",
+      "cases": []
+    }
+  ],
+  "applications": [
+    {
+      "title": "Teach Garner first",
+      "body": "An officer may not use deadly force against an unarmed, non-dangerous subject, and that rule has been clearly established for forty years. Manning shows that the Smith and Zorn narrowing of qualified immunity does not reach Garner-type facts, so train deadly force authority on Garner and layer the specificity inquiry on top."
+    },
+    {
+      "title": "The record is getting bigger, and so is what you say on it",
+      "body": "Dash camera and helicopter video turned the Tulsa officer's perception from the primary record into one piece of evidence among several, and a helicopter officer's remark that the subject looked like a big bad dude became part of the appellate record. Whatever is said while a camera is rolling will be heard by everyone who reviews the case."
+    },
+    {
+      "title": "Document the threat perception",
+      "body": "The officer's stated perception of threat will be the central question at the Manning trial. Officers who document that perception cleanly, in body camera narration, in the report, and in what they tell dispatch and other officers, hold a meaningfully better defensive position than officers whose account is undermined by the video."
+    },
+    {
+      "title": "Doctrine is not outcome",
+      "body": "Barnes broadened the analysis, and the same officer on the same facts still won on remand because the pre-engagement record supported his perception of danger. Do not let anyone sell a Supreme Court ruling as an overnight game changer, and do not assume totality review helps or hurts officers in general; it rewards agencies that do the tactical and documentation work and punishes those that do not."
+    },
+    {
+      "title": "Body camera footage is a two-way street",
+      "body": "After the Colorado ruling, expect footage in misconduct cases to be released faster and cheaper. Activate early, stay on through the whole encounter, and narrate warnings, alternatives, and medical monitoring in real time, because the same footage that supports a plaintiff can support the officer's defense."
+    },
+    {
+      "title": "Walk the strip mall hypothetical",
+      "body": "An unarmed, non-aggressive man near parked cars who is not responding to commands and may be intoxicated or in crisis, with body camera and dash camera rolling and a second officer staged 30 feet away. After Barnes the court looks at tactics, de-escalation, cover, distance, and resources called for; after Manning the Garner floor applies no matter how the encounter feels. The right answer is still distance, communication, patience, and resources."
+    }
+  ],
+  "episodeIds": [
+    "2026-05-16"
+  ],
+  "quiz": [
+    {
+      "q": "In Manning v. City of Tulsa, why did the Tenth Circuit deny qualified immunity even after the Supreme Court's recent specificity decisions?",
+      "options": [
+        "Because the officer was acquitted of manslaughter, which settled the civil case",
+        "Because Tennessee v. Garner, a Supreme Court deadly force decision squarely on point, put the unlawfulness of shooting an unarmed, non-dangerous subject beyond debate",
+        "Because the helicopter officer's narration proved the shooting was unreasonable",
+        "Because qualified immunity no longer applies to deadly force cases"
+      ],
+      "answer": 1,
+      "teach": "The court did not need a prior case with identical facts, only one that placed the unlawfulness beyond debate at the level of generality the conduct presented. Garner, a Supreme Court holding on deadly force against an unarmed, non-dangerous subject, needed no further specificity, and the video let a reasonable jury find those facts."
+    },
+    {
+      "q": "What happened in Barnes v. Felix after the Supreme Court rejected the moment of threat rule in May 2025?",
+      "options": [
+        "The Fifth Circuit found for the plaintiff and sent the case to trial",
+        "The Supreme Court decided the merits itself and ruled for the officer",
+        "The Fifth Circuit applied the totality framework, again granted the officer qualified immunity, and the Supreme Court denied a second certiorari petition on April 27, 2026",
+        "The case settled before the Fifth Circuit ruled"
+      ],
+      "answer": 2,
+      "teach": "The same officer won on the same facts under both frameworks because the pre-engagement record supported his perception of imminent danger. Barnes was a doctrinal shift, not a results shift, and totality review rewards sound tactics and clean documentation."
+    },
+    {
+      "q": "What did the Colorado Court of Appeals hold in the Boulder body camera case?",
+      "options": [
+        "Agencies may charge any reasonable fee for body camera footage",
+        "Body camera footage of officer-involved shootings is exempt from public records laws",
+        "The city could not charge more than $8,000 for footage of a misconduct complaint because the fee was inconsistent with Colorado's statute requiring release of body camera evidence in officer-involved shootings",
+        "Journalists must obtain a court order before requesting footage"
+      ],
+      "answer": 2,
+      "teach": "The ruling binds only Colorado, but it signals a trend toward fast, low-cost release of footage in misconduct cases. Treat the camera as part of the official record: activate early, stay on, and narrate decisions in real time."
+    }
+  ]
+}

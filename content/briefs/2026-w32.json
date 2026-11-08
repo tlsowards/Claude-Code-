@@ -1,0 +1,141 @@
+{
+  "id": "2026-w32",
+  "title": "A baton to the head, immunity by one vote, and the last two shots that reach a jury",
+  "date": "2026-08-08",
+  "coverageStart": "2026-08-03",
+  "coverageEnd": "2026-08-08",
+  "summary": "Two items this week, and they share one fault line. In Smith v. Olvera, decided July 14, a divided Ninth Circuit panel granted qualified immunity to an Elko, Nevada officer who struck a prone, just-crashed suspect in the head with a baton in the dark. The majority ruled only that no earlier case put the officer on notice; it did not say the head strikes were lawful. Judge Thomas dissented, writing that whether the man was taking furtive or threatening actions or was simply lying there incapacitated was a jury question. On June 22, the Supreme Court declined to hear the City of Los Angeles's appeal in the McBride case, leaving in place a six to five en banc ruling that a jury could find the last two shots, fired after a knife-wielding man had fallen, were excessive. Both cases turn on the moment a threat may have ended and force continued.",
+  "coverage": [
+    "The episode covered two items: the Ninth Circuit's July 14, 2026 decision in Smith v. Olvera, described as the most recent published use of force decision available, and the Supreme Court's June 22, 2026 denial of the City of Los Angeles petition in the McBride case, which the episode said had not been covered before. Both were decided before the August 3 to 8 coverage week.",
+    "The episode did not say whether it screened the other federal circuits or the California courts, and it did not say whether the Smith v. Olvera opinion was read in full or taken from a summary.",
+    "Smith v. Olvera was still subject to a possible petition for rehearing en banc when the episode aired, so it may not be the last word.",
+    "This brief was rebuilt from the episode originally published on August 8, 2026; it was not re-researched, so verify every citation against the opinion before relying on it."
+  ],
+  "sections": [
+    {
+      "heading": "Ninth Circuit",
+      "note": "One published, divided decision, with a dissent the episode treated as carrying most of the training value. Read it next to the Supreme Court item below. Olvera is an immunity ruling in which the dissent asked the majority to look at the transition point where a threat may have ended and force continued anyway. McBride is a merits ruling that reached a jury on exactly that transition. Same fault line, two different procedural postures.",
+      "cases": [
+        {
+          "id": "smith-v-olvera",
+          "name": "Smith v. Olvera",
+          "court": "Ninth Circuit",
+          "courtKey": "ca9",
+          "docket": "25-1809",
+          "decided": "July 14, 2026",
+          "status": "published",
+          "topic": "Baton strikes to the head of a prone subject after a pursuit, qualified immunity, clearly established prong",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "This brief was built from a machine transcript. The case name is given consistently as Smith v. Olvera and the plaintiff's name as James Driscoll Smith; check both spellings against the opinion. The majority quotation is reproduced as transcribed, including the phrase any reasonable officer, and should be verified against the slip opinion. The episode did not say whether the opinion was read in full. Smith's lawyers may still ask the full Ninth Circuit to rehear the case en banc, so the decision is not necessarily the last word; as of the episode it was binding panel authority in the Ninth Circuit.",
+          "facts": "The encounter happened at night in November 2022 in Elko, Nevada. James Driscoll Smith, a 62-year-old man, led Elko officers on a vehicle pursuit of roughly six minutes. During the pursuit he drove recklessly and ultimately crashed his truck into police vehicles and into a tree. When the truck finally stopped, Smith was taken to the ground and ended up lying face down. It was dark. Officer Brian Olvera then struck Smith multiple times with a baton, including strikes to the head. Smith suffered a broken arm and several broken teeth. The parties disagreed about one fact. Smith later said his hands were stretched out to his sides. Olvera said one of Smith's hands was near his waist. That dispute, hands out to the sides versus a hand drifting toward the waistband, is the whole case. Smith is now serving a prison sentence for the crimes he committed against officers during the pursuit. The qualified immunity question reached the Ninth Circuit from a summary judgment ruling.",
+          "holding": "Qualified immunity granted, two to one, in an opinion joined by Judge Morgan Christen and Judge Danielle Forrest. The majority decided the case on the clearly established prong of the qualified immunity test, not on a clean finding that the force was reasonable. Given the darkness, the reckless conduct that preceded the stop, and Olvera's stated belief that Smith's hand was moving toward his waist, the court wrote, as the episode quoted it, that it could not conclude that any reasonable officer would have known that striking Smith in the head with a baton was unconstitutional. In plain terms, the majority did not say the head strikes were lawful. It said no prior case with close enough facts had put the officer on fair notice that they were unlawful. The court found no closely comparable precedent, so the officer keeps his immunity even if the underlying conduct might have crossed a constitutional line. That is the specificity approach to qualified immunity that courts have applied throughout the year. As it stands, the decision is binding panel authority in the Ninth Circuit, which includes Washington, Oregon, and California, and it is the most current appellate statement on baton force and immunity.",
+          "dissent": "Judge Sidney Thomas dissented, and his point was narrow and sharp. Even assuming Smith was armed, the Ninth Circuit has repeatedly held that officers may use deadly force, and baton strikes to the head can qualify as deadly force, only when a suspect can reasonably be perceived to be taking furtive or threatening actions. Whether Smith was actually taking such actions, or was already incapacitated and simply lying there after a violent crash, is a disputed question of fact, and disputed questions of fact belong to a jury, not to a judge deciding immunity on summary judgment. The dissent would have let the case go to trial. The majority did not dispute that head strikes with an impact weapon are deadly force.",
+          "notDecided": "Whether the head strikes were constitutionally reasonable. The majority ruled only that the law was not clearly established. The margin was one judge: a different read of one disputed hand movement in the dark would have sent the case to a jury. A petition for rehearing en banc remained possible.",
+          "inPractice": "A baton strike to the head is not pain compliance. It is the impact weapon equivalent of a firearm and has to be justified by the same kind of immediate deadly threat. Most agency policies already classify intentional baton strikes to the head, neck, or throat as deadly force or as force likely to cause serious injury or death. An officer who defaults to head strikes because a subject is non-compliant rather than actively deadly is building a case the agency may not be able to defend on the merits, even if a court later hands over immunity on notice grounds. The officer's account of a hand moving toward the waist carried the day on immunity, but only by one vote. If the body camera clearly captured the hand movement, it is not a close case; if it did not, the officer is relying on his word against the plaintiff's word in a summary judgment fight.",
+          "trainIt": "Four points. First, lead with this: head strikes with an impact weapon are deadly force. Teach target zones that keep non-compliance responses off the head, neck, and throat unless a genuine deadly threat justifies lethal force. Second, do not teach Smith v. Olvera as a green light. The court did not bless the head strikes; it ruled on notice. The next officer, on slightly different facts or in a jurisdiction with a closer precedent, will not get the same benefit. Train to reasonableness under the totality of the circumstances, not to the immunity floor. Third, in low light on a prone subject, the perceived threat has to be narrated out loud in real time and, wherever possible, captured on video. The words hands, waistband, and stop reaching, spoken clearly while the camera rolls, are worth more than a page of after-action report written the next morning. Fourth, reassess after the crash. A subject who just hit a tree and police vehicles may be dazed, injured, or incapacitated rather than resisting. Train officers and first-line supervisors that the tactical picture changes the instant a fleeing subject is stopped and down. The question is no longer catch him; it is whether this person is still a threat right now, and that usually takes a beat of assessment before force continues. The dissent is, at bottom, an argument that the officer skipped that beat."
+        }
+      ]
+    },
+    {
+      "heading": "Supreme Court",
+      "note": "One certiorari denial, below. No merits decision was discussed. The recurring anchors the episode identified have not moved: Graham v. Connor (1989) supplies the reasonableness standard, judged from the perspective of a reasonable officer on the scene; Tennessee v. Garner (1985) supplies the deadly force floor, no deadly force against a subject who does not pose an immediate threat of serious harm; Barnes v. Felix (May 2025) requires that reasonableness be judged on the totality of the circumstances, including what happened before the final moment, not on a frozen snapshot of the last second; and the specificity line from Zorn v. Linton and Smith v. Scott governs qualified immunity, meaning an officer keeps immunity unless a prior case defined the unlawfulness of the specific conduct with real particularity.",
+      "cases": [
+        {
+          "id": "mcbride-cert-denial",
+          "name": "The McBride case (City of Los Angeles petition for certiorari)",
+          "court": "Supreme Court of the United States, reviewing the en banc Ninth Circuit",
+          "courtKey": "scotus",
+          "decided": "June 22, 2026 (certiorari denied)",
+          "status": "cert-denied",
+          "topic": "Final shots fired after a subject fell, reassessment between rounds",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "The episode gave no full case caption and no Supreme Court docket number; it referred to the matter as the McBride case and to the City of Los Angeles as the petitioner. It did not give the date of the Ninth Circuit's en banc decision. A certiorari denial is not a ruling on the merits and sets no nationwide precedent. Check the caption, the docket, and the vote count against the court records.",
+          "facts": "In April 2020, Daniel Hernandez, who was alleged to be under the influence of methamphetamine, crashed his truck into several vehicles near downtown Los Angeles. He got out holding a knife and walked toward Los Angeles Police Department Officer Tony McBride. She repeatedly ordered him to drop the knife. He did not. She fired. The federal courts agreed that McBride had reason to fire her first four shots. The dispute is about the final two shots, fired after Hernandez had fallen to the ground. The Ninth Circuit, sitting en banc, ruled by a six to five vote that a jury could find those last two shots crossed the line, because in the roughly one-second pause between the fourth shot and the fifth, McBride, in the court's words, could have and should have reassessed the situation and possibly concluded that the threat had ended. The City of Los Angeles asked the Supreme Court to step in and shut the case down before trial. McBride is a former officer.",
+          "holding": "On June 22, 2026, the Supreme Court declined to hear the city's appeal. The refusal is not a ruling on the merits, and it does not set nationwide precedent the way a signed opinion would. What it does is leave the en banc Ninth Circuit decision in place and send the question of the last two shots to a Los Angeles jury, so the civil excessive force trial against the former officer may proceed. The episode paired the denial with the reassessment theme in the Olvera dissent: every application of deadly force must be independently justified at the moment it is used, and a threat that justified shots one through four does not automatically justify shots five and six. When a subject goes down, when the knife is no longer advancing, and when the gap between rounds gives an officer even a sliver of time to perceive a change, the law increasingly expects the officer to perceive it.",
+          "inPractice": "In the litigation that follows a fatal shooting, the fight will very often be about the final rounds, the ones fired after the subject started to fall. That is the fact pattern that survives summary judgment and reaches a jury. The Supreme Court's refusal to rescue the city shows that the immunity shield does not always hold.",
+          "trainIt": "Train officers to shoot to stop the threat and then to assess, not to empty a magazine on a plan formed a second and a half earlier. Shoot or strike to stop the threat, then read the threat again before the next application. Train command staff that the final rounds are where the case will be fought, and that under the Barnes totality framework the transition point, where a threat may have ended and force continued, is where courts are looking."
+        }
+      ]
+    },
+    {
+      "heading": "Other federal circuits",
+      "note": "Nothing from these courts in this episode. The episode did not say whether the other circuits were screened.",
+      "cases": []
+    },
+    {
+      "heading": "California",
+      "note": "Nothing from the California courts in this episode, and the episode did not say whether they were screened. Two California connections are worth noting. Smith v. Olvera is binding panel authority in the Ninth Circuit, which includes California, Oregon, and Washington. The McBride case arises from a Los Angeles Police Department shooting and, after the certiorari denial, is headed to a Los Angeles jury.",
+      "cases": []
+    }
+  ],
+  "applications": [
+    {
+      "title": "Baton strikes to the head are deadly force, full stop",
+      "body": "Smith v. Olvera does not change that, and the officer's immunity does not make head strikes a sanctioned tactic. Teach impact weapons to the deadly force standard and keep non-compliance responses off the head, neck, and throat unless a genuine deadly threat justifies lethal force."
+    },
+    {
+      "title": "An immunity win is not a green light",
+      "body": "The Ninth Circuit ruled on notice, not on reasonableness. The next officer, on slightly different facts or where a closer precedent exists, will not get the same benefit. Train to the constitutional standard, reasonableness under the totality of the circumstances, not to the immunity floor."
+    },
+    {
+      "title": "Narrate the threat in real time, on camera",
+      "body": "The Olvera case turned on one disputed hand movement in the dark and came within one judge of a jury trial. In low light on a prone subject, say hands, waistband, and stop reaching out loud while the camera rolls. Clean video and clean narration are what tip a close read in the officer's favor."
+    },
+    {
+      "title": "Reassess the instant a fleeing subject is stopped and down",
+      "body": "A person who just crashed into a tree may be dazed or incapacitated rather than arming himself. The question is no longer catch him; it is whether he is still a threat right now. Cover the hands, control the arms, and create the half second of assessment before force continues."
+    },
+    {
+      "title": "Every round must be justified on its own",
+      "body": "In McBride, shots one through four were justified and shots five and six, fired after the man fell, are going to a jury. Shoot to stop the threat, then assess. Command staff should expect the litigation after a fatal shooting to focus on the final rounds."
+    },
+    {
+      "title": "Run the Monday hypothetical",
+      "body": "Two officers pursue a reckless driver who clips a patrol car and crashes. He is pulled out, prone, unresponsive, in poor light, and one officer with a baton in hand thinks he sees a right hand move toward the waistband. Walk the squad through the impact weapon question, the reassessment question, and the documentation question."
+    }
+  ],
+  "episodeIds": [
+    "2026-08-08"
+  ],
+  "quiz": [
+    {
+      "q": "On what ground did the Smith v. Olvera majority grant qualified immunity?",
+      "options": [
+        "It found the baton strikes to the head were reasonable force",
+        "It found no prior case with close enough facts had put the officer on fair notice that the strikes were unlawful",
+        "It found Smith was armed",
+        "It found the body camera video resolved the hand movement dispute"
+      ],
+      "answer": 1,
+      "teach": "The majority ruled on the clearly established prong only. It did not say the head strikes were lawful, which is why the case is not a green light for head strikes."
+    },
+    {
+      "q": "What was Judge Thomas's central point in his Smith v. Olvera dissent?",
+      "options": [
+        "Baton strikes can never be deadly force",
+        "The officer should have used a Taser instead",
+        "Whether Smith was taking furtive or threatening actions, or was lying there incapacitated after the crash, was a disputed fact for a jury",
+        "The pursuit itself was unlawful"
+      ],
+      "answer": 2,
+      "teach": "Even assuming Smith was armed, deadly force, which includes baton strikes to the head, is allowed only when the suspect can reasonably be perceived to be taking furtive or threatening actions. Disputed facts about that belong to a jury, not to a judge deciding immunity on summary judgment."
+    },
+    {
+      "q": "What did the Supreme Court's June 22, 2026 action in the McBride case do?",
+      "options": [
+        "It held that the last two shots were unconstitutional",
+        "It declined to hear the City of Los Angeles's appeal, leaving the en banc Ninth Circuit ruling in place and sending the last two shots to a jury",
+        "It granted the former officer qualified immunity",
+        "It overruled Barnes v. Felix"
+      ],
+      "answer": 1,
+      "teach": "A certiorari denial is not a merits ruling and sets no nationwide precedent. It left standing the six to five en banc decision that a jury could find McBride should have reassessed in the roughly one-second pause between the fourth and fifth shots."
+    }
+  ]
+}

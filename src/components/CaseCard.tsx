@@ -8,6 +8,7 @@ const statusLabel: Record<BriefCase['status'], string> = {
   order: 'Order',
   'cert-denied': 'Review denied',
   'summary-order': 'Summary order',
+  unknown: 'Publication status not confirmed',
 };
 
 const settingLabel: Record<string, string> = {

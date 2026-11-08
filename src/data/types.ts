@@ -1,4 +1,4 @@
-export type CaseStatus = 'published' | 'unpublished' | 'order' | 'cert-denied' | 'summary-order';
+export type CaseStatus = 'published' | 'unpublished' | 'order' | 'cert-denied' | 'summary-order' | 'unknown';
 
 export interface BriefCase {
   id: string;
