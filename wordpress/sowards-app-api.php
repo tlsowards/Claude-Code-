@@ -44,8 +44,19 @@ if ( ! defined( 'SOWARDS_APP_TOKEN_DAYS' ) ) {
  * an Application Password never send it. Adding the challenge lets them log in normally.
  */
 add_filter( 'rest_post_dispatch', function ( $response ) {
-	if ( $response instanceof WP_REST_Response && 401 === $response->get_status() && empty( $_SERVER['PHP_AUTH_USER'] ) ) {
-		$response->header( 'WWW-Authenticate', 'Basic realm="WordPress REST API"' );
+	if ( ! empty( $_SERVER['PHP_AUTH_USER'] ) ) {
+		return $response;
+	}
+	$status = 0;
+	if ( $response instanceof WP_REST_Response ) {
+		$status = (int) $response->get_status();
+	} elseif ( is_wp_error( $response ) ) {
+		// Core hands permission failures to this filter as a WP_Error, not a response object.
+		$data   = $response->get_error_data();
+		$status = is_array( $data ) && isset( $data['status'] ) ? (int) $data['status'] : 0;
+	}
+	if ( 401 === $status && ! headers_sent() ) {
+		header( 'WWW-Authenticate: Basic realm="WordPress REST API"' );
 	}
 	return $response;
 } );
