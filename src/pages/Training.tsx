@@ -1,5 +1,5 @@
 import Seo from '../components/Seo';
-import { liveCourses, upcomingCourses, pricing, pricingNote, catalogNote, catalogFetchedAt, formatDate } from '../data/content';
+import { liveCourses, upcomingCourses, pricingNote, catalogNote, catalogFetchedAt, formatDate } from '../data/content';
 import { site } from '../config';
 
 export default function Training() {
@@ -62,18 +62,10 @@ export default function Training() {
         </>
       )}
 
-      <div className="section-title"><h2>Per-officer licensing, one course</h2></div>
+      <div className="section-title"><h2>Per-officer licensing for agencies</h2></div>
       <div className="card">
-        <div className="table-wrap">
-          <table>
-            <thead><tr><th>Plan</th><th>Seats</th><th>Price</th><th>Per officer</th></tr></thead>
-            <tbody>
-              {pricing.map((p) => (
-                <tr key={p.name}><td><strong>{p.name}</strong></td><td>{p.seats}</td><td>{p.price}</td><td>{p.perOfficer}</td></tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <p>Agencies license each online course per officer, and live training is scheduled per agency. Pricing is quoted for your agency, so contact Dr. Sowards for a quote on online seats or an in-person class.</p>
+        <p style={{ marginBottom: 0 }}><a className="btn" href={site.contactUrl}>Contact for pricing</a></p>
         <p className="meta" style={{ marginTop: 10, marginBottom: 0 }}>{pricingNote}</p>
       </div>
 

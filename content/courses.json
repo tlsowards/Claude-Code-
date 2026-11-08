@@ -8,9 +8,12 @@
       "format": "In-person, with POST expanded course outline.",
       "audience": "Institution and field staff authorized to carry chemical agents",
       "summary": "Deployment, decontamination, documentation, and liability for chemical agents in custody and field settings.",
-      "outcomes": ["Deploy and decontaminate correctly", "Document deployments defensibly"],
+      "outcomes": [
+        "Deploy and decontaminate correctly",
+        "Document deployments defensibly"
+      ],
       "status": "stc-review"
     }
   ],
-  "pricingNote": "Bundles are per course, asynchronous. Multi-course and multi-year discounts on request. Agency coordinators get a dashboard with every licensed course, one row per officer, with status and certificate links, plus roster export."
+  "pricingNote": "Multi-course and multi-year discounts on request. Agency coordinators get a dashboard with every licensed course, one row per officer, with status and certificate links, plus roster export."
 }

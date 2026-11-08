@@ -8,6 +8,7 @@ export default function PC835a() {
       <div className="eyebrow">Free quick reference</div>
       <h1>{pc835a.title}</h1>
       <p className="lead">{pc835a.subtitle}</p>
+      <img className="page-banner" src={`${import.meta.env.BASE_URL}images/art/pc835a-card.jpg`} alt="" width="1280" height="854" />
       <div className="photo-row">
         <img className="photo" src={`${import.meta.env.BASE_URL}images/training/ground-control-2.jpg`} alt="Ground control practice, officer controlling a resisting training partner" width="1050" height="1400" loading="lazy" />
         <img className="photo" src={`${import.meta.env.BASE_URL}images/training/standing-control-1.jpg`} alt="Standing control technique practice" width="1050" height="1400" loading="lazy" />

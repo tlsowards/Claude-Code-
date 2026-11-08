@@ -27,7 +27,7 @@ export default function Home() {
 
       {latest && (
         <Link to={`/briefs/${latest.id}`} className="card card-link card-with-image">
-          <img className="card-image" src={`${import.meta.env.BASE_URL}images/banner-use-of-force.jpg`} alt="" width="1280" height="720" loading="lazy" />
+          <img className="card-image" src={`${import.meta.env.BASE_URL}images/art/case-law-card.jpg`} alt="" width="1280" height="854" loading="lazy" />
           <div className="eyebrow">Latest weekly brief</div>
           <h2>{latest.title}</h2>
           <div className="meta">Decisions from {formatRange(latest.coverageStart, latest.coverageEnd)}</div>
@@ -45,18 +45,19 @@ export default function Home() {
           </Link>
         )}
         <Link to="/training" className="card card-link card-with-image">
-          <img className="card-image" src={`${import.meta.env.BASE_URL}images/banner-de-escalation.jpg`} alt="" width="1280" height="720" loading="lazy" />
+          <img className="card-image" src={`${import.meta.env.BASE_URL}images/training/mat-room-wide.jpg`} alt="" width="1050" height="1400" loading="lazy" />
           <div className="eyebrow">STC-certified training</div>
           <h3>Online courses with certificates</h3>
           <div className="meta">Twelve courses live on the course portal. Preview any course free, or sign in to pick up where you left off.</div>
         </Link>
         <Link to="/downing-the-duck" className="card card-link card-with-image">
-          <img className="card-image" src={`${import.meta.env.BASE_URL}images/banner-manipulation.jpg`} alt="" width="1280" height="720" loading="lazy" />
+          <img className="card-image" src={`${import.meta.env.BASE_URL}images/art/duck-hero.jpg`} alt="" width="1536" height="1024" loading="lazy" />
           <div className="eyebrow">Free framework</div>
           <h3>Downing the Duck</h3>
           <div className="meta">The six stages of staff manipulation in juvenile facilities, and where to stop it.</div>
         </Link>
-        <Link to="/reference/pc835a" className="card card-link">
+        <Link to="/reference/pc835a" className="card card-link card-with-image">
+          <img className="card-image" src={`${import.meta.env.BASE_URL}images/art/pc835a-card.jpg`} alt="" width="1280" height="854" loading="lazy" />
           <div className="eyebrow">Free reference</div>
           <h3>PC 835a after AB 392</h3>
           <div className="meta">Four framing errors corrected, and the documentation checklist.</div>
