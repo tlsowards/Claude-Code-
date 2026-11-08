@@ -1,4 +1,4 @@
-import type { WeeklyBrief, Episode, Course, LiveCourse, PricingTier, ResourceCategory, DuckStage } from './types';
+import type { WeeklyBrief, Episode, Course, LiveCourse, ResourceCategory, DuckStage } from './types';
 import episodesJson from '../../content/episodes.json';
 import coursesJson from '../../content/courses.json';
 import liveJson from '../../content/courses.live.json';
@@ -32,18 +32,6 @@ export const catalogFetchedAt: string | null = liveJson.fetchedAt as string | nu
 export const upcomingCourses = coursesJson.upcoming as Course[];
 export const pricingNote = coursesJson.pricingNote as string;
 export const catalogNote = coursesJson.snapshotNote as string;
-
-/** Pricing tiers, taken from the first live course that lists the full set of plans. */
-export const pricing: PricingTier[] = (() => {
-  const src = liveCourses.find((c) => c.plans.length >= 5)?.plans ?? [];
-  return src.map((p) => {
-    const [name, seats = ''] = p.name.split(': ');
-    const seatCount = Number((seats.match(/(\d+) Officer/) ?? [])[1] ?? (name.startsWith('Solo') ? 1 : 0));
-    const amount = Number(p.price.replace(/[^0-9.]/g, ''));
-    const per = seatCount > 0 && amount > 0 ? `$${Math.round(amount / seatCount)} per officer` : p.price === 'FREE' ? 'No seat' : '';
-    return { name: name.replace(/\s*\(Free\)/, ''), seats: seats || (p.price === 'FREE' ? 'Any course preview' : ''), price: p.price === 'FREE' ? '$0' : p.price, perOfficer: per };
-  });
-})();
 
 export const resourceIntro = resourcesJson.intro as string;
 export const resourceCategories = resourcesJson.categories as ResourceCategory[];

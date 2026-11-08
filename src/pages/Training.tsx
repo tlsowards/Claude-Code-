@@ -62,7 +62,7 @@ export default function Training() {
         </>
       )}
 
-      <div className="section-title"><h2>Per-officer licensing for agencies</h2></div>
+      <div className="section-title"><h2>Agency licensing</h2></div>
       <div className="card">
         <p>Agencies license each online course per officer, and live training is scheduled per agency. Pricing is quoted for your agency, so contact Dr. Sowards for a quote on online seats or an in-person class.</p>
         <p style={{ marginBottom: 0 }}><a className="btn" href={site.contactUrl}>Contact for pricing</a></p>

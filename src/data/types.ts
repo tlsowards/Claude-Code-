@@ -111,14 +111,6 @@ export interface LiveCourse {
   hours?: string;
 }
 
-export interface PricingTier {
-  name: string;
-  seats: string;
-  price: string;
-  perOfficer: string;
-  note?: string;
-}
-
 export interface ResourceLink {
   title: string;
   url: string;
