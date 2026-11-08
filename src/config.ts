@@ -1,4 +1,8 @@
 // Site-wide configuration. Values prefixed with VITE_ can be overridden in a .env file.
+// The deploy workflow passes every VITE_ variable through even when the repository variable is
+// unset, which arrives as an empty string, so empty counts as "not set".
+const env = (value: string | undefined, fallback: string) => (value && value.trim() ? value.trim() : fallback);
+
 export const site = {
   name: 'Sowards Consulting',
   appName: 'Sowards Consulting Training',
@@ -15,15 +19,15 @@ export const site = {
   loginUrl: 'https://sowardsconsulting.com/dashboard/',
   location: 'Rancho Cordova, CA, serving agencies statewide',
   // MailerLite embedded form action URL. Leave empty until the form is created in MailerLite.
-  mailerLiteFormAction: import.meta.env.VITE_MAILERLITE_FORM_ACTION ?? '',
+  mailerLiteFormAction: env(import.meta.env.VITE_MAILERLITE_FORM_ACTION, ''),
   // Public URL the app is served from. Used for share links and the podcast feed.
-  publicUrl: import.meta.env.VITE_PUBLIC_URL ?? 'https://app.sowardsconsulting.com',
+  publicUrl: env(import.meta.env.VITE_PUBLIC_URL, 'https://app.sowardsconsulting.com'),
   // Base URL where podcast MP3 files are hosted (Bunny Stream or another host).
-  audioBaseUrl: import.meta.env.VITE_AUDIO_BASE_URL ?? '',
+  audioBaseUrl: env(import.meta.env.VITE_AUDIO_BASE_URL, ''),
   // WordPress app API (see wordpress/sowards-app-api.php).
-  apiBase: import.meta.env.VITE_API_BASE ?? 'https://sowardsconsulting.com/wp-json/sowards/v1',
+  apiBase: env(import.meta.env.VITE_API_BASE, 'https://sowardsconsulting.com/wp-json/sowards/v1'),
   // Where "Start your free 30 days" sends people: the LifterLMS membership checkout on the site.
-  subscribeUrl: import.meta.env.VITE_SUBSCRIBE_URL ?? 'https://sowardsconsulting.com/membership/sowards-briefing-room/',
+  subscribeUrl: env(import.meta.env.VITE_SUBSCRIBE_URL, 'https://sowardsconsulting.com/membership/sowards-briefing-room/'),
 };
 
 /** Subscription offer and whether the paywall is enforced. */

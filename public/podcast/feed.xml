@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Use of Force Case Law Update</title>
-    <link>https://app.sowardsconsulting.com/podcast</link>
-    <atom:link href="https://app.sowardsconsulting.com/podcast/feed.xml" rel="self" type="application/rss+xml" />
+    <link>/Claude-Code-/podcast</link>
+    <atom:link href="/Claude-Code-/podcast/feed.xml" rel="self" type="application/rss+xml" />
     <language>en-us</language>
     <description>A weekly walk through the use of force decisions that matter to officers, custody staff, supervisors, and trainers. Federal first, then California, then application. Hosted by Dr. Timothy Sowards of Sowards Consulting.</description>
     <itunes:author>Dr. Timothy Sowards</itunes:author>
     <itunes:owner><itunes:name>Dr. Timothy Sowards</itunes:name><itunes:email>tim@sowardsconsulting.com</itunes:email></itunes:owner>
-    <itunes:image href="https://app.sowardsconsulting.com/podcast/cover.png" />
+    <itunes:image href="/Claude-Code-/podcast/cover.png" />
     <itunes:category text="Government" />
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <lastBuildDate>Sun, 01 Nov 2026 20:00:00 GMT</lastBuildDate>
     <item>
       <title>Use of Force Case Law Update: October 26 to November 1, 2026</title>
-      <link>https://app.sowardsconsulting.com/podcast/2026-11-01</link>
-      <guid isPermaLink="true">https://app.sowardsconsulting.com/podcast/2026-11-01</guid>
+      <link>/Claude-Code-/podcast/2026-11-01</link>
+      <guid isPermaLink="true">/Claude-Code-/podcast/2026-11-01</guid>
       <pubDate>Sun, 01 Nov 2026 20:00:00 GMT</pubDate>
       <description>United States v. Zamora on when a seizure starts, Collazo v. Otsego County on control holds at a shots-fired call, Merrill v. Seagraves on a second Taser cycle, People v. Ball, People v. Steele, People v. Hicks on prone restraint, and Turner v. Sims on supervision language.</description>
       <itunes:summary>United States v. Zamora on when a seizure starts, Collazo v. Otsego County on control holds at a shots-fired call, Merrill v. Seagraves on a second Taser cycle, People v. Ball, People v. Steele, People v. Hicks on prone restraint, and Turner v. Sims on supervision language.</itunes:summary>
@@ -27,8 +27,8 @@
     </item>
     <item>
       <title>Use of Force Case Law Update: October 19 to 25, 2026</title>
-      <link>https://app.sowardsconsulting.com/podcast/2026-10-25</link>
-      <guid isPermaLink="true">https://app.sowardsconsulting.com/podcast/2026-10-25</guid>
+      <link>/Claude-Code-/podcast/2026-10-25</link>
+      <guid isPermaLink="true">/Claude-Code-/podcast/2026-10-25</guid>
       <pubDate>Sun, 25 Oct 2026 20:00:00 GMT</pubDate>
       <description>Astorga v. Villanueva on supervisor liability for crowd control, Kilnapp v. City of Cleveland on an officer shot by her partner, Bond v. Sheriff of Ottawa County and a $33 million jail death verdict, Garcia v. United States on a hostage killed in a rescue, and two published California search decisions.</description>
       <itunes:summary>Astorga v. Villanueva on supervisor liability for crowd control, Kilnapp v. City of Cleveland on an officer shot by her partner, Bond v. Sheriff of Ottawa County and a $33 million jail death verdict, Garcia v. United States on a hostage killed in a rescue, and two published California search decisions.</itunes:summary>
@@ -39,8 +39,8 @@
     </item>
     <item>
       <title>Use of Force Case Law Update: October 12 to 18, 2026</title>
-      <link>https://app.sowardsconsulting.com/podcast/2026-10-18</link>
-      <guid isPermaLink="true">https://app.sowardsconsulting.com/podcast/2026-10-18</guid>
+      <link>/Claude-Code-/podcast/2026-10-18</link>
+      <guid isPermaLink="true">/Claude-Code-/podcast/2026-10-18</guid>
       <pubDate>Sun, 18 Oct 2026 20:00:00 GMT</pubDate>
       <description>Vision Bank v. Avery and Burke v. Pitts on deadly force and hostile motion, Rockett v. Eighmy on locking children in holding cells, Martinez v. Hidalgo County, Bailey v. Michigan Department of Corrections, and Estate of Stinson v. Streicher.</description>
       <itunes:summary>Vision Bank v. Avery and Burke v. Pitts on deadly force and hostile motion, Rockett v. Eighmy on locking children in holding cells, Martinez v. Hidalgo County, Bailey v. Michigan Department of Corrections, and Estate of Stinson v. Streicher.</itunes:summary>
@@ -51,8 +51,8 @@
     </item>
     <item>
       <title>Use of Force Case Law Update: October 5 to 11, 2026</title>
-      <link>https://app.sowardsconsulting.com/podcast/2026-10-11</link>
-      <guid isPermaLink="true">https://app.sowardsconsulting.com/podcast/2026-10-11</guid>
+      <link>/Claude-Code-/podcast/2026-10-11</link>
+      <guid isPermaLink="true">/Claude-Code-/podcast/2026-10-11</guid>
       <pubDate>Sun, 11 Oct 2026 20:00:00 GMT</pubDate>
       <description>Navejas v. City of El Paso on a single Taser deployment against a 70-year-old man with dementia, Fischer v. Phillips on shooting into a slow-moving car, Byrum v. Knox County on jail medical response, and the Supreme Court's denial in Shelby v. Manning.</description>
       <itunes:summary>Navejas v. City of El Paso on a single Taser deployment against a 70-year-old man with dementia, Fischer v. Phillips on shooting into a slow-moving car, Byrum v. Knox County on jail medical response, and the Supreme Court's denial in Shelby v. Manning.</itunes:summary>
@@ -63,8 +63,8 @@
     </item>
     <item>
       <title>Use of Force Case Law Update: September 26 to October 3, 2026</title>
-      <link>https://app.sowardsconsulting.com/podcast/2026-10-03</link>
-      <guid isPermaLink="true">https://app.sowardsconsulting.com/podcast/2026-10-03</guid>
+      <link>/Claude-Code-/podcast/2026-10-03</link>
+      <guid isPermaLink="true">/Claude-Code-/podcast/2026-10-03</guid>
       <pubDate>Sat, 03 Oct 2026 20:00:00 GMT</pubDate>
       <description>Edwards v. Brown on pepper spray decontamination and grievance tolling, Mason v. Talley on restraint to a fixed object, Hyttinen v. Frantti on warrant entry, Fambrough v. City of East Cleveland on orders from the top, and Andrade v. Collier County Sheriff. The October 4 follow-up sweep of the circuits, the Supreme Court order lists, and the California Court of Appeal is folded into the written brief for this week.</description>
       <itunes:summary>Edwards v. Brown on pepper spray decontamination and grievance tolling, Mason v. Talley on restraint to a fixed object, Hyttinen v. Frantti on warrant entry, Fambrough v. City of East Cleveland on orders from the top, and Andrade v. Collier County Sheriff. The October 4 follow-up sweep of the circuits, the Supreme Court order lists, and the California Court of Appeal is folded into the written brief for this week.</itunes:summary>
