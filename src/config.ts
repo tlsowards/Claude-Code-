@@ -28,7 +28,7 @@ export const site = {
   apiBase: env(import.meta.env.VITE_API_BASE, 'https://sowardsconsulting.com/wp-json/sowards/v1'),
   // Podcast directory listings. Leave a value empty until the show is listed there.
   spotifyUrl: 'https://open.spotify.com/show/2pARhndpTvYYJBThfrITl9',
-  applePodcastsUrl: '',
+  applePodcastsUrl: 'https://podcasts.apple.com/us/podcast/use-of-force-case-law-update/id6832350269',
   // Where "Start your free 30 days" sends people: the LifterLMS membership checkout on the site.
   subscribeUrl: env(import.meta.env.VITE_SUBSCRIBE_URL, 'https://sowardsconsulting.com/membership/sowards-briefing-room/'),
 };
