@@ -61,6 +61,30 @@ add_filter( 'rest_post_dispatch', function ( $response ) {
 	return $response;
 } );
 
+/**
+ * Admin API access with a header, for automation that cannot use HTTP Basic auth.
+ * The X-Sowards-App-Key header carries one of an administrator's WordPress Application Passwords.
+ * It is checked with WordPress's own application-password verification, so nothing secret is stored
+ * here and the key can be revoked at any time from Users, Profile, Application Passwords.
+ */
+add_filter( 'determine_current_user', function ( $user_id ) {
+	if ( $user_id ) {
+		return $user_id;
+	}
+	$key = isset( $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) ? trim( (string) $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) : '';
+	if ( '' === $key || ! function_exists( 'wp_authenticate_application_password' ) ) {
+		return $user_id;
+	}
+	$admins = get_users( array( 'role' => 'administrator', 'number' => 10, 'fields' => array( 'ID', 'user_login' ) ) );
+	foreach ( $admins as $admin ) {
+		$check = wp_authenticate_application_password( null, $admin->user_login, $key );
+		if ( $check instanceof WP_User ) {
+			return (int) $check->ID;
+		}
+	}
+	return $user_id;
+}, 20 );
+
 add_action( 'rest_api_init', function () {
 	register_rest_route( 'sowards/v1', '/app-login', array(
 		'methods'             => 'POST',
