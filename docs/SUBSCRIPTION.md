@@ -13,6 +13,17 @@ The subscription is sold on sowardsconsulting.com through LifterLMS and Stripe, 
 
 The paywall is **off** until you turn it on (step 4), so the live app keeps working while the site side is set up.
 
+## Live identifiers
+
+| Item | Value |
+|---|---|
+| Membership | Sowards' Briefing Room, post ID 9639, `https://sowardsconsulting.com/membership/sowards-briefing-room/` |
+| Monthly plan | access plan 9641, $9.99 every month, 30-day free trial, `https://sowardsconsulting.com/purchase/?plan=9641` |
+| Annual plan | access plan 9642, $59.99 every year, 30-day free trial, `https://sowardsconsulting.com/purchase/?plan=9642` |
+| Gateways offered at checkout | Stripe and Manual (manual is the agency-invoice path; students should pick Stripe) |
+
+Created November 7, 2026 through the LifterLMS REST API. The steps below describe how to recreate them by hand.
+
 ## 1. Create the membership and plan in LifterLMS
 
 In WordPress:

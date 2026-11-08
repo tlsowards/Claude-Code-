@@ -27,7 +27,7 @@
 
 // ---------------------------------------------------------------- CONFIG
 if ( ! defined( 'SOWARDS_APP_MEMBERSHIP_ID' ) ) {
-	define( 'SOWARDS_APP_MEMBERSHIP_ID', 0 ); // set after the membership is created
+	define( 'SOWARDS_APP_MEMBERSHIP_ID', 9639 ); // Sowards' Briefing Room membership on sowardsconsulting.com
 }
 if ( ! defined( 'SOWARDS_APP_ORIGINS' ) ) {
 	// Production origins only. Add http://localhost:5173 while developing, and remove it again.
