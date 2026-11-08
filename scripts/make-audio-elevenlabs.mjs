@@ -89,4 +89,4 @@ execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0'
   '-metadata', `title=${title}`, '-metadata', 'artist=Dr. Timothy Sowards, Sowards Consulting', '-metadata', 'album=Use of Force Case Law Update',
   '-metadata', `date=${brief.date.slice(0, 4)}`, '-metadata', 'genre=Podcast', '-id3v2_version', '3', out]);
 const dur = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', out]).toString().trim();
-console.log(`Wrote ${out} (${Math.round(Number(dur) / 60)} min ${Math.round(Number(dur) % 60)} s)`);
+console.log(`Wrote ${out} (${Math.floor(Number(dur) / 60)} min ${Math.round(Number(dur) % 60)} s)`);
