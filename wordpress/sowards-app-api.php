@@ -86,21 +86,18 @@ function sowards_app_key_attempts( $record = false ) {
 	return $n >= 10;
 }
 
-/** Why a key did or did not work. Booleans only; never the key. */
+/** Why a key did or did not work. Booleans only; never the key, never counts or IDs. */
 function sowards_app_key_diagnose() {
 	$key  = isset( $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) ? trim( (string) $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) : '';
 	$uri  = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '';
 	$rest = 0 === strpos( $uri, '/' . rest_get_url_prefix() . '/' ) || isset( $_GET['rest_route'] );
 	return array(
 		'headerPresent' => '' !== $key,
-		'headerLength'  => strlen( $key ),
 		'restRequest'   => $rest,
 		'rateLimited'   => sowards_app_key_attempts( false ),
-		'appPasswords'  => function_exists( 'wp_is_application_passwords_available' ) ? wp_is_application_passwords_available() : null,
-		'ssl'           => is_ssl(),
-		'admins'        => count( get_users( array( 'role' => 'administrator', 'number' => 10, 'fields' => 'ID' ) ) ),
+		'appPasswords'  => function_exists( 'wp_is_application_passwords_available' ) ? (bool) wp_is_application_passwords_available() : false,
+		'ssl'           => (bool) is_ssl(),
 		'matched'       => (bool) sowards_app_key_user(),
-		'currentUser'   => get_current_user_id(),
 	);
 }
 
@@ -111,7 +108,7 @@ function sowards_app_key_user() {
 	}
 	$resolved = false;
 	$key = isset( $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) ? trim( (string) $_SERVER['HTTP_X_SOWARDS_APP_KEY'] ) : '';
-	if ( '' === $key || ! function_exists( 'wp_authenticate_application_password' ) ) {
+	if ( '' === $key || ! class_exists( 'WP_Application_Passwords' ) ) {
 		return null;
 	}
 	$uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '';
