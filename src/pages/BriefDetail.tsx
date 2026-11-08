@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/Seo';
-import CaseCard from '../components/CaseCard';
+import CaseCard, { statusLabel } from '../components/CaseCard';
 import Quiz from '../components/Quiz';
 import Paywall from '../components/Paywall';
 import { getBrief, getEpisode, formatRange, formatDate, previewCaseId } from '../data/content';
@@ -135,7 +135,7 @@ export default function BriefDetail() {
             <tbody>
               {brief.sections.flatMap((s) => s.cases).map((c) => (
                 <tr key={c.id}>
-                  <td><strong>{c.name}</strong><br /><span className="meta">{c.court}, {c.decided}{c.status !== 'published' ? ' (unpublished)' : ''}</span></td>
+                  <td><strong>{c.name}</strong><br /><span className="meta">{c.court}, {c.decided}{c.status !== 'published' ? ` (${statusLabel[c.status].toLowerCase()})` : ''}</span></td>
                   <td>{c.inPractice}</td>
                   <td>{c.trainIt}</td>
                 </tr>
