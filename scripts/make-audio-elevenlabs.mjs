@@ -3,7 +3,8 @@
 //   ELEVENLABS_API_KEY=... node scripts/make-audio-elevenlabs.mjs <brief id> --voice <voice id> [--model eleven_v4] [--out dir]
 // The text is split at paragraph boundaries into requests under 9,000 characters. Each request carries
 // the neighbouring text so the voice stays consistent across the joins, then ffmpeg concatenates the
-// parts and writes ID3 tags. Requires ffmpeg on the PATH. The key may be a placeholder when a proxy
+// parts and writes ID3 tags. The streaming endpoint is used so long chunks start returning audio
+// at once instead of making a proxy wait minutes for the first byte. Requires ffmpeg on the PATH. The key may be a placeholder when a proxy
 // injects the real one.
 import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
@@ -49,7 +50,7 @@ for (let i = 0; i < chunks.length; i++) {
   const attempts = 3;
   for (let attempt = 1; attempt <= attempts; attempt++) {
     try {
-      r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voice}?output_format=mp3_44100_128`, {
+      r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voice}/stream?output_format=mp3_44100_128`, {
         method: 'POST',
         headers: { 'xi-api-key': apiKey, 'Content-Type': 'application/json', Accept: 'audio/mpeg' },
         body: JSON.stringify(body),
