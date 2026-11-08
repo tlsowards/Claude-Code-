@@ -35,6 +35,8 @@ Episodes are read in Dr. Sowards' own voice. The standard is the ElevenLabs prof
 
 ## Publish a podcast episode
 
+One command does the whole thing when the site episode already exists: `scripts/publish-episode.sh <brief id> <site episode id>` builds the narration, renders it in Dr. Sowards' voice, uploads the MP3 to the site's media library, points the site's episode at it with episode notes, and adds the entry to `content/episodes.json`. Then run `npm run build` and commit. The manual steps are:
+
 1. Upload the MP3 to the WordPress media library on sowardsconsulting.com (Media, Add New) and copy its file URL.
 2. Add an entry to `content/episodes.json` with `id`, `title`, `date`, `description`, `audioUrl` (the media library URL), `bytes` (file size in bytes), `durationSeconds`, and `briefId`.
 3. Run `npm run build`. The feed at `public/podcast/feed.xml` is regenerated.
