@@ -11,6 +11,10 @@ export default function Training() {
       <p className="lead">
         Online courses are 3 to 4 hours, asynchronous, with avatar-led video lessons, knowledge checks, a written skill test, and a graded final. Students receive a certificate with the STC course number for agency credit filing. Preview any course free.
       </p>
+      <div className="photo-row">
+        <img className="photo wide" src={`${import.meta.env.BASE_URL}images/training/classroom.jpg`} alt="Dr. Sowards teaching a probation training class" width="1050" height="1400" loading="lazy" />
+        <img className="photo wide" src={`${import.meta.env.BASE_URL}images/training/class-group.jpg`} alt="Defensive tactics instructor course class photo" width="1050" height="1400" loading="lazy" />
+      </div>
       <div className="btn-row">
         <a className="btn" href={site.dashboardUrl}>Sign in to my courses</a>
         <a className="btn secondary" href={site.managerDashboardUrl}>Agency coordinator dashboard</a>

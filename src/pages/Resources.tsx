@@ -9,6 +9,11 @@ export default function Resources() {
       <div className="eyebrow">Resource center</div>
       <h1>Resources for trainers</h1>
       <p className="lead">{resourceIntro}</p>
+      <div className="photo-row">
+        <img className="photo" src={`${import.meta.env.BASE_URL}images/training/training-gear.jpg`} alt="Training suit and protective gear hanging in the mat room" width="1050" height="1400" loading="lazy" />
+        <img className="photo" src={`${import.meta.env.BASE_URL}images/training/mat-room-wide.jpg`} alt="Officers training on the mats in a wide shot of the room" width="1050" height="1400" loading="lazy" />
+        <img className="photo" src={`${import.meta.env.BASE_URL}images/training/instructor-stance.jpg`} alt="Instructor demonstrating a ready stance" width="1050" height="1400" loading="lazy" />
+      </div>
       <nav className="toc" aria-label="Categories">
         {resourceCategories.map((c) => <a key={c.id} href={`#${c.id}`}>{c.title}</a>)}
       </nav>

@@ -8,6 +8,11 @@ export default function PC835a() {
       <div className="eyebrow">Free quick reference</div>
       <h1>{pc835a.title}</h1>
       <p className="lead">{pc835a.subtitle}</p>
+      <div className="photo-row">
+        <img className="photo" src={`${import.meta.env.BASE_URL}images/training/ground-control-2.jpg`} alt="Ground control practice, officer controlling a resisting training partner" width="1050" height="1400" loading="lazy" />
+        <img className="photo" src={`${import.meta.env.BASE_URL}images/training/standing-control-1.jpg`} alt="Standing control technique practice" width="1050" height="1400" loading="lazy" />
+        <img className="photo" src={`${import.meta.env.BASE_URL}images/training/ground-control-3.jpg`} alt="Ground control practice from the side" width="1050" height="1400" loading="lazy" />
+      </div>
       {pc835a.intro.map((p, i) => <p key={i}>{p}</p>)}
       {pc835a.sections.map((s) => (
         <div className="card" key={s.title}>
