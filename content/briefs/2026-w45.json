@@ -4,17 +4,17 @@
   "date": "2026-11-07",
   "coverageStart": "2026-11-02",
   "coverageEnd": "2026-11-07",
-  "summary": "One published Ninth Circuit force opinion this week, and it is a teaching case. In Johnson v. Adgar, filed November 2, a split panel held that a San Jose officer who fired a 40mm foam baton round indiscriminately into a retreating protest crowd used excessive force, then granted him qualified immunity because no earlier case squarely covered a mixed crowd that had thrown objects at police. The same panel sent a question to the California Supreme Court about the Bane Act, the state civil rights statute, that could leave California officers exposed under state law even when they win federal immunity. An unpublished memorandum from the week before, Astorga v. Villanueva, shows the other side of the same coin: supervisory liability for a sheriff over less lethal munitions at a 2020 protest, reversed on notice grounds. No Supreme Court merits decision and no published California force decision were found.",
+  "summary": "One published Ninth Circuit force opinion this week, and it is a teaching case. In Johnson v. Adgar, filed November 2, a split panel held that a San Jose officer who fired a 40mm foam baton round indiscriminately into a retreating protest crowd used excessive force, then granted him qualified immunity because no earlier case squarely covered a mixed crowd that had thrown objects at police. The same panel sent a question to the California Supreme Court about the Bane Act, the state civil rights statute, that could leave California officers exposed under state law even when they win federal immunity. It pairs with Astorga v. Villanueva, the supervisory liability memorandum covered in full in the October 25 brief. No Supreme Court merits decision and no published California force decision were found.",
   "coverage": [
     "Checked: the Ninth Circuit's published opinions through the government's official opinion database, which carried the Johnson v. Adgar opinion in full. The companion certification order was not available there and was not read; the certified question is quoted from the court's own summary filed with the opinion.",
-    "The Ninth Circuit's own website was serving an expired security certificate on November 8 and could not be read safely. The Astorga v. Villanueva memorandum was not available through the official database either, so that case is reported from press coverage only and is marked accordingly.",
+    "The Ninth Circuit's own website was serving an expired security certificate on November 8 and could not be read safely.",
     "No Supreme Court merits decision on police force was found for the week, and the October order lists were not reread line by line. References were seen to an Eleventh Circuit qualified immunity decision on a refusal of medical care and to a Nevada baton case, but their filing dates could not be confirmed, so they are not covered.",
     "Unpublished circuit memoranda and the state high courts in Washington and Oregon were not screened exhaustively. Something may have been filed that was missed."
   ],
   "sections": [
     {
       "heading": "Ninth Circuit",
-      "note": "One published opinion, with a partial dissent and a companion certification order, and one unpublished memorandum from the week before that belongs next to it.",
+      "note": "One published opinion, with a partial dissent and a companion certification order. Read it next to Astorga v. Villanueva, the unpublished October 21 memorandum covered in full in the October 25 brief: there the Ninth Circuit granted former Sheriff Villanueva qualified immunity on a supervisory liability theory over less lethal munitions at a 2020 protest, because no earlier case put a supervisor who was not on scene and ratified nothing on notice. Johnson is the analysis for the officer at the trigger; Astorga is the analysis for the command staff above him.",
       "cases": [
         {
           "id": "johnson-v-adgar",
@@ -36,25 +36,6 @@
           "notDecided": "The Bane Act claim. The panel held that a Bane Act claim has the same elements as a section 1983 claim plus specific intent, so the constitutional violation it found carries over, but it did not decide whether Adgar violated a clearly delineated and plainly applicable right under state law. It certified that question to the California Supreme Court, told the district court not to recalculate attorney fees until the panel decides the state claim, and held the mandate. The jury's battery and negligence verdicts were not challenged on appeal.",
           "inPractice": "A launcher round that hits the wrong person is not an accident outside the Fourth Amendment. If the officer fired on purpose at a group, everyone in the group is an object of that force. The jury's finding that the fire was indiscriminate decided this case, and the court said it did not matter that Adgar had been ordered to shoot only bottle throwers if the jury could find he did not follow that order. The officer won immunity only because no earlier case involved a crowd that had itself thrown objects at police. That protection is gone for the next Ninth Circuit officer who fires a launcher into a mixed, retreating crowd, because this opinion is now the case on point. In California, a federal immunity win may not end the exposure if the California Supreme Court reads the Bane Act standard differently.",
           "trainIt": "Teach the 40mm launcher as a point target tool, never an area tool. The articulation for every round is a named person doing a specific act, the distance, the expected point of impact, and who is behind and beside the target. If the operator cannot identify the target, the operator holds. Use a spotter or team leader to designate the target out loud before the launch, which separates the decision from the trigger and creates a record. Train that a second volley from a few people is not a blank check for area fire at everyone; it helped this officer on notice, not on reasonableness. Train supervisors to document the whole picture, including the hours of peaceful protest, the skirmish line, and the composition of the crowd, because the totality is the test. For command staff: a policy that leans on qualified immunity is written for the lawyers, not the street. Train to the first prong. Review less lethal policy language so impact launchers are separated from area effect dispersal tools, and brief the city attorney and risk manager on the Bane Act certification now."
-        },
-        {
-          "id": "astorga-v-villanueva",
-          "name": "Astorga v. Villanueva",
-          "court": "Ninth Circuit (from the Central District of California)",
-          "courtKey": "ca9",
-          "docket": "24-4061",
-          "decided": "October 21, 2026",
-          "status": "unpublished",
-          "topic": "Supervisory liability of a sheriff for less lethal munitions at a protest",
-          "settings": [
-            "supervisors"
-          ],
-          "caution": "This memorandum could not be read from an official source for this brief. Everything here comes from press coverage, including the Metropolitan News-Enterprise, the Davis Vanguard, and Bloomberg Law. It is unpublished and not precedent. Confirm it with counsel before relying on any detail. It was filed the week before this brief's window and is included as a companion to Johnson.",
-          "facts": "As reported, Christina Astorga and Hugo Padilla alleged that Los Angeles County sheriff's deputies fired less lethal projectiles at them as they retreated after an unlawful assembly declaration at a 2020 protest in South Los Angeles, striking and injuring them. They sued former Sheriff Alex Villanueva on a supervisory liability theory. The district court denied him qualified immunity.",
-          "holding": "Reversed, as reported, in an unpublished memorandum by a panel of Judges R. Nelson and Desai and a visiting district judge. The plaintiffs did not identify an earlier decision establishing that the sheriff's own supervisory conduct violated their rights. The panel distinguished Larez v. City of Los Angeles, the Ninth Circuit's chief-of-police case, noting that Villanueva had not dismissed complaints the way the chief there did.",
-          "notDecided": "Whether the deputies' conduct on the line was constitutional. The memorandum, as reported, addressed only the sheriff's notice as a supervisor.",
-          "inPractice": "The deputies at the front face one analysis. The command staff who set policy and supervise face another, and the notice requirement is harder for a plaintiff to meet at the top of the chain. That is not comfort. It means the documented decisions about authorization, supervision, complaint handling, and after-action review are the record that will be tested.",
-          "trainIt": "For command staff, keep the paper. Authorization for less lethal deployment, who was designated to give it, what the supervision looked like during the event, how complaints were handled afterward, and what changed as a result. Larez turned on a chief who brushed off complaints; the sheriff here was distinguished because he did not."
         }
       ]
     },
@@ -97,7 +78,7 @@
     },
     {
       "title": "Command staff, keep the paper",
-      "body": "Astorga shows that liability at the top of the chain is hard for a plaintiff to prove, and that the record of authorization, supervision, complaint handling, and after-action review is what gets tested. Document those decisions as they are made."
+      "body": "Astorga v. Villanueva, covered October 25, shows that liability at the top of the chain is hard for a plaintiff to prove, and that the record of authorization, supervision, complaint handling, and after-action review is what gets tested. Document those decisions as they are made, and never announce that nobody will be disciplined."
     }
   ],
   "episodeIds": [
