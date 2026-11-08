@@ -391,7 +391,7 @@ if ( ! defined( 'SOWARDS_BRIEFING_ROOM_PAGE_ID' ) ) {
 	define( 'SOWARDS_BRIEFING_ROOM_PAGE_ID', 6568 ); // the "Sowards' Briefing Room" page (/use-of-force-case-law/)
 }
 if ( ! defined( 'SOWARDS_APP_SUBSCRIBE_URL' ) ) {
-	define( 'SOWARDS_APP_SUBSCRIBE_URL', 'https://tlsowards.github.io/Claude-Code-/subscribe' );
+	define( 'SOWARDS_APP_SUBSCRIBE_URL', 'https://app.sowardsconsulting.com/subscribe' );
 }
 
 /** True when the given user may read Briefing Room content. */
