@@ -26,6 +26,9 @@ export const site = {
   audioBaseUrl: env(import.meta.env.VITE_AUDIO_BASE_URL, ''),
   // WordPress app API (see wordpress/sowards-app-api.php).
   apiBase: env(import.meta.env.VITE_API_BASE, 'https://sowardsconsulting.com/wp-json/sowards/v1'),
+  // Podcast directory listings. Leave a value empty until the show is listed there.
+  spotifyUrl: 'https://open.spotify.com/show/2pARhndpTvYYJBThfrITl9',
+  applePodcastsUrl: '',
   // Where "Start your free 30 days" sends people: the LifterLMS membership checkout on the site.
   subscribeUrl: env(import.meta.env.VITE_SUBSCRIBE_URL, 'https://sowardsconsulting.com/membership/sowards-briefing-room/'),
 };

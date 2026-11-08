@@ -37,6 +37,8 @@ export default function Podcast() {
         </div>
       </div>
       <div className="btn-row">
+        {site.spotifyUrl && <a className="btn secondary" href={site.spotifyUrl} target="_blank" rel="noopener noreferrer">Listen on Spotify</a>}
+        {site.applePodcastsUrl && <a className="btn secondary" href={site.applePodcastsUrl} target="_blank" rel="noopener noreferrer">Listen on Apple Podcasts</a>}
         <a className="btn secondary" href={feedUrl}>RSS feed</a>
         <Link className="btn secondary" to="/subscribe">Get new episodes by email</Link>
       </div>
