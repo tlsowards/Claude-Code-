@@ -2,7 +2,7 @@
 
 Amendment language for the seven changes correctable without new policy
 
-Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 11.
+Sacramento County Probation Department, Youth Detention Facility. Drawn from gap register Revision 12.
 
 > This is not legal advice. It is proposed amendment language prepared for internal remediation planning. Statutory questions, and every item in a *Before adoption* block, route to County Counsel.
 
@@ -25,10 +25,10 @@ Produced and read directly:
 - OO 1352 Classification, eff. 12/09/2019, rev. 02/27/2020 (produced and read in full in Revision 9)
 - Title 15, Minimum Standards for Juvenile Facilities, eff. 01/01/2019
 - OO 1453 Sexual Assault, eff. 04/25/2013, rev. 12/09/2019 (produced and read in full in Revision 10)
+- OO 1352.5 Transgender and Intersex Youth (produced 10/30/2026)
 
 Not produced. Every provision cited in these documents traces to the register, which traces to the earlier review that read them. Confirm each section number and its wording against the PDF before any of this is circulated:
 
-- OO 1352.5 Transgender and Intersex Youth
 - PREA Policy and Procedure, Juvenile Institutions
 - Internal Affairs Administrative Investigations
 

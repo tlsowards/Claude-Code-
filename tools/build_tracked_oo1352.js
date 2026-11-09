@@ -18,6 +18,7 @@ const {
   ShadingType, BorderStyle, Header, Footer, PageNumber,
 } = require('docx');
 const { TYPE } = require('./docx_style');
+const changes = require('./changes');
 
 const ROOT = path.dirname(__dirname);
 const SRC = path.join(ROOT, 'drafts', 'oo1352-tracked.json');
@@ -148,6 +149,9 @@ if (unlabelled.length) {
   process.exit(1);
 }
 
+changes.check((data.provisions || []).filter((pr) => pr.change)
+  .map((pr) => ({ cite: pr.cite, change: pr.change, label: pr.label })));
+
 let revId = 2000;
 const txt = (t, o = {}) => new TextRun({ text: String(t), size: o.size || TYPE.BODY,
   bold: !!o.bold, italics: !!o.italics, color: o.color || INK });
@@ -155,6 +159,13 @@ function runs(t, o = {}) {
   return String(t).split(/\*\*(.+?)\*\*/g)
     .map((part, i) => txt(part, Object.assign({}, o, { bold: i % 2 === 1 })));
 }
+// Inserted text is highlighted as well as tracked. Word opens a document in
+// Simple Markup by default, which hides deletions and shows the result, so a
+// reader who does not switch to All Markup sees no strikethrough at all and
+// cannot tell the recommended wording from the order's own. The highlight
+// survives every view, and survives accepting the change, so the department can
+// see at a glance what this review put in. It is removed by selecting the text
+// and clearing the highlight once the amendment is adopted.
 function revisionRuns(list) {
   return list.map(([kind, text]) => {
     revId += 1;
@@ -162,7 +173,8 @@ function revisionRuns(list) {
       return new DeletedTextRun({ text, id: revId, author: AUTHOR, date: DATE, size: TYPE.BODY });
     }
     if (kind === 'ins') {
-      return new InsertedTextRun({ text, id: revId, author: AUTHOR, date: DATE, size: TYPE.BODY });
+      return new InsertedTextRun({ text, id: revId, author: AUTHOR, date: DATE,
+        size: TYPE.BODY, highlight: 'yellow' });
     }
     return txt(text);
   });

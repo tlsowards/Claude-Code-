@@ -95,13 +95,14 @@ def check_schedule_counts(data):
     elif NUMBERS[said.group(1).lower()] != len(items):
         errs.append('the attachments paragraph says %s documents and the schedule has %d'
                     % (said.group(1), len(items)))
+    # The paragraph does not have to call them exceptions. That wording came from
+    # a package whose tracked orders were a footnote to the generated views; in a
+    # redline-led one they are the point, and demanding the old phrasing would be
+    # the guard dictating the prose rather than checking it. What still has to
+    # hold is below: every tracked tab is named. A count is checked when stated.
     exc = re.search(r'\b(%s)\s+(?:of them\s+)?(?:is|are)?\s*exceptions?\b'
                     % '|'.join(NUMBERS), body, re.I)
-    if tracked and not exc:
-        errs.append('the schedule carries %d tracked changes documents (%s) and the '
-                    'attachments paragraph counts no exceptions'
-                    % (len(tracked), ', '.join(tracked)))
-    elif exc and NUMBERS[exc.group(1).lower()] != len(tracked):
+    if exc and NUMBERS[exc.group(1).lower()] != len(tracked):
         errs.append('the attachments paragraph counts %s exception(s) and the schedule has '
                     '%d tracked changes documents (%s)'
                     % (exc.group(1), len(tracked), ', '.join(tracked)))
@@ -170,11 +171,31 @@ def check_outstanding_is_not_understated(data, asks):
 
 
 def check_attachments(data):
-    """The schedule and the directory have to agree, both ways."""
+    """The schedule and the directory have to agree, both ways.
+
+    A document may be deliberately left out of the binder, but only by being
+    named in "not_attached" with a reason. The point of the original guard was
+    that nothing in deliverables/ goes unmentioned; keeping that while allowing
+    a deliberate exclusion means the omission is a decision on the record rather
+    than something a reader discovers.
+    """
     listed = [it['file'] for it in data['attachments']['items']]
+    excluded = data['attachments'].get('not_attached') or []
     on_disk = sorted(f for f in os.listdir(DELIV)
                      if f.endswith('.docx') and f != COVER)
     errs = []
+
+    for it in excluded:
+        if not it.get('file') or not it.get('why'):
+            errs.append('an entry under not_attached has no file or no reason. A document left '
+                        'out of the binder has to say why, or it reads as an oversight.')
+    ex_files = [it.get('file') for it in excluded]
+    for f in ex_files:
+        if f in listed:
+            errs.append('%s is both in the schedule and in not_attached.' % f)
+        elif f not in on_disk:
+            errs.append('not_attached names %s, which is not in deliverables/ at all.' % f)
+    listed_or_excluded = set(listed) | set(ex_files)
 
     dupes = [f for f in set(listed) if listed.count(f) > 1]
     for f in sorted(dupes):
@@ -184,10 +205,11 @@ def check_attachments(data):
             errs.append('the schedule lists %s, which is not in deliverables/. The package '
                         'would be handed over with a tab that has nothing behind it.' % f)
     for f in on_disk:
-        if f not in listed:
+        if f not in listed_or_excluded:
             errs.append('deliverables/%s is in the package and the schedule does not mention '
                         'it. A reader finding an unlisted document stops trusting the '
-                        'schedule.' % f)
+                        'schedule. If it is meant to be out of the binder, put it in '
+                        'not_attached with a reason.' % f)
 
     tabs = [it['tab'] for it in data['attachments']['items']]
     expected = [chr(ord('A') + i) for i in range(len(tabs))]

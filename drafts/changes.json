@@ -1,0 +1,22 @@
+{
+  "note": "The canonical list of recommended changes, by number. Every deliverable that labels an amendment with a change number is checked against this file, because the number is what the department correlates across the packet. Changes 1 to 15 are the report's list. 16 onward were drafted after it.",
+  "register_revision": 12,
+  "changes": [
+    {"n": 1,  "kind": "amendment", "title": "Rescind the S-8 single-room mandate"},
+    {"n": 2,  "kind": "amendment", "title": "Convert OO 1352.5 III.I to a presumptive, documented individualized outcome"},
+    {"n": 3,  "kind": "amendment", "title": "Correct the mandated reporting standard and relocate it to a new department-wide General Order"},
+    {"n": 4,  "kind": "amendment", "title": "Correct cross-facility notification from 14 days to 72 hours"},
+    {"n": 5,  "kind": "amendment", "title": "Rewrite the false allegations provision to a bad-faith standard"},
+    {"n": 6,  "kind": "amendment", "title": "Delete the S-4 victim-to-perpetrator inference, split the code, add PC 287"},
+    {"n": 7,  "kind": "amendment", "title": "Adopt a single reconciled records retention schedule"},
+    {"n": 8,  "kind": "decision",  "title": "Designate a PREA Coordinator and facility Compliance Manager"},
+    {"n": 9,  "kind": "decision",  "title": "Verify staffing against 1:8 and 1:16 and build the 115.313(a) staffing plan"},
+    {"n": 10, "kind": "decision",  "title": "Rebuild the PREA elements of OO 1361"},
+    {"n": 11, "kind": "decision",  "title": "Add the data analysis and corrective action loop"},
+    {"n": 12, "kind": "decision",  "title": "Complete the incident review and broaden OO 1453"},
+    {"n": 13, "kind": "decision",  "title": "Add retaliation monitoring"},
+    {"n": 14, "kind": "decision",  "title": "Add notification duties: family, counsel, and outcome to the resident"},
+    {"n": 15, "kind": "decision",  "title": "Reduce hiring, contractor screening, and staff reporting to writing"},
+    {"n": 16, "kind": "amendment", "title": "Bring the initial statement into line with WIC 625.6 and 625.7"}
+  ]
+}

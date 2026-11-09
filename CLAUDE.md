@@ -242,7 +242,8 @@ one. The PREA Policy XIV.A false-allegations defect itself is unchanged.
 
 ## 6. The fifteen recommended policy changes
 
-Full text in `YDF_PREA_Policy_Review_Report.docx` Part 4. Summary:
+Full text in `YDF_PREA_Policy_Review_Report.docx` Part 4. **The numbers are canonical and live
+in `drafts/changes.json`**, which every builder that labels an amendment checks against. Summary:
 
 Correctable by amendment (1 to 7):
 1. Rescind the S-8 single-room mandate (OO 1352 II.M, III.I)
@@ -252,6 +253,9 @@ Correctable by amendment (1 to 7):
 5. Rewrite the false allegations provision to a bad-faith standard (PREA XIV.A)
 6. Delete the S-4 victim-to-perpetrator inference, split the code, add PC 287
 7. Adopt a single reconciled records retention schedule
+
+Drafted after the report (16):
+16. Bring the OO 1453 I.A.6 initial statement into line with WIC 625.6 and 625.7
 
 Requires drafting or an administrative decision (8 to 15):
 8. Designate a PREA Coordinator and facility Compliance Manager
@@ -495,6 +499,18 @@ packet duties. Gov Code 12940(j)(1) and (k) for staff harassed by residents; CAC
   verified, grep every file in `drafts/` for the old claim, not just the register. A caveat that
   has been resolved is worse than no caveat: it sends counsel to do work already done, and it
   invites them to discount the caveats that are still live.
+
+- **The WIC 625.6 amendment shipped labelled "Change 8", and change 8 is "Designate a PREA
+  Coordinator". Corrected to change 16 on 11/10.** Two different amendments under one number, in
+  `OO_1453_Tracked_Changes.docx`, which is the one document whose entire purpose is letting the
+  department line a marked up order up against the briefing packet. The same file used change 8
+  in its correct sense a few paragraphs later, so it contradicted itself. **A change number is an
+  identifier, not a label, and nothing was checking it.** `drafts/changes.json` is now the
+  canonical list and `tools/changes.js` checks every tracked document against it. Note also that
+  section 22 claimed this amendment existed "as both a redline entry and something new": it never
+  had a redline entry. `drafts/redlines.json` holds changes 1 to 7 only, and 16 lives solely in
+  the OO 1453 tracked order, which is where it should stay now that duplicating it would add
+  pages the department does not need.
 
 - **Do not assume isolation is available as a disciplinary sanction.** OO 1390/1391 III omits
   it from the consequences list and OO 1354.5 I.C.1 prohibits confinement for punishment. The
@@ -984,10 +1000,11 @@ stand, the tab schedule, how to use it by role, and what is deliberately not in 
 reasoning stays in the Management Brief at Attachment A and is not restated.
 
 **`PREA_Briefing_Package_Complete.pdf`**, built by `npm run package-pdf`, is the whole thing
-as one bookmarked PDF. **191 pages as of 10/30, ten attachments**: cover 1, A Management Brief 10,
-B Redlines 28, C Crosswalk 50, D Decision Guide 132, E Classification Card 162, F Memo Template 164,
-G Staffing Factors 169, H OO 1453 tracked 171, I OO 1352 tracked 178, **J OO 1352.5 tracked 184**.
-Do not hand-maintain those numbers: the build measures them.
+as one bookmarked PDF. **71 pages as of 11/10, six attachments, and 43 of those pages are policy
+with the edits marked**: cover 1, A Management Brief 9, B OO 1453 marked 27, C OO 1352 marked 34,
+D OO 1352.5 marked 40, E Redlines 48, F Staffing Factors 70. Do not hand-maintain those numbers:
+the build measures them. It was 191 pages across ten attachments until Tim asked on 11/10 for the
+policies themselves rather than a report about them. See section 25.
 
 **Three things worth knowing before touching it.**
 
@@ -1085,7 +1102,9 @@ effective date confirmed by search, not read from primary source. **The bill tha
 deliberately not cited, because it could not be confirmed.** Do not cite a bill number for 625.7
 until somebody checks it.
 
-**Change 8 is drafted**, as both a redline entry and something new.
+**The WIC 625.6 amendment is drafted.** ~~Change 8~~ **Change 16, renumbered on 11/10: see the
+correction in section 8.** It exists only in the OO 1453 tracked order, not as a redline entry,
+and this sentence previously claimed otherwise.
 
 **`OO_1453_Tracked_Changes.docx`, built by `npm run tracked-1453` from `drafts/oo1453-tracked.json`.**
 This is the order's own text carrying real Word revisions, `w:ins` and `w:del` with `w:delText`, so
@@ -1412,3 +1431,64 @@ and Respect for the LGBTQI. The form is what III.A and IV.A.3.a both run on. Add
 Internal Affairs policy. Three drafted amendments rest on a reconstruction until the PREA Policy
 arrives, and Revision 12 is the evidence for what producing it would be worth: five unrecorded
 provisions and two corrections, from four pages.
+
+---
+
+## 25. The package became the policies (11/10)
+
+Tim: "Can you just do redline revisions on the policies that you're saying are impacted? That way,
+we can reduce the pages of the report." Then, looking at one of them: "There's no red line, just
+highlight what we would recommend putting in."
+
+**191 pages to 71, and 43 of the 71 are policy text with edits marked.**
+
+**What could not be done, and why it is not a shortfall.** A policy can only be redlined if its
+text is in hand. That is OO 1453 and OO 1352.5 in full, and OO 1352 as the provisions quoted
+before its PDF was lost. **The PREA Policy and the Internal Affairs policy have never been
+produced**, and between them they carry 51 of the impacted register rows and 16 of the conflict
+or critical ones. Their amendments stay in the redline document at Attachment E, where the struck
+text is openly a reconstruction. Producing the PREA Policy is what turns E into a fourth marked
+up order, and that is now the strongest argument for asking.
+
+**Where the pages went.** The Crosswalk was 82 pages and the Supervisor Decision Guide 30, which
+is 112 of the 191. Neither is a policy revision: one is the audit trail behind the findings, the
+other is written for supervisors classifying an incident on shift, a different audience entirely
+per section 18. Both are still built and still shipped, just not bound into this binder.
+
+**The schedule guard had to learn the difference between dropped and excluded.** It failed any
+document that was in `deliverables/` and not in the schedule, which is the right instinct and
+made a deliberate exclusion impossible. It now accepts a `not_attached` list where every entry
+carries a reason, and still fails anything in neither list. **An omission is now a decision on
+the record rather than something a reader discovers.**
+
+**A second guard had to be adapted rather than obeyed.** The attachments paragraph was required
+to count the tracked documents as "exceptions", wording from a package where they were a footnote
+to the generated views. In a redline-led package they are the point, and demanding the old
+phrasing would have been the guard dictating the prose instead of checking it. The count is now
+checked only when stated; what still has to hold, and what actually prevents the original bug, is
+that every tracked tab is named in the paragraph. Verified by dropping Attachment B from the
+prose and watching it fire.
+
+**The highlight, and why it was not a redline problem.** The tracked changes were real all along:
+`w:ins` and `w:del` with `w:delText`, verified in the XML. **Word opens a document in Simple
+Markup by default, which hides deletions and renders the result**, so a reader who does not switch
+to All Markup sees no strikethrough and cannot tell the recommended wording from the order's own.
+Rather than tell the department to change a Word setting, every inserted run is now highlighted
+yellow as well as tracked. The highlight survives every view and survives accepting the change,
+and it is cleared by selecting the text once the amendment is adopted. Highlight counts match
+insertion counts exactly in all three orders: 8, 13 and 6.
+
+**The guard that passed, and why that was worse than failing.** The first version of the change
+number check verified that the number existed in the canonical list and that the label's digits
+matched it. Both were true of the bug it was written for, so it passed and reported success. What
+makes an amendment wear the wrong number is that its **subject** belongs to a different change,
+which digits cannot see. The check that works is that **a change needing drafting or a decision
+has no wording to redline at all**, so marking up text under change 8 is impossible on its face.
+
+A second check, requiring the label's words to come from the change's title, was written and then
+removed: these builders label each provision by what its own edit does, not by restating the
+change, so it flagged correct work in two of the three documents. **A guard that fires on correct
+text gets switched off.** The residual gap is stated in `tools/changes.js` rather than papered
+over: this catches an amendment under a change that cannot be amended, and would not catch one
+under the wrong number when that number is also an amendment. Nothing mechanical separates those
+without reading the subject.

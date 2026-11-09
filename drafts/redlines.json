@@ -1,7 +1,7 @@
 {
   "set": "Recommended changes 1 to 7",
   "subtitle": "Amendment language for the seven changes correctable without new policy",
-  "register_revision": 11,
+  "register_revision": 12,
   "note": "Source of truth for this deliverable. drafts/REDLINES.md and the Word file in deliverables/ are generated from it. Edit here, then run npm run redlines.",
   "produced": [
     "OO 1354.5 Room Confinement",
@@ -10,10 +10,10 @@
     "Title 15, Minimum Standards for Juvenile Facilities, rev. 04/01/2014",
     "OO 1352 Classification, eff. 12/09/2019, rev. 02/27/2020 (produced and read in full in Revision 9)",
     "Title 15, Minimum Standards for Juvenile Facilities, eff. 01/01/2019",
-    "OO 1453 Sexual Assault, eff. 04/25/2013, rev. 12/09/2019 (produced and read in full in Revision 10)"
+    "OO 1453 Sexual Assault, eff. 04/25/2013, rev. 12/09/2019 (produced and read in full in Revision 10)",
+    "OO 1352.5 Transgender and Intersex Youth (produced 10/30/2026)"
   ],
   "not_produced": [
-    "OO 1352.5 Transgender and Intersex Youth",
     "PREA Policy and Procedure, Juvenile Institutions",
     "Internal Affairs Administrative Investigations"
   ],
