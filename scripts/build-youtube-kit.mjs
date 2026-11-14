@@ -24,6 +24,7 @@ const SUBSCRIBE = `${SITE}/membership/sowards-briefing-room/`;
 const CHANNEL = 'Sowards Briefing Room';
 const YOUTUBE = 'https://www.youtube.com/@SowardsConsulting';
 const HANDOFF = 'Dropbox: /Claude handoff to Grok';
+const CTA = 'Follow for weekly use-of-force case law, and get the full teaching brief at app.sowardsconsulting.com.';
 const DISCLAIMER =
   'Educational material only. It is not legal advice and does not replace agency policy or counsel. Read the full opinion before relying on any case, and confirm unpublished decisions with counsel before citing them.';
 
@@ -288,10 +289,10 @@ function buildKit(brief) {
     const shortNames = relatedCases.map(shortName).join('; ');
     h(3, `${WEEKDAYS[i]} ${isoDate(d)}: ${a.title}`);
     out.push('LinkedIn and Facebook:', '```');
-    out.push(`${a.title}.`, '', a.body, '', `From this week's Use of Force Case Law Update: ${relatedCases.map(cite).join('; ')}. Full brief and how to train it: ${briefUrl}`);
+    out.push(`${a.title}.`, '', a.body, '', `From this week's Use of Force Case Law Update: ${relatedCases.map(cite).join('; ')}. Full brief and how to train it: ${briefUrl}`, '', CTA);
     out.push('```', '');
     out.push('Instagram and TikTok caption (pair with the matching Short):', '```');
-    out.push(`${a.title}. ${firstSentence(a.body)} ${shortCites}. Full brief in the Sowards Briefing Room, link in bio.`);
+    out.push(`${a.title}. ${firstSentence(a.body)} ${shortCites}. ${CTA}`);
     out.push('```', '');
     out.push('X:', '```');
     out.push(clip(`${a.title}. ${firstSentence(a.body)} ${shortNames}. ${briefUrl}`, 275));
