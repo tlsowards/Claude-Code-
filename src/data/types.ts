@@ -48,11 +48,34 @@ export interface WeeklyBrief {
   /** Research coverage and limits, stated plainly. */
   coverage: string[];
   sections: BriefSection[];
-  /** The training application block. */
-  applications: { title: string; body: string }[];
+  /** The training application block. caseId ties a point to a case for the video kit's post schedule. */
+  applications: { title: string; body: string; caseId?: string }[];
   episodeIds: string[];
   /** Short knowledge check shown at the end of the brief. */
   quiz?: QuizQuestion[];
+  /** Hand-written YouTube title options and thumbnail text, read by scripts/build-youtube-kit.mjs. */
+  youtube?: {
+    titles?: string[];
+    thumbnail?: { text?: string; redWord?: string; visual?: string };
+  };
+}
+
+/**
+ * A standalone teaching brief in the Case library: one decision, written in the same facts, holding,
+ * practice, and training structure as a weekly brief case, but not tied to a week. Lives in content/cases.
+ */
+export interface TeachingBrief extends BriefCase {
+  /** ISO date the brief was added to the library. Drives ordering and the sitemap. */
+  published: string;
+  /** Why this case is in the library, one or two sentences, shown on the list page and free to read. */
+  summary: string;
+  /** Verification notes: what was read and what was not. */
+  coverage?: string[];
+  /** Briefing room points, subscribers only. */
+  applications?: { title: string; body: string }[];
+  quiz?: QuizQuestion[];
+  /** Weekly brief ids that discuss this case, in addition to any found by name. */
+  relatedBriefIds?: string[];
 }
 
 export interface QuizQuestion {

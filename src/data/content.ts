@@ -1,4 +1,4 @@
-import type { WeeklyBrief, Episode, Course, LiveCourse, ResourceCategory, DuckStage } from './types';
+import type { WeeklyBrief, BriefCase, TeachingBrief, Episode, Course, LiveCourse, ResourceCategory, DuckStage } from './types';
 import episodesJson from '../../content/episodes.json';
 import coursesJson from '../../content/courses.json';
 import liveJson from '../../content/courses.live.json';
@@ -16,6 +16,34 @@ export const briefs: WeeklyBrief[] = Object.values(briefModules)
 
 export function getBrief(id: string): WeeklyBrief | undefined {
   return briefs.find((b) => b.id === id);
+}
+
+// The Case library: standalone teaching briefs in content/cases, one decision per file, not tied to a week.
+const caseModules = import.meta.glob('../../content/cases/*.json', { eager: true }) as Record<string, { default: TeachingBrief }>;
+
+export const teachingBriefs: TeachingBrief[] = Object.values(caseModules)
+  .map((m) => m.default)
+  .sort((a, b) => (a.published < b.published ? 1 : -1));
+
+export function getTeachingBrief(slug: string): TeachingBrief | undefined {
+  return teachingBriefs.find((t) => t.id === slug);
+}
+
+/** The case name without any parenthetical, for matching across briefs. */
+function shortName(name: string): string {
+  return name.replace(/\s*\(.*$/, '').trim();
+}
+
+/** Weekly briefs that discuss a library case: listed on the teaching brief, or naming the case in any field. */
+export function briefsCiting(t: TeachingBrief): WeeklyBrief[] {
+  const name = shortName(t.name);
+  return briefs.filter((b) => t.relatedBriefIds?.includes(b.id) || JSON.stringify(b).includes(name));
+}
+
+/** The library teaching brief for a weekly-brief case, when one exists. */
+export function teachingBriefFor(c: BriefCase): TeachingBrief | undefined {
+  const name = shortName(c.name);
+  return teachingBriefs.find((t) => t.id === c.id || shortName(t.name) === name);
 }
 
 export const episodes: Episode[] = (episodesJson as Episode[]).slice().sort((a, b) => (a.date < b.date ? 1 : -1));

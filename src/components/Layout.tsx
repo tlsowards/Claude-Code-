@@ -2,11 +2,12 @@ import { NavLink, Outlet, Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { site, disclaimer } from '../config';
 import { useAuth } from '../data/auth';
-import { HomeIcon, BriefIcon, PodcastIcon, TrainingIcon, ResourcesIcon } from './Icons';
+import { HomeIcon, BriefIcon, CasesIcon, PodcastIcon, TrainingIcon, ResourcesIcon } from './Icons';
 
 const nav = [
   { to: '/', label: 'Home', icon: HomeIcon, end: true },
   { to: '/briefs', label: 'Briefs', icon: BriefIcon },
+  { to: '/cases', label: 'Cases', icon: CasesIcon },
   { to: '/podcast', label: 'Podcast', icon: PodcastIcon },
   { to: '/training', label: 'Training', icon: TrainingIcon },
   { to: '/resources', label: 'Resources', icon: ResourcesIcon },

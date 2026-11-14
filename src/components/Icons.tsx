@@ -16,3 +16,6 @@ export const TrainingIcon = ({ className }: P) => (
 export const ResourcesIcon = ({ className }: P) => (
   <svg {...base} className={className}><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4z" /><path d="M20 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z" /></svg>
 );
+export const CasesIcon = ({ className }: P) => (
+  <svg {...base} className={className}><path d="M12 3v18" /><path d="M5 7h14" /><path d="M5 7l-3 7a3 3 0 0 0 6 0L5 7z" /><path d="M19 7l-3 7a3 3 0 0 0 6 0l-3-7z" /><path d="M8 21h8" /></svg>
+);

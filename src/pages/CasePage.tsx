@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/Seo';
 import CaseCard from '../components/CaseCard';
-import { getBrief, formatDate, previewCaseId } from '../data/content';
+import { getBrief, formatDate, previewCaseId, teachingBriefFor } from '../data/content';
 import NotFound from './NotFound';
 import Paywall from '../components/Paywall';
 import { useAuth } from '../data/auth';
@@ -13,6 +13,7 @@ export default function CasePage() {
   const { canAccess } = useAuth();
   if (!brief || !c) return <NotFound />;
   const isPreview = previewCaseId(brief) === c.id;
+  const teaching = teachingBriefFor(c);
 
   return (
     <>
@@ -20,6 +21,9 @@ export default function CasePage() {
       <div className="eyebrow">Case brief · {formatDate(brief.date)}</div>
       <h1>{c.name}</h1>
       <p className="lead">{c.topic}. From the weekly brief <Link to={`/briefs/${brief.id}`}>{brief.title}</Link>.</p>
+      {teaching && (
+        <p className="meta">This case has a standalone teaching brief in the <Link to={`/cases/${teaching.id}`}>Case library</Link>.</p>
+      )}
       {canAccess || isPreview ? (
         <CaseCard c={c} briefId={brief.id} standalone />
       ) : (
