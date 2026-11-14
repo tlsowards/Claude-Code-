@@ -30,8 +30,9 @@ const DISCLAIMER =
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const WEEKDAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 function range(a, b) {
-  const [, ma, da] = a.split('-').map(Number);
+  const [ya, ma, da] = a.split('-').map(Number);
   const [yb, mb, db] = b.split('-').map(Number);
+  if (ya !== yb) return `${MONTHS[ma - 1]} ${da}, ${ya} to ${MONTHS[mb - 1]} ${db}, ${yb}`;
   return ma === mb ? `${MONTHS[ma - 1]} ${da} to ${db}, ${yb}` : `${MONTHS[ma - 1]} ${da} to ${MONTHS[mb - 1]} ${db}, ${yb}`;
 }
 /** The Monday after the brief's coverage window, as an ISO date, for the post schedule. */
@@ -133,7 +134,7 @@ function buildKit(brief) {
     p(`Guardrail check: ${excluded.length} case${excluded.length > 1 ? 's were' : ' was'} left out of this kit because the text matched the exclusion list. The narration audio still contains ${excluded.length > 1 ? 'them' : 'it'} and must be re-cut before the video is published.`);
     li(excluded.map((e) => `${e.name} (matched: ${e.hits.join(', ')})`));
   } else {
-    p(`Guardrail check: ${allCases.length} case${allCases.length === 1 ? '' : 's'} screened against ${guardTerms.length} exclusion terms, none matched.`);
+    p(`Guardrail check: ${allCases.length} case${allCases.length === 1 ? '' : 's'} screened against ${guardTerms.length} exclusion term${guardTerms.length === 1 ? '' : 's'}, none matched.`);
   }
 
   if (!lead) {
@@ -262,7 +263,14 @@ function buildKit(brief) {
   schedule.forEach((a, i) => {
     const d = new Date(monday);
     d.setUTCDate(d.getUTCDate() + i);
-    const related = cases.find((c) => a.body.includes(c.name.split(' v. ')[0])) ?? lead;
+    // Attribute the post to the case it discusses: an explicit caseId on the application wins, then the
+    // full case name in the text, then the first party name if exactly one case matches, else the lead case.
+    const firstParty = (c) => c.name.split(' v. ')[0];
+    const byParty = cases.filter((c) => a.body.includes(firstParty(c)));
+    const related =
+      cases.find((c) => c.id === a.caseId) ??
+      cases.find((c) => a.body.includes(c.name)) ??
+      (byParty.length === 1 ? byParty[0] : lead);
     h(3, `${WEEKDAYS[i]} ${isoDate(d)}: ${a.title}`);
     out.push('LinkedIn and Facebook:', '```');
     out.push(`${a.title}.`, '', a.body, '', `From this week's Use of Force Case Law Update: ${related.name}, ${related.court.split(' (')[0]}, ${related.decided}. Full brief and how to train it: ${briefUrl}`);

@@ -48,8 +48,8 @@ export interface WeeklyBrief {
   /** Research coverage and limits, stated plainly. */
   coverage: string[];
   sections: BriefSection[];
-  /** The training application block. */
-  applications: { title: string; body: string }[];
+  /** The training application block. caseId ties a point to a case for the video kit's post schedule. */
+  applications: { title: string; body: string; caseId?: string }[];
   episodeIds: string[];
   /** Short knowledge check shown at the end of the brief. */
   quiz?: QuizQuestion[];
