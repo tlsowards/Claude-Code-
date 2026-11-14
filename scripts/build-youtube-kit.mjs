@@ -22,6 +22,8 @@ const APP = 'https://app.sowardsconsulting.com';
 const SITE = 'https://sowardsconsulting.com';
 const SUBSCRIBE = `${SITE}/membership/sowards-briefing-room/`;
 const CHANNEL = 'Sowards Briefing Room';
+const YOUTUBE = 'https://www.youtube.com/@SowardsConsulting';
+const HANDOFF = 'Dropbox: /Claude handoff to Grok';
 const DISCLAIMER =
   'Educational material only. It is not legal advice and does not replace agency policy or counsel. Read the full opinion before relying on any case, and confirm unpublished decisions with counsel before citing them.';
 
@@ -87,8 +89,14 @@ function guardHits(c) {
 }
 
 // ---- Kit ------------------------------------------------------------------------------------------
+const episodes = existsSync(resolve(root, 'content/episodes.json')) ? JSON.parse(readFileSync(resolve(root, 'content/episodes.json'), 'utf8')) : [];
+function episodeFor(brief) {
+  return episodes.find((e) => brief.episodeIds?.includes(e.id) || e.briefId === brief.id);
+}
+
 function buildKit(brief) {
   const yt = brief.youtube ?? {};
+  const episode = episodeFor(brief);
   const allCases = brief.sections.flatMap((s) => s.cases.map((c) => ({ ...c, section: s.heading })));
   const excluded = [];
   const cases = allCases.filter((c) => {
@@ -107,7 +115,7 @@ function buildKit(brief) {
   const li = (items) => out.push(...items.map((x) => `- ${x}`), '');
 
   h(1, `${CHANNEL} video kit: ${week}`);
-  p(`Brief: ${brief.id}. Published brief: ${briefUrl}. Narration script: ${narrationPath}. Audio: the ${brief.id} episode rendered in Dr. Sowards' cloned voice (see docs/CONTENT-WORKFLOW.md).`);
+  p(`Brief: ${brief.id}. Published brief: ${briefUrl}. Channel: ${CHANNEL}, ${YOUTUBE}. Narration script: ${narrationPath}. Audio: ${episode ? `${episode.audioUrl} (${Math.round(episode.durationSeconds / 60)} minutes)` : `the ${brief.id} episode is not in content/episodes.json yet; render it first (see docs/CONTENT-WORKFLOW.md)`}. Hand-off copy of this kit: ${HANDOFF}.`);
 
   h(2, 'Instructions for the editor');
   li([
@@ -165,6 +173,7 @@ function buildKit(brief) {
   desc.push(`The full written brief, the printable roll call version, and the knowledge check are in the Sowards Briefing Room: ${briefUrl}`);
   desc.push(`Start your free 30 days: ${SUBSCRIBE}`);
   desc.push(`STC-certified courses for agencies: ${SITE}/courses/`);
+  desc.push(`Subscribe for the update every week: ${YOUTUBE}`);
   desc.push('');
   desc.push('Chapters');
   desc.push('0:00 Open');
@@ -239,6 +248,7 @@ function buildKit(brief) {
   out.push('Read the opinions yourself before relying on anything here:');
   for (const c of cases) out.push(`${c.name}: ${courtListener(c.name)}`);
   out.push(`Written brief, roll call print, and knowledge check: ${briefUrl}`);
+  out.push(`Every week: ${YOUTUBE}`);
   out.push('Which case do you want broken down further? Reply and it goes on the list.');
   out.push('```', '');
 

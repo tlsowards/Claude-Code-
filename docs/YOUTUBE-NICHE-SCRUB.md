@@ -226,10 +226,10 @@ The briefs' titles are written for trainers. The videos need the lane's grammar.
 
 ## 9. Decisions made (November 14, 2026)
 
-1. **Channel name: Sowards Briefing Room**, applied to the existing Sowards Consulting channel on the tlsowards Google account. The membership, the app, and the channel now share one name.
+1. **Channel name: Sowards Briefing Room**, applied to the existing channel at youtube.com/@SowardsConsulting. The handle stays @SowardsConsulting; the display name becomes Sowards Briefing Room so the membership, the app, and the channel share one name.
 2. **Voice: the ElevenLabs clone** already in the pipeline (Eleven v4). YouTube's disclosure page lists cloning one's own voice for voice-overs as not requiring a label.
 3. **Thumbnails: decided by evidence, not preference.** Options on the table are no face, a Sowards badge, Dr. Sowards' real photo, or his HeyGen likeness. The research pass and the resulting formula are in section 11. Every video runs two variants through YouTube's Test and compare.
-4. **Editing: Grok**, which already edits and posts for the channel. The hand-off is the video kit described in docs/CONTENT-WORKFLOW.md, one file per brief, built by `npm run youtube -- <brief id>`.
+4. **Editing: Grok**, which already edits and posts for the channel and has access to Dropbox. The hand-off is the video kit described in docs/CONTENT-WORKFLOW.md, one file per brief, built by `npm run youtube -- <brief id>` and copied to the Dropbox folder `/Claude handoff to Grok`, which also holds the standing rules for the channel.
 5. **Guardrails: agencies Dr. Sowards currently works with and matters in which he is retained are never discussed.** `content/guardrails.json` holds the public agency list and the kit builder screens every case against it; a git-ignored private file holds the rest.
 
 ## 10. What was not verified
