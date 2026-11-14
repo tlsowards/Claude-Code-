@@ -3,7 +3,7 @@ import Seo from '../components/Seo';
 import CaseCard, { statusLabel } from '../components/CaseCard';
 import Quiz from '../components/Quiz';
 import Paywall from '../components/Paywall';
-import { getTeachingBrief, briefsCiting, formatDate, formatRange } from '../data/content';
+import { getTeachingBrief, briefsCiting, formatDate, formatRange, leadAndRest } from '../data/content';
 import { courtSites, courtListenerSearch } from '../data/courts';
 import { useAuth } from '../data/auth';
 import NotFound from './NotFound';
@@ -20,13 +20,15 @@ export default function TeachingBriefPage() {
   if (!t) return <NotFound />;
   const court = courtSites[t.courtKey];
   const related = briefsCiting(t);
+  const summary = leadAndRest(t.summary);
 
   return (
     <>
       <Seo title={`${t.name}: what it means in practice and how to train it`} description={`${t.court}, ${t.decided}. ${t.summary}`} />
       <div className="eyebrow">Case library · Added {formatDate(t.published)}</div>
       <h1>{t.name}</h1>
-      <p className="lead">{t.summary}</p>
+      <p className="lead">{summary.lead}</p>
+      {summary.rest && <p>{summary.rest}</p>}
       {t.coverage && t.coverage.length > 0 && (
         <div className="callout">
           <strong>How this brief was checked.</strong> {t.coverage.join(' ')}
@@ -35,6 +37,12 @@ export default function TeachingBriefPage() {
       {canAccess ? (
         <>
           <CaseCard c={t} briefId={t.id} standalone />
+          {t.context && t.context.length > 0 && t.context.map((x, i) => (
+            <section key={i}>
+              <div className="section-title"><h2>{x.title}</h2></div>
+              <div className="card"><p style={{ margin: 0, whiteSpace: 'pre-line' }}>{x.body}</p></div>
+            </section>
+          ))}
           {t.applications && t.applications.length > 0 && (
             <section>
               <div className="section-title"><h2>Briefing room points</h2></div>

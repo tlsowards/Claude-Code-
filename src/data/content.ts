@@ -40,6 +40,13 @@ export function briefsCiting(t: TeachingBrief): WeeklyBrief[] {
   return briefs.filter((b) => t.relatedBriefIds?.includes(b.id) || JSON.stringify(b).includes(name));
 }
 
+/** Split a summary into its first two sentences and the remainder, so long summaries read as a lead plus a paragraph. */
+export function leadAndRest(text: string): { lead: string; rest: string } {
+  const sentences = text.match(/[^.!?]+[.!?]+(?:["')\]]+)?(?=\s|$)/g) ?? [text];
+  if (sentences.length <= 2) return { lead: text.trim(), rest: '' };
+  return { lead: sentences.slice(0, 2).join(' ').trim(), rest: sentences.slice(2).join(' ').trim() };
+}
+
 /** The library teaching brief for a weekly-brief case, when one exists. */
 export function teachingBriefFor(c: BriefCase): TeachingBrief | undefined {
   const name = shortName(c.name);

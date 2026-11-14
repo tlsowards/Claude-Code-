@@ -76,6 +76,8 @@ export interface TeachingBrief extends BriefCase {
   quiz?: QuizQuestion[];
   /** Weekly brief ids that discuss this case, in addition to any found by name. */
   relatedBriefIds?: string[];
+  /** Related standards and the California layer: short titled sections shown after the case, subscribers only. */
+  context?: { title: string; body: string }[];
 }
 
 export interface QuizQuestion {
