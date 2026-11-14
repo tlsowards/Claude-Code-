@@ -51,7 +51,7 @@ The Sowards Briefing Room channel is faceless: Dr. Sowards' cloned voice over br
 4. Copy the kit into the Dropbox folder `/Claude handoff to Grok` as `<brief id> video kit.md`. Grok builds the video and schedules the posts from there, Dr. Sowards approves, and the substance stays as written. The standing rules for the folder are in its `00 READ ME FIRST` file.
 5. Commit the kit with the brief so the week's video and posts are reproducible.
 
-Rules the kit repeats to the editor: no AI avatar or synthetic host, non-graphic visuals only, footage only from public records or court exhibits obtained through a formal request, no identifiable juveniles, and the written spelling "Sowards" everywhere on screen.
+Rules the kit repeats to the editor: no AI avatar or synthetic host, non-graphic visuals only, footage only from public records or court exhibits obtained through a formal request, no identifiable juveniles, the written spelling "Sowards" everywhere on screen, and the thumbnail formula in docs/YOUTUBE-NICHE-SCRUB.md section 11 (no face by default, badge always, never a generated likeness).
 
 ## Update the catalog, resources, or references
 

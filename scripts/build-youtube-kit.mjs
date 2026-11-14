@@ -126,7 +126,7 @@ function buildKit(brief) {
     'Use only the words in this file and in the narration script. Do not add facts, quotes, outcomes, dollar figures, names, or dates from any other source. If something is missing, leave it out.',
     'Keep every case name, court, date, and docket exactly as written here. The written spelling is "Sowards"; the audio pronunciation file is for the voice engine only.',
     'Visuals: brand slides (navy #1B2A4E, red #CF2E2E, gold #C9A24B, Inter and Montserrat), highlighted lines of the opinion text, a facts timeline, a circuit map, and the training photos in public/images/training. Body camera or courtroom footage only if it is public record or a court exhibit, non-graphic, with no identifiable juveniles, and obtained through a formal records request. No AI avatar or synthetic host anywhere in the video.',
-    'Thumbnail: follow the formula in docs/YOUTUBE-NICHE-SCRUB.md and the text in the thumbnail section below.',
+    'Thumbnail: follow the thumbnail section below. No generated or avatar face, ever. A real photograph of Dr. Sowards appears only as a tested variant on staff-side corrections videos.',
     'Timestamps: the chapter list below gives the first words of each segment. Place each chapter marker where those words are spoken in the audio.',
     'Posts: the schedule below is the copy. Formatting, hashtags beyond the ones listed, and scheduling are yours. The substance is not.',
   ]);
@@ -163,7 +163,8 @@ function buildKit(brief) {
   li([
     `Text: ${thumbText}${yt.thumbnail?.redWord ? ` (red word: ${yt.thumbnail.redWord})` : ''}`,
     `Visual: ${yt.thumbnail?.visual ?? 'one element only: a highlighted line of the opinion, a dollar figure, or a single still from the facts'}`,
-    'Layout and badge or face treatment: see the thumbnail formula in docs/YOUTUBE-NICHE-SCRUB.md. Make two variants and run them through YouTube Test and compare.',
+    'Formula: a darkened evidence image fills the frame (opinion page, court filing, settlement document, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.',
+    'Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11. Hold the title fixed and change only the thumbnail.',
   ]);
 
   // Description

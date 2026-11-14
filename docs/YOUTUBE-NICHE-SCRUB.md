@@ -95,7 +95,7 @@ Faceless means no on-camera host. It does not mean anonymous, and it should not 
 
 - **Voice.** Dr. Sowards' own voice, either recorded or the existing ElevenLabs clone. YouTube's disclosure page says cloning one's own voice for voice-overs does not require a label, and a disclosure label does not affect monetization or recommendation anyway. The voice is the credential; a stock AI narrator throws it away and moves the channel toward the profile YouTube removed in its January 2026 enforcement wave (synthetic narration, templated thumbnails, stock-footage loops).
 - **No AI avatar.** YouTube's July 2026 policy names "AI personas giving legal advice or interpreting laws" as content that will not be allowed to monetize. The HeyGen avatar used in the courses should not host the channel.
-- **Credential on screen.** The channel About page, a short animated open, and a corner badge carry the name and credential. A small real headshot in the thumbnail is allowed and builds trust without making it an on-camera channel. This is a decision for Dr. Sowards (see section 9).
+- **Credential on screen.** The channel About page, a short animated open, and a corner badge carry the name and credential. Thumbnails default to no face with a fixed badge; the real headshot is a tested variant on the corrections pillar only, and the HeyGen likeness is never used in thumbnails (see section 11).
 - **Visuals.** Court opinion text with highlighted holdings, docket stamps, a timeline graphic for the facts, a circuit map, brand slides in the navy, red, and gold from the brand kit, the training photos already in the app, and body camera footage only when it is public record or a court exhibit, non-graphic, and obtained through formal records channels. A sworn trainer must not use agency footage without a records request; an Ohio officer was fired in 2025 for posting body cam he downloaded at work.
 - **Originality.** Every video is bespoke analysis of a specific decision or case. That is the "original, authentic insights or perspective" YouTube's inauthentic-content policy requires, and it is the one thing content farms cannot copy.
 
@@ -183,7 +183,7 @@ Observed across the lane (titles only; thumbnails could not be inspected from th
 - Corrections lane: first-person reversal ("I Was a Prison Guard, Then..."), exposé nouns ("Exposed," "What's Really Happening"), question hooks ("Did you know an inmate can make weapons out of this?").
 - Absent everywhere: case names, circuit numbers, holdings, training language. Use them in the description and the pinned comment, not the title.
 
-Thumbnail formula for this channel, built on the brand kit: navy background, three or four words in white heavy condensed type with one word in red, a thin gold rule, one visual element (a dollar figure, a highlighted line of opinion text, a redacted body cam frame, a juvenile hall door), and the small "Dr. Sowards" badge or headshot in a corner if he chooses to show it. Emotional cue per pillar: pillar 1 is curiosity and validation, pillar 2 is shock and fear, pillar 3 is recognition and fear.
+Thumbnail formula for this channel: see section 11, which replaces the August template after the research pass. Emotional cue per pillar: pillar 1 is curiosity and validation, pillar 2 is shock and fear, pillar 3 is recognition and fear.
 
 ### Prompt 5: publishing system under 1,000 subscribers
 
@@ -240,6 +240,29 @@ The briefs' titles are written for trainers. The videos need the lane's grammar.
 - Google Trends curves for the key terms. Keyword volumes are from Google Ads data as republished by third parties, dated June 2026.
 - The reported 2027 Partner Program thresholds come from trade press (Tubefilter, August 2026) and should be re-checked on YouTube's Help page before planning around them.
 - Five older Pocket recordings on a second page of results were not read.
+
+## 11. Thumbnail formula (research pass, November 14, 2026)
+
+The question was whether the thumbnails should carry no face, a Sowards badge, Dr. Sowards' real photo, or his HeyGen likeness. The answer from the evidence: default to no face with one evidence image, two to five words, and a small fixed badge. Test the real photo on the corrections pillar only. Never use the HeyGen face in a thumbnail.
+
+What the data says about faces. No public dataset measures click-through rate, which YouTube does not publish, so every study below is descriptive. vidIQ's June 2026 study of 500 breakout videos found 69 percent used a face, rising to 80 percent among the top 50, but it had no control group. The one study with a matched control (Eden, 2,960 thumbnails, breakouts against underperformers on the same channels) found faces on 84 percent of breakouts and 82 percent of underperformers, which means faces do not separate winners from losers. Both studies found exaggerated shocked expressions rare among top performers (5 to 9 percent). The 1of10 analysis reported by Search Engine Journal in late 2025 found face and no-face thumbnails perform similarly and that fit to the content decides. Claims that faces lift clicks by a fixed percentage trace only to vendor blogs and should be ignored.
+
+What the lane does. PoliceActivity, Code Blue Cam, Audit the Audit, EWU Bodycam, and Law&Crime BodyCam, together well over 15 million subscribers, run no host face. Their thumbnails are footage stills with high emotional content and short text. No published breakdown of their templates was found, so a screenshot survey of the last 30 thumbnails from each is the first task before locking a template.
+
+Text and color. Breakouts most often carry no text or one to three words; the controlled comparison favors four to six words and shows text-free thumbnails skew toward underperformers. Working range: two to five words, one idea. vidIQ's advice to avoid YouTube's own red, white, and black so the image separates from the interface means the brand navy is a good base and the brand red should be an accent only, with gold as the focal color.
+
+Policy. YouTube's disclosure page lists "using generative AI tools to create or improve a video outline, script, thumbnail, title, or infographic" as production assistance that needs no disclosure, so an AI-edited thumbnail is fine. The spam policy forbids "maliciously misleading titles, thumbnails, descriptions, or imagery to trick users into clicking on a video that does not deliver what was promised," which is the exposure a HeyGen face in the thumbnail creates when no presenter appears in the video. The thumbnails policy names "whether violent or gory imagery is the focal point" as an age-restriction factor, so stills are frozen before contact or after the event and impacts are cropped. The real headshot carries none of these risks. The HeyGen likeness in the video itself would be realistic synthetic content requiring the altered-content label, which since May 2026 sits directly under the player, a trust cost for a channel whose product is accuracy.
+
+Voice. YouTube's disclosure page lists "cloning one's own voice to create voice overs or dubs" as not requiring disclosure. A third-party guide disagrees; YouTube's own text controls. Disclosing voluntarily carries no penalty and does not affect reach or monetization, so either choice is safe.
+
+Default formula, all pillars. A darkened evidence image fills the frame (body cam or dash cam still, court filing, settlement document, jail CCTV frame, or a brand slide when none is available). One focal element isolated with a thin gold stroke or a red box, never an arrow. A headline of two to five words in the heavy condensed sans, white on a navy band. The channel badge, gold on navy, bottom right, identical size and position every time. No human face. Red only as an accent. Every number or ruling shown must be literally true of the video.
+
+Per pillar.
+- Case law explained: no face. Opinion page, seal, or docket imagery; the holding as the headline ("IMMUNITY DENIED", "EXCESSIVE. IMMUNE ANYWAY.").
+- Why the county paid: no face. The dollar figure is the focal element, in gold at the largest size, over the footage or complaint still.
+- Staff-side corrections: the one pillar where a human presence plausibly helps. Test the real photograph, neutral and serious, about one third of the frame, against the no-face default.
+
+A/B plan for the first ten videos. YouTube's Test and compare takes up to three thumbnails per video, picks the winner on watch time share rather than clicks, and runs a few days to two weeks; near-identical variants run longer, so differences should be large (layout, image, face or no face). Variant A, every video: the default formula. Variant B: pure type, headline plus a single icon on the navy and gold system, no photo. Variant C by pillar: case law, a footage still with the ruling text; lawsuits, the dollar figure at twice the size with no other text; corrections, the real-face variant. Hold the title fixed and change only the thumbnail. Log Winner, Performed Same, or Inconclusive for each test. After ten videos adopt any variant that wins three tests without a clear loss, and treat Performed Same as a vote for the default. Re-test the face question once the corrections pillar has ten videos of its own.
 
 ## Sources
 
