@@ -53,6 +53,11 @@ export interface WeeklyBrief {
   episodeIds: string[];
   /** Short knowledge check shown at the end of the brief. */
   quiz?: QuizQuestion[];
+  /** Hand-written YouTube title options and thumbnail text, read by scripts/build-youtube-kit.mjs. */
+  youtube?: {
+    titles?: string[];
+    thumbnail?: { text?: string; redWord?: string; visual?: string };
+  };
 }
 
 export interface QuizQuestion {

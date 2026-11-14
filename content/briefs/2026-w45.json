@@ -84,6 +84,18 @@
   "episodeIds": [
     "2026-11-07"
   ],
+  "youtube": {
+    "titles": [
+      "Court: it was excessive force. Officer: immune anyway. California: not so fast.",
+      "He fired a foam round into a crowd. The court said excessive. He won anyway.",
+      "Firing into a crowd: excessive force, immunity, and a Bane Act warning for California"
+    ],
+    "thumbnail": {
+      "text": "EXCESSIVE. IMMUNE ANYWAY.",
+      "redWord": "IMMUNE",
+      "visual": "a single highlighted line from the opinion holding the force excessive"
+    }
+  },
   "quiz": [
     {
       "q": "In Johnson v. Adgar, why was Johnson seized even though the officer did not aim at him?",

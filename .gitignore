@@ -7,3 +7,6 @@ dev-dist
 .DS_Store
 *.tsbuildinfo
 audio-out
+
+# Private guardrail list for the YouTube kit (retained matters, client agencies)
+content/guardrails.private.json

@@ -41,6 +41,18 @@ One command does the whole thing when the site episode already exists: `scripts/
 2. Add an entry to `content/episodes.json` with `id`, `title`, `date`, `description`, `audioUrl` (the media library URL), `bytes` (file size in bytes), `durationSeconds`, and `briefId`.
 3. Run `npm run build`. The feed at `public/podcast/feed.xml` is regenerated. The public feed is a funnel for podcast directories: an episode appears in it 28 days after its date (`FEED_DELAY_DAYS` overrides this; `0` disables the delay), and every item carries a line pointing listeners to the app for current episodes. Subscribers always hear the newest episode in the app on the day it is published. The nightly deploy rebuilds the feed, so held-back episodes appear on schedule without a commit.
 
+## Build the YouTube video kit
+
+The Sowards Briefing Room channel is faceless: Dr. Sowards' cloned voice over brand slides, opinion text, timelines, and training photos. The editor (a person or an AI editing tool) works from one file per brief so that nothing about a case is invented downstream.
+
+1. Optional: add a `youtube` block to the brief JSON with up to three `titles` written in the channel's title grammar and a `thumbnail` object (`text`, `redWord`, `visual`). Without it the kit falls back to the brief title and the first briefing room point.
+2. Run `npm run youtube -- <brief id>`. It writes `content/youtube/<brief id>.md` with title options, thumbnail text, the full description, chapter markers (the first words of each segment, so timestamps can be placed against the audio), a shot list, one Short per case plus a briefing-room-points Short, the pinned comment, a Monday-to-Friday post schedule for LinkedIn, Facebook, Instagram, TikTok, and X, and a Saturday community poll from the knowledge check.
+3. Read the guardrail line near the top. Every case is screened against `content/guardrails.json` and the git-ignored `content/guardrails.private.json` (same shape: `agencies`, `matters`, `terms`). A matched case is left out of the kit, and the kit says the narration audio still contains it and needs a re-cut before publishing. Keep retained matters, opposing parties, and client agencies in the private file only.
+4. Hand the kit and the episode MP3 to the editor. The posting tool formats and schedules from the post schedule; the substance stays as written.
+5. Commit the kit with the brief so the week's video and posts are reproducible.
+
+Rules the kit repeats to the editor: no AI avatar or synthetic host, non-graphic visuals only, footage only from public records or court exhibits obtained through a formal request, no identifiable juveniles, and the written spelling "Sowards" everywhere on screen.
+
 ## Update the catalog, resources, or references
 
 Edit `content/courses.json`, `content/resources.json`, `content/duck.json`, or `content/pc835a.json` and rebuild. The California instructors category in the resource center is intentionally empty until Sowards Consulting chooses who to list.

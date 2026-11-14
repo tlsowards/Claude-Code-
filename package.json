@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "feed": "node scripts/build-feed.mjs",
     "sitemap": "node scripts/build-sitemap.mjs",
+    "youtube": "node scripts/build-youtube-kit.mjs",
     "sync": "node scripts/sync-site.mjs",
     "check": "tsc -b"
   },

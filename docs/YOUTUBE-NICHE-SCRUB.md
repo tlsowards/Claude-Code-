@@ -224,14 +224,13 @@ The briefs' titles are written for trainers. The videos need the lane's grammar.
 - **Ad suitability on sensitive topics.** PREA and abuse topics are monetizable when non-graphic and discussed, but the thumbnail and first 15 seconds carry the weight. Lead with the staff obligation, not the abuse.
 - **Expectation.** The training-industry channels that run this business model (Blue to Gold, Street Cop Training) have 30,000 to 63,000 subscribers after years of uploads and run profitable companies on them. A realistic year-one target is the fan-funding tier and a measurable lift in Briefing Room and course sign-ups, not a million subscribers.
 
-## 9. Decisions for Dr. Sowards
+## 9. Decisions made (November 14, 2026)
 
-1. **Channel name.** Reuse an existing brand so the podcast, the app, and the channel compound: "Use of Force Case Law Update" (the podcast name), "Sowards Briefing Room" (the membership name), or "Sowards Consulting." Or a new name for the channel alone. Recommendation: match the podcast name and keep Sowards Consulting as the account owner.
-2. **Voice.** Record the narration himself each week, or use the existing ElevenLabs clone. Both are allowed without an AI label. Recording himself gives the strongest originality signal and the most natural asides; the clone is already in the pipeline and costs nothing in his time.
-3. **Face in thumbnails.** A small real headshot badge, or no face at all.
-4. **The 2023 channel.** Dropbox holds a 2023 screen capture of YouTube Studio analytics, so a Sowards channel may already exist. Reuse it or start fresh.
-5. **Editor.** Who assembles the visuals: a freelancer, a tool-driven pipeline from the brief JSON, or both.
-6. **Guardrail list.** A written list of matters he will not discuss (retained cases, pending matters, named agencies he works with) so every script is checked against it.
+1. **Channel name: Sowards Briefing Room**, applied to the existing Sowards Consulting channel on the tlsowards Google account. The membership, the app, and the channel now share one name.
+2. **Voice: the ElevenLabs clone** already in the pipeline (Eleven v4). YouTube's disclosure page lists cloning one's own voice for voice-overs as not requiring a label.
+3. **Thumbnails: decided by evidence, not preference.** Options on the table are no face, a Sowards badge, Dr. Sowards' real photo, or his HeyGen likeness. The research pass and the resulting formula are in section 11. Every video runs two variants through YouTube's Test and compare.
+4. **Editing: Grok**, which already edits and posts for the channel. The hand-off is the video kit described in docs/CONTENT-WORKFLOW.md, one file per brief, built by `npm run youtube -- <brief id>`.
+5. **Guardrails: agencies Dr. Sowards currently works with and matters in which he is retained are never discussed.** `content/guardrails.json` holds the public agency list and the kit builder screens every case against it; a git-ignored private file holds the rest.
 
 ## 10. What was not verified
 

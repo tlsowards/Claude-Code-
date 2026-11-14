@@ -27,9 +27,12 @@ Copy `.env.example` to `.env` to set the public URL, the audio host, and the Mai
 | `content/resources.json` | Trainer resource center categories and links. |
 | `content/duck.json` | Downing the Duck six-stage framework. |
 | `content/pc835a.json` | PC 835a after AB 392 quick reference. |
+| `content/guardrails.json` | Agencies and terms the YouTube channel does not discuss. A git-ignored `content/guardrails.private.json` holds retained matters. |
+| `content/youtube/*.md` | One video kit per brief for the Sowards Briefing Room channel: titles, thumbnail text, description, chapters, shot list, Shorts, and the week's posts. |
 | `scripts/sync-site.mjs` | Reads the live course catalog from the site. |
 | `scripts/build-feed.mjs` | Generates `public/podcast/feed.xml` from the episode list. |
 | `scripts/build-sitemap.mjs` | Generates `public/sitemap.xml` and `public/robots.txt` for search engines. |
+| `scripts/build-youtube-kit.mjs` | Writes the video kit for a brief to `content/youtube/`, after screening every case against the guardrail lists. |
 | `wordpress/sowards-app-api.php` | WPCode snippet for the site: sign-in, subscription check, courses and certificates for the app. |
 | `.github/workflows/deploy-pages.yml` | Builds and deploys to GitHub Pages on every push to `main`. |
 | `src/pages/` | One React component per screen. |
@@ -43,7 +46,7 @@ Merging to `main` deploys the app to GitHub Pages automatically. See [Deployment
 
 ## Documentation
 
-- [Content workflow](docs/CONTENT-WORKFLOW.md): how to publish a weekly brief and a podcast episode.
+- [Content workflow](docs/CONTENT-WORKFLOW.md): how to publish a weekly brief, a podcast episode, and a YouTube video kit.
 - [Deployment](docs/DEPLOYMENT.md): hosting options, audio hosting, and podcast directory submission.
 - [Roadmap](docs/ROADMAP.md): connecting to the WordPress and LifterLMS site, push notifications, native app wrappers.
 - [Subscription](docs/SUBSCRIPTION.md): how the free 30 days, then $9.99 a month or $59.99 a year, is set up on the site and enforced in the app.

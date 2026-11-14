@@ -1,0 +1,8 @@
+{
+  "_note": "Matters the Sowards Briefing Room channel does not discuss. scripts/build-youtube-kit.mjs leaves out any case whose text matches an entry here or in content/guardrails.private.json. The private file is git-ignored and is where retained matters, opposing parties, and client agencies belong; do not put them in this file. Matching is case-insensitive substring matching on the case name, court, docket, topic, facts, holding, dissent, in-practice, train-it, and caution text.",
+  "agencies": [
+    "Sacramento County Probation"
+  ],
+  "matters": [],
+  "terms": []
+}
