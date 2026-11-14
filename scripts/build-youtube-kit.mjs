@@ -263,17 +263,17 @@ function buildKit(brief) {
   schedule.forEach((a, i) => {
     const d = new Date(monday);
     d.setUTCDate(d.getUTCDate() + i);
-    // Attribute the post to the case it discusses: an explicit caseId on the application wins, then the
-    // full case name in the text, then the first party name if exactly one case matches, else the lead case.
+    // Attribute the post to the cases it discusses: an explicit caseId on the application wins; otherwise
+    // every case whose full name or first party name appears in the text; otherwise the lead case.
     const firstParty = (c) => c.name.split(' v. ')[0];
-    const byParty = cases.filter((c) => a.body.includes(firstParty(c)));
-    const related =
-      cases.find((c) => c.id === a.caseId) ??
-      cases.find((c) => a.body.includes(c.name)) ??
-      (byParty.length === 1 ? byParty[0] : lead);
+    const named = cases.filter((c) => a.body.includes(c.name) || new RegExp(`\\b${firstParty(c).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(a.body));
+    const explicit = cases.find((c) => c.id === a.caseId);
+    const relatedCases = explicit ? [explicit] : named.length ? named : [lead];
+    const cite = (c) => `${c.name}, ${c.court.split(' (')[0]}, ${c.decided}`;
+    const related = relatedCases[0];
     h(3, `${WEEKDAYS[i]} ${isoDate(d)}: ${a.title}`);
     out.push('LinkedIn and Facebook:', '```');
-    out.push(`${a.title}.`, '', a.body, '', `From this week's Use of Force Case Law Update: ${related.name}, ${related.court.split(' (')[0]}, ${related.decided}. Full brief and how to train it: ${briefUrl}`);
+    out.push(`${a.title}.`, '', a.body, '', `From this week's Use of Force Case Law Update: ${relatedCases.map(cite).join('; ')}. Full brief and how to train it: ${briefUrl}`);
     out.push('```', '');
     out.push('Instagram and TikTok caption (pair with the matching Short):', '```');
     out.push(`${a.title}. ${firstSentence(a.body)} ${related.name}, ${related.decided}. Full brief in the Sowards Briefing Room, link in bio.`);
