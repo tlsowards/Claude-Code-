@@ -89,7 +89,7 @@ main { flex: 1; width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 20
 .bottomnav {
   position: fixed; bottom: 0; left: 0; right: 0; z-index: 20;
   background: var(--nav-bg); color: var(--nav-fg);
-  display: grid; grid-template-columns: repeat(5, 1fr);
+  display: grid; grid-template-columns: repeat(6, 1fr);
   padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
   border-top: 2px solid var(--gold);
 }

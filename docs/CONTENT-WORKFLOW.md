@@ -24,6 +24,17 @@ Every piece of content is a JSON file under `content/`. Nothing is hard-coded in
 
 Briefs are written for the general training population, not to any one person. Neutral third person, no first-person narration. Every case ends with practice and training points. Do not invent citations, docket numbers, or links. If the opinion was not read, say so in `caution`.
 
+## Publish a teaching brief to the Case library
+
+The Case library holds standalone teaching briefs: one decision per file, not tied to a week, for the cases that come up in training again and again. It lives at `/cases`, with one page per brief at `/cases/<id>`, and is listed in the sitemap. A weekly brief case that has a library brief links to it, and a library brief lists every weekly brief that discusses the case.
+
+1. Create `content/cases/<id>.json`, where `<id>` is the URL slug, for example `vazquez-v-county-of-kern`. The shape is a weekly brief case plus `published` (the ISO date it is added), `summary` (one or two sentences for the list page), and optionally `coverage` (verification notes), `applications` (briefing room points), `quiz` (three questions), and `relatedBriefIds`. Required fields are listed in `content/cases/README.md`; the type is `TeachingBrief` in `src/data/types.ts`.
+2. Verify every fact, quotation, citation, and date against the opinion before the file is committed. Put any limit on what was read in `caution` or `coverage`. Do not invent citations, docket numbers, or links.
+3. Run `npm run build`. The build fails if the JSON is malformed.
+4. The summary, facts, and holding are free to read. Practice points, training points, briefing room points, and the knowledge check are for subscribers, the same rule the weekly briefs follow.
+
+Voice rules are the same as for weekly briefs: neutral third person, written for the general training population, every case ending with practice and training points.
+
 ## Record a podcast episode
 
 Episodes are read in Dr. Sowards' own voice. The standard is the ElevenLabs professional clone named "Tim" with the Eleven v4 model. OpenAI's Onyx voice is the fallback only.

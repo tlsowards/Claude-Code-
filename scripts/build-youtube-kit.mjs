@@ -24,7 +24,7 @@ const SUBSCRIBE = `${SITE}/membership/sowards-briefing-room/`;
 const CHANNEL = 'Sowards Briefing Room';
 const YOUTUBE = 'https://www.youtube.com/@SowardsConsulting';
 const HANDOFF = 'Dropbox: /Claude handoff to Grok';
-const CTA = 'Follow for weekly use-of-force case law, and get the full teaching brief at app.sowardsconsulting.com.';
+const CTA = `Follow for weekly use-of-force case law, and get the full teaching brief at ${APP.replace(/^https?:\/\//, '')}.`;
 const DISCLAIMER =
   'Educational material only. It is not legal advice and does not replace agency policy or counsel. Read the full opinion before relying on any case, and confirm unpublished decisions with counsel before citing them.';
 
@@ -294,6 +294,7 @@ function buildKit(brief) {
     out.push('Instagram and TikTok caption (pair with the matching Short):', '```');
     out.push(`${a.title}. ${firstSentence(a.body)} ${shortCites}. ${CTA}`);
     out.push('```', '');
+    // X stays under its character limit, so it carries the brief link and not the longer call to action.
     out.push('X:', '```');
     out.push(clip(`${a.title}. ${firstSentence(a.body)} ${shortNames}. ${briefUrl}`, 275));
     out.push('```', '');

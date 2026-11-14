@@ -60,6 +60,24 @@ export interface WeeklyBrief {
   };
 }
 
+/**
+ * A standalone teaching brief in the Case library: one decision, written in the same facts, holding,
+ * practice, and training structure as a weekly brief case, but not tied to a week. Lives in content/cases.
+ */
+export interface TeachingBrief extends BriefCase {
+  /** ISO date the brief was added to the library. Drives ordering and the sitemap. */
+  published: string;
+  /** Why this case is in the library, one or two sentences, shown on the list page and free to read. */
+  summary: string;
+  /** Verification notes: what was read and what was not. */
+  coverage?: string[];
+  /** Briefing room points, subscribers only. */
+  applications?: { title: string; body: string }[];
+  quiz?: QuizQuestion[];
+  /** Weekly brief ids that discuss this case, in addition to any found by name. */
+  relatedBriefIds?: string[];
+}
+
 export interface QuizQuestion {
   q: string;
   options: string[];

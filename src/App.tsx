@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Briefs from './pages/Briefs';
 import BriefDetail from './pages/BriefDetail';
 import CasePage from './pages/CasePage';
+import Cases from './pages/Cases';
+import TeachingBriefPage from './pages/TeachingBriefPage';
 import Podcast from './pages/Podcast';
 import Training from './pages/Training';
 import Resources from './pages/Resources';
@@ -23,6 +25,8 @@ export default function App() {
         <Route path="briefs" element={<Briefs />} />
         <Route path="briefs/:id" element={<BriefDetail />} />
         <Route path="briefs/:id/:caseId" element={<CasePage />} />
+        <Route path="cases" element={<Cases />} />
+        <Route path="cases/:slug" element={<TeachingBriefPage />} />
         <Route path="podcast" element={<Podcast />} />
         <Route path="podcast/:id" element={<Podcast />} />
         <Route path="training" element={<Training />} />

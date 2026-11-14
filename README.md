@@ -1,6 +1,6 @@
 # Sowards Consulting training app
 
-An installable web app for Sowards Consulting: weekly use of force case law briefs written for the general training population, the Use of Force Case Law Update podcast, the STC-certified training catalog, a resource center for trainers, and the free Downing the Duck and PC 835a references.
+An installable web app for Sowards Consulting: weekly use of force case law briefs written for the general training population, a Case library of standalone teaching briefs, the Use of Force Case Law Update podcast, the STC-certified training catalog, a resource center for trainers, and the free Downing the Duck and PC 835a references.
 
 It is built as a progressive web app, so it works in any browser and can be added to a phone's home screen. The same code can later be wrapped for the Apple App Store and Google Play.
 
@@ -20,6 +20,7 @@ Copy `.env.example` to `.env` to set the public URL, the audio host, and the Mai
 | Path | What it is |
 |---|---|
 | `content/briefs/*.json` | One file per weekly brief. Add a file, rebuild, and it appears. |
+| `content/cases/*.json` | The Case library: one standalone teaching brief per decision, not tied to a week. |
 | `content/episodes.json` | Podcast episode list. Drives the podcast page and the RSS feed. |
 | `content/courses.live.json` | Online course catalog synced from sowardsconsulting.com at build time. |
 | `content/courses.meta.json` | STC numbers and track labels by course id, maintained by hand. |

@@ -1,5 +1,5 @@
 // Generates public/sitemap.xml and public/robots.txt from the content folder.
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -21,10 +21,12 @@ const publicUrl = (env.VITE_PUBLIC_URL?.trim() || 'https://app.sowardsconsulting
 const base = (env.BASE_PATH?.trim() || '/').replace(/\/$/, '');
 const origin = `${publicUrl}${base}`;
 
-const staticRoutes = ['/', '/briefs', '/podcast', '/training', '/resources', '/downing-the-duck', '/reference/pc835a', '/subscribe', '/about'];
+const staticRoutes = ['/', '/briefs', '/cases', '/podcast', '/training', '/resources', '/downing-the-duck', '/reference/pc835a', '/subscribe', '/about'];
 const briefDir = resolve(root, 'content/briefs');
 const briefs = readdirSync(briefDir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(resolve(briefDir, f), 'utf8')));
 const episodes = JSON.parse(readFileSync(resolve(root, 'content/episodes.json'), 'utf8'));
+const caseDir = resolve(root, 'content/cases');
+const teaching = existsSync(caseDir) ? readdirSync(caseDir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(resolve(caseDir, f), 'utf8'))) : [];
 
 const urls = [];
 for (const r of staticRoutes) urls.push({ loc: `${origin}${r === '/' ? '/' : r}`, priority: r === '/' ? '1.0' : '0.7' });
@@ -32,6 +34,7 @@ for (const b of briefs) {
   urls.push({ loc: `${origin}/briefs/${b.id}`, lastmod: b.date, priority: '0.9' });
   for (const s of b.sections) for (const c of s.cases) urls.push({ loc: `${origin}/briefs/${b.id}/${c.id}`, lastmod: b.date, priority: '0.8' });
 }
+for (const t of teaching) urls.push({ loc: `${origin}/cases/${t.id}`, lastmod: t.published, priority: '0.8' });
 for (const e of episodes) urls.push({ loc: `${origin}/podcast/${e.id}`, lastmod: e.date, priority: '0.6' });
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
