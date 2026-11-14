@@ -265,8 +265,16 @@ function buildKit(brief) {
     d.setUTCDate(d.getUTCDate() + i);
     // Attribute the post to the cases it discusses: an explicit caseId on the application wins; otherwise
     // every case whose full name or first party name appears in the text; otherwise the lead case.
-    const firstParty = (c) => c.name.split(' v. ')[0];
-    const named = cases.filter((c) => a.body.includes(c.name) || new RegExp(`\\b${firstParty(c).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(a.body));
+    // Party names are matched as whole words, skipping generic parties such as "People" or "United States".
+    const GENERIC = new Set(['People', 'United States', 'City', 'County', 'State', 'Estate']);
+    const parties = (c) =>
+      c.name
+        .replace(/\s*\(.*$/, '')
+        .split(/ v\. /)
+        .map((x) => x.trim())
+        .filter((x) => x && !GENERIC.has(x));
+    const word = (x) => new RegExp(`\\b${x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`);
+    const named = cases.filter((c) => a.body.includes(c.name) || parties(c).some((x) => word(x).test(a.body)));
     const explicit = cases.find((c) => c.id === a.caseId);
     const relatedCases = explicit ? [explicit] : named.length ? named : [lead];
     const cite = (c) => `${c.name}, ${c.court.split(' (')[0]}, ${c.decided}`;
