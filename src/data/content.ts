@@ -44,7 +44,7 @@ export function briefsCiting(t: TeachingBrief): WeeklyBrief[] {
 export function leadAndRest(text: string): { lead: string; rest: string } {
   // A sentence ends at . ! or ? followed by a space and a capital letter or quotation mark, unless the
   // period belongs to a common abbreviation or citation form (U.S., F.3d, Cir., No., v., Jr., Dr., subd.).
-  const abbreviation = /(?:\b(?:U\.S|F\.\dd|F\.Supp|Cal|Cir|No|Nos|v|Jr|Sr|Dr|Mr|Ms|Mrs|Inc|Co|Corp|subd|sec|op|n|cf|e\.g|i\.e|al|Dept|Hon)|\b[A-Z])\.$/;
+  const abbreviation = /(?:\b(?:U\.S|F\.\s?(?:Supp\.?\s?)?\d*(?:d|th)?|Cal|Cir|No|Nos|v|Jr|Sr|Dr|Mr|Ms|Mrs|Inc|Co|Corp|subd|sec|op|n|cf|e\.g|i\.e|al|Dept|Hon)|\b[A-Z])\.$/;
   const sentences: string[] = [];
   let start = 0;
   const re = /[.!?]["')\]]*(?=\s+["'(\[]?[A-Z])/g;
