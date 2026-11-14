@@ -49,3 +49,4 @@ Merging to `main` deploys the app to GitHub Pages automatically. See [Deployment
 - [Subscription](docs/SUBSCRIPTION.md): how the free 30 days, then $9.99 a month or $59.99 a year, is set up on the site and enforced in the app.
 - [Site integration](docs/SITE-INTEGRATION.md): what the app reads from sowardsconsulting.com and what still needs to change on the site.
 - [Market landscape and growth plan](docs/MARKET-AND-GROWTH.md): who competes for the same sign-ups, where Sowards is different, and how to draw people to the app.
+- [YouTube niche scrub](docs/YOUTUBE-NICHE-SCRUB.md): the lanes scored for a faceless channel, the recommended three pillars, and the Pocket prompt set answered.
