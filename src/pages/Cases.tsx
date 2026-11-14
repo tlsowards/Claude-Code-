@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
-import { teachingBriefs, formatDate } from '../data/content';
+import { teachingBriefs, formatDate, leadAndRest } from '../data/content';
 import { statusLabel } from '../components/CaseCard';
 
 export default function Cases() {
@@ -34,7 +34,7 @@ export default function Cases() {
           <div className="meta">
             {t.court} · {t.decided} · {statusLabel[t.status]} · Added {formatDate(t.published)}
           </div>
-          <p style={{ marginTop: 8, marginBottom: 0 }}>{t.summary}</p>
+          <p style={{ marginTop: 8, marginBottom: 0 }}>{leadAndRest(t.summary).lead}</p>
         </Link>
       ))}
     </>

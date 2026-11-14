@@ -40,6 +40,28 @@ export function briefsCiting(t: TeachingBrief): WeeklyBrief[] {
   return briefs.filter((b) => t.relatedBriefIds?.includes(b.id) || JSON.stringify(b).includes(name));
 }
 
+/** Split a summary into its first two sentences and the remainder, so long summaries read as a lead plus a paragraph. */
+export function leadAndRest(text: string): { lead: string; rest: string } {
+  // A sentence ends at . ! or ? followed by a space and a capital letter or quotation mark, unless the
+  // period belongs to a common abbreviation or citation form (U.S., F.3d, Cir., No., v., Jr., Dr., subd.).
+  const abbreviation = /(?:\b(?:U\.S|F\.\s?(?:Supp\.?\s?)?\d*(?:d|th)?|Cal|Cir|No|Nos|v|Jr|Sr|Dr|Mr|Ms|Mrs|Inc|Co|Corp|subd|sec|op|n|cf|e\.g|i\.e|al|Dept|Hon)|\b[A-Z])\.$/;
+  const sentences: string[] = [];
+  let start = 0;
+  const re = /[.!?]["')\]]*(?=\s+["'(\[]?[A-Z])/g;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    const end = m.index + m[0].length;
+    const candidate = text.slice(start, end).trim();
+    if (abbreviation.test(candidate)) continue;
+    sentences.push(candidate);
+    start = end;
+  }
+  const tail = text.slice(start).trim();
+  if (tail) sentences.push(tail);
+  if (sentences.length <= 2) return { lead: text.trim(), rest: '' };
+  return { lead: sentences.slice(0, 2).join(' '), rest: sentences.slice(2).join(' ') };
+}
+
 /** The library teaching brief for a weekly-brief case, when one exists. */
 export function teachingBriefFor(c: BriefCase): TeachingBrief | undefined {
   const name = shortName(c.name);
