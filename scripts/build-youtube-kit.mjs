@@ -91,8 +91,11 @@ function guardHits(c) {
 
 // ---- Kit ------------------------------------------------------------------------------------------
 const episodes = existsSync(resolve(root, 'content/episodes.json')) ? JSON.parse(readFileSync(resolve(root, 'content/episodes.json'), 'utf8')) : [];
+/** The newest episode for a brief, so a re-recorded episode wins over the original. */
 function episodeFor(brief) {
-  return episodes.find((e) => brief.episodeIds?.includes(e.id) || e.briefId === brief.id);
+  return episodes
+    .filter((e) => brief.episodeIds?.includes(e.id) || e.briefId === brief.id)
+    .sort((a, b) => String(b.date).localeCompare(String(a.date)))[0];
 }
 
 function buildKit(brief) {
@@ -278,16 +281,19 @@ function buildKit(brief) {
     const explicit = cases.find((c) => c.id === a.caseId);
     const relatedCases = explicit ? [explicit] : named.length ? named : [lead];
     const cite = (c) => `${c.name}, ${c.court.split(' (')[0]}, ${c.decided}`;
-    const related = relatedCases[0];
+    // Short citation for captions: the case name without any parenthetical, plus the decision date.
+    const shortName = (c) => c.name.replace(/\s*\(.*$/, '');
+    const shortCites = relatedCases.map((c) => `${shortName(c)}, ${c.decided}`).join('; ');
+    const shortNames = relatedCases.map(shortName).join('; ');
     h(3, `${WEEKDAYS[i]} ${isoDate(d)}: ${a.title}`);
     out.push('LinkedIn and Facebook:', '```');
     out.push(`${a.title}.`, '', a.body, '', `From this week's Use of Force Case Law Update: ${relatedCases.map(cite).join('; ')}. Full brief and how to train it: ${briefUrl}`);
     out.push('```', '');
     out.push('Instagram and TikTok caption (pair with the matching Short):', '```');
-    out.push(`${a.title}. ${firstSentence(a.body)} ${related.name}, ${related.decided}. Full brief in the Sowards Briefing Room, link in bio.`);
+    out.push(`${a.title}. ${firstSentence(a.body)} ${shortCites}. Full brief in the Sowards Briefing Room, link in bio.`);
     out.push('```', '');
     out.push('X:', '```');
-    out.push(clip(`${a.title}. ${firstSentence(a.body)} ${related.name}. ${briefUrl}`, 275));
+    out.push(clip(`${a.title}. ${firstSentence(a.body)} ${shortNames}. ${briefUrl}`, 275));
     out.push('```', '');
   });
   if (brief.applications?.length > 5) {
