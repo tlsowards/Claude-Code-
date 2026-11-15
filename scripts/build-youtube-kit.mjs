@@ -83,6 +83,7 @@ const guard = loadGuardrails();
 const guardTerms = [...guard.agencies, ...guard.matters, ...guard.terms].map((t) => t.trim()).filter(Boolean);
 /** Returns the guardrail terms that appear anywhere in the case text, case-insensitively. */
 function guardHits(c) {
+  // The internal caution text is screened too: a guardrail term that appears only there still keeps the case out of the kit.
   const hay = [c.name, c.court, c.docket, c.topic, c.facts, c.holding, c.dissent, c.notDecided, c.inPractice, c.trainIt, c.caution]
     .filter(Boolean)
     .join('\n')

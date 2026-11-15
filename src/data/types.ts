@@ -20,7 +20,7 @@ export interface BriefCase {
   notDecided?: string;
   inPractice: string;
   trainIt: string;
-  /** Verification flags carried over from the research, shown to the reader. */
+  /** Verification limits carried over from the research. Internal: not shown to readers, read aloud, or copied into the video kit. */
   caution?: string;
 }
 
@@ -45,7 +45,7 @@ export interface WeeklyBrief {
   coverageStart: string;
   coverageEnd: string;
   summary: string;
-  /** Research coverage and limits, stated plainly. */
+  /** Research coverage and limits, stated plainly. Internal: kept for the editors, not shown on the brief page. */
   coverage: string[];
   sections: BriefSection[];
   /** The training application block. caseId ties a point to a case for the video kit's post schedule. */
