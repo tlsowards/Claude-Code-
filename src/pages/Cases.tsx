@@ -58,7 +58,19 @@ export default function Cases() {
         One decision per brief, not tied to a week: facts, holding, what it means in practice, and how to train it. Each one is verified against the opinion before it is added. Browse by topic or search by case name, citation, or training point.
       </p>
       <label className="sr-only" htmlFor="case-search">Search the case library</label>
-      <input id="case-search" className="search" type="search" placeholder="Search cases, citations, topics, or training points" value={q} onChange={(e) => setQ(e.target.value)} />
+      <input
+        id="case-search"
+        className="search"
+        type="search"
+        placeholder="Search cases, citations, topics, or training points"
+        value={q}
+        onChange={(e) => {
+          setQ(e.target.value);
+          const next = new URLSearchParams(params);
+          if (e.target.value.trim()) next.set('q', e.target.value); else next.delete('q');
+          setParams(next, { replace: true });
+        }}
+      />
       <nav className="toc" aria-label="Topics">
         <a href="#all" onClick={(e) => { e.preventDefault(); setCat(null); }} aria-current={!cat ? 'page' : undefined} style={!cat ? { borderColor: 'var(--gold)', fontWeight: 600 } : undefined}>All ({teachingBriefs.length})</a>
         {caseCategories.filter((c) => (counts.get(c.id) ?? 0) > 0).map((c) => (
