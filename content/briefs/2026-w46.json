@@ -158,16 +158,41 @@
     "2026-11-14"
   ],
   "youtube": {
-    "titles": [
-      "Tear gas without an imminent threat? The Ninth Circuit says yes. Here is the catch.",
-      "The court cleared the crowd. It did not clear the shot.",
-      "Portland ICE protests: when officers may disperse a crowd, and what still needs a target"
-    ],
-    "thumbnail": {
-      "text": "DISPERSE: YES. AIM: STILL YOU.",
-      "redWord": "AIM",
-      "visual": "a line of officers behind a haze of smoke, with one highlighted sentence from the opinion"
-    }
+    "videos": [
+      {
+        "cases": [
+          "dickinson-v-trump",
+          "reach-community-development-v-dhs"
+        ],
+        "titles": [
+          "Tear gas without an imminent threat? The Ninth Circuit says yes. Here is the catch.",
+          "The court cleared the crowd. It did not clear the shot.",
+          "Portland ICE protests: when officers may disperse a crowd, and what still needs a target"
+        ],
+        "thumbnail": {
+          "text": "DISPERSE: YES. AIM: STILL YOU.",
+          "redWord": "AIM",
+          "visual": "a line of officers behind a haze of smoke, with one highlighted sentence from the opinion"
+        },
+        "hook": "Two Ninth Circuit decisions from the Portland ICE facility protests, both filed November 10, 2026. The first says officers may use tear gas, pepper balls, and other less lethal tools to disperse a crowd in response to imminent lawlessness, not only an imminent threat of injury. The second says neighbors exposed to drifting gas have no substantive due process claim. Neither decides what any one officer may do to any one person."
+      },
+      {
+        "cases": [
+          "roybal-v-griffith"
+        ],
+        "titles": [
+          "The Supreme Court sent the jail strip search case back. Here is what does not change.",
+          "Jail searches of transgender detainees: the policy may change, the conduct rule does not",
+          "Roybal v. Griffith: one order, no holding, two things every jail still owes"
+        ],
+        "thumbnail": {
+          "text": "POLICY MAY CHANGE. CONDUCT DOES NOT.",
+          "redWord": "CONDUCT",
+          "visual": "the Supreme Court's November 9 order list with the Roybal entry highlighted"
+        },
+        "hook": "On November 9, 2026 the Supreme Court vacated a Tenth Circuit decision about a transgender detainee's jail housing and strip search and sent it back for another look. The order decides nothing. The standard for the policy question is unsettled. The rules for how a search is conducted, and the PREA requirements, do not move."
+      }
+    ]
   },
   "quiz": [
     {

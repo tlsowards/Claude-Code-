@@ -1,6 +1,7 @@
 // Builds the Sowards Briefing Room video kit for a weekly brief: one markdown file that an editor
-// (a person or an AI editing tool) builds the YouTube video, the Shorts, and the week's social posts
-// from. Every sentence in the kit comes from the brief JSON, so nothing about a case is invented
+// (a person or an AI editing tool) builds the week's individual case videos, their Shorts, and the social
+// posts from. The channel posts one video per marquee decision (or per issue, when a brief groups cases in
+// youtube.videos); the long weekly episode stays on the app and the podcast. Every sentence in the kit comes from the brief JSON, so nothing about a case is invented
 // downstream. Writes content/youtube/<id>.md.
 //
 // Usage: node scripts/build-youtube-kit.mjs 2026-w45 [more ids...]   (no ids = all briefs)
@@ -100,6 +101,37 @@ function episodeFor(brief) {
     .sort((a, b) => String(b.date).localeCompare(String(a.date)))[0];
 }
 
+/** Short citation without any parenthetical. */
+function shortName(c) {
+  return c.name.replace(/\s*\(.*$/, '');
+}
+function courtShort(c) {
+  return c.court.split(' (')[0];
+}
+function cite(c) {
+  return `${c.name}, ${courtShort(c)}, ${c.decided}`;
+}
+
+/**
+ * Which videos to make this week. A brief may name them in youtube.videos: [{ cases: [ids], titles, thumbnail, hook }].
+ * Otherwise every published appellate or Supreme Court decision gets its own video, and unpublished or
+ * order-only decisions become Shorts only. The long weekly episode stays on the app and the podcast; it is
+ * not posted to the channel.
+ */
+function planVideos(brief, cases) {
+  const byId = Object.fromEntries(cases.map((c) => [c.id, c]));
+  const planned = (brief.youtube?.videos ?? [])
+    .map((v) => ({ ...v, cases: (v.cases ?? []).map((id) => byId[id]).filter(Boolean) }))
+    .filter((v) => v.cases.length > 0);
+  if (planned.length) {
+    const used = new Set(planned.flatMap((v) => v.cases.map((c) => c.id)));
+    return { videos: planned, shortsOnly: cases.filter((c) => !used.has(c.id)) };
+  }
+  const videos = cases.filter((c) => c.status === 'published').map((c) => ({ cases: [c] }));
+  const used = new Set(videos.flatMap((v) => v.cases.map((c) => c.id)));
+  return { videos, shortsOnly: cases.filter((c) => !used.has(c.id)) };
+}
+
 function buildKit(brief) {
   const yt = brief.youtube ?? {};
   const episode = episodeFor(brief);
@@ -110,7 +142,6 @@ function buildKit(brief) {
     if (hits.length) excluded.push({ name: c.name, hits });
     return hits.length === 0;
   });
-  const lead = cases[0];
   const week = range(brief.coverageStart, brief.coverageEnd);
   const briefUrl = `${APP}/briefs/${brief.id}`;
   const caseUrl = (c) => `${APP}/briefs/${brief.id}/${c.id}`;
@@ -122,186 +153,196 @@ function buildKit(brief) {
 
   h(1, `${CHANNEL} video kit: ${week}`);
   p(`Brief: ${brief.id}. Published brief: ${briefUrl}. Channel: ${CHANNEL}, ${YOUTUBE}. Narration script: ${narrationPath}. Audio: ${episode ? `${episode.audioUrl} (${Math.round(episode.durationSeconds / 60)} minutes)` : `the ${brief.id} episode is not in content/episodes.json yet; render it first (see docs/CONTENT-WORKFLOW.md)`}. Hand-off copy of this kit: ${HANDOFF}.`);
+  p('The channel posts individual case videos, not the whole weekly brief. The weekly episode stays on the app and the podcast. Each video below covers one decision, or two or three decisions on the same issue, and comes with its own Shorts. The audio for each video is cut from the weekly narration: every case segment is contiguous and runs from the spoken case name through "How to train it."');
 
   h(2, 'Instructions for the editor');
   li([
     'Use only the words in this file and in the narration script. Do not add facts, quotes, outcomes, dollar figures, names, or dates from any other source. If something is missing, leave it out.',
     'Keep every case name, court, date, and docket exactly as written here. The written spelling is "Sowards"; the audio pronunciation file is for the voice engine only.',
-    'Visuals: brand slides (navy #1B2A4E, red #CF2E2E, gold #C9A24B, Inter and Montserrat), highlighted lines of the opinion text, a facts timeline, a circuit map, and the training photos in public/images/training. Body camera or courtroom footage only if it is public record or a court exhibit, non-graphic, with no identifiable juveniles, and obtained through a formal records request. No AI avatar or synthetic host anywhere in the video.',
-    'Thumbnail: follow the thumbnail section below. No generated or avatar face, ever. A real photograph of Dr. Sowards appears only as a tested variant on staff-side corrections videos.',
-    'Timestamps: the chapter list below gives the first words of each segment. Place each chapter marker where those words are spoken in the audio.',
-    'Posts: the schedule below is the copy. Formatting, hashtags beyond the ones listed, and scheduling are yours. The substance is not.',
+    'Visuals: brand slides (navy #1B2A4E, red #CF2E2E, gold #C9A24B, Inter and Montserrat), highlighted lines of the opinion text, a facts timeline, a circuit map, and the training photos in public/images/training. Steady, slow-moving b-roll only. Body camera or courtroom footage only if it is public record or a court exhibit, non-graphic, with no identifiable juveniles, and obtained through a formal records request. No AI avatar or synthetic host anywhere in the video.',
+    'Thumbnail: follow the thumbnail section of each video. No generated or avatar face, ever. A real photograph of Dr. Sowards appears only as a tested variant on staff-side corrections videos.',
+    'Timestamps: each chapter list gives the first words of the segment. Place each chapter marker where those words are spoken, and list every chapter in the description starting at 0:00.',
+    'Posts: the schedule below is the copy. Formatting, hashtags beyond the ones listed, and scheduling are yours. The substance is not. A post about a case goes out only after that case page is live on the app.',
   ]);
 
   if (guardTerms.length === 0) {
     p('Guardrail check: no guardrail file was found, so no cases were screened. Add content/guardrails.json before publishing.');
   } else if (excluded.length) {
-    p(`Guardrail check: ${excluded.length} case${excluded.length > 1 ? 's were' : ' was'} left out of this kit because the text matched the exclusion list. The narration audio still contains ${excluded.length > 1 ? 'them' : 'it'} and must be re-cut before the video is published.`);
+    p(`Guardrail check: ${excluded.length} case${excluded.length > 1 ? 's were' : ' was'} left out of this kit because the text matched the exclusion list. The narration audio still contains ${excluded.length > 1 ? 'them' : 'it'}; do not cut a video or Short from ${excluded.length > 1 ? 'those segments' : 'that segment'}.`);
     li(excluded.map((e) => `${e.name} (matched: ${e.hits.join(', ')})`));
   } else {
     p(`Guardrail check: ${allCases.length} case${allCases.length === 1 ? '' : 's'} screened against ${guardTerms.length} exclusion term${guardTerms.length === 1 ? '' : 's'}, none matched.`);
   }
 
-  if (!lead) {
+  if (cases.length === 0) {
     p('No cases remain after the guardrail check. This week has no video.');
     return out.join('\n');
   }
 
-  // Titles
-  h(2, 'Title options');
-  const titles = yt.titles?.length
-    ? yt.titles
-    : [
-        brief.title,
-        `${lead.name}: ${lead.topic}`,
-        `${brief.applications?.[0]?.title ?? lead.name}. ${lead.court.split(' (')[0]}, ${lead.decided}.`,
-      ];
-  out.push(...titles.map((t, i) => `${i + 1}. ${t}`), '');
-  p('Pick one. Titles stay under 70 characters where possible; the full case names go in the description, not the title.');
-
-  // Thumbnail
-  h(2, 'Thumbnail');
-  const thumbText = yt.thumbnail?.text ?? clip(brief.applications?.[0]?.title ?? lead.name, 40).toUpperCase();
+  const { videos, shortsOnly } = planVideos(brief, cases);
+  h(2, `This week: ${videos.length} video${videos.length === 1 ? '' : 's'}${shortsOnly.length ? ` and ${shortsOnly.length} Shorts-only case${shortsOnly.length === 1 ? '' : 's'}` : ''}`);
   li([
-    `Text: ${thumbText}${yt.thumbnail?.redWord ? ` (red word: ${yt.thumbnail.redWord})` : ''}`,
-    `Visual: ${yt.thumbnail?.visual ?? 'one element only: a highlighted line of the opinion, a dollar figure, or a single still from the facts'}`,
-    'Formula: a darkened evidence image fills the frame (opinion page, court filing, settlement document, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.',
-    'Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11. Hold the title fixed and change only the thumbnail.',
+    ...videos.map((v, i) => `Video ${i + 1}: ${v.cases.map(shortName).join(' and ')}`),
+    ...shortsOnly.map((c) => `Shorts only (no long video): ${shortName(c)}, ${statusLabel[c.status] ?? c.status}`),
   ]);
 
-  // Description
-  h(2, 'Description');
-  const desc = [];
-  desc.push(brief.summary);
-  desc.push('');
-  desc.push('Cases in this episode:');
-  for (const c of cases) desc.push(`${c.name}, ${c.court.split(' (')[0]}, ${c.decided} (${statusLabel[c.status] ?? c.status}). Written brief and training points: ${caseUrl(c)}`);
-  desc.push('');
-  desc.push(`The full written brief, the printable roll call version, and the knowledge check are in the Sowards Briefing Room: ${briefUrl}`);
-  desc.push(`Start your free 30 days: ${SUBSCRIBE}`);
-  desc.push(`STC-certified courses for agencies: ${SITE}/courses/`);
-  desc.push(`Subscribe for the update every week: ${YOUTUBE}`);
-  desc.push('');
-  desc.push('Chapters');
-  desc.push('0:00 Open');
-  desc.push('(fill the remaining chapter times from the chapter list below)');
-  desc.push('');
-  desc.push(DISCLAIMER);
-  desc.push('');
-  desc.push(`Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a POST-certified and BSCC STC-certified instructor. Sowards Consulting LLC, Rancho Cordova, California. ${SITE}`);
-  out.push('```', ...desc, '```', '');
-
-  // Chapters
-  h(2, 'Chapters (first words of each segment, for timestamps)');
-  const chapters = [['Open', 'This is the Use of Force Case Law Update from Sowards Consulting']];
-  chapters.push(['The short version', 'Here is the short version.']);
-  for (const s of brief.sections.filter((x) => x.cases.length > 0)) chapters.push([s.heading, `Now, the ${s.heading}.`]);
-  for (const c of cases) {
-    chapters.push([`${c.name}: facts`, 'Here are the facts.']);
-    chapters.push([`${c.name}: holding`, 'The holding.']);
-    chapters.push([`${c.name}: in practice`, 'What this means in practice.']);
-    chapters.push([`${c.name}: train it`, 'How to train it.']);
-  }
-  chapters.push(['Briefing room points', 'Now the application, the part to take into a briefing room']);
-  chapters.push(['Close', 'That is the update for this week.']);
-  out.push('| Chapter | Starts at the words |', '|---|---|', ...chapters.map(([a, b]) => `| ${a} | "${b}" |`), '');
-  p('Case segments repeat in the order the cases appear in the narration. Where a case name appears more than once in the audio, use the first "Here are the facts" after that case name is spoken.');
-
-  // Shot list
-  h(2, 'Shot list');
-  p('One row per narration segment. On-screen text is exact; visuals are suggestions within the rules above.');
-  out.push('| Segment | On-screen text | Visual |', '|---|---|---|');
-  out.push(`| Open | ${CHANNEL} / Use of Force Case Law Update / ${week} | Brand open, channel mark |`);
-  out.push(`| Short version | ${clip(brief.title, 90)} | Brand slide, one line per case name |`);
-  for (const c of cases) {
-    out.push(`| ${c.name} title card | ${c.name} / ${c.court.split(' (')[0]} / ${c.decided} / ${statusLabel[c.status] ?? c.status} | Opinion first page or caption, docket ${c.docket ?? 'n/a'} |`);
-    out.push(`| ${c.name} facts | Facts | Timeline built from the facts paragraph; map if a place is named |`);
-    out.push(`| ${c.name} holding | Holding | Highlighted opinion text |`);
-    if (c.dissent) out.push(`| ${c.name} dissent | Dissent | Highlighted opinion text, second color |`);
-    if (c.notDecided) out.push(`| ${c.name} not decided | What was not decided | Brand slide |`);
-    out.push(`| ${c.name} in practice | In practice: ${settingsText(c)} | Training photo or brand slide |`);
-    out.push(`| ${c.name} train it | Train it | Numbered points pulled from the train-it paragraph |`);
-  }
-  (brief.applications ?? []).forEach((a, i) => out.push(`| Briefing room point ${i + 1} | ${a.title} | Brand slide, large numeral |`));
-  out.push(`| Close | Sowards Briefing Room / Free 30 days / ${SUBSCRIBE.replace('https://', '')} | End screen with empty zones for subscribe and watch-next |`, '');
-
-  // Shorts
-  h(2, 'Shorts (vertical, under 60 seconds each)');
-  cases.forEach((c, i) => {
-    h(3, `Short ${i + 1}: ${c.name}`);
-    li([
+  const shortsFor = (c, label) => {
+    const items = [];
+    items.push([
       `Hook (on screen and spoken): ${firstSentence(c.inPractice)}`,
-      `Body: ${clip(sentences(c.trainIt).slice(0, 3).join(' '), 600)}`,
-      `Card: ${c.name}, ${c.court.split(' (')[0]}, ${c.decided}`,
+      `Body: ${sentences(c.inPractice).slice(1, 4).join(' ')}`,
+      `Card: ${cite(c)}`,
       `Close: Full brief and training points in the Sowards Briefing Room, link in bio.`,
-      `Cut from: the "${c.name}: in practice" and "train it" segments of the long video, or re-record from this text in the same voice.`,
+      `Cut from: the "What this means in practice" segment of ${label}, or re-record from this text in the same voice.`,
     ]);
-  });
-  if (brief.applications?.length) {
-    h(3, `Short ${cases.length + 1}: this week's briefing room points`);
-    li([
-      `Hook: ${brief.applications.length} things to take into briefing this week.`,
-      ...brief.applications.map((a, i) => `Point ${i + 1}: ${a.title}`),
-      'Close: Full brief in the Sowards Briefing Room, link in bio.',
+    items.push([
+      `Hook (on screen and spoken): ${firstSentence(c.trainIt)}`,
+      `Body: ${sentences(c.trainIt).slice(1, 4).join(' ')}`,
+      `Card: ${cite(c)}`,
+      `Close: Full brief and training points in the Sowards Briefing Room, link in bio.`,
+      `Cut from: the "How to train it" segment of ${label}, or re-record from this text in the same voice.`,
     ]);
-  }
+    return items;
+  };
 
-  // Pinned comment
-  h(2, 'Pinned comment');
-  out.push('```');
-  out.push('Read the opinions yourself before relying on anything here:');
-  for (const c of cases) out.push(`${c.name}: ${courtListener(c.name)}`);
-  out.push(`Written brief, roll call print, and knowledge check: ${briefUrl}`);
-  out.push(`Every week: ${YOUTUBE}`);
-  out.push('Which case do you want broken down further? Reply and it goes on the list.');
-  out.push('```', '');
+  videos.forEach((v, vi) => {
+    const lead = v.cases[0];
+    const multi = v.cases.length > 1;
+    h(2, `Video ${vi + 1}: ${v.cases.map(shortName).join(' and ')}`);
+    p(`${multi ? 'Decisions' : 'Decision'}: ${v.cases.map((c) => `${cite(c)} (${statusLabel[c.status] ?? c.status})`).join('; ')}. Audio: cut the ${multi ? 'segments' : 'segment'} for ${v.cases.map((c) => `"${shortName(c)}"`).join(' and ')} from the weekly narration, in that order, ${multi ? 'joined back to back' : 'as one piece'}. Open with the brand slate and close with the end screen.`);
+
+    h(3, 'Title options');
+    const titles = v.titles?.length
+      ? v.titles
+      : [
+          `${shortName(lead)}: ${lead.topic}`,
+          `${firstSentence(lead.inPractice)}`,
+          `${lead.applications?.[0]?.title ?? shortName(lead)}. ${courtShort(lead)}, ${lead.decided}.`,
+        ];
+    out.push(...titles.map((t, i) => `${i + 1}. ${t}`), '');
+    p('Pick one. Titles stay under 70 characters where possible; the full case names go in the description, not the title.');
+
+    h(3, 'Thumbnail');
+    const thumb = v.thumbnail ?? (vi === 0 ? yt.thumbnail : undefined) ?? {};
+    li([
+      `Text: ${thumb.text ?? clip(shortName(lead), 40).toUpperCase()}${thumb.redWord ? ` (red word: ${thumb.redWord})` : ''}`,
+      `Visual: ${thumb.visual ?? 'one element only: a highlighted line of the opinion or a single still from the facts'}`,
+      'Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.',
+      'Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant in 01 THUMBNAILS. Hold the title fixed and change only the thumbnail.',
+    ]);
+
+    h(3, 'Description');
+    const desc = [];
+    if (v.hook) desc.push(v.hook, '');
+    for (const c of v.cases) {
+      desc.push(`${cite(c)} (${statusLabel[c.status] ?? c.status}). ${firstSentence(c.facts)} ${firstSentence(c.holding)}`);
+      desc.push(`Written brief and training points: ${caseUrl(c)}`, '');
+    }
+    desc.push(`The full written brief for the week, the printable roll call version, and the knowledge check are in the Sowards Briefing Room: ${briefUrl}`);
+    desc.push(`Start your free 30 days: ${SUBSCRIBE}`);
+    desc.push(`STC-certified courses for agencies: ${SITE}/courses/`);
+    desc.push(`Subscribe for a new case every week: ${YOUTUBE}`);
+    desc.push('', 'Chapters', '0:00 Open', '(fill the remaining chapter times from the chapter list below)', '', DISCLAIMER, '');
+    desc.push(`Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a POST-certified and BSCC STC-certified instructor. Sowards Consulting LLC, Rancho Cordova, California. ${SITE}`);
+    out.push('```', ...desc, '```', '');
+
+    h(3, 'Chapters (first words of each segment, for timestamps)');
+    const chapters = [['Open', 'Brand slate (no narration)']];
+    for (const c of v.cases) {
+      chapters.push([`${shortName(c)}`, `${shortName(c).replace(/ v\. /, ' versus ')}.`]);
+      chapters.push([`${shortName(c)}: facts`, 'Here are the facts.']);
+      chapters.push([`${shortName(c)}: holding`, 'The holding.']);
+      if (c.dissent) chapters.push([`${shortName(c)}: dissent`, 'On the dissent.']);
+      if (c.notDecided) chapters.push([`${shortName(c)}: not decided`, 'What was not decided.']);
+      chapters.push([`${shortName(c)}: in practice`, 'What this means in practice.']);
+      chapters.push([`${shortName(c)}: train it`, 'How to train it.']);
+    }
+    chapters.push(['Close', 'End screen (no narration)']);
+    out.push('| Chapter | Starts at the words |', '|---|---|', ...chapters.map(([a, b]) => `| ${a} | "${b}" |`), '');
+
+    h(3, 'Shot list');
+    out.push('| Segment | On-screen text | Visual |', '|---|---|---|');
+    out.push(`| Open | ${CHANNEL} / ${v.cases.map(shortName).join(' and ')} / ${lead.decided} | Brand open, channel mark |`);
+    for (const c of v.cases) {
+      out.push(`| ${shortName(c)} title card | ${c.name} / ${courtShort(c)} / ${c.decided} / ${statusLabel[c.status] ?? c.status} | Opinion first page or caption, docket ${c.docket ?? 'n/a'} |`);
+      out.push(`| ${shortName(c)} facts | Facts | Timeline built from the facts paragraph; map if a place is named |`);
+      out.push(`| ${shortName(c)} holding | Holding | Highlighted opinion text |`);
+      if (c.dissent) out.push(`| ${shortName(c)} dissent | Dissent | Highlighted opinion text, second color |`);
+      if (c.notDecided) out.push(`| ${shortName(c)} not decided | What was not decided | Brand slide |`);
+      out.push(`| ${shortName(c)} in practice | In practice: ${settingsText(c)} | Training photo or brand slide |`);
+      out.push(`| ${shortName(c)} train it | Train it | Numbered points pulled from the train-it paragraph |`);
+    }
+    out.push(`| Close | Sowards Briefing Room / Free 30 days / ${SUBSCRIBE.replace('https://', '')} | End screen with empty zones for subscribe and watch-next |`, '');
+
+    h(3, 'Shorts for this video (vertical, under 60 seconds each)');
+    let n = 0;
+    for (const c of v.cases) {
+      for (const items of shortsFor(c, `Video ${vi + 1}`)) {
+        n += 1;
+        h(4, `Short ${vi + 1}.${n}: ${shortName(c)}`);
+        li(items);
+      }
+    }
+
+    h(3, 'Pinned comment');
+    out.push('```');
+    out.push('Read the opinion yourself before relying on anything here:');
+    for (const c of v.cases) out.push(`${c.name}: ${courtListener(c.name)}`);
+    out.push(`Written brief, roll call print, and knowledge check: ${briefUrl}`);
+    out.push(`A new case every week: ${YOUTUBE}`);
+    out.push('Which case do you want broken down next? Reply and it goes on the list.');
+    out.push('```', '');
+  });
+
+  if (shortsOnly.length) {
+    h(2, 'Shorts-only cases');
+    p('These decisions are unpublished or are orders rather than opinions, so they get Shorts and a post but no long video. Cut from the weekly narration segment for the case.');
+    shortsOnly.forEach((c, i) => {
+      for (const [k, items] of shortsFor(c, 'the weekly narration').entries()) {
+        h(4, `Short S${i + 1}.${k + 1}: ${shortName(c)}`);
+        li(items);
+      }
+    });
+  }
 
   // Social schedule
   h(2, 'Post schedule');
-  p(`One briefing room point a day, ${WEEKDAYS[0]} to ${WEEKDAYS[4]}, starting the Monday after the brief. Each post links to the video once it is live, and to the brief until then. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining`);
+  p(`One briefing room point a day, ${WEEKDAYS[0]} to ${WEEKDAYS[4]}, starting the Monday after the brief. Each post links to the video for its case once that video is live, and to the case page until then. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining`);
   const monday = nextMonday(brief.coverageEnd);
   const apps = (brief.applications ?? []).slice(0, 5);
-  const fallbackApps = cases.map((c) => ({ title: c.name, body: `${firstSentence(c.inPractice)} ${firstSentence(c.trainIt)}` }));
+  const fallbackApps = cases.map((c) => ({ title: c.name, body: `${firstSentence(c.inPractice)} ${firstSentence(c.trainIt)}`, caseId: c.id }));
   const schedule = apps.length ? apps : fallbackApps;
+  const GENERIC = new Set(['People', 'United States', 'City', 'County', 'State', 'Estate']);
+  const parties = (c) => shortName(c).split(/ v\. /).map((x) => x.trim()).filter((x) => x && !GENERIC.has(x));
+  const word = (x) => new RegExp(`\\b${x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`);
+  const videoFor = (c) => videos.findIndex((v) => v.cases.some((x) => x.id === c.id));
   schedule.forEach((a, i) => {
     const d = new Date(monday);
     d.setUTCDate(d.getUTCDate() + i);
-    // Attribute the post to the cases it discusses: an explicit caseId on the application wins; otherwise
-    // every case whose full name or first party name appears in the text; otherwise the lead case.
-    // Party names are matched as whole words, skipping generic parties such as "People" or "United States".
-    const GENERIC = new Set(['People', 'United States', 'City', 'County', 'State', 'Estate']);
-    const parties = (c) =>
-      c.name
-        .replace(/\s*\(.*$/, '')
-        .split(/ v\. /)
-        .map((x) => x.trim())
-        .filter((x) => x && !GENERIC.has(x));
-    const word = (x) => new RegExp(`\\b${x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`);
     const named = cases.filter((c) => a.body.includes(c.name) || parties(c).some((x) => word(x).test(a.body)));
     const explicit = cases.find((c) => c.id === a.caseId);
-    const relatedCases = explicit ? [explicit] : named.length ? named : [lead];
-    const cite = (c) => `${c.name}, ${c.court.split(' (')[0]}, ${c.decided}`;
-    // Short citation for captions: the case name without any parenthetical, plus the decision date.
-    const shortName = (c) => c.name.replace(/\s*\(.*$/, '');
+    const relatedCases = explicit ? [explicit] : named.length ? named : [cases[0]];
+    const primary = relatedCases[0];
+    const vIdx = videoFor(primary);
+    const link = caseUrl(primary);
     const shortCites = relatedCases.map((c) => `${shortName(c)}, ${c.decided}`).join('; ');
     const shortNames = relatedCases.map(shortName).join('; ');
     h(3, `${WEEKDAYS[i]} ${isoDate(d)}: ${a.title}`);
+    p(`Links to: ${vIdx >= 0 ? `Video ${vIdx + 1} once live, otherwise ` : ''}${link}`);
     out.push('LinkedIn and Facebook:', '```');
-    out.push(`${a.title}.`, '', a.body, '', `From this week's Use of Force Case Law Update: ${relatedCases.map(cite).join('; ')}. Full brief and how to train it: ${briefUrl}`, '', CTA);
+    out.push(`${a.title}.`, '', a.body, '', `From this week's Use of Force Case Law Update: ${relatedCases.map(cite).join('; ')}. Full brief and how to train it: ${link}`, '', CTA);
     out.push('```', '');
     out.push('Instagram and TikTok caption (pair with the matching Short):', '```');
     out.push(`${a.title}. ${firstSentence(a.body)} ${shortCites}. ${CTA}`);
     out.push('```', '');
-    // X stays under its character limit, so it carries the brief link and not the longer call to action.
     out.push('X:', '```');
-    out.push(clip(`${a.title}. ${firstSentence(a.body)} ${shortNames}. ${briefUrl}`, 275));
+    out.push(clip(`${a.title}. ${firstSentence(a.body)} ${shortNames}. ${link}`, 275));
     out.push('```', '');
   });
   if (brief.applications?.length > 5) {
     p(`Carried to the following week or used as a reply: ${brief.applications.slice(5).map((a) => a.title).join('; ')}.`);
   }
 
-  // Knowledge check as community post
   if (brief.quiz?.length) {
     h(2, 'Community post poll (optional, Saturday)');
     const q = brief.quiz[0];

@@ -55,8 +55,14 @@ export interface WeeklyBrief {
   quiz?: QuizQuestion[];
   /** Hand-written YouTube title options and thumbnail text, read by scripts/build-youtube-kit.mjs. */
   youtube?: {
+    /** Title options and thumbnail for the first video when no videos block is given. */
     titles?: string[];
     thumbnail?: { text?: string; redWord?: string; visual?: string };
+    /**
+     * The individual case videos for the channel: one decision, or two or three on the same issue. Cases not
+     * listed get Shorts only. Without this block every published decision gets its own video.
+     */
+    videos?: { cases: string[]; titles?: string[]; thumbnail?: { text?: string; redWord?: string; visual?: string }; hook?: string }[];
   };
 }
 
