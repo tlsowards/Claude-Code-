@@ -45,22 +45,16 @@ const statusLine = {
 
 function narrate(brief) {
   const p = [];
-  p.push(`This is the Use of Force Case Law Update from Sowards Consulting, for the week of ${range(brief.coverageStart, brief.coverageEnd)}. This update is written for trainers, supervisors, and the officers they train, in patrol, probation, custody, and juvenile settings. The order is always the same: federal law first, starting with the Ninth Circuit and the Supreme Court, then the other federal circuits, then California, and then application, meaning what to do with it on the street, in the jail, and in the juvenile hall. Every case ends with two things: what it means in practice, and how to train it.`);
+  p.push(`This is the Use of Force Case Law Update from Sowards Consulting, for the week of ${range(brief.coverageStart, brief.coverageEnd)}. This update is written for trainers, supervisors, and the officers they train, in patrol, probation, custody, and juvenile settings. The order is always the same: federal law first, starting with the Ninth Circuit and the Supreme Court, then any other federal circuit or California decision that matters, and then application, meaning what to do with it on the street, in the jail, and in the juvenile hall. Every case ends with two things: what it means in practice, and how to train it.`);
   p.push(`Here is the short version. ${brief.summary}`);
-  if (brief.coverage?.length) {
-    p.push(`A note on coverage this week. ${brief.coverage.map((c) => c.replace(/\s+$/, '')).join(' ')}`);
-  }
+  // Coverage notes and verification notes are internal research records; they are not read aloud.
   for (const section of brief.sections) {
     const head = section.heading;
-    if (section.cases.length === 0) {
-      p.push(`Now, the ${head}. ${section.note ?? 'Nothing to report this week.'}`);
-      continue;
-    }
+    if (section.cases.length === 0) continue; // a section with nothing substantive is dropped, not announced
     p.push(`Now, the ${head}.${section.note ? ' ' + section.note : ''}`);
     for (const c of section.cases) {
       const lines = [];
       lines.push(`${speakable(c.name)}. ${speakable(c.court)}, decided ${c.decided}${c.docket ? `, docket number ${c.docket}` : ''}. ${statusLine[c.status] ?? ''}`);
-      if (c.caution) lines.push(`A verification note before the facts. ${c.caution}`);
       lines.push(`Here are the facts. ${speakable(c.facts)}`);
       lines.push(`The holding. ${speakable(c.holding)}`);
       if (c.dissent) lines.push(`On the dissent. ${speakable(c.dissent)}`);

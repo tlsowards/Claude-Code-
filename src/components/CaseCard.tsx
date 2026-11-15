@@ -37,7 +37,6 @@ export default function CaseCard({ c, briefId, standalone }: { c: BriefCase; bri
           <span key={s} className="pill">{settingLabel[s]}</span>
         ))}
       </div>
-      {c.caution && <div className="callout warn"><strong>Verification note.</strong> {c.caution}</div>}
       <div className="case-block"><span className="label">Facts</span>{c.facts}</div>
       <div className="case-block"><span className="label">Holding</span>{c.holding}</div>
       {c.dissent && <div className="case-block"><span className="label">Dissent or concurrence</span>{c.dissent}</div>}

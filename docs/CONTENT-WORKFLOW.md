@@ -6,12 +6,12 @@ Every piece of content is a JSON file under `content/`. Nothing is hard-coded in
 
 1. Copy the most recent file in `content/briefs/` and rename it to the new week, for example `2026-w45.json`.
 2. Set `id`, `title`, `date`, `coverageStart`, `coverageEnd`, and `summary`.
-3. Fill `coverage` with the research notes for the week: what was checked, what could not be confirmed, and which decisions are unpublished.
+3. Fill `coverage` with the research notes for the week: what was checked, what could not be confirmed, and which decisions are unpublished. This is an internal record. It stays in the JSON for the editors and for Dr. Sowards, and it is not shown on the brief page, read in the narration, or copied into the video kit. The same is true of each case's `caution`. Officer-facing material carries only the facts, holding, dissent, what was not decided, what it means in practice, how to train it, and the briefing room points. A section with no case is left out of the page, the narration, and the kit, so a note on an empty section is internal too; put anything officers need, such as a California statute point, inside a case's practice or training text.
 4. Add cases to the four sections (Ninth Circuit, Supreme Court, Other federal circuits, California). Each case has:
    - `facts`, `holding`, optional `dissent` and `notDecided`
    - `inPractice`: what it means on the floor or on the street
    - `trainIt`: how it should be trained
-   - `caution`: any verification limit the reader needs to see
+   - `caution`: any verification limit on what was read (internal; not shown to readers)
    - `status`: `published`, `unpublished`, `order`, `cert-denied`, or `summary-order`
    - `courtKey`: used to build the "read the opinion" link
    - `settings`: which audiences it applies to (`field`, `custody`, `juvenile`, `supervisors`, `all`)

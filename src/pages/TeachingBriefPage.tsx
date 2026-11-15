@@ -29,11 +29,6 @@ export default function TeachingBriefPage() {
       <h1>{t.name}</h1>
       <p className="lead">{summary.lead}</p>
       {summary.rest && <p>{summary.rest}</p>}
-      {t.coverage && t.coverage.length > 0 && (
-        <div className="callout">
-          <strong>How this brief was checked.</strong> {t.coverage.join(' ')}
-        </div>
-      )}
       {canAccess ? (
         <>
           <CaseCard c={t} briefId={t.id} standalone />
@@ -69,7 +64,6 @@ export default function TeachingBriefPage() {
               <span className={`pill ${t.status === 'published' ? '' : 'muted'}`}>{statusLabel[t.status]}</span>
               <span className="pill red">{t.topic}</span>
             </div>
-            {t.caution && <div className="callout warn"><strong>Verification note.</strong> {t.caution}</div>}
             <div className="case-block"><span className="label">Facts</span>{t.facts}</div>
             <div className="case-block"><span className="label">Holding</span>{t.holding}</div>
             <div className="meta">

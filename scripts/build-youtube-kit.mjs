@@ -194,8 +194,7 @@ function buildKit(brief) {
   h(2, 'Chapters (first words of each segment, for timestamps)');
   const chapters = [['Open', 'This is the Use of Force Case Law Update from Sowards Consulting']];
   chapters.push(['The short version', 'Here is the short version.']);
-  if (brief.coverage?.length) chapters.push(['Coverage note', 'A note on coverage this week.']);
-  for (const s of brief.sections) chapters.push([s.heading, `Now, the ${s.heading}.`]);
+  for (const s of brief.sections.filter((x) => x.cases.length > 0)) chapters.push([s.heading, `Now, the ${s.heading}.`]);
   for (const c of cases) {
     chapters.push([`${c.name}: facts`, 'Here are the facts.']);
     chapters.push([`${c.name}: holding`, 'The holding.']);
@@ -213,10 +212,8 @@ function buildKit(brief) {
   out.push('| Segment | On-screen text | Visual |', '|---|---|---|');
   out.push(`| Open | ${CHANNEL} / Use of Force Case Law Update / ${week} | Brand open, channel mark |`);
   out.push(`| Short version | ${clip(brief.title, 90)} | Brand slide, one line per case name |`);
-  if (brief.coverage?.length) out.push('| Coverage note | What was checked this week | Brand slide, checklist |');
   for (const c of cases) {
     out.push(`| ${c.name} title card | ${c.name} / ${c.court.split(' (')[0]} / ${c.decided} / ${statusLabel[c.status] ?? c.status} | Opinion first page or caption, docket ${c.docket ?? 'n/a'} |`);
-    if (c.caution) out.push(`| ${c.name} verification note | Verification note | Brand slide, gold rule |`);
     out.push(`| ${c.name} facts | Facts | Timeline built from the facts paragraph; map if a place is named |`);
     out.push(`| ${c.name} holding | Holding | Highlighted opinion text |`);
     if (c.dissent) out.push(`| ${c.name} dissent | Dissent | Highlighted opinion text, second color |`);
