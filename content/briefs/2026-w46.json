@@ -1,0 +1,206 @@
+{
+  "id": "2026-w46",
+  "title": "Crowd control without an imminent threat: the Ninth Circuit on tear gas at the Portland ICE facility, body cameras at the hospital, and two Supreme Court send-backs",
+  "date": "2026-11-14",
+  "coverageStart": "2026-11-08",
+  "coverageEnd": "2026-11-14",
+  "summary": "Two published Ninth Circuit opinions on November 10, both from the Portland ICE facility protests, and both vacating preliminary injunctions that had limited federal officers' use of tear gas, pepper balls, and other less lethal munitions. In Dickinson v. Trump a split panel held that officers may use less lethal force to disperse a crowd in response to imminent lawlessness, such as trespass, blocking a street, or obstructing officers, and need not wait for an imminent threat of physical harm. The companion case, Reach Community Development v. Department of Homeland Security, held that neighbors exposed to drifting gas have no substantive due process right against it. An unpublished memorandum, Jehangir v. East, granted qualified immunity to two Tempe officers whose body cameras recorded an arrestee's exposure in a hospital emergency room. On Monday the Supreme Court vacated a Tenth Circuit decision about a transgender detainee's housing and strip search and sent it back for another look. No published California force decision was found.",
+  "coverage": [
+    "Checked: the Ninth Circuit's own lists of published opinions and unpublished memoranda for November 9 through 13, read from the court's website, which was reachable again this week. The two Portland opinions and the Jehangir memorandum were read in full from the court's PDFs. The week's other published Ninth Circuit opinions were screened and are not force cases.",
+    "Checked: the Supreme Court's November 9 order list and the dockets for the two cases sent back. The Tenth Circuit and Seventh Circuit opinions underneath those orders were read from the government's official opinion database.",
+    "Checked: the California Courts of Appeal published opinion list for November 9 through 13. No published California force decision was found.",
+    "Not checked from a primary source: the other federal circuits, whose opinion pages were outside the research tool's reach this week. A Second Circuit decision in a Connecticut sergeant's employment suit over force discipline was seen in news coverage; it is about timing, not a force standard, and it is not covered. If a force opinion was filed in another circuit this week, it will be picked up when confirmed."
+  ],
+  "sections": [
+    {
+      "heading": "Ninth Circuit",
+      "note": "Two published opinions and one memorandum. The Portland decisions are First Amendment and due process cases against federal agencies, not Fourth Amendment force suits against individual officers, and the court said so repeatedly. Read them for when a crowd may be dispersed with less lethal tools, and keep Johnson v. Adgar, covered November 7, next to them for what happens when a launcher round hits a particular person.",
+      "cases": [
+        {
+          "id": "dickinson-v-trump",
+          "name": "Dickinson v. Trump",
+          "court": "Ninth Circuit (from the District of Oregon, Judge Michael H. Simon)",
+          "courtKey": "ca9",
+          "docket": "26-1609",
+          "decided": "November 10, 2026",
+          "status": "published",
+          "topic": "Crowd dispersal with tear gas, pepper balls, and other less lethal munitions; First Amendment retaliation; scope of a preliminary injunction",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "Read in full from the court's PDF. This is a preliminary injunction appeal decided on a First Amendment retaliation theory against the Department of Homeland Security, not a Fourth Amendment ruling on any individual use of force. Verify every quotation against the slip opinion before using it in a report or in testimony.",
+          "facts": "The ICE facility in South Portland has drawn at least 150 protests since June 2025, with crowds as large as several thousand. The court described peaceful protest alongside sustained unrest: protesters with bats, improvised weapons, shields, and ballistic vests; hundreds pounding on the building's entry points; vehicles blocked in and out; cameras smashed; fires set on the driveway; rocks thrown at officers; a protester who tried to bite an officer's groin during a detention; strobe lights and lasers aimed at agents. Sanctuary laws kept state and local police from helping clear the driveway. Federal officers answered with recorded warnings, dispersal orders, pepper balls, pepper spray, tear gas, smoke, and flash bangs, often after repeated ignored warnings.\n\nFive plaintiffs sued the President, the Secretary of Homeland Security, and the department: Jack Dickinson, known as the Portland Chicken for the costume he wears, who admitted he and others intentionally blocked the driveway and refused orders to clear it; Laurie and Richard Eckman, who walked over from an interfaith gathering; Hugo Rios, who was filming near the driveway when pepper balls were used to clear it; and Mason Lake, who was documenting from the sidewalk and was exposed to pepper spray. Each said they were hit, sprayed, or gassed in retaliation for protected speech or newsgathering. After a three day evidentiary hearing the district court found an unwritten policy of retaliation, provisionally certified a class of everyone who protests or reports at the facility, and entered a preliminary injunction: no chemical or projectile munitions unless the specific target posed an imminent threat of physical harm, no firing at the head, neck, or torso unless deadly force would be justified, pepper spray only against active resistance, and conspicuous identifying markings on agents' uniforms. The Ninth Circuit stayed the injunction in an earlier published order, and the government appealed.",
+          "holding": "Preliminary injunction and provisional class certification vacated, in an opinion by Judge Lee joined by Judge Tung. The plaintiffs were not likely to succeed on their First Amendment retaliation claim. The district court's first legal error was assuming the government may use less lethal munitions only against an imminent threat of physical harm. That is not the law of the circuit. Under Puente v. City of Phoenix, decided in 2024, officers may use less lethal munitions to disperse a crowd when there are objectively reasonable grounds to conclude there is a clear and present danger of riot, disorder, interference with traffic on the public streets, or other immediate threat to public safety, peace, or order, and it is the tenor of the demonstration as a whole that decides whether police may intervene. Vandalism, blocking traffic, and trespassing on the facility were such threats. The panel wrote that incidents involving peaceful plaintiffs cannot be viewed in isolation from the larger mayhem of dozens or hundreds of people impeding officers, vandalizing property, and assaulting agents, and it called the plaintiffs unfortunate collateral casualties of an effort to quell an unruly crowd. A footnote added that under Puente officers may act without giving even a single verbal dispersal order.\n\nThe second error was relying on Nelson v. City of Davis, a Fourth Amendment pepper ball case, to treat claimed excessive force as evidence of intent to punish speech. The court said a police officer permanently damaging a student's eye at a raucous college party is not the same as agents using crowd control tactics against a crowd that has repeatedly vandalized federal property, obstructed law enforcement, and assaulted agents, and that doctrinally the Fourth Amendment's excessive force analysis differs from the First Amendment's intent to retaliate framework. The panel acknowledged that some video clips, out of context, may show some officers using unprovoked or excessive force, but those hit did not appear to be plaintiffs, the agents' motives were unknown, and a few incidents out of hundreds of encounters do not show a policy. It quoted Justice Kavanaugh's concurrence in Barnes v. Felix on the difference between dissecting an officer's actions with hindsight and making split second judgments in tense, uncertain, rapidly evolving circumstances.\n\nThe injunction was also overbroad. It protected anyone in the world who wishes to protest at the facility, which Trump v. CASA and Los Angeles Press Club v. Noem forbid. It handcuffed officers from using less lethal munitions unless they faced an imminent threat of physical harm, when the First Amendment allows crowd control munitions against protesters who block the street, criminally trespass on government property, or thwart law enforcement. And the uniform order was beyond the court's power: courts cannot be the couture of the executive branch. The provisional class failed Rule 23 because retaliation claims, like Fourth Amendment force claims, turn on individualized facts.",
+          "dissent": "Judge de Alba agreed that three provisions were overbroad: the imminent threat limit on munitions, the active resistance limit on pepper spray, and the uniform requirements. She otherwise dissented. She would have upheld the ban on firing munitions at the head, neck, or torso unless deadly force is justified, citing Los Angeles Press Club, where the court sustained a similar prohibition, and the district court's finding that protesters and journalists were hit in the head and body without warning while posing no threat and blocking nothing. She read the record, including testimony that shooting at people from the roof across long distances is dangerous because of lost accuracy, as evidence of retaliatory intent, and wrote that Puente did not greenlight reckless use of force. Relying on an Eighth Circuit case, Aldridge v. City of St. Louis, she said a retaliation claim built on force is distinct from a Fourth Amendment claim: the question is not whether the force was reasonable but whether it was retaliatory.",
+          "notDecided": "Whether any individual officer used excessive force under the Fourth Amendment. No Fourth Amendment claim was before the court, and the panel said a court might find on other facts that an officer used too much force because the circumstances did not objectively present a clear and present danger of imminent lawlessness, or because the officer misread the tenor of a demonstration. The court did not decide the government's standing argument, and the lawsuit continues without the injunction.",
+          "inPractice": "For agencies in the Ninth Circuit this is the clearest recent statement of when a crowd may be dispersed with less lethal tools: an objectively reasonable conclusion that there is a clear and present danger of riot, disorder, interference with traffic, or another immediate threat to public safety, peace, or order, judged by the demonstration as a whole. An imminent threat of injury is not required. That answers the dispersal decision, not the targeting decision. Two weeks ago in Johnson v. Adgar the same court held that a launcher round fired indiscriminately into a crowd violated the Fourth Amendment, and this panel repeated that a claim against an individual officer is a different analysis. The two fit together: the crowd may be moved when the conditions exist, and each impact round still needs a person, an act, and a backdrop. The head, neck, and torso issue is live: the majority struck that provision only as part of an injunction it found unjustified as a whole, the dissent would have kept it, and an earlier panel upheld one like it. Treat sensitive area impacts as deadly force level decisions. And the footnote that a dispersal can be lawful without a verbal order is a constitutional floor, not a tactic. Recorded warnings are the best evidence that the force was about order and not about the message.",
+          "trainIt": "Teach the dispersal decision and the targeting decision as two decisions with two articulations. The dispersal articulation names the objective conditions: what the crowd as a whole was doing, which laws were being broken, what was blocked, thrown, or damaged, what orders were given and ignored, and why the event had turned from protest to disorder. The targeting articulation for any impact round names the person, the act, the distance, the expected point of impact, and who was beside and behind the target. Build command post logs and force reports that capture both, with times, and keep the warning recordings. Train that peaceful people inside an unlawful crowd will be affected by area tools and the law allows it, but that a journalist or protester standing apart from the disorder is the case the court left open. Make sure written policy and the pre-deployment briefing forbid targeting anyone for speech, and keep the sensitive area rule: no impact rounds to the head, neck, or torso unless deadly force would be justified."
+        },
+        {
+          "id": "reach-community-development-v-dhs",
+          "name": "Reach Community Development v. United States Department of Homeland Security",
+          "court": "Ninth Circuit (from the District of Oregon)",
+          "courtKey": "ca9",
+          "docket": "26-1575",
+          "decided": "November 10, 2026",
+          "status": "published",
+          "topic": "Substantive due process claim by neighbors exposed to tear gas used for crowd control",
+          "settings": [
+            "field",
+            "supervisors"
+          ],
+          "caution": "Read in full from the court's PDF. The panel incorporated the facts from its earlier stay order, so the description here is drawn from what the November 10 opinion itself recites. The claim was under the Fifth Amendment against federal agencies; the opinion does not address state or local officers directly.",
+          "facts": "Tenants of an apartment complex across the street from the Portland ICE facility, the complex's owners, and several individuals including parents suing for their children sued the Department of Homeland Security and related agencies. They alleged that tear gas released to disperse demonstrators drifted into their homes, and claimed a Fifth Amendment substantive due process right to be free from that exposure. The district court agreed they were likely to succeed and barred the agencies from deploying tear gas to disperse demonstrators outside the facility. The Ninth Circuit stayed that order in an earlier published decision, and the government appealed the injunction itself. No new facts were alleged after the stay.",
+          "holding": "Preliminary injunction vacated, in an opinion by Judge Tung joined by Judge Lee. The plaintiffs lack a substantive due process right to be free from the government's use of non lethal crowd control devices in response to disruptive demonstrations. A claimed right not in the constitutional text must be deeply rooted in the nation's history and tradition under Washington v. Glucksberg and Dobbs. The plaintiffs pointed to no historical prohibition on less lethal crowd control devices; to the contrary, the court said, such devices have long been a common tool of law enforcement to disperse crowds that have turned disruptive and violent. The district court erred by describing the right abstractly, as bodily integrity, without anchoring it in history. A plaintiff challenging executive action must show both that it shocks the conscience and that it deprives a historically rooted right. The court did not decide whether the conduct shocked the conscience, though it noted that the dissent left out what prompted the gas: crowd members barricading officers inside the facility, setting federal property on fire, destroying cameras, throwing rocks, glass, and metal at officers, and aiming high powered lasers at agents' eyes.",
+          "dissent": "Judge de Alba dissented. She would apply the shocks the conscience standard alone to executive action, as she read County of Sacramento v. Lewis and Ninth Circuit cases such as Estate of Soakai v. Abdelaziz, a 2025 decision allowing bystanders injured during a pursuit to state a due process claim, to require. On that standard she would have affirmed.",
+          "notDecided": "Whether the government's conduct shocked the conscience, whether any neighbor has a tort or other remedy, and whether the same analysis governs a Fourteenth Amendment claim against state or local officers, which the opinion does not discuss.",
+          "inPractice": "Chemical agents travel, and the people who complain are often not the people being dispersed. This decision says those bystanders have no substantive due process claim in the Ninth Circuit, at least where the deployment answered a disruptive crowd. That is a litigation result, not a planning principle. The facts the majority chose to recite are why the deployment was defensible, and an agency that cannot recite facts like those is in a different posture. Wind, drift, residences, schools, and medical facilities belong in the deployment decision and the after action report because they drive public trust and state law exposure even when the federal claim fails.",
+          "trainIt": "Add a drift and bystander block to the chemical agent decision: wind direction and speed, downwind residences and sensitive occupancies, time of day, and alternatives such as line movement, targeted arrests, or impact munitions aimed at specific actors. Have the incident commander log that assessment before authorizing gas, and open the deployment articulation with the crowd's conduct and the specific threats, because that is what carried the day here."
+        },
+        {
+          "id": "jehangir-v-east",
+          "name": "Jehangir v. East",
+          "court": "Ninth Circuit (from the District of Arizona, Judge Diane J. Humetewa)",
+          "courtKey": "ca9",
+          "docket": "25-7755",
+          "decided": "November 10, 2026",
+          "status": "unpublished",
+          "topic": "Body worn camera recording of an arrestee's exposure in a hospital emergency room; qualified immunity",
+          "settings": [
+            "field",
+            "custody"
+          ],
+          "caution": "Unpublished memorandum, not precedent except as Ninth Circuit Rule 36-3 allows. Read in full from the court's PDF. The decision came on a motion to dismiss, so the facts are the plaintiff's allegations, and the court assumed without deciding that a violation was alleged. Confirm with counsel before citing it.",
+          "facts": "Noor Jehangir was arrested by Tempe officers Daniel East and Marra Guajardo on a misdemeanor charge and taken to a hospital emergency department, where she was suffering serious medical problems. In an examination cubicle she thrashed on the bed and dislodged the blanket over her, unconsciously exposing her genitals. The officers' body worn cameras, running as they watched her, repeatedly recorded the exposure. She sued under section 1983, alleging the recording violated the Fourth and Fourteenth Amendments as well as Arizona law and department policy. She did not allege the officers caused the exposure, deliberately viewed her, recorded for an improper purpose, or shared the footage beyond their supervisors. The district court dismissed on qualified immunity.",
+          "holding": "Affirmed, before Judges Graber, Hurwitz, and Bade. The panel assumed without deciding that the recording violated the Fourth Amendment and held that no case would have clearly told the officers so, applying the standard the Supreme Court restated in Zorn v. Linton this year. Observing an arrestee from arrest to booking serves a legitimate law enforcement purpose, especially when the arrestee has serious medical problems. The cases the plaintiff cited, Ioane v. Hodges, Sepulveda v. Ramirez, and Byrd v. Maricopa County, involved officers or guards who deliberately watched people urinating, showering, or using the toilet with no legitimate purpose. York v. Story, where an officer ordered an assault victim who was not under arrest to undress and pose and then distributed the photographs, was far from this case. Body worn cameras promote accountability and preserve evidence, and no case holds that officers lawfully observing an arrestee violate the Constitution by recording what they permissibly see. A person in custody has a diminished expectation of privacy, violating state law or policy does not strip immunity, and the conduct was not so egregious that any reasonable officer would have known it was unconstitutional.",
+          "notDecided": "Whether the recording actually violated the Fourth Amendment; the court ruled only on notice. It did not say what the result would be had the officers caused the exposure, viewed her deliberately, or used the footage improperly, and it did not reach the state law and policy questions.",
+          "inPractice": "Officers guarding an arrestee at a hospital are doing legitimate custody work, and the court treated a running camera during that work as part of the job. The protection here came from what the officers did not do: they did not cause the exposure, did not position themselves to watch, did not comment, and did not share the footage. Every one of those facts is within an officer's control. Policies on when to point the camera away and how exposure footage is flagged, restricted, and retained answer the state law and policy claims this court did not reach. A different record, with a deliberate look or a shared clip, is a different case.",
+          "trainIt": "Add a hospital custody scenario to body camera training. The camera stays on for the custody and the medical encounter; officers redirect the lens when an arrestee is exposed for medical reasons; no one comments on the exposure; the footage is flagged for restricted access. Teach the covering move: a blanket replaced, a curtain drawn, a request to staff. Dignity during a medical crisis is the standard the public will apply the next day, and supervisors should review hospital guard footage the way they review force footage."
+        }
+      ]
+    },
+    {
+      "heading": "Supreme Court",
+      "note": "No merits decision on police force this week. The November 9 order list carried two orders worth knowing. Roybal v. Griffith is covered below. Harrington v. Martin vacated a Seventh Circuit decision that had denied qualified immunity to two Indiana prosecutors and sent it back in light of Zorn v. Linton, the March 2026 per curiam decision requiring a prior case with similar circumstances before a right counts as clearly established. The suit was brought by a former sheriff's lieutenant who resigned amid excessive force allegations in exchange for a neutral reference, then found the allegations shared with prospective employers. It is a due process case, not a force case, but it shows the Court still using Zorn against rights described too generally.",
+      "cases": [
+        {
+          "id": "roybal-v-griffith",
+          "name": "Roybal v. Griffith",
+          "court": "Supreme Court of the United States (reviewing the Tenth Circuit)",
+          "courtKey": "scotus",
+          "docket": "25-442",
+          "decided": "November 9, 2026",
+          "status": "order",
+          "settings": [
+            "custody",
+            "supervisors"
+          ],
+          "topic": "Housing and strip search of a transgender detainee at jail intake; equal protection and cross-gender search claims; grant, vacate, and remand",
+          "caution": "A summary order, not an opinion. The Supreme Court granted the petition, vacated the Tenth Circuit's February 19, 2025 judgment, and remanded for further consideration in light of United States v. Skrmetti and West Virginia v. B.P.J. The order says nothing about the merits. The Tenth Circuit opinion, Griffith v. El Paso County, was read in full from the official database; the two Supreme Court decisions were not reread for this brief.",
+          "facts": "Darlene Griffith, a transgender woman who is also legally blind, was booked into the El Paso County, Colorado jail. Under the jail's housing policy a deputy assigned her to male housing. At intake she was strip searched. She alleged the jail's policy allowed male deputies to search transgender women, that a female deputy searched her breasts and left, and that a male deputy, alone with her, searched her genitals aggressively, made sexual comments while touching himself, and warned her not to tell anyone or he would see that she was brutalized by guards. She sued the county, the sheriff, a commander, and several deputies under section 1983 for equal protection, Fourth Amendment, and Fourteenth Amendment violations. The district court dismissed the constitutional claims.",
+          "holding": "The Tenth Circuit, in a published two to one decision by Judge Rossman, reversed in part. It held that the housing and search policies drew sex-based classifications subject to intermediate scrutiny and that Griffith plausibly alleged an equal protection violation. It granted qualified immunity to the commander and both deputies on the cross-gender search claims because the law was not clearly established, but held that Griffith plausibly alleged the male deputy committed a constitutional violation by conducting the cross-gender strip search, which revived her official-capacity claims against the sheriff. It separately reversed the grant of qualified immunity to the male deputy on the Fourth Amendment abusive search claim, the allegations about what he did and said during the search. Judge Tymkovich dissented. On November 9 the Supreme Court granted the sheriff's petition, vacated that judgment, and remanded for reconsideration in light of Skrmetti, which upheld a state law under rational basis review after holding it did not classify on the basis of sex or transgender status, and B.P.J., a 2026 decision concerning a state law limiting girls' school sports teams by biological sex.",
+          "notDecided": "Everything. A grant, vacate, and remand order decides no issue. The Tenth Circuit must now reconsider which parts of its decision survive the two intervening cases. The abusive search holding, which rests on the alleged conduct during the search rather than on the classification, was vacated with the rest, but nothing in the order speaks to it.",
+          "inPractice": "The level of scrutiny for jail policies that classify by sex or transgender status in housing and searches is unsettled, and the Supreme Court has signaled that the Tenth Circuit's analysis needs another look. That is for counsel and policy. Two things do not move. The Prison Rape Elimination Act standards on cross-gender viewing and searches and on housing decisions remain federal requirements independent of this litigation. And the allegations about the deputy's conduct during the search, aggression, sexual comments, a threat of retaliation, describe behavior no classification analysis protects. A search done professionally, by policy, with a second staff member present, with no commentary, and documented is the defensible search under any standard.",
+          "trainIt": "Teach intake searches as two questions: who searches whom, which command staff and counsel set and revisit as the law changes, and how every search is done, which belongs to every deputy. Require a second staff member for any unclothed search, forbid commentary, and document who was present. Brief classification staff that housing decisions for transgender detainees must follow current policy and the PREA individualized assessment, and treat any allegation of sexual comments or threats during a search as a PREA report and a misconduct investigation the day it is made."
+        }
+      ]
+    },
+    {
+      "heading": "Other federal circuits",
+      "note": "Not screened from primary sources this week. The other circuits' opinion pages were outside the research tool's reach, and nothing was verified. A Second Circuit ruling seen in news coverage, that a Connecticut sergeant's suit over his discipline for a 2020 force incident was filed too late, was not read and is not a force standard decision. Anything filed in another circuit November 9 through 13 will be covered once confirmed from the court's own text.",
+      "cases": []
+    },
+    {
+      "heading": "California",
+      "note": "No published California force decision was found for November 9 through 13. People v. Guzman, from the Second District on November 10, is a social media search and good faith exception case, not a force case. The Bane Act question certified in Johnson v. Adgar, covered November 7, remains pending before the California Supreme Court. California officers should also remember that the Portland decisions concern federal officers under the First and Fifth Amendments. California's own statute on kinetic energy projectiles and chemical agents at protests, Penal Code section 13652, binds state and local agencies regardless of what the Constitution permits, including its limits on aiming at the head, neck, and other vital organs and its announcement and dispersal time requirements. Read Dickinson for the constitutional floor and the statute for California policy.",
+      "cases": []
+    }
+  ],
+  "applications": [
+    {
+      "title": "Two decisions, two articulations",
+      "body": "Dickinson decides when a crowd may be dispersed with less lethal tools: an objectively reasonable conclusion that the demonstration as a whole presents a clear and present danger of riot, disorder, interference with traffic, or another immediate threat to public safety, peace, or order. Johnson v. Adgar decides what each impact round needs: a named person, a specific act, and a clear backdrop. Write the dispersal articulation at the command post and the targeting articulation at the muzzle.",
+      "caseId": "dickinson-v-trump"
+    },
+    {
+      "title": "No imminent injury requirement, but keep the warnings",
+      "body": "The Ninth Circuit rejected any requirement of an imminent threat of physical harm before crowd control munitions are used, and noted that a dispersal can be lawful without a verbal order. That is the floor. Recorded warnings and dispersal orders are what persuaded this court that the force was about order, not speech. Give them, log them, keep them.",
+      "caseId": "dickinson-v-trump"
+    },
+    {
+      "title": "Head, neck, and torso stay off limits",
+      "body": "The majority struck the sensitive area provision only as part of an injunction it found unjustified as a whole. The dissent would have kept it, an earlier panel upheld one like it, and California law forbids those impacts. Keep the rule in policy as a deadly force level decision.",
+      "caseId": "dickinson-v-trump"
+    },
+    {
+      "title": "Plan for drift",
+      "body": "Reach says neighbors gassed by drift have no substantive due process claim when the deployment answered a disruptive crowd. Agencies still own the consequences. Add wind, downwind occupancies, time of day, and alternatives to the chemical agent authorization and log the assessment before the order is given.",
+      "caseId": "reach-community-development-v-dhs"
+    },
+    {
+      "title": "Cameras at the hospital",
+      "body": "Jehangir protected two officers because they did nothing but their job: they did not cause the exposure, did not look, did not comment, did not share. Teach the covering move, the lens redirect, silence, and restricted flagging of the footage.",
+      "caseId": "jehangir-v-east"
+    },
+    {
+      "title": "Jail searches: the policy may change, the conduct rule does not",
+      "body": "Roybal v. Griffith sends the transgender housing and search classification question back to the Tenth Circuit. PREA requirements do not move. Neither does the rule against sexual comments, threats, or searching alone. A second staff member, no commentary, and documentation make a defensible search under any standard.",
+      "caseId": "roybal-v-griffith"
+    },
+    {
+      "title": "Zorn keeps reaching",
+      "body": "The Supreme Court used Zorn v. Linton to vacate another qualified immunity denial on Monday, and the Ninth Circuit cited it the next day in Jehangir. Courts will keep demanding a prior case with similar circumstances. Train to the constitutional standard anyway; immunity is a defense in court, not a tactic on the street."
+    }
+  ],
+  "episodeIds": [
+    "2026-11-14"
+  ],
+  "youtube": {
+    "titles": [
+      "Tear gas without an imminent threat? The Ninth Circuit says yes. Here is the catch.",
+      "The court cleared the crowd. It did not clear the shot.",
+      "Portland ICE protests: when officers may disperse a crowd, and what still needs a target"
+    ],
+    "thumbnail": {
+      "text": "DISPERSE: YES. AIM: STILL YOU.",
+      "redWord": "AIM",
+      "visual": "a line of officers behind a haze of smoke, with one highlighted sentence from the opinion"
+    }
+  },
+  "quiz": [
+    {
+      "q": "Under Dickinson v. Trump, when may officers in the Ninth Circuit use less lethal munitions to disperse a crowd?",
+      "options": [
+        "Only when a specific person poses an imminent threat of physical harm",
+        "When there are objectively reasonable grounds to conclude the demonstration as a whole presents a clear and present danger of riot, disorder, interference with traffic, or another immediate threat to public safety, peace, or order",
+        "Only after three recorded dispersal orders",
+        "Whenever a permit has expired"
+      ],
+      "answer": 1,
+      "teach": "The court applied Puente v. City of Phoenix and rejected the district court's imminent threat of physical harm rule. The decision concerns dispersing the crowd under the First Amendment. It does not decide whether any particular round aimed at any particular person was reasonable under the Fourth Amendment, which Johnson v. Adgar addressed two weeks earlier."
+    },
+    {
+      "q": "Why did the two Tempe officers in Jehangir v. East receive qualified immunity?",
+      "options": [
+        "The court held that recording an arrestee can never violate the Fourth Amendment",
+        "The arrestee consented to the recording",
+        "No prior case clearly established that officers lawfully observing an arrestee violate the Constitution by recording what they permissibly see, and the officers did not cause, seek out, comment on, or share the exposure",
+        "Body cameras are required by Arizona law"
+      ],
+      "answer": 2,
+      "teach": "The panel assumed without deciding that a violation was alleged and ruled only on notice, citing Zorn v. Linton. The facts that protected the officers, no deliberate viewing, no improper purpose, no sharing, are all within an officer's control, and policy and state law questions were left open."
+    },
+    {
+      "q": "What did the Supreme Court decide in Roybal v. Griffith on November 9?",
+      "options": [
+        "That jails may never assign transgender detainees to housing by biological sex",
+        "That cross-gender strip searches are always unconstitutional",
+        "Nothing on the merits: it vacated the Tenth Circuit's judgment and sent the case back for reconsideration in light of two recent decisions",
+        "That the deputy was entitled to qualified immunity on the abusive search claim"
+      ],
+      "answer": 2,
+      "teach": "A grant, vacate, and remand order decides no issue. The Tenth Circuit must reconsider its intermediate scrutiny analysis in light of Skrmetti and B.P.J. The conduct allegations during the search, aggression, sexual comments, and a threat, are a separate problem that no classification ruling protects, and PREA requirements continue to apply."
+    }
+  ]
+}

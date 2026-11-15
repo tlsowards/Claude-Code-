@@ -49,7 +49,9 @@ const channel = {
 
 // The public feed is a funnel: episodes appear in podcast directories only after a delay, while
 // subscribers hear each episode in the app the day it is published. FEED_DELAY_DAYS=0 disables the delay.
-const delayDays = Number(env.FEED_DELAY_DAYS?.trim() || 28);
+const delaySetting = env.FEED_DELAY_DAYS?.trim();
+const parsedDelay = Number(delaySetting);
+const delayDays = delaySetting && Number.isFinite(parsedDelay) && parsedDelay >= 0 ? parsedDelay : 28;
 const cutoff = new Date(Date.now() - delayDays * 86400000).toISOString().slice(0, 10);
 const funnel = `This public feed carries each episode ${delayDays === 0 ? 'as it airs' : `${Math.round(delayDays / 7)} weeks after it airs`}. Current episodes, the written briefs, and the knowledge checks are in the Sowards Consulting app, free for the first 30 days, at ${publicUrl.replace(/^https?:\/\//, '')}.`;
 
