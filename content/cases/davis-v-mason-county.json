@@ -1,0 +1,91 @@
+{
+  "id": "davis-v-mason-county",
+  "name": "Davis v. Mason County",
+  "court": "Ninth Circuit (from the Western District of Washington)",
+  "courtKey": "ca9",
+  "docket": "88-3947, 88-3951 and 88-4394",
+  "citation": "927 F.2d 1473 (9th Cir. 1991)",
+  "decided": "March 12, 1991 (as amended May 6, 1991 and June 6, 1991)",
+  "status": "published",
+  "topic": "Excessive force by sheriff's deputies in four traffic stop arrests; county liability for failure to train deputies in the constitutional limits of the use of force; batons, fists, a stun gun, a pointed firearm",
+  "settings": [
+    "field",
+    "supervisors"
+  ],
+  "categories": [
+    "instructor-and-training-liability"
+  ],
+  "published": "2026-11-16",
+  "summary": "Five people stopped by Mason County, Washington deputies over nine months in 1985 and 1986 were beaten, shocked with a stun gun, or threatened with a gun, then charged with offenses that were later dropped. A jury found the deputies, the county and the sheriff's department liable under section 1983. The Ninth Circuit affirmed and went further than the jury: it held that the county's failure to train its deputies in the legal limits of the use of force constituted deliberate indifference as a matter of law, on evidence that the field training program existed on paper but was never followed and that deputies were sent out with minimal or no training. It is taught because the court described exactly what a paper training program looks like in litigation.",
+  "coverage": [
+    "The opinion was read in full, including Chief Judge Wallace's partial dissent, from the Public.Resource.Org archive at https://law.resource.org/pub/us/case/reporter/F2/927/927.F2d.1473.88-3951.88-4394.88-3947.html. The header carries 927 F.2d 1473 and dockets 88-3947, 88-4394 and 88-3951, which is how the citation was confirmed. The archive text is paragraph numbered; the dissent's references to majority pages (for example Maj. op. at 1480 to 1483) are the only reporter pagination visible, and no pin cites are given.",
+    "The opinion was decided March 12, 1991 and amended May 6 and June 6, 1991. The archive text reflects the amended opinion, which substituted a remand on expert witness fees after West Virginia University Hospitals v. Casey.",
+    "The archive sentence reporting the jury's total compensatory award is garbled (it reads awarding $528,000 in compensatory Punitive damages were awarded only against the individual deputies). The individual awards listed in the opinion are reported in the facts; the total figure is not relied on.",
+    "The trial record and the district court's rulings were not read. The incidents are described as the Ninth Circuit summarized them.",
+    "No subsequent history was checked beyond the amendments noted in the opinion itself."
+  ],
+  "facts": "The facts are as the Ninth Circuit summarized them, viewed in the plaintiffs' favor because the court was reviewing jury verdicts. Each complaint arose from a traffic stop between June 1985 and March 1986 that ended in an arrest, a beating and charges later dropped.\n\nDurbin. On June 29, 1985, Deputy Ray Sowers followed Doug Durbin home from a tavern and, flicking a stun gun on and off, ordered him out of his house. Durbin complied and was arrested for drunk driving. When he took one step toward his house, Sowers and a backup deputy tackled him, and Sowers punched him in the head though he never resisted. Sowers then braked hard so that the handcuffed Durbin hit the screen with his face. Charges were dismissed after Durbin signed a release.\n\nTaylor. On July 20, 1985, Deputy Doug Quantz stopped Don Taylor for speeding and, under the guise of a pat-down, twisted the skin on his arms and legs, struck his sides, hit him in the testicles and slammed him against the car. Charges were dropped after Taylor signed a covenant not to sue.\n\nDavis and Broughton. On July 28, 1985, John Davis and his fifteen-year-old nephew Wayne Broughton were driving a horse-drawn hay wagon. Deputy Jack Gardner's loudspeaker order to pull over frightened the horses. Gardner pulled in front, pointed his gun at both and threatened to shoot. When Davis climbed down to attend to the horses, Gardner beat his legs with a nightstick, struck his head, knocked him down and kept beating him. Deputies Pete Cribben and Garry Ohlde arrived and all three hit him, kicked him and shocked him with a stun gun. Davis was charged with felony assault; a jury acquitted him, finding self-defense.\n\nRodius. On March 15, 1986, Sowers stopped two vehicles and ordered Ed Rodius, a passenger, into the patrol car when he asked why. When Rodius refused, Sowers jumped on him, choked him, pulled his hair, threw him down and rubbed his face in gravel. The charges were eventually dismissed.\n\nThe jury returned verdicts against all the deputies and the county, with punitive damages only against the deputies. Davis received $150,000 compensatory and $225,000 punitive; Broughton $5,000 and $10,000; Durbin $5,000 and $25,000; Rodius no compensatory damages and $25,000 punitive; and Taylor, who did not sue the county, $1,500 and $35,000. The defendants appealed.",
+  "holding": "Affirmed, with a remand limited to expert witness fees and travel expenses.\n\nThe sheriff as policymaker. Under Washington law the sheriff is the county's chief executive officer and conservator of the peace. The court held that sheriffs have final authority over the training of their deputies, so their actions on that subject are county policy. The civil service commission's statutory powers over personnel administration do not reach peace officer training. The liability rested on training, not hiring.\n\nThe instruction. The jury was told the county could be liable for failure to train if it showed reckless disregard for or deliberate indifference to the safety of its inhabitants. The county did not object. City of Canton v. Harris, decided after trial, fixed deliberate indifference as the standard. The court held the objection waived, because the circuit's earlier gross negligence rule in Bergquist had described the question as open and was not a solid wall of authority excusing an objection. In any event the instruction's definition of reckless disregard was effectively the same as Canton's deliberate indifference language.\n\nFailure to train as a matter of law. Any instructional error was harmless because the county's failure to adequately train its deputies constituted deliberate indifference as a matter of law. The court called the training woefully inadequate, if it can be said to have existed at all. The sheriff had never attended the state academy; the undersheriff had neither training nor experience. Washington law required academy completion within fifteen months of hire, and Sowers took sixteen. In place of the academy the department created a field training program that may have seemed adequate on paper but in practice was never followed; one of its two original field training officers, both of whom quit, called it a joke. The program was supposed to include periodic tests, reports and reviews by the field training officer and a sergeant, and there was no evidence this was ever done. It was supposed to last twelve months and lasted a small fraction of that; Sowers had three or four weeks before patrolling alone. When their incidents occurred, Sowers and Cribben had not attended the academy and Quantz had no training whatsoever; Gardner and Ohlde had attended.\n\nThe issue was adequacy, not existence, of training, and while the deputies may have had some training in the use of force, they received no training in the constitutional limits of the use of force. Quoting Canton's footnote on the obvious need to train in the constitutional limits on deadly force, the court held that the Fourth Amendment violations were a direct consequence of the inadequate training and that the county's failure to train in the legal limits of force was deliberate indifference as a matter of law. It did not reach the negligent hiring and supervision theories.\n\nOther rulings. The court upheld the denial of severance, the evidentiary rulings, the punitive damages, Broughton's verdicts, and the fee award.",
+  "dissent": "Chief Judge Wallace concurred except as to the county's liability. He would have held that under Washington's civil service statute, final policymaking authority over personnel administration, including training, rested with the civil service commission rather than the sheriff, so the sheriff's training decisions could not be county policy under Pembaur and Praprotnik. He also would have held that the reckless disregard instruction was irreconcilable with Canton and that the objection was not waived, because Bergquist was binding circuit authority at the time of trial. He criticized the majority for finding deliberate indifference as a matter of law without stating a standard of review, for charging the absence of evidence about training in the constitutional limits of force against the county when the plaintiffs bore the burden, and for finding causation itself when the jury had been instructed on hiring, training and supervision together and might have rested its verdict on any of them. He would have reversed as to the county or at least ordered a new trial on that question.",
+  "notDecided": "Negligent hiring and inadequate supervision as bases for county liability. The court said it had no need to reach them.\n\nThe individual deputies' liability for excessive force. The deputies did not challenge the liability findings on appeal in a way the court addressed; the appeal concerned punitive damages, evidence and procedure.\n\nWhether a field training program that is actually followed would have been adequate. The court's holding rested on a program that existed on paper and was never carried out.\n\nWhether any particular number of academy or field training hours is constitutionally required.\n\nThe county's civil service question as the dissent framed it; the majority distinguished training from personnel administration and did not decide the commission's authority over other subjects.",
+  "inPractice": "Davis is the clearest appellate description of a paper training program. The department had a written field training program with tests, reports and periodic reviews. None of it was done. The program was supposed to last a year; one deputy got three or four weeks before patrolling alone. Another had no training whatsoever. The sheriff had not attended the academy and the undersheriff had neither training nor experience.\n\nFor line officers: the four incidents share a pattern of force out of proportion to the stop. A tackle and punches after one step, a pat-down used to inflict pain, a nightstick on a man climbing down to control his horses, a chokehold and gravel for asking why. The jury found Fourth Amendment violations and awarded punitive damages against each deputy. The county's liability was built on those findings.\n\nFor field training officers and sergeants: the court counted the absence of evidence that tests, reports and reviews were ever done. The field training officer who called the program a joke quit; his assessment ended up in a published opinion. Completing the paperwork the program requires is how the agency later proves the training happened.\n\nFor command: the court located responsibility for use of force training with the sheriff and separated training in how to use force from training in when force is lawful. An agency that teaches techniques without teaching the legal limits is the fact pattern the court described.",
+  "trainIt": "Make the field training program real. If the program says weekly evaluations, periodic tests and a sergeant's review, those documents must exist for every trainee. Set the program length and do not release a trainee early without a documented reason.\n\nTeach the constitutional limits of force as a separate block. The court distinguished some training in the use of force from training in its constitutional limits, and tied the violations to the absence of the latter. Lesson plans for arrest and control, baton and electronic weapons should include the legal standard, and the record should show it.\n\nGet academy training done inside the statutory window. The court noted that state law required completion within fifteen months, that one deputy went sixteen, and that two deputies had not attended at all when their incidents occurred.\n\nTrain the trainers and the leaders. The sheriff's and undersheriff's own lack of training were part of the court's description of a department that could not train anyone.\n\nUse the four incidents as scenario material for proportionality: a compliant subject who takes one step, a traffic stop pat-down, a passenger who asks a question, a man attending to animals after a stop. In each, ask what force the facts justified and what the deputy did.\n\nTeach the posture: a jury verdict affirmed, with the court holding deliberate indifference established as a matter of law over a dissent. The holding is tied to a record in which training was nearly nonexistent.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which is paragraph numbered, so no reporter pin cites are given. The archive's sentence on the total compensatory award is garbled and the total is not reported. The county liability holding was over a dissent, and the as a matter of law ruling is tied to a record of nearly nonexistent training. The amended opinion's remand concerned only expert witness fees and travel expenses.",
+  "applications": [
+    {
+      "title": "A program on paper is no program",
+      "body": "The field training program called for tests, reports and periodic reviews, and there was no evidence any were done. It was supposed to run twelve months and ran a small fraction of that. The court called the training woefully inadequate, if it can be said to have existed at all."
+    },
+    {
+      "title": "Technique training is not legal limits training",
+      "body": "The court said the deputies may have had some training in the use of force but received no training in the constitutional limits of the use of force, and held that gap was deliberate indifference as a matter of law."
+    },
+    {
+      "title": "Who owns training",
+      "body": "The court held the sheriff was the final policymaker for deputy training under Washington law, so the training failure was county policy. Whoever holds that authority in your agency holds the liability."
+    },
+    {
+      "title": "Untrained leaders cannot fix untrained deputies",
+      "body": "The sheriff had never attended the academy and the undersheriff had no training or experience. Both facts were part of the court's description of the department."
+    },
+    {
+      "title": "Deputies were sent out alone early",
+      "body": "One deputy had three or four weeks of field training before patrolling alone and had not completed the academy; another had no training at all. Release from training should be a documented decision, not a staffing convenience."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the Ninth Circuit hold about Mason County's training?",
+      "options": [
+        "That the question of deliberate indifference had to be retried",
+        "That the county's failure to train its deputies in the constitutional limits of the use of force constituted deliberate indifference as a matter of law",
+        "That the training was adequate because a field training program existed on paper",
+        "That only the civil service commission could be liable"
+      ],
+      "answer": 1,
+      "teach": "The court affirmed the jury verdict and held any instructional error harmless because the record established deliberate indifference as a matter of law. The dissent objected to deciding that on appeal."
+    },
+    {
+      "q": "What did the evidence show about the field training program?",
+      "options": [
+        "It was fully documented with weekly evaluations",
+        "It may have seemed adequate on paper but was never followed; there was no evidence the required tests, reports and reviews were done, and it lasted a fraction of the planned twelve months",
+        "It exceeded the state academy curriculum",
+        "It was run by the civil service commission"
+      ],
+      "answer": 1,
+      "teach": "One of the two original field training officers called the program a joke. The absence of records that the program's steps were done was treated as evidence they were not."
+    },
+    {
+      "q": "Why did the court say the sheriff's training decisions were county policy?",
+      "options": [
+        "Because the county commissioners had delegated all authority to him",
+        "Because under Washington law the sheriff is the chief executive officer and conservator of the peace with final authority over deputy training, a law enforcement practice distinct from civil service personnel matters",
+        "Because he personally participated in the beatings",
+        "Because the county conceded the point"
+      ],
+      "answer": 1,
+      "teach": "The majority distinguished training on the use of force from the hiring and discipline matters governed by the civil service commission. The dissent read Washington law differently."
+    }
+  ]
+}

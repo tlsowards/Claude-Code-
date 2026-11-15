@@ -1,0 +1,89 @@
+{
+  "id": "graham-v-connor",
+  "name": "Graham v. Connor",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "87-6571",
+  "citation": "490 U.S. 386 (1989)",
+  "decided": "May 15, 1989",
+  "status": "published",
+  "topic": "Excessive force during an investigative stop, Fourth Amendment objective reasonableness standard for all force claims arising from the arrest or stop of a free citizen",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "force-standards"
+  ],
+  "published": "2026-11-16",
+  "summary": "A diabetic man having an insulin reaction was stopped, handcuffed, slammed onto a car hood, and thrown into a patrol car by Charlotte officers who thought he was drunk. The Supreme Court held that every claim of excessive force in an arrest, investigative stop, or other seizure of a free citizen is judged under the Fourth Amendment's objective reasonableness standard, from the perspective of a reasonable officer on the scene, without regard to the officer's intent. It is the foundation of every use of force class.",
+  "coverage": [
+    "The opinion was read in full from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep490/usrep490386/usrep490386.pdf (15 pages, 490 U.S. 386 to 400), converted with pdftotext. Pin cites are to U.S. Reports pages as printed in that PDF.",
+    "The citation 490 U.S. 386 is confirmed from the running heads of the U.S. Reports volume. The docket number, argument date, and decision date are taken from the caption.",
+    "The lower court decisions (644 F. Supp. 246 (W.D.N.C. 1986) and 827 F.2d 945 (4th Cir. 1987)) were not read. They are described only as the Supreme Court described them.",
+    "Proceedings after remand were not researched and are not described."
+  ],
+  "facts": "The facts are the evidence as the Supreme Court recited it, taken in the light most favorable to Graham because the trial court had directed a verdict against him at the close of his case (490 U.S. at 388).\n\nOn November 12, 1984, Dethorne Graham, a diabetic, felt the onset of an insulin reaction and asked a friend, William Berry, to drive him to a convenience store in Charlotte, North Carolina, for orange juice. Seeing a long checkout line, Graham hurried out and asked Berry to drive him to a friend's house instead. Officer Connor saw Graham enter and leave quickly, became suspicious, followed the car, and made an investigative stop about a half mile away. Berry told Connor that Graham was having a \"sugar reaction.\" Connor ordered them to wait while he found out what had happened at the store. While Connor went to his patrol car to call for backup, Graham got out, ran around the car twice, sat down on the curb, and passed out briefly (at 388 to 389).\n\nBackup officers arrived. One rolled Graham over on the sidewalk and cuffed his hands tightly behind his back, ignoring Berry's pleas to get him some sugar. Another said Graham was just drunk. Several officers carried Graham to Berry's car and placed him face down on the hood. When Graham asked them to check his wallet for a diabetic decal, an officer told him to \"shut up\" and shoved his face against the hood. Four officers threw him headfirst into the police car. Connor then learned that Graham had done nothing wrong at the store, and the officers drove him home and released him (at 389).\n\nGraham sustained a broken foot, cuts on his wrists, a bruised forehead, and an injured shoulder, and claimed a ringing in his right ear (at 390).\n\nHe sued the officers under 42 U.S.C. section 1983, pleading the claim under the Fourteenth Amendment. The district court applied the four factor substantive due process test from Johnson v. Glick and directed a verdict for the officers. A divided Fourth Circuit affirmed (at 390 to 392). A directed verdict for the city was not appealed, so the city was not before the Court (at 390 n.1).",
+  "holding": "Vacated and remanded. The Court held that all claims that law enforcement officers used excessive force, deadly or not, in the course of an arrest, investigatory stop, or other seizure of a free citizen are analyzed under the Fourth Amendment and its reasonableness standard, not under substantive due process (490 U.S. at 395). Section 1983 is not itself a source of rights, so the analysis begins by identifying the specific constitutional right at stake: in most force cases the Fourth Amendment for arrests and stops, or the Eighth Amendment for convicted prisoners (at 393 to 394).\n\nThe test. Reasonableness \"requires a careful balancing\" of the intrusion on the individual against the governmental interests at stake. The right to make an arrest or stop \"necessarily carries with it the right to use some degree of physical coercion or threat thereof to effect it.\" Because the test \"is not capable of precise definition or mechanical application,\" applying it \"requires careful attention to the facts and circumstances of each particular case, including the severity of the crime at issue, whether the suspect poses an immediate threat to the safety of the officers or others, and whether he is actively resisting arrest or attempting to evade arrest by flight\" (at 396). The word \"including\" matters: the three factors are examples within a totality of the circumstances inquiry, not a closed list.\n\nThe perspective. Reasonableness \"must be judged from the perspective of a reasonable officer on the scene, rather than with the 20/20 vision of hindsight.\" \"The calculus of reasonableness must embody allowance for the fact that police officers are often forced to make split-second judgments\" in circumstances that are \"tense, uncertain, and rapidly evolving\" about the amount of force necessary (at 396 to 397).\n\nThe objective inquiry. The question \"is whether the officers' actions are 'objectively reasonable' in light of the facts and circumstances confronting them, without regard to their underlying intent or motivation.\" \"An officer's evil intentions will not make a Fourth Amendment violation out of an objectively reasonable use of force; nor will an officer's good intentions make an objectively unreasonable use of force constitutional\" (at 397).\n\nWhy the lower courts erred. The Johnson v. Glick \"malicious and sadistic\" inquiry puts the officer's subjective motivation in issue, which has no bearing on whether a seizure is unreasonable. The Eighth Amendment's terms \"cruel\" and \"punishments\" invite inquiry into state of mind; \"unreasonable\" does not, and the Eighth Amendment applies only after conviction (at 397 to 399). The Court vacated and remanded for the Fourth Circuit to reconsider the directed verdict under the Fourth Amendment (at 399).\n\nJustice Blackmun, joined by Justices Brennan and Marshall, concurred in part and in the judgment. He agreed the Fourth Amendment governs but would not have foreclosed substantive due process analysis in a case where the question was squarely raised (at 399 to 400).",
+  "notDecided": "Whether the force used on Graham was excessive. The Court decided only the governing standard and remanded for the Fourth Circuit to apply it. No officer was found liable.\n\nWhether the Fourth Amendment continues to protect against deliberate excessive force after arrest ends and pretrial detention begins. The Court expressly left that question open, noting that the Due Process Clause protects a pretrial detainee from force that amounts to punishment (at 395 n.10).\n\nQualified immunity. No qualified immunity claim was raised, and the Court expressed no view on its application in Fourth Amendment force cases (at 399 n.12).\n\nMunicipal liability. The city had won a directed verdict that was not appealed, so it was not a party before the Court (at 390 n.1).\n\nOne footnote officers should know: in assessing the credibility of an officer's account of what prompted the force, a factfinder may consider, along with other factors, evidence that the officer harbored ill will toward the citizen (at 399 n.12). Intent does not change the legal standard, but it can affect whether a jury believes the officer's version of the facts.",
+  "inPractice": "Graham is the test every force decision will be measured against. Three things flow from it on the street.\n\nFirst, the facts that justify force are the facts known to the officer at the moment. Officers should be able to articulate, in order, what they saw, what they knew, and why that made the amount of force reasonable: the severity of the suspected offense, the immediate threat to officers or others, and whether the person was actively resisting or trying to flee. Those three factors come straight from the opinion, and the Court framed them as part of the totality of the circumstances, so other facts (numbers, weapons, warnings, the person's apparent condition) count too.\n\nSecond, the standard is objective. A good motive will not save force that was unreasonable, and a bad motive will not condemn force that was reasonable. But the opinion also notes that evidence of ill will can bear on an officer's credibility, so language like the remarks recited in this case becomes part of the record a jury weighs.\n\nThird, Graham protects split second judgments in tense and rapidly evolving situations. It does not protect force applied after a situation has stabilized or against a person who is already controlled. The facts here, a handcuffed man slammed onto a hood and thrown into a car while a bystander explained his medical condition, are the kind of facts the Court sent back for a jury to evaluate under the new standard.",
+  "trainIt": "Teach Graham as the frame for every force scenario, then make students apply it out loud. After each scenario, require the trainee to state the Graham factors as they existed at the moment of decision: offense, threat, resistance or flight, and the surrounding circumstances. Correct hindsight reasoning when it appears, in both directions. Trainees who justify force with facts learned afterward are making the same mistake as critics who second guess with facts the officer could not have known.\n\nTeach the medical angle from the facts. The officers in Graham treated an insulin reaction as intoxication and ignored a companion's explanation. Build scenarios where the subject's apparent noncompliance has a medical or disability explanation, and train officers to take in and record information from bystanders.\n\nTeach the three factors as a checklist for report writing, not only for decision making. A report that documents the severity of the offense, the specific threat cues, and the specific resistance observed is a report that answers the Graham question. A report that says only that the subject resisted does not.\n\nTeach the posture correctly. Graham announced the standard and remanded. It did not hold that these officers used excessive force, and it did not reach qualified immunity or the standard for force on pretrial detainees. Pair it with Tennessee v. Garner for deadly force and with Kingsley for detainees.",
+  "caution": "The opinion was read in full from the U.S. Reports. The facts are Graham's evidence taken in his favor at the directed verdict stage; the officers disputed them at trial. The Court did not decide whether the force was excessive. Subsequent history after remand was not researched.",
+  "applications": [
+    {
+      "title": "Articulate the three factors every time",
+      "body": "Severity of the crime, immediate threat to officers or others, and active resistance or flight. The Court listed them as part of the facts and circumstances of each case. Officers who can state them for the moment force was used are describing their decision in the words a court will use."
+    },
+    {
+      "title": "No hindsight, in either direction",
+      "body": "Reasonableness is judged from the perspective of a reasonable officer on the scene, not with 20/20 hindsight. That protects the officer from facts learned later. It also means facts learned later cannot be used to justify force that was unreasonable when applied."
+    },
+    {
+      "title": "Intent does not change the standard, but it can change the jury",
+      "body": "The inquiry is objective, without regard to intent or motivation. The Court still noted that evidence of ill will can bear on an officer's credibility. Profanity and insults recorded at a scene become part of that record."
+    },
+    {
+      "title": "Split second judgments are protected; stabilized situations are judged differently",
+      "body": "The calculus allows for tense, uncertain, and rapidly evolving circumstances. Once a subject is handcuffed and controlled, the circumstances have changed, and so has what a reasonable officer would do."
+    },
+    {
+      "title": "Teach the posture accurately",
+      "body": "Graham set the standard and sent the case back. It did not find the officers liable, did not reach qualified immunity, and left open the standard for force against pretrial detainees."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Under Graham v. Connor, what standard governs a claim that officers used excessive force during an arrest or investigative stop of a free citizen?",
+      "options": [
+        "Substantive due process, asking whether the force shocks the conscience",
+        "The Eighth Amendment, asking whether force was applied maliciously and sadistically",
+        "The Fourth Amendment's objective reasonableness standard",
+        "State tort law negligence"
+      ],
+      "answer": 2,
+      "teach": "The Court rejected the generic Johnson v. Glick test and held that force claims arising from an arrest, stop, or other seizure of a free citizen are analyzed under the Fourth Amendment's reasonableness standard."
+    },
+    {
+      "q": "Which of the following did the Court list as among the facts and circumstances relevant to reasonableness?",
+      "options": [
+        "The officer's years of experience, the time of day, and the number of prior complaints against the officer",
+        "The severity of the crime at issue, whether the suspect poses an immediate threat to officers or others, and whether the suspect is actively resisting or attempting to evade arrest by flight",
+        "Whether the officer acted in good faith, whether the injury was serious, and whether the department had a written policy",
+        "Whether a less intrusive alternative was available"
+      ],
+      "answer": 1,
+      "teach": "These three factors appear at 490 U.S. 396, introduced by the word \"including,\" which signals that they are examples within a totality of the circumstances inquiry."
+    },
+    {
+      "q": "What did the Supreme Court decide about whether the force used on Graham was excessive?",
+      "options": [
+        "It held the force was excessive and ordered judgment for Graham",
+        "It held the force was reasonable because Graham ran around the car",
+        "It did not decide that question; it vacated the judgment and remanded for the lower court to apply the Fourth Amendment standard",
+        "It held the officers were entitled to qualified immunity"
+      ],
+      "answer": 2,
+      "teach": "Graham announced the standard and remanded. It made no finding about the officers' conduct and expressly declined to address qualified immunity, which had not been raised."
+    }
+  ]
+}

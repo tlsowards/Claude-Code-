@@ -1,0 +1,91 @@
+{
+  "id": "lombardo-v-city-of-st-louis",
+  "name": "Lombardo v. City of St. Louis",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "20-391",
+  "citation": "594 U.S. 464 (2021) (per curiam)",
+  "decided": "June 28, 2021",
+  "status": "published",
+  "topic": "Prone restraint of a handcuffed and leg shackled detainee in a holding cell for about 15 minutes, objective reasonableness and the Kingsley factors, no per se rule for prone restraint of a resisting detainee",
+  "settings": [
+    "custody",
+    "field"
+  ],
+  "categories": [
+    "restraint-and-asphyxia",
+    "custody-and-corrections"
+  ],
+  "published": "2026-11-16",
+  "summary": "A man arrested for trespassing and a traffic warrant appeared to try to hang himself in a St. Louis holding cell. Officers handcuffed him, shackled his legs, then moved him face down on the floor, held his limbs and pressed on his back for about 15 minutes while he said it hurt and asked them to stop. He stopped breathing and died. The Eighth Circuit held the force was not excessive, citing precedent that prone restraint is not unreasonable when a detainee actively resists. In a per curiam opinion, the Supreme Court vacated that judgment because the Eighth Circuit's opinion could be read to treat ongoing resistance as controlling as a matter of law, a per se rule that would contravene the fact specific analysis Graham and Kingsley require. The Court expressed no view on whether the force was excessive or whether the right was clearly established, and sent the case back for the Eighth Circuit to decide those questions with attention to the facts, including the handcuffs, the shackles, the duration, and the department's own warning that pressure on a prone subject's back can cause suffocation.",
+  "coverage": [
+    "The slip opinion was read in full, including Justice Alito's dissent, from the Court's site at https://www.supremecourt.gov/opinions/20pdf/20-391_2c83.pdf (the file name given in the assignment, which resolved). The Court's 2020 term opinion page (https://www.supremecourt.gov/opinions/slipopinion/20) now links the case to the U.S. Reports paginated preliminary print at https://www.supremecourt.gov/opinions/20pdf/594us2r60_2c83.pdf, which was also downloaded and read.",
+    "The citation 594 U.S. 464 was confirmed from that preliminary print, which prints the case at pages 464 to 473 with the running head \"Cite as: 594 U. S. 464 (2021).\" The per curiam text in the preliminary print was compared with the slip opinion; apart from pagination and typography, no differences were found. Pin cites in this brief are to the preliminary print pages. The Library of Congress does not yet host volume 594.",
+    "Status note: this is a per curiam opinion issued on the petition for certiorari without full briefing and oral argument. It is a published opinion of the Court and binding, but it is a summary disposition that decides only that the Eighth Circuit must redo its analysis; it announces no new rule and resolves no question about the lawfulness of the restraint.",
+    "The Eighth Circuit's opinion (956 F.3d 1009) and the district court's opinion (361 F. Supp. 3d 882) were not read; they are described as the Supreme Court and the dissent described them. The result on remand was not researched for this brief."
+  ],
+  "facts": "The facts are the summary judgment record viewed in the light most favorable to Gilbert's parents, as the Court described it.\n\nOn the afternoon of December 8, 2015, St. Louis police arrested Nicholas Gilbert for trespassing in a condemned building and failing to appear in court on a traffic ticket. He was placed in a holding cell. An officer saw him tie a piece of clothing around the bars of the cell and put it around his neck, in an apparent attempt to hang himself. Three officers entered the cell. One grabbed Gilbert's wrist to handcuff him; Gilbert evaded the officer and began to struggle. The officers brought Gilbert, who was 5 feet 3 inches tall and 160 pounds, to a kneeling position over a concrete bench and handcuffed his arms behind his back. He reared back, kicking the officers and hitting his head on the bench. After he kicked one officer in the groin, they called for more help and for leg shackles. While he continued to struggle, two officers shackled his legs together. Emergency medical services were called (594 U.S. at 465).\n\nMore officers arrived, relieving two of the first three; six officers were in the cell with Gilbert, now handcuffed and in leg irons. The officers moved him to a prone position, face down on the floor. Three officers held his limbs down at the shoulders, biceps, and legs. At least one other placed pressure on his back and torso. Gilbert tried to raise his chest, saying, \"It hurts. Stop.\" After 15 minutes of struggling in this position, his breathing became abnormal and he stopped moving. The officers rolled him onto his side and then his back, found no pulse, and performed chest compressions and rescue breathing. He was pronounced dead at the hospital (at 465-466).\n\nGilbert's parents sued, alleging excessive force under both the Fourth and Fourteenth Amendments. The district court granted summary judgment to the officers on qualified immunity. The Eighth Circuit affirmed on a different ground, holding that the officers did not use unconstitutionally excessive force. It relied on circuit precedent that prone restraint is not objectively unreasonable when a detainee actively resists officers' efforts to subdue him, and described as insignificant the facts that Gilbert was already handcuffed and leg shackled when he was moved to the prone position and that officers kept him there for 15 minutes (at 466-467).",
+  "holding": "Certiorari granted, judgment vacated, and case remanded, per curiam, over a three Justice dissent.\n\nThe standard. Courts ask whether the officers' actions were objectively reasonable in light of the facts and circumstances confronting them (Graham v. Connor). The standard cannot be applied mechanically and requires careful attention to the facts and circumstances of each case. Those circumstances include \"the relationship between the need for the use of force and the amount of force used; the extent of the plaintiff's injury; any effort made by the officer to temper or to limit the amount of force; the severity of the security problem at issue; the threat reasonably perceived by the officer; and whether the plaintiff was actively resisting,\" quoting Kingsley v. Hendrickson (594 U.S. at 466-467). The Court did not decide whether the Fourth or the Fourteenth Amendment supplies the claim for a pretrial detainee in Gilbert's position, because either way the question is objective unreasonableness in light of the facts and circumstances (at 466 n.2).\n\nThe problem with the Eighth Circuit's opinion. Although the Eighth Circuit cited the Kingsley factors, \"it is unclear whether the court thought the use of a prone restraint\" is \"per se constitutional so long as an individual appears to resist officers' efforts to subdue him,\" no matter \"the kind, intensity, duration, or surrounding circumstances.\" It had described as insignificant facts that \"appear potentially important under Kingsley\": that Gilbert was already handcuffed and leg shackled when moved prone, and that officers kept him there for 15 minutes (at 467).\n\nWhy those details could matter. The record, viewed for the plaintiffs, showed that officers placed pressure on Gilbert's back \"even though St. Louis instructs its officers that pressing down on the back of a prone subject can cause suffocation.\" It also included \"well-known police guidance recommending that officers get a subject off his stomach as soon as he is handcuffed because of that risk,\" and indicating that \"the struggles of a prone suspect may be due to oxygen deficiency, rather than a desire to disobey officers' commands.\" Alongside the duration and the restraints already applied, that evidence may bear on the relationship between the need for force and the amount used, the security problem at issue, and the threat reasonably perceived (at 467-468). Having either failed to analyze that evidence or called it insignificant, the Eighth Circuit's opinion \"could be read to treat Gilbert's 'ongoing resistance' as controlling as a matter of law.\" \"Such a per se rule would contravene the careful, context-specific analysis required by this Court's excessive force precedent\" (at 468).\n\nWhat the Court did and did not do. \"We express no view as to whether the officers used unconstitutionally excessive force or, if they did, whether Gilbert's right to be free of such force in these circumstances was clearly established at the time of his death.\" The Court vacated and remanded so the Eighth Circuit could apply, in the first instance, an inquiry that clearly attends to the facts and circumstances (at 468).",
+  "dissent": "Justice Alito, joined by Justices Thomas and Gorsuch, dissented. In his view the Court unfairly read the Eighth Circuit's opinion. Read in context and with its precedent, Ryan v. Armstrong, the Eighth Circuit held only that prone restraint of an actively resisting detainee is not per se unreasonable, and that the factual differences from Ryan (longer duration, restraint after handcuffing and shackling, and conflicting cause of death evidence) did not call for a different result; it did not say duration or restraints were irrelevant. He would have either denied review of a fact bound question or granted full briefing and argument and decided whether summary judgment was proper. He wrote that the officers plainly had a reasonable basis for some force to keep Gilbert from harming himself and that Gilbert put up fierce and prolonged resistance, but that the force inflicted serious injuries and the medical evidence on the cause of death was conflicting (594 U.S. at 468 to 473).",
+  "notDecided": "Whether the force was excessive. The Court expressly took no position (594 U.S. at 468).\n\nWhether the right was clearly established. Also expressly left open (at 468).\n\nWhich amendment applies. Whether a pretrial detainee in Gilbert's position proceeds under the Fourth or the Fourteenth Amendment was not decided; the Court said the objective inquiry is the same either way (at 466 n.2).\n\nNo rule on prone restraint. The Court did not hold that prone restraint of a handcuffed and shackled detainee is unconstitutional, that 15 minutes is too long, or that pressure on the back is forbidden. It held that a court may not treat resistance as automatically justifying prone restraint regardless of kind, intensity, duration, and circumstances. The weight of the restraints, the duration, and the department's own training were identified as potentially relevant facts for the Eighth Circuit to analyze.",
+  "inPractice": "Lombardo is a restraint case taught for what the Supreme Court said could matter: the subject was already handcuffed and leg shackled, he was kept face down for 15 minutes with officers holding his limbs and pressing on his back, he said it hurt and asked them to stop, the department's own training warned that pressure on the back of a prone subject can cause suffocation, and widely known police guidance says to get a handcuffed subject off his stomach because the struggling of a prone subject may be a fight for air rather than defiance.\n\nThe Court did not rule on whether the officers acted unlawfully. It ruled that resistance cannot be the end of the analysis. For officers, that means continued movement by a restrained, prone subject has to be read in context: how much of the person is already controlled, how long the restraint has lasted, what weight is on the torso, what the person is saying, and whether a safer position is available now that the restraints are on.\n\nThe case also shows how the agency's training becomes evidence. St. Louis taught its officers that back pressure on a prone subject can cause suffocation. That instruction was the first fact the Court listed as potentially important. Training that is not followed does not disappear; it becomes the measure.",
+  "trainIt": "Teach Lombardo in the restraint line with Drummond, Tatum, and the agency's own positional asphyxia training. The teaching points come straight from the facts the Court flagged.\n\nTrain the transition. Once a subject is handcuffed and leg shackled, the goal shifts from gaining control to maintaining it safely. Train officers to move the subject off the stomach to a seated or recovery position as soon as restraints are secured, and to treat continued struggling by a restrained prone subject as a possible sign of breathing distress, not only as resistance.\n\nTrain body weight and duration. Teach that pressure on the back and torso of a prone subject is to be avoided, that it is the officer's job to monitor breathing and speech continuously, and that complaints like \"It hurts. Stop.\" require a response, not more weight. Use a clock in scenario training so officers feel what 15 minutes is.\n\nTrain the handoff. Six officers were in the cell after relief arrived. Train the arriving officers to assess the subject's condition and position on arrival, and train a single officer to be responsible for airway and monitoring.\n\nTeach the posture precisely. Lombardo vacated an Eighth Circuit decision for the officers because it may have applied a per se rule. It did not find excessive force, it did not decide qualified immunity, and it did not set a time limit or a weight limit. It said these facts must be analyzed, not dismissed as insignificant.",
+  "caution": "Per curiam summary disposition without full briefing or argument; it decides only that the Eighth Circuit must apply a fact specific analysis. The facts are the summary judgment record viewed in the plaintiffs' favor, as the Court described it; the dissent noted the medical evidence on cause of death was conflicting. The Eighth Circuit opinion and the remand were not read.",
+  "applications": [
+    {
+      "title": "Resistance is a factor, not a trump card",
+      "body": "The Court vacated because the Eighth Circuit may have treated ongoing resistance as controlling as a matter of law. Under Graham and Kingsley the kind, intensity, duration, and circumstances of a prone restraint all have to be weighed."
+    },
+    {
+      "title": "Cuffed and shackled changes the calculus",
+      "body": "The Court identified the fact that Gilbert was already handcuffed and leg shackled when moved prone as potentially important to the need for force, the security problem, and the threat perceived. Once restraints are on, reassess the position."
+    },
+    {
+      "title": "Get them off the stomach",
+      "body": "The record included well known police guidance to get a subject off his stomach as soon as he is handcuffed because of the suffocation risk, and that prone struggling may be due to oxygen deficiency rather than defiance. Train and follow it."
+    },
+    {
+      "title": "Your training is the measure",
+      "body": "St. Louis taught that pressing on the back of a prone subject can cause suffocation. The Court listed that instruction first among the facts the Eighth Circuit should have analyzed. Policy and training become the standard the force is compared against."
+    },
+    {
+      "title": "Teach the posture",
+      "body": "The Court expressed no view on whether the force was excessive or the right clearly established. It vacated and remanded so the Eighth Circuit could do the fact specific analysis first."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Why did the Supreme Court vacate the Eighth Circuit's judgment in Lombardo v. City of St. Louis?",
+      "options": [
+        "Because it held the officers used excessive force",
+        "Because it held prone restraint of a handcuffed detainee is always unconstitutional",
+        "Because the Eighth Circuit's opinion could be read to apply a per se rule that prone restraint is constitutional whenever a detainee resists, contrary to the fact specific analysis Graham and Kingsley require",
+        "Because the officers lacked probable cause to arrest Gilbert"
+      ],
+      "answer": 2,
+      "teach": "The Court expressed no view on whether the force was excessive or whether the right was clearly established. It sent the case back for the Eighth Circuit to analyze the facts, including the restraints, the duration, and the department's training."
+    },
+    {
+      "q": "Which facts did the Court identify as potentially important under Kingsley that the Eighth Circuit had called insignificant?",
+      "options": [
+        "That Gilbert was arrested for trespassing and a traffic warrant",
+        "That Gilbert was already handcuffed and leg shackled when moved to the prone position and was kept there for 15 minutes",
+        "That six officers were present",
+        "That Gilbert was 5 feet 3 inches tall"
+      ],
+      "answer": 1,
+      "teach": "The Court also pointed to the department's instruction that pressing on the back of a prone subject can cause suffocation and to guidance that officers should get a handcuffed subject off his stomach because prone struggling may reflect oxygen deficiency."
+    },
+    {
+      "q": "What did the Court decide about which constitutional provision governs a pretrial detainee's excessive force claim in Gilbert's position?",
+      "options": [
+        "The Fourth Amendment only",
+        "The Fourteenth Amendment only",
+        "The Eighth Amendment",
+        "It did not decide; under either the Fourth or Fourteenth Amendment the question is whether the force was objectively unreasonable in light of the facts and circumstances"
+      ],
+      "answer": 3,
+      "teach": "The Court said it need not resolve the source of the claim because the objective inquiry is the same. Kingsley's factors apply."
+    }
+  ]
+}

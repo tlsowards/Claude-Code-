@@ -1,0 +1,90 @@
+{
+  "id": "whiteley-v-warden",
+  "name": "Whiteley v. Warden",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "136",
+  "citation": "401 U.S. 560 (1971)",
+  "decided": "March 29, 1971",
+  "status": "published",
+  "topic": "Arrest on a police radio bulletin, arrest warrant issued on a conclusory complaint, probable cause, reliance on fellow officers, exclusion of evidence",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "instructor-and-training-liability"
+  ],
+  "published": "2026-11-16",
+  "summary": "A Wyoming sheriff acting on a tip swore out a complaint that said only that two named men broke into a building, obtained an arrest warrant, and broadcast a radio bulletin; a patrolman in another county arrested the men on the bulletin and searched their car. The Supreme Court held that the complaint could not support probable cause because it stated nothing but the sheriff's conclusion, that the arresting officer had no corroborating facts of his own, and that officers who rely on a bulletin are protected only if the officer who issued it actually had probable cause. Dr. Sowards teaches it for the lesson that what is written down is what counts.",
+  "coverage": [
+    "The opinion was read in full, including the Black dissent and the Blackmun dissenting statement, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep401/usrep401560/usrep401560.pdf (16 pages, 401 U.S. 560 to 575), converted with pdftotext. Pin cites are to U.S. Reports pages as printed in that PDF. The scan has optical character errors in places; quotations were checked against context.",
+    "The citation 401 U.S. 560 is confirmed from the running heads. The docket number (No. 136), argument date, and decision date are taken from the caption. The full caption is Whiteley v. Warden, Wyoming State Penitentiary.",
+    "The Wyoming Supreme Court decision (Whiteley v. State, 418 P.2d 164 (1966)) and the Tenth Circuit decision (Whiteley v. Meacham, 416 F.2d 36 (1969)) were not read. The facts are quoted as the Supreme Court quoted them from the Wyoming Supreme Court.",
+    "This is a Fourth Amendment arrest warrant and probable cause case decided on federal habeas corpus. The opinion says nothing about training records, police reports, or documentation of training. The documentation lesson Dr. Sowards draws from it is an analogy explained in the practice and training sections and is marked as such."
+  ],
+  "facts": "The Supreme Court took the facts from the Wyoming Supreme Court's opinion (401 U.S. at 562 to 563). On the night of November 23, 1964, several businesses in Saratoga, Wyoming, were broken into, including the Rustic Bar and Shively's Hardware. The Carbon County Sheriff, C. W. Ogburn, investigated and, acting on a tip, the next day signed a complaint before a justice of the peace charging Harold Whiteley and Jack Daley with breaking and entering. The complaint was made at about 11:30 a.m. on November 24, and a warrant issued (at 563).\n\nThe complaint read in full: \"I, C. W. Ogburn, do solemnly swear that on or about the 23 day of November, A. D. 1964, in the County of Carbon and State of Wyoming, the said Harold Whiteley and Jack Daley, defendants did then and there unlawfully break and enter a locked and sealed building [describing the location and ownership of the building]\" (at 563). It did not mention the tip or any other fact on which the sheriff relied.\n\nAt 3:03 p.m. the sheriff put out a statewide radio bulletin, state item 881. It gave the men's names and descriptions, the car they were probably driving, what was taken, and the words \"Warrant issues, will extradite\" (at 564; the warrant and broadcast times are at 568 n.12).\n\nLate that night a Laramie patrolman, relying on the bulletin, stopped and arrested Whiteley and Daley. With a deputy sheriff who arrived, he searched the car and removed tools and old coins later identified at trial as taken from Shively's Hardware (at 563). At the time of the arrest the officers knew: the contents of the bulletin; from their own observation, that two men were driving a car matching the description; that one of them, recognized by an arresting officer, was Jack Daley; that the other matched Whiteley's description; and, after the stop, that Whiteley had given a false name (at 566 to 567).\n\nWhiteley was convicted in 1965 of breaking and entering and of being an habitual criminal, and sentenced to life on the recidivist charge. He challenged the arrest and search at every stage. In federal habeas corpus the parties stipulated to rely exclusively on the state trial record. The Supreme Court granted certiorari limited to the constitutionality of the arrest and the ensuing search and seizure (at 561 to 562 and n.4).",
+  "holding": "Reversed and remanded, with directions that the writ of habeas corpus issue unless the State retries Whiteley. The arrest violated the Fourth and Fourteenth Amendments, and the evidence seized incident to it should have been excluded (401 U.S. at 568 to 569).\n\nThe complaint could not support the warrant. A magistrate issuing a warrant must be \"supplied with sufficient information to support an independent judgment that probable cause exists.\" The only support for this warrant was the complaint, which \"consists of nothing more than the complainant's conclusion that the individuals named therein perpetrated the offense described in the complaint. The actual basis for Sheriff Ogburn's conclusion was an informer's tip, but that fact, as well as every other operative fact, is omitted from the complaint. Under the cases just cited, that document alone could not support the independent judgment of a disinterested magistrate\" (at 564 to 565). \"[A]n otherwise insufficient affidavit cannot be rehabilitated by testimony concerning information possessed by the affiant when he sought the warrant but not disclosed to the issuing magistrate.\" (at 565 n.8).\n\nThe arresting officer had no probable cause of his own. The Court held the standards for an officer's probable cause assessment \"are at least as stringent as the standards applied with respect to the magistrate's assessment,\" because a looser rule would discourage officers from seeking warrants (at 565 to 566). Information gathered by arresting officers can supplement a tip, but it \"must in some sense be corroborative of the informer's tip that the arrestees committed the felony.\" Here the additional information at most showed that the sheriff or his informant knew the men and their car; \"the record is devoid of any information at any stage of the proceeding from the time of the burglary to the event of the arrest and search that would support either the reliability of the informant or the informant's conclusion that these men were connected with the crime\" (at 567).\n\nReliance on the bulletin. \"We do not, of course, question that the Laramie police were entitled to act on the strength of the radio bulletin. Certainly police officers called upon to aid other officers in executing arrest warrants are entitled to assume that the officers requesting aid offered the magistrate the information requisite to support an independent judicial assessment of probable cause. Where, however, the contrary turns out to be true, an otherwise illegal arrest cannot be insulated from challenge by the decision of the instigating officer to rely on fellow officers to make the arrest\" (at 568).\n\nNo second chance to build the record. The State asked for a remand to show that the magistrate had more information than the complaint. The Court refused: Whiteley had argued the insufficiency of the warrant at every stage, and the State had chosen to try the case on the record it had. The error was not harmless (at 569 and n.13).",
+  "dissent": "Justice Black, joined by Chief Justice Burger, called the decision \"a gross and wholly indefensible miscarriage of justice.\" He read the record as showing that the sheriff had a car description and a persuasive tip, that a witness had seen Whiteley and his car in the small town the day of the burglary, and that once the Laramie officers stopped the car, recognized Daley, and heard Whiteley give a false name, they had probable cause to arrest and to search the car under the automobile exception (at 570 to 574). The majority answered in a footnote that the record did not support the claim that the sheriff's car information came from someone who saw the car at the scene, and that even the dissent conceded the only information before the magistrate was the written complaint (at 565 n.8). Justice Blackmun also dissented (at 575). The exchange is worth teaching because it shows the Court deciding the case on what was in the complaint and the record, not on what the sheriff may have known.",
+  "notDecided": "Whether the sheriff in fact had probable cause. The Court did not say he lacked it; it held that whatever he knew was not communicated to the magistrate or to the record, and only the complaint could be considered.\n\nWhether the arrest would have been valid if the radio bulletin had been backed by a warrant issued on a sufficient complaint. The Court's statement that officers may act on a bulletin and assume the requesting officers gave the magistrate adequate information indicates it would have been, but that was not the case before the Court.\n\nWhether the false name, standing alone, could have supplied probable cause after the stop. The majority treated it as one of the facts known to the arresting officer and found the total insufficient to corroborate the tip; it did not analyze the false name separately as the dissent did.\n\nAnything about police reports, training records, or documentation as such. The case is about a sworn complaint presented to a magistrate and about the stipulated trial record. The documentation lesson is an inference from how the Court treated those two things.",
+  "inPractice": "What the Court held is a rule about probable cause and about relying on other officers. An officer who arrests on a bulletin, a warrant hit, or a request from another agency is entitled to act on it, and if the issuing officer had probable cause the arrest is sound. If the issuing officer did not, the arrest is unlawful, and the arresting officer's good faith reliance does not cure it for Fourth Amendment and exclusionary rule purposes.\n\nHere is how the documentation lesson connects. The sheriff may have known more than he wrote; the dissent thought he did. It did not matter, because the only thing the magistrate saw was a complaint stating a conclusion, and the Court held that an insufficient affidavit cannot be rehabilitated by testimony about facts the affiant knew but did not disclose. The State then lost the chance to prove the magistrate had more because it never built that record when it could. In both respects the case was decided on what was written and preserved, not on what someone later said he knew. That is the honest basis for the lesson Dr. Sowards draws: if the fact is not in the document, the court proceeds as if it did not exist.\n\nThe Court said nothing about training files or use of force reports. The same logic, however, governs any proceeding in which an agency must prove what an officer knew, did, or was taught. The record is the proof.",
+  "trainIt": "Teach the holding first and the lesson second, and keep them separate. The holding: a complaint or affidavit must give the magistrate facts, not the officer's conclusion; an officer's own probable cause is judged at least as strictly as a magistrate's; and officers who act on a bulletin are protected only if the officer behind it actually had probable cause. Use the Ogburn complaint as an exhibit. Have trainees rewrite it with the tip, the informant's basis of knowledge, and any corroboration.\n\nTeach the responsibility that runs with a broadcast. The officer who issues a bulletin or requests an arrest is vouching to every officer who relies on it. Train issuing officers to document their probable cause before the broadcast goes out, and receiving officers that their reliance is lawful but does not repair a bad source.\n\nThen draw the documentation lesson explicitly as an analogy. The Court refused to consider what the sheriff knew but did not write, and refused to let the State build a record it had not built at the time. Apply that to use of force reports, training records, and lesson plans: an agency that must show what an officer was taught, or what an officer observed before using force, will be held to what was recorded. Say plainly that Whiteley did not address training records.\n\nTeach the posture. This was a habeas corpus case about a criminal conviction. No officer was sued, and no one was found liable.",
+  "caution": "The opinion was read in full from the U.S. Reports. This is a Fourth Amendment arrest warrant and probable cause case on federal habeas corpus, not a civil liability or training case. The Court said nothing about documentation of training or police reports; the practice and training sections identify the documentation lesson as an analogy. The facts are those recited by the Wyoming Supreme Court as quoted by the Court. The pdftotext conversion of the scan contains character errors; quotations were verified against surrounding text.",
+  "applications": [
+    {
+      "title": "Facts, not conclusions, go in the affidavit",
+      "body": "The sheriff's complaint said only that the two named men broke into the building. The Court held that a document stating the complainant's conclusion, with every operative fact omitted, cannot support a magistrate's independent judgment. Write the tip, the source's basis of knowledge, and the corroboration."
+    },
+    {
+      "title": "What you knew but did not write does not count",
+      "body": "The Court held that an insufficient affidavit cannot be rehabilitated by testimony about information the affiant possessed but did not disclose to the magistrate. This is the holding closest to the documentation lesson."
+    },
+    {
+      "title": "A bulletin is only as good as its source",
+      "body": "Officers may act on a bulletin and assume the issuing officer had probable cause. If that turns out to be false, the arrest is unlawful anyway. The issuing officer carries the responsibility for every officer who relies on the broadcast."
+    },
+    {
+      "title": "The arresting officer's own facts must corroborate the crime",
+      "body": "Matching the car and the descriptions showed only that the sheriff or his informant knew the men and their car. It did not corroborate the claim that they committed the burglary. Observations that confirm identity are not the same as observations that confirm guilt."
+    },
+    {
+      "title": "The documentation lesson is an analogy; say so",
+      "body": "Whiteley is about a sworn complaint and a trial record, not training files. The lesson that an undocumented fact is treated as if it did not occur is drawn from how the Court handled an incomplete affidavit and a State that did not build its record when it could."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Why did the Supreme Court hold that the arrest warrant for Whiteley was invalid?",
+      "options": [
+        "Because the sheriff did not have a tip",
+        "Because the complaint stated only the sheriff's conclusion that the named men committed the offense and omitted every operative fact, so it could not support the magistrate's independent judgment",
+        "Because the justice of the peace was not a lawyer",
+        "Because the warrant was issued in a different county from the arrest"
+      ],
+      "answer": 1,
+      "teach": "The Court looked only at what was before the magistrate. The sheriff's tip and anything else he knew were not in the complaint, and the Court held an insufficient affidavit cannot be rehabilitated by later testimony about undisclosed information."
+    },
+    {
+      "q": "What did the Court say about the Laramie officers' reliance on the radio bulletin?",
+      "options": [
+        "Officers may never arrest on a radio bulletin without their own probable cause",
+        "Officers may act on a bulletin and assume the requesting officers gave the magistrate adequate information, but if that turns out to be untrue the arrest is not insulated from challenge",
+        "Reliance on a bulletin makes any arrest lawful",
+        "The bulletin was invalid because it was broadcast after the warrant issued"
+      ],
+      "answer": 1,
+      "teach": "The Court protected the practice of acting on bulletins while placing the responsibility on the issuing officer. The arresting officers' good faith did not make the arrest lawful when the source lacked probable cause."
+    },
+    {
+      "q": "What kind of case is Whiteley v. Warden?",
+      "options": [
+        "A section 1983 damages case holding officers liable for an unlawful arrest",
+        "A municipal liability case about failure to train on documentation",
+        "A federal habeas corpus case holding that evidence seized incident to an arrest without probable cause should have been excluded from a criminal trial",
+        "A qualified immunity case"
+      ],
+      "answer": 2,
+      "teach": "No officer was sued and no one was found liable. The documentation lesson Dr. Sowards teaches is an analogy from the Court's refusal to consider facts that were not in the complaint or the record."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "hays-v-jefferson-county",
+  "name": "Hays v. Jefferson County",
+  "court": "Sixth Circuit (from the Western District of Kentucky)",
+  "courtKey": "ca6",
+  "docket": "80-3010 and 80-3011",
+  "citation": "668 F.2d 869 (6th Cir. 1982)",
+  "decided": "January 4, 1982",
+  "status": "published",
+  "topic": "Supervisory and county liability for failure to train, supervise and control officers who beat demonstrators with riot sticks; the degree of fault required; crowd control",
+  "settings": [
+    "field",
+    "supervisors"
+  ],
+  "categories": [
+    "instructor-and-training-liability",
+    "supervision-and-intercede"
+  ],
+  "published": "2026-11-16",
+  "summary": "During a 1975 anti-busing demonstration in Jefferson County, Kentucky, officers in unmarked jumpsuits and gas masks advanced on a crowd before their commander ordered it, beat two demonstrators with riot sticks, and could not be identified afterward. A jury found the county, its police chief and his deputy liable on a simple negligence instruction. The Sixth Circuit vacated and ordered a new trial, holding that simple negligence is not enough: a supervisor or municipality may be liable for inadequate training only where there is essentially a complete failure to train, or training so reckless or grossly negligent that misconduct is almost inevitable, and the official must at least have implicitly authorized, approved or knowingly acquiesced in the conduct. It is taught as an early statement of the training liability standard the Sixth Circuit later applied in Rymer v. Davis.",
+  "coverage": [
+    "The opinion was read in full, including Judge Merritt's dissent and the dissent from denial of rehearing en banc, from the Public.Resource.Org archive at https://law.resource.org/pub/us/case/reporter/F2/668/668.F2d.869.80-3011.80-3010.html. The header carries 668 F.2d 869 and dockets 80-3010 and 80-3011, which is how the citation was confirmed. The archive text is not page numbered, so no reporter page pin cites are given.",
+    "Later opinions read for this project (Rymer v. Davis, 754 F.2d 198, and the Parker v. District of Columbia dissent) cite the denial of certiorari as 459 U.S. 833 (1982). That citation was not independently verified from a Supreme Court source.",
+    "The trial record and the district court's rulings were not read. The facts are as the Sixth Circuit stated them.",
+    "Dr. Sowards teaches that the nature, scope and quality of training must be documented. The opinion does not discuss documentation of training, and the word unstructured does not appear in it. The majority does not describe the content of the county's training at all; the dissent refers to a possible neglect to give adequate riot training. The documentation point is a lesson drawn from the standard the court announced, not something the court said. The brief separates the two.",
+    "What happened on remand was not checked."
+  ],
+  "facts": "The facts are as the Sixth Circuit stated them.\n\nOn September 26, 1975, a demonstration against court-ordered school busing took place at the Bittersweet Shopping Center in Jefferson County, Kentucky. A fire built in the parking lot grew over the day, and the crowd grew from 50 to 75 people in the morning to 300 to 500 by late evening. At about 7:30 or 8:00 p.m., Major Wilbur Bilyeu decided the fire had to be put out and called in 40 to 50 officers. The crowd became agitated. Bilyeu called the fire department, but a small group of demonstrators prevented the firefighters from working. He then decided the crowd had to be dispersed, sent the firefighters away, and assembled the officers in the high school lot.\n\nWitnesses disagreed about the warnings given, how many demonstrators remained, how much tear gas was used, and what the crowd was doing. After warnings, tear gas was fired, and within 15 to 30 seconds the officers crossed the street into the crowd. They began their advance before Bilyeu ordered it. He tried to stop them with repeated bullhorn commands not to cross the street; when that failed, he took no further action to control them.\n\nWitnesses testified to widespread damage to vehicles by officers, and to officers striking demonstrators and passersby with riot sticks and pushing and kicking them. The officers wore blue jumpsuits, gloves, helmets and gas masks. Identification patches had not been sewn on, in part because the suits were new, and a lieutenant testified that probably 90 percent of the officers had no identification tags. Many witnesses could not identify any individual officer.\n\nPlaintiff Michael Potter was struck across the knuckles and repeatedly on the back and shoulders by unidentified officers. Plaintiff Donald Hays was beaten and kicked into a grand mal seizure and unconsciousness by five or six unidentified officers and spent about ten days in the hospital. Neither was arrested or charged.\n\nThe plaintiffs sued the county, Chief Russell McDaniel and Major Bilyeu for negligent training, supervision and control of the unidentified officers. The jury was instructed on simple negligence. It awarded Hays $20,000 against the county and $5,000 each against McDaniel and Bilyeu, and Potter $2,000 against the county and $500 each against the individuals, plus $20,000 in attorneys' fees. Punitive awards were remitted by the trial court. The defendants appealed and the plaintiffs cross-appealed.",
+  "holding": "Vacated and remanded for a new trial.\n\nThe standard. The court held that simple negligence is insufficient to support the liability of high police officials and municipalities for inadequate training, supervision and control of individual officers. It began from Monell and Rizzo v. Goode: supervisory liability must rest on more than the right to control employees, because that would be respondeat superior, and there must be a direct causal link between the acts of the officers and the supervisory defendants. Surveying the case law, it found that courts look for a culpable state of mind, some proof that the action or failure to act was to some degree deliberate rather than inadvertent, under labels ranging from gross negligence or recklessness to harm substantially likely to result.\n\nThe court then stated two rules. First, after Rizzo, a supervisory official's failure to supervise, control or train the offending officers is not actionable absent a showing that the official either encouraged the specific incident of misconduct or in some other way directly participated in it; at a minimum, a plaintiff must show that the official at least implicitly authorized, approved, or knowingly acquiesced in the unconstitutional conduct of the offending officers. Second, where, as here, the violation was not alleged to be part of a pattern of past misconduct, a supervisory official or a municipality may be held liable only where there is essentially a complete failure to train the police force, or training that is so reckless or grossly negligent that future police misconduct is almost inevitable, or would properly be characterized as substantially certain to result.\n\nThe court applied the same standard to the plaintiffs' direct constitutional action under Bivens as to the section 1983 claim, seeing no basis for different standards on these facts.\n\nThe county's instruction. The county argued that the instruction imposed respondeat superior liability. The court disagreed. A governmental entity can act only through its principal officials, and the instruction properly distinguished the acts of the unidentified officers, for which the county could not be liable absent a policy or custom, from a failure to train, supervise or control by the chief and assistant chief, whose failure would be the county's failure. The negligence standard in the instruction had to be changed to conform to the opinion, but the instruction was otherwise proper.\n\nContributory negligence. The court rejected the argument that the plaintiffs were contributorily negligent in failing to leave after dispersal orders. They were intentionally beaten, and contributory negligence has never been a defense to intentional tortious conduct.\n\nThe court did not reach the good faith defense, punitive damages or attorneys' fees, leaving them for remand.",
+  "dissent": "Judge Merritt dissented. On the county, he would have held that Monell's policy or custom requirement applied equally to the direct constitutional action, that the plaintiffs had not shown a policy or custom, and that the case against the county should not have gone to the jury. On the individual supervisors, he argued that neither negligence nor gross negligence alone should be the standard; fault is one element, and knowledge is another. The official must know that constitutional injury is likely unless action is taken, which requires some past pattern of misconduct or other prior act putting the official on notice. Here the supervisors tried to stop the advance and there was no proof of a pattern, so even if a jury could find a neglect to give adequate riot training, it could not find the required knowledge. He would have directed judgment for the two officials.\n\nJudges Merritt, Brown, Kennedy and Martin dissented from the denial of rehearing en banc. They argued the panel's failure to train and gross negligence standards were inadequate, that the majority opinion was internally inconsistent on the county's liability because the trial judge had directed a verdict on the section 1983 claim for want of a policy or custom yet the panel remanded the direct action, and that holding a municipality liable whenever its principal officials are liable is a species of respondeat superior.",
+  "notDecided": "Whether the county or the individual officials were liable. The court vacated the verdicts and ordered a new trial under the correct standard; it made no finding either way.\n\nWhat the county's training actually consisted of, or whether it was adequate. The majority does not describe the training. Nothing in the opinion addresses how training should be structured or documented.\n\nWhether negligence can ever support section 1983 liability in other contexts. The court limited its holding to supervisory and municipal liability for inadequate training, supervision and control.\n\nThe good faith defense, punitive damages and attorneys' fees, which were left for remand.\n\nWhether the knowledge or notice element urged by the dissent is required. The majority stated its standard in terms of complete failure to train or grossly negligent training, with at least implicit authorization, approval or knowing acquiescence.",
+  "inPractice": "Hays describes a crowd control operation that failed at the point of control. Officers advanced before the order, the commander's bullhorn commands did not stop them, and he then did nothing more. Officers in new jumpsuits without identification patches and mostly without nametags could not be identified afterward, so the plaintiffs sued the people who were supposed to have trained and controlled them.\n\nFor line officers: move on command, hold on command. The court's description of an advance that began before the order is the kind of fact that turns an individual's use of force into a supervisory and agency case.\n\nFor supervisors: the court's standard asks whether the official encouraged the conduct, participated in it, or at least implicitly authorized, approved or knowingly acquiesced in it. A supervisor who gives a command, sees it ignored, and takes no further action will be asked what else was available.\n\nFor agencies: identification is part of accountability. The missing patches and nametags did not create liability by themselves, but they made the individual officers unreachable and pushed the case up the chain of command.\n\nFor everyone: the standard the court announced is demanding. Simple negligence is not enough. The plaintiffs needed to show essentially a complete failure to train, or training so reckless or grossly negligent that misconduct was almost inevitable. That is why Dr. Sowards pairs this case with Rymer v. Davis, where the Sixth Circuit found that standard met.",
+  "trainIt": "Teach Hays as the standard, and Rymer as the application. Hays tells trainees what a plaintiff must prove against a supervisor or agency on a failure to train theory: a complete failure to train, or training so grossly negligent that misconduct was almost inevitable, with at least implicit authorization, approval or knowing acquiescence by the official.\n\nUse the facts for crowd management training: a fire that grows over hours, a crowd that grows with it, a dispersal decision, warnings, gas, and an advance that outruns the command. Build scenario training in which the line holds until the order and the supervisor has a plan if it does not.\n\nMake identification a checklist item. Jumpsuits went into the field without patches because they were new. Equipment issued for crowd operations should not deploy until identification is on it.\n\nThe documentation lesson. Dr. Sowards teaches that the nature, scope and quality of training must be documented. Hays does not say that. The lesson follows from the standard: an agency defending a Hays claim has to show that training existed and what it covered, and the only way to show that years later is a record of lesson plans, attendance and content. Teach it as the practical consequence of the holding, not as the holding.\n\nTeach the posture: this was a vacated verdict and a remand for a new trial, with a dissent that would have gone further for the defendants. No one was found liable in this opinion.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which is not page numbered, so no reporter pin cites are given. The certiorari denial citation is as reported in later opinions and was not independently verified. The majority does not describe the training the county gave and says nothing about documentation or unstructured training; those are lessons drawn by Dr. Sowards, not holdings. The verdicts were vacated, and the outcome on remand was not checked.",
+  "applications": [
+    {
+      "title": "Negligence is not the standard",
+      "body": "The jury was instructed on simple negligence and the verdicts were vacated for that reason. Supervisory and municipal liability for inadequate training requires at least gross negligence of a kind that makes misconduct almost inevitable, and at least implicit authorization, approval or knowing acquiescence."
+    },
+    {
+      "title": "Control means more than a command",
+      "body": "The commander ordered officers not to cross the street, they crossed anyway, and he took no further action. The failure to control the line, not only the failure to train before the event, was part of the plaintiffs' theory."
+    },
+    {
+      "title": "Unidentifiable officers push liability up the chain",
+      "body": "Without patches or nametags, witnesses could not say who struck whom. The defendants became the county, the chief and the deputy chief. Issue identification with the equipment."
+    },
+    {
+      "title": "Documentation is the lesson, not the holding",
+      "body": "Hays does not mention training records. But an agency that must prove its training was not essentially a complete failure needs records of what was taught, to whom, and when."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Why did the Sixth Circuit vacate the verdicts in Hays v. Jefferson County?",
+      "options": [
+        "Because the plaintiffs failed to leave after dispersal orders",
+        "Because the jury was instructed on simple negligence, which is insufficient for supervisory or municipal liability for inadequate training, supervision and control",
+        "Because the county had an adequate written training program",
+        "Because the officers were identified and should have been sued individually"
+      ],
+      "answer": 1,
+      "teach": "The court held that a culpable state of mind beyond negligence is required, and remanded for a new trial under the correct standard. It did not decide whether the defendants were liable."
+    },
+    {
+      "q": "Absent a pattern of past misconduct, when did the court say a supervisor or municipality may be liable for inadequate training?",
+      "options": [
+        "Whenever an officer injures someone",
+        "Only where there is essentially a complete failure to train, or training so reckless or grossly negligent that future misconduct is almost inevitable or substantially certain to result",
+        "Only where the training was not documented in writing",
+        "Never, because training decisions are discretionary"
+      ],
+      "answer": 1,
+      "teach": "This is the formulation the Sixth Circuit applied three years later in Rymer v. Davis to uphold a verdict against a city with no rules and no arrest procedure training."
+    },
+    {
+      "q": "Did the court hold that training must be documented?",
+      "options": [
+        "Yes, it required written lesson plans",
+        "Yes, it required attendance records",
+        "No, the opinion does not discuss documentation of training; that is a lesson instructors draw from the standard",
+        "No, it held documentation is irrelevant"
+      ],
+      "answer": 2,
+      "teach": "Separate the holding from the lesson. The court set a liability standard. Proving that an agency met it, years later, is where documentation matters."
+    }
+  ]
+}

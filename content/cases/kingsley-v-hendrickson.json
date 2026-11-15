@@ -1,0 +1,90 @@
+{
+  "id": "kingsley-v-hendrickson",
+  "name": "Kingsley v. Hendrickson",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "14-6368",
+  "citation": "576 U.S. 389 (2015)",
+  "decided": "June 22, 2015",
+  "status": "published",
+  "topic": "Excessive force against a pretrial detainee, Fourteenth Amendment due process, objective reasonableness, cell extraction and Taser in a county jail",
+  "settings": [
+    "custody"
+  ],
+  "categories": [
+    "custody-and-corrections",
+    "force-standards"
+  ],
+  "published": "2026-11-16",
+  "summary": "A pretrial detainee in a Wisconsin county jail was handcuffed, carried to a receiving cell, placed face down, and Tasered for about five seconds after refusing to take paper off a light fixture. The Supreme Court held that a pretrial detainee claiming excessive force under the Fourteenth Amendment must show only that the force purposely or knowingly used against him was objectively unreasonable; he does not have to prove the officers knew the force was excessive. The Court listed factors for jail force, said the list is not exclusive, and said courts must defer to the policies and practices jail officials judge necessary for order and security. It vacated a defense verdict because the jury instruction required reckless disregard, and sent the case back. It did not decide whether the force used was excessive.",
+  "coverage": [
+    "The assigned slip opinion URL (https://www.supremecourt.gov/opinions/14pdf/14-6368_m64o.pdf) returned a 404, and the Court's 2014 term slip opinion page (https://www.supremecourt.gov/opinions/slipopinion/14) now redirects to the U.S. Reports page. The opinion was therefore read in full, including both dissents, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep576/usrep576389/usrep576389.pdf. Pin cites are to the U.S. Reports pages printed in that file.",
+    "The citation 576 U.S. 389 and the decision date of June 22, 2015 were confirmed from the running heads and syllabus of that file. The docket number 14-6368 appears in the syllabus.",
+    "The Seventh Circuit's opinion (744 F.3d 443) and the district court record were not read. The jury instruction is quoted as the Supreme Court quoted it.",
+    "Subsequent history on remand was not researched for this brief."
+  ],
+  "facts": "Some facts were undisputed and some were contested at trial; they are given as the Supreme Court described them.\n\nMichael Kingsley was arrested on a drug charge and held in a Wisconsin county jail before trial. On the evening of May 20, 2010, an officer doing a cell check saw a piece of paper covering the light fixture above Kingsley's bed and told him to remove it. Kingsley refused, and refused again when other officers and, the next morning, the jail administrator ordered him to take it down. The administrator told Kingsley that officers would remove the paper and move him to a receiving cell in the meantime (576 U.S. at 392).\n\nFour officers, including Sergeant Stan Hendrickson and Deputy Sheriff Fritz Degner, came to the cell and ordered Kingsley to stand, back up to the door, and keep his hands behind him. When he did not comply, they handcuffed him, forcibly removed him, carried him to a receiving cell, and placed him face down on a bunk with his hands cuffed behind his back (at 392).\n\nThe accounts then diverged. The officers testified that Kingsley resisted their efforts to remove his handcuffs; Kingsley testified that he did not resist. All agreed that Hendrickson placed his knee in Kingsley's back and that Kingsley told him, in impolite language, to get off. Kingsley testified that Hendrickson and Degner then slammed his head into the concrete bunk, which the officers denied. The parties agreed about what followed: Hendrickson directed Degner to use a Taser, Degner applied it to Kingsley's back for approximately five seconds, the officers left the handcuffed Kingsley alone in the receiving cell, and officers returned 15 minutes later and removed the handcuffs (at 392-393).\n\nKingsley sued under 42 U.S.C. section 1983, claiming that Hendrickson and Degner used excessive force in violation of the Fourteenth Amendment's Due Process Clause. At trial the jury was told that excessive force \"means force applied recklessly that is unreasonable in light of the facts and circumstances of the time,\" and that Kingsley had to prove, among other things, that the defendants \"recklessly disregarded\" his safety and acted \"with reckless disregard\" of his rights. The jury found for the officers. A divided Seventh Circuit panel affirmed, holding that a subjective inquiry into the officers' state of mind was required. The Supreme Court took the case to resolve a circuit split (at 393-395).",
+  "holding": "Vacated and remanded. The Court held, 5 to 4, that \"a pretrial detainee must show only that the force purposely or knowingly used against him was objectively unreasonable\" (576 U.S. at 396-397). The detainee does not have to prove that the officers knew their force was unreasonable.\n\nTwo state of mind questions. The first concerns the physical act: force must be deliberate, meaning purposeful or knowing. An accidental Taser discharge, or an officer who trips and falls on a detainee, does not support a claim, because negligence is below the constitutional threshold. Whether recklessness as to the act could suffice was left open, since these officers conceded they used force on purpose (at 395-396). The second question, whether the force deliberately used was excessive, is judged objectively only (at 396-397).\n\nHow the standard is applied. \"A court (judge or jury) cannot apply this standard mechanically\" (at 397). Reasonableness turns on the facts and circumstances of each case, judged from the perspective of a reasonable officer on the scene with what the officer knew at the time, not with hindsight. A court must also account for the government's legitimate interests in managing the facility, deferring to the policies and practices that jail officials judge necessary to preserve order and discipline and maintain institutional security (Bell v. Wolfish) (at 397).\n\nThe factors. Considerations that \"may bear on the reasonableness or unreasonableness of the force used\" include \"the relationship between the need for the use of force and the amount of force used; the extent of the plaintiff's injury; any effort made by the officer to temper or to limit the amount of force; the severity of the security problem at issue; the threat reasonably perceived by the officer; and whether the plaintiff was actively resisting.\" \"We do not consider this list to be exclusive\" (at 397).\n\nWhy objective. Under Bell a pretrial detainee may not be punished and may prevail with objective evidence that a measure is not rationally related to a legitimate nonpunitive purpose or is excessive in relation to it (at 397-399). Several circuits already used objective pattern instructions, and many facilities, including this jail, train to an objective standard (at 399). The standard protects good faith officers because force is judged from the officer's perspective, jail management interests are built in, liability requires an intentional or knowing act, and qualified immunity applies (at 399-400).\n\nWhitley and Hudson distinguished. Those cases involved convicted prisoners under the Eighth Amendment. Pretrial detainees \"cannot be punished at all, much less 'maliciously and sadistically.'\" Whitley and Hudson matter here only for their recognition of the legitimate safety concerns of those who run jails (at 400-401).\n\nThe instruction. By requiring reckless disregard in addition to objective unreasonableness, and telling the jury to consider whether the officers reasonably believed there was a threat, the instruction invited the jury to weigh the officers' subjective reasons and views. That was error; harmlessness was left to the Seventh Circuit (at 403-404).",
+  "dissent": "Justice Scalia, joined by Chief Justice Roberts and Justice Thomas, dissented. In his view Bell v. Wolfish makes intent to punish the focus of due process analysis, and objective unreasonableness is only a heuristic for inferring that intent. Inferring punitive intent from considered detention policies makes sense; inferring it automatically from a guard's split second misjudgment about how much force to use does not. He noted that Kingsley also had a state law assault and battery claim, and wrote that the Due Process Clause is not a font of tort law (576 U.S. at 404 to 408).\n\nJustice Alito would have dismissed the case as improvidently granted. He would first decide whether a pretrial detainee can bring a Fourth Amendment claim for force used by detention staff, a question the Court has not resolved; if so, the objective Fourth Amendment test would apply and there would be no need to rely on substantive due process (at 408).",
+  "notDecided": "Whether the force was excessive. The Court decided the legal standard and the instruction. It made no finding that Hendrickson or Degner used excessive force; the defense verdict was vacated and the case returned to the Seventh Circuit, which was to decide first whether the instruction error was harmless (576 U.S. at 404).\n\nRecklessness as to the act. Whether a reckless, rather than purposeful or knowing, physical act could support a detainee's claim was left open (at 396).\n\nThe Fourth Amendment. Whether a pretrial detainee may bring a Fourth Amendment claim for force used in a jail was not decided; the majority analyzed only the Due Process Clause, and Justice Alito dissented on that ground (at 408).\n\nConvicted prisoners. The Court acknowledged that its reasoning \"may raise questions\" about the subjective standard for convicted prisoners' Eighth Amendment force claims and said it need not address that issue (at 402). Whitley and Hudson remain the standard for convicted prisoners.",
+  "inPractice": "For jail and juvenile hall staff, the force used on a pretrial detainee is judged by what a reasonable officer on the scene would have done with what that officer knew. Good intentions do not satisfy the standard, and bad intentions are not required to fail it. What protects an officer is the objective record: what the detainee did, what the security problem was, what threat was reasonably perceived, what was tried first, how much force was used, and what injury resulted.\n\nThe Court's six factors are a report outline. Each one should be answered in the incident report in the officer's own words, in order, with times where possible.\n\nDeference runs to policy. The Court said courts must defer to the policies and practices jail officials judge necessary for order and security. That deference attaches to the facility's written policy and trained practice. Force that follows policy carries it; force outside policy does not.\n\nThe record a jury hears matters. In this case it was a refusal over a piece of paper, repeated orders, a cell extraction, a handcuffed detainee prone on a bunk, a knee in the back, a disputed head strike, a five second Taser application on a handcuffed man, and 15 minutes alone in cuffs. The Court did not decide whether that was excessive. It did say that whether the detainee was actively resisting at the moment of force is one of the factors, and resistance was the disputed fact here.",
+  "trainIt": "Teach the two custody standards side by side. For pretrial detainees under the Fourteenth Amendment, the test is objective reasonableness with deference to jail policy (Kingsley). For convicted prisoners under the Eighth Amendment, the test is whether force was applied in a good faith effort to maintain or restore discipline or maliciously and sadistically to cause harm (Whitley, Hudson). In a mixed population, train every officer to the objective standard for every detainee; the Court noted that many facilities, including this one, already do (576 U.S. at 399).\n\nBuild scenario training around the six Kingsley factors. After each scenario, have the officer state the security problem, the threat perceived and why, the efforts made to limit force (orders, warnings, time, lesser options), the relationship between the need and the amount used, and the injury. Then have the officer write it.\n\nTrain cell extraction and post restraint practice as a sequence with decision points: the order, the refusal, the entry, the cuffing, the prone placement, the weight applied, the Taser decision, the removal of cuffs, and the monitoring that follows. Each point is where the factors are applied.\n\nTrain supervisors. The sergeant here directed the Taser application. A supervisor's order to use force is part of the force decision and is judged by the same standard.\n\nTeach the posture accurately. Kingsley set the standard and vacated a verdict. It did not hold that these officers used excessive force.",
+  "caution": "The opinion was read in full from the U.S. Reports PDF at the Library of Congress. The facts include disputed trial testimony, described as the Court described it. The lower court opinions were not read. The result on remand was not researched.",
+  "applications": [
+    {
+      "title": "Your intent is not the test; your perspective is",
+      "body": "A pretrial detainee does not have to prove the officer knew the force was excessive. The question is whether the force was objectively unreasonable from the perspective of a reasonable officer on the scene with the officer's knowledge. Write reports that put the reader in that position."
+    },
+    {
+      "title": "The six factors are the report outline",
+      "body": "Need versus amount of force, extent of injury, efforts to temper or limit force, severity of the security problem, threat reasonably perceived, and active resistance. The Court said the list is not exclusive, so add anything else a reasonable officer weighed."
+    },
+    {
+      "title": "Policy earns deference",
+      "body": "Courts defer to the policies and practices jail officials judge necessary for order and security. That is a reason to know the facility's force and restraint policy and to stay inside it, especially on prone restraint, Taser use on restrained subjects, and post force monitoring."
+    },
+    {
+      "title": "Same cell, two standards",
+      "body": "A pretrial detainee and a sentenced prisoner in the same unit are protected by different clauses. The Court said pretrial detainees cannot be punished at all. Train to the more demanding objective standard for everyone."
+    },
+    {
+      "title": "Teach the posture",
+      "body": "Kingsley vacated a defense verdict because of a bad jury instruction. It did not find excessive force, and it left the harmless error question to the Seventh Circuit."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Under Kingsley v. Hendrickson, what must a pretrial detainee prove to win a Fourteenth Amendment excessive force claim?",
+      "options": [
+        "That the officers acted maliciously and sadistically to cause harm",
+        "That the force purposely or knowingly used was objectively unreasonable",
+        "That the officers knew the force was excessive and used it anyway",
+        "That the detainee suffered a serious injury"
+      ],
+      "answer": 1,
+      "teach": "The standard is objective. The officer's state of mind matters only in the sense that the physical act must be purposeful or knowing, not accidental or negligent. Whether a reckless act suffices was left open."
+    },
+    {
+      "q": "Which of these did the Court say about the list of factors it gave for judging force in a jail?",
+      "options": [
+        "The list is exhaustive and courts may not consider anything else",
+        "The list applies only to Taser cases",
+        "The list is not exclusive; it illustrates objective circumstances that may be relevant",
+        "The factors must be weighed equally"
+      ],
+      "answer": 2,
+      "teach": "The six factors (need versus amount, injury, efforts to temper, severity of the security problem, threat perceived, active resistance) are illustrations. The Court also said a court cannot apply the standard mechanically and must defer to jail policies and practices needed for order and security."
+    },
+    {
+      "q": "What did the Supreme Court decide about whether the officers in Kingsley used excessive force?",
+      "options": [
+        "It held the Taser application on a handcuffed detainee was excessive",
+        "It held the force was reasonable because Kingsley refused orders",
+        "It did not decide; it vacated the verdict because the jury instruction was wrong and remanded",
+        "It ordered a new trial with damages"
+      ],
+      "answer": 2,
+      "teach": "The Court decided the legal standard and found the instruction erroneous. It left harmless error to the Seventh Circuit and made no finding on whether the force was excessive."
+    }
+  ]
+}

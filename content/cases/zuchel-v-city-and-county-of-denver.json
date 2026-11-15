@@ -1,0 +1,91 @@
+{
+  "id": "zuchel-v-city-and-county-of-denver",
+  "name": "Zuchel v. City and County of Denver",
+  "court": "Tenth Circuit (from the District of Colorado)",
+  "courtKey": "ca10",
+  "docket": "91-1379, 91-1395 and 91-1400",
+  "citation": "997 F.2d 730 (10th Cir. 1993)",
+  "decided": "June 23, 1993 (rehearing denied August 23, 1993)",
+  "status": "published",
+  "topic": "Municipal liability under City of Canton v. Harris for inadequate shoot/don't shoot training; a fatal police shooting of a man holding fingernail clippers; deadly force",
+  "settings": [
+    "field",
+    "supervisors"
+  ],
+  "categories": [
+    "instructor-and-training-liability",
+    "deadly-force"
+  ],
+  "published": "2026-11-16",
+  "summary": "A Denver officer approached a man arguing with teenagers from behind, heard one of them say he had a knife, and shot him four times as he turned and took a few steps. A pair of fingernail clippers was found near the body. The officer settled; a jury found the City and County of Denver liable for $330,000 under City of Canton v. Harris. The Tenth Circuit affirmed, holding the evidence sufficient on each Canton element: an unconstitutional shooting, a usual and recurring situation, inadequate training directly linked to the shooting, and deliberate indifference. The training evidence was that Denver's shoot/don't shoot instruction was a lecture and a film at the academy, never repeated, and that the city did nothing after its district attorney recommended periodic live shoot/don't shoot training two years before the shooting. It is taught as the case on the difference between telling officers about decisional shooting and training them in it.",
+  "coverage": [
+    "The opinion was read in full, including the appended 1983 letter from the Denver district attorney to the police chief, from the Public.Resource.Org archive at https://law.resource.org/pub/us/case/reporter/F2/997/997.F2d.730.91-1400.91-1395.91-1379.html. The header carries 997 F.2d 730 and dockets 91-1379, 91-1395 and 91-1400, which is how the citation was confirmed. The archive text is paragraph numbered; no reporter page pin cites are given.",
+    "The earlier interlocutory decision denying the officer qualified immunity, Zuchel v. Spinharney, 890 F.2d 273 (10th Cir. 1989), was not read; it is described only as this opinion describes it.",
+    "The trial record was not read. Eyewitness and expert testimony is described as the Tenth Circuit summarized it in the light most favorable to the plaintiffs, which is the standard it applied on review of the denial of judgment notwithstanding the verdict. The court noted that other eyewitnesses gave accounts more favorable to the officer and that Denver chose not to call them.",
+    "The question the course materials pose, what the court said about lecture-only training, is answered in the brief with care: the court held the evidence sufficient for the jury to find the program inadequate, relying on the expert's testimony that a film and lecture were not adequate and that strategic judgment cannot be taught in a classroom. The court did not itself declare lecture-only training inadequate as a rule.",
+    "No subsequent history beyond the denial of rehearing noted in the opinion was checked."
+  ],
+  "facts": "The facts are as the Tenth Circuit stated them, including eyewitness testimony the jury was entitled to credit.\n\nIn the early evening of August 6, 1985, Leonard Zuchel caused a disturbance at a fast food restaurant and left before police arrived. Officer Frederick Spinharney and his partner, Officer Teri Rathburn Hays, answered the call and went looking for him. Zuchel had gotten into a heated exchange with four teenagers on bicycles. As the officers approached, one teenager shouted that Zuchel had a knife. As the officers walked toward Zuchel and he turned toward them, Spinharney shouted at him and shot him four times. A pair of fingernail clippers was found near the body.\n\nEyewitness Jeffrey Purvis, watching from across the street with a clear view, testified that Zuchel was facing the teenagers with no idea the police were behind him, that Spinharney came up behind him with his gun out and told him to shut up or he was going to die, that Zuchel turned when a teenager told him an officer was behind him, took three wobbly steps toward the officer from six to eight feet away with his hands up, did not charge, and was shot almost immediately.\n\nSecurity guard Debra Seme testified that Zuchel's back was to the officer until the officer shouted at him to shut up, that they were about ten feet apart, that she heard drop it but saw nothing in his hands, and that he was not charging and made no slicing or stabbing motions.\n\nOfficer Hays testified that Zuchel turned normally when she called out, that her partner's gun was out as soon as he turned, that they were about fifteen feet away, that she saw nothing in his right hand, that he was walking forward slowly, that she was moving in to take him physically when he was shot, and that she was surprised by the first shot.\n\nThe coroner testified that powder burn patterns showed Zuchel's right arm was across his chest, not extended toward the officer, when he was shot.\n\nThe Zuchels sued Denver and Spinharney under section 1983. After the denial of the officer's qualified immunity was affirmed on interlocutory appeal, the Zuchels settled with him and tried the case against Denver alone. The jury returned a verdict of $330,000. Denver's motion for judgment notwithstanding the verdict was denied and it appealed.",
+  "holding": "Affirmed in all respects.\n\nThe framework. Denver did not object to the instructions and conceded they were correct under City of Canton v. Harris. The jury had to find four things: that the officer exceeded constitutional limits on deadly force; that the use of deadly force arose in a usual and recurring situation; a direct causal link between the violation and inadequate training on the constitutional limits of deadly force in such situations; and that the failure to train showed deliberate indifference by the chief of police.\n\nAn unconstitutional shooting. The three eyewitnesses and the coroner's testimony were more than adequate to support the finding that the shooting was not objectively reasonable. The court refused to reweigh the evidence and, citing Canton, rejected the argument that Denver could be liable only if its policy itself condoned unprovoked shootings.\n\nA usual and recurring situation. A February 14, 1983 letter from the Denver district attorney to the police chief reported five citizen injuries or deaths at the hands of officers and one serious officer injury in six weeks and urged training. With the district attorney's testimony that split-second shoot decisions were foreseeable and the expert's testimony that such situations are predictable in big cities, this supported the finding.\n\nInadequate training linked to the shooting. The letter had recommended strategic skills training and periodic target course shoot/don't shoot live training under street conditions. A Denver detective testified that the department made no effort to implement it. Officer Hays testified that her academy training on decisional shooting was a lecture series with no live shoot/don't shoot range training. The academy program before 1983 was a lecture and a movie, which Spinharney saw. There was no evidence of periodic retraining even with the film and lecture. The plaintiffs' expert on police training and deadly force testified that shoot/don't shoot instruction should cover how to avoid the predicament as well as the trigger decision; that a training film was not effective because officers treat movies as video games while role-play with instructors is far more effective; that one movie was grossly inadequate; that without periodic live range training Denver was far below generally accepted police custom and practice; that strategic judgment cannot be taught in a classroom; and that the absence of training caused the shooting. The court held this evidence clearly sufficient.\n\nDeliberate indifference. The district attorney's recommendation, and the expert's testimony that a large department could not have failed to offer such training without being deliberately indifferent, were sufficient for the jury to infer deliberate indifference from Denver's failure to act. In a footnote the court rejected Denver's argument that having some shoot/don't shoot training defeated deliberate indifference as a matter of law: under Canton a city is deliberately indifferent if its program is inadequate and it deliberately or recklessly chose to ignore the deficiencies.\n\nOther rulings. Denver's evidentiary challenges, including to the expert's testimony on accepted police practices, were rejected.",
+  "notDecided": "Whether lecture-only or film-based training is inadequate as a matter of law. The court held the evidence sufficient for this jury to find Denver's program inadequate; it did not announce a rule about training methods.\n\nWhether periodic live range training is constitutionally required. The jury was entitled to rely on the expert's opinion and the district attorney's recommendation on this record.\n\nWhether the officer was personally liable. He settled before trial. The district attorney declined to prosecute, finding the shooting justified under state law, and the court treated that as a state law conclusion that did not bind the jury.\n\nWhether the officer's conduct before the shooting, approaching from behind with his gun out and telling the man to shut up, was itself unconstitutional. The court addressed it only as part of the evidence that the shooting was unreasonable and as the subject of the expert's testimony on accepted practices.\n\nWhether Denver had notice through a pattern of unconstitutional shootings. The court relied on the district attorney's letter about six deadly force incidents and did not analyze whether any was unconstitutional.",
+  "inPractice": "Zuchel is a decision-making case before it is a marksmanship case. The expert's point was that shoot/don't shoot training must cover how to avoid the predicament, not only the moment of the trigger pull. On the plaintiffs' evidence, the officer walked up behind an agitated man with his gun already out, told him to shut up or die, and fired when the man turned and took a few slow steps with nothing visible in his hands. His own partner was moving in to take the man physically and did not expect a shot.\n\nFor officers: distance, time, a partner, and a bystander's report of a knife are the elements of the decision. Approach, position and communication are what the training is supposed to shape. The court's analysis rested on witnesses who said the man was not charging and was too far away to be a danger, not on hindsight about the clippers.\n\nFor trainers: the record showed a lecture and a movie at the academy, never repeated. The expert testified that officers treat training films as video games, that role-play with instructors is more effective, and that strategic judgment cannot be taught in a classroom.\n\nFor command: the chief had a letter from the district attorney, two years before the shooting, listing six deadly force incidents in six weeks and recommending periodic live shoot/don't shoot training. Nothing was done. The letter became the proof of notice, of a recurring situation, and of deliberate indifference.",
+  "trainIt": "Build decisional shooting training around scenarios, not slides. Use role players and exercises in which the trainee manages approach, distance, cover, communication and the shoot or no shoot decision. Repeat it periodically; the court counted the absence of any retraining against Denver.\n\nTrain the approach. The plaintiffs' case was that a trained officer would not have come up behind the subject with his gun out and told him to shut up. Scenario training should score position and words before any shot, and should include a partner so that contact and cover is practiced.\n\nTrain for the edged weapon report that may be wrong. A bystander's shout that a man has a knife is information, not confirmation. Teach officers to use distance and time to verify when the facts allow, and to recognize when they do not.\n\nTreat outside recommendations as notice. When a prosecutor, a review board, an insurer or an accrediting body recommends training, document the agency's evaluation and decision. Denver's silence after the 1983 letter was its undoing.\n\nUse the Canton elements as the lesson plan outline: is deadly force a usual and recurring situation for this agency; what does the training actually consist of; does it address the decision as well as the technique; and what did policymakers know about its gaps.\n\nTeach the posture: a jury verdict against the city affirmed on a deferential standard. The officer settled and was never found liable, and the district attorney found the shooting justified under state law.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which is paragraph numbered, so no reporter pin cites are given. The facts are the evidence as the court recited it in the plaintiffs' favor; other eyewitnesses favored the officer and were not called. The court held the evidence sufficient for the jury; it did not declare lecture-only training inadequate as a rule. The officer settled and the district attorney found the shooting justified under state law.",
+  "applications": [
+    {
+      "title": "Training the decision, not just the shot",
+      "body": "The expert testified, and the court quoted, that shoot/don't shoot instruction must include how to avoid getting into the predicament in the first place. The approach from behind with a gun out and a shouted threat was the evidence of what the training had not addressed."
+    },
+    {
+      "title": "A lecture and a movie, never repeated",
+      "body": "That was Denver's academy program on decisional shooting, with no periodic retraining. The jury was entitled to accept expert testimony that one film is not adequate and that strategic judgment cannot be taught in a classroom."
+    },
+    {
+      "title": "The letter in the file",
+      "body": "The district attorney's 1983 letter recommended periodic live shoot/don't shoot training under street conditions after six deadly force incidents in six weeks. The department did nothing. The court used the letter to establish a recurring situation, notice and deliberate indifference."
+    },
+    {
+      "title": "Some training is not a defense",
+      "body": "Denver argued it could not be deliberately indifferent because it had some shoot/don't shoot training. The court answered with Canton: the question is whether the program is adequate and whether the city deliberately or recklessly chose to ignore its deficiencies."
+    },
+    {
+      "title": "The partner's testimony",
+      "body": "Officer Hays was moving in to take the subject by hand and did not expect her partner to fire. Coordinated two-officer contact is part of what scenario training should teach."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What training on decisional shooting did the evidence show Denver officers received before the 1985 shooting?",
+      "options": [
+        "Quarterly live range scenarios under street conditions",
+        "A lecture series and a movie at the academy, with no live shoot/don't shoot range training and no periodic retraining",
+        "No firearms training at all",
+        "A week of role-play with instructors"
+      ],
+      "answer": 1,
+      "teach": "The expert testified that a film is not an effective way to learn shoot/don't shoot decisions and that strategic judgment cannot be taught in a classroom. The court held the jury could accept that."
+    },
+    {
+      "q": "What role did the district attorney's 1983 letter play in the court's analysis?",
+      "options": [
+        "It proved the shooting was justified",
+        "It was excluded as hearsay",
+        "It supported findings that deadly force encounters were a usual and recurring situation, that the city had notice of the need for periodic live shoot/don't shoot training, and that doing nothing was deliberate indifference",
+        "It showed the officer had been disciplined before"
+      ],
+      "answer": 2,
+      "teach": "A credible written recommendation that goes unanswered is evidence of notice and of a deliberate or reckless choice to ignore training deficiencies."
+    },
+    {
+      "q": "Did the Tenth Circuit hold that lecture-only training is unconstitutional as a matter of law?",
+      "options": [
+        "Yes, it banned classroom instruction on deadly force",
+        "No, it held the evidence sufficient for this jury to find Denver's program inadequate and deliberately indifferent, relying on expert testimony and the unanswered recommendation",
+        "Yes, it required a specific number of range hours",
+        "No, it held the training was adequate"
+      ],
+      "answer": 1,
+      "teach": "Separate the holding from the lesson. The holding is a sufficiency of the evidence ruling under Canton. The lesson is that decisional training should be scenario based and periodic."
+    }
+  ]
+}

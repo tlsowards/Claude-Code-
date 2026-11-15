@@ -1,0 +1,91 @@
+{
+  "id": "whitley-v-albers",
+  "name": "Whitley v. Albers",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "84-1077",
+  "citation": "475 U.S. 312 (1986)",
+  "decided": "March 4, 1986",
+  "status": "published",
+  "topic": "Eighth Amendment excessive force, shotgun fired during a prison riot and hostage rescue, malicious and sadistic standard, deference to officials during a disturbance",
+  "settings": [
+    "custody",
+    "supervisors"
+  ],
+  "categories": [
+    "custody-and-corrections",
+    "deadly-force"
+  ],
+  "published": "2026-11-16",
+  "summary": "During a 1980 riot at the Oregon State Penitentiary, with an officer held hostage, the security manager ordered a shotgun officer to fire a warning shot and shoot low at any inmate climbing the stairs toward the hostage cell. An inmate who had not been part of the riot was shot in the knee as he ran up the stairs. The Supreme Court held that force used to put down a prison disturbance violates the Eighth Amendment only if it was applied maliciously and sadistically for the very purpose of causing harm, not in a good faith effort to restore order, and that on this record the case should not have gone to a jury. The case is the origin of the malicious and sadistic standard that Hudson v. McMillian later extended to all prison force claims.",
+  "coverage": [
+    "The opinion was read in full, including Justice Marshall's dissent, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep475/usrep475312/usrep475312.pdf. The scanned file prints the first page number (312) and the syllabus page references but not every running page number, so pin cites in this brief are taken from the syllabus page ranges and from the pages at which later Supreme Court opinions (Hudson v. McMillian and Kingsley v. Hendrickson, both read for this project) and the dissent cite the majority. Pin cites should be treated as close rather than exact.",
+    "The citation 475 U.S. 312, the docket number 84-1077, and the decision date of March 4, 1986 were confirmed from the syllabus in that file.",
+    "The Ninth Circuit's opinion (743 F.2d 1372) and the district court's opinion (546 F. Supp. 726) were not read; they are described as the Supreme Court described them.",
+    "The caption styles Whitley as assistant superintendent. The opinion describes him as the prison security manager (Captain Whitley) at the time of the incident and names Cupp as superintendent and Kenney as assistant superintendent. The brief follows the opinion's description of his role."
+  ],
+  "facts": "On the evening of June 27, 1980, guards at the Oregon State Penitentiary were moving intoxicated inmates to segregation. Inmates watching from cellblock A became agitated, believing excessive force was being used, and refused orders to return to their cells. Inmate Richard Klenk jumped from the second tier and assaulted an officer, who escaped; Officer Fitts was taken hostage, and inmates began breaking furniture (475 U.S. at 313-314).\n\nHarol Whitley, the prison security manager, negotiated with Klenk, who was armed with a homemade knife, claimed an inmate had been killed (one had been beaten, not killed), and threatened to kill the hostage if an assault was attempted. The hostage was moved to a cell on the upper tier. Whitley, the superintendent, and the assistant superintendent ruled out tear gas and decided forceful intervention was necessary to protect the hostage and the nonrioting inmates (at 314-315).\n\nThe plan: Whitley would cross the inmates' barricade unarmed, followed by Officer Kennicott and two others with shotguns, then unarmed officers. Whitley ordered Kennicott to fire a warning shot and to shoot low at any prisoners climbing the stairs toward the hostage cell, since they could threaten the hostage or Whitley (at 315).\n\nGerald Albers, an inmate in the block, testified that he had left his cell to help move elderly prisoners before any tear gas was used, and had asked Whitley for a key to their cells. About 10:30 p.m., roughly half an hour after the furniture breaking and with the noise diminished, Whitley returned, answered \"No\" about the key, crossed the barricade, yelled \"shoot the bastards,\" and ran toward the stairs after Klenk. Kennicott fired a warning shot into a wall, then a second shot into a post near the stairway. Albers started up the stairs, and Kennicott's third shot hit him in the left knee. Other inmates were also wounded. Whitley subdued Klenk and freed the hostage. Albers suffered severe damage to his leg (at 315-316).\n\nAlbers sued under section 1983 under the Eighth and Fourteenth Amendments. After trial, the district judge directed a verdict for the officials, holding that deadly force was justified and, alternatively, that they had qualified immunity. The Ninth Circuit reversed in part, holding that a jury could find a violation if an official shot Albers knowing or with reason to know it was unnecessary, or if the plan was carried out with deliberate indifference (at 316-318).",
+  "holding": "Reversed, 5 to 4. The shooting did not violate the Eighth Amendment, and the officials were entitled to a directed verdict.\n\nThe standard. The Eighth Amendment forbids the unnecessary and wanton infliction of pain, and more than ordinary lack of due care is required: \"It is obduracy and wantonness, not inadvertence or error in good faith, that characterize the conduct prohibited by the Cruel and Unusual Punishments Clause.\" Pain inflicted during a security measure is not cruel and unusual \"simply because it may appear in retrospect that the degree of force authorized or applied for security purposes was unreasonable, and hence unnecessary in the strict sense\" (475 U.S. at 319).\n\nWhy not deliberate indifference. That standard fits medical care, where duties do not clash. In a disturbance, officials must weigh threats to inmates and staff against harm to those force is used on, deciding \"in haste, under pressure, and frequently without the luxury of a second chance\" (at 320).\n\nThe test. Where a security measure is taken to resolve a disturbance that \"indisputably poses significant risks to the safety of inmates and prison staff,\" the question \"ultimately turns on 'whether force was applied in a good faith effort to maintain or restore discipline or maliciously and sadistically for the very purpose of causing harm,'\" quoting Johnson v. Glick (at 320-321). Relevant factors include the need for force, the relationship between need and amount, injury, and the threat to staff and inmates \"as reasonably perceived by the responsible officials on the basis of the facts known to them, and any efforts made to temper the severity of a forceful response\" (at 321).\n\nDeference. Deference to prison administrators \"extends to a prison security measure taken in response to an actual confrontation with riotous inmates.\" It \"does not insulate from review actions taken in bad faith and for no legitimate purpose,\" but neither judge nor jury may substitute its judgment for a considered choice. Unless the plaintiff's evidence supports \"a reliable inference of wantonness in the infliction of pain,\" the case should not go to the jury (at 321-322).\n\nApplied. Even if the disturbance had quieted, a guard was still a hostage, Klenk was armed, other inmates had clubs, and the block was under inmate control. Expert testimony that officials were hasty showed at most error in judgment (at 322-323). The order to shoot low after a warning shot was not wanton, nor was omitting a verbal warning, since a warning shot was given and a verbal warning might have let inmates reach the stairs first. Not exempting Albers was an oversight, not wantonness (at 323-325). Kennicott had some basis to see Albers as a threat, seconds to react, and orders to respond as he did; the shooting was \"part and parcel of a good-faith effort to restore prison security\" (at 326).\n\nDue process and immunity. In the prison security context the Due Process Clause gives a convicted prisoner no greater protection than the Eighth Amendment; qualified immunity was not reviewed (at 326-327).",
+  "dissent": "Justice Marshall, joined by Justices Brennan, Blackmun, and Stevens, dissented. He agreed the threshold for a constitutional violation during a disturbance is high, but objected to a more onerous standard that turns on whether a riot posing significant risks existed, a disputed fact that should go to the jury. He read Johnson v. Glick as treating malice as a factor, not a prerequisite. On the facts, he read Albers's evidence as showing the block had gone quiet, that the hostage was being protected by other inmates, that no inmate impeded the officers, that officers entering were described as agitated, and that Albers was shot while standing still on the stairs and left bleeding for 10 to 15 minutes. In his view fair minded people could differ, which is enough to defeat a directed verdict (475 U.S. at 328 and following).",
+  "notDecided": "Pretrial detainees and free persons. The Court said it implied nothing about the due process standard outside the prison security context, because this case involved convicted prisoners (475 U.S. at 327). Kingsley v. Hendrickson later held that pretrial detainee force claims are judged by objective reasonableness.\n\nForce outside a riot. Whitley announced the malicious and sadistic test for measures taken to resolve a disturbance that indisputably poses significant risks. Whether that test applied to lesser disruptions and routine force was answered six years later in Hudson v. McMillian, which extended it to all prison force claims.\n\nQualified immunity. The Court declined to review the Ninth Circuit's immunity ruling (at 327).\n\nThe wisdom of the plan. The Court did not hold that the plan was the best available or that a verbal warning was unnecessary. It held that the choices made were not wanton. The officials' own experts conceded a verbal warning would have been desirable if it could be given without undue risk (at 324).",
+  "inPractice": "For correctional officers and supervisors, Whitley is the constitutional baseline for force used to put down a disturbance: the question is whether the force was a good faith effort to restore order or was applied maliciously and sadistically to cause harm. Courts give wide deference to considered choices made under pressure, and they do not second guess the existence of arguably better alternatives. That deference has a limit: it does not cover action taken in bad faith for no legitimate purpose.\n\nThe case also shows what the Court looked at. The threat as reasonably perceived on the facts known: a hostage, an armed inmate, clubs, inmates out of their cells, the block under inmate control. The efforts to temper: negotiation, emissaries, tear gas considered and rejected, a warning shot, an order to shoot low. The relationship between need and amount: the order was to shoot low. Those facts were in the record because the officials made and could explain the plan.\n\nThe warning point is practical. A warning shot counted as some warning, but the Court noted the officials' own experts agreed a verbal warning would have been desirable if it could be given without undue risk. Where time allows, give the verbal warning and document why if it cannot be given.\n\nFinally, the standard is different for pretrial detainees. In a jail holding both populations, the objective Kingsley standard governs force on detainees.",
+  "trainIt": "Teach Whitley as the riot and disturbance standard for convicted prisoners and teach it with Hudson, which carried the same test to all Eighth Amendment force claims, and with Kingsley, which applies objective reasonableness to pretrial detainees.\n\nTrain the planning record. Whitley survived because the officials could show a considered choice: what they knew, what they tried, what alternatives they rejected and why, the limits built into the force order, and the warning given. Teach incident commanders to narrate and document those steps during an emergency, not after.\n\nTrain warnings. Build the verbal warning into tactical plans as a default and train the articulation for the rare case when a warning would endanger the operation.\n\nTrain shot placement and force limits as orders. The order to shoot low was central to the Court's conclusion that the plan was not wanton. Orders that limit force are part of the force decision and should be given, heard, and recorded.\n\nTrain supervisors on contingencies. The Court excused the failure to exempt Albers as an oversight under pressure, but it was a foreseeable problem. Plans should address nonparticipating inmates in the area.\n\nTeach the posture. Whitley reinstated a directed verdict for the officials. It did not hold that shooting an inmate during a riot is always lawful; it held that this evidence did not support a reliable inference of wantonness.",
+  "caution": "The opinion was read in full from the Library of Congress scan. Because that scan omits most running page numbers, pin cites rely on the syllabus page ranges and on pages cited in Hudson, Kingsley, and the Whitley dissent; they are close but should be verified before being quoted as exact. The facts include trial testimony viewed in Albers's favor, as the Court described it.",
+  "applications": [
+    {
+      "title": "Good faith effort versus malicious and sadistic",
+      "body": "During a disturbance posing significant risk to inmates and staff, force is judged by whether it was a good faith effort to maintain or restore discipline or was applied maliciously and sadistically to cause harm. An error in judgment is not a constitutional violation under this test."
+    },
+    {
+      "title": "Deference is earned by a considered choice",
+      "body": "The Court deferred because the officials negotiated, considered and rejected tear gas, planned the entry, limited the shotgun order to shooting low, and fired a warning shot. Document those decisions as they are made."
+    },
+    {
+      "title": "Warnings when you can",
+      "body": "A warning shot counted as some warning here, and omitting a verbal warning was not wanton. But the officials' own experts agreed a verbal warning would have been desirable if it could be given without undue risk. Give it when time allows."
+    },
+    {
+      "title": "Know who is in front of you",
+      "body": "Whitley governs convicted prisoners. Pretrial detainees are protected by the Fourteenth Amendment's objective standard under Kingsley. Train to the more demanding standard where populations are mixed."
+    },
+    {
+      "title": "Teach the posture",
+      "body": "The Court reinstated a directed verdict for the officials. It held the evidence could not support a reliable inference of wantonness; it did not hold that the plan was the right one."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Under Whitley v. Albers, what is the question when force is used to resolve a prison disturbance that poses significant risks to inmates and staff?",
+      "options": [
+        "Whether the force was objectively unreasonable under the totality of the circumstances",
+        "Whether officials were deliberately indifferent to the inmate's safety",
+        "Whether force was applied in a good faith effort to maintain or restore discipline or maliciously and sadistically for the very purpose of causing harm",
+        "Whether a less forceful alternative was available"
+      ],
+      "answer": 2,
+      "teach": "The Court rejected deliberate indifference for this setting and adopted the malicious and sadistic test from Johnson v. Glick. The existence of arguably superior alternatives is not enough to send the case to a jury."
+    },
+    {
+      "q": "What did the Court say about the absence of a verbal warning before the shotgun was fired?",
+      "options": [
+        "It was a constitutional violation because warnings are always required before deadly force",
+        "It was not wanton, because a warning shot was given and officials could believe a verbal warning would endanger the plan, although their own experts agreed a verbal warning would have been desirable if safe",
+        "It was irrelevant because inmates have no right to a warning",
+        "It required a new trial"
+      ],
+      "answer": 1,
+      "teach": "The Court treated the warning question under the wantonness test and found no reliable inference of wantonness. It did not say warnings do not matter; it noted the experts' agreement that a verbal warning would have been desirable if circumstances permitted."
+    },
+    {
+      "q": "Whitley applies to which population?",
+      "options": [
+        "All persons in any detention facility",
+        "Convicted prisoners under the Eighth Amendment; the Court said it implied nothing about pretrial detainees or free persons",
+        "Pretrial detainees only",
+        "Arrestees on the street"
+      ],
+      "answer": 1,
+      "teach": "The Court limited its due process discussion to prison inmates and said it implied nothing outside the prison security context. Kingsley later set an objective standard for pretrial detainees."
+    }
+  ]
+}

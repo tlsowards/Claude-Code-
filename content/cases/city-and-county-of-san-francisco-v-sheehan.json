@@ -1,0 +1,92 @@
+{
+  "id": "city-and-county-of-san-francisco-v-sheehan",
+  "name": "City and County of San Francisco v. Sheehan",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "13-1412",
+  "citation": "575 U.S. 600 (2015)",
+  "decided": "May 18, 2015",
+  "status": "published",
+  "topic": "Qualified immunity for officers who reentered the room of an armed, mentally ill woman and shot her; Fourth Amendment entry and deadly force; ADA Title II accommodation question dismissed",
+  "settings": [
+    "field"
+  ],
+  "categories": [
+    "mental-health-and-disability",
+    "qualified-immunity",
+    "deadly-force"
+  ],
+  "published": "2026-11-16",
+  "summary": "Two San Francisco officers went to a group home to help take a woman with schizoaffective disorder to a psychiatric facility. When they opened her door she came at them with a knife and threatened to kill them; they retreated and she shut the door. Rather than wait for the backup they could already hear, they reentered with pepper spray and pistols, and when the spray failed they shot her several times. The Supreme Court dismissed the question whether the ADA requires accommodation of an armed, violent, mentally ill suspect during an arrest, because the city changed its argument. It held the officers were entitled to qualified immunity: the first entry was lawful, the second would have been lawful had she not been disabled, the shooting was reasonable, and no clearly established law required them to accommodate her disability by waiting instead of reentering. It did not decide whether the Constitution was violated by the failure to accommodate, and it did not decide whether the ADA applies to arrests.",
+  "coverage": [
+    "The assigned slip opinion URL (https://www.supremecourt.gov/opinions/14pdf/13-1412_0pm1.pdf) returned a 404, and the Court's 2014 term slip opinion page (https://www.supremecourt.gov/opinions/slipopinion/14) now redirects to the U.S. Reports page. The opinion was therefore read in full, including Justice Scalia's opinion concurring in part and dissenting in part, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep575/usrep575600/usrep575600.pdf. Pin cites are to the U.S. Reports pages printed in that file.",
+    "The citation 575 U.S. 600, the docket number 13-1412, and the decision date of May 18, 2015 were confirmed from the running heads and syllabus of that file.",
+    "The Ninth Circuit's opinion (743 F.3d 1211) and the district court order were not read; they are described as the Supreme Court described them. The San Francisco Police Department general order and training described in the opinion were not read.",
+    "What happened to the ADA claim against the city on remand was not researched for this brief.",
+    "Justice Breyer took no part in the consideration or decision of the case; the vote on the qualified immunity holding was 6 to 2."
+  ],
+  "facts": "Facts are as the Court described them, viewed in Sheehan's favor on summary judgment.\n\nIn August 2008, Teresa Sheehan, who has a schizoaffective disorder, lived in a private room in a San Francisco group home for people with mental illness. On August 7, social worker Heath Hodge went to check on her because she had stopped taking her medication and reportedly was not eating or changing clothes. When she did not answer, he entered with a key. Sheehan sprang up and yelled, as reported, that he had no warrant, that she had a knife, and that she would kill him if she had to. Hodge left, completed a section 5150 detention application marking her a threat to others and gravely disabled, and called police for help (575 U.S. at 603).\n\nOfficer Kathrine Holder and Sergeant Kimberly Reynolds knocked, announced themselves, said they wanted to help, and, when Sheehan did not answer, entered with Hodge's key. Sheehan grabbed a kitchen knife with an approximately five inch blade, approached, and yelled that she would kill them. The officers, who had not drawn their weapons, retreated, and Sheehan closed the door. They called for backup (at 604).\n\nWith the door closed, the officers worried that Sheehan might gather more weapons (Reynolds had seen other knives) or flee through a back window or unknown fire escape. They could wait for backup, and they already heard sirens, or reenter. Reynolds believed the situation required immediate attention. They did not pause to consider whether Sheehan's disability should be accommodated. Holder pushed the door open while Reynolds pepper sprayed Sheehan in the face. Sheehan, knife in hand, kept coming. When she was a few feet away, Holder shot her twice; she did not fall, and Reynolds fired multiple shots. Sheehan survived (at 604-606).\n\nSheehan sued San Francisco under Title II of the ADA for failing to accommodate her disability, and the officers under section 1983 for violating the Fourth Amendment. The district court granted summary judgment to all defendants. The Ninth Circuit held that the ADA applied and a jury must decide accommodation, and that the officers lacked qualified immunity because it was clearly established that officers cannot forcibly enter the home of an armed, mentally ill person who has threatened anyone who enters absent an objective need for immediate entry (at 606-607).",
+  "holding": "Certiorari dismissed in part; reversed in part and remanded.\n\nThe ADA question was dismissed. The Court had agreed to decide whether Title II requires officers to accommodate an armed, violent, mentally ill suspect during an arrest, expecting San Francisco to argue, as it had below, that Title II does not apply before the scene is secured. In the Supreme Court, San Francisco argued instead only that Sheehan was not a \"qualified individual\" because she posed a direct threat, an argument not passed on below that effectively conceded Title II may sometimes require accommodation. With no party arguing that Title II does not apply to arrests, and no briefing on whether a public entity can be vicariously liable for an arrest, the Court dismissed the question as improvidently granted (575 U.S. at 608-610).\n\nQualified immunity. Officials are immune unless they violated a clearly established right, one existing precedent placed beyond debate; the standard \"gives government officials breathing room to make reasonable but mistaken judgments\" (at 611).\n\nWhat the Court agreed with. The first entry was lawful as an emergency aid entry (at 612). Had Sheehan not been disabled, the second entry would also have been lawful: the two entries were one continuous search or seizure, the officers knew she had a weapon and had threatened to kill three people, and delay could make the situation more dangerous. \"The Fourth Amendment standard is reasonableness, and it is reasonable for police to move quickly if delay 'would gravely endanger their lives or the lives of others'\" (at 612). The force was reasonable: pepper spray failed, Sheehan kept coming, and deadly force was justified when she was a few feet from a cornered officer (at 612-613).\n\nThe real question. Whether reopening the door rather than attempting accommodation violated the Fourth Amendment was barely briefed, so the Court decided only whether any such right was clearly established. It was not (at 613). Graham v. Connor's general test is \"far too general a proposition to control this case\" (at 613-614). Deorle v. Rutherford involved an unarmed, compliant man; Sheehan \"was dangerous, recalcitrant, law breaking, and out of sight\" (at 614). The Ninth Circuit itself reads Alexander v. City and County of San Francisco narrowly: an otherwise lawful entry is not unreasonable because it provokes a violent reaction, and a plaintiff cannot establish a violation \"based merely on bad tactics that result in a deadly confrontation that could have been avoided\" (at 614-615). Even under the Ninth Circuit's own test, no precedent clearly established the absence of an objective need for immediate entry here (at 616).\n\nTraining. Expert testimony that the officers departed from their training did not defeat immunity. Acting contrary to training \"does not itself negate qualified immunity where it would otherwise be warranted,\" and an expert's opinion that the conduct was imprudent, inappropriate, or even reckless does not by itself avoid summary judgment (at 616-617). No consensus of persuasive authority supported the claimed right (at 617).",
+  "dissent": "Justice Scalia, joined by Justice Kagan, concurred in the dismissal of the ADA question and dissented from deciding the qualified immunity question. In his view San Francisco obtained review by promising to argue a circuit split on whether the ADA applies to arrests of violent, mentally ill persons and then abandoned the argument, and the fact bound immunity question would not have been granted on its own. He would have dismissed both questions rather than reward what he called bait and switch tactics. He noted that San Francisco remained subject to ADA liability on remand if the facts demanded accommodation (575 U.S. at 618 to 621).",
+  "notDecided": "Whether the ADA applies to arrests. The Court said that question \"is an important question that would benefit from briefing and an adversary presentation,\" and did not decide it. It also did not decide whether a public entity can be vicariously liable in damages under Title II for an arrest by its officers (575 U.S. at 609 to 610). The Ninth Circuit's holding that the ADA claim against the city goes to a jury was not reviewed; the dismissal left it in place.\n\nWhether the Constitution was violated. The Court did not decide whether reopening the door without attempting to accommodate Sheehan's disability violated the Fourth Amendment. It decided only that any such right was not clearly established (at 613, 617).\n\nThe provocation rule. The Court cited Ninth Circuit cases on provocation without endorsing or rejecting them, noting the rule had been \"sharply questioned\" elsewhere (at 615 n.4). Two years later, County of Los Angeles v. Mendez rejected the provocation rule.\n\nWhether the officers followed their training. The Court said it was \"not at all clear\" that they departed from training given its generality, and did not decide the point (at 616).",
+  "inPractice": "Sheehan is taught in the disability line because of what it does not do. It does not hold that the ADA is irrelevant on the street, and it does not hold that officers may ignore a known mental illness when deciding how to approach. It holds that these two officers were not on clear notice that reentering, rather than waiting for the backup they could hear, violated the Fourth Amendment, given a woman with a knife who had threatened to kill three people and was now out of sight.\n\nThe practical points the Court itself accepted are useful. The initial entry on a welfare and detention call was lawful as emergency aid. Once pepper spray failed and she advanced to within a few feet of a cornered officer, deadly force was reasonable.\n\nThe decision point that generated the litigation was the second entry. The officers' articulated reasons were specific: other knives in the room, a possible back window or fire escape, and a subject who had just threatened to kill. Those reasons are why the Court found competent officers could believe the entry was justified.\n\nTraining matters even though it did not decide the case. The city's own training, as described by the plaintiff's expert, called for resources, containment, respect for the comfort zone, time, and nonthreatening communication. The Court said departing from training does not itself defeat immunity.",
+  "trainIt": "Teach the Sheehan sequence as a decision exercise with the second entry as the pivot. After the retreat and closed door, have officers list what they know (knife, threats, other knives, unknown rear exit, backup arriving), what they do not know, and the options: contain and wait, call for crisis negotiators or a supervisor, or reenter. Then have them articulate the reason for the choice. The Court's immunity holding rested on articulated reasons for immediate entry, not on the absence of alternatives.\n\nTrain containment as a default where the subject is alone, armed only with an edged weapon, and behind a closed door with no one else at risk, and train the exceptions: a known or likely second exit, other people inside, or an immediate threat to someone.\n\nTeach the ADA honestly. The Supreme Court did not decide whether Title II applies to arrests. In the Ninth Circuit, Sheehan's ADA claim against the city was allowed to go to a jury, and the Court left that ruling in place. Officers in California should assume a reasonable accommodation analysis can apply to how they approach a person with a known mental disability, with exigency informing what is reasonable.\n\nTeach qualified immunity accurately. Immunity here meant the law was not clearly established. It was not a finding that the second entry was good tactics.\n\nDocument the reasons for entry decisions. The specificity of the officers' concerns is what the Court relied on.",
+  "caution": "The opinion was read in full from the U.S. Reports PDF at the Library of Congress. The facts are the summary judgment record viewed in Sheehan's favor, as the Court described it. The Ninth Circuit opinion and the remand proceedings on the ADA claim were not read.",
+  "applications": [
+    {
+      "title": "The ADA question is still open at the Supreme Court",
+      "body": "The Court dismissed the question whether Title II requires accommodation of an armed, violent, mentally ill suspect during an arrest and said whether the ADA applies to arrests at all is an important, undecided question. In the Ninth Circuit the ADA claim against the city was allowed to proceed. Train as if accommodation can be required, with exigency shaping what is reasonable."
+    },
+    {
+      "title": "Immunity rested on articulated, specific reasons",
+      "body": "Other knives in the room, a possible fire escape, a threat to kill three people, and a subject out of sight. Officers who can state facts like these at the time of a reentry decision give a court something to measure."
+    },
+    {
+      "title": "Bad tactics alone are not a constitutional violation",
+      "body": "The Court applied Ninth Circuit law that an otherwise lawful entry is not unreasonable because it provokes a violent reaction, and said an expert's opinion that the conduct was imprudent or even reckless does not by itself defeat immunity."
+    },
+    {
+      "title": "Training still matters",
+      "body": "Departing from training does not itself negate qualified immunity. It remains the agency's standard, and the training described here (resources, containment, comfort zone, time, nonthreatening communication) is the approach officers should be able to explain if they deviate from it."
+    },
+    {
+      "title": "Teach the posture",
+      "body": "The officers won on qualified immunity because the law was not clearly established. The Court did not decide whether their failure to accommodate violated the Constitution, and it did not decide the ADA claim."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the Supreme Court decide about the ADA question in Sheehan?",
+      "options": [
+        "It held the ADA does not apply to arrests",
+        "It held the ADA requires officers to accommodate armed suspects",
+        "It dismissed the question as improvidently granted because San Francisco changed its argument, and left open whether Title II applies to arrests",
+        "It held that only the city, not the officers, violated the ADA"
+      ],
+      "answer": 2,
+      "teach": "No party argued that Title II does not apply to arrests, so the Court declined to decide it. The Ninth Circuit's ruling sending the ADA claim to a jury was not disturbed."
+    },
+    {
+      "q": "Why were Sergeant Reynolds and Officer Holder entitled to qualified immunity?",
+      "options": [
+        "Because the Court held they acted correctly in every respect",
+        "Because no clearly established law told them that reopening the door, rather than attempting to accommodate Sheehan's disability, violated the Fourth Amendment",
+        "Because Sheehan was convicted of assault",
+        "Because officers are always immune when a subject has a knife"
+      ],
+      "answer": 1,
+      "teach": "The Court agreed the first entry was lawful, the second would have been lawful absent disability, and the shooting was reasonable. It did not decide whether the failure to accommodate violated the Constitution; it held only that any such right was not clearly established."
+    },
+    {
+      "q": "What did the Court say about evidence that the officers departed from their training on dealing with the mentally ill?",
+      "options": [
+        "A training violation is automatically a constitutional violation",
+        "Training is irrelevant to any excessive force case",
+        "Acting contrary to training does not itself negate qualified immunity where it would otherwise be warranted",
+        "The Court held the officers followed their training perfectly"
+      ],
+      "answer": 2,
+      "teach": "The Court said it was not clear the officers departed from training given its generality, and that even if they had, an expert report that conduct was imprudent or reckless does not by itself defeat immunity. Training remains the agency's standard."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "bordanaro-v-mcleod",
+  "name": "Bordanaro v. McLeod",
+  "court": "First Circuit (from the District of Massachusetts)",
+  "courtKey": "ca1",
+  "docket": "88-1563",
+  "citation": "871 F.2d 1151 (1st Cir. 1989)",
+  "decided": "March 30, 1989 (as amended April 5, 1989)",
+  "status": "published",
+  "topic": "Municipal and supervisory liability under section 1983 for a custom of warrantless forced entries and for deliberate indifference in recruitment, training, supervision and discipline; batons, improvised weapons, mace and a firearm used in a motel room beating",
+  "settings": [
+    "field",
+    "supervisors"
+  ],
+  "categories": [
+    "instructor-and-training-liability",
+    "supervision-and-intercede"
+  ],
+  "published": "2026-11-16",
+  "summary": "The entire night watch of the Everett, Massachusetts police department broke down a motel room door without a warrant and beat the unarmed people inside, killing one. A jury found the city, its mayor and its police chief liable under section 1983. The First Circuit affirmed, holding that the evidence supported two separate theories: a well-settled custom of breaking down doors without a warrant when arresting felons, and a policy of deliberate indifference in the recruitment, training, supervision and discipline of the police force. It is taught because the court catalogued what a department that stopped training looked like, and found that record sufficient to hold the city and its policymakers liable.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org archive at https://law.resource.org/pub/us/case/reporter/F2/871/871.F2d.1151.88-1563.html. The archive copy carries the reporter citation 871 F.2d 1151 and the docket number 88-1563 in its header, which is how the citation was confirmed. The archive text is numbered by paragraph, not by reporter page, so this brief gives no page pin cites.",
+    "The opinion states it was decided March 30, 1989 and amended April 5, 1989. The amendments are not identified in the archive text.",
+    "The district court's rulings and the trial transcript were not read. The trial evidence is described only as the First Circuit summarized it, in the light most favorable to the plaintiffs, which is the standard the court applied in reviewing the denial of judgment notwithstanding the verdict.",
+    "No subsequent history was checked. The remand concerned only the hourly rate for attorneys' fees.",
+    "Dr. Sowards teaches this case as extending deliberate indifference to recruitment, training, retention, supervision, and discipline. The opinion's own phrase, used repeatedly, is recruitment, training, supervision or discipline. The word retention does not appear in the opinion. The failure to discipline and the failure to investigate are discussed, and those are the closest the court comes to a retention point."
+  ],
+  "facts": "The facts below are as the First Circuit stated them, in the light most favorable to the plaintiffs, because the court was reviewing a jury verdict.\n\nIn the early morning of July 23, 1982, off-duty Everett officer John McLeod got into a fight in a bar inside the King Arthur Motel in neighboring Chelsea and was beaten and thrown out. He had the motel's security attendant call the Everett Police Department for help. The entire Everett night watch, five officers, radioed that they were on the way. Chelsea officers also responded.\n\nMcLeod took a set of nunchaku from a cruiser trunk and joined the officers. They shouted threats at the bar patrons through the locked glass doors and shattered the glass with nightsticks before the manager could open them. The manager had sent the patrons upstairs to Room 209. The officers, armed with nightsticks, clubs, bats, tire irons and a fire axe in addition to their revolvers, banged on the door and threatened to kill the people inside. The owner and the manager offered a pass key; instead, three officers beat them. A hole was drilled in the door and mace was injected. One officer fired two shots through the door. When the door gave way, the officers beat the unarmed occupants until most were unconscious or semi-conscious. McLeod slammed Vincent Bordanaro's head against the wall and clubbed others with a bat while repeating his own name. Sergeant Ferullo arrived at the doorway, stayed a few moments after the door was forced, and left. Vincent Bordanaro died from the blows to his head.\n\nThirteen plaintiffs sued individual officers, the Cities of Chelsea and Everett, and the two mayors and chiefs under section 1983 and the Massachusetts Tort Claims Act. Five officers defaulted; Chelsea settled; the jury found Sergeant Ferullo not liable. The jury returned verdicts against the City of Everett, Mayor Edward Connolly and Chief Donald Bontempo. A footnote puts the total award at approximately $3,488,356 in compensatory damages and $819,983 in punitive damages, including $20,000 in punitive damages against the Mayor and $30,000 against the Chief. The Chief was found liable under both the custom theory and the training theory; the Mayor only under the training theory.\n\nThe city, Mayor and Chief appealed, arguing insufficient evidence, erroneous instructions on deliberate indifference and causation, improper admission of post-event evidence, and errors in the fee award.",
+  "holding": "Affirmed on liability; remanded only to redetermine the hourly rate for attorneys' fees.\n\nTheory one: an unconstitutional custom. A custom claim required a practice so well settled and widespread that policymakers had actual or constructive knowledge of it and did nothing, and proof that the custom was the moving force behind the deprivation. Sergeant Ferullo's uncontradicted testimony supplied the practice: he had been present at between twenty and sixty door breakdowns in twenty-four years, the city supplied a twelve-pound sledgehammer for the purpose, officers broke down doors without a warrant when arresting felons, and the King Arthur entry looked no different. Concerted action by an entire shift was itself some evidence of a shared custom, though a single incident alone cannot establish one. Knowledge was imputed to the Chief through his report review process, and his failure to end the practice was deliberate indifference. On causation, a warrant requirement would have imposed a cooling-off period and a neutral judicial check, and the officers knew they could knock down the door without violating department policy.\n\nTheory two: deliberate indifference in recruitment, training, supervision or discipline. Applying City of Canton v. Harris, decided after trial, the court found this proof sufficient: rules and regulations promulgated in 1951 and last distributed in the mid-sixties, which did not address current standards on search and seizure, hot pursuit or deadly force; little or no formal training after the academy other than emergency medical instruction; officers discouraged from seeking outside training; no supervisory or command training on promotion; superficial background checks and skipped psychological examinations required by ordinance; haphazard and infrequent discipline; no discipline for the King Arthur officers until they were indicted more than a month later; no full internal investigation for over a year; grievances placed in a dead letter drawer; and requests for better training that the Mayor and Chief discussed and declined. A lieutenant had told both men that something bad would happen without more instruction. The Chief and Mayor were the policymakers for law enforcement, had express knowledge of the lack of any effective program, and their do nothing policy left the force ill-prepared for the obvious and recurring duties of police officers. On causation, the court tied the missing use of force, pursuit and search and seizure training, the Sergeant's lack of supervisory training, and the unenforced disciplinary system directly to Room 209. The city was liable not because it hired one bad apple but because its police policy produced an entire barrel of bad apples.\n\nPunitive damages against the Mayor and Chief were upheld.\n\nInstructions. Gross negligence amounting to deliberate indifference was the correct standard after Canton, and the trial judge's charge, read as a whole, correctly stated it. The causation instruction requiring an affirmative link and a moving force was adequate.\n\nPost-event evidence. Evidence of the weak investigation and discipline after the beating was properly admitted to show the policies that existed before it, following Grandstaff v. City of Borger.",
+  "notDecided": "The state-law claims under the Massachusetts Tort Claims Act. The court said it did not reach them.\n\nWhether any single deficiency on the list would have been enough. The court upheld the verdict on the whole record and did not rank the items.\n\nWhether a single incident, standing alone, can prove a custom or a training policy. The court repeated that it cannot, and relied on the independent evidence plus the concerted action of the entire shift.\n\nThe individual officers' liability. Five defaulted and are not discussed; the jury found Sergeant Ferullo not liable and that verdict was not before the court.\n\nThe fee award's hourly rate, which was remanded.",
+  "inPractice": "The custom theory in Bordanaro rose or fell on how the department actually operated, not on what its manual said. A sergeant's candid testimony that breaking down doors without a warrant was the way we've always applied it, plus a city-issued sledgehammer, made the custom. An officer who sees a routine practice that would not survive a warrant application is looking at the kind of evidence this court found sufficient.\n\nThe training theory turned on the gap between the department's rules and the tasks officers face. Regulations written in 1951 said nothing about current search and seizure, hot pursuit or deadly force law, and the officers received no updated instruction on the use of force. The court tied that gap directly to what happened in Room 209.\n\nSupervisors were held to the same standard. Sergeant Ferullo had no supervisory training, and the court connected his leaving the doorway to that gap. His own suspension was overturned partly because he had not been trained to be a sergeant. The court then used the absence of command training as evidence against the city.\n\nFor command staff: the Mayor and Chief were on written notice from their own officers that training was inadequate, discussed it, and decided to do nothing. That decision is what the court called a policy. The slow investigation and the discipline that came only after indictments were admitted to show what the policy had been all along.",
+  "trainIt": "Audit the written directives against the tasks officers actually perform. Bordanaro's list is a checklist in reverse: search and seizure, entry and warrant rules, pursuit, use of force including deadly force, and supervisory responsibilities. If the manual predates the controlling law, the training has to fill the gap and the record has to show it did.\n\nBuild recurring in-service training on the use of force, not only academy training. The court counted the absence of post-academy instruction, other than emergency medical training, against the city. Keep rosters and lesson plans so the agency can prove what was taught and when.\n\nTrain supervisors before and after promotion. The court treated the lack of command training as a cause of the harm, because the one supervisor on scene left a scene that demanded control.\n\nTreat written requests for training as notice. Document how each request was evaluated and what was decided. In Bordanaro the policymakers' decision to institute no additional training was the evidence of deliberate indifference.\n\nTeach the discipline link. The court inferred from the absence of a strictly enforced disciplinary system that officers believed they would not be sanctioned. Investigations that start a year later and discipline that waits for an indictment were used as proof of the pre-incident policy.\n\nTeach the posture: a jury verdict affirmed on appeal, decided days after Canton and applying Canton's deliberate indifference standard.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which carries paragraph numbers rather than reporter pages, so no page pin cites are given. The facts are the trial evidence as the appellate court recited it in the plaintiffs' favor. The course materials' list of five categories includes retention, which is not a word the court used; the opinion's categories are recruitment, training, supervision or discipline.",
+  "applications": [
+    {
+      "title": "A practice can be policy even when the manual says nothing",
+      "body": "Everett had no written rule authorizing warrantless door breakdowns. The custom was proved by a sergeant's testimony about decades of practice and a city-issued sledgehammer. The court imputed knowledge to the Chief because his report review process would have revealed it."
+    },
+    {
+      "title": "Outdated rules plus no in-service training is the fact pattern",
+      "body": "Rules from 1951, last handed out in the mid-sixties, with nothing on current search and seizure, pursuit or deadly force standards, and no use of force training after the academy. The court found that this lack of training on essential elements of law enforcement led directly to the violations."
+    },
+    {
+      "title": "Notice and a decision to do nothing",
+      "body": "The Mayor and Chief received oral and written requests for training, discussed them, and decided against more training. A lieutenant warned them something bad would happen. The court called this a do nothing policy and found it attributable to the city."
+    },
+    {
+      "title": "Supervisors need training too",
+      "body": "Sergeant Ferullo left the doorway of Room 209. The court tied his abdication to inadequate supervisory training, and noted that no command training was required on promotion."
+    },
+    {
+      "title": "What the agency does after the incident is evidence",
+      "body": "The year-long delay in a full internal investigation and discipline that came only after indictments were admitted to show the department's pre-incident policy. Under Grandstaff, a policymaker's later acceptance of misconduct tends to prove the earlier disposition."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "On what two theories did the First Circuit uphold the City of Everett's liability?",
+      "options": [
+        "Respondeat superior and negligent hiring",
+        "An unconstitutional custom of warrantless door breakdowns when arresting felons, and deliberate indifference in recruitment, training, supervision or discipline",
+        "A written policy authorizing deadly force and a failure to carry insurance",
+        "Only the single incident at the King Arthur Motel"
+      ],
+      "answer": 1,
+      "teach": "The court analyzed both theories separately and found each supported by independent evidence beyond the incident itself. It repeated that a single incident alone cannot establish municipal liability."
+    },
+    {
+      "q": "What did the court say about the Everett rules and regulations in force at the time of the incident?",
+      "options": [
+        "They were current and the officers simply ignored them",
+        "They were promulgated in 1951, last distributed in the mid-sixties, and failed to address current standards on search and seizure, hot pursuit and deadly force",
+        "They did not exist in any form",
+        "They were adequate but not translated into the officers' languages"
+      ],
+      "answer": 1,
+      "teach": "The court used the outdated rules, combined with no post-academy training on the use of force, as direct evidence of the training policy and as a cause of the violations."
+    },
+    {
+      "q": "What standard did the court approve for municipal liability based on inadequate training?",
+      "options": [
+        "Simple negligence",
+        "Strict liability for any injury caused by an employee",
+        "Gross negligence amounting to deliberate indifference, consistent with City of Canton v. Harris",
+        "Intentional conduct only"
+      ],
+      "answer": 2,
+      "teach": "Canton was decided after the trial but before the appeal. The court held that deliberate indifference is the required degree of fault and that the trial judge's charge, read as a whole, stated it correctly."
+    }
+  ]
+}
