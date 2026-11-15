@@ -212,8 +212,11 @@ function buildKit(brief) {
     p(`${multi ? 'Decisions' : 'Decision'}: ${v.cases.map((c) => `${cite(c)} (${statusLabel[c.status] ?? c.status})`).join('; ')}. Audio: cut the ${multi ? 'segments' : 'segment'} for ${v.cases.map((c) => `"${shortName(c)}"`).join(' and ')} from the weekly narration, in that order, ${multi ? 'joined back to back' : 'as one piece'}. Open with the brand slate and close with the end screen.`);
 
     h(3, 'Title options');
+    // A video's own titles win; the brief's top-level titles still apply to the first video for briefs written before videos were listed.
     const titles = v.titles?.length
       ? v.titles
+      : vi === 0 && yt.titles?.length
+      ? yt.titles
       : [
           `${shortName(lead)}: ${lead.topic}`,
           `${firstSentence(lead.inPractice)}`,
@@ -228,7 +231,7 @@ function buildKit(brief) {
       `Text: ${thumb.text ?? clip(shortName(lead), 40).toUpperCase()}${thumb.redWord ? ` (red word: ${thumb.redWord})` : ''}`,
       `Visual: ${thumb.visual ?? 'one element only: a highlighted line of the opinion or a single still from the facts'}`,
       'Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.',
-      'Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant in 01 THUMBNAILS. Hold the title fixed and change only the thumbnail.',
+      'Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11 (also in the handoff folder file 01 THUMBNAILS). Hold the title fixed and change only the thumbnail.',
     ]);
 
     h(3, 'Description');

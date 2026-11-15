@@ -55,7 +55,7 @@ export interface WeeklyBrief {
   quiz?: QuizQuestion[];
   /** Hand-written YouTube title options and thumbnail text, read by scripts/build-youtube-kit.mjs. */
   youtube?: {
-    /** Title options and thumbnail for the first video when no videos block is given. */
+    /** Title options and thumbnail used for the first video when that video does not carry its own. */
     titles?: string[];
     thumbnail?: { text?: string; redWord?: string; visual?: string };
     /**
