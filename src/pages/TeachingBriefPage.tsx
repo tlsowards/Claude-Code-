@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import Seo from '../components/Seo';
+import { categoryLabel } from '../data/caseCategories';
 import CaseCard, { statusLabel } from '../components/CaseCard';
 import Quiz from '../components/Quiz';
 import Paywall from '../components/Paywall';
@@ -63,6 +64,9 @@ export default function TeachingBriefPage() {
             <div>
               <span className={`pill ${t.status === 'published' ? '' : 'muted'}`}>{statusLabel[t.status]}</span>
               <span className="pill red">{t.topic}</span>
+              {(t.categories ?? []).map((c) => (
+                <Link key={c} to={`/cases?cat=${c}`} className="pill muted" style={{ textDecoration: 'none' }}>{categoryLabel[c]}</Link>
+              ))}
             </div>
             <div className="case-block"><span className="label">Facts</span>{t.facts}</div>
             <div className="case-block"><span className="label">Holding</span>{t.holding}</div>

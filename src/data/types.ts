@@ -64,9 +64,16 @@ export interface WeeklyBrief {
  * A standalone teaching brief in the Case library: one decision, written in the same facts, holding,
  * practice, and training structure as a weekly brief case, but not tied to a week. Lives in content/cases.
  */
+export type CaseCategory =
+  | 'force-standards' | 'deadly-force' | 'intermediate-force' | 'impact-weapons' | 'takedowns-and-control'
+  | 'handcuffing-and-detention' | 'restraint-and-asphyxia' | 'mental-health-and-disability' | 'custody-and-corrections'
+  | 'qualified-immunity' | 'instructor-and-training-liability' | 'training-injury' | 'california-law' | 'supervision-and-intercede';
+
 export interface TeachingBrief extends BriefCase {
   /** ISO date the brief was added to the library. Drives ordering and the sitemap. */
   published: string;
+  /** Library sections this brief belongs to, in order of importance; the first is where it is shelved. */
+  categories?: CaseCategory[];
   /** Why this case is in the library, one or two sentences, shown on the list page and free to read. */
   summary: string;
   /** Verification notes: what was read and what was not. */
