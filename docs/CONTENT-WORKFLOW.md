@@ -64,6 +64,17 @@ The Sowards Briefing Room channel is faceless: Dr. Sowards' cloned voice over br
 
 Rules the kit repeats to the editor: no AI avatar or synthetic host, non-graphic visuals only, footage only from public records or court exhibits obtained through a formal request, no identifiable juveniles, the written spelling "Sowards" everywhere on screen, and the thumbnail formula in docs/YOUTUBE-NICHE-SCRUB.md section 11 (no face by default, badge always, never a generated likeness).
 
+## Case library videos (evergreen)
+
+Marquee cases from the Case library get their own evergreen videos, separate from the weekly kits. Each video is one case, narrated start to finish in Dr. Sowards' voice from the teaching brief, so the editor never cuts audio out of a weekly episode.
+
+1. Add a `youtube` block to `content/cases/<id>.json`: up to three `titles`, a `thumbnail` (`text`, `redWord`, `visual`), and a `hook` paragraph for the description. Without it the kit falls back to the case topic and the first practice sentence.
+2. Run `npm run case-narration -- <id>`. It writes `content/narration/cases/<id>.txt`: summary, caption, facts, holding, dissent, what was not decided, in practice, how to train it, the briefing room points, and a close. Pin cites and bracketed editorial capitals are dropped from the spoken text, and third-person references to Dr. Sowards become first person. Coverage and caution are never read.
+3. Render it: `node scripts/make-audio-elevenlabs.mjs <id> --case --voice <voice id> --model eleven_v4 --out audio-out` (the same proxy-injected key and voice as the episodes). Output: `audio-out/case-<id>-tim.mp3`. Delete `audio-out/<id>-elevenlabs` first if the narration changed, because parts are cached.
+4. Publish the audio: `scripts/publish-case-audio.sh <id>` uploads the MP3 to the website media library as `case-<id>.mp3` and writes `audio` (`url`, `durationSeconds`, `bytes`) into the case JSON. The case page then shows a player for subscribers.
+5. Build the kit: `npm run case-kit -- --name <kit name> --start <Monday> <id> [more ids]`. It writes `content/youtube/cases/<kit name>.md` with one section per case (decision line, audio URL, title options, thumbnail, description, chapter markers, shot list, up to four Shorts, pinned comment, a Monday-to-Friday post schedule for that case's week, and a Saturday poll). Cases are released one a week starting on the given Monday. The guardrail screen is the same as the weekly kit.
+6. Copy the kit into `/Claude handoff to Grok`, leave a `DONE` note, and commit the kit, narration, and case JSON together.
+
 ## Requests from Grok, and the Sunday night check
 
 Grok sends requests for website and app changes through the Dropbox folder `/Grok handoff to Claude`. Each request is one file named `YYYY-MM-DD short-topic REQUEST.md`, with any attachments in a subfolder of the same name. Claude reads the folder, does the routine changes on a branch with a draft pull request, holds anything sensitive for Dr. Sowards, and answers in `/Claude handoff to Grok` with a file named `YYYY-MM-DD short-topic DONE.md` (or `QUESTION.md` when something is blocked) that gives the live URL, the commit or PR, and anything that differs from the request. Finished requests may be moved to a `Done` subfolder in the Grok folder.

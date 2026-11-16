@@ -9,3 +9,8 @@ Optional: `categories` (the library sections the brief belongs to, first one is 
 Paragraph breaks inside `facts`, `holding`, and the other long fields are written as a blank line (`\n\n` in JSON) and render as paragraphs.
 
 Free to read: the summary, facts, and holding. Subscribers only: practice and training points, briefing room points, and the knowledge check.
+
+## Audio and video fields
+
+- `audio`: set by `scripts/publish-case-audio.sh` after the narration (`content/narration/cases/<id>.txt`, built by `scripts/build-case-narration.mjs`) is rendered and uploaded. `url`, `durationSeconds`, `bytes`. The case page plays it for subscribers.
+- `youtube`: hand-written `titles`, `thumbnail` (`text`, `redWord`, `visual`), and `hook` for the case's evergreen channel video, read by `scripts/build-case-kit.mjs`. See docs/CONTENT-WORKFLOW.md, "Case library videos".

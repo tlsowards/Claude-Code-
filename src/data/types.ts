@@ -91,6 +91,10 @@ export interface TeachingBrief extends BriefCase {
   relatedBriefIds?: string[];
   /** Related standards and the California layer: short titled sections shown after the case, subscribers only. */
   context?: { title: string; body: string }[];
+  /** Narration of the brief in Dr. Sowards' voice, hosted in the website's media library. Subscribers only. */
+  audio?: { url: string; durationSeconds: number; bytes?: number };
+  /** Hand-written title options, thumbnail, and description hook for the case's evergreen channel video, read by scripts/build-case-kit.mjs. */
+  youtube?: { titles?: string[]; thumbnail?: { text?: string; redWord?: string; visual?: string }; hook?: string };
 }
 
 export interface QuizQuestion {

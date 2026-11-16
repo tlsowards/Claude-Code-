@@ -85,5 +85,23 @@
       "answer": 2,
       "teach": "Graham announced the standard and remanded. It made no finding about the officers' conduct and expressly declined to address qualified immunity, which had not been raised."
     }
-  ]
+  ],
+  "youtube": {
+    "titles": [
+      "Graham v. Connor: the test every use of force is judged by",
+      "Three factors, no hindsight. Graham v. Connor explained for officers.",
+      "Why intent does not decide a force case. Graham v. Connor, 1989."
+    ],
+    "thumbnail": {
+      "text": "GRAHAM v. CONNOR",
+      "redWord": "REASONABLE",
+      "visual": "highlighted line of the opinion: \"judged from the perspective of a reasonable officer on the scene, rather than with the 20/20 vision of hindsight\""
+    },
+    "hook": "A diabetic man having an insulin reaction was handcuffed, slammed onto a car hood, and thrown into a patrol car by officers who thought he was drunk. The Supreme Court used his case to set the standard every use of force in this country is measured against: objective reasonableness, judged from the perspective of a reasonable officer on the scene, without regard to intent. This video walks through the facts, the holding, what the Court did not decide, what it means in practice, and how to train it."
+  },
+  "audio": {
+    "url": "https://sowardsconsulting.com/wp-content/uploads/2026/11/case-graham-v-connor.mp3",
+    "durationSeconds": 699,
+    "bytes": 11190684
+  }
 }
