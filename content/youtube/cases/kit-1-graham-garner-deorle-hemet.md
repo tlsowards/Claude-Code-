@@ -776,7 +776,7 @@ Correct answer for the follow-up reply: B. The court placed the cloth-cased shot
 
 Decision: Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005 (published), 394 F.3d 689 (9th Cir. 2005) (en banc), docket 02-56445.
 
-Audio: not rendered yet; render it with scripts/make-audio-elevenlabs.mjs --case before building the video. Narration script: content/narration/cases/smith-v-city-of-hemet.txt. Case page: https://app.sowardsconsulting.com/cases/smith-v-city-of-hemet.
+Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-smith-v-city-of-hemet.mp3 (18 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/smith-v-city-of-hemet.txt. Case page: https://app.sowardsconsulting.com/cases/smith-v-city-of-hemet.
 
 ### Title options
 
