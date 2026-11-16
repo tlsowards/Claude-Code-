@@ -92,5 +92,18 @@
       "answer": 1,
       "teach": "The court declined to create two tracks of analysis but held, following Deorle, that the interest in forcing a non-threatening person in crisis into custody is not as substantial as the interest in apprehending a dangerous criminal, and that the purpose of such a detention is to help, not punish."
     }
-  ]
+  ],
+  "youtube": {
+    "titles": [
+      "Bryan v. MacPherson: the Ninth Circuit's foundational Taser case",
+      "Dart mode is intermediate force. Bryan v. MacPherson explained for officers.",
+      "A Taser, no warning, a man yelling at himself. Bryan v. MacPherson, 2010."
+    ],
+    "thumbnail": {
+      "text": "BRYAN v. MACPHERSON",
+      "redWord": "INTERMEDIATE",
+      "visual": "highlighted line of the opinion on the X26 in dart mode as an intermediate, significant level of force that must be justified by the governmental interest involved"
+    },
+    "hook": "An officer fired a Taser in dart mode, without warning, at a shirtless, unarmed 21 year old standing fifteen to twenty-five feet away, yelling gibberish and hitting his own thighs after a seatbelt stop. The Ninth Circuit held that a Taser in dart mode is an intermediate, significant level of force that must be justified by the governmental interest involved, that on the plaintiff's version the force was excessive, and that the officer still had qualified immunity because no controlling decision had addressed dart mode Tasers before July 2005. This video walks through the facts, the holding, the dissent, what the court did not decide, what it means in practice, and how to train it."
+  }
 }

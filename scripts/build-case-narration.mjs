@@ -53,7 +53,9 @@ export function narrateCase(c) {
   const court = speakable(c.court.split(' (')[0]);
   const p = [];
   p.push(`${name}. From the Sowards Briefing Room. ${c.summary}`);
-  p.push(`${name}. ${court}, decided ${c.decided}${c.docket ? `, docket number ${speakable(c.docket.split(' (')[0])}` : ''}. ${statusLine[c.status] ?? ''}`.trim());
+  // The first decision date only; amended-opinion history is written history, not spoken.
+  const decided = c.decided.split(';')[0].split(' (')[0].trim();
+  p.push(`${name}. ${court}, decided ${decided}${c.docket ? `, docket number ${speakable(c.docket.split(' (')[0])}` : ''}. ${statusLine[c.status] ?? ''}`.trim());
   p.push(`Here are the facts. ${speakable(c.facts)}`);
   p.push(`The holding. ${speakable(c.holding)}`);
   if (c.dissent) p.push(`On the dissent. ${speakable(c.dissent)}`);

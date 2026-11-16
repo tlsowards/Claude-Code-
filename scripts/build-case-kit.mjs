@@ -90,9 +90,9 @@ function shortName(c) {
 function courtShort(c) {
   return c.court.split(' (')[0];
 }
-/** The first decision date only; amended-opinion history stays in the Decision line. */
+/** The first decision date only; amended-opinion history (after a semicolon or in parentheses) stays in the Decision line. */
 function decidedShort(c) {
-  return c.decided.split(';')[0].trim();
+  return c.decided.split(';')[0].split(' (')[0].trim();
 }
 function cite(c) {
   return `${c.name}, ${courtShort(c)}, ${decidedShort(c)}`;

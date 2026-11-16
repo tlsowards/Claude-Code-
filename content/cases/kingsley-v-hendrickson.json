@@ -86,5 +86,18 @@
       "answer": 2,
       "teach": "The Court decided the legal standard and found the instruction erroneous. It left harmless error to the Seventh Circuit and made no finding on whether the force was excessive."
     }
-  ]
+  ],
+  "youtube": {
+    "titles": [
+      "Kingsley v. Hendrickson: the force standard for pretrial detainees",
+      "Same cell, two standards. Kingsley v. Hendrickson explained for jail staff.",
+      "Intent is not the test in the jail. Kingsley v. Hendrickson, 2015."
+    ],
+    "thumbnail": {
+      "text": "KINGSLEY v. HENDRICKSON",
+      "redWord": "OBJECTIVE",
+      "visual": "highlighted line of the opinion: \"a pretrial detainee must show only that the force purposely or knowingly used against him was objectively unreasonable\""
+    },
+    "hook": "A pretrial detainee in a county jail was handcuffed, carried to a receiving cell, placed face down, and Tasered for about five seconds after refusing to take paper off a light fixture. The Supreme Court held that a pretrial detainee claiming excessive force must show only that the force purposely or knowingly used against him was objectively unreasonable. He does not have to prove the officers knew the force was excessive. This video walks through the facts, the holding, the dissent, what the Court did not decide, what it means in practice in the jail and the juvenile hall, and how to train it."
+  }
 }
