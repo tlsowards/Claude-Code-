@@ -7,7 +7,7 @@ import { HomeIcon, BriefIcon, CasesIcon, PodcastIcon, TrainingIcon, ResourcesIco
 const nav = [
   { to: '/', label: 'Home', icon: HomeIcon, end: true },
   { to: '/briefs', label: 'Briefs', icon: BriefIcon },
-  { to: '/cases', label: 'Cases', icon: CasesIcon },
+  { to: '/cases', label: 'Case library', icon: CasesIcon },
   { to: '/podcast', label: 'Podcast', icon: PodcastIcon },
   { to: '/training', label: 'Training', icon: TrainingIcon },
   { to: '/resources', label: 'Resources', icon: ResourcesIcon },

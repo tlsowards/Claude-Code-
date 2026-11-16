@@ -52,8 +52,8 @@ export default function Cases() {
   return (
     <>
       <Seo title="Case library" description="Teaching briefs on the use of force decisions that come up in training again and again, organized by topic: force standards, impact weapons, handcuffing, restraint, mental health, custody, qualified immunity, and instructor liability." />
-      <div className="eyebrow">Case library</div>
-      <h1>The decisions that keep coming up</h1>
+      <div className="eyebrow">The decisions that keep coming up</div>
+      <h1>Case library</h1>
       <p className="lead">
         One decision per brief, not tied to a week: facts, holding, what it means in practice, and how to train it. Each one is verified against the opinion before it is added. Browse by topic or search by case name, citation, or training point.
       </p>
