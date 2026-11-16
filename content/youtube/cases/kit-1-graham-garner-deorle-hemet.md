@@ -524,7 +524,7 @@ Correct answer for the follow-up reply: C. The Court stated this rule at 471 U.S
 
 Decision: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001 (published), 272 F.3d 1272 (9th Cir. 2001), docket 99-17188.
 
-Audio: not rendered yet; render it with scripts/make-audio-elevenlabs.mjs --case before building the video. Narration script: content/narration/cases/deorle-v-rutherford.txt. Case page: https://app.sowardsconsulting.com/cases/deorle-v-rutherford.
+Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-deorle-v-rutherford.mp3 (19 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/deorle-v-rutherford.txt. Case page: https://app.sowardsconsulting.com/cases/deorle-v-rutherford.
 
 ### Title options
 
