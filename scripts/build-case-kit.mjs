@@ -13,6 +13,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { decidedShort } from './lib/case-text.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const caseDir = resolve(root, 'content/cases');
@@ -90,12 +91,8 @@ function shortName(c) {
 function courtShort(c) {
   return c.court.split(' (')[0];
 }
-/** The first decision date only; amended-opinion history stays in the Decision line. */
-function decidedShort(c) {
-  return c.decided.split(';')[0].trim();
-}
 function cite(c) {
-  return `${c.name}, ${courtShort(c)}, ${decidedShort(c)}`;
+  return `${c.name}, ${courtShort(c)}, ${decidedShort(c.decided)}`;
 }
 function courtListener(n) {
   return `https://www.courtlistener.com/?q=${encodeURIComponent(`"${n}"`)}`;
@@ -231,8 +228,8 @@ if (cases.length === 0) {
 
     h(3, 'Shot list');
     out.push('| Segment | On-screen text | Visual |', '|---|---|---|');
-    out.push(`| Open | ${CHANNEL} / ${shortName(c)} / ${decidedShort(c)} | Brand open, channel mark, then the summary as on-screen lines |`);
-    out.push(`| The case | ${c.name} / ${courtShort(c)} / ${decidedShort(c)} / ${statusLabel[c.status] ?? c.status} | Opinion first page or caption, docket ${c.docket ?? 'n/a'} |`);
+    out.push(`| Open | ${CHANNEL} / ${shortName(c)} / ${decidedShort(c.decided)} | Brand open, channel mark, then the summary as on-screen lines |`);
+    out.push(`| The case | ${c.name} / ${courtShort(c)} / ${decidedShort(c.decided)} / ${statusLabel[c.status] ?? c.status} | Opinion first page or caption, docket ${c.docket ?? 'n/a'} |`);
     out.push(`| Facts | Facts | Timeline built from the facts paragraph; map if a place is named |`);
     out.push(`| Holding | Holding | Highlighted opinion text |`);
     if (c.dissent) out.push(`| Dissent | Dissent | Highlighted opinion text, second color |`);
@@ -282,7 +279,7 @@ if (cases.length === 0) {
       out.push(`${title}.`, '', clean(a.body), '', `From the Sowards Briefing Room Case library: ${cite(c)}. Full brief and how to train it: ${caseUrl(c)}`, '', CTA);
       out.push('```', '');
       out.push('Instagram and TikTok caption (pair with the matching Short):', '```');
-      out.push(`${title}. ${clean(firstSentence(a.body))} ${shortName(c)}, ${decidedShort(c)}. ${CTA}`);
+      out.push(`${title}. ${clean(firstSentence(a.body))} ${shortName(c)}, ${decidedShort(c.decided)}. ${CTA}`);
       out.push('```', '');
       out.push('X:', '```');
       out.push(clip(`${title}. ${clean(firstSentence(a.body))} ${shortName(c)}. ${caseUrl(c)}`, 275));

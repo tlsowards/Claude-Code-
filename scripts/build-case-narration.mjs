@@ -7,6 +7,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { decidedShort } from './lib/case-text.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const caseDir = resolve(root, 'content/cases');
@@ -53,7 +54,7 @@ export function narrateCase(c) {
   const court = speakable(c.court.split(' (')[0]);
   const p = [];
   p.push(`${name}. From the Sowards Briefing Room. ${c.summary}`);
-  p.push(`${name}. ${court}, decided ${c.decided}${c.docket ? `, docket number ${speakable(c.docket.split(' (')[0])}` : ''}. ${statusLine[c.status] ?? ''}`.trim());
+  p.push(`${name}. ${court}, decided ${decidedShort(c.decided)}${c.docket ? `, docket number ${speakable(c.docket.split(' (')[0])}` : ''}. ${statusLine[c.status] ?? ''}`.trim());
   p.push(`Here are the facts. ${speakable(c.facts)}`);
   p.push(`The holding. ${speakable(c.holding)}`);
   if (c.dissent) p.push(`On the dissent. ${speakable(c.dissent)}`);

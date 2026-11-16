@@ -1,0 +1,113 @@
+{
+  "id": "scott-v-harris",
+  "name": "Scott v. Harris",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "05-1631",
+  "citation": "550 U.S. 372 (2007)",
+  "decided": "April 30, 2007",
+  "status": "published",
+  "topic": "Fourth Amendment seizure by vehicle contact to end a high speed pursuit, reasonableness of force that risks the fleeing driver's life to protect the public, role of video evidence at summary judgment",
+  "settings": [
+    "field"
+  ],
+  "categories": [
+    "deadly-force",
+    "force-standards"
+  ],
+  "published": "2026-11-16",
+  "summary": "A Georgia deputy ended a ten mile, high speed nighttime pursuit by pushing his bumper into the rear of the fleeing car, which left the road and crashed, leaving the driver a quadriplegic. The Supreme Court held that an officer's attempt to terminate a dangerous high speed chase that threatens the lives of innocent bystanders does not violate the Fourth Amendment, even when it places the fleeing motorist at risk of serious injury or death. The Court also held that Garner is not a switch that imposes rigid preconditions whenever force might be called deadly, and that a court ruling on summary judgment may not adopt a version of the facts that an unaltered video blatantly contradicts. It is taught with Garner and Graham for what reasonableness means in a pursuit.",
+  "coverage": [
+    "The opinion was read in full, including the Ginsburg and Breyer concurrences and the Stevens dissent, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep550/usrep550372/usrep550372.pdf (26 pages, 550 U.S. 372 to 397), converted with pdftotext. Pin cites are to U.S. Reports pages as printed in that PDF.",
+    "The citation 550 U.S. 372 is confirmed from the running heads. The docket number 05-1631, argument date February 26, 2007, and decision date April 30, 2007 are taken from the caption. The vote was eight to one.",
+    "The Eleventh Circuit decision (Harris v. Coweta County, 433 F.3d 807 (2005)) and the district court order were not read. They are described only as the Supreme Court described them. The videotape itself was not viewed; the facts are the Court's description of it, and the dissent's differing description is reported in the dissent field.",
+    "Later history on the Saucier sequencing question discussed in the concurrences was not researched for this brief.",
+    "This case was added at Dr. Sowards' direction for the Case library videos and was not in the course outline extraction, so it has not been checked against course materials."
+  ],
+  "facts": "The facts are those the Court took from the record, including a videotape of the pursuit recorded from the police vehicles. The Court treated the video as controlling where it contradicted the driver's account (550 U.S. at 378 to 381).\n\nIn March 2001, a Georgia county deputy clocked Victor Harris's car at 73 miles per hour on a road posted at 55. The deputy activated his lights to pull the car over. Harris sped away instead, beginning a chase down what was in most parts a two lane road, at speeds over 85 miles per hour. The deputy radioed dispatch, reported the pursuit, and broadcast the license plate. Deputy Timothy Scott heard the broadcast and joined the chase with other officers. Harris pulled into a shopping center parking lot, was nearly boxed in by police cars, escaped by making a sharp turn that collided with Scott's car, and sped off again down a two lane highway (at 374 to 375).\n\nScott took over as the lead pursuit vehicle. Six minutes and nearly ten miles after the chase began, Scott decided to end it. He radioed his supervisor for permission to use a Precision Intervention Technique maneuver and was told to go ahead and take him out. Scott decided the cars were moving too fast to perform the PIT maneuver safely, and instead applied his push bumper to the rear of Harris's car. Harris lost control, left the road, ran down an embankment, overturned, and crashed. He was rendered a quadriplegic (at 375 and n.1).\n\nThe video, which no one claimed was altered, showed the car racing down narrow two lane roads in the dead of night at speeds the Court called shockingly fast, swerving around more than a dozen cars, crossing the double yellow line, forcing cars in both directions onto the shoulder, running multiple red lights, and traveling for stretches in the center turn lane, with numerous police cars making the same maneuvers to keep up (at 379 to 380). The Court also noted that when Scott made contact, Harris's car was not threatening any other vehicle or pedestrian, and that Scott had evidently waited for the road to be clear (at 380 n.7).\n\nHarris sued Scott under 42 U.S.C. section 1983 for excessive force in violation of the Fourth Amendment. The district court denied Scott's motion for summary judgment on qualified immunity. The Eleventh Circuit affirmed, taking Harris's version of the facts, concluding that Scott's actions could be deadly force under Tennessee v. Garner, that a jury could find a violation, and that the law was clearly established (at 376).",
+  "holding": "Reversed. Deputy Scott was entitled to summary judgment because his conduct did not violate the Fourth Amendment (550 U.S. at 386). Justice Scalia wrote for eight Justices; Justice Stevens dissented.\n\nThe facts at summary judgment. Courts ordinarily take the facts in the light most favorable to the party opposing summary judgment, which in a qualified immunity case usually means the plaintiff's version. But facts are viewed that way only when there is a genuine dispute. \"When opposing parties tell two different stories, one of which is blatantly contradicted by the record, so that no reasonable jury could believe it, a court should not adopt that version of the facts for purposes of ruling on a motion for summary judgment\" (at 380). Harris's account of a controlled, low risk drive was \"so utterly discredited by the record that no reasonable jury could have believed him,\" and the Court of Appeals should have viewed the facts in the light depicted by the videotape (at 380 to 381).\n\nGarner is not a switch. Harris argued that Scott's action was deadly force, and that Garner therefore required an immediate threat of serious physical harm, necessity to prevent escape, and a warning where feasible before the force could be reasonable. The Court rejected the premise: \"Garner did not establish a magical on/off switch that triggers rigid preconditions whenever an officer's actions constitute 'deadly force.'\" Garner \"was simply an application of the Fourth Amendment's 'reasonableness' test\" to a particular type of force in a particular situation, a young, slight, unarmed burglary suspect shot in the back of the head while fleeing on foot (at 382). Those facts have scant applicability to a car chase. \"Whether or not Scott's actions constituted application of 'deadly force,' all that matters is whether Scott's actions were reasonable\" (at 383). In a footnote, the Court explained that Garner's reference to force necessary to prevent escape described the need to prevent serious physical harm, and that here the flight itself, in a speeding car, was the threat (at 382 n.9).\n\nThe balance. Reasonableness weighs the nature and quality of the intrusion against the governmental interest. Harris posed an actual and imminent threat to any pedestrians who might have been present, to other motorists, and to the officers. Scott's action posed a high likelihood of serious injury or death to Harris, though not the near certainty of a gunshot. In weighing those risks the Court considered the number of lives at risk and the relative culpability of the parties: Harris intentionally created the danger by fleeing recklessly and ignored the warning of multiple police cars with lights and sirens for nearly ten miles, while the people he endangered were entirely innocent. The Court had \"little difficulty\" concluding Scott acted reasonably (at 383 to 384).\n\nStopping the pursuit was not required. Ceasing pursuit was not certain to end the danger, because Harris could not have known the chase was over and might have kept driving recklessly. The Court was also unwilling to adopt a rule that lets a motorist escape by driving dangerously enough, calling it an invitation to impunity earned by recklessness. The rule it announced: \"A police officer's attempt to terminate a dangerous high-speed car chase that threatens the lives of innocent bystanders does not violate the Fourth Amendment, even when it places the fleeing motorist at risk of serious injury or death\" (at 385 to 386).\n\nConcurrences. Justice Ginsburg wrote that she did not read the decision as a mechanical, per se rule; the inquiry is situation specific, and relevant considerations include whether the lives of others were at risk and whether there was a safer way, given the time, place, and circumstances, to stop the vehicle (at 386). Justice Breyer urged readers to watch the video, said the Court should reconsider the Saucier requirement that courts decide the constitutional question first, and agreed with Justice Ginsburg that the majority's rule as stated was too absolute (at 387 to 389).",
+  "dissent": "Justice Stevens dissented. In his view the video confirmed rather than contradicted the lower courts: the chase was at about 11 p.m. on a weekday on roads where no pedestrians, parked cars, sidewalks, or residences were visible, the cars Harris passed had already pulled over in response to the sirens, local police had blocked off intersections, and Harris used his turn signals and waited for oncoming traffic before passing. He would have left the reasonableness question to a jury, noting that the district court and the Eleventh Circuit had read the same tapes differently. He also pointed out that officers had Harris's license plate and could have arrested him later, that pursuit policies adopted by many departments call for discontinuing a chase when the danger it creates outweighs the need for immediate apprehension, and that less drastic measures such as stop sticks or a loudspeaker warning were available. Harris was 19 (550 U.S. at 389 to 397). The dissent is worth teaching because it describes the facts a jury might weigh differently and because it quotes the kind of pursuit policy many agencies actually use.",
+  "notDecided": "Whether Scott's maneuver was deadly force. The Court said the label did not matter; only reasonableness did (550 U.S. at 383).\n\nThe second qualified immunity question, whether the right was clearly established. The Court found no constitutional violation, so it never reached that step.\n\nWhether the Saucier sequence, deciding the constitutional question before the clearly established question, should be abandoned. Two concurring Justices raised it; the Court reserved it (at 377 n.4, 386 to 389).\n\nHow the balance would come out on different facts, such as a chase with pedestrians present, a lower speed, or a safer available alternative. Justice Ginsburg's concurrence stressed that the inquiry is situation specific, and Justice Breyer called the majority's rule too absolute if read as a per se rule (at 386, 389).\n\nWhether the maneuver complied with agency policy or with the supervisor's permission. The Court said it was irrelevant to the constitutional analysis whether Scott had permission for the precise action he took (at 375 n.1).\n\nAny claim against other defendants or any claim other than the Fourth Amendment claim against Scott (at 376 n.3).",
+  "inPractice": "Scott v. Harris governs what the Fourth Amendment asks when an officer uses a vehicle, or any other force, to end a pursuit. The question is not whether the technique counts as deadly force. The question is whether the action was reasonable in light of the threat the driver posed, and the Court measured that threat by the number of lives at risk and by who created the danger.\n\nThe facts that carried the day are facts an officer can observe and later articulate: speed, road type and lighting, traffic in both directions, red lights run, the center line crossed, the duration and distance of the chase, the lights and sirens the driver ignored, and the suspect's own conduct such as the collision in the parking lot. The Court also noted that Scott waited for the road to be clear before making contact. That is a fact about how the force was applied, and it mattered.\n\nThe second lesson is the video. The Court refused to accept a version of events that the recording blatantly contradicted. Officers should assume the camera is the record. It protects a report that matches it and it discredits one that does not.\n\nThird, the Constitution does not require an officer to abandon a dangerous chase, but agency pursuit policy often requires more than the Constitution does, including supervisory approval and termination criteria. The dissent quoted a chiefs' association policy of exactly that kind. Policy governs the officer's conduct even where the Fourth Amendment would allow more, and the Court said compliance with permission was irrelevant only to the constitutional question.\n\nFinally, the posture: summary judgment for the deputy on the constitutional question. The Court did not reach qualified immunity's second step and did not announce that every pursuit termination is reasonable.",
+  "trainIt": "Teach Scott v. Harris with Garner and Graham as one lesson: Garner applied the reasonableness test to one set of facts, and Scott applied it to another. Students should be able to explain why the Court said there is no deadly force switch, and why that does not loosen the standard. The balance still has to be done, and it has to be done with facts.\n\nRun a pursuit scenario and require the student to articulate the Scott balance out loud: who was at risk and how many, what the driver had done to create the danger, what warnings the driver ignored, why ending the pursuit would or would not have ended the danger, and what alternatives were available and whether they were feasible at that time and place. Then change one fact, such as pedestrians on a sidewalk, a daytime commercial district, or a known identity with a plate on file, and have the student redo the balance. Use Justice Ginsburg's two questions as the check: were the lives of others at risk, and was there a safer way given the time, place, and circumstances.\n\nTrain the video lesson directly. Have students write a report from memory after a recorded scenario, then watch the recording. The point is not that memory is bad; the point is that a court will take the recording over the report.\n\nTeach the agency's pursuit policy alongside the case. Students must know the approval, communication, and termination requirements, and must understand that policy can be narrower than the Constitution. Scott radioed a supervisor and got permission; the Court said that was irrelevant to the constitutional question, which means policy, not the Fourth Amendment, is what enforces it.\n\nTeach the posture: summary judgment for the deputy, no ruling on deadly force as a label, no ruling on qualified immunity's second step, and two concurring Justices warning against reading the rule as absolute.",
+  "caution": "The facts are the Court's description of the videotape at the summary judgment stage, and the dissent describes the same recording differently. The videotape itself was not viewed for this brief. The Court decided the constitutional question only and did not reach the clearly established question. The Eleventh Circuit opinion and the district court order were not read.",
+  "applications": [
+    {
+      "title": "There is no deadly force switch",
+      "body": "The Court held that Garner did not create rigid preconditions that apply whenever force might be called deadly. Garner applied the reasonableness test to a fleeing, unarmed burglary suspect shot in the back of the head. Whether or not a pursuit termination is deadly force, the question is whether it was reasonable."
+    },
+    {
+      "title": "Count the lives and weigh the culpability",
+      "body": "The Court balanced the high likelihood of serious injury to the driver against the actual and imminent threat he posed to motorists, pedestrians who might have been present, and officers. It considered how many lives were at risk and who created the danger. Officers should be able to describe both sides of that balance in facts."
+    },
+    {
+      "title": "Lights and sirens were the warning",
+      "body": "Multiple police cars with lights and sirens chased Harris for nearly ten miles, and the Court counted his refusal to stop as ignoring their warning. Document the pursuit's duration, distance, and signals, and document that the road was clear when force was applied, as it was here."
+    },
+    {
+      "title": "The video is the record",
+      "body": "A court ruling on summary judgment will not adopt a version of events that an unaltered recording blatantly contradicts. Write reports that match what the camera will show, and expect the camera to be believed over anyone's account when they differ."
+    },
+    {
+      "title": "The Constitution is the floor; policy is the rule",
+      "body": "The Court refused to require officers to abandon a dangerous chase, but it also said the supervisor's permission was irrelevant to the constitutional question. Pursuit policy, with its approval and termination requirements, is what governs the officer's decision at the agency level, and it is often narrower than Scott."
+    },
+    {
+      "title": "Posture",
+      "body": "Summary judgment for the deputy because there was no Fourth Amendment violation. The Court did not decide whether the maneuver was deadly force, did not reach qualified immunity's clearly established step, and two concurring Justices said the rule is situation specific, not absolute."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "In Scott v. Harris, how did the Court treat the argument that Garner's requirements had to be met before a pursuit could be ended by force?",
+      "options": [
+        "It agreed, and held the deputy's maneuver unreasonable because no warning was given",
+        "It held that Garner was an application of the reasonableness test to particular facts, not a set of rigid preconditions triggered whenever force might be deadly",
+        "It held that vehicle contact is never deadly force, so Garner cannot apply",
+        "It declined to decide and remanded for a jury to apply Garner"
+      ],
+      "answer": 1,
+      "teach": "The Court said Garner did not establish a magical on/off switch, and that whether or not Scott's actions were deadly force, all that mattered was whether they were reasonable (550 U.S. at 382 to 383)."
+    },
+    {
+      "q": "What did the Court hold about the videotape at the summary judgment stage?",
+      "options": [
+        "Video evidence may never be considered on summary judgment",
+        "The plaintiff's version must always be accepted when it conflicts with video",
+        "A court should not adopt a version of the facts that an unaltered recording blatantly contradicts, so that no reasonable jury could believe it",
+        "The video was inadmissible because the deputy had recorded it"
+      ],
+      "answer": 2,
+      "teach": "The Court held that Harris's account was so utterly discredited by the recording that no reasonable jury could have believed it, and that the facts had to be viewed in the light depicted by the videotape (550 U.S. at 380 to 381)."
+    },
+    {
+      "q": "Which of these did the Court actually decide in Scott v. Harris?",
+      "options": [
+        "That the deputy's maneuver was deadly force",
+        "That the deputy's right to act was clearly established",
+        "That an officer's attempt to terminate a dangerous high speed chase threatening innocent lives does not violate the Fourth Amendment even when it risks the fleeing driver's life",
+        "That officers must terminate a pursuit once they have the license plate"
+      ],
+      "answer": 2,
+      "teach": "That is the rule stated at 550 U.S. 386. The Court said the deadly force label did not matter, never reached the clearly established step because it found no violation, and rejected the argument that ceasing pursuit was required."
+    }
+  ],
+  "youtube": {
+    "titles": [
+      "Scott v. Harris: when ending a pursuit by force is reasonable",
+      "There is no deadly force switch. Scott v. Harris explained for officers.",
+      "A ten mile chase, a push bumper, and a video. Scott v. Harris, 2007."
+    ],
+    "thumbnail": {
+      "text": "SCOTT v. HARRIS",
+      "redWord": "THE VIDEO",
+      "visual": "highlighted line of the opinion: \"Garner did not establish a magical on/off switch that triggers rigid preconditions whenever an officer's actions constitute 'deadly force'\""
+    },
+    "hook": "A Georgia deputy ended a ten mile, high speed nighttime pursuit by pushing his bumper into the rear of the fleeing car. It left the road and crashed, and the driver was left a quadriplegic. The Supreme Court held that an officer's attempt to terminate a dangerous high speed chase that threatens the lives of innocent bystanders does not violate the Fourth Amendment, even when it places the fleeing motorist at risk of serious injury or death. It also held that Garner is not a switch that imposes rigid preconditions whenever force might be called deadly, and that a court may not adopt a version of the facts that an unaltered video blatantly contradicts. This video walks through the facts, the holding, the dissent, what the Court did not decide, what it means in practice, and how to train it."
+  },
+  "audio": {
+    "url": "https://sowardsconsulting.com/wp-content/uploads/2026/11/case-scott-v-harris.mp3",
+    "durationSeconds": 939,
+    "bytes": 15029220
+  }
+}

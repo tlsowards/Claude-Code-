@@ -8,6 +8,7 @@ Columns: W24 = 24-hour ACI update, W80 = 80-hour ACI, W40 = 40-hour ACI, IWI = I
 |---|---|---|---|---|---|---|---|
 | Graham v. Connor | 490 U.S. 386 (1989) | x | x | x | x | Force standards | in library |
 | Tennessee v. Garner | 471 U.S. 1 (1985) | x |  | x |  | Force standards | in library |
+| Scott v. Harris | 550 U.S. 372 (2007) |  |  |  |  | Deadly force, pursuits (added at Dr. Sowards' direction for Case library video kit 2; not in the course outlines) | in library |
 | Barnes v. Felix | 605 U.S. ___ (2025) | x |  | x |  | Force standards | in library |
 | Kingsley v. Hendrickson | 576 U.S. 389 (2015) | x |  | x |  | Custody force standards | in library |
 | Whitley v. Albers | 475 U.S. 312 (1986) | x |  | x |  | Custody force standards | in library |
