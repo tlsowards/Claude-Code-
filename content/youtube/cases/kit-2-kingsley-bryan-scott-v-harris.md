@@ -25,7 +25,7 @@ Guardrail check: 3 cases screened against 1 exclusion term, none matched.
 
 Decision: Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 2015 (published), 576 U.S. 389 (2015), docket 14-6368.
 
-Audio: not rendered yet; render it with scripts/make-audio-elevenlabs.mjs --case before building the video. Narration script: content/narration/cases/kingsley-v-hendrickson.txt. Case page: https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson.
+Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-kingsley-v-hendrickson.mp3 (14 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/kingsley-v-hendrickson.txt. Case page: https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson.
 
 ### Title options
 
