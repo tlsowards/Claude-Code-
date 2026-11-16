@@ -18,7 +18,9 @@ brief_id,ep,url,mmss,mb,by,secs,date=sys.argv[1:]
 b=json.load(open(f'content/briefs/{brief_id}.json'))
 from datetime import date as D
 d=D.fromisoformat(date); long=d.strftime('%B %-d, %Y')
-content=f'<!-- wp:paragraph -->\n<p>{html.escape(b["summary"])}</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>This episode was re-recorded in Dr. Sowards\' voice for a general training audience and rebuilt from the review originally published {long}. The written brief, with cases, applications, and a knowledge check, is in the Sowards Consulting app.</em></p>\n<!-- /wp:paragraph -->'
+rebuilt=any('rebuilt from the episode originally published' in c for c in b.get('coverage',[]))
+note=(f'This episode was re-recorded in Dr. Sowards\' voice for a general training audience and rebuilt from the review originally published {long}. ' if rebuilt else '')+'The written brief, with cases, applications, and a knowledge check, is in the Sowards Consulting app.'
+content=f'<!-- wp:paragraph -->\n<p>{html.escape(b["summary"])}</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>{note}</em></p>\n<!-- /wp:paragraph -->'
 payload={"content":content,"meta":{"audio_file":url,"duration":mmss,"filesize":mb,"filesize_raw":by}}
 r=subprocess.run(['curl','-sS','-X','POST','-H','Authorization: Basic placeholder','-H','Content-Type: application/json',f'https://sowardsconsulting.com/wp-json/wp/v2/podcast/{ep}','--data-binary',json.dumps(payload)],capture_output=True,text=True)
 res=json.loads(r.stdout); print('site episode',res.get('id'),res.get('meta',{}).get('audio_file'),res.get('meta',{}).get('duration'))

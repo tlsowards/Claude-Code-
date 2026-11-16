@@ -1,0 +1,91 @@
+{
+  "id": "city-of-canton-v-harris",
+  "name": "City of Canton v. Harris",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "86-1088",
+  "citation": "489 U.S. 378 (1989)",
+  "decided": "February 28, 1989",
+  "status": "published",
+  "topic": "Municipal liability under section 1983 for failure to train, deliberate indifference standard, medical care for a person in police custody",
+  "settings": [
+    "supervisors",
+    "custody",
+    "all"
+  ],
+  "categories": [
+    "instructor-and-training-liability"
+  ],
+  "published": "2026-11-16",
+  "summary": "A woman arrested in Canton, Ohio, slumped to the floor repeatedly at the station and was left lying there without medical care; shift commanders had sole discretion to call for medical help and no training beyond first aid in deciding when. The Supreme Court held that a city can be liable under section 1983 for inadequate training, but only where the failure to train amounts to deliberate indifference to the rights of people the police contact, and only where the identified deficiency actually caused the injury. It is the case that defines training liability for agencies.",
+  "coverage": [
+    "The opinion was read in full, including the Brennan concurrence and the O'Connor opinion concurring in part and dissenting in part, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep489/usrep489378/usrep489378.pdf (23 pages, 489 U.S. 378 to 399), converted with pdftotext. Pin cites are to U.S. Reports pages as printed in that PDF.",
+    "The citation 489 U.S. 378 is confirmed from the running heads. The docket number, argument date, and decision date are taken from the caption.",
+    "The Sixth Circuit decision (798 F.2d 1414) and the district court rulings were not read. They are described only as the Supreme Court described them.",
+    "Proceedings after remand were not researched and are not described."
+  ],
+  "facts": "In April 1978, Geraldine Harris was arrested by Canton Police Department officers and brought to the station in a patrol wagon. On arrival she was found sitting on the floor of the wagon. Asked whether she needed medical attention, she responded with an incoherent remark. Inside the station she slumped to the floor twice, and officers eventually left her lying on the floor to keep her from falling again. No medical attention was summoned. After about an hour she was released, and her family took her by ambulance to a hospital, where she was diagnosed with several emotional ailments. She was hospitalized for a week and received outpatient treatment for another year (489 U.S. at 381).\n\nHarris sued the city and its officials on many claims. One sought to hold the city liable under 42 U.S.C. section 1983 for violating her Fourteenth Amendment due process right to receive necessary medical attention in police custody (at 381).\n\nThe evidence at trial showed that under a city regulation, shift commanders were authorized to decide, in their sole discretion, whether a detainee needed medical care. The regulation directed the jailer to have a prisoner who was unconscious, semiconscious, unable to explain his or her condition, or complaining of illness taken to a hospital, with the supervisor's permission (at 381 to 382 and n.2). Testimony also suggested that shift commanders received no special training, beyond first aid, in deciding when to summon medical care for an injured detainee (at 382).\n\nThe jury rejected all of Harris's claims except the section 1983 claim against the city. Denying the city's motion for judgment notwithstanding the verdict, the district court reasoned that a jury could find the city had a policy of vesting complete authority in the police supervisor without adequate training to recognize when treatment was needed, and that this was grossly negligent or so reckless that misconduct was almost inevitable (at 382).\n\nThe Sixth Circuit agreed that a municipality is liable for failure to train where it acted recklessly, intentionally, or with gross negligence and the lack of training made deprivations substantially certain to result. It nonetheless reversed and ordered a new trial because the jury instructions might have allowed a verdict against the city on a pure respondeat superior theory (at 382 to 383). The city petitioned for certiorari, arguing that the Sixth Circuit's standard impermissibly broadened municipal liability (at 383).",
+  "holding": "Vacated and remanded. The Court held that \"under certain circumstances\" a municipality can be liable under section 1983 for constitutional violations resulting from its failure to train its employees (489 U.S. at 380), but it rejected the Sixth Circuit's gross negligence standard and adopted a stricter one.\n\nFailure to train can be a policy. The Court rejected the city's argument that only a policy that is itself unconstitutional can support liability. But \"there are limited circumstances in which an allegation of a 'failure to train' can be the basis for liability under § 1983\" (at 386 to 387).\n\nThe standard. \"We hold today that the inadequacy of police training may serve as the basis for § 1983 liability only where the failure to train amounts to deliberate indifference to the rights of persons with whom the police come into contact\" (at 388). \"Only where a failure to train reflects a 'deliberate' or 'conscious' choice by a municipality\" can the failure be a city policy (at 389).\n\nWhat must be shown. It may happen that \"in light of the duties assigned to specific officers or employees the need for more or different training is so obvious, and the inadequacy so likely to result in the violation of constitutional rights, that the policymakers of the city can reasonably be said to have been deliberately indifferent to the need\" (at 390). The Court's example: policymakers know to a moral certainty that officers will arrest fleeing felons and have armed them, so the need to train on the constitutional limits on deadly force under Tennessee v. Garner is \"so obvious\" that a failure to do so could be deliberate indifference. A pattern of violations known to policymakers is another route (at 390 n.10).\n\nProgram, not individual. \"[T]he focus must be on adequacy of the training program in relation to the tasks the particular officers must perform. That a particular officer may be unsatisfactorily trained will not alone suffice to fasten liability on the city,\" because the officer's shortcomings may have other causes. Nor is it enough \"to prove that an injury or accident could have been avoided if an officer had had better or more training.\" \"[A]dequately trained officers occasionally make mistakes; the fact that they do says little about the training program\" (at 390 to 391).\n\nCausation. \"[T]he identified deficiency in a city's training program must be closely related to the ultimate injury.\" Harris would have to prove the deficiency actually caused the officers' indifference to her medical needs: \"Would the injury have been avoided had the employee been trained under a program that was not deficient in the identified respect?\" (at 391).\n\nDisposition. The evidence in the record did not meet this standard, but because the district court had applied a lesser one, the Court left it to the Sixth Circuit on remand to decide whether Harris should have an opportunity to prove her case under the deliberate indifference rule (at 392).",
+  "dissent": "Justice O'Connor, joined by Justices Scalia and Kennedy, joined the Court's standard but would have entered judgment for the city rather than remand. She described two ways to show an obvious need for training: first, a failure to train on a clear constitutional duty implicated in recurrent situations the employee is certain to face, with deadly force as the example; second, proof that policymakers were aware of and acquiesced in a pattern of constitutional violations involving police discretion (at 396 to 397). In her view, training officers to diagnose emotional illness was not an obvious need because the law on police medical care duties was unsettled and the situation was not a usual and recurring one, and Harris had produced no evidence of prior incidents or complaints that put the city on notice (at 397 to 399). The opinion is worth teaching because its two routes to notice are how courts have organized failure to train claims since.",
+  "notDecided": "Whether the city of Canton was liable. The Court said the existing record did not satisfy the deliberate indifference standard and remanded. It did not hold the city liable, and it did not hold that the officers violated Harris's rights; it assumed a violation because the city had conceded the point for purposes of the appeal (at 388 to 389 n.8).\n\nThe constitutional standard for a detainee's right to medical care. The Court noted it had never decided what degree of culpability establishes that right and did not do so here (at 388 to 389 n.8).\n\nWhether the city's first aid training was so obviously insufficient as to be deliberate indifference. The majority flagged this as a question for remand (at 390 n.11); Justice O'Connor would have answered no.\n\nHarris's separate \"custom\" theory, which had not been passed on below (at 386 to 387 n.5).\n\nThe Court said nothing about how training must be documented or recorded. The documentation lesson Dr. Sowards draws from the training liability line is a practical inference about proof, not a holding of this case.",
+  "inPractice": "For supervisors and training managers, Canton sets the terms of any failure to train claim against the agency. Three points matter.\n\nFirst, the question is the program, not the officer. A single officer's poor performance does not establish that the agency's training was deficient, and the Court said adequately trained officers sometimes make mistakes. Conversely, an agency cannot defend a program that does not address a task its officers are certain to face. The Court's own example was deadly force: a city that arms officers and knows they will arrest fleeing felons must train them on the constitutional limits on deadly force, or the omission may be deliberate indifference.\n\nSecond, the standard is deliberate indifference, which requires that the need for more or different training be obvious to policymakers. Obviousness can come from the nature of the task itself or from a pattern of violations the agency knew about. Complaints, use of force reviews, and litigation history are how an agency learns of a pattern, and they are also how a plaintiff proves that policymakers knew.\n\nThird, causation is strict. The specific deficiency must be closely related to the specific injury. The practical corollary, which the Court did not state but which follows from the proof problem, is that an agency defending its training needs to be able to show what the training covered and who received it. The Court decided only the standard and remanded; it did not find Canton liable.",
+  "trainIt": "Teach Canton as the reason training must be matched to the tasks officers actually perform. Start with the Court's words: the focus is on the adequacy of the training program in relation to the tasks the particular officers must perform. Then do a task inventory for the assignment. Arrest and control, deadly force, restraint and positional asphyxia, medical screening at booking, and handling people in crisis are recurring tasks, and the Court's deadly force example shows how an omission on a recurring task can be treated as a deliberate choice.\n\nTeach the two routes to notice from the majority's footnote and Justice O'Connor's opinion: obvious need from the nature of the duty, and obvious need from a known pattern of violations. Build a feedback loop so that incident reviews and complaints are read for training implications and the response is recorded.\n\nTeach the causation element. A plaintiff must connect the specific deficiency to the specific injury. That is also the agency's defense: lesson plans, attendance rosters, and testing records are how an agency shows the identified deficiency did not exist. The Court did not discuss documentation; present this as an inference about proof.\n\nTeach what Canton does not say. It does not make the agency liable every time an officer errs, it does not impose a negligence standard, and it did not hold Canton liable. Pair it with Monell for the policy and custom rule.",
+  "caution": "The opinion was read in full from the U.S. Reports. The Court decided only the standard and remanded; it did not hold the city liable and assumed without deciding that Harris's constitutional rights were violated. Any statement about documentation of training is an inference about proof, not a holding of Canton.",
+  "applications": [
+    {
+      "title": "Train to the tasks officers are certain to face",
+      "body": "The Court's example was deadly force: a city that arms its officers and knows they will arrest fleeing felons must train them on the constitutional limits. Omitting training on a recurring task with clear constitutional limits is the kind of failure the Court called obvious."
+    },
+    {
+      "title": "One officer's shortcomings do not condemn the program",
+      "body": "The Court said an unsatisfactorily trained officer may be the product of factors other than the program, and that adequately trained officers occasionally make mistakes. Agencies should still ask, after every serious incident, whether the program addressed the task."
+    },
+    {
+      "title": "Notice comes from patterns",
+      "body": "A pattern of violations that policymakers know about can make the need for training obvious. Read complaints, force reviews, and litigation for training implications, and record the response."
+    },
+    {
+      "title": "The deficiency must cause the injury",
+      "body": "The identified training gap must be closely related to the ultimate injury. Agencies defending a claim will be asked what the training covered and who received it, so records that answer those questions are the practical consequence of the rule."
+    },
+    {
+      "title": "Teach the posture accurately",
+      "body": "Canton adopted the deliberate indifference standard and remanded. It did not find the city liable, did not decide the detainee's medical care standard, and said nothing about how training is documented."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Under City of Canton v. Harris, when may a municipality be liable under section 1983 for failing to train its officers?",
+      "options": [
+        "Whenever an officer violates someone's rights and better training would have prevented it",
+        "Only where the failure to train amounts to deliberate indifference to the rights of persons with whom the police come into contact, and the deficiency is closely related to the injury",
+        "Only where the training policy is itself unconstitutional",
+        "Whenever the training was negligently administered"
+      ],
+      "answer": 1,
+      "teach": "The Court rejected both the city's argument that only unconstitutional policies count and the Sixth Circuit's gross negligence standard. Deliberate indifference plus close causation is the rule."
+    },
+    {
+      "q": "What example did the Court give of a training need so obvious that a failure to train could be deliberate indifference?",
+      "options": [
+        "Training on diagnosing emotional illness",
+        "Training on the constitutional limits on the use of deadly force, because policymakers know officers will arrest fleeing felons and have armed them",
+        "Training on report writing",
+        "Training on vehicle pursuits"
+      ],
+      "answer": 1,
+      "teach": "The example appears at 489 U.S. 390 n.10, citing Tennessee v. Garner. The Court also noted that a known pattern of violations could make a training need obvious."
+    },
+    {
+      "q": "What did the Court decide about the city of Canton's liability?",
+      "options": [
+        "It held the city liable and reinstated the verdict",
+        "It held the city could never be liable because its written policy was constitutional",
+        "It held the record did not meet the deliberate indifference standard and remanded for the Court of Appeals to decide whether Harris could try to prove her case under that standard",
+        "It ordered judgment for the city"
+      ],
+      "answer": 2,
+      "teach": "The Court vacated and remanded. Justice O'Connor would have entered judgment for the city, but the majority left that question to the lower court."
+    }
+  ]
+}

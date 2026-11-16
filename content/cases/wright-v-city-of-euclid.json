@@ -1,0 +1,91 @@
+{
+  "id": "wright-v-city-of-euclid",
+  "name": "Wright v. City of Euclid",
+  "court": "Sixth Circuit (from the Northern District of Ohio at Cleveland, Judge Donald C. Nugent)",
+  "courtKey": "ca6",
+  "docket": "19-3452",
+  "citation": "962 F.3d 852 (6th Cir. 2020)",
+  "decided": "June 18, 2020",
+  "status": "published",
+  "topic": "Taser and pepper spray on a seated driver who could not get out of his car because of a recent surgery; qualified immunity; municipal liability for a custom of tolerating force, inadequate training and supervision, and ratification",
+  "settings": [
+    "field",
+    "supervisors"
+  ],
+  "categories": [
+    "instructor-and-training-liability",
+    "intermediate-force"
+  ],
+  "published": "2026-11-16",
+  "summary": "Two plainclothes Euclid, Ohio officers approached a parked SUV with guns drawn after watching the driver make a one-minute stop at a house under surveillance. After he stopped and raised his hands, one officer twisted his arm and tried to pull him out; he had trouble moving because of a colostomy bag and surgical staples the officers could not see. When he put a hand on the center console, one officer tased him in the abdomen and the other pepper-sprayed him at point-blank range. The district court granted summary judgment to the officers and the city. The Sixth Circuit reversed on the excessive force, false arrest, extended detention and malicious prosecution claims and on every municipal liability theory, holding that a jury could find the city's use of force training, which included a Chris Rock comedy video and a cartoon of an officer beating a prone civilian, created a culture that permitted excessive force. It is taught as the modern Sixth Circuit statement of what a failure to train case looks like at summary judgment.",
+  "coverage": [
+    "The slip opinion was read in full from govinfo at https://www.govinfo.gov/content/pkg/USCOURTS-ca6-19-03452/pdf/USCOURTS-ca6-19-03452-0.pdf (36 pages, Sixth Circuit File Name 20a0185p.06, recommended for publication, decided and filed June 18, 2020). Pin cites in this brief are to slip opinion pages.",
+    "The Federal Reporter citation 962 F.3d 852 was supplied with the assignment and matches the citation commonly given for this decision, but it could not be confirmed from the slip opinion, which carries no reporter pagination, and the citation lookup services this machine can reach were not available. The docket number, court, date and parties were confirmed from the slip opinion itself.",
+    "The district court's opinion, Wright v. City of Euclid, No. 1:17 CV 2503, 2019 WL 2009453 (N.D. Ohio May 7, 2019), was not read; it is described as the Sixth Circuit described it.",
+    "The facts are the summary judgment record viewed in the plaintiff's favor, as the court was required to view it. The court noted body camera footage corroborated parts of the account. Nothing was found to be true and no one was found liable.",
+    "What happened on remand was not checked. The opinion was decided in June 2020; the court remarked on the national attention to police use of force at the time."
+  ],
+  "facts": "The facts are the evidence as the Sixth Circuit described it, construed in Lamar Wright's favor because the case was decided on summary judgment.\n\nOn November 4, 2016, Wright pulled a rented SUV into a residential driveway in Euclid, Ohio for a one-minute visit with a friend on the porch. Plainclothes Officers Kyle Flagg and Vashon Williams, watching the house because of drug complaints, suspected a drug transaction, followed him (slip op. 3).\n\nWhen Wright stopped in a second driveway to answer a text, the officers approached with guns drawn. Wright thought he was being robbed and reversed, then saw a badge, put the car in park and raised his hands. Both officers holstered (slip op. 4).\n\nFlagg opened the door; Wright shut off the engine on command and raised his hands again. Flagg twisted his left arm behind his back and tried to pull him out. Recent surgery had left Wright with stomach staples and a colostomy bag the officers apparently could not see, limiting his movement. He put his right hand on the center console to shift his torso. Williams pepper-sprayed Wright at point-blank range while Flagg simultaneously tased him in the abdomen. Wright got out with his hands up and was handcuffed face down, bleeding from the staples. The officers conceded they had no probable cause until they believed he was resisting, and arrested him for obstruction and resisting (slip op. 4 to 5).\n\nThe officers designated the arrest as drug related although no drugs were found. After posting bond he was held, body scanned at the county jail with no result, and released at 3:55 a.m. All charges were later dropped. Neither officer was investigated or disciplined, and supervisors approved the force (slip op. 5 to 6).\n\nThe city's defensive tactics training linked to a Chris Rock comedy video showing officers beating Black suspects, with jokes about Rodney King. Sergeant Murowsky, who ran the training and reviewed all force incidents, thought it humorous. The training slides opened with a cartoon of an officer clubbing a prone, unarmed civilian, captioned protecting and serving the poop out of you. Murowsky had never found a Euclid use of force inappropriate; Chief Meyer had never found merit in any civilian complaint about force (slip op. 6 to 7).\n\nThe district court granted summary judgment to the officers and the city.",
+  "holding": "Affirmed in part, reversed in part, and remanded.\n\nExcessive force. The court held that a reasonable jury could find excessive force in both officers' drawing of their firearms on approach, in Flagg's taser deployment, and in Williams's pepper spray. On the firearms, a one-minute visit with no observed crime left a jury question whether a justifiable fear for safety supported drawing on approach (slip op. 10 to 12). On the taser, all three Graham factors could favor Wright: no probable cause for any crime; no immediate threat a reasonable officer would perceive; and a console push that could be no resistance or at most passive resistance, which does not justify a taser (slip op. 12 to 14). Because reasonableness turns on what officers knew before the force, the unseen surgery carried no weight if unknown, but other facts could still show no active resistance (slip op. 14). On the pepper spray, the expert testified that spraying within inches of the face violated standards requiring three feet and Euclid's own continuum (slip op. 18). It was clearly established that tasing or pepper-spraying a suspect who is not actively resisting is excessive force (slip op. 17, 19).\n\nFailure to intervene claims: affirmed, the force being nearly simultaneous (slip op. 19 to 20).\n\nFalse arrest, extended detention and malicious prosecution. Reversed. A jury could find no affirmative act supporting obstruction, and resisting arrest under Ohio law requires a lawful arrest. The four-hour detention after bond, caused by an unsupported drug designation, could be an unreasonable seizure. The drug designation, made when the officers knew he had no drugs, could be a deliberate or reckless falsehood supporting malicious prosecution claims (slip op. 21 to 31).\n\nMunicipal liability. Reversed on all three theories. Custom: the training video, cartoon and meme were enough for a jury to find a custom with the force of law that was the moving force behind the violations (slip op. 32 to 33). Failure to train or supervise: officers received some training, but a jury could find it deficient. The department's procedures required a training committee that apparently never existed. Training consisted of reading the use of force policy at roll call until it is believed that all the officers have heard it, a one or two page quiz that may or may not be given, and scenario exercises in which, according to the sergeant who ran them, the scenarios never changed and performance was never evaluated. A jury could find that regimen gave rise to a culture that encouraged, permitted or acquiesced in excessive force; a single instance can support a failure to train claim when the natural consequence of the training regimen is constitutional violations (slip op. 33 to 35). Ratification: the sergeant had never heard of an inappropriate Euclid use of force, and the chief and sergeant seemingly never meaningfully investigated force complaints, which a jury could find was ratification by a policymaker (slip op. 35).",
+  "notDecided": "Whether the officers used excessive force, arrested Wright without probable cause, or acted with reckless falsehood. Every holding is that a reasonable jury could so find on Wright's evidence; the officers' account was different.\n\nWhether the city is liable. The court held only that jury questions precluded summary judgment on the Monell theories.\n\nWhether the officers knew of Wright's surgery before using force. Flagg said he did not. The court said that if they did not know, those facts carry no weight in the reasonableness analysis, and rested its ruling on other disputed facts.\n\nThe failure to intervene claims, which were resolved for the officers, and the emotional distress claim, which was forfeited.\n\nWhether the three later Euclid force incidents show a pattern. The court held they could not establish notice or causation for a 2016 injury because they came afterward.\n\nThe city's liability on the state law claims, which Wright did not argue.",
+  "inPractice": "Wright turns on a man who was trying to comply and could not move the way the officer wanted. The court said that an officer's knowledge in the moment is what counts, so the hidden colostomy bag did not by itself make the force unreasonable. What made the case a jury question was everything else: no probable cause before the force, hands up, engine off on command, both guns holstered, and a hand movement that could be read as repositioning rather than reaching.\n\nFor officers: the Sixth Circuit draws the taser and pepper spray line at active resistance, meaning verbal hostility or a deliberate act of defiance. Pulling away or failing to move on command is not enough. A person who says he cannot comply, or who is visibly struggling, is a cue to slow down and ask why.\n\nFor supervisors who review force: the sergeant who reviewed every Euclid force incident had never found one inappropriate, and the chief had never sustained a civilian complaint about force. The court treated that as evidence a jury could call ratification.\n\nFor trainers: the court's description of Euclid's training is a checklist of what not to do. Reading the policy at roll call until it is believed everyone has heard it. A quiz that may or may not be given. Scenarios that never changed, with performance never evaluated. A training committee required by policy that never existed. Materials that joked about beatings.",
+  "trainIt": "Teach the active resistance line as the Sixth Circuit states it: a taser or pepper spray is for active resistance, which can take the form of verbal hostility or a deliberate act of defiance, not for passive resistance or no resistance. Build scenarios around a seated driver who is slow to exit, including one with a medical reason, and score whether the trainee asks before escalating.\n\nTeach distance and coordination for chemical agents and electronic weapons. The expert testimony the court credited was that pepper spray should not be used closer than three feet and that the department's own continuum limited spray to a subject wrestling with or pushing an officer.\n\nMake the training real and recorded. Stand up the training committee your policy requires. Replace roll call policy readings with instruction that has a lesson plan, a test that is given and scored, and scenario training that changes and is evaluated. Keep records of each. The court used the absence of all of these against the city.\n\nAudit instructional materials. Remove anything that jokes about force or depicts beatings as the job. The court said such materials could support a finding of a custom with the force of law.\n\nTrain force reviewers to find and document problems. A review system that approved every use of force was treated as possible ratification.\n\nTeach the posture: this is a reversal of summary judgment. A jury could find these things; none was found. The case was remanded for trial.",
+  "caution": "The slip opinion was read in full from govinfo and pin cites are to its pages. The reporter citation 962 F.3d 852 was supplied with the assignment and was not confirmed from a source this machine could reach. All facts are the summary judgment record in the plaintiff's favor; the officers' account differed and no one has been found liable. The outcome on remand was not checked.",
+  "applications": [
+    {
+      "title": "Slow to comply is not active resistance",
+      "body": "The court held a jury could find that a seated man pushing on the console to reposition his torso, with his hands previously raised and the engine off on command, was not actively resisting. Taser and pepper spray are reserved for active resistance in the Sixth Circuit."
+    },
+    {
+      "title": "Reading the policy at roll call is not training",
+      "body": "Euclid's training was the policy read aloud until it was believed everyone had heard it, a quiz that may or may not be given, and scenarios that never changed and were never evaluated. The court held a jury could find that regimen created a culture permitting excessive force."
+    },
+    {
+      "title": "Instructional materials are evidence of custom",
+      "body": "A comedy video about not getting beaten by police and a cartoon of an officer clubbing a prone civilian were in the use of force training. The court said those materials alone could support a finding of a custom with the force of law."
+    },
+    {
+      "title": "A review process that never finds fault",
+      "body": "The sergeant who reviewed every force incident had never found one inappropriate and the chief had never sustained a civilian complaint. The court said a jury could treat that as ratification by a policymaker."
+    },
+    {
+      "title": "Later incidents do not prove earlier notice",
+      "body": "Three later Euclid force cases could not establish a track record or causation for a 2016 injury because they came afterward. Pattern evidence has to predate the incident."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the Sixth Circuit hold about the taser and pepper spray used on Lamar Wright?",
+      "options": [
+        "That both uses of force were reasonable as a matter of law",
+        "That a reasonable jury could find both were excessive because Wright may not have been actively resisting, and that the right not to be tased or sprayed when not actively resisting was clearly established in 2016",
+        "That the officers were liable for excessive force",
+        "That the colostomy bag made the force unreasonable regardless of what the officers knew"
+      ],
+      "answer": 1,
+      "teach": "This was summary judgment. The court said reasonableness depends on what the officers knew before the force, so the hidden medical condition did not decide it; the other disputed facts did."
+    },
+    {
+      "q": "What did the court say about Euclid's use of force training on the failure to train theory?",
+      "options": [
+        "That it met national standards",
+        "That it consisted of reading the policy at roll call, a quiz that may or may not be given, unchanging and unevaluated scenarios, and offensive materials, so a jury could find it created a culture that permitted excessive force",
+        "That the city could not be liable because the officers had some training",
+        "That training is irrelevant to municipal liability"
+      ],
+      "answer": 1,
+      "teach": "The court acknowledged the officers had some training and held that adequacy in relation to the tasks officers perform is the question under Canton."
+    },
+    {
+      "q": "Why did the court refuse to consider three other Euclid use of force incidents as evidence of a pattern?",
+      "options": [
+        "Because they involved different officers",
+        "Because they were unpublished",
+        "Because they occurred after Wright's arrest and so could not show the city was on notice or that its failures caused his injury",
+        "Because the plaintiff did not raise them"
+      ],
+      "answer": 2,
+      "teach": "Notice and causation look backward from the incident. Later events cannot show what the city knew or tolerated at the time."
+    }
+  ]
+}

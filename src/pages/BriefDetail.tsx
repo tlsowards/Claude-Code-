@@ -63,15 +63,6 @@ export default function BriefDetail() {
           </div>
         )}
 
-        <div className="card">
-          <h3>Research coverage this week</h3>
-          <ul style={{ marginBottom: 0 }}>
-            {brief.coverage.map((c, i) => (
-              <li key={i}>{c}</li>
-            ))}
-          </ul>
-        </div>
-
         {!canAccess && (
           <>
             {firstSection && previewCase && (
@@ -88,13 +79,13 @@ export default function BriefDetail() {
         {canAccess && (
           <>
             <nav className="toc" aria-label="Sections">
-              {brief.sections.map((s) => (
+              {brief.sections.filter((s) => s.cases.length > 0).map((s) => (
                 <a key={s.heading} href={`#${slug(s.heading)}`}>{s.heading}</a>
               ))}
               <a href="#application">Training application</a>
             </nav>
 
-            {brief.sections.map((s) => (
+            {brief.sections.filter((s) => s.cases.length > 0).map((s) => (
               <section key={s.heading} id={slug(s.heading)}>
                 <div className="section-title"><h2>{s.heading}</h2></div>
                 {s.note && <p className="meta">{s.note}</p>}

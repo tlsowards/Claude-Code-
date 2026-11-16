@@ -1,0 +1,89 @@
+{
+  "id": "county-of-los-angeles-v-mendez",
+  "name": "County of Los Angeles v. Mendez",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "16-369",
+  "citation": "581 U.S. 420 (2017)",
+  "decided": "May 30, 2017",
+  "status": "published",
+  "topic": "Fourth Amendment excessive force, the Ninth Circuit's provocation rule rejected, Graham as the exclusive framework for the force itself, deadly force after a warrantless entry, proximate cause left for remand",
+  "settings": [
+    "field"
+  ],
+  "categories": [
+    "force-standards",
+    "deadly-force"
+  ],
+  "published": "2026-11-16",
+  "summary": "Two Los Angeles County deputies searching for a parolee opened the door of a backyard shack without a warrant and without announcing. The man inside, waking from a nap, stood up holding a BB rifle, and the deputies fired 15 rounds, severely wounding him and his pregnant companion. The trial court found the shooting itself reasonable under Graham v. Connor but held the deputies liable under the Ninth Circuit's provocation rule because the warrantless entry provoked the confrontation. A unanimous Supreme Court rejected the provocation rule: Graham is the exclusive framework for whether the force used in a seizure was reasonable, and a separate Fourth Amendment violation cannot turn a reasonable use of force into an unreasonable one. Other Fourth Amendment violations are analyzed separately, and damages for them depend on ordinary proximate cause, a question the Court sent back to the Ninth Circuit.",
+  "coverage": [
+    "The slip opinion was read in full from the Court's site at https://www.supremecourt.gov/opinions/16pdf/16-369_09m1.pdf (the file name given in the assignment, which resolved). The Court's 2016 term slip opinion page (https://www.supremecourt.gov/opinions/slipopinion/16) now redirects to the U.S. Reports page.",
+    "The citation 581 U.S. 420 was confirmed from the Court's bound volume PDF at https://www.supremecourt.gov/opinions/boundvolumes/581BV.pdf, which prints the opinion at pages 420 to 432 with the running head \"Cite as: 581 U. S. 420 (2017).\" The opinion text in the bound volume was compared with the slip opinion; apart from pagination, typographic ligatures, and the addition of the amicus listing, no differences were found. Pin cites in this brief are to the bound volume pages.",
+    "The docket number 16-369 and the decision date of May 30, 2017 were confirmed from both files. Justice Gorsuch took no part.",
+    "The Ninth Circuit's opinion (815 F.3d 1178) and the district court's findings were not read; they are described as the Supreme Court described them. What happened on remand was not researched for this brief."
+  ],
+  "facts": "In October 2010, Los Angeles County deputies searching for Ronnie O'Dell, a parolee at large believed to be armed and dangerous, learned from an informant that he had been seen at a Lancaster home owned by Paula Hughes. Deputies Christopher Conley and Jennifer Pederson were assigned to search the rear of the property. At the briefing it was announced that Angel Mendez lived in the backyard with a pregnant woman, Jennifer Garcia; Pederson heard this, and Conley testified he did not remember it (581 U.S. at 423).\n\nAround midday, while other officers arrested Hughes and searched the house without finding O'Dell, Conley and Pederson, guns drawn, searched the back. Besides three metal sheds, it held a one room plywood shack where Mendez and Garcia had lived for about ten months. A blue blanket covered its doorway, an electrical cord ran into it, and an air conditioner hung on the side. Mendez kept a BB rifle, which closely resembled a small caliber rifle, inside for pests (at 423-424).\n\nAfter checking the sheds, the deputies approached the shack without a search warrant and without knocking and announcing. Mendez and Garcia were napping. When Conley opened the door and pulled back the blanket, Mendez thought it was Hughes and rose, picking up the BB gun to stand and put it on the floor, so that when the deputies entered he was holding it, pointed somewhat toward Conley. Conley yelled \"Gun!\" and both deputies fired, 15 rounds in all. Both were shot multiple times and severely injured; Mendez's right leg was later amputated below the knee. O'Dell was not on the property (at 424).\n\nMendez and Garcia sued under 42 U.S.C. section 1983 for warrantless entry, failure to knock and announce, and excessive force. After a bench trial, the district court found for them on the first two claims but awarded nominal damages. On excessive force, it found the shooting reasonable under Graham v. Connor, then applied the Ninth Circuit's provocation rule, under which otherwise reasonable force becomes unreasonable if the officer intentionally or recklessly provoked a violent response through a separate constitutional violation, and awarded about $4 million (at 425-426). The Ninth Circuit granted qualified immunity on the knock and announce claim, held the warrantless entry violated clearly established law, affirmed liability under the provocation rule, and held alternatively that proximate cause supported liability because an unannounced entry foreseeably risks violence (at 426-427).",
+  "holding": "Vacated and remanded. A unanimous Court (Justice Gorsuch not participating) held that \"the Fourth Amendment provides no basis\" for the Ninth Circuit's provocation rule. \"A different Fourth Amendment violation cannot transform a later, reasonable use of force into an unreasonable seizure\" (581 U.S. at 423).\n\nGraham is the exclusive framework. The Court's cases set \"a settled and exclusive framework for analyzing whether the force used in making a seizure complies with the Fourth Amendment,\" an objective inquiry from the perspective of a reasonable officer on the scene with the information then available. \"That inquiry is dispositive: When an officer carries out a seizure that is reasonable, taking into account all relevant circumstances, there is no valid excessive force claim\" (at 427).\n\nWhat was wrong with the provocation rule. It operated only after force had been found reasonable under Graham, then asked whether some other Fourth Amendment violation led up to it. That \"mistakenly conflates distinct Fourth Amendment claims\"; each search or seizure must be analyzed separately. \"An excessive force claim is a claim that a law enforcement officer carried out an unreasonable seizure through a use of force that was not justified under the relevant circumstances. It is not a claim that an officer used reasonable force after committing a distinct Fourth Amendment violation such as an unreasonable entry.\" Here the shooting was found reasonable under Graham, yet the plaintiffs recovered because of the earlier warrantless entry. \"That is wrong.\" \"If there is no excessive force claim under Graham, there is no excessive force claim at all. To the extent that a plaintiff has other Fourth Amendment claims, they should be analyzed separately\" (at 427-428).\n\nThe Ninth Circuit's limits did not save the rule. Requiring that the prior violation \"created a situation which led to\" the force used a vague causal standard that was not the familiar proximate cause test. Requiring that the prior violation be intentional or reckless injected the officers' subjective intent into an inquiry that is almost always objective (at 429-430).\n\nThe right path is proximate cause on the separate claim. Plaintiffs can, subject to qualified immunity, generally recover damages proximately caused by any Fourth Amendment violation, so \"there is no need to dress up every Fourth Amendment claim as an excessive force claim.\" If the plaintiffs cannot recover on excessive force, that does not foreclose recovery for injuries proximately caused by the warrantless entry (at 430-431).\n\nThe proximate cause holding was vacated as well. It focused on the foreseeable risks of a startling, unannounced entry, the knock and announce claim on which the deputies had qualified immunity. It did not identify the foreseeable risks of the warrantless entry or explain how the injuries were proximately caused by it. On remand the court was to revisit whether proximate cause permits recovery for the shooting injuries based on the deputies' failure to get a warrant at the outset (at 431-432).",
+  "notDecided": "Whether pre shooting conduct counts under Graham itself. The plaintiffs argued that Graham's totality of the circumstances already permits a court to consider unreasonable police conduct before the shooting that foreseeably created the need to use force. The Court declined to address that argument because it had not granted review on it and the Ninth Circuit had not decided it. \"All we hold today is that once a use of force is deemed reasonable under Graham, it may not be found unreasonable by reference to some separate constitutional violation\" (581 U.S. at 428 to 429 n.).\n\nProximate cause. Whether the shooting injuries were proximately caused by the warrantless entry, so that the plaintiffs can recover for them on that claim, was sent back to the Ninth Circuit (at 432).\n\nWhether the shooting was reasonable. The Court accepted the lower courts' undisputed conclusion that the shooting was reasonable under Graham; it did not independently decide that question.\n\nThe warrantless entry. The Ninth Circuit's holding that the entry violated clearly established law was not before the Court and was not disturbed.",
+  "inPractice": "For officers, Mendez separates two questions that are often blurred in debriefs: was the entry or approach lawful, and was the force used at the moment of the shooting reasonable. Under Mendez the second question is answered by Graham alone, from the perspective of the officer at that moment with the information then available. The deputies here saw a man rising with what looked like a rifle pointed in their direction; both courts below found the shooting reasonable on that basis, and the Supreme Court did not disturb that finding.\n\nThat does not make the entry irrelevant. The warrantless entry into a home remains its own Fourth Amendment violation, and the deputies were held liable for it. The open question on remand was whether the shooting injuries were proximately caused by the failure to get a warrant, which could support full damages on that claim. A lawful entry avoids both the liability and the question.\n\nThe facts carry their own lessons. The briefing announced that a man lived in the backyard with a pregnant woman. One deputy did not remember hearing it. The shack had an electrical cord, an air conditioner, and a covered doorway. The deputies approached it as a place to be searched rather than a home to be entered, and did not knock or announce. The Court did not decide these facts' legal weight beyond the entry claim, but they are the record an agency should train against.",
+  "trainIt": "Teach Mendez as the rule that the force decision is judged on its own facts under Graham, and that entries, detentions, and searches are judged on their own. Officers should be able to separate the two when they write and when they debrief.\n\nTrain the approach to outbuildings and informal dwellings. A structure with signs of habitation, an electrical cord, an air conditioner, bedding, or a covered doorway, is a home for Fourth Amendment purposes; here the Ninth Circuit held that entering it without a warrant violated clearly established law, and the Supreme Court left that ruling undisturbed. Build scenarios where the briefing mentions residents on the property and test whether the information reaches the officers who go to the back.\n\nTrain knock and announce as a default even where no entry is planned yet. Although the deputies received qualified immunity on that claim, the Ninth Circuit's reasoning, as the Supreme Court described it, was that a startling, unannounced entry foreseeably risks violence. Announcing is both a legal duty and a tactical safety measure for the officer.\n\nTrain officers that a reasonable shooting does not cure an unlawful entry. Damages for the entry depend on proximate cause, and the Court sent that question back rather than ending it.\n\nTeach the posture. Mendez vacated a $4 million judgment that rested on the provocation rule. It did not hold that the deputies were free of liability for the shooting injuries; it left the proximate cause question to the Ninth Circuit.",
+  "caution": "The slip opinion was read in full and the bound volume text was compared to confirm the citation and pagination. The facts are the district court's findings after a bench trial, as the Court described them. The Ninth Circuit's opinion and the remand were not read.",
+  "applications": [
+    {
+      "title": "Two claims, two analyses",
+      "body": "The reasonableness of force is judged under Graham at the moment of the seizure. An unlawful entry is a separate Fourth Amendment claim with its own damages. One does not change the answer to the other."
+    },
+    {
+      "title": "Graham is exclusive for the force itself",
+      "body": "If the force was reasonable under Graham, there is no excessive force claim at all. Courts may not look back to an earlier violation to manufacture one."
+    },
+    {
+      "title": "The entry still costs",
+      "body": "The deputies were liable for the warrantless entry, and whether the shooting injuries were proximately caused by that entry was sent back for decision. A reasonable shooting does not erase an unreasonable entry."
+    },
+    {
+      "title": "Habitation signs mean a home",
+      "body": "An electrical cord, an air conditioner, a covered doorway, and a briefing that said people lived in the backyard. Train officers to treat such a structure as a dwelling and to knock and announce."
+    },
+    {
+      "title": "Teach the posture",
+      "body": "A unanimous Court rejected the provocation rule and vacated the judgment. It did not decide whether pre shooting conduct can be weighed under Graham's totality, and it did not decide proximate cause."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the Supreme Court hold about the Ninth Circuit's provocation rule in County of Los Angeles v. Mendez?",
+      "options": [
+        "It adopted the rule nationwide",
+        "It held the Fourth Amendment provides no basis for the rule; a separate Fourth Amendment violation cannot make a reasonable use of force unreasonable",
+        "It limited the rule to warrantless entries",
+        "It held the rule applies only when officers act recklessly"
+      ],
+      "answer": 1,
+      "teach": "Graham is the exclusive framework for whether the force used in a seizure was reasonable. Other Fourth Amendment claims are analyzed separately."
+    },
+    {
+      "q": "After Mendez, how can a plaintiff recover for injuries connected to an unlawful entry when the later shooting was reasonable?",
+      "options": [
+        "They cannot recover anything",
+        "Only through an excessive force claim",
+        "Through the entry claim itself, for injuries proximately caused by the entry, subject to qualified immunity",
+        "Only against the municipality"
+      ],
+      "answer": 2,
+      "teach": "The Court said there is no need to dress up every Fourth Amendment claim as an excessive force claim. Damages for the warrantless entry depend on ordinary proximate cause, which the Court sent back to the Ninth Circuit."
+    },
+    {
+      "q": "Which question did the Court expressly decline to decide in Mendez?",
+      "options": [
+        "Whether Graham applies to deadly force",
+        "Whether a BB gun can be mistaken for a rifle",
+        "Whether unreasonable police conduct before a shooting can be considered as part of Graham's totality of the circumstances",
+        "Whether the Fourth Amendment applies to parole searches"
+      ],
+      "answer": 2,
+      "teach": "The plaintiffs argued the judgment could be affirmed under Graham itself by considering the deputies' pre shooting conduct. The Court said it had not granted review on that question and left it for the Ninth Circuit."
+    }
+  ]
+}

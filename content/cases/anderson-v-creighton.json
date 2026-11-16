@@ -1,0 +1,91 @@
+{
+  "id": "anderson-v-creighton",
+  "name": "Anderson v. Creighton",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "85-1520",
+  "citation": "483 U.S. 635 (1987)",
+  "decided": "June 25, 1987",
+  "status": "published",
+  "topic": "Qualified immunity, clearly established law must be defined in a particularized sense, warrantless search of a home for a fugitive, Bivens damages action against a federal agent",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "qualified-immunity"
+  ],
+  "published": "2026-11-16",
+  "summary": "An FBI agent and other officers searched a family's home without a warrant looking for a bank robbery suspect who was not there. The Supreme Court held that qualified immunity turns on whether a reasonable officer could have believed the search lawful in light of clearly established law and the information the officers had, and that a right is clearly established only when its contours are clear enough that a reasonable official would understand that what he is doing violates it. It is the case that requires courts to define the right at the level of the officer's actual situation.",
+  "coverage": [
+    "The opinion was read in full, including the Stevens dissent, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep483/usrep483635/usrep483635.pdf (34 pages, 483 U.S. 635 to 668), converted with pdftotext. Pin cites are to U.S. Reports pages as printed in that PDF.",
+    "The citation 483 U.S. 635 is confirmed from the running heads. The docket number, argument date, and decision date are taken from the caption.",
+    "The Eighth Circuit decision (Creighton v. St. Paul, 766 F.2d 1269 (1985)) was not read. Its account of the search is described only as the Stevens dissent quoted it.",
+    "The phrase \"reasonably well-trained officer\" was searched for in this opinion. It does not appear in the majority opinion. It comes from Malley v. Briggs, 475 U.S. 335, 345 (1986), quoting United States v. Leon, 468 U.S. 897, 922 n.23 (1984). Anderson uses \"reasonable officer\" and \"reasonable official\" and cites Malley for the proposition that officers who reasonably but mistakenly conclude probable cause exists should not be personally liable. The Stevens dissent, in a footnote, quotes a law review article that refers to \"the average well-trained police officer\" (at 667 n.23).",
+    "Proceedings after remand were not researched and are not described."
+  ],
+  "facts": "The majority's statement of facts is short. On November 11, 1983, FBI Agent Russell Anderson and other state and federal law enforcement officers conducted a warrantless search of the home of the Creighton family in Minnesota. Anderson believed that Vadaain Dixon, a man suspected of a bank robbery committed earlier that day, might be found there. He was not (483 U.S. at 637).\n\nThe Creightons sued Anderson in Minnesota state court, including a claim for money damages under the Fourth Amendment pursuant to Bivens. Anderson removed the case to federal court and moved to dismiss or for summary judgment on qualified immunity grounds. Before any discovery, the district court granted summary judgment, holding that the undisputed facts showed Anderson had probable cause to search and that exigent circumstances justified the absence of a warrant (at 637).\n\nThe Eighth Circuit reversed. It held that the lawfulness of the search could not be decided on summary judgment because factual disputes prevented a ruling as a matter of law on probable cause and exigent circumstances. It also held that Anderson was not entitled to summary judgment on qualified immunity, because the right he allegedly violated, the right to be free from warrantless searches of the home absent probable cause and exigent circumstances, was clearly established (at 637 to 638).\n\nThe Creightons' version of the search appears in the dissent, which quoted the Eighth Circuit's recitation of the facts in the light most favorable to the family. According to that account, officers arrived at night, several with shotguns, entered when Mr. Creighton opened the door, told him they did not need a warrant, pointed a shotgun at Mrs. Creighton, yelled at the three children, struck Mr. Creighton in the face in the garage, and arrested him for obstruction; he was jailed overnight and released without charge. No fugitive and no evidence were found (at 664 to 666 n.21, Stevens, J., dissenting, quoting Creighton v. St. Paul). These were allegations, not findings, and the majority did not rely on them.\n\nThe question the Court agreed to decide was whether Anderson was entitled to summary judgment on qualified immunity if he could establish as a matter of law that a reasonable officer could have believed the search to be lawful (at 638).",
+  "holding": "Vacated and remanded. Anderson was entitled to summary judgment on qualified immunity if he could establish as a matter of law that a reasonable officer could have believed the search comported with the Fourth Amendment even though it actually did not (483 U.S. at 638 to 641).\n\nThe framework. Liability \"generally turns on the 'objective legal reasonableness' of the action,\" which is \"assessed in light of the legal rules that were 'clearly established' at the time it was taken\" (at 638 to 639, citing Harlow v. Fitzgerald).\n\nThe level of generality. The test depends on how the legal rule is defined. The right to due process is clearly established in the abstract, so defining rights at that level would convert qualified immunity \"into a rule of virtually unqualified liability simply by alleging violation of extremely abstract rights\" (at 639). Therefore the right \"must have been 'clearly established' in a more particularized, and hence more relevant, sense: The contours of the right must be sufficiently clear that a reasonable official would understand that what he is doing violates that right. This is not to say that an official action is protected by qualified immunity unless the very action in question has previously been held unlawful,\" the Court added, \"but it is to say that in the light of pre-existing law the unlawfulness must be apparent\" (at 640).\n\nApplied. The Eighth Circuit erred by resting on the general rule that warrantless home searches require probable cause and exigent circumstances, and by refusing to consider whether it was clearly established that the circumstances Anderson faced did not amount to probable cause and exigency. \"[I]t is inevitable that law enforcement officials will in some cases reasonably but mistakenly conclude that probable cause is present,\" and in such cases they should not be personally liable; the same is true of exigent circumstances (at 640 to 641, citing Malley v. Briggs).\n\nThe objective question. Deciding whether a search was reasonably thought to be supported by probable cause or exigency will often require examining the information the officers had, but that does not reintroduce subjective intent. \"The relevant question in this case, for example, is the objective (albeit fact-specific) question whether a reasonable officer could have believed Anderson's warrantless search to be lawful, in light of clearly established law and the information the searching officers possessed. Anderson's subjective beliefs about the search are irrelevant\" (at 641).\n\nNo Fourth Amendment exception. The Court rejected three arguments for an exception to qualified immunity in Fourth Amendment cases, including one for warrantless fugitive searches of innocent third parties' homes; the doctrine applies \"across the board\" (at 642 to 646).\n\nOn remand, the lower court should first decide whether the actions the Creightons alleged were ones a reasonable officer could have believed lawful. If so, Anderson is entitled to dismissal before discovery; if not, and his version differs, discovery tailored to the immunity question may be needed (at 646 to 647 n.6).",
+  "dissent": "Justice Stevens, joined by Justices Brennan and Marshall, dissented. He argued that the Court announced a new rule protecting agents who make forcible nighttime entries into innocent citizens' homes without probable cause, a warrant, or a valid emergency, by applying immunity precedents developed for high officials to police officers in the field (at 647). He objected to a \"double standard of reasonableness\" under which an officer who acted unreasonably under the Fourth Amendment could still be immune if a reasonable officer could have believed the conduct reasonable (at 659 to 660). He also argued the Eighth Circuit was correct that summary judgment before discovery was improper because the facts were disputed (at 655 to 658). Two passages are worth noting for trainers: he wrote that the government should \"furnish the kind of training for its law enforcement agents that would entirely eliminate the necessity for the Court to distinguish between the conduct that a competent officer considers reasonable and the conduct that the Constitution deems reasonable\" (at 666), and he quoted the Eighth Circuit's detailed account of the Creightons' allegations (at 664 to 666 n.21). Those are the dissent's views, not the Court's.",
+  "notDecided": "Whether the search of the Creightons' home was lawful. The Court assumed for purposes of the question presented that it may not have been and decided only the immunity framework.\n\nWhether Anderson was entitled to qualified immunity. The Court held that he must be permitted to argue the point on remand and set out the procedure; it did not decide it.\n\nWhat facts Anderson actually had. The majority did not recite the information Anderson possessed about Dixon's whereabouts or the claimed exigency. Those matters were for the lower court on remand, with discovery if needed.\n\nThe Court also did not use the phrase \"reasonably well-trained officer.\" That phrase is from Malley v. Briggs, which Anderson cites. Anderson's formulation is \"a reasonable officer\" or \"a reasonable official,\" and its contribution is the requirement that the right be defined in a particularized sense.",
+  "inPractice": "Anderson explains how a court will frame the question when an officer's search or seizure is challenged in a damages suit. The question is not whether the Fourth Amendment in general was clearly established. It is whether, given the specific facts the officer knew, a reasonable officer could have believed the action lawful under the law as it stood.\n\nThat cuts in two directions. It protects officers who make reasonable mistakes about probable cause or exigency; the Court said such mistakes are inevitable and that officers who make them reasonably should not be personally liable. It does not protect officers whose conduct was unlawful in a way that would have been apparent from existing law, even if no prior case involved identical facts.\n\nBecause the test looks at \"the information the searching officers possessed,\" the officer's own account of what he knew and when is the center of the case. Officers who document the specific facts supporting probable cause and the specific facts creating exigency before a warrantless entry are building the record that Anderson makes decisive. Intent is irrelevant; the facts known are everything.\n\nAnderson pairs with Malley v. Briggs, which the Court cited. Malley supplies the \"reasonably well-trained officer\" language and the rule that immunity protects all but the plainly incompetent or those who knowingly violate the law. Anderson supplies the specificity requirement. The phrase Dr. Sowards uses comes from Malley.",
+  "trainIt": "Teach Anderson as the second half of the qualified immunity lesson, after Malley. Give trainees the exact formulation: the contours of the right must be sufficiently clear that a reasonable official would understand that what he is doing violates that right, and the unlawfulness must be apparent in light of preexisting law. Show that the Eighth Circuit lost because it stated the right too generally. Trainees should practice stating the right at the level of the situation: not that warrantless home entries are illegal, but a warrantless entry into a third party's home to look for a fugitive, on these facts, with this basis to believe he was inside and this reason not to get a warrant.\n\nTrain the record. Because the inquiry turns on the information the officers possessed, scenarios should end with the trainee articulating, and then writing, the facts that supported probable cause and exigency at the moment of entry. Facts learned inside the house do not count.\n\nTeach what Anderson does not mean. It does not require a prior case with identical facts, and it does not protect conduct whose unlawfulness was apparent. The Stevens dissent argued that training can close the gap between what a competent officer thinks is reasonable and what the Constitution requires; that gap is a training objective.\n\nCorrect the attribution. The \"reasonably well-trained officer\" phrase is from Malley v. Briggs, quoting United States v. Leon. Anderson says \"reasonable officer.\" Cite the phrase to Malley.",
+  "caution": "The opinion was read in full from the U.S. Reports. The majority's facts are sparse; the detailed account of the search is the Creightons' allegations as quoted by the dissent from the Eighth Circuit opinion, not findings. The Court did not decide whether the search was lawful or whether Anderson was immune. Subsequent history was not researched. The \"reasonably well-trained officer\" phrase is not in this opinion; it is from Malley v. Briggs.",
+  "applications": [
+    {
+      "title": "Define the right at the level of the situation",
+      "body": "The Eighth Circuit stated the right as freedom from warrantless home searches without probable cause and exigency. The Court said that was too general. The question is whether a reasonable officer, knowing what these officers knew, could have believed this search lawful."
+    },
+    {
+      "title": "Reasonable mistakes about probable cause are protected",
+      "body": "The Court said such mistakes are inevitable and that officers who make them reasonably should not be personally liable. The same applies to exigent circumstances. The protection depends on the facts the officer can articulate."
+    },
+    {
+      "title": "No identical prior case is required",
+      "body": "Qualified immunity does not require that the very action have been held unlawful before. If existing law made the unlawfulness apparent, there is no immunity."
+    },
+    {
+      "title": "The information possessed is the whole case",
+      "body": "The test is objective and fact specific: clearly established law plus the information the officers possessed. Document the facts supporting probable cause and exigency as they existed at the moment of entry."
+    },
+    {
+      "title": "Cite the phrase correctly",
+      "body": "\"Reasonably well-trained officer\" is from Malley v. Briggs, quoting Leon. Anderson uses \"reasonable officer\" and adds the particularity requirement."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Under Anderson v. Creighton, when is a right \"clearly established\" for qualified immunity purposes?",
+      "options": [
+        "Whenever the constitutional provision at issue has been interpreted by the Supreme Court",
+        "Only when a prior case has held the very same action unlawful",
+        "When the contours of the right are sufficiently clear that a reasonable official would understand that what he is doing violates that right",
+        "Whenever the plaintiff alleges a violation of the Fourth Amendment"
+      ],
+      "answer": 2,
+      "teach": "The Court required particularity, but it also said the very action need not have been held unlawful before; the unlawfulness must be apparent in light of preexisting law."
+    },
+    {
+      "q": "What is the relevant question in deciding whether an officer who conducted a warrantless search has qualified immunity?",
+      "options": [
+        "Whether the officer sincerely believed the search was lawful",
+        "Whether a reasonable officer could have believed the search to be lawful, in light of clearly established law and the information the searching officers possessed",
+        "Whether the search in fact violated the Fourth Amendment",
+        "Whether the officer was adequately trained"
+      ],
+      "answer": 1,
+      "teach": "The test is objective and fact specific. The Court said the officer's subjective beliefs are irrelevant."
+    },
+    {
+      "q": "Where does the phrase \"reasonably well-trained officer\" come from?",
+      "options": [
+        "Anderson v. Creighton",
+        "Graham v. Connor",
+        "Malley v. Briggs, quoting United States v. Leon",
+        "Tennessee v. Garner"
+      ],
+      "answer": 2,
+      "teach": "Anderson does not use the phrase. It speaks of a reasonable officer or reasonable official and cites Malley v. Briggs, where the Court asked whether a reasonably well-trained officer would have known his affidavit failed to establish probable cause."
+    }
+  ]
+}

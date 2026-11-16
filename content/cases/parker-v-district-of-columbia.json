@@ -1,0 +1,92 @@
+{
+  "id": "parker-v-district-of-columbia",
+  "name": "Parker v. District of Columbia",
+  "court": "District of Columbia Circuit (from the United States District Court for the District of Columbia)",
+  "courtKey": "cadc",
+  "docket": "87-7039",
+  "citation": "850 F.2d 708 (D.C. Cir. 1988)",
+  "decided": "June 17, 1988",
+  "status": "published",
+  "topic": "Municipal liability under section 1983 for a police shooting attributed to inadequate training, supervision and discipline, including physical conditioning and disarmament training; deadly force",
+  "settings": [
+    "field",
+    "supervisors"
+  ],
+  "categories": [
+    "instructor-and-training-liability"
+  ],
+  "published": "2026-11-16",
+  "summary": "Two plainclothes District of Columbia officers in Maryland without the arrest warrant let a robbery suspect go change clothes; he fled through a window, commandeered a car, and was shot twice when he turned toward the officer. A jury found the District liable under section 1983 for inadequate training, supervision and discipline, while finding for the District on the state assault and battery claim. A divided D.C. Circuit affirmed, holding that deliberate indifference shown by systemic and grossly inadequate training, discipline and supervision can support municipal liability, and that the evidence, including the officer's lack of physical and disarmament training, was enough for the jury. It is taught for the proposition that training must cover the tasks officers face, and because the course materials have carried the caption backwards.",
+  "coverage": [
+    "The opinion was read in full, including Judge Williams's dissent, from the Public.Resource.Org archive at https://law.resource.org/pub/us/case/reporter/F2/850/850.F2d.708.87-7039.html. The header carries 850 F.2d 708, 271 U.S.App.D.C. 15 and docket 87-7039, which is how the citation was confirmed. The archive text is paragraph numbered; no reporter page pin cites are given.",
+    "Caption. The court styled the case Donald R. Parker, et al. v. District of Columbia, Appellant. The short form is Parker v. District of Columbia. The course materials cite it as District of Columbia v. Parker; that reverses the parties and should be corrected.",
+    "The course materials describe the case as holding that the agency must keep officers physically fit and train them in disarming and subduing without deadly force. The majority did not state a rule in those terms. It held that a fair-minded jury could find deliberate indifference with respect to the officer's physical training and disarmament training on this record, and that the training deficiencies were a substantial factor in the shooting. The dissent disputed the evidence on both points and said the officer had been certified fit two months before the shooting. The brief separates the holding from the lesson.",
+    "The trial record and the district court's memorandum opinion were not read. The trial evidence is described as the majority and the dissent recited it.",
+    "The case predates City of Canton v. Harris, which had been accepted for review when this opinion issued. The majority said it would apply its deliberate indifference formulation until the Supreme Court gave contrary direction.",
+    "No subsequent history was checked."
+  ],
+  "facts": "The facts below are as the majority described them, with the jury presumed to have resolved disputes in the plaintiff's favor. The dissent's version is noted at the end.\n\nOn November 15, 1982, two officers of the District of Columbia Metropolitan Police Department's Repeat Offenders Project, William Hayes and Ronnie Motley, set out to find Don Parker, for whom an armed robbery warrant was outstanding. They drove to suburban Maryland in plain clothes and an unmarked station wagon to interview Parker's wife. They did not bring the warrant, mistakenly assuming their Maryland arrest authority was curtailed and that the Parkers did not live together. Their radio was dead at the house.\n\nMrs. Parker brought Mr. Parker to the door and he invited the officers in. He denied wrongdoing; the robbery charge was later dropped. He refused to leave with two men who had no warrant, and asked them to radio local police or their supervisors, which the dead radio prevented. He then agreed to go but asked to change clothes. The officers allowed it, and he went out a bedroom window into the woods.\n\nThe officers chased him in the station wagon. Parker commandeered a Volvo that had just struck the rear of the officers' car. Hayes tried to pull him out and could not. Believing Parker was threatening the driver and was armed, Hayes shouted a warning. Parker continued to turn toward him and Hayes fired four times, hitting him in the abdomen and the spine and causing permanent injury.\n\nThe Parkers sued the District and the officers for assault and battery under state law and under section 1983 for failing to train, discipline and supervise the officers in extrajurisdictional arrest and disarmament. They dropped the claims against the officers before trial. The jury found for the District on the state claims and against it on the section 1983 claim, awarding Mr. Parker $425,046.67 and nominal consortium damages to his wife. The District's post-trial motions were denied and it appealed.\n\nThe dissent's version: Hayes was a decorated veteran officer with SWAT background and more than 200 arrests who had never before fired on duty; he knew Parker's record included armed robbery and weapons offenses; Parker pushed a woman aside and leaped into her car; Parker's hand moved toward his waistband; and Hayes fired in a split second believing his life and hers were at risk.",
+  "holding": "Affirmed, two to one.\n\nThe legal standard. Until the Supreme Court directed otherwise, section 1983 liability may be found under Monell when there is evidence of deliberate indifference manifested by systemic and grossly inadequate training, discipline and supervision, with a causal connection between those inadequacies and the risk of harm. The court distinguished Oklahoma City v. Tuttle because this case did not rest on a single incident from which inadequate training was inferred, but on what it called a sad series of mishaps linked to a policy of sorely deficient training, supervision and discipline. Quoting Carter v. District of Columbia, it said a plaintiff must present concentrated, fully packed, precisely delineated scenarios, and found this record was one.\n\nSufficiency of the evidence. Giving the verdict the utmost deference, the court found ample evidence of deliberate indifference. On extrajurisdictional arrest, the plaintiffs' expert, a police chief and textbook author, testified that although the training outline ran a week, the actual instruction did not cover arrests outside the District, staying in contact with headquarters, what to do if contact was lost, or the officers' authority outside the District. The officers' only guidance on that authority was a single memo from the unit's head that did not disclose the authority they had. On physical and disarmament training, a former FBI agent demonstrated how Hayes could have subdued Parker without deadly force and testified that his failure to do so showed a serious deficiency in the training program. The court said it was undisputed that Hayes had no physical training for four years and had been off duty with a fractured shoulder until two months before. It wrote that he simply was not in adequate physical shape, that this posed a foreseeable risk to others, and that a fair-minded jury could conclude his conduct resulted from deliberate indifference by the District to the physical training of its officers. On discipline and supervision, an assistant chief had determined that Hayes mishandled the incident and should be recycled through the firearms training course, and that was never done.\n\nCausation. Under the circuit's substantial factor test, deficient training was a substantial factor in the injury. Hayes resorted to his gun because he could not subdue Parker by less drastic means, and his condition was deficient because the District was indifferent to his physical training. The officers' confusion about their authority created the confused atmosphere that led to the flight. The court distinguished Cameron v. City of Pontiac, where a fleeing suspect was killed by a truck on a freeway, as a highly extraordinary chain of events.\n\nThe Garner instruction. The District argued the jury should have been instructed in the language of Tennessee v. Garner. The court held that the District's official deadly force policy was not the issue, because the jury was evaluating actual training, supervision and discipline, and that the District had not preserved the objection under Rule 51. It found no plain error.",
+  "dissent": "Judge Williams dissented at length. He would have granted judgment for the District or, at minimum, a new trial. He read the jury's verdict for the District on assault and battery as a finding that Hayes's force was not unreasonable, and argued the section 1983 verdict could not stand with it. He argued the refusal to give the Garner instruction was preserved and was reversible error, because the plaintiffs' expert had told the jury an officer may not shoot until he actually sees a weapon, a standard stricter than Garner. He argued the instruction on the District's state of mind set a standard below negligence. On the evidence, he contended Hayes was certified fit two months before the shooting and served as the unit's ram person for forcing doors, that the plaintiffs' experts never reviewed the District's actual training policy and assumed falsely that disarmament training totaled one hour, that the District deliberately treated bare-handed disarming as a last resort, and that the extrajurisdictional training theory supplied at most but-for causation through a chain he said out-Palsgrafs Palsgraf. He wrote that liability for deliberate indifference requires evidence that policymakers recognized their training decisions were bound to generate an exceptionally high number of constitutional violations and accepted that, and that no such showing was made.",
+  "notDecided": "Whether an agency has an affirmative legal duty to maintain officers' physical fitness or to provide a specific amount of disarmament training. The court held only that this jury could find deliberate indifference on this record.\n\nWhether the District's official deadly force policy was constitutional. The majority said the official policy was not the issue and that the jury was judging actual customs and training.\n\nThe individual officers' liability. The claims against them were dropped before trial.\n\nWhether negligence would suffice. The majority applied a deliberate indifference standard and said the Supreme Court had not resolved the question; Canton was pending.\n\nWhether the inconsistent verdicts on the state and federal claims required relief. The dissent raised the issue; the majority did not address it as an independent ground.",
+  "inPractice": "Parker is a case about the whole chain of an encounter, not only the trigger pull. The officers did not bring the warrant, misunderstood their arrest authority across a state line, could not reach their dispatcher, and let a wanted robbery suspect go into a bedroom alone. The majority treated the confusion that followed as foreseeable and as something training should have addressed.\n\nFor officers: know the limits of your authority outside your jurisdiction before you go, carry the paper, and have a plan for lost communications. The expert's criticism was that the training covered none of those things for a unit whose job was to find people wherever they were.\n\nFor trainers and supervisors: the court accepted evidence that an officer who had no physical training for four years, and who had just returned from an injury, would be more likely to reach for a firearm than to use hands-on control. That is the court's inference from this record, not a rule, and the dissent disputed the facts. The practical point is that readiness for hands-on control is part of use of force training, and the agency should be able to show what it did to maintain it.\n\nFor command: an internal reviewer ordered the officer back through firearms training and it never happened. The court used that as a telling example of inadequate discipline and supervision. An order to retrain that is not carried out is evidence against the agency.",
+  "trainIt": "Train to the unit's actual assignment. The Repeat Offenders Project sent plainclothes officers across jurisdictional lines in unmarked cars, and the training outline did not cover extrajurisdictional arrest authority, radio dead spots or what to do when supervisors cannot be reached. Write lesson plans from the tasks officers perform, then verify that the delivered instruction matches the outline. Here the outline said one week and the expert said the actual instruction was inadequate.\n\nMake arrest and control training recurring and documented. The majority counted four years without physical training against the District. Agencies should be able to produce dates, content and attendance for defensive tactics and arrest and control refreshers, including for officers returning from injury.\n\nTeach decision-making before the deadly force moment. The plaintiffs' theory was that an officer able to control the subject physically would not have needed a firearm. Whether or not that was true of Officer Hayes, the training should give officers a trained alternative when a firearm is not justified.\n\nClose the loop on remedial training orders. If a review finds an officer should be retrained, schedule it, do it, and record it.\n\nTeach the limits of the case: it was a two to one decision before Canton, the jury found the officer's force not unreasonable under state law, and the dissent attacked the evidence point by point. It is a sufficiency of the evidence ruling, not a declaration of a fitness duty.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which is paragraph numbered, so no page pin cites are given. The decision is two to one with a detailed dissent and predates City of Canton v. Harris. The course materials' caption District of Columbia v. Parker is backwards; the court styled it Parker v. District of Columbia. The course materials' statement of a duty to keep officers physically fit and to train in disarming without deadly force is a lesson drawn from the case, not the court's holding.",
+  "applications": [
+    {
+      "title": "The caption is Parker v. District of Columbia",
+      "body": "The plaintiff was Donald Parker; the District was the appellant. Course materials that say District of Columbia v. Parker should be corrected."
+    },
+    {
+      "title": "Train for the assignment, including jurisdiction and communications",
+      "body": "The expert's criticism was that the unit's training did not cover arrests outside the District, maintaining contact with headquarters, or what to do when contact was lost. The officers' only guidance on extrajurisdictional authority was a single memo that understated it."
+    },
+    {
+      "title": "Physical readiness as part of use of force training",
+      "body": "The majority said it was undisputed that Officer Hayes had no physical training for four years and found a jury could infer deliberate indifference to physical training. The dissent said he had been certified fit two months earlier. Either way, the agency's ability to document conditioning and arrest and control training was at issue."
+    },
+    {
+      "title": "Carry out remedial orders",
+      "body": "An assistant chief determined the officer mishandled the incident and should be recycled through firearms training. It was never done. The court called that a telling example of inadequate discipline and supervision."
+    },
+    {
+      "title": "Teach the posture honestly",
+      "body": "A jury verdict was affirmed two to one on a deferential standard. The jury also found the officer's force not unreasonable on the state claim. The case does not announce a fitness rule."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "How did the D.C. Circuit style the case?",
+      "options": [
+        "District of Columbia v. Parker",
+        "Parker v. Hayes",
+        "Parker v. District of Columbia",
+        "Repeat Offenders Project v. Parker"
+      ],
+      "answer": 2,
+      "teach": "The plaintiffs were the Parkers and the District was the appellant. The caption in some course materials is reversed."
+    },
+    {
+      "q": "What did the majority say about Officer Hayes's physical training?",
+      "options": [
+        "It held that every agency must adopt fitness standards",
+        "It said it was undisputed he had no physical training for four years, found he was not in adequate physical shape, and held a jury could find deliberate indifference to his physical training",
+        "It found his training exceeded national standards",
+        "It did not discuss physical training"
+      ],
+      "answer": 1,
+      "teach": "This is a sufficiency of the evidence holding on a specific record. The dissent disputed the facts. The court did not announce a general fitness duty."
+    },
+    {
+      "q": "Why did the court reject the District's argument about the Tennessee v. Garner instruction?",
+      "options": [
+        "Because Garner had been overruled",
+        "Because the jury was evaluating actual training, supervision and discipline rather than the District's official policy, and the District had not preserved the objection under Rule 51",
+        "Because the officer never gave a warning",
+        "Because the plaintiff conceded the shooting was justified"
+      ],
+      "answer": 1,
+      "teach": "The majority treated the official deadly force policy as beside the point in a training case, and also found the objection unpreserved. The dissent disagreed on both counts."
+    }
+  ]
+}

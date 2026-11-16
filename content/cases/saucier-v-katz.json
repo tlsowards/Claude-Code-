@@ -1,0 +1,92 @@
+{
+  "id": "saucier-v-katz",
+  "name": "Saucier v. Katz",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "99-1977",
+  "citation": "533 U.S. 194 (2001)",
+  "decided": "June 18, 2001",
+  "status": "published",
+  "topic": "Qualified immunity in a Fourth Amendment excessive force case, the two step sequence, reasonable mistakes about the law, protester dragged from a crowd and shoved into a van",
+  "settings": [
+    "all"
+  ],
+  "categories": [
+    "qualified-immunity",
+    "force-standards"
+  ],
+  "published": "2026-11-16",
+  "summary": "A military police officer grabbed a protester who was unfolding a banner near the stage as the Vice President spoke, half dragged him away, and, the protester claimed, shoved him into a van. The Ninth Circuit held that in an excessive force case the qualified immunity question and the merits are the same question, so a factual dispute about the force defeats immunity. The Supreme Court reversed. It held that the two inquiries are distinct: a court must first ask whether the facts alleged show a constitutional violation, then ask whether the right was clearly established in the specific context the officer faced. Qualified immunity protects an officer who correctly sees the facts but reasonably misjudges whether a particular amount of force is legal. Pearson v. Callahan (2009) later made the order of the two steps discretionary.",
+  "coverage": [
+    "The opinion was read in full, including Justice Ginsburg's concurrence in the judgment and Justice Souter's partial dissent, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep533/usrep533194/usrep533194.pdf. The scanned file prints the citation header and the syllabus page references but not running page numbers; pin cites are taken from the syllabus ranges and from the pages at which the Ginsburg concurrence and later Supreme Court opinions (Pearson, Kingsley, Sheehan, and Mendez, all read for this project) cite the majority. They are close rather than exact.",
+    "The citation 533 U.S. 194, the docket number 99-1977, and the decision date of June 18, 2001 were confirmed from the syllabus in that file.",
+    "Pearson v. Callahan, 555 U.S. 223 (2009), was read in full from https://tile.loc.gov/storage-services/service/ll/usrep/usrep555/usrep555223/usrep555223.pdf to confirm that the Saucier sequence is no longer mandatory. Pearson's own page numbers are printed in that file; the quotations in the context section are from pages 227, 236, and 242.",
+    "The Ninth Circuit's opinion (194 F.3d 962) and the district court order were not read; they are described as the Supreme Court described them."
+  ],
+  "facts": "In autumn 1994, the Presidio Army Base in San Francisco hosted an event celebrating the base's conversion to a national park. Vice President Gore was among the speakers and several hundred people attended. Elliot Katz, president of In Defense of Animals, came to protest the possible use of the base hospital for animal experiments. He concealed a cloth banner, about four feet by three feet, under his jacket and sat in the front row of the public seating, which was separated from the stage by a waist high fence (533 U.S. at 197).\n\nDonald Saucier was a military police officer on duty. He had been warned of possible demonstrations, and Katz had been identified as a potential protester. As the Vice President began speaking, Katz took out the banner, began unfolding it, and walked toward the fence. Saucier and Sergeant Parker intercepted him as he reached the barrier and began placing the banner on the other side. They grabbed him from behind, took the banner, and rushed him out of the area, each holding an arm, half walking and half dragging him with his feet barely touching the ground. Katz wore a visible knee high leg brace, which Saucier later testified he did not remember noticing. At a nearby military van, Katz claimed he was shoved or thrown inside. He placed his feet somewhere on the outside of the van, perhaps the bumper, and the parties disputed whether he did so to resist. He said he fell to the floor of the van and caught himself in time to avoid injury. He was held briefly at a military police station and released (at 197 to 198).\n\nKatz sued under Bivens, alleging among other things that excessive force was used to arrest him. The district court granted summary judgment on qualified immunity on every claim except the excessive force claim against Saucier. It found a factual dispute about the force and reasoned that in the Fourth Amendment context the immunity inquiry is the same as the merits. The Ninth Circuit affirmed. It held that Graham v. Connor clearly established the governing law and that the second step of its immunity analysis, whether a reasonable officer could have believed the conduct lawful, was identical to the merits of an excessive force claim, so summary judgment on immunity was inappropriate (at 198 to 200).",
+  "holding": "Reversed and remanded. The Court held that \"the ruling on qualified immunity requires an analysis not susceptible of fusion with the question whether unreasonable force was used in making the arrest\" (533 U.S. at 197), and granted Saucier qualified immunity.\n\nThe sequence. Qualified immunity is an entitlement not to stand trial, so it should be decided early. First, \"[t]aken in the light most favorable to the party asserting the injury, do the facts alleged show the officer's conduct violated a constitutional right? This must be the initial inquiry.\" If not, the inquiry ends. If a violation could be made out, \"the next, sequential step is to ask whether the right was clearly established.\" The first step lets the law develop case to case (at 201).\n\nSpecificity. The clearly established inquiry \"must be undertaken in light of the specific context of the case, not as a broad general proposition.\" Graham v. Connor clearly establishes that excessive force violates the Fourth Amendment, \"[y]et that is not enough.\" Under Anderson v. Creighton, the contours of the right must be clear enough that a reasonable official would understand that what he is doing violates it. The \"relevant, dispositive inquiry\" is \"whether it would be clear to a reasonable officer that his conduct was unlawful in the situation he confronted\" (at 201-202). If the law did not put the officer on notice that the conduct would be clearly unlawful, summary judgment is appropriate; immunity protects \"all but the plainly incompetent or those who knowingly violate the law\" (at 202).\n\nWhy the inquiries differ. Graham already allows reasonable mistakes of fact: an officer who reasonably but mistakenly believed a suspect would fight back could use more force than was needed. Qualified immunity adds \"a further dimension\": \"reasonable mistakes can be made as to the legal constraints on particular police conduct.\" An officer \"might correctly perceive all of the relevant facts but have a mistaken understanding as to whether a particular amount of force is legal in those circumstances. If the officer's mistake as to what the law requires is reasonable, however, the officer is entitled to the immunity defense.\" Because Graham does not always give a clear answer, immunity protects officers from the \"hazy border between excessive and acceptable force\" (at 204-206).\n\nApplied. Assuming a violation could be found on the general rule against excessive force, the Court asked whether that rule was clearly established law contravened in the circumstances Saucier faced. It was not. Saucier did not know the extent of the threat Katz posed or how many others might act with him, and he had to protect the Vice President. A reasonable officer could believe that hurrying Katz away and placing him in the van was an appropriate response. Also, \"[n]ot every push or shove, even if it may later seem unnecessary in the peace of a judge's chambers, violates the Fourth Amendment.\" No case prohibited what Saucier did, and the uncontested absence of hurt or injury confirmed the conclusion (at 207-209).",
+  "dissent": "Justice Ginsburg, joined by Justices Stevens and Breyer, concurred in the judgment but rejected the two step sequence. In her view the Graham objective reasonableness inquiry already asks whether a reasonable officer, identically situated, could have believed the force was lawful, so a separate immunity inquiry is duplicative and the two part test \"holds large potential to confuse.\" She would have granted summary judgment because Katz never showed that Saucier, rather than Parker, delivered the shove; a news videotape showed the shove came from the officer on the other side of the van (533 U.S. at 209 to 217).\n\nJustice Souter joined Parts I and II of the Court's opinion but would have remanded for the lower courts to apply the standard (at 217).",
+  "notDecided": "Whether the force was excessive. The Court said it was \"doubtful that the force used was excessive\" but did not decide the question; it assumed a violation and decided only that no clearly established rule was contravened (533 U.S. at 207).\n\nThe arrest and the First Amendment. The case was presented on the assumption that the seizure and brief detention did not violate clearly established First Amendment rights or the right against arrest without probable cause (at 207).\n\nWho shoved. Whether Saucier or Parker shoved Katz into the van was addressed only in the Ginsburg concurrence (at 211 to 212).\n\nThe order of the steps. Saucier made the sequence mandatory. Pearson v. Callahan later held that courts may decide either step first. See the context section.",
+  "inPractice": "For officers, Saucier explains why two reasonable officers can disagree about whether a given amount of force was lawful and still both be protected. The Fourth Amendment already accepts reasonable mistakes about the facts, such as a reasonable belief that a subject is about to fight. Qualified immunity also accepts reasonable mistakes about the law, meaning the officer saw the facts correctly but misjudged where the legal line was. That protection depends on the line being genuinely unclear in the specific situation. Where prior cases make it clear to a reasonable officer that the conduct is unlawful, immunity is gone.\n\nThe specificity rule cuts both ways. Graham alone does not clearly establish anything about a particular use of force. But an officer cannot assume that the absence of a case with identical facts means immunity; the Court said courts need not have agreed on one verbal formulation, and the question is whether the conduct is unlawful in the situation confronted.\n\nThe facts the Court weighed are familiar: a protective detail, an unknown number of possible confederates, a subject approaching a barrier near a protected person, urgency, a brief detention, and no injury. The missing fact was any case saying the shove was unlawful in that setting.\n\nNote what Saucier did not decide: whether the force was excessive. An officer who is granted immunity has not been found to have acted reasonably; a court has found that the law was not clear.",
+  "trainIt": "Teach qualified immunity as two questions, in either order after Pearson: did the conduct violate the Constitution on the facts alleged, and was the right clearly established in the specific context. Officers should understand that immunity is a defense against suit, not a finding of good conduct, and that it is decided on the plaintiff's version of the facts.\n\nTeach the specificity rule with examples. Graham's general rule never clearly establishes anything by itself. Clearly established law is prior cases close enough in facts that a reasonable officer would know the conduct was unlawful.\n\nUse Saucier's facts for a tactical debrief on dignitary protection and crowd events: identify the threat as perceived, the information gaps, the urgency, and the amount of force (a two officer escort and a shove), and have officers articulate why the force was within appropriate responses or was not.\n\nTeach the distinction between mistakes of fact and mistakes of law. The Fourth Amendment forgives a reasonable mistake about whether a subject will fight. Qualified immunity forgives a reasonable misjudgment about how much force the law permits. Neither forgives force that a reasonable officer would know is excessive.\n\nTrain report writing to the Saucier questions: what was known, what was unknown, what the subject did, and what force was used, so that a court can see the situation the officer confronted.\n\nTeach the posture. The Court reversed a denial of immunity; it did not hold that the force was lawful.",
+  "caution": "The opinion was read in full from the Library of Congress scan, which omits running page numbers; pin cites rely on syllabus ranges and internal cross references and are close rather than exact. Pearson v. Callahan was read in full to confirm the discretionary sequence point. The lower court opinions were not read.",
+  "context": [
+    {
+      "title": "Pearson v. Callahan made the sequence discretionary",
+      "body": "In Pearson v. Callahan, 555 U.S. 223 (2009), a unanimous Court reconsidered the mandatory order of the Saucier steps and held that \"the Saucier procedure should not be regarded as an inflexible requirement\" (555 U.S. at 227). Judges \"should be permitted to exercise their sound discretion in deciding which of the two prongs of the qualified immunity analysis should be addressed first in light of the circumstances in the particular case at hand\" (at 236). Pearson said the Saucier sequence is often beneficial and that lower courts may still follow it; the decision \"simply recognizes that those courts should have the discretion to decide whether that procedure is worthwhile in particular cases\" (at 242). Pearson did not change the substance of either step: whether the facts show a constitutional violation, and whether the right was clearly established at the time."
+    }
+  ],
+  "applications": [
+    {
+      "title": "Two questions, not one",
+      "body": "Whether force was excessive and whether the law clearly prohibited it are different questions. An officer can lose the first and still win the second if the law was not clear in the situation confronted. After Pearson, courts may take the questions in either order."
+    },
+    {
+      "title": "Specific context, not general rules",
+      "body": "Graham's objective reasonableness rule is clearly established, but that is not enough. The question is whether it would be clear to a reasonable officer that the conduct was unlawful in the specific situation."
+    },
+    {
+      "title": "Mistakes of fact and mistakes of law",
+      "body": "The Fourth Amendment allows more force when an officer reasonably but mistakenly believes a subject will fight. Qualified immunity protects an officer who correctly sees the facts but reasonably misjudges how much force the law allows."
+    },
+    {
+      "title": "Immunity is not a verdict of good conduct",
+      "body": "The Court said it was doubtful the force was excessive but did not decide it. A grant of qualified immunity means the law was not clear, not that the officer acted well."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What sequence did Saucier v. Katz require courts to follow when deciding qualified immunity?",
+      "options": [
+        "Decide whether the right was clearly established, and only then whether the Constitution was violated",
+        "First ask whether the facts alleged show a constitutional violation, then ask whether the right was clearly established in the specific context",
+        "Send both questions to the jury",
+        "Decide only whether the officer acted in good faith"
+      ],
+      "answer": 1,
+      "teach": "Saucier made the constitutional question the initial inquiry and the clearly established question the next, sequential step. Pearson v. Callahan (2009) later held that the order is discretionary."
+    },
+    {
+      "q": "According to Saucier, how does the qualified immunity inquiry differ from the Graham excessive force inquiry?",
+      "options": [
+        "It does not; the Court held they are the same question",
+        "Graham accounts for reasonable mistakes about the facts; qualified immunity also protects reasonable mistakes about the legal constraints on the conduct",
+        "Qualified immunity applies only when the officer acted with malice",
+        "Graham applies to arrests and qualified immunity applies to searches"
+      ],
+      "answer": 1,
+      "teach": "An officer might correctly perceive all the facts yet reasonably misjudge whether a particular amount of force is legal. If that legal mistake is reasonable, immunity applies."
+    },
+    {
+      "q": "What did the Supreme Court decide about whether Officer Saucier used excessive force?",
+      "options": [
+        "It held the shove into the van was excessive",
+        "It held the force was reasonable as a matter of law",
+        "It did not decide; it assumed a violation could be found and held no clearly established rule prohibited the conduct",
+        "It remanded for a jury to decide the force question"
+      ],
+      "answer": 2,
+      "teach": "The Court said it was doubtful the force was excessive but rested on the clearly established step. Qualified immunity was granted because no case put the officer on notice that his conduct in that situation was unlawful."
+    }
+  ]
+}

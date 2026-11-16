@@ -1,0 +1,91 @@
+{
+  "id": "malley-v-briggs",
+  "name": "Malley v. Briggs",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "84-1586",
+  "citation": "475 U.S. 335 (1986)",
+  "decided": "March 5, 1986",
+  "status": "published",
+  "topic": "Qualified immunity for an officer who applied for an arrest warrant, objective reasonableness, the reasonably well-trained officer standard",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "qualified-immunity"
+  ],
+  "published": "2026-11-16",
+  "summary": "A Rhode Island state trooper obtained arrest warrants for a couple based on two wiretapped phone calls about a party; a judge signed the warrants, the couple was arrested and publicly named, and a grand jury refused to indict. The Supreme Court held that an officer who applies for a warrant has qualified, not absolute, immunity, and that the judge's signature does not make the application reasonable. The question is whether a reasonably well-trained officer in his position would have known that the affidavit failed to establish probable cause. It is the source of the \"reasonably well-trained officer\" phrase and of the rule that qualified immunity protects all but the plainly incompetent or those who knowingly violate the law.",
+  "coverage": [
+    "The opinion was read in full, including the Powell opinion concurring in part and dissenting in part, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep475/usrep475335/usrep475335.pdf (20 pages, 475 U.S. 335 to 354), converted with pdftotext. Pin cites are to U.S. Reports pages as printed in that PDF.",
+    "The citation 475 U.S. 335 is confirmed from the running heads. The docket number, argument date, and decision date are taken from the caption.",
+    "The First Circuit decision (748 F.2d 715 (1984)) was not read. It is described only as the Supreme Court described it.",
+    "The \"reasonably well-trained officer\" language at 475 U.S. 345 is the Court's quotation of United States v. Leon, 468 U.S. 897, 922 n.23 (1984), applied by analogy to the warrant application. Leon was not read for this brief.",
+    "Proceedings after remand were not researched and are not described."
+  ],
+  "facts": "In December 1980 the Rhode Island State Police were conducting a court authorized wiretap on the telephone of Paul Driscoll, an acquaintance of the daughter of James and Louisa Briggs. On December 20 the police intercepted a call from an unknown person who called himself \"Dr. Shogun.\" The logsheet summarized it: general conversation about a party the night before, the caller saying he could not believe he was \"token\" in front of Jimmy Briggs and that he passed it to Louisa, and Driscoll saying Nancy was sitting in his lap \"rolling her thing\" (475 U.S. at 337).\n\nTrooper Edward Malley, in charge of the Driscoll investigation, concluded the call was incriminating because in drug parlance \"toking\" means smoking marihuana and \"rolling her thing\" refers to rolling a marihuana cigarette. From a second call the same day he concluded the party had taken place at the Briggs home. On the basis of the two calls he drew up felony complaints charging the Briggses and Driscoll with conspiracy to possess marihuana. In February 1981, after the wiretap ended, he presented the complaints to a state district court judge with unsigned arrest warrants and supporting affidavits describing the calls and his interpretation of them. The judge signed warrants for the Briggses and twenty other people (at 337 to 338).\n\nThe Briggses were arrested at home shortly before six in the morning on March 19, 1981, booked, held for several hours, arraigned, and released. Newspapers reported that they, prominent members of their community, had been arrested on drug charges. The charges were dropped when the grand jury did not return an indictment (at 338).\n\nThe Briggses sued Malley under 42 U.S.C. section 1983, alleging that his warrant application violated the Fourth and Fourteenth Amendments. At the close of their evidence the district court directed a verdict for Malley, reasoning primarily that the judge's issuance of the warrants broke the causal chain, and adding that an officer who believes the facts in his affidavit and submits them to a neutral magistrate may be entitled to immunity under Harlow's objective reasonableness standard (at 338 to 339). The First Circuit reversed, holding that an officer seeking a warrant is not immune unless he had an objectively reasonable basis for believing the facts alleged were sufficient to establish probable cause (at 339).",
+  "holding": "Affirmed and remanded. An officer who applies for an arrest warrant has qualified immunity, not absolute immunity, and the standard is objective reasonableness measured by what a reasonably well-trained officer would have known (475 U.S. at 340 to 346).\n\nNo absolute immunity. Complaining witnesses who procured warrants were not absolutely immune at common law in 1871 (at 340 to 341). Nor did policy support absolute immunity: \"As the qualified immunity defense has evolved, it provides ample protection to all but the plainly incompetent or those who knowingly violate the law.\" \"Defendants will not be immune if, on an objective basis, it is obvious that no reasonably competent officer would have concluded that a warrant should issue; but if officers of reasonable competence could disagree on this issue, immunity should be recognized\" (at 341). Qualified immunity \"gives ample room for mistaken judgments\"; the reflection it encourages is desirable because it reduces premature warrant requests and premature arrests (at 343 to 344).\n\nThe standard. \"[W]e hold that the same standard of objective reasonableness that we applied in the context of a suppression hearing in Leon, supra, defines the qualified immunity accorded an officer whose request for a warrant allegedly caused an unconstitutional arrest. Only where the warrant application is so lacking in indicia of probable cause as to render official belief in its existence unreasonable, will the shield of immunity be lost\" (at 344 to 345). The judge's decision to issue the warrant does not break the causal chain to the arrest (at 344 to 345 n.7).\n\nThe judge's signature is not a defense. The Court rejected the argument that applying for a warrant is per se reasonable whenever the officer believes the facts in his affidavit, because he may rely on the judge's finding. Quoting Leon: \"our good-faith inquiry is confined to the objectively ascertainable question whether a reasonably well-trained officer would have known that the search was illegal despite the magistrate's authorization.\" \"The analogous question in this case is whether a reasonably well-trained officer in petitioner's position would have known that his affidavit failed to establish probable cause and that he should not have applied for the warrant. If such was the case, the officer's application for a warrant was not objectively reasonable, because it created the unnecessary danger of an unlawful arrest.\" \"[B]ut ours is not an ideal system,\" the Court said, and it is reasonable \"to require the officer applying for the warrant to minimize this danger by exercising reasonable professional judgment\" (at 345 to 346). Where a magistrate errs within the range of a magistrate's competence, the officer is not liable; but where no officer of reasonable competence would have requested the warrant, the officer \"cannot excuse his own default by pointing to the greater incompetence of the magistrate\" (at 346 n.9).\n\nNot decided here. Whether Malley's conduct was in fact objectively reasonable was left for remand (at 345 n.8).",
+  "dissent": "Justice Powell, joined by Justice Rehnquist, agreed that the trooper had only qualified immunity and that the Harlow standard applied, but dissented from the remand. He would have given substantial evidentiary weight to the judge's finding of probable cause, reasoning that the Court has long preferred the deliberate determinations of magistrates to the hurried actions of officers, and that a rule giving the judge's decision little weight would discourage officers from seeking warrants (at 350 to 354). On the record, which showed the Briggses attended a party where marihuana was used and that another party was planned at their home, he concluded that an officer of reasonable competence could have believed there was probable cause, and he would have held Malley immune (at 350). In a footnote he observed that police departments and prosecutors \"have an obligation to instill this understanding in officers, and to discipline those found to have violated the Constitution\" (at 353 n.9). Instructors should note that this is the separate opinion, not the Court.",
+  "notDecided": "Whether Trooper Malley's application was objectively reasonable, and therefore whether he was immune. The Court expressly left that for remand (at 345 n.8).\n\nWhether the affidavit in fact established probable cause. The Court's holding addressed the immunity standard, not the merits of probable cause.\n\nHow much evidentiary weight a court should give the magistrate's finding when deciding immunity. The majority said the officer cannot rely on it as a per se defense; Justice Powell would have made it substantial. The majority did not fix a weight.\n\nThe Court did not define what training a \"reasonably well-trained officer\" has received. The phrase describes an objective standard of professional competence; it is not a finding about any training program.",
+  "inPractice": "Malley is the case that tells an officer the judge's signature on a warrant is not a shield in a civil suit. If a reasonably well-trained officer would have known the affidavit did not establish probable cause, the application was unreasonable and immunity is lost, even though a judge signed it. The Court said plainly that magistrates under docket pressure sometimes fail to perform as they should, and that the officer must exercise reasonable professional judgment to minimize that danger.\n\nThe protection is still broad. Immunity covers all but the plainly incompetent or those who knowingly violate the law. If officers of reasonable competence could disagree about whether the affidavit showed probable cause, immunity should be recognized. The line is drawn at applications so lacking in indicia of probable cause that belief in it is unreasonable. The affidavit here rested on an officer's interpretation of slang in two overheard calls and did not say that the Briggses themselves possessed anything; whether that crossed the line was for the lower court.\n\nFor the officer writing the affidavit, the lesson is that the affidavit is judged on its face against the standard of a trained professional. Facts the officer knew but did not write down will not save it, and interpretations should be labeled as such and supported.\n\nThe case also settles that qualified immunity, not absolute immunity, is what an officer has for seeking a warrant, and that the judge's decision does not break the causal chain to the arrest.",
+  "trainIt": "Teach Malley as the first half of the qualified immunity lesson, before Anderson v. Creighton. Give trainees the two formulations from the opinion and have them use both: immunity protects all but the plainly incompetent or those who knowingly violate the law; and the test is whether a reasonably well-trained officer in the officer's position would have known the affidavit failed to establish probable cause. Make clear that \"reasonably well-trained\" is the Court's phrase from this case, quoting Leon, and that Anderson later added the requirement that clearly established law be defined in a particularized sense.\n\nTrain the affidavit as the whole case. Use the Malley affidavit as a teaching exhibit: two summarized calls, slang interpreted by the officer, an inference that a party at the home involved marihuana, and no statement that the named persons possessed anything. Have trainees identify what facts are present, what is inference, and what is missing, then rewrite it. Pair it with Whiteley v. Warden to show that a conclusory complaint fails on the warrant side as well.\n\nTeach the standard's logic. The Court wanted officers to pause and ask whether the affidavit shows probable cause before submitting it, because premature warrants waste judicial time, injure the innocent, and hand defense counsel a suppression motion. That pause is a training objective.\n\nTeach the posture. The Court set the standard and remanded; it did not find Malley liable or immune, and Justice Powell would have found him immune on this record.",
+  "caution": "The opinion was read in full from the U.S. Reports. The Court decided the immunity standard and remanded; it did not decide whether Malley's application was objectively reasonable. The \"reasonably well-trained officer\" language is quoted from United States v. Leon, which was not read for this brief. Subsequent history was not researched.",
+  "applications": [
+    {
+      "title": "The judge's signature is not a defense",
+      "body": "An officer cannot claim immunity simply because a judge found probable cause. If a reasonably well-trained officer would have known the affidavit failed to establish probable cause, the application was not objectively reasonable."
+    },
+    {
+      "title": "Immunity is still broad",
+      "body": "Qualified immunity protects all but the plainly incompetent or those who knowingly violate the law. If officers of reasonable competence could disagree about the affidavit, immunity should be recognized. The line is an application so lacking in indicia of probable cause that belief in it is unreasonable."
+    },
+    {
+      "title": "The affidavit is judged on its face",
+      "body": "Interpretations of slang and inferences about who was present are not facts about possession. Label inferences as inferences, support them, and include every fact that bears on probable cause."
+    },
+    {
+      "title": "Reasonable professional judgment is the duty",
+      "body": "The Court said the system is not ideal and that the officer must minimize the danger of an unlawful arrest by exercising reasonable professional judgment before applying. The pause before submission is the point."
+    },
+    {
+      "title": "Teach the posture accurately",
+      "body": "Malley announced the standard and remanded. It did not decide whether the trooper was immune. The \"reasonably well-trained officer\" phrase comes from this case, quoting Leon, not from Anderson v. Creighton."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Under Malley v. Briggs, what immunity does an officer have when sued for damages over an arrest warrant application?",
+      "options": [
+        "Absolute immunity, like a prosecutor seeking an indictment",
+        "Absolute immunity, like a complaining witness",
+        "Qualified immunity, measured by objective reasonableness",
+        "No immunity, because the Fourth Amendment already requires reasonableness"
+      ],
+      "answer": 2,
+      "teach": "The Court rejected both absolute immunity arguments. Complaining witnesses were not absolutely immune at common law, and the officer's role is further removed from the judicial phase than the prosecutor's."
+    },
+    {
+      "q": "What is the question that determines whether an officer loses qualified immunity for a warrant application?",
+      "options": [
+        "Whether the officer honestly believed the facts in his affidavit",
+        "Whether the judge who signed the warrant was competent",
+        "Whether a reasonably well-trained officer in his position would have known that his affidavit failed to establish probable cause and that he should not have applied for the warrant",
+        "Whether the grand jury returned an indictment"
+      ],
+      "answer": 2,
+      "teach": "The Court borrowed the standard from United States v. Leon and held that the judge's signature does not make the application per se reasonable."
+    },
+    {
+      "q": "What did the Court decide about Trooper Malley's own conduct?",
+      "options": [
+        "It held he was immune because a judge signed the warrants",
+        "It held he was liable for the unlawful arrest",
+        "It did not decide whether his application was objectively reasonable and left that for remand",
+        "It held he was absolutely immune"
+      ],
+      "answer": 2,
+      "teach": "Footnote 8 states that the question whether Malley's conduct was objectively reasonable was not presented and would be resolved on remand. Justice Powell would have held him immune."
+    }
+  ]
+}

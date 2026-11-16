@@ -1,0 +1,92 @@
+{
+  "id": "hudson-v-mcmillian",
+  "name": "Hudson v. McMillian",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "90-6531",
+  "citation": "503 U.S. 1 (1992)",
+  "decided": "February 25, 1992",
+  "status": "published",
+  "topic": "Eighth Amendment excessive force, punches and kicks on a handcuffed and shackled prisoner, no serious injury requirement, malicious and sadistic standard for all prison force, de minimis force",
+  "settings": [
+    "custody",
+    "supervisors"
+  ],
+  "categories": [
+    "custody-and-corrections",
+    "force-standards",
+    "supervision-and-intercede"
+  ],
+  "published": "2026-11-16",
+  "summary": "A Louisiana prisoner testified that two officers punched and kicked him while he was handcuffed and shackled on the way to lockdown, and that the supervisor watched and told them not to have too much fun. He suffered bruises, swelling, loosened teeth, and a cracked dental plate. The Fifth Circuit threw out his award because the injuries were not significant. The Supreme Court reversed, holding that excessive force against a prisoner can be cruel and unusual punishment even without serious injury, that the Whitley malicious and sadistic test is the core inquiry for every prison force claim and not only riots, and that the Eighth Amendment does not reach de minimis force unless it is repugnant to the conscience of mankind.",
+  "coverage": [
+    "The opinion was read in full, including the Stevens and Blackmun concurrences and the Thomas dissent, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep503/usrep503001/usrep503001.pdf. The scanned file prints the citation header but not running page numbers; pin cites are taken from the syllabus page ranges and from the pages at which the concurrences, the dissent, and Kingsley v. Hendrickson cite the majority. They are close rather than exact.",
+    "The citation 503 U.S. 1, the docket number 90-6531, and the decision date of February 25, 1992 were confirmed from the syllabus in that file.",
+    "The Fifth Circuit's opinion (929 F.2d 1014) and the magistrate's findings were not read; they are described as the Supreme Court described them.",
+    "The vote was 7 to 2 on the judgment. Justice Stevens joined only Parts I, II-A, II-B, and II-C and did not join the extension of the malicious and sadistic standard; Justice Blackmun concurred in the judgment and also did not join that extension. The holding that Whitley governs all force claims therefore carried five votes on that point."
+  ],
+  "facts": "Keith Hudson was an inmate at the Louisiana State Penitentiary at Angola. Jack McMillian, Marvin Woods, and Arthur Mezo were corrections security officers there. In the early morning of October 30, 1983, Hudson and McMillian argued. With Woods assisting, McMillian placed Hudson in handcuffs and shackles, took him out of his cell, and walked him toward the administrative lockdown area (503 U.S. at 4).\n\nHudson testified that on the way McMillian punched him in the mouth, eyes, chest, and stomach while Woods held him in place and kicked and punched him from behind. He testified that Mezo, the supervisor on duty, watched the beating and told the officers \"not to have too much fun.\" Hudson suffered minor bruises and swelling of his face, mouth, and lip; the blows loosened his teeth and cracked his partial dental plate, which was unusable for several months (at 4).\n\nHudson sued the three officers under 42 U.S.C. section 1983 for cruel and unusual punishment under the Eighth Amendment. The case was tried to a magistrate, who found that McMillian and Woods used force when there was no need to do so and that Mezo expressly condoned their actions. The magistrate awarded $800 in damages (at 4). The magistrate also found that the violence was not an isolated assault; there was testimony that McMillian and Woods beat another prisoner shortly after they finished with Hudson (at 12).\n\nThe Fifth Circuit reversed. It held that a prisoner alleging excessive force must prove, among other elements, a significant injury. The court agreed that the force was objectively unreasonable because no force was required, and that the conduct of McMillian and Woods \"qualified as clearly excessive and occasioned unnecessary and wanton infliction of pain.\" But because Hudson's injuries were minor and required no medical attention, it held he could not prevail (at 5). The Supreme Court granted review to decide whether the significant injury requirement is consistent with the Eighth Amendment (at 5).",
+  "holding": "Reversed. The Court held that \"the use of excessive physical force against a prisoner may constitute cruel and unusual punishment\" even though the inmate does not suffer serious injury (503 U.S. at 4).\n\nWhitley extended to all force claims. Whitley v. Albers set the standard for force used to quell a riot. The Court held that many of the same concerns arise \"whenever guards use force to keep order.\" Whether the disturbance is a riot or a lesser disruption, officers must balance the need to maintain or restore discipline against the risk of injury, may have to act quickly and decisively, and are owed deference in the policies and practices they judge necessary for order and security. So \"whenever prison officials stand accused of using excessive physical force in violation of the Cruel and Unusual Punishments Clause, the core judicial inquiry is that set out in Whitley: whether force was applied in a good-faith effort to maintain or restore discipline, or maliciously and sadistically to cause harm\" (at 6 to 7).\n\nInjury is a factor, not a threshold. Under Whitley, the extent of injury is one factor that may suggest whether the force \"could plausibly have been thought necessary\" or instead showed wantonness. Courts may also consider the need for force, the relationship between the need and the amount used, the threat reasonably perceived by the officials, and efforts to temper the response. \"The absence of serious injury is therefore relevant to the Eighth Amendment inquiry, but does not end it\" (at 7).\n\nThe objective component is contextual. The Court rejected the argument that the \"objective component\" described in Wilson v. Seiter requires significant injury. What counts as sufficient harm depends on the kind of claim and on contemporary standards of decency. \"In the excessive force context, society's expectations are different. When prison officials maliciously and sadistically use force to cause harm, contemporary standards of decency always are violated,\" whether or not significant injury is evident. Otherwise the Eighth Amendment \"would permit any physical punishment, no matter how diabolic or inhuman, inflicting less than some arbitrary quantity of injury\" (at 8 to 9).\n\nDe minimis force. Not \"every malevolent touch by a prison guard gives rise to a federal cause of action.\" The Eighth Amendment excludes \"de minimis uses of physical force, provided that the use of force is not of a sort 'repugnant to the conscience of mankind.'\" The blows here, which caused bruises, swelling, loosened teeth, and a cracked dental plate, were not de minimis, so the extent of injury gave no basis to dismiss the claim (at 9 to 10).\n\nIsolated and unauthorized acts. The officers argued that an isolated, unauthorized beating against prison policy is not \"punishment\" at all. The Court took no position, because the magistrate had found the violence was not an isolated assault, the argument was outside the question granted, and the supervisor had \"expressly condoned the use of force in this instance\" (at 11 to 12).",
+  "dissent": "Justice Thomas, joined by Justice Scalia, dissented. In his view a use of force that causes only insignificant harm \"may be immoral, it may be tortious, it may be criminal,\" and may be remediable under other constitutional provisions, but it is not cruel and unusual punishment. He read Wilson v. Seiter as requiring both an objectively serious deprivation and a culpable state of mind in every prison case, and he objected to extending Whitley's heightened mental state to all force cases, including ones where no order keeping was involved. He noted that Louisiana courts were open to Hudson for a state law claim (503 U.S. at 17 and following).\n\nJustice Stevens concurred in part and in the judgment. He would have applied the less demanding unnecessary and wanton infliction of pain standard where there is no disturbance, as here, where Hudson was already in restraints, but agreed the stricter standard was also met (at 12 to 13).\n\nJustice Blackmun concurred in the judgment. He joined the rejection of a significant injury requirement, declined to join the extension of Whitley, and wrote that nothing in the opinion limits cognizable injury to physical injury; psychological pain can be more than de minimis (at 13 and following).",
+  "notDecided": "Isolated, unauthorized acts as punishment. The Court took no position on whether a single unauthorized assault against prison policy is \"punishment\" under the Eighth Amendment, because the record showed the violence was not isolated and the supervisor condoned it (503 U.S. at 11 to 12).\n\nPsychological injury. Whether psychological pain without physical injury is cognizable was not presented; Justice Blackmun's concurrence addressed it (at 16 to 17).\n\nWhere the de minimis line falls. The Court said only that these blows were not de minimis. It did not define de minimis force for other cases.\n\nPretrial detainees. Hudson is an Eighth Amendment case about a convicted prisoner. Kingsley v. Hendrickson later held that pretrial detainee force claims are judged by objective reasonableness and said Hudson is relevant to those claims only for its recognition of jail safety concerns.",
+  "inPractice": "For correctional staff, Hudson closes a door that was never really open: the absence of a visible or medically treated injury does not make force lawful. Punches and kicks on a restrained prisoner who presents no need for force are judged by whether they were a good faith effort to maintain or restore discipline or were applied maliciously and sadistically to cause harm. On this record, the magistrate found there was no need for force at all, and that finding was never disturbed.\n\nFor supervisors, the opinion is a warning. The supervisor's words, as the magistrate found them, were \"not to have too much fun,\" and the Court cited his express condoning of the force as one reason it would not entertain the argument that the beating was isolated and unauthorized. A supervisor who watches force and does not stop it becomes part of the record, and the agency's policy against the conduct does not help the officers who violated it with a supervisor's blessing.\n\nDe minimis force remains outside the Eighth Amendment, provided it is not of a sort repugnant to the conscience of mankind. That protects the ordinary push or escort grip, not blows to the face of a cuffed and shackled man.\n\nFinally, the test in Hudson is the convicted prisoner test. For pretrial detainees, Kingsley's objective reasonableness standard applies.",
+  "trainIt": "Teach Hudson together with Whitley and Kingsley so officers know the three points: Whitley announced the malicious and sadistic test for riots; Hudson applied it to all Eighth Amendment force claims and rejected a serious injury requirement; Kingsley applies objective reasonableness to pretrial detainees.\n\nTrain the no need rule. The magistrate's finding that force was used when there was no need to do so decided this case. Scenario training should include escort of restrained, verbally hostile prisoners with the lesson that words are not a need for force, and that a restrained prisoner's ability to harm is limited.\n\nTrain supervisors to intervene. A supervisor present at a use of force is expected to stop unnecessary force, not to comment on it. Teach supervisors that their words and silence are evidence, and that a policy violation they condone is attributed to the institution's practice, not only to the officer.\n\nTrain the injury point correctly. Officers sometimes hear that minor injuries mean no case. Hudson says injury is one factor that bears on whether force was thought necessary; it is not a threshold. Document injuries accurately and do not treat their absence as a defense.\n\nTrain the de minimis concept narrowly: guiding touches and escort holds, not strikes.\n\nTeach the posture. Hudson reinstated a trial finding of liability on a specific record. It did not hold that all force on restrained prisoners is unconstitutional, and it did not decide whether an isolated, unauthorized assault is punishment.",
+  "caution": "The opinion was read in full from the Library of Congress scan, which omits running page numbers; pin cites rely on the syllabus ranges and on internal cross references and are close rather than exact. The facts are the magistrate's findings and Hudson's testimony as the Court described them.",
+  "applications": [
+    {
+      "title": "No serious injury required",
+      "body": "Force applied maliciously and sadistically to cause harm violates the Eighth Amendment whether or not significant injury results. The extent of injury is one factor in deciding whether the force could plausibly have been thought necessary."
+    },
+    {
+      "title": "One test for all prison force",
+      "body": "After Hudson, every Eighth Amendment force claim asks whether force was a good faith effort to maintain or restore discipline or was applied maliciously and sadistically to cause harm. The riot setting is no longer the trigger."
+    },
+    {
+      "title": "Supervisors who watch become defendants",
+      "body": "The supervisor's \"not to have too much fun\" and the finding that he expressly condoned the force were part of why the Court would not treat the beating as isolated and unauthorized. Intervene and report."
+    },
+    {
+      "title": "De minimis means minimal",
+      "body": "The Eighth Amendment does not reach de minimis force that is not repugnant to the conscience of mankind. Punches to the face and kicks on a cuffed and shackled prisoner were not de minimis."
+    },
+    {
+      "title": "Teach the posture",
+      "body": "Hudson reinstated a magistrate's finding and an $800 award. It left open whether a single unauthorized assault is punishment, and it applies to convicted prisoners; Kingsley governs pretrial detainees."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did Hudson v. McMillian hold about injury in an Eighth Amendment excessive force claim?",
+      "options": [
+        "A prisoner must prove a significant injury requiring medical attention",
+        "Excessive force may be cruel and unusual punishment even without serious injury; the extent of injury is a factor, not a threshold",
+        "Injury is irrelevant to the analysis",
+        "Only permanent injuries count"
+      ],
+      "answer": 1,
+      "teach": "The Court rejected the Fifth Circuit's significant injury requirement. The absence of serious injury is relevant but does not end the inquiry."
+    },
+    {
+      "q": "After Hudson, what is the core inquiry whenever prison officials are accused of excessive force under the Eighth Amendment?",
+      "options": [
+        "Whether the force was objectively unreasonable under Graham v. Connor",
+        "Whether officials were deliberately indifferent to a substantial risk",
+        "Whether force was applied in a good faith effort to maintain or restore discipline, or maliciously and sadistically to cause harm",
+        "Whether the prisoner suffered more than de minimis injury"
+      ],
+      "answer": 2,
+      "teach": "Hudson extended Whitley's malicious and sadistic test from riots to all prison force claims. Two Justices in the majority on the judgment did not join that extension, but it is the holding of the Court."
+    },
+    {
+      "q": "Which argument did the Court decline to decide in Hudson?",
+      "options": [
+        "Whether the Eighth Amendment applies to prisoners at all",
+        "Whether an isolated, unauthorized assault by a guard against prison policy is punishment under the Eighth Amendment",
+        "Whether the magistrate's $800 award was too low",
+        "Whether pepper spray is de minimis force"
+      ],
+      "answer": 1,
+      "teach": "The Court took no position because the magistrate found the violence was not isolated, the argument was outside the question granted, and the supervisor had expressly condoned the force."
+    }
+  ]
+}

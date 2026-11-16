@@ -20,7 +20,7 @@ export interface BriefCase {
   notDecided?: string;
   inPractice: string;
   trainIt: string;
-  /** Verification flags carried over from the research, shown to the reader. */
+  /** Verification limits carried over from the research. Internal: not shown to readers, read aloud, or copied into the video kit. */
   caution?: string;
 }
 
@@ -45,7 +45,7 @@ export interface WeeklyBrief {
   coverageStart: string;
   coverageEnd: string;
   summary: string;
-  /** Research coverage and limits, stated plainly. */
+  /** Research coverage and limits, stated plainly. Internal: kept for the editors, not shown on the brief page. */
   coverage: string[];
   sections: BriefSection[];
   /** The training application block. caseId ties a point to a case for the video kit's post schedule. */
@@ -55,8 +55,14 @@ export interface WeeklyBrief {
   quiz?: QuizQuestion[];
   /** Hand-written YouTube title options and thumbnail text, read by scripts/build-youtube-kit.mjs. */
   youtube?: {
+    /** Title options and thumbnail used for the first video when that video does not carry its own. */
     titles?: string[];
     thumbnail?: { text?: string; redWord?: string; visual?: string };
+    /**
+     * The individual case videos for the channel: one decision, or two or three on the same issue. Cases not
+     * listed get Shorts only. Without this block every published decision gets its own video.
+     */
+    videos?: { cases: string[]; titles?: string[]; thumbnail?: { text?: string; redWord?: string; visual?: string }; hook?: string }[];
   };
 }
 
@@ -64,9 +70,16 @@ export interface WeeklyBrief {
  * A standalone teaching brief in the Case library: one decision, written in the same facts, holding,
  * practice, and training structure as a weekly brief case, but not tied to a week. Lives in content/cases.
  */
+export type CaseCategory =
+  | 'force-standards' | 'deadly-force' | 'intermediate-force' | 'impact-weapons' | 'takedowns-and-control'
+  | 'handcuffing-and-detention' | 'restraint-and-asphyxia' | 'mental-health-and-disability' | 'custody-and-corrections'
+  | 'qualified-immunity' | 'instructor-and-training-liability' | 'training-injury' | 'california-law' | 'supervision-and-intercede';
+
 export interface TeachingBrief extends BriefCase {
   /** ISO date the brief was added to the library. Drives ordering and the sitemap. */
   published: string;
+  /** Library sections this brief belongs to, in order of importance; the first is where it is shelved. */
+  categories?: CaseCategory[];
   /** Why this case is in the library, one or two sentences, shown on the list page and free to read. */
   summary: string;
   /** Verification notes: what was read and what was not. */

@@ -1,0 +1,95 @@
+{
+  "id": "tennessee-v-garner",
+  "name": "Tennessee v. Garner",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "83-1035 (together with 83-1070, Memphis Police Department v. Garner)",
+  "citation": "471 U.S. 1 (1985)",
+  "decided": "March 27, 1985",
+  "status": "published",
+  "topic": "Deadly force to prevent the escape of an apparently unarmed fleeing felony suspect, Fourth Amendment seizure, constitutionality of a fleeing felon statute",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "deadly-force",
+    "force-standards"
+  ],
+  "published": "2026-11-16",
+  "summary": "A Memphis officer shot and killed a 15-year-old burglary suspect who was climbing a backyard fence to escape, acting under a Tennessee statute that allowed all necessary means to arrest a fleeing felon. The Supreme Court held that deadly force to prevent escape is a Fourth Amendment seizure and is unreasonable unless the officer has probable cause to believe the suspect poses a significant threat of death or serious physical injury to the officer or others. It is the deadly force case every officer learns.",
+  "coverage": [
+    "The opinion was read in full, including the O'Connor dissent, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep471/usrep471001/usrep471001.pdf (33 pages, 471 U.S. 1 to 33), converted with pdftotext. Pin cites are to U.S. Reports pages as printed in that PDF.",
+    "The citation 471 U.S. 1 is confirmed from the running heads. The docket numbers, argument date, and decision date are taken from the caption. The case came to the Court as an appeal by the State of Tennessee (No. 83-1035) and a petition for certiorari by the city (No. 83-1070).",
+    "The Sixth Circuit decisions (600 F.2d 52 (1979) and 710 F.2d 240 (1983)) and the district court decisions were not read. They are described only as the Supreme Court described them.",
+    "Proceedings on remand concerning the city's liability under Monell were not researched and are not described."
+  ],
+  "facts": "At about 10:45 p.m. on October 3, 1974, Memphis Police Officers Elton Hymon and Leslie Wright were dispatched to a \"prowler inside call.\" A neighbor told them she had heard glass breaking and that \"they\" or \"someone\" was breaking in next door. While Wright radioed, Hymon went behind the house, heard a door slam, and saw someone run across the backyard. The fleeing suspect, Edward Garner, stopped at a six foot chain link fence. With a flashlight, Hymon could see Garner's face and hands. He saw no sign of a weapon and, though not certain, was \"reasonably sure\" and \"figured\" that Garner was unarmed. He thought Garner was 17 or 18 and about 5 feet 5 to 5 feet 7 (471 U.S. at 3). In fact Garner was 15, an eighth grader, 5 feet 4 and about 100 to 110 pounds (at 4 n.2).\n\nWhile Garner was crouched at the base of the fence, Hymon called out \"police, halt\" and took a few steps toward him. Garner began to climb. Convinced that Garner would elude capture if he made it over, Hymon shot him. The bullet struck the back of Garner's head, and he died on the operating table. Ten dollars and a purse taken from the house were found on his body (at 4). \n\nHymon acted under a Tennessee statute providing that if, after notice of intent to arrest, the suspect \"either flee or forcibly resist, the officer may use all the necessary means to effect the arrest,\" and under department policy that was slightly more restrictive but still allowed deadly force in burglary cases. The department's firearms review board and a grand jury took no action (at 4 to 5).\n\nGarner's father sued under 42 U.S.C. section 1983. After a bench trial, the district court entered judgment for all defendants, finding the statute constitutional. The Sixth Circuit affirmed as to Hymon on qualified immunity grounds, because he had relied in good faith on the statute, but remanded for consideration of the city's liability under Monell. The district court again upheld the statute and the shooting. The Sixth Circuit then reversed, holding that killing a fleeing suspect is a seizure and that the statute, as applied, did not adequately limit deadly force (at 5 to 7). The State, which had intervened to defend the statute, appealed, and the city petitioned for certiorari (at 7).",
+  "holding": "Affirmed and remanded. Deadly force to prevent the escape of an apparently unarmed suspected felon \"may not be used unless it is necessary to prevent the escape and the officer has probable cause to believe that the suspect poses a significant threat of death or serious physical injury to the officer or others\" (471 U.S. at 3).\n\nA seizure. \"[T]here can be no question that apprehension by the use of deadly force is a seizure subject to the reasonableness requirement of the Fourth Amendment\" (at 7). Reasonableness is a balance of the intrusion against the governmental interests, and it \"depends on not only when a seizure is made, but also how it is carried out\" (at 8).\n\nThe rule. \"The use of deadly force to prevent the escape of all felony suspects, whatever the circumstances, is constitutionally unreasonable. It is not better that all felony suspects die than that they escape. Where the suspect poses no immediate threat to the officer and no threat to others, the harm resulting from failing to apprehend him does not justify the use of deadly force to do so.\" \"A police officer may not seize an unarmed, nondangerous suspect by shooting him dead\" (at 11). The statute was invalid as applied but not on its face: \"Where the officer has probable cause to believe that the suspect poses a threat of serious physical harm, either to the officer or to others, it is not constitutionally unreasonable to prevent escape by using deadly force. Thus, if the suspect threatens the officer with a weapon or there is probable cause to believe that he has committed a crime involving the infliction or threatened infliction of serious physical harm, deadly force may be used if necessary to prevent escape, and if, where feasible, some warning has been given\" (at 11 to 12).\n\nThe common law. The Court declined to follow the common law rule allowing any force necessary to arrest a fleeing felon, which arose when nearly all felonies were capital and is \"distorted almost beyond recognition\" when applied today (at 12 to 15). Most States and most police departments have moved away from it, with no indication that restricting deadly force hampers law enforcement (at 15 to 20). The Court rejected the argument that its rule requires \"impossible, split-second evaluations of unknowable facts\" (at 20).\n\nApplied. Hymon \"could not reasonably have believed that Garner\" (young, slight, and unarmed) \"posed any threat.\" Burglary is serious, but \"the fact that an unarmed suspect has broken into a dwelling at night does not automatically mean he is physically dangerous\" (at 21).\n\nWhat the holding meant. The individual defendants were already out of the case and the State was not subject to liability. The possible liability of the Police Department and the city turned on Monell and was left for remand. \"We hold that the statute is invalid insofar as it purported to give Hymon the authority to act as he did\" (at 22).",
+  "dissent": "Justice O'Connor, joined by Chief Justice Burger and Justice Rehnquist, dissented. She would have held that deadly force used as a last resort to stop a suspect fleeing a nighttime residential burglary, after an order to halt, is not unreasonable. She stressed that \"[t]he clarity of hindsight cannot provide the standard for judging the reasonableness of police decisions made in uncertain and often dangerous circumstances\" (at 26), that residential burglary carries a real risk of violence (at 26 to 27), and that the suspect could avoid the risk by obeying a lawful order to halt (at 29). She also criticized the majority for giving no guidance on which objects or facts supply probable cause of a significant threat, predicting litigation over split second decisions (at 31 to 32). The dissent is worth teaching because it frames the practical objections officers still raise, and because the majority answered them directly at pages 20 and 21.",
+  "notDecided": "Officer Hymon's liability. He had been dismissed from the case years earlier on qualified immunity grounds by the Sixth Circuit, and the Supreme Court made no ruling about him personally beyond holding that the statute could not authorize what he did.\n\nThe liability of the city and the Police Department under Monell. That was left for remand and is not addressed in the opinion.\n\nThe validity of the department's deadly force policy. The Court said the absence of any discussion below and the uncertain state of the record precluded consideration (at 22).\n\nWhat counts as a weapon or as probable cause of a significant threat in a particular case. The dissent faulted the majority for not spelling this out; the majority left it to case by case application.\n\nWhether the Fourth Amendment reaches deadly force that fails to stop the suspect. The dissent assumed the holding applies only where the suspect is actually apprehended (at 31); the majority did not address the point.",
+  "inPractice": "Garner draws the line officers carry into every foot pursuit. Flight alone is not a basis for deadly force, and neither is the label \"felony.\" Deadly force to stop an escape requires probable cause that the person poses a threat of serious physical harm to the officer or others. The Court gave two routes to that conclusion: the suspect threatens the officer with a weapon, or there is probable cause that the suspect committed a crime involving the infliction or threatened infliction of serious physical harm. Even then the force must be necessary to prevent escape, and a warning must be given where feasible.\n\nThe facts show how the threat assessment is made. Hymon could see Garner's face and hands with a flashlight, saw no weapon, and believed he was unarmed. The Court treated that as the controlling fact. An officer who can articulate what he saw in the hands, what the crime was, and what the suspect did that signaled danger is articulating Garner.\n\nThe Court also addressed the unknown. Hymon did not know whether others remained in the house or what had happened inside. The majority still found no basis to believe Garner was dangerous. Uncertainty about what a suspect might do is not probable cause that he poses a significant threat. Officers should be prepared to point to specific facts.\n\nFinally, Garner is a seizure case, not a liability case. The officer was already out of the case, and the city's liability was left for later proceedings.",
+  "trainIt": "Teach Garner with Graham as one framework: Graham supplies the totality of the circumstances test and Garner supplies the specific rule for deadly force to prevent escape. In deadly force scenarios, require trainees to name the specific facts supporting probable cause of a significant threat, not a conclusion such as that he was a felon or might have been armed. Ask what they saw in the hands, what the underlying crime was and how they knew it, and what the suspect did that signaled danger to the officer or others.\n\nTrain the warning. The Court said deadly force may be used \"if, where feasible, some warning has been given.\" Scenarios should include a decision point about whether a warning was feasible, and trainees should give one when it is. Hymon gave a warning here, and the shooting was still unreasonable because the threat element was missing.\n\nUse the facts to train against assumption. The officer thought Garner was an adult and could not catch him. Neither fact is a threat fact. Teach officers to separate escape frustration from danger assessment, and to document both honestly.\n\nTeach the policy layer. The Court noted that most department policies were already more restrictive than the common law rule. Officers must know their own agency's deadly force policy and understand that policy can be narrower than Garner.\n\nTeach the posture: the Court held the statute invalid as applied and remanded; it did not decide the city's liability or the officer's.",
+  "caution": "The opinion was read in full from the U.S. Reports. The facts are drawn from the Court's recitation of the trial record. The city's liability was left for remand and its later history was not researched. The phrase \"significant threat of death or serious physical injury\" appears in the Court's statement of its conclusion at page 3; the operative passage at pages 11 and 12 uses \"threat of serious physical harm.\" Both are the Court's own words.",
+  "applications": [
+    {
+      "title": "Flight is not a threat",
+      "body": "Garner rejected the rule that any fleeing felon may be stopped with deadly force. The question is whether there is probable cause that this suspect poses a threat of serious physical harm to the officer or others. Escape, by itself, does not supply it."
+    },
+    {
+      "title": "Two routes to probable cause of a threat",
+      "body": "The suspect threatens the officer with a weapon, or there is probable cause that the suspect committed a crime involving the infliction or threatened infliction of serious physical harm. Officers should be able to say which applied and what facts supported it."
+    },
+    {
+      "title": "Necessary, and with a warning where feasible",
+      "body": "Even where the threat element is met, deadly force must be necessary to prevent escape, and some warning should be given if feasible. Document whether a warning was given and, if not, why it was not feasible."
+    },
+    {
+      "title": "Burglary is serious, but not automatically dangerous",
+      "body": "The Court held that an unarmed suspect breaking into a dwelling at night is not automatically dangerous. The armed burglar is a different situation. The difference is in the facts the officer can articulate about the hands and the conduct."
+    },
+    {
+      "title": "Teach the posture accurately",
+      "body": "The officer had already been dismissed on qualified immunity. The Court held the statute invalid as applied and left the city's liability for remand. Garner is a case about what the Fourth Amendment permits, not a verdict."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Under Tennessee v. Garner, when may an officer use deadly force to prevent the escape of a fleeing suspect?",
+      "options": [
+        "Whenever the suspect is reasonably believed to have committed a felony",
+        "Whenever the suspect ignores a lawful order to halt",
+        "Only when the force is necessary to prevent escape and the officer has probable cause to believe the suspect poses a significant threat of death or serious physical injury to the officer or others",
+        "Never; deadly force is permitted only in self defense"
+      ],
+      "answer": 2,
+      "teach": "The Court stated this rule at 471 U.S. 3 and elaborated at pages 11 and 12: a weapon threat or probable cause of a crime involving serious physical harm, necessity, and a warning where feasible."
+    },
+    {
+      "q": "Why did the Court conclude the shooting of Garner was unreasonable?",
+      "options": [
+        "Because Officer Hymon did not give a warning",
+        "Because Hymon could not reasonably have believed that Garner, who appeared young, slight, and unarmed, posed any threat",
+        "Because burglary is a misdemeanor in Tennessee",
+        "Because Hymon fired without probable cause to arrest"
+      ],
+      "answer": 1,
+      "teach": "Hymon gave a warning and had probable cause to arrest. The shooting failed because the threat element was missing. Hymon saw Garner's hands, saw no weapon, and believed he was unarmed."
+    },
+    {
+      "q": "What did the Supreme Court decide about the liability of the city of Memphis?",
+      "options": [
+        "It held the city liable under Monell",
+        "It held the city immune",
+        "It left the city's possible liability for remand and did not decide it",
+        "It dismissed the city because the officer had qualified immunity"
+      ],
+      "answer": 2,
+      "teach": "The Court held the statute invalid insofar as it purported to authorize the shooting. The individual defendants were already out of the case, and municipal liability was left for the lower courts."
+    }
+  ],
+  "relatedBriefIds": [
+    "2026-w19",
+    "2026-w20"
+  ]
+}

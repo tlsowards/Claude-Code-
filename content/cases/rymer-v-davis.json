@@ -1,0 +1,90 @@
+{
+  "id": "rymer-v-davis",
+  "name": "Rymer v. Davis",
+  "court": "Sixth Circuit (from the Western District of Kentucky)",
+  "courtKey": "ca6",
+  "docket": "83-5586",
+  "citation": "754 F.2d 198 (6th Cir. 1985), vacated and remanded, City of Shepherdsville v. Rymer, 105 S.Ct. 3518 (1985), reaffirmed on remand, 775 F.2d 756 (6th Cir. 1985)",
+  "decided": "February 11, 1985 (reaffirmed on remand October 28, 1985)",
+  "status": "published",
+  "topic": "City liability under section 1983 for a complete failure to train officers in arrest procedures and treatment of injured persons; beating during a traffic arrest; fists, feet and a nightstick",
+  "settings": [
+    "field",
+    "supervisors"
+  ],
+  "categories": [
+    "instructor-and-training-liability"
+  ],
+  "published": "2026-11-16",
+  "summary": "A Shepherdsville, Kentucky officer beat and kicked a truck driver during a convoy stop, hit him with a nightstick, and refused a medical technician's recommendation that he go to the hospital. A jury found the officer and the city liable. The Sixth Circuit affirmed, holding that a city with no rules or regulations for its police, no pre-employment training, and annual training that never covered arrest procedures or treatment of injured persons could be found to have trained its officers in a way so reckless or grossly negligent that misconduct was almost inevitable, and that the failure was directly related to the beating. The Supreme Court vacated the decision for reconsideration under Oklahoma City v. Tuttle, and the Sixth Circuit reaffirmed it, explaining that liability rested on direct evidence of the city's training, not on an inference from the single beating. It is taught as the application of the Hays v. Jefferson County standard to a department that had, in effect, no training at all.",
+  "coverage": [
+    "The original opinion was read in full from the Public.Resource.Org archive at https://law.resource.org/pub/us/case/reporter/F2/754/754.F2d.198.83-5586.html. The header carries 754 F.2d 198 and docket 83-5586, decided February 11, 1985, which confirms the citation Rymer v. Davis, 754 F.2d 198 (6th Cir. 1985). The course materials give only Rymer v. Davis (6th Cir. 1985); this is the decision they describe.",
+    "The Public.Resource.Org directory listings name files by volume, page and docket number, not by party, so the volumes were searched by docket number 83-5586 rather than by the name Rymer. The same docket appears again in volume 775, and that opinion was also read in full from https://law.resource.org/pub/us/case/reporter/F2/775/775.F2d.756.83-5586.html. It is the Sixth Circuit's decision on remand from the Supreme Court, decided October 28, 1985, reaffirming and incorporating the February opinion. The remand opinion cites the Supreme Court's vacatur as City of Shepherdsville v. Rymer, 105 S.Ct. 3518 (1985). The United States Reports citation for that order was not verified and is not given.",
+    "The remand opinion refers to the original decision as Rymer v. Davis, 754 F.2d 198 (6th Cir.1984). The original opinion's own header says it was decided February 11, 1985. The year 1985 is used here.",
+    "The archive text is paragraph numbered; no reporter page pin cites are given. The trial record was not read; the evidence is described as the Sixth Circuit summarized it in the plaintiff's favor.",
+    "No further subsequent history after the October 1985 reaffirmance was checked."
+  ],
+  "facts": "The facts are as the Sixth Circuit stated them, viewed most favorably to the plaintiff because the court was reviewing a jury verdict.\n\nOn June 13, 1979, Paul Dale Rymer was part of a truck convoy on an interstate in Kentucky. The convoy was stopped by officers from the Kentucky State Police, the City of Shepherdsville, the City of Lebanon Junction and Bullitt County. Rymer and three other drivers were arrested. During the arrest, Shepherdsville Officer Ben Stillwell beat and kicked Rymer many times and hit him once in the stomach and head with a nightstick. An emergency medical technician treated Rymer and recommended that he be taken to a hospital for x-rays; Stillwell refused. Rymer and the others were jailed overnight, taken to county court the next morning to enter pleas, and released.\n\nRymer sued numerous defendants under section 1983. The district court dismissed some and directed verdicts for others, leaving Stillwell and the City of Shepherdsville. The jury awarded $32,000 in compensatory and $50,000 in punitive damages against Stillwell, and $25,000 in compensatory damages against the city. Motions for a new trial and for judgment notwithstanding the verdict were denied.\n\nThe evidence about the city, as the court recited it: at the time of the incident the city had no rules or regulations governing its police force. It required no pre-employment training. Initial training was on the job. The city required forty hours of training each year after hire, but none of the training Stillwell received instructed him on arrest procedures or the treatment of injured persons. The city's officers used their own discretion in arresting and treating suspects.\n\nThe jury was instructed to find for Rymer against the city if it found that the city trained its officers in a way so reckless or grossly negligent that future police misconduct was almost inevitable or substantially certain to result. Both defendants appealed the amount of the awards; the city also argued that it should have been dismissed before the case went to the jury and that its motion for judgment notwithstanding the verdict should have been granted. Because the city had not moved for a directed verdict, the court treated its argument as a request for a new trial on the ground that the evidence was insufficient as a matter of law.",
+  "holding": "Affirmed. On remand from the Supreme Court, reaffirmed.\n\nThe standard. The court held that on these facts it was not error to find the city liable for failing to train its officers or training them in a way so reckless or grossly negligent that future misconduct was almost inevitable or substantially certain to result. The instruction tracked Hays v. Jefferson County: a municipality may be held liable only where there is essentially a complete failure to train the police force, or training that is so reckless or grossly negligent that future police misconduct is almost inevitable or would properly be characterized as substantially certain to result. Hays had been questioned for not recognizing negligence as a basis for liability, but because the jury was instructed on gross negligence that question was not presented.\n\nTraining as custom. Relying on Monell, the court said that in Hays it had joined courts holding that a municipal custom authorizing or condoning police misconduct can be inferred when a municipality has failed to train or has been grossly negligent in training its police force, and that official acquiescence may be inferred from the lack of training even in the face of only a single brutal incident. In a footnote it said the type or amount of training necessary to avoid that inference is a jury question, and listed police management resources available to municipalities.\n\nCausation. A general failure to train is not enough; there must be a causal relationship between the failure to train and the officer's conduct. The court's example was that crowd control training would be irrelevant to a single-victim incident. Here, the city had a custom of allowing officers to decide when and how to arrest without supervisory regulations, what the court called carte blanche authority, and Stillwell had received no training on arrest procedures or treatment of injured persons. Both were directly related to the abuse Rymer received, the evidence was sufficient to go to the jury, and the jury's conclusion that the training, or lack of it, was so reckless or grossly negligent that misconduct was almost inevitable was supported.\n\nDamages. The awards did not shock the judicial conscience.\n\nOn remand. The Supreme Court vacated and remanded for reconsideration in light of Oklahoma City v. Tuttle. The Sixth Circuit reaffirmed and incorporated its earlier opinion. Tuttle reversed a verdict because the instructions there allowed the jury to infer inadequate training or supervision from a single unusually excessive use of force without additional evidence. In Rymer, the jury was instructed to find the city liable only if it found the city's training itself reckless or grossly negligent, and the verdict rested on that finding, not on an inference from the single incident. The city was not held liable because it hired one bad apple but because it was itself a bad actor in failing to train its police force. The decision rested on all the facts and instructions in the original opinion, not on an inference.",
+  "notDecided": "Whether simple negligence in training can support municipal liability. The court said that question was not presented because the jury was instructed on gross negligence.\n\nHow much or what kind of training is enough. The court said that is a jury question and did not set a minimum.\n\nWhether a single incident with no other evidence can establish municipal liability. The remand opinion placed Rymer outside that question because there was direct evidence of the city's training practices.\n\nWhether the forty hours of annual training the city required was adequate for the subjects it did cover. The court's holding rested on what the training did not cover: arrest procedures and treatment of injured persons.\n\nThe liability of the other agencies that participated in the convoy stop, which were dismissed or received directed verdicts and were not before the court.",
+  "inPractice": "Rymer is the small department case. Shepherdsville had no rules or regulations for its officers, no pre-employment training, on the job initial training, and forty hours a year that never touched how to make an arrest or what to do with an injured arrestee. The court called that carte blanche authority and tied it directly to a beating during a traffic arrest.\n\nFor officers: the second half of the incident mattered as much as the first. An emergency medical technician said the arrestee needed x-rays and the officer said no. The court listed treatment of injured persons alongside arrest procedures as the training the officer never had, and both were part of the causal link. When a medical provider recommends transport, refusing is a decision an officer should expect to defend.\n\nFor supervisors and command: the court's question was whether the training matched the conduct. Its example was that crowd control training would be irrelevant to a single-victim incident. The reverse is the lesson here: an officer who makes arrests needs arrest procedure training, and the agency needs to be able to show it was given.\n\nFor small agencies: the court said how much training is needed is a jury question and listed published police management resources; a city cannot say it did not know how to train.\n\nThe Supreme Court sent this case back under Tuttle, and the Sixth Circuit kept the verdict because the plaintiff had proved the training failure directly, not by inference from the beating alone.",
+  "trainIt": "Write the rules first. The court began its list with the fact that the city had no rules or regulations governing its police force. Arrest and control training should sit on top of a written use of force policy and arrest procedure that officers are trained on and sign for.\n\nCover arrest procedures explicitly in recruit and in-service training. The city's forty annual hours did not count because none addressed arrest procedures. Lesson plans should name the subject, and attendance records should show who received it.\n\nTrain the medical duty. Treatment of injured persons was the second subject the officer had never been trained on. Teach officers to request and accept medical evaluation after force, to defer to the medical provider's transport recommendation, and to document the decision either way.\n\nTeach causation as the organizing idea. The court said training must relate to the conduct at issue. When designing in-service hours, start from the tasks that produce force incidents and complaints, and make sure the hours land there.\n\nDocument the training. Rymer was decided on what the training did not include. The agency's defense in a case like this is a record showing the subject was taught.\n\nTeach the posture and the history: a jury verdict affirmed, vacated by the Supreme Court for reconsideration under Tuttle, and reaffirmed because the verdict rested on direct evidence of the training failure. The standard applied was the pre-Canton Hays gross negligence standard; Canton later fixed deliberate indifference as the test.",
+  "caution": "Both the February 1985 opinion and the October 1985 remand opinion were read in full from the Public.Resource.Org archive, which is paragraph numbered, so no reporter pin cites are given. The Supreme Court's vacatur is cited as the remand opinion cites it, 105 S.Ct. 3518; the United States Reports citation was not verified. The remand opinion misdates the original as 1984; the original's header says February 11, 1985. The standard applied was the pre-Canton Hays gross negligence formulation.",
+  "applications": [
+    {
+      "title": "No rules, no pre-service training, and in-service hours that miss the job",
+      "body": "The city required forty hours of training a year, and none of it covered arrest procedures or treatment of injured persons. The court treated that as carte blanche authority to officers and tied it directly to the beating."
+    },
+    {
+      "title": "Refusing medical transport is part of the record",
+      "body": "An emergency medical technician recommended x-rays and the officer refused. The court listed treatment of injured persons as training the officer never had."
+    },
+    {
+      "title": "Training must match the conduct",
+      "body": "The court required a causal relationship between the failure to train and the officer's conduct, noting crowd control training would be irrelevant to a single-victim incident. Audit in-service hours against the incidents the agency actually has."
+    },
+    {
+      "title": "Direct evidence of the training, not the incident alone",
+      "body": "After the Supreme Court remanded under Tuttle, the Sixth Circuit kept the verdict because the jury had found the city's training reckless or grossly negligent on evidence about the department, not by inference from one beating."
+    },
+    {
+      "title": "How much training is enough is a jury question",
+      "body": "The court said so in a footnote and listed published resources available to municipalities. An agency that can produce lesson plans and attendance records is answering that question before it is asked."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the evidence show about the City of Shepherdsville's training at the time of the incident?",
+      "options": [
+        "Officers completed a state academy and annual use of force recertification",
+        "The city had no rules or regulations for its police, required no pre-employment training, gave on the job initial training, and its forty annual hours never covered arrest procedures or treatment of injured persons",
+        "The city had a written policy that the officer violated",
+        "The city had no police department"
+      ],
+      "answer": 1,
+      "teach": "The court tied these facts directly to the beating and to the officer's refusal of medical transport, and held the jury could find the training so reckless or grossly negligent that misconduct was almost inevitable."
+    },
+    {
+      "q": "What happened after the Supreme Court vacated the Sixth Circuit's decision?",
+      "options": [
+        "The Sixth Circuit reversed the verdict against the city",
+        "The case was retried and the city won",
+        "The Sixth Circuit reaffirmed, explaining that the verdict rested on direct evidence of the city's training rather than an inference from a single incident, so Tuttle did not control",
+        "The plaintiff dismissed the case"
+      ],
+      "answer": 2,
+      "teach": "Tuttle rejected instructions that let a jury infer inadequate training from one unusually excessive use of force. The Rymer jury was instructed to decide whether the city's training itself was reckless or grossly negligent, and the court said the city was itself a bad actor in failing to train."
+    },
+    {
+      "q": "What did the court say about the relationship between the training failure and the officer's conduct?",
+      "options": [
+        "Any failure to train makes a city liable for any officer misconduct",
+        "There must be a causal relationship between the failure to train and the conduct; a general failure to train is not enough",
+        "Causation is presumed whenever an officer is untrained",
+        "Only the officer's state of mind matters"
+      ],
+      "answer": 1,
+      "teach": "The court's example was that crowd control training would be irrelevant to a single-victim incident. Here, the missing arrest procedure and injured person training matched the conduct at issue."
+    }
+  ]
+}

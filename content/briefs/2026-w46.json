@@ -4,12 +4,13 @@
   "date": "2026-11-14",
   "coverageStart": "2026-11-08",
   "coverageEnd": "2026-11-14",
-  "summary": "Two published Ninth Circuit opinions on November 10, both from the Portland ICE facility protests, and both vacating preliminary injunctions that had limited federal officers' use of tear gas, pepper balls, and other less lethal munitions. In Dickinson v. Trump a split panel held that officers may use less lethal force to disperse a crowd in response to imminent lawlessness, such as trespass, blocking a street, or obstructing officers, and need not wait for an imminent threat of physical harm. The companion case, Reach Community Development v. Department of Homeland Security, held that neighbors exposed to drifting gas have no substantive due process right against it. An unpublished memorandum, Jehangir v. East, granted qualified immunity to two Tempe officers whose body cameras recorded an arrestee's exposure in a hospital emergency room. On Monday the Supreme Court vacated a Tenth Circuit decision about a transgender detainee's housing and strip search and sent it back for another look. No published California force decision was found.",
+  "summary": "Two published Ninth Circuit opinions on November 10, both from the Portland ICE facility protests, and both vacating preliminary injunctions that had limited federal officers' use of tear gas, pepper balls, and other less lethal munitions. In Dickinson v. Trump a split panel held that officers may use less lethal force to disperse a crowd in response to imminent lawlessness, such as trespass, blocking a street, or obstructing officers, and need not wait for an imminent threat of physical harm. The companion case, Reach Community Development v. Department of Homeland Security, held that neighbors exposed to drifting gas have no substantive due process right against it. An unpublished memorandum, Jehangir v. East, granted qualified immunity to two Tempe officers whose body cameras recorded an arrestee's exposure in a hospital emergency room. On Monday the Supreme Court vacated a Tenth Circuit decision about a transgender detainee's housing and strip search and sent it back for another look.",
   "coverage": [
     "Checked: the Ninth Circuit's own lists of published opinions and unpublished memoranda for November 9 through 13, read from the court's website, which was reachable again this week. The two Portland opinions and the Jehangir memorandum were read in full from the court's PDFs. The week's other published Ninth Circuit opinions were screened and are not force cases.",
     "Checked: the Supreme Court's November 9 order list and the dockets for the two cases sent back. The Tenth Circuit and Seventh Circuit opinions underneath those orders were read from the government's official opinion database.",
     "Checked: the California Courts of Appeal published opinion list for November 9 through 13. No published California force decision was found.",
-    "Not checked from a primary source: the other federal circuits, whose opinion pages were outside the research tool's reach this week. A Second Circuit decision in a Connecticut sergeant's employment suit over force discipline was seen in news coverage; it is about timing, not a force standard, and it is not covered. If a force opinion was filed in another circuit this week, it will be picked up when confirmed."
+    "Not checked from a primary source: the other federal circuits, whose opinion pages were outside the research tool's reach this week. A Second Circuit decision in a Connecticut sergeant's employment suit over force discipline was seen in news coverage; it is about timing, not a force standard, and it is not covered. If a force opinion was filed in another circuit this week, it will be picked up when confirmed.",
+    "November 15 correction: the briefing room point on head, neck, and torso impacts originally said California law forbids those impacts. Penal Code section 13652, as read by Case Law Watch on leginfo.legislature.ca.gov on November 15, 2026, bars aiming kinetic energy projectiles at the head, neck, or any other vital organs when dispersing an assembly, protest, or demonstration, treats pepper balls as chemical agents, and does not apply in county detention facilities or state prisons. The point and the Dickinson practice text were corrected the same day."
   ],
   "sections": [
     {
@@ -34,7 +35,7 @@
           "holding": "Preliminary injunction and provisional class certification vacated, in an opinion by Judge Lee joined by Judge Tung. The plaintiffs were not likely to succeed on their First Amendment retaliation claim. The district court's first legal error was assuming the government may use less lethal munitions only against an imminent threat of physical harm. That is not the law of the circuit. Under Puente v. City of Phoenix, decided in 2024, officers may use less lethal munitions to disperse a crowd when there are objectively reasonable grounds to conclude there is a clear and present danger of riot, disorder, interference with traffic on the public streets, or other immediate threat to public safety, peace, or order, and it is the tenor of the demonstration as a whole that decides whether police may intervene. Vandalism, blocking traffic, and trespassing on the facility were such threats. The panel wrote that incidents involving peaceful plaintiffs cannot be viewed in isolation from the larger mayhem of dozens or hundreds of people impeding officers, vandalizing property, and assaulting agents, and it called the plaintiffs unfortunate collateral casualties of an effort to quell an unruly crowd. A footnote added that under Puente officers may act without giving even a single verbal dispersal order.\n\nThe second error was relying on Nelson v. City of Davis, a Fourth Amendment pepper ball case, to treat claimed excessive force as evidence of intent to punish speech. The court said a police officer permanently damaging a student's eye at a raucous college party is not the same as agents using crowd control tactics against a crowd that has repeatedly vandalized federal property, obstructed law enforcement, and assaulted agents, and that doctrinally the Fourth Amendment's excessive force analysis differs from the First Amendment's intent to retaliate framework. The panel acknowledged that some video clips, out of context, may show some officers using unprovoked or excessive force, but those hit did not appear to be plaintiffs, the agents' motives were unknown, and a few incidents out of hundreds of encounters do not show a policy. It quoted Justice Kavanaugh's concurrence in Barnes v. Felix on the difference between dissecting an officer's actions with hindsight and making split second judgments in tense, uncertain, rapidly evolving circumstances.\n\nThe injunction was also overbroad. It protected anyone in the world who wishes to protest at the facility, which Trump v. CASA and Los Angeles Press Club v. Noem forbid. It handcuffed officers from using less lethal munitions unless they faced an imminent threat of physical harm, when the First Amendment allows crowd control munitions against protesters who block the street, criminally trespass on government property, or thwart law enforcement. And the uniform order was beyond the court's power: courts cannot be the couture of the executive branch. The provisional class failed Rule 23 because retaliation claims, like Fourth Amendment force claims, turn on individualized facts.",
           "dissent": "Judge de Alba agreed that three provisions were overbroad: the imminent threat limit on munitions, the active resistance limit on pepper spray, and the uniform requirements. She otherwise dissented. She would have upheld the ban on firing munitions at the head, neck, or torso unless deadly force is justified, citing Los Angeles Press Club, where the court sustained a similar prohibition, and the district court's finding that protesters and journalists were hit in the head and body without warning while posing no threat and blocking nothing. She read the record, including testimony that shooting at people from the roof across long distances is dangerous because of lost accuracy, as evidence of retaliatory intent, and wrote that Puente did not greenlight reckless use of force. Relying on an Eighth Circuit case, Aldridge v. City of St. Louis, she said a retaliation claim built on force is distinct from a Fourth Amendment claim: the question is not whether the force was reasonable but whether it was retaliatory.",
           "notDecided": "Whether any individual officer used excessive force under the Fourth Amendment. No Fourth Amendment claim was before the court, and the panel said a court might find on other facts that an officer used too much force because the circumstances did not objectively present a clear and present danger of imminent lawlessness, or because the officer misread the tenor of a demonstration. The court did not decide the government's standing argument, and the lawsuit continues without the injunction.",
-          "inPractice": "For agencies in the Ninth Circuit this is the clearest recent statement of when a crowd may be dispersed with less lethal tools: an objectively reasonable conclusion that there is a clear and present danger of riot, disorder, interference with traffic, or another immediate threat to public safety, peace, or order, judged by the demonstration as a whole. An imminent threat of injury is not required. That answers the dispersal decision, not the targeting decision. Two weeks ago in Johnson v. Adgar the same court held that a launcher round fired indiscriminately into a crowd violated the Fourth Amendment, and this panel repeated that a claim against an individual officer is a different analysis. The two fit together: the crowd may be moved when the conditions exist, and each impact round still needs a person, an act, and a backdrop. The head, neck, and torso issue is live: the majority struck that provision only as part of an injunction it found unjustified as a whole, the dissent would have kept it, and an earlier panel upheld one like it. Treat sensitive area impacts as deadly force level decisions. And the footnote that a dispersal can be lawful without a verbal order is a constitutional floor, not a tactic. Recorded warnings are the best evidence that the force was about order and not about the message.",
+          "inPractice": "For agencies in the Ninth Circuit this is the clearest recent statement of when a crowd may be dispersed with less lethal tools: an objectively reasonable conclusion that there is a clear and present danger of riot, disorder, interference with traffic, or another immediate threat to public safety, peace, or order, judged by the demonstration as a whole. An imminent threat of injury is not required. That answers the dispersal decision, not the targeting decision. Two weeks ago in Johnson v. Adgar the same court held that a launcher round fired indiscriminately into a crowd violated the Fourth Amendment, and this panel repeated that a claim against an individual officer is a different analysis. The two fit together: the crowd may be moved when the conditions exist, and each impact round still needs a person, an act, and a backdrop. The head, neck, and torso issue is live: the majority struck that provision only as part of an injunction it found unjustified as a whole, the dissent would have kept it, and an earlier panel upheld one like it. Treat sensitive area impacts as deadly force level decisions. And the footnote that a dispersal can be lawful without a verbal order is a constitutional floor, not a tactic. Recorded warnings are the best evidence that the force was about order and not about the message. In California, Penal Code section 13652 governs kinetic energy projectiles and chemical agents used to disperse an assembly, protest, or demonstration. It bars aiming kinetic energy projectiles at the head, neck, or any other vital organs, treats pepper balls as chemical agents rather than kinetic projectiles, and does not apply inside county detention facilities or state prisons. Read the statute itself; where it applies it is stricter than the constitutional floor in Dickinson.",
           "trainIt": "Teach the dispersal decision and the targeting decision as two decisions with two articulations. The dispersal articulation names the objective conditions: what the crowd as a whole was doing, which laws were being broken, what was blocked, thrown, or damaged, what orders were given and ignored, and why the event had turned from protest to disorder. The targeting articulation for any impact round names the person, the act, the distance, the expected point of impact, and who was beside and behind the target. Build command post logs and force reports that capture both, with times, and keep the warning recordings. Train that peaceful people inside an unlawful crowd will be affected by area tools and the law allows it, but that a journalist or protester standing apart from the disorder is the case the court left open. Make sure written policy and the pre-deployment briefing forbid targeting anyone for speech, and keep the sensitive area rule: no impact rounds to the head, neck, or torso unless deadly force would be justified."
         },
         {
@@ -108,12 +109,12 @@
     },
     {
       "heading": "Other federal circuits",
-      "note": "Not screened from primary sources this week. The other circuits' opinion pages were outside the research tool's reach, and nothing was verified. A Second Circuit ruling seen in news coverage, that a Connecticut sergeant's suit over his discipline for a 2020 force incident was filed too late, was not read and is not a force standard decision. Anything filed in another circuit November 9 through 13 will be covered once confirmed from the court's own text.",
+      "note": "Internal: not screened from primary sources this week. The other circuits' opinion pages were outside the research tool's reach, and nothing was verified. A Second Circuit ruling seen in news coverage, that a Connecticut sergeant's suit over his discipline for a 2020 force incident was filed too late, was not read.",
       "cases": []
     },
     {
       "heading": "California",
-      "note": "No published California force decision was found for November 9 through 13. People v. Guzman, from the Second District on November 10, is a social media search and good faith exception case, not a force case. The Bane Act question certified in Johnson v. Adgar, covered November 7, remains pending before the California Supreme Court. California officers should also remember that the Portland decisions concern federal officers under the First and Fifth Amendments. California's own statute on kinetic energy projectiles and chemical agents at protests, Penal Code section 13652, binds state and local agencies regardless of what the Constitution permits, including its limits on aiming at the head, neck, and other vital organs and its announcement and dispersal time requirements. Read Dickinson for the constitutional floor and the statute for California policy.",
+      "note": "Internal: no published California force decision was found for November 9 through 13. People v. Guzman (Second District, November 10) is a social media search and good faith exception case. The Bane Act question certified in Johnson v. Adgar remains pending before the California Supreme Court. The Penal Code section 13652 point officers need is inside the Dickinson practice section.",
       "cases": []
     }
   ],
@@ -130,7 +131,7 @@
     },
     {
       "title": "Head, neck, and torso stay off limits",
-      "body": "The majority struck the sensitive area provision only as part of an injunction it found unjustified as a whole. The dissent would have kept it, an earlier panel upheld one like it, and California law forbids those impacts. Keep the rule in policy as a deadly force level decision.",
+      "body": "The majority struck the sensitive area provision only as part of an injunction it found unjustified as a whole. The dissent would have kept it, an earlier panel upheld one like it, and in California, Penal Code 13652 bars aiming kinetic energy projectiles at the head, neck, or any other vital organs at protests and demonstrations. Keep the rule in policy as a deadly force level decision.",
       "caseId": "dickinson-v-trump"
     },
     {
@@ -157,16 +158,41 @@
     "2026-11-14"
   ],
   "youtube": {
-    "titles": [
-      "Tear gas without an imminent threat? The Ninth Circuit says yes. Here is the catch.",
-      "The court cleared the crowd. It did not clear the shot.",
-      "Portland ICE protests: when officers may disperse a crowd, and what still needs a target"
-    ],
-    "thumbnail": {
-      "text": "DISPERSE: YES. AIM: STILL YOU.",
-      "redWord": "AIM",
-      "visual": "a line of officers behind a haze of smoke, with one highlighted sentence from the opinion"
-    }
+    "videos": [
+      {
+        "cases": [
+          "dickinson-v-trump",
+          "reach-community-development-v-dhs"
+        ],
+        "titles": [
+          "Tear gas without an imminent threat? The Ninth Circuit says yes. Here is the catch.",
+          "The court cleared the crowd. It did not clear the shot.",
+          "Portland ICE protests: when officers may disperse a crowd, and what still needs a target"
+        ],
+        "thumbnail": {
+          "text": "DISPERSE: YES. AIM: STILL YOU.",
+          "redWord": "AIM",
+          "visual": "a line of officers behind a haze of smoke, with one highlighted sentence from the opinion"
+        },
+        "hook": "Two Ninth Circuit decisions from the Portland ICE facility protests, both filed November 10, 2026. The first says officers may use tear gas, pepper balls, and other less lethal tools to disperse a crowd in response to imminent lawlessness, not only an imminent threat of injury. The second says neighbors exposed to drifting gas have no substantive due process claim. Neither decides what any one officer may do to any one person."
+      },
+      {
+        "cases": [
+          "roybal-v-griffith"
+        ],
+        "titles": [
+          "The Supreme Court sent the jail strip search case back. Here is what does not change.",
+          "Jail searches of transgender detainees: the policy may change, the conduct rule does not",
+          "Roybal v. Griffith: one order, no holding, two things every jail still owes"
+        ],
+        "thumbnail": {
+          "text": "POLICY MAY CHANGE. CONDUCT DOES NOT.",
+          "redWord": "CONDUCT",
+          "visual": "the Supreme Court's November 9 order list with the Roybal entry highlighted"
+        },
+        "hook": "On November 9, 2026 the Supreme Court vacated a Tenth Circuit decision about a transgender detainee's jail housing and strip search and sent it back for another look. The order decides nothing. The standard for the policy question is unsettled. The rules for how a search is conducted, and the PREA requirements, do not move."
+      }
+    ]
   },
   "quiz": [
     {
