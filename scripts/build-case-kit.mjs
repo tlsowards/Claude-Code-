@@ -122,6 +122,11 @@ function guardHits(c) {
 }
 
 // ---- Kit ------------------------------------------------------------------------------------------
+const missing = ids.filter((id) => !existsSync(resolve(caseDir, `${id}.json`)));
+if (missing.length) {
+  console.error(`No case file for: ${missing.join(', ')} (expected content/cases/<id>.json)`);
+  process.exit(1);
+}
 const all = ids.map((id) => JSON.parse(readFileSync(resolve(caseDir, `${id}.json`), 'utf8')));
 const excluded = [];
 const cases = all.filter((c) => {

@@ -4,7 +4,7 @@
 // in practice, how to train it, and the briefing room points. Coverage and caution notes are internal
 // research records and are never narrated. Pin cites are dropped from the spoken text.
 // Usage: node scripts/build-case-narration.mjs graham-v-connor [more ids...]
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -71,6 +71,11 @@ export function narrateCase(c) {
 const ids = process.argv.slice(2);
 if (ids.length === 0) {
   console.error('Usage: node scripts/build-case-narration.mjs <case id> [more ids...]');
+  process.exit(1);
+}
+const missing = ids.filter((id) => !existsSync(resolve(caseDir, `${id}.json`)));
+if (missing.length) {
+  console.error(`No case file for: ${missing.join(', ')} (expected content/cases/<id>.json)`);
   process.exit(1);
 }
 for (const id of ids) {
