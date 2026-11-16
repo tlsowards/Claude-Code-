@@ -93,7 +93,7 @@ main { flex: 1; width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 20
   padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
   border-top: 2px solid var(--gold);
 }
-.bottomnav a { color: var(--nav-fg); text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 0.68rem; padding: 4px 0; opacity: 0.8; }
+.bottomnav a { color: var(--nav-fg); text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 0.68rem; padding: 4px 0; opacity: 0.8; text-align: center; line-height: 1.1; }
 .bottomnav a.active { opacity: 1; color: var(--nav-active); font-weight: 600; }
 .bottomnav svg { width: 22px; height: 22px; }
 
