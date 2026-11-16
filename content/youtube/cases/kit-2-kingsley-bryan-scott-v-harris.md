@@ -527,7 +527,7 @@ Correct answer for the follow-up reply: B. The court based the classification on
 
 Decision: Scott v. Harris, Supreme Court of the United States, April 30, 2007 (published), 550 U.S. 372 (2007), docket 05-1631.
 
-Audio: not rendered yet; render it with scripts/make-audio-elevenlabs.mjs --case before building the video. Narration script: content/narration/cases/scott-v-harris.txt. Case page: https://app.sowardsconsulting.com/cases/scott-v-harris.
+Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-scott-v-harris.mp3 (16 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/scott-v-harris.txt. Case page: https://app.sowardsconsulting.com/cases/scott-v-harris.
 
 ### Title options
 
