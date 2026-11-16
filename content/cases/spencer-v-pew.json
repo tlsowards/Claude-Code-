@@ -1,0 +1,92 @@
+{
+  "id": "spencer-v-pew",
+  "name": "Spencer v. Pew",
+  "court": "Ninth Circuit (from the District of Arizona)",
+  "courtKey": "ca9",
+  "docket": "21-15521",
+  "citation": "No. 21-15521 (9th Cir. Sept. 16, 2024) (published opinion)",
+  "decided": "September 16, 2024",
+  "status": "published",
+  "topic": "Excessive force and qualified immunity, violent handcuffing struggle followed by an officer's knee and body weight on a handcuffed prone subject's upper back and neck while he said he could not breathe",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "restraint-and-asphyxia",
+    "qualified-immunity",
+    "takedowns-and-control"
+  ],
+  "published": "2026-11-16",
+  "summary": "After a three and a half minute fight to handcuff a man who had shoved an officer and given a false name, one officer knelt with his body weight on the handcuffed man's upper back and neck for nearly three minutes while the man said four times that he could not breathe. The Ninth Circuit granted qualified immunity for everything up to the handcuffing but held that Drummond v. City of Anaheim squarely governed the post handcuffing compression and denied immunity to that officer. It is the modern restatement of Drummond.",
+  "coverage": [
+    "The opinion was read in full from the Ninth Circuit's own server at https://cdn.ca9.uscourts.gov/datastore/opinions/2024/09/16/21-15521.pdf (28 slip opinion pages, opinion by Judge Collins, joined by Judges Nguyen and Lee, with eight footnotes and a staff summary that is not part of the opinion), converted with pdftotext.",
+    "The slip opinion is marked FOR PUBLICATION. It does not carry a Federal Reporter citation, and the F.4th citation was not confirmed from any primary source read for this brief, so the citation field gives the docket and filing date only.",
+    "The opinion's pin cites to Drummond (343 F.3d at 1054 to 1059) were used to locate passages in the Drummond archive copy, which lacks page breaks.",
+    "The district court's summary judgment order and proceedings after remand were not read. Body camera footage described in the opinion was not viewed; the facts are as the court recited them."
+  ],
+  "facts": "The facts are taken in Spencer's favor, except where undisputed body camera video from Maricopa County deputies established timing and events.\n\nOn March 21, 2018, Mesa, Arizona, Officers Pew and Rozema stopped a car that pulled out in front of their unmarked vehicle. Passenger Cole Spencer appeared nervous and gave a false name. A records check showed the mismatch, and Rozema ordered him out and told him he was under arrest. As Spencer stepped out, Rozema grabbed and twisted his wrist. Spencer shoved Rozema in the chest with his shoulder. An officer punched Spencer in the face and knocked him down. Spencer later pleaded guilty to aggravated assault, a felony, for the shove.\n\nIt took the officers roughly three and a half minutes of wrestling to handcuff Spencer. Pew used a taser at least four times, and officers punched and kicked Spencer in the face. Spencer admitted he did not give up his hands when ordered, but said he told the officers his hands were locked up from the taser, and he denied throwing any punch, kick, or strike. Video showed Pew kneeing Spencer in the face, slamming his head into the ground, tasing his neck for about twelve seconds, and applying what Pew's report called a carotid control technique while Deputy Macklin lay on top of Spencer. The officers had to chain two sets of handcuffs together to secure his hands.\n\nOnce Spencer was handcuffed, Pew got up and placed a knee on his upper back. Spencer squirmed, said please stop and please help me, and said I can't breathe. Officers responded that if he was screaming and fighting he could breathe. When Spencer tried to turn off his stomach, Pew flipped him back and held him down with his knee. Except for a few seconds, Pew had one or both knees on Spencer's back for nearly three minutes, during which Spencer complained at least four times that he could not breathe. The officers eventually let Spencer turn onto his side, and Pew stood up a few seconds later. He claimed two fractured vertebrae in his lower back and lingering pain and numbness.\n\nSpencer sued the four officers under section 1983. The district court granted summary judgment to all of them, holding that no clearly established law prohibited the force used against an actively resisting arrestee and that Deputy Shall used no force.",
+  "holding": "Affirmed in part, reversed in part, and remanded. The court divided the encounter at the moment of handcuffing.\n\nForce up to handcuffing: qualified immunity. The court affirmed on the clearly established law prong only, without deciding whether the pre handcuffing force violated the Fourth Amendment. Outside an obvious case, the plaintiff must identify precedent that squarely governs the specific facts. Under Graham v. Connor, the severity factor favored the officers because the shove was a felony aggravated assault; a jury could find Spencer never struck the officers after the shove, so any threat was primarily the incidental result of the difficulty of handcuffing him; and although a jury could find he was not fleeing, the video indisputably showed that it took very substantial effort by three officers over several minutes to get a linked set of double handcuffs on him. This was not an obvious case, and the precedents Spencer cited were materially distinguishable.\n\nForce after handcuffing: no qualified immunity for Pew. The court held that Drummond v. City of Anaheim is not materially distinguishable from Pew's post handcuffing conduct. Drummond held that the force was severe because officers pressed their weight on the neck and torso of a handcuffed man begging for air, that once prone and cuffed he posed only a minimal threat and a jury could find he was not resisting, and that any reasonable officer should have known that squeezing the breath from a compliant, prone, and handcuffed individual despite his pleas for air involves a degree of force greater than reasonable. Here, once Spencer was cuffed, Pew placed his full body weight on Spencer's upper back and neck, kept one or both knees there for nearly three minutes, and Spencer complained at least four times that he could not breathe. Although Spencer continued to move somewhat, he was handcuffed and surrounded by multiple officers, and a jury could find he was no longer providing any serious resistance. Some force to check his remaining movements might have been warranted, but every reasonable officer would recognize that full body weight compression of a then largely compliant, prone, handcuffed person despite his pleas for air was greater than reasonable.\n\nThe differences from Drummond were not material: that Drummond was mentally ill rather than a person who had resisted handcuffing, that two officers rather than one applied the weight, and that Drummond's injuries were far worse. In a footnote the court rejected reliance on Rivas-Villegas v. Cortesluna, where the knee on the back lasted no more than eight seconds, and declined to decide whether LaLonde v. County of Riverside also clearly established the violation.\n\nOther officers. The court rejected integral participant liability for Rozema, Macklin, and Shall. Macklin leaned on Spencer's legs and Shall applied leg shackles while Pew's knee was on Spencer's back, but there was no evidence they knowingly acquiesced in Pew's conduct as part of a common plan or set in motion acts they should have known would cause it.",
+  "dissent": "None. The panel was unanimous.",
+  "notDecided": "Whether the force used before handcuffing (punches, knee strikes, head slams, taser applications, and the neck hold) violated the Fourth Amendment. The court resolved that phase on the clearly established law prong alone and expressed no view on the constitutional question.\n\nWhether Pew is in fact liable. The court held a jury could find a violation of clearly established law and remanded for proceedings against Pew. No damages were awarded.\n\nWhether LaLonde v. County of Riverside independently clearly established the post handcuffing violation. The court found Drummond sufficient and left the LaLonde question open.\n\nMunicipal liability. The claims against the city, county, and their agencies were dismissed at screening and were not before the court.\n\nWhether an officer who holds a handcuffed subject's legs while another officer compresses the back has a duty to intervene. The court decided the other officers' liability under the integral participant doctrine and found the evidence insufficient; it did not analyze a failure to intervene theory.",
+  "inPractice": "Spencer is Drummond applied to a modern, video recorded fight, and it tells officers two things at once. First, the court gave the officers substantial room for the force used during a prolonged, genuine struggle to handcuff a felony assault suspect. Second, the court drew a hard line at the handcuffs. Once Spencer was cuffed and surrounded, full body weight on his upper back and neck for nearly three minutes while he said four times that he could not breathe was conduct every reasonable officer should have known was excessive.\n\nThe court's answer to the usual objection is important. Spencer was still moving. The officers told him that if he could scream he could breathe. The court held that some force to check his movements might have been warranted, but that continued movement by a cuffed, surrounded subject did not justify compression of the torso and neck in the face of pleas for air. Neither did the fact that this subject had just fought, that only one officer was applying weight, or that the injuries turned out to be less than Drummond's.\n\nThe team lesson is also plain. The deputies holding the legs and applying shackles were not held liable because there was no evidence they joined in Pew's conduct. The court did not approve what they did. An officer who sees a partner kneeling on a cuffed subject's neck while the subject says he cannot breathe should treat that as a moment to act.",
+  "trainIt": "Use Spencer as the capstone of the restraint block because it contains both halves of the lesson in one encounter. Show the timeline: a three and a half minute fight the court would not second guess, then a transition at the cuffs, then nearly three minutes of compression the court held was clearly unlawful.\n\nDrill the post cuffing transition. After a hard, realistic resistance scenario, require the arrest team to get weight off the upper back and neck, move the subject to a side or seated position, and respond to any statement about breathing with a visible change in control. Script the role player to keep squirming and to say he cannot breathe. Debrief any team that answers with if you can talk you can breathe; the court quoted that response and held the conduct excessive anyway.\n\nTeach the differences the court called immaterial. The Ninth Circuit rejected the distinctions based on mental illness, number of officers, and severity of injury. The rule is about compression of a cuffed, largely compliant, prone person who says he cannot breathe, regardless of what came before.\n\nTeach the team lesson from the integral participant holding. The other officers escaped liability on a narrow doctrine, not because their conduct was approved. Pair this with the intercede duty under California Penal Code section 7286 and department policy.\n\nState the posture accurately: qualified immunity was denied to one officer on summary judgment and the case was remanded. There was no finding of liability.",
+  "caution": "The opinion was read in full from the Ninth Circuit's published slip opinion; the Federal Reporter citation was not confirmed and is omitted. The facts are Spencer's version where disputed, supplemented by body camera video as the court described it. The court decided the pre handcuffing phase only on the clearly established prong and did not say that force was constitutional. The reference to California Penal Code section 7286 in the training section is Dr. Sowards' teaching point, not part of this Arizona case.",
+  "applications": [
+    {
+      "title": "The handcuffs are the dividing line",
+      "body": "The court granted immunity for everything up to the handcuffing and denied it for the knee on the back and neck afterward. Officers should treat the moment of cuffing as the moment to remove weight from the torso and neck and move to a recovery position."
+    },
+    {
+      "title": "If you can talk you can breathe is not a defense",
+      "body": "Officers told Spencer that if he was screaming and fighting he could breathe. The court recited that exchange and still held that continuing full body weight compression despite at least four pleas for air was clearly excessive."
+    },
+    {
+      "title": "Residual squirming does not justify compression",
+      "body": "Spencer kept moving after he was cuffed. The court said some force to check his movements might have been warranted, but a jury could find he was no longer seriously resisting, and compression of the back and neck in the face of pleas for air was unreasonable."
+    },
+    {
+      "title": "Drummond applies to fighters too",
+      "body": "The court held that the differences from Drummond (a resisting felony suspect instead of a mentally ill man, one officer instead of two, lesser injuries) were not material. Officers cannot assume that a hard fight before the cuffs licenses compression after them."
+    },
+    {
+      "title": "Partners were not liable, but were not approved",
+      "body": "The deputies holding Spencer's legs and applying shackles avoided liability only because there was no evidence they joined Pew's conduct as part of a common plan. Train officers to recognize and interrupt compression of a cuffed subject who says he cannot breathe."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "How did the Ninth Circuit treat the force used to get Spencer into handcuffs?",
+      "options": [
+        "It held the force was constitutional and reasonable",
+        "It held the force was excessive and denied qualified immunity",
+        "It granted qualified immunity on the clearly established law prong only, without deciding whether the force violated the Fourth Amendment",
+        "It remanded for a jury to decide whether the force was clearly unlawful"
+      ],
+      "answer": 2,
+      "teach": "The court found this was not an obvious case and that no precedent squarely governed, so the officers were immune for that phase. It expressly did not decide whether the pre handcuffing force was constitutional."
+    },
+    {
+      "q": "Why did the court deny qualified immunity to Officer Pew for his conduct after handcuffing?",
+      "options": [
+        "Because Spencer suffered fractured vertebrae",
+        "Because Drummond v. City of Anaheim was not materially distinguishable: full body weight on the upper back and neck of a handcuffed, largely compliant, prone person who repeatedly said he could not breathe",
+        "Because Pew had used a taser on Spencer's neck",
+        "Because the other officers failed to intervene"
+      ],
+      "answer": 1,
+      "teach": "The court held Drummond squarely governed and that the factual differences (mental illness, number of officers, severity of injury) were not material to Drummond's controlling holding."
+    },
+    {
+      "q": "What did the court decide about the other three officers' liability for Pew's post handcuffing conduct?",
+      "options": [
+        "They were liable as integral participants because they held Spencer down",
+        "They were liable for failing to intervene",
+        "They were not liable because there was no evidence they knowingly acquiesced in Pew's conduct as part of a common plan or set it in motion",
+        "The court remanded their liability for trial"
+      ],
+      "answer": 2,
+      "teach": "Under Peck v. Montoya's integral participant doctrine, holding Spencer's legs and applying shackles while Pew knelt on him did not create a triable issue without evidence of a common plan. The court did not approve their conduct; it applied a narrow liability rule."
+    }
+  ]
+}

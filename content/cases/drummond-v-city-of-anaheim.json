@@ -1,0 +1,92 @@
+{
+  "id": "drummond-v-city-of-anaheim",
+  "name": "Drummond v. City of Anaheim",
+  "court": "Ninth Circuit (from the Central District of California)",
+  "courtKey": "ca9",
+  "docket": "02-55320",
+  "citation": "343 F.3d 1052 (9th Cir. 2003)",
+  "decided": "September 10, 2003",
+  "status": "published",
+  "topic": "Excessive force and qualified immunity, prone restraint of a handcuffed, mentally ill man with officers' body weight on his back and neck, compression asphyxia",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "restraint-and-asphyxia",
+    "mental-health-and-disability",
+    "qualified-immunity"
+  ],
+  "published": "2026-11-16",
+  "summary": "Officers taking an unarmed, hallucinating man into custody for his own safety knocked him down, handcuffed him face down, and then, on the plaintiff's evidence, two officers knelt on his back and neck for a substantial period while he begged for air; he went into cardiac arrest and never regained consciousness. The Ninth Circuit held that, on those facts, the force was excessive and that any reasonable officer would have known it, even without a prior case on point. It is the anchor case for compression asphyxia and prone restraint training.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/343/343.F3d.1052.02-55320.html (majority opinion by Judge Reinhardt, joined by Judges Browning and Pregerson, with eight footnotes). The archive copy carries the reporter citation 343 F.3d 1052 in its heading, which confirms the citation, but it does not mark internal page breaks, so pin cites are not given here except where the opinion's own cross references (supra at 1059, infra at 1061) or the Ninth Circuit's later quotation of the case in Spencer v. Pew (pin cites 1054 to 1059) locate a passage.",
+    "The docket number, filing date, panel, and district court information are taken from the caption of the archived opinion.",
+    "The district court's summary judgment order and proceedings after remand were not read and are described only as the Ninth Circuit described them.",
+    "The Anaheim training bulletin (No. 98-14, April 1998) is described only as the opinion quotes it."
+  ],
+  "facts": "The facts are the evidence taken in Drummond's favor, because the district court had granted summary judgment to the officers (343 F.3d at 1054 n.1).\n\nOn March 25, 1999, Brian Drummond's fiancee called Anaheim police for help getting him to a hospital. Drummond had a history of bipolar disorder and schizophrenia, had run out of medication, and was hallucinating and paranoid. Four officers responded, concluded he did not meet the criteria for an involuntary psychiatric hold under Welfare and Institutions Code section 5150, and declined to take him into custody.\n\nThe next night a neighbor called because he feared Drummond would hurt himself by darting into traffic. Officers Ned, Valentine, and McElhaney found Drummond, unarmed, hallucinating and agitated, in a convenience store parking lot. They called for an ambulance to transport him under section 5150, but before it arrived they decided to take him into custody for his own safety.\n\nIndependent eyewitnesses saw Officer Ned knock Drummond to the ground, where the officers handcuffed his arms behind his back as he lay on his stomach. Although Drummond offered no resistance, McElhaney put his knees into Drummond's back and placed his body weight on him. Ned, who weighed about 225 pounds to Drummond's 160, did the same, with one knee on Drummond's neck. Two witnesses said Drummond repeatedly told the officers he could not breathe and that they were choking him. The officers kept their weight on his back and neck, and one witness said they were laughing.\n\nAbout twenty minutes after the takedown, a fourth officer arrived and the officers applied a hobble restraint to Drummond's ankles. One minute later he went limp. The officers checked his pulse, removed the handcuffs and hobble, turned him over, and attempted CPR until paramedics arrived. Drummond was revived about seven minutes after losing consciousness, but he suffered brain damage and was left in a permanent vegetative state. A treating neurologist declared that, to a reasonable medical probability, Drummond suffered cardiopulmonary arrest from mechanical compression of his chest wall while face down with officers on his back.\n\nDrummond sued under 42 U.S.C. section 1983 and state law. The district court granted summary judgment to all defendants, finding no constitutional violation and, in the alternative, that the law was not clearly established, and dismissed the state and municipal claims as dependent on a constitutional violation.",
+  "holding": "Reversed in part, vacated in part, and remanded for trial. Applying the two step Saucier v. Katz sequence, the court held first that the facts, taken in Drummond's favor, showed a Fourth Amendment violation, and second that the violation was clearly established in 1999.\n\nThe nature of the force. The court called the force severe and, under the circumstances, capable of causing death or serious injury: two officers continued to press their weight on Drummond's neck and torso as he lay handcuffed on the ground and begged for air. It noted that prone, handcuffed, agitated individuals have suffocated under the weight of restraining officers in what has come to be known as compression asphyxia.\n\nThe need for the force. Under Graham v. Connor, no crime was at issue; the officers were there because a neighbor feared Drummond would hurt himself. Drummond may have been a threat before he was handcuffed, and he did not claim the takedown or handcuffing was excessive, but once prone and cuffed a jury could find he posed only a minimal threat, and an independent eyewitness said he was not resisting. All three Graham factors permitted only minimal force at that point. Quoting Deorle v. Rutherford, the court added that where it is or should be apparent that the individual is emotionally disturbed, that is a factor in the reasonableness analysis.\n\nThe balance. Some force was justified to keep Drummond from hurting himself or the officers, but after he was handcuffed and on the ground the force applied was, on these facts, clearly excessive compared to the minimal amount warranted. The officers did not remove the pressure despite pleas for air that should have alerted them to serious respiratory distress. Any reasonable person, the court said, should have known that squeezing the breath from a compliant, prone, and handcuffed individual despite his pleas for air involves a degree of force greater than reasonable. The court also relied on an Anaheim Police Department training bulletin issued in April 1998 warning that kneeling on a subject's back or neck can cause compression asphyxia and death.\n\nClearly established law. A reasonable officer would have had fair warning that the force was unlawful even without a Ninth Circuit case on the same facts, citing Hope v. Pelzer and Anderson v. Creighton. The court pointed to local publicity about compression asphyxia deaths, prior district court decisions describing the danger of pressure on a prone, bound, agitated detainee, and the department's own bulletin. In a footnote it distinguished Estate of Phillips v. City of Milwaukee (one knee gently on a shoulder for under a minute while the subject struggled violently) and Price v. County of San Diego (incidental pressure for a few seconds on a struggling subject); in neither were officers put on notice of respiratory distress.\n\nBecause the dismissal of the municipal and state law claims rested entirely on the no violation ruling, the court vacated that part of the judgment and remanded those claims without deciding them.",
+  "dissent": "None. The panel was unanimous.",
+  "notDecided": "Whether the officers in fact used excessive force. The court reversed summary judgment and sent the case to a jury; it did not find the officers liable.\n\nWhether the force was deadly force under Tennessee v. Garner. The court noted in a footnote that the force, though not extreme in the abstract, may be reasonably likely to cause death when applied under certain circumstances, but it did not decide the Garner question because the ordinary Graham balance resolved the appeal.\n\nWhether the takedown and handcuffing were themselves excessive. Drummond did not challenge that force, and the court analyzed only what happened after he was prone and cuffed.\n\nThe municipal liability and state law claims. They were revived and remanded without a ruling on their merits.\n\nWhether the plaintiff's police practices expert would qualify to testify at trial. The court said his declaration was not needed to reach its result.",
+  "inPractice": "Drummond draws the line officers most need to recognize: the moment a subject is prone and handcuffed, the justification for body weight on the torso and neck largely disappears unless the subject is still actively fighting. What it condemned was continued compression of a cuffed, non-resisting person after he said he could not breathe.\n\nThree practical points follow. First, a statement that the subject cannot breathe is a signal to act, not to argue. The court treated the pleas for air as something that should have alerted the officers to respiratory distress, and treated the failure to relieve the pressure as the core of the violation. Second, body weight on the neck or upper back of a prone, cuffed subject is force that a court will measure against the risk of asphyxia, not a passive control position. Third, department training on positional and compression asphyxia is evidence. Anaheim had warned its officers in writing a year earlier, and the court used that bulletin both to judge the force and to show the officers were on notice.\n\nThe mental health component matters too. The officers were there to help a man in crisis, not to arrest a suspect. The court said that where mental illness is or should be apparent, it is a factor in the Graham balance, and that causing grievous injury to a person taken into custody for his own safety serves no governmental interest.",
+  "trainIt": "Teach Drummond alongside Tatum v. City and County of San Francisco and Spencer v. Pew so students see the full range: brief prone positioning of a resisting subject with no crushing pressure (Tatum, no violation) versus sustained body weight on a cuffed subject who says he cannot breathe (Drummond and Spencer, violation, no immunity).\n\nBuild the scenario around the transition. Run a resisting subject to the ground, get the cuffs on, and then require students to verbalize and demonstrate what changes: weight off the back and neck, move to a recovery or seated position, assess breathing, and keep assessing. Make a scripted statement by the role player that he cannot breathe the cue that must produce a visible change in what the officers do, and debrief any team that keeps the weight on.\n\nUse the training bulletin lesson. Drummond's department had told its officers in writing that kneeling on a back or neck can cause compression asphyxia. Expect your own lesson plans and bulletins on asphyxia to be read the same way, and document that officers received them.\n\nTeach the posture accurately. Drummond reversed summary judgment and sent the case to a jury on the plaintiff's version of events. It did not find the officers liable, did not decide whether the force was deadly force, and did not rule on the city's liability. The legal lesson is about what a reasonable officer must know, and the court said a reasonable officer must know this.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which does not show reporter page breaks; pin cites are given only where the opinion's own cross references or the later Spencer v. Pew quotation locate them. The facts are the plaintiff's evidence taken in his favor at summary judgment; the officers disputed them. The case was remanded for trial and the outcome on remand was not researched. Nothing here should be described as a finding of liability.",
+  "applications": [
+    {
+      "title": "Cuffed and prone changes the Graham math",
+      "body": "The court accepted that the takedown and handcuffing were not challenged, then held that all three Graham factors permitted only minimal force once Drummond was cuffed and face down. Officers should treat the click of the cuffs as the point where body weight on the torso and neck must come off unless active resistance continues."
+    },
+    {
+      "title": "I cannot breathe is a command to reassess",
+      "body": "Repeated pleas for air, witnessed by bystanders, were central to the court's holding that the force was unreasonable and that the officers were on notice. Relieve the pressure, reposition, and check breathing. Do not debate whether the subject can really breathe."
+    },
+    {
+      "title": "Your own training bulletin is evidence",
+      "body": "Anaheim had warned officers in April 1998 that kneeling on a back or neck can cause compression asphyxia and death. The court used the bulletin both to judge reasonableness and to show the officers had fair warning. Know what your agency has told you about restraint and asphyxia."
+    },
+    {
+      "title": "Mental illness is part of the balance",
+      "body": "Quoting Deorle, the court said that where it is or should be apparent that a person is emotionally disturbed, that fact must be considered under Graham. A person being taken into custody for his own safety is not a suspect in a serious crime."
+    },
+    {
+      "title": "No case on point is not a defense here",
+      "body": "The court held that reasonable officers did not need a Ninth Circuit case with the same facts to know that kneeling on the back and neck of a compliant, cuffed detainee who says he is choking is excessive. This is one of the holdings courts now cite as the obvious case."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "In Drummond, what conduct did the Ninth Circuit hold was, on the plaintiff's evidence, constitutionally excessive?",
+      "options": [
+        "Knocking Drummond to the ground to handcuff him",
+        "Two officers pressing their weight on the neck and torso of a prone, handcuffed, non-resisting man despite his pleas for air",
+        "Applying a hobble restraint to his ankles",
+        "Deciding to take him into custody before the ambulance arrived"
+      ],
+      "answer": 1,
+      "teach": "Drummond did not challenge the takedown or handcuffing. The court analyzed only the continued compression after he was cuffed and prone, and held that was excessive compared to the minimal force warranted."
+    },
+    {
+      "q": "What role did the Anaheim Police Department's 1998 training bulletin play in the decision?",
+      "options": [
+        "None; the court said department policy is irrelevant to the Fourth Amendment",
+        "It was dispositive and established the constitutional rule by itself",
+        "The court considered it as relevant both to whether the force was unreasonable and to whether reasonable officers were on notice of the danger",
+        "It showed that the officers followed policy and therefore acted reasonably"
+      ],
+      "answer": 2,
+      "teach": "The court said training materials are not dispositive but may be considered, and it relied on the bulletin's warning about compression asphyxia at both steps of the qualified immunity analysis."
+    },
+    {
+      "q": "What was the outcome in Drummond?",
+      "options": [
+        "The officers were found liable and damages were awarded",
+        "The court held the force was deadly force under Tennessee v. Garner",
+        "Summary judgment for the officers was reversed and the case was remanded for trial; the municipal and state claims were revived",
+        "The officers received qualified immunity because no prior case had the same facts"
+      ],
+      "answer": 2,
+      "teach": "The court held a jury could find a violation and that the law was clearly established, so it denied qualified immunity and sent the case back. It expressly did not decide the Garner deadly force question."
+    }
+  ]
+}

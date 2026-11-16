@@ -1,0 +1,90 @@
+{
+  "id": "wall-v-county-of-orange",
+  "name": "Wall v. County of Orange",
+  "court": "Ninth Circuit (from the Central District of California)",
+  "courtKey": "ca9",
+  "docket": "02-56032",
+  "citation": "364 F.3d 1107 (9th Cir. 2004)",
+  "decided": "April 16, 2004",
+  "status": "published",
+  "topic": "Arrest without probable cause and excessive force: a compliant man walking away as ordered allegedly attacked from behind, slammed into a car, handcuffed extremely tight, thrown into a patrol car, and left in painful cuffs despite requests to loosen them",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "handcuffing-and-detention",
+    "qualified-immunity"
+  ],
+  "published": "2026-11-16",
+  "summary": "A dentist in a dispute with a car wash over giving his address was walking toward his car as a deputy ordered when, on his account, the deputy grabbed him from behind, twisted his arm, slammed his face into a car, cuffed him extremely tight, threw him head first into a hot patrol car, and ignored two requests to loosen the cuffs; he suffered a nerve injury that ended his dental career. The Ninth Circuit reversed summary judgment because the district court had adopted the defendants' facts, and held that on the plaintiff's version both the arrest and the force violated clearly established law, including the rule that overly tight handcuffing can be excessive force.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/364/364.F3d.1107.02-56032.html (opinion by Judge Noonan, joined by Judges Skopil and Berzon; the opinion is short and has no footnotes). The archive heading confirms the citation 364 F.3d 1107. The archive copy does not mark internal page breaks, so pin cites are not given.",
+    "The docket number, argument date, and filing date are taken from the caption of the archived opinion.",
+    "The district court's May 15, 2002 statement of uncontroverted facts and the record below were not read. Deputy Watson's version of events is described only to the extent the opinion mentions it (that he arrested Wall because Wall stopped walking). Proceedings after remand were not researched."
+  ],
+  "facts": "The facts are Wall's version, presented in the light most favorable to him because the district court had granted summary judgment to the defendants.\n\nOn October 9, 1998, Dr. Gerald Wall, a dentist, took his vehicle to a car wash and oil change business. The manager, George Chala, Jr., asked for his home address and phone number. Wall refused, citing his privacy. Chala said it was store policy. Wall asked for his car back; Chala refused because work had begun. Wall may have raised his voice but did not use profanity. Chala approached him closely with clenched fists and said he would call the police; Wall waited for them.\n\nDeputy Colver arrived first, then Deputy Watson, who spoke with the owner. Wall approached and said he wanted his car so he could leave. Watson twice told him to get out of there; Wall twice said he would not leave without his car. On learning where the car would be delivered, Wall agreed to leave and began walking toward it with Watson behind him. As they walked, Wall told Watson in an elevated, agitated voice that Chala had assaulted him and that Watson should investigate. Watson appeared agitated and said that was not his problem. Wall never stopped walking.\n\nSuddenly and without warning, Watson grabbed Wall from behind by the right wrist, bent and twisted his arm, and forced him face first into a car, smashing his face, chest, and glasses. Watson handcuffed him extremely tight behind his back, picked him up by the cuffed arms, and threw him upside down and head first into the patrol car, which felt like 80 or 90 degrees inside. Wall waited about 20 minutes, asked Watson to please loosen the cuffs when he returned, and asked again en route to the station. He spent the night in jail. He was charged with resisting or obstructing an officer and with interfering with a business; all charges were dismissed. A neurologist declared that Wall sustained an injury to his right median nerve in the incident and was forced to give up dentistry.\n\nWall sued Watson and the county under section 1983 and state law. The district court adopted the defendants' proposed statement of facts and conclusions of law almost verbatim, found Watson's actions objectively reasonable, granted qualified immunity, and dismissed the Monell and state claims as dependent on the claim against Watson.",
+  "holding": "Reversed and remanded for trial.\n\nThe district court resolved disputed facts. The court held that by relying on the defendants' statement of facts, the district court had decided as fact matters Wall disputed: that he swore and waved his arms, refused to leave, interfered with the business, alarmed other witnesses, and refused Watson's repeated orders; and that he never asked to have the cuffs loosened. It also omitted any findings about the violence of the arrest. In the court's words, by deciding to rely on the defendants' statement of fact, the district court became a jury. Where facts are disputed, their resolution and determinations of credibility are for the jury. The court also rejected the defendants' argument that an unentered pretrial order barred consideration of the arrest details.\n\nArrest without probable cause. On Wall's version, he was walking away as directed and merely asked the deputy to investigate a possible assault. Watson said he arrested Wall because Wall stopped walking; Wall said he never stopped. Wall never intimidated or obstructed employees or customers in Watson's presence, and California Penal Code section 836(a)(1) permits a warrantless misdemeanor arrest only for an offense committed in the officer's presence. If Wall's account is believed, he was arrested without probable cause in violation of the Fourth Amendment.\n\nExcessive force. The arrest was accomplished by violence, in violation of the Fourth Amendment. Applying Graham v. Connor's factors (severity of the crime, immediate threat, active resistance or flight), the court held that if Wall's account is true, the balance indicates the force was excessive.\n\nClearly established. On Wall's version a reasonable officer would know the arrest was unlawful: he had agreed to walk away and was doing so, and simply turned his head to ask an officer to investigate a possible assault (citing Palmer v. Sanderson and Beier v. City of Lewiston). A reasonable officer would also know there were no grounds to arrest under section 602.1 unless the intimidation or obstruction occurred in the officer's presence, and state law requirements are relevant to the reasonableness of an arrest. On the force, Watson would have violated a clearly established right to be free of excessive force in making the arrest and in continuing the restraint by handcuffs that hurt and damaged Wall's wrist (citing Alexander v. County of Los Angeles). Quoting Fontana v. Haskin, the court said the Fourth Amendment's reasonableness requirement prohibits more than the unnecessary strike of a nightstick, sting of a bullet, and thud of a boot, and it stated that it is well established that overly tight handcuffing can constitute excessive force, citing Meredith v. Erath and LaLonde v. County of Riverside.\n\nRemaining claims. Because the Monell claim had been dismissed only because the claim against Watson was dismissed, it was reinstated. The state law claims, dismissed with the federal claims, were revived, and the court expressed no view on them.",
+  "dissent": "None. The panel was unanimous.",
+  "notDecided": "Whether Watson actually did what Wall described. The court reversed summary judgment because the facts were disputed and sent the case to a jury; it made no finding that Watson used excessive force or arrested Wall without probable cause.\n\nThe merits of the Monell claim against the county and the state law claims. Both were reinstated without any ruling.\n\nWhether the heat of the patrol car or the 20 minute wait were independently unreasonable. The court recited those facts but analyzed the arrest and the force generally.\n\nThe outcome on remand.",
+  "inPractice": "Wall is a short opinion with a long list of lessons. The first is about the arrest. A person who is complying with an order to leave, and who complains about how he was treated while he does so, is not resisting or obstructing. The deputy said he arrested Wall for stopping; Wall said he never stopped.\n\nThe second lesson is about force on a non-resisting person. On Wall's account there was no warning, no command, and no resistance before he was grabbed from behind, arm twisted, and slammed into a car. The court held that if that is what happened, the Graham factors show the force was excessive and any reasonable officer would have known it.\n\nThe third lesson is the one this case shares with Palmer, LaLonde, and Meredith: the court said it is well established that overly tight handcuffing can constitute excessive force, and it treated continuing the restraint in cuffs that hurt and damaged his wrist, after two requests to loosen them, as part of the clearly established violation. A median nerve injury that ended a professional career shows why courts take the complaint seriously.\n\nFinally, the case is a lesson about records. The district court adopted the defendants' facts and was reversed for becoming a jury. In the field, the equivalent is a report that omits the subject's version and complaints. Record what the subject said about the cuffs and what the officer did in response.",
+  "trainIt": "Teach Wall with Palmer, LaLonde, and Meredith as the Ninth Circuit's statement that tight cuffs plus ignored complaints is a clearly established excessive force claim. Wall adds the clearest injury in the group, a nerve injury that ended a dental career, and the clearest example of a compliant subject.\n\nRun the compliance scenario. The subject has been told to leave and is walking away, talking in an agitated voice about how he was treated and demanding an investigation. Students must manage the verbal conflict without converting compliance into an arrest. Debrief the moment the role player turns his head and raises his voice; that is the moment the deputy allegedly attacked, and the court said a reasonable officer would know an arrest at that moment was unlawful.\n\nTrain the misdemeanor in presence rule for California. Penal Code section 836(a)(1) requires that a misdemeanor be committed in the officer's presence for a warrantless arrest. Officers should be able to say what they personally saw before arresting on a 148 or 602.1 charge.\n\nRun the cuff and transport sequence with a complaint. The role player asks twice, politely, to have the cuffs loosened. Grade the response. Then discuss the transport details recited in the opinion: thrown head first into a hot car, 20 minutes waiting.\n\nState the posture: summary judgment reversed because facts were disputed; nothing proven against the deputy. The lesson is that this set of allegations, if believed, states a clearly established violation.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which does not show reporter page breaks. The facts are Wall's version taken in his favor on summary judgment; the deputy's account is largely not in the opinion. The appeal reversed summary judgment and remanded for trial; no liability was found and the outcome on remand was not researched.",
+  "applications": [
+    {
+      "title": "Complaining while complying is not resisting",
+      "body": "Wall was walking away as ordered and asked the deputy to investigate an assault. The court held that on his account a reasonable officer would know an arrest at that moment was unlawful."
+    },
+    {
+      "title": "Misdemeanor arrests need an offense in your presence",
+      "body": "Under California Penal Code section 836(a)(1), a warrantless misdemeanor arrest requires the offense to occur in the officer's presence. The court held that rule is relevant to Fourth Amendment reasonableness and that a reasonable officer would know it."
+    },
+    {
+      "title": "Overly tight handcuffing is well established excessive force",
+      "body": "The court said so directly, citing Meredith v. Erath and LaLonde, and treated continuing the restraint in cuffs that hurt and damaged the wrist as part of the clearly established violation."
+    },
+    {
+      "title": "Two polite requests were enough to put the deputy on notice",
+      "body": "Wall asked to have the cuffs loosened when the deputy returned to the car and again en route to the station. The district court adopted the deputy's claim that he was never told; the Ninth Circuit held that was a disputed fact for the jury."
+    },
+    {
+      "title": "The injury will be in the record",
+      "body": "A neurologist declared the incident caused a median nerve injury that ended Wall's dental career. Handcuff injuries can be serious and permanent, and courts will hear the medical evidence."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Why did the Ninth Circuit reverse the summary judgment in Wall?",
+      "options": [
+        "Because the deputy admitted using excessive force",
+        "Because the district court adopted the defendants' statement of facts, resolved disputes Wall contested, and omitted the violence of the arrest, thereby acting as a jury",
+        "Because the charges against Wall were dismissed",
+        "Because the county conceded Monell liability"
+      ],
+      "answer": 1,
+      "teach": "The court held that disputed facts and credibility are for the jury and that on Wall's version both the arrest and the force violated clearly established law."
+    },
+    {
+      "q": "What did the court say about tight handcuffing?",
+      "options": [
+        "Handcuffing is standard practice and cannot be excessive force",
+        "Tight handcuffing is excessive only if it causes a visible injury",
+        "It is well established that overly tight handcuffing can constitute excessive force, citing Meredith v. Erath and LaLonde",
+        "Tight handcuffing is a state law battery issue, not a Fourth Amendment issue"
+      ],
+      "answer": 2,
+      "teach": "The court treated continuing the restraint in cuffs that hurt and damaged Wall's wrist as part of a clearly established excessive force violation."
+    },
+    {
+      "q": "What California rule did the court say a reasonable officer would have known in deciding whether to arrest Wall?",
+      "options": [
+        "That a business owner's complaint is sufficient probable cause for any misdemeanor arrest",
+        "That a warrantless misdemeanor arrest requires probable cause that the offense was committed in the officer's presence",
+        "That refusing to give a home address to a business is a crime",
+        "That an officer may arrest anyone who raises his voice"
+      ],
+      "answer": 1,
+      "teach": "The court cited Penal Code section 836(a)(1) and held that state law requirements are relevant to assessing the reasonableness of an arrest under the Fourth Amendment."
+    }
+  ]
+}

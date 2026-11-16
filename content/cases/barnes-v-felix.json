@@ -1,0 +1,90 @@
+{
+  "id": "barnes-v-felix",
+  "name": "Barnes v. Felix",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "23-1239",
+  "citation": "605 U.S. 73 (2025)",
+  "decided": "May 15, 2025",
+  "status": "published",
+  "topic": "Fourth Amendment deadly force during a traffic stop; totality of the circumstances; rejection of the Fifth Circuit's moment of threat rule",
+  "settings": [
+    "field"
+  ],
+  "categories": [
+    "force-standards",
+    "deadly-force"
+  ],
+  "published": "2026-11-16",
+  "summary": "An officer jumped onto the doorsill of a car that began to pull away from a toll violation stop and fired two shots into it, killing the driver. The lower courts judged only the two seconds before the shots under the Fifth Circuit's moment of threat rule. A unanimous Supreme Court held that the Fourth Amendment reasonableness inquiry has no time limit: a court must consider the totality of the circumstances, including the events leading up to the use of force, and cannot put on chronological blinders. The Court did not decide whether the shooting was reasonable or how an officer's own creation of a dangerous situation factors in. It is taught as the current statement of the Graham totality test.",
+  "coverage": [
+    "The full opinion of the Court, the syllabus, and Justice Kavanaugh's concurrence were read from the Supreme Court's preliminary print at https://www.supremecourt.gov/opinions/24pdf/605us1r30_h315.pdf, which the Court's October Term 2024 slip opinion page lists for Barnes v. Felix. The preliminary print carries the official citation 605 U.S. 73 (2025), docket No. 23-1239, argued January 22, 2025, decided May 15, 2025. The preliminary print is subject to formal revision before the bound volume is published.",
+    "Pin cites in this brief are to the preliminary print pagination (pages 73 to 90).",
+    "The Fifth Circuit opinion (91 F.4th 393) and the district court opinion (532 F. Supp. 3d 463) were not read. They are described only as the Supreme Court described them.",
+    "The vote: Justice Kagan delivered the opinion for a unanimous Court. Justice Kavanaugh filed a concurring opinion joined by Justices Thomas, Alito, and Barrett.",
+    "No subsequent history on remand was verified for this brief."
+  ],
+  "facts": "The facts are as the Supreme Court recounted them, drawn largely from a dashcam recording. On the afternoon of April 28, 2016, Roberto Felix, Jr., a law enforcement officer patrolling a highway outside Houston, received a radio alert about a car with outstanding toll violations. He spotted the car, a Toyota Corolla, and activated his emergency lights. The driver, Ashtian Barnes, pulled over to the shoulder.\n\nFelix walked to the driver's door and asked for a license and proof of insurance. Barnes said he did not have his license with him and that the car was a rental in his girlfriend's name. As he spoke he rummaged through papers in the car, and Felix told him several times to stop digging around. Felix said he smelled marijuana and asked whether there was anything in the car he should know about. Barnes said he might have identification in the trunk, and Felix told him to open the trunk from his seat. Barnes did so and also turned off the ignition. All of this took less than two minutes.\n\nThen, with his right hand resting on his holster, Felix told Barnes to get out of the car. Barnes opened the door but did not get out; instead he turned the ignition back on. Felix drew his gun and, as the car began to move forward, jumped onto its doorsill. He twice shouted at Barnes not to move. With no visibility into the car, because his head was above the roof, he fired two quick shots inside. Barnes was hit but managed to stop the car. Felix radioed for backup; by the time it arrived Barnes was dead. About five seconds passed between the car starting to move and the car stopping. Two seconds passed between Felix stepping on the doorsill and his first shot.\n\nBarnes's mother sued under 42 U.S.C. section 1983, alleging that Felix used excessive force in violation of the Fourth Amendment. The district court granted summary judgment to Felix under the Fifth Circuit's moment of threat rule, which confined the inquiry to the two seconds before the first shot, when Felix was standing on the doorsill of a moving car. The court said a more robust examination might have aided the analysis but that circuit precedent bound it. The Fifth Circuit affirmed on the same basis. The panel's author, Judge Higginbotham, wrote separately to say the moment of threat doctrine was inconsistent with the Supreme Court's totality of the circumstances instruction, and that under the proper approach he would have found the shooting unreasonable. The Supreme Court granted certiorari.",
+  "holding": "Vacated and remanded. Justice Kagan wrote for a unanimous Court.\n\nThe standard. A claim that an officer used excessive force during a stop or arrest is analyzed under the Fourth Amendment, whose touchstone is reasonableness measured in objective terms. The question is whether the force was justified from the perspective of a reasonable officer on the scene, taking account of both the individual and governmental interests at stake (Graham, Mendez). That inquiry requires analyzing the totality of the circumstances (Garner). There is no easy to apply legal test or on/off switch; deciding whether force was reasonable demands careful attention to the facts and circumstances as then known to the officer. The severity of the crime, actions the officer took during the stop such as giving warnings or trying to control the encounter, and the stopped person's conduct all can carry weight.\n\nNo time limit. \"Most notable here, the 'totality of the circumstances' inquiry into a use of force has no time limit.\" The situation at the precise time of the shooting will often matter most, because it is the officer's choice in that moment that is under review. But earlier facts and circumstances may bear on how a reasonable officer would have understood and responded to later ones. Context can help either side: prior events may show why a reasonable officer would perceive otherwise ambiguous conduct as threatening, or instead as innocuous. The Court pointed to Plumhoff v. Rickard, where shots fired at a car that had come to a near standstill were justified partly because of the driver's outrageously reckless driving over the preceding five minutes.\n\nThe moment of threat rule rejected. The lower courts limited their view to the two seconds before the shooting and so could not consider the reasons for the stop, the earlier conduct of and interactions between the suspect and the officer, or whether the final two seconds would look different in a longer timeframe. The Court held that no rule that precludes consideration of prior events in assessing a police shooting is reconcilable with the fact dependent and context sensitive approach it has prescribed. \"A court deciding a use-of-force case cannot review the totality of the circumstances if it has put on chronological blinders.\" Historical facts will not often matter as much as they did in Plumhoff, and some may not be relevant at all, but they may not be excluded by rule.\n\nFelix's recharacterization. Felix conceded that prior events are not off limits and argued that the Fifth Circuit doctrine bars only one inquiry, into whether an officer's earlier error created the need for deadly force. The Court answered that the decisions below applied a rule about timing, and that is the reasoning it had to address. It also doubted Felix's description of Fifth Circuit law, quoting Harris v. Serpas, which said the circuit had narrowed the totality test in deadly force cases. A court cannot narrow the totality of the circumstances inquiry to a single moment; it must look at any relevant events coming before.\n\nRemand. With the timing question resolved, the Court returned everything else to the lower courts to consider the reasonableness of the shooting using the lengthier timeframe.\n\nThe Kavanaugh concurrence. Justice Kavanaugh, joined by Justices Thomas, Alito, and Barrett, joined the opinion in full and wrote separately about the dangers of traffic stops, particularly when a driver pulls away mid stop. He noted that traffic stops are fraught with danger, that flight from a minor offense can indicate a larger danger, and that the Graham factors include the suspect's attempt to evade by flight. He walked through the options an officer has when a driver flees, letting the driver go, pursuing, shooting at tires, or jumping on or reaching into the car, and said none is good or safe and all require life or death decisions in a few seconds. He emphasized that the judiciary still must assess any resulting claim under objective reasonableness, and that courts must appreciate the extraordinary dangers facing officers rather than dissect their actions with the 20/20 vision of hindsight.",
+  "notDecided": "Whether Felix's shooting of Barnes was reasonable. The Court decided only the timing question and sent the reasonableness question back to the lower courts.\n\nWhether or how an officer's own creation of a dangerous situation factors into the reasonableness analysis. The Court said that issue was not properly before it because the lower courts never confronted it and it was not the basis of the petition. To use the Court's own example, the Court did not address the relevance, if any, of Felix stepping onto the doorsill of Barnes's car.\n\nHow much weight earlier events carry in any given case. The Court said historical facts will not often matter as much as they did in Plumhoff and that some may not be relevant at all; it held only that they cannot be excluded by rule.\n\nAnything about qualified immunity. The case was decided on the constitutional question as framed by the lower courts.",
+  "inPractice": "Barnes v. Felix tells officers how their decisions will be judged: the whole encounter counts, not just the instant before force was used.\n\nThat cuts both ways, and the Court said so. Earlier events can make an officer's reading of ambiguous conduct reasonable. In Plumhoff, five minutes of reckless driving justified shots fired when the car was nearly stopped. An officer who knows the person was reported armed, who gave warnings that were ignored, or who watched the subject escalate will have those facts considered. The reverse is also true: earlier events that show the subject was cooperative, or that the officer's own actions turned a routine stop into a crisis, will be in front of the court too.\n\nThe Court left open the question officers most want answered: whether an officer who creates a dangerous situation can be faulted for the force that follows. Until that is decided, the practical lesson is to assume the approach, positioning, and commands leading up to the force will be examined alongside the force itself.\n\nDr. Sowards teaches Barnes alongside Graham and Garner as the current statement of the totality of the circumstances test, and alongside Scott v. Henrich and Plakas as the reminder that the test still does not require the least intrusive alternative. The Kavanaugh concurrence is a useful reminder that four Justices wanted courts to remember how dangerous a fleeing driver is; it is a concurrence, not the holding, and it does not change the standard. California officers should also remember that state law and policy since 2019 ask them to consider feasible alternatives, which is a separate and additional expectation.",
+  "trainIt": "Teach the timeline. Use the Barnes facts as a decision drill with the clock visible: a toll violation stop, no license, rummaging, the smell of marijuana, the trunk opened, the ignition turned off and then back on, the door opening, the car moving. Stop the scenario at each point and have students state what a reasonable officer knows, what the threat is, and what options exist. Then ask how the decision to step onto the doorsill would be judged if the court considers everything that came before, as Barnes requires. Students should see that the two seconds on the doorsill cannot be sealed off from the choices that put the officer there.\n\nTeach the standard precisely. The holding is that the totality of the circumstances inquiry has no time limit and that a court may not confine itself to the moment of threat. The holding is not that officers who make earlier mistakes lose the right to defend themselves; the Court expressly did not decide the officer created danger question. Students should be able to state both the rule and the open question.\n\nTeach vehicle stop tactics in that light. The Kavanaugh concurrence lists the options when a driver flees and says none is safe. Use it to discuss positioning that keeps officers out of the path of a car, the decision not to reach into or mount a moving vehicle, and when to disengage and pursue by other means. Students should be able to articulate why their chosen option was reasonable in light of everything they knew.\n\nTeach documentation of the whole encounter. Because the court will look at the full timeline, reports and statements must account for the earlier events, the commands given, and the subject's responses, not just the final seconds.",
+  "caution": "The opinion was read in full from the Supreme Court's preliminary print, which is subject to formal revision. Barnes decides only that a court may not limit its review to the moment of the threat; it does not decide whether the shooting in the case was reasonable and expressly reserves the officer created danger question. The Kavanaugh concurrence was joined by four Justices and is not the opinion of the Court. The brief should not be taught as a ruling against the officer or as a ruling that the earlier conduct of an officer always counts against him.",
+  "applications": [
+    {
+      "title": "No chronological blinders",
+      "body": "The reasonableness inquiry has no time limit. A court must consider the events leading up to the use of force, including the reason for the stop, the officer's commands and warnings, and the subject's earlier conduct. The final seconds are reviewed in that context."
+    },
+    {
+      "title": "Context helps either side",
+      "body": "Prior events may show why a reasonable officer would perceive ambiguous conduct as threatening, as in Plumhoff, or why the officer would perceive it as innocuous. Know your facts and be able to explain how what you knew shaped what you did."
+    },
+    {
+      "title": "The moment still matters most",
+      "body": "The Court said the situation at the precise time of the shooting will often matter most, because it is the officer's choice in that moment under review. Barnes adds context; it does not remove the focus on the threat the officer faced when the decision was made."
+    },
+    {
+      "title": "Officer created danger is still open",
+      "body": "The Court did not decide whether or how an officer's own creation of a dangerous situation factors into reasonableness. Do not teach Barnes as resolving that question either way."
+    },
+    {
+      "title": "Fleeing drivers and the concurrence",
+      "body": "Four Justices wrote that an officer has no good or safe option when a driver pulls away mid stop and that courts must appreciate those dangers. That view informs how courts may weigh the facts; the standard remains objective reasonableness under the totality of the circumstances."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the Supreme Court hold about the Fifth Circuit's moment of threat rule in Barnes v. Felix?",
+      "options": [
+        "It is the correct test for deadly force cases",
+        "It applies only to vehicle stops",
+        "It improperly narrows the Fourth Amendment inquiry; courts must consider the totality of the circumstances, including events leading up to the use of force",
+        "It applies unless the officer created the danger"
+      ],
+      "answer": 2,
+      "teach": "The Court held that the totality of the circumstances inquiry has no time limit and that a court cannot review the totality of the circumstances if it has put on chronological blinders."
+    },
+    {
+      "q": "Which question did the Court in Barnes expressly decline to decide?",
+      "options": [
+        "Whether Graham v. Connor applies to deadly force",
+        "Whether or how an officer's own creation of a dangerous situation factors into the reasonableness analysis",
+        "Whether the Fourth Amendment governs traffic stops",
+        "Whether prior events can ever be relevant"
+      ],
+      "answer": 1,
+      "teach": "The Court said the officer created danger question was not properly before it because the lower courts never reached it. It returned the reasonableness of the shooting to the lower courts under the longer timeframe."
+    },
+    {
+      "q": "According to Barnes, how can earlier events affect the reasonableness analysis?",
+      "options": [
+        "They can only hurt the officer",
+        "They can only help the officer",
+        "They are irrelevant once a threat appears",
+        "They may show why a reasonable officer would perceive conduct as threatening, or instead as innocuous, so they can help either party"
+      ],
+      "answer": 3,
+      "teach": "The Court said taking account of context may benefit either party and used Plumhoff as an example where prior reckless driving justified the officer's later shots."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "tatum-v-city-and-county-of-san-francisco",
+  "name": "Tatum v. City and County of San Francisco",
+  "court": "Ninth Circuit (from the Northern District of California)",
+  "courtKey": "ca9",
+  "docket": "04-15055",
+  "citation": "441 F.3d 1090 (9th Cir. 2006)",
+  "decided": "April 3, 2006",
+  "status": "published",
+  "topic": "Excessive force and post-arrest medical care, control hold on a resisting subject, prone positioning for about ninety seconds, monitoring, and the duty to summon medical help rather than perform CPR",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "restraint-and-asphyxia",
+    "takedowns-and-control"
+  ],
+  "published": "2026-11-16",
+  "summary": "A man kicking a police station door, apparently under the influence, resisted a control hold, was taken to the ground and handcuffed, lay on his stomach for about ninety seconds before being turned on his side, and died of cocaine toxicity before the ambulance the officers called arrived. The Ninth Circuit held that the control hold, the brief prone positioning without crushing pressure, the monitoring, and the decision to summon an ambulance rather than perform CPR were all objectively reasonable. It is the counterpoint to Drummond on prone restraint.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/441/441.F3d.1090.04-15055.html (opinion by Judge Gould, joined by Judges Noonan and Rymer, with four footnotes). The archive heading confirms the citation 441 F.3d 1090. The archive copy does not mark internal page breaks, so pin cites are not given.",
+    "The docket number in the archived caption is No. 04-15055. The course materials list this case under docket 03-16286; that number does not appear in the opinion and should be corrected. The filing date in the opinion is April 3, 2006, which matches the course materials.",
+    "The district court's December 2003 summary judgment order was not read and is described only as the Ninth Circuit described it. Estate of Phillips v. City of Milwaukee (7th Cir. 1997) was not read independently; it is described as this opinion describes it."
+  ],
+  "facts": "The facts are taken in the plaintiff's favor to the extent the record was disputed, because the district court granted summary judgment to the defendants (441 F.3d 1090 n.1).\n\nOn the morning of March 2, 2001, San Francisco Officer Leslie Smith was waiting for a tow truck in the Tenderloin when he saw Glenn Fullard kicking the side door of the Tenderloin police station. Smith yelled at him to stop. Fullard kept kicking and did not respond when Smith asked what he was doing. Smith pulled him away from the door and told him to leave. Fullard walked off, then returned and kicked the door again. Smith observed bloodshot eyes, heavy perspiration, and slurred speech and suspected intoxication or drug influence. He warned Fullard he could be arrested, asked for identification, and, when Fullard did not comply, told him he would be handcuffed.\n\nAccording to Smith's deposition, he placed Fullard's left arm in a bar arm control hold and asked for the right arm. Fullard spun to his left and partially escaped. Smith told him to stop resisting, pinned him against a wall, told him to calm down, and, when Fullard kept struggling, used the hold to take him to the ground. Four officers responded to Smith's call for assistance and, against continued resistance, handcuffed Fullard.\n\nSmith and Officer Chan stayed to monitor Fullard while the others left. Fullard lay on his stomach for about a minute after handcuffing, then the officers positioned him on his side. About two minutes later Smith saw heavy breathing and bulging eyes and radioed for an ambulance. As Fullard's breathing became shallow, Smith asked that the request be given priority. Smith placed his ear to Fullard's mouth to confirm breathing, checked his pulse, and watched his chest. Neither officer performed CPR. Paramedics arrived about ten minutes later, found no breathing or pulse, observed Fullard on his back, and pronounced him dead. The coroner found the cause of death was cocaine toxicity.\n\nFullard's mother sued the officers, their supervisors, and the city under section 1983 and state law, alleging false arrest and excessive force. The district court granted summary judgment to all defendants.",
+  "holding": "Affirmed. The court held that none of the challenged conduct violated Fullard's constitutional rights, so neither the officers, their supervisors, nor the city could be liable under section 1983.\n\nProbable cause. Kicking a police station door, ignoring commands, mumbling, heavy sweating, and bloodshot eyes created a fair probability that Fullard was under the influence of a controlled substance and supported arrest for other offenses as well. Under Devenpeck v. Alford, Smith's subjective reason for the arrest was irrelevant once the facts supported probable cause.\n\nThe control hold. Applying Graham v. Connor, the court held the bar arm control hold was objectively reasonable. The underlying conduct was not severe, but Fullard posed a threat to himself, the officers, and passersby, spun away from Smith, and kept struggling after being told to calm down. Even accepting that Fullard moved to escape pain, he still resisted, which justified continuing the hold.\n\nProne positioning. Relying on Estate of Phillips v. City of Milwaukee, the court quoted the Seventh Circuit's statement that restraining a person in a prone position is not, in and of itself, excessive force when the person restrained is resisting arrest. It held it was objectively reasonable to position Fullard on his stomach for approximately ninety seconds. Fullard had kicked and struggled throughout the handcuffing, the officers needed to incapacitate him to protect themselves and him, the record contained no evidence that any officer applied crushing pressure to his back or neck, and the evidence was unequivocal that he lay prone for at most just over a minute before being turned on his side. The plaintiff cited no authority that simply laying a suspect on his stomach can be excessive force, and the court found none.\n\nMonitoring. The officers exercised objectively reasonable care in monitoring Fullard even if they did not notice that he rolled onto his back or stopped breathing. Smith examined him after handcuffing, called an ambulance based on his apparent distress, checked his breathing and pulse, and upgraded the call. Quoting Phillips, the court said that no one noticing a lack of oxygen cannot, standing alone, be a constitutional violation absent evidence the officers ignored the deteriorating condition.\n\nCPR. The district court had suggested the failure to perform CPR might be excessive force; the Ninth Circuit disagreed. Just as the Fourth Amendment does not require the least intrusive method of arrest, it does not require what hindsight reveals to be the most effective medical care. Adopting the standard from Maddox v. City of Los Angeles, the court held that an officer who promptly summons the necessary medical assistance has acted reasonably under the Fourth Amendment even if the officer did not administer CPR. The officers requested an ambulance, monitored Fullard, and upgraded the request; the Constitution required no more.\n\nBecause there was no constitutional violation, the court did not reach qualified immunity, and the supervisory and municipal claims failed. The denial of a Rule 56(f) continuance was not an abuse of discretion.",
+  "dissent": "None. The panel was unanimous.",
+  "notDecided": "Qualified immunity. The court decided there was no constitutional violation and therefore did not address whether the officers would have been immune.\n\nWhether prone restraint with pressure on the back or neck is reasonable. The court stressed that the record contained no evidence of crushing pressure and that Fullard was prone for at most just over a minute. It did not address, and did not cite, Drummond v. City of Anaheim, decided three years earlier, which involved sustained body weight on a handcuffed subject.\n\nWhether officers may ever have a duty to perform CPR. The court held that promptly summoning medical help satisfied the Fourth Amendment on these facts; it quoted Maddox for the point that there is no authority for an affirmative duty to render CPR in any and all circumstances.\n\nThe state law wrongful death and tort claims. The opinion addresses only the federal claims and the discovery ruling.",
+  "inPractice": "Tatum is the case that shows what reasonable prone restraint looks like in the Ninth Circuit's eyes, and the details are the lesson. Fullard was actively resisting through the handcuffing. He lay prone for about ninety seconds. No officer put crushing pressure on his back or neck. The officers then turned him on his side, watched him, recognized distress, called an ambulance, checked breathing and pulse, and upgraded the call when his breathing changed. The court held each of those steps was objectively reasonable.\n\nRead next to Drummond, the differences are exactly the ones officers control: how long the subject stays prone, whether body weight stays on the torso and neck after cuffing, whether the subject is moved to a recovery position, and whether officers monitor and summon help. Tatum does not say prone positioning is always fine. It says prone positioning is not by itself excessive when the subject is resisting, and it decided the case on a record with no evidence of pressure and a quick move to the side.\n\nOn medical care, the standard the court adopted is promptly summoning the necessary medical help. The officers were not required to perform CPR, and the court refused to judge them by what hindsight showed would have been most effective. That is protection for officers who recognize distress and call early. It is not protection for officers who ignore a deteriorating subject, which the court specifically distinguished.",
+  "trainIt": "Teach Tatum and Drummond as a pair and have students list the facts that separate them. The list should include duration of prone positioning, pressure on the back or neck after cuffing, the subject's resistance at the moment of the force, the move to a side or recovery position, monitoring, and the medical call. That list is also the structure of a defensible report.\n\nTrain the recovery position as part of the handcuffing sequence, not as an afterthought. In Tatum the officers moved Fullard to his side within about ninety seconds. Make the reposition a required step in every ground control drill, with a stated reason: it is the fact a court will look for.\n\nTrain recognition and the call. Smith noticed heavy breathing and bulging eyes, called for an ambulance, and upgraded the request when breathing became shallow. Build scenarios where the role player's condition changes after cuffing and grade students on whether they see it, say it on the radio, and keep assessing. The court credited those actions.\n\nBe precise about what Tatum does not hold. It does not approve pressure on a prone subject; the court said there was no evidence of crushing pressure. It does not cite or limit Drummond. It does not say CPR is never required; it says promptly summoning medical help was reasonable on this record. Students who hear Tatum as a blanket approval of prone restraint have learned the wrong lesson.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which does not show reporter page breaks. The course materials give docket 03-16286; the opinion's caption reads No. 04-15055. The facts credited are largely Officer Smith's deposition account, with disputes resolved for the plaintiff, and the coroner's cause of death was cocaine toxicity. The opinion does not cite Drummond v. City of Anaheim; any comparison between the two is a teaching comparison, not something the Tatum court made.",
+  "applications": [
+    {
+      "title": "Prone is not by itself excessive when the subject is resisting",
+      "body": "The court adopted the Seventh Circuit's statement in Phillips that restraining a person in a prone position is not, in and of itself, excessive force when the person is resisting arrest. The holding rested on about ninety seconds prone, continued resistance through cuffing, and no crushing pressure on the back or neck."
+    },
+    {
+      "title": "The move to the side mattered",
+      "body": "The officers positioned Fullard on his side after about a minute on his stomach. The court repeated that fact at every step. Build the recovery position into the handcuffing sequence."
+    },
+    {
+      "title": "Monitor, recognize, and call early",
+      "body": "Smith checked breathing and pulse, called for an ambulance when he saw distress, and upgraded the call when breathing became shallow. The court held that was objectively reasonable monitoring and care, even though the officers did not notice Fullard roll onto his back."
+    },
+    {
+      "title": "The standard is promptly summoning medical help",
+      "body": "The court held that an officer who promptly summons necessary medical assistance has acted reasonably for Fourth Amendment purposes even without administering CPR. The court refused to judge the officers by what hindsight showed would have been most effective."
+    },
+    {
+      "title": "A resisting subject justifies a control hold",
+      "body": "Fullard spun out of the hold and kept struggling after being told to calm down. Even if he was moving to relieve pain, he still resisted, and that justified continuing the hold long enough to handcuff him."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the Ninth Circuit hold about positioning Fullard on his stomach after he was handcuffed?",
+      "options": [
+        "It was excessive force because prone restraint of a handcuffed person is always unreasonable",
+        "It was objectively reasonable: he had resisted throughout handcuffing, he was prone for about ninety seconds, and there was no evidence of crushing pressure on his back or neck",
+        "It was reasonable only because the coroner found he died of cocaine toxicity",
+        "The court did not reach the question because the officers had qualified immunity"
+      ],
+      "answer": 1,
+      "teach": "The court quoted Phillips for the point that prone positioning is not by itself excessive when the subject is resisting, and it relied on the short duration and the absence of pressure on the back or neck."
+    },
+    {
+      "q": "What standard did the court apply to the officers' post-arrest medical care?",
+      "options": [
+        "Officers must perform CPR whenever a subject stops breathing",
+        "Officers must provide the most effective care available as judged in hindsight",
+        "An officer who promptly summons the necessary medical assistance has acted reasonably, even without administering CPR",
+        "Officers have no duty to provide any medical care until booking"
+      ],
+      "answer": 2,
+      "teach": "The court adopted the Maddox standard: promptly summoning necessary medical help satisfies the Fourth Amendment. The officers called an ambulance, monitored Fullard, and upgraded the call."
+    },
+    {
+      "q": "Did the Tatum court decide whether the officers were entitled to qualified immunity?",
+      "options": [
+        "Yes, it granted qualified immunity because the law on prone restraint was unclear",
+        "Yes, it denied qualified immunity",
+        "No; because it found no constitutional violation, it did not reach qualified immunity",
+        "No; it remanded the qualified immunity question to the district court"
+      ],
+      "answer": 2,
+      "teach": "Footnote 4 states that because the conduct did not violate Fullard's rights, the court did not address qualified immunity. The supervisory and municipal claims also failed for lack of a constitutional violation."
+    }
+  ]
+}

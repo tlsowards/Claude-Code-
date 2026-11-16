@@ -1,0 +1,91 @@
+{
+  "id": "pena-v-leombruni",
+  "name": "Pena v. Leombruni",
+  "court": "Seventh Circuit (from the Northern District of Illinois)",
+  "courtKey": "ca7",
+  "docket": "99-1435",
+  "citation": "200 F.3d 1031 (7th Cir. 1999)",
+  "decided": "December 30, 1999",
+  "status": "published",
+  "topic": "Deadly force against a man who appeared irrational and advanced on a deputy with a chunk of concrete; the subject's mental state and the reasonableness of the shooting; failure to train on handling mentally ill subjects as a basis for municipal liability",
+  "settings": [
+    "field",
+    "supervisors"
+  ],
+  "categories": [
+    "mental-health-and-disability",
+    "deadly-force",
+    "instructor-and-training-liability"
+  ],
+  "published": "2026-11-16",
+  "summary": "A deputy responding to a report of a man acting crazy, shoplifting, and fighting shot and killed the man after he picked up a chunk of concrete, ignored an order to drop it, and closed to five to ten feet while the deputy backpedaled. A jury found for the deputy. The Seventh Circuit, in an opinion by Chief Judge Posner, affirmed, holding that the subject's actual mental state was irrelevant to the reasonableness of the shooting, that the sheriff's failure to issue special instructions for dealing with irrational people was at most negligence and not deliberate indifference on these facts, and that the deputy was reasonable to anticipate lethal danger from a concrete wielding assailant.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/200/200.F3d.1031.99-1435.html. The archive marks some headnote material as copyrighted material omitted; the court's opinion text is complete.",
+    "The citation 200 F.3d 1031, the docket number 99-1435, the argument date of October 29, 1999, the decision date of December 30, 1999, and the panel (Posner, Chief Judge, and Flaum and Diane P. Wood, Circuit Judges; Posner writing) were confirmed from that file. The archive text does not print reporter page breaks, so references are to the opinion's numbered paragraphs as the archive presents them.",
+    "The district court record, the jury instructions beyond what the opinion quotes, and the trial evidence were not read. The facts are the facts as the Seventh Circuit stated them, construed favorably to the defense verdict.",
+    "The opinion's statements about retreat are limited to the observation that the deputy backpedaled before firing and that special measures to render such a person harmless might be desirable. The court did not announce a duty to retreat or a duty to use lesser force."
+  ],
+  "facts": "The facts are stated as the Seventh Circuit stated them, construed in favor of the jury's verdict for the defendants (para. 1).\n\nDeputy Sheriff Greg Leombruni of Winnebago County, Illinois, responded to a dispatch that a man, later identified as Hugo Pena, was \"acting crazy,\" was shoplifting, and was fighting with a shop's employees. Pena fled when Leombruni arrived, then turned and, with his dog, confronted the deputy. Leombruni pepper sprayed both of them and told Pena he was under arrest. Pena fled again, then stopped, picked up a chunk of concrete, and advanced toward Leombruni. The deputy drew his pistol and told Pena to put the chunk down. Leombruni backpedaled. When Pena was within five to ten feet, Leombruni shot and killed him (para. 1). The court noted that Pena apparently was high on cocaine (para. 5).\n\nThe sheriff's department instructed its officers not to use deadly force unless in imminent danger of death or great bodily harm. It had issued no instructions on the use of force against people who appear to be irrational. That gap was the principal basis of liability advanced by Pena's estate and family: they argued the shooting was excessive given Pena's apparent irrationality, and that the sheriff violated Pena's rights by failing to issue instructions on dealing with such people (para. 2).\n\nAt trial the district judge granted the sheriff's motion for a directed verdict. The judge also excluded the plaintiffs' proposed expert, a criminologist and former Chicago police official named David Fogel, ruling on the day of trial that he was not an expert on the use of force against a mentally ill person, and denied a continuance to find a replacement (paras. 3, 5, 7). The jury was instructed that \"when an officer believes that a suspect's actions places him ... in imminent danger of death or great bodily harm, the officer can reasonably exercise the use of deadly force\" (para. 8). The jury returned a verdict for the defendants, and the plaintiffs appealed.",
+  "holding": "Affirmed. Chief Judge Posner wrote for a unanimous panel.\n\nThe sheriff and the training gap. The directed verdict for the sheriff \"was clearly correct.\" A failure to instruct officers can show deliberate indifference actionable under section 1983, and a clear case would be a failure to tell officers not to use deadly force except to prevent a killing or great bodily harm. But \"failing merely to instruct police on the handling of dangerous people who appear to be irrational cannot amount to deliberate indifference, at least on the facts presented in this case.\" The sheriff's deadly force policy, consistent with Tennessee v. Garner and Plakas v. Drinski, \"covered the case of the crazy assailant, giving him all the protection to which constitutional law entitled him.\" It might be desirable to take special measures to render such a person harmless without killing or wounding him, but if so, \"the failure to adopt those measures would not be more than negligence, which is not actionable under section 1983\" (para. 3).\n\nCircumstances can alter cases. If the county had seen a rash of police killings of irrational people, and it was well understood that those killings could have been avoided by measures that adequately protected officers, the failure to adopt them might, the court assumed without deciding, show deliberate indifference. The plaintiffs made no effort to establish that premise (para. 4).\n\nThe subject's mental state. The court doubted the trial judge's reason for excluding the expert but affirmed on another ground. The question \"was not, as the district judge believed, Pena's actual mental state. That was irrelevant to the reasonableness of Leombruni's action in shooting him,\" just as it would be had the danger come from Pena's dog. \"Very little mentation is required for deadly action.\" Whatever Pena's mental problems, \"they were not such as to prevent him from beating Leombruni's brains out with a chunk of concrete,\" and the deputy could defend himself whether or not Pena would have been acquitted on insanity grounds (para. 5).\n\nNo expert needed. Expert testimony is admissible only if it assists the jury, and the jury needed no help deciding whether Leombruni acted reasonably. Pena's behavior was \"unambiguously dangerous\"; whether the danger was sufficiently lethal and imminent to justify deadly force was within lay competence (para. 6). The late ruling on the motion in limine was unfortunate, and judges should rule on such motions well before trial, but the plaintiffs had months of notice and could not explain how an expert would have helped (para. 7).\n\nThe instruction. Telling the jury that an officer who believes himself in imminent danger may use deadly force was \"simply incorrect, because the officer's belief that he's in danger must be reasonable.\" But the plaintiffs' lawyer failed to state the grounds of the objection, forfeiting it under Rule 51, and the error could not have changed the outcome, \"since there is no doubt that Leombruni was reasonable to anticipate that his concrete-wielding assailant posed a potentially lethal danger\" (para. 8).",
+  "notDecided": "Whether a department ever must adopt special training for encounters with people who appear mentally ill. The court held only that the failure to do so was not deliberate indifference \"at least on the facts presented in this case,\" and assumed without deciding that a documented pattern of avoidable killings, together with known protective measures, might support a different result (paras. 3-4).\n\nWhether a deputy must retreat or use lesser force before shooting. The court did not address any such duty. It noted that Leombruni backpedaled and had already used pepper spray, and it said special measures to disable such a person might be desirable, but it held that failing to adopt them would be at most negligence (paras. 1, 3).\n\nWhether the expert was qualified. The court expressed doubts about the trial judge's reasoning but affirmed because no expert was needed (paras. 5-6).\n\nWhether the erroneous instruction would have required reversal if properly preserved. The court found the objection forfeited and the error harmless on these facts (para. 8).",
+  "inPractice": "The sentence officers should carry from Pena is that the subject's mental state was \"irrelevant to the reasonableness\" of the shooting. The Fourth Amendment question is the threat: what the person is doing, with what, how close, and how fast. A person in crisis, or high on cocaine, who closes to five to ten feet with a chunk of concrete after an order to drop it presents the same lethal threat as anyone else doing the same thing. The court's comparisons were to a dog and to a rattlesnake: deadly, without the mental state for a crime.\n\nThat is a statement about the force decision, not a statement that mental illness never matters. The deputy had already used pepper spray, announced the arrest, drawn his weapon, ordered Pena to drop the concrete, and was backing away when he fired. The court recited each step. It also said special measures to render such a person harmless without shooting might be desirable. The opinion does not say those steps were required; it does show that the record of what was tried before the shot was the record the court relied on.\n\nFor supervisors and trainers, a sound deadly force policy limited to imminent danger of death or great bodily harm protected the mentally ill subject as much as the Constitution requires. The answer could change if a county had seen a pattern of avoidable shootings of irrational people and knew of protective measures it had not adopted.\n\nFinally, the officer's belief in danger must be reasonable, not merely sincere. Reports should show why the belief was reasonable, not only that it was held.",
+  "trainIt": "Teach Pena in the disability line as the case that separates two questions officers tend to merge: whether the person is mentally ill, and whether the person is an imminent threat. The court answered the second from the concrete, the distance, the ignored order, and the advance, and said the first was irrelevant to it. Run scenarios in which the same objective threat is presented by a subject plainly in crisis and by one who is not, and have students articulate why the force decision is the same and what, if anything, changes before the threat materializes.\n\nTrain the pre-shot sequence the court recited: pepper spray, announcement of arrest, drawn weapon, command to drop the object, backpedaling, and the shot at five to ten feet. Debrief each step and the distance at which the decision became unavoidable.\n\nTrain the instruction the court corrected. The officer's belief in imminent danger must be reasonable. Have students state the facts that made the belief reasonable, in the words they would use in a report and on the stand.\n\nFor agency liability, teach the court's two statements together. A general deadly force policy tied to imminent danger covers the mentally ill subject, and a failure to add special instructions is at most negligence on an ordinary record. But a pattern of avoidable killings of irrational people, combined with known protective measures not adopted, is the fact pattern the court said might show deliberate indifference. Track those incidents and document the training response.\n\nTeach the posture. Pena affirmed a defense verdict and a directed verdict for the sheriff. It did not hold that officers may never consider mental illness, and it did not create or reject a duty to retreat.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which omits only copyrighted headnote material. Pin cites are to paragraph numbers in that text, not to reporter pages. The facts are as the Seventh Circuit construed them in favor of the defense verdict; the trial record was not read. This is Seventh Circuit law. The opinion's language about the subject's mental state concerns the Fourth Amendment reasonableness of the shooting; it does not address the ADA, which was not raised.",
+  "applications": [
+    {
+      "title": "The threat is the question, not the diagnosis",
+      "body": "The court held that Pena's actual mental state was irrelevant to whether shooting him was reasonable. A person advancing with a chunk of concrete at five to ten feet after an order to drop it is a lethal threat whatever the reason for the behavior."
+    },
+    {
+      "title": "The record before the shot still matters",
+      "body": "The court recited the pepper spray, the announcement of arrest, the drawn weapon, the order to drop the object, and the deputy backing up before the shot. It imposed no duty to retreat, but that sequence was the record on which the shooting was judged reasonable."
+    },
+    {
+      "title": "Your belief must be reasonable, not just honest",
+      "body": "The court said the jury instruction was wrong because an officer's belief that he is in imminent danger must be reasonable. Reports should state the facts that made the belief reasonable."
+    },
+    {
+      "title": "A sound deadly force policy covers the mentally ill subject",
+      "body": "The court held that a policy limiting deadly force to imminent danger of death or great bodily harm gave the irrational assailant all the protection the Constitution requires, and that failing to add special instructions was at most negligence on this record."
+    },
+    {
+      "title": "A pattern can change the answer",
+      "body": "The court said that if a county had seen a rash of killings of irrational people that were known to be avoidable by measures protecting officers, the failure to adopt them might show deliberate indifference. Track those incidents and document the training response."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the Seventh Circuit say about the relevance of Pena's mental state to whether the shooting was reasonable?",
+      "options": [
+        "It was the central question and required expert testimony",
+        "It was irrelevant; the question was the threat posed by a man advancing with a chunk of concrete",
+        "It made the shooting unreasonable because mentally ill people cannot form intent",
+        "It shifted the burden to the deputy to prove he tried lesser force"
+      ],
+      "answer": 1,
+      "teach": "The court said Pena's actual mental state was irrelevant to the reasonableness of the deputy's action, comparing the threat to one from a dangerous animal. Very little mentation is required for deadly action."
+    },
+    {
+      "q": "How did the court treat the sheriff's failure to issue instructions on dealing with people who appear irrational?",
+      "options": [
+        "It held the failure was deliberate indifference and reversed the directed verdict",
+        "It held the failure was at most negligence on these facts, because the general deadly force policy already covered the irrational assailant",
+        "It held that training on mental illness is never required",
+        "It did not address the issue"
+      ],
+      "answer": 1,
+      "teach": "The court affirmed the directed verdict for the sheriff. It said a pattern of avoidable killings plus known protective measures might show deliberate indifference, but the plaintiffs made no effort to prove that."
+    },
+    {
+      "q": "What was wrong with the jury instruction on deadly force, according to the court?",
+      "options": [
+        "It omitted the requirement of a warning before shooting",
+        "It allowed deadly force whenever the officer believed he was in imminent danger, without requiring that the belief be reasonable",
+        "It required the officer to retreat before firing",
+        "Nothing; the court approved it"
+      ],
+      "answer": 1,
+      "teach": "The court said the instruction was simply incorrect because the officer's belief in danger must be reasonable. The objection was forfeited and the error was harmless because the deputy was clearly reasonable to anticipate lethal danger."
+    }
+  ]
+}

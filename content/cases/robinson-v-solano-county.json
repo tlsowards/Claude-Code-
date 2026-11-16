@@ -1,0 +1,91 @@
+{
+  "id": "robinson-v-solano-county",
+  "name": "Robinson v. Solano County",
+  "court": "Ninth Circuit, en banc (from the Eastern District of California)",
+  "courtKey": "ca9",
+  "docket": "99-15225",
+  "citation": "278 F.3d 1007 (9th Cir. 2002) (en banc)",
+  "decided": "February 4, 2002",
+  "status": "published",
+  "topic": "Pointing a firearm at the head of an apparently unarmed, calm, compliant man from close range as excessive force; qualified immunity after Saucier v. Katz; California immunity for state tort claims",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "handcuffing-and-detention",
+    "deadly-force",
+    "qualified-immunity"
+  ],
+  "published": "2026-11-16",
+  "summary": "A 64 year old retired police officer who had shot two dogs attacking his livestock walked calmly toward deputies to explain, unarmed, and a deputy pointed a gun at his head from a few feet away. The en banc Ninth Circuit held that pointing a gun at the head of an apparently unarmed, non-threatening person during a misdemeanor investigation can be excessive force, overruled contrary language in Fuller v. Vines, but granted qualified immunity because the law was not clearly established in 1995. It also held California law gives no immunity for excessive force. It is the pointing a firearm case.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/278/278.F3d.1007.99-15225.html (en banc opinion by Chief Judge Schroeder for an eleven judge court, and a concurrence in the result by Judge Fernandez joined by Judges Rymer and T.G. Nelson, with eleven footnotes). The archive heading confirms the citation 278 F.3d 1007. The archive copy does not mark internal page breaks, so pin cites are not given.",
+    "The docket number, procedural dates (panel decision July 12, 2000; en banc argument March 22, 2001; filed February 4, 2002), and district court information are taken from the caption of the archived opinion.",
+    "The vacated panel opinion, 218 F.3d 1030, the trial record, and proceedings after remand were not read and are described only as the en banc court described them. Fuller v. Vines and the out of circuit cases discussed were not read independently."
+  ],
+  "facts": "James Robinson, a 64 year old African American retired San Francisco police officer, lived on a five acre parcel in a semi-rural part of Fairfield, California, where he raised livestock and kept a shotgun to protect them. One morning he saw two dogs attacking and killing his animals. He shot both, killing one and wounding the other, then walked about 50 feet along the public road in front of his property carrying the shotgun to look for the wounded dog. He had a heated exchange with the dogs' owner, a neighbor, and went home. The neighbor called the police, and a dispatch went out describing a man with a shotgun who had just shot two dogs and was in the street yelling.\n\nRobinson saw six police vehicles arrive and decided to go out and explain. He walked about 135 feet from his door to the street. He asserted the officers could see him approach calmly and kept their guns holstered as he came; Deputies Cauwells and Faulkner said he appeared agitated and that they drew on first seeing him. As Robinson neared the street he said, My name is Robinson and I'm the man that was involved with the dogs. Deputy Cauwells pointed his gun at Robinson's head from about six feet. Deputy Faulkner also pointed his gun. Cauwells ordered Robinson's hands up. As Robinson complied and asked what was going on, Cauwells repeated the command, stepped forward, and, according to Robinson, thrust the gun to within three or four feet of his head.\n\nTwo other officers handcuffed Robinson and put him in a patrol car for 15 to 30 minutes while they talked to the neighbor and others, refusing to listen to his explanation. He was never searched; he was wearing a four inch utility knife on his belt that was never found. He was released without charges.\n\nRobinson sued the deputies and the county on federal and state claims. The district court granted summary judgment on the state claims and against the county. The federal excessive force claim was tried to a jury, which found the length of detention reasonable but split four to four on whether the force was reasonable. The magistrate judge then granted judgment as a matter of law for the deputies on qualified immunity. A panel reversed, and the court reheard the case en banc after Saucier v. Katz.",
+  "holding": "Affirmed on the federal claim, reversed and remanded on the state claims.\n\nThe Saucier framework. The en banc court explained that Saucier overruled the Ninth Circuit's prior rule that the qualified immunity inquiry in an excessive force case is the same as the merits inquiry. Courts must first ask whether the facts, taken in the plaintiff's favor, show a Fourth Amendment violation, and only then ask whether the right was clearly established at the time, allowing for reasonable mistakes about what the law requires.\n\nThe constitutional question. The parties did not dispute that a seizure occurred or challenge the handcuffing and patrol car confinement as excessive; the only question was whether pointing a drawn gun at Robinson's head from close range was excessive force. The court overruled Fuller v. Vines to the extent it could be read to suggest that pointing a gun at a suspect during an actual seizure can never be excessive force. Applying Graham v. Connor and the factors listed in Chew v. Gates, the court found none of the justifications for force present: the crime under investigation was at most a misdemeanor, the suspect was apparently unarmed and approaching peacefully, there were no dangerous or exigent circumstances, the officers outnumbered him. His earlier use of a shotgun that he clearly no longer carried was insufficient to justify the intrusion. The court agreed with the Third Circuit's Baker v. Monroe Township that there is no per se rule that pointing guns or handcuffing constitutes an arrest, but that the use of guns and handcuffs must be justified by the circumstances, and quoted Washington v. Lambert's statement that under ordinary circumstances drawing weapons and using restraints on a reasonable suspicion stop will violate the Fourth Amendment. Robinson adequately alleged a Fourth Amendment violation.\n\nClearly established law. The court held that the law now allows it to recognize as a general principle that pointing a gun at the head of an apparently unarmed suspect during an investigation can violate the Fourth Amendment, especially where the individual poses no particular danger. But in 1995 the contours of that right were not clear. Fuller had cast substantial doubt on the question in the Ninth Circuit, and other circuits (Fifth, Sixth, Seventh, Eighth) had distinguished between a show of force and a use of force, holding that training guns on an arrestee without shooting could not be excessive force. The deputies were therefore entitled to qualified immunity.\n\nState law claims. The district court erred in treating the officers and county as immune under California law. California rejects the Monell rule and holds counties liable under respondeat superior for employees' acts (Government Code section 815.2), with immunity only where the employee is immune. California denies immunity to officers who use excessive force in an arrest and to public employees sued for false arrest or false imprisonment (Government Code section 820.4). The state law claims against the deputies and the county were reinstated and remanded.",
+  "dissent": "Judge Fernandez, joined by Judges Rymer and T.G. Nelson, concurred in the result only. He would have held that pointing a gun during an otherwise proper seizure, with no touching, is a threat of force and not a use of force, invoking the traditional distinction between assault and battery. He warned that the majority's rule would require every officer in the circuit to make a nice calculation before drawing a weapon to control a suspect and would expand litigation against officers. He agreed with the result on qualified immunity and did not disagree with the state law holding, which he read as rejecting only automatic immunity.",
+  "notDecided": "Whether these deputies in fact used excessive force. The court held that Robinson's version of the facts, if believed, alleged a violation, but it affirmed judgment for the deputies on qualified immunity. The jury had deadlocked on the force question and no liability was ever found on the federal claim.\n\nWhether the handcuffing and 15 to 30 minute patrol car confinement were excessive or unreasonable. Robinson did not challenge that conduct as excessive force, and the jury found the length of detention reasonable.\n\nThe merits of the state law claims. They were remanded; the court held only that California law does not immunize the deputies or the county.\n\nThe court did not announce a rule that pointing a gun is always excessive. It held that pointing a gun at the head of an apparently unarmed, non-threatening person during a misdemeanor investigation can be excessive, and that the justification depends on the circumstances.",
+  "inPractice": "Robinson tells officers that pointing a firearm is a use of force that must be justified, not a cost free precaution. The en banc court held that drawing down on the head of an apparently unarmed, calm, compliant man who was walking toward officers to identify himself, on a misdemeanor call, with officers outnumbering him and no exigency, can violate the Fourth Amendment. The fact that he had held a shotgun earlier did not justify it once he plainly no longer had it.\n\nThe decision does not take the gun out of the officer's hand. The court applied the ordinary Graham balance plus the Chew v. Gates factors: whether the subject was armed, the number of officers, and whether exigent circumstances existed. A drawn weapon at the low ready on a weapons call is a different fact pattern from a muzzle thrust three or four feet from the head of a man with his hands up who has just introduced himself.\n\nThe immunity holding is date stamped. The deputies were immune because in 1995 Fuller and several other circuits had suggested a show of force could not be excessive force. Robinson removed that uncertainty in the Ninth Circuit.\n\nThe state law holding matters in California: there is no immunity for excessive force or false arrest, and the county is liable for its deputies under respondeat superior. A plaintiff who loses the federal claim on qualified immunity can still try the state claims to a jury.",
+  "trainIt": "Teach Robinson with Washington v. Lambert in the detention and firearms block. Lambert addresses when guns and handcuffs turn a stop into an arrest; Robinson addresses when pointing a gun is itself excessive force. Both tactics must be justified by specific circumstances, and the court in Robinson quoted Lambert for that proposition.\n\nRun the approach scenario. A weapons call, a subject who had a shotgun minutes ago, who now walks toward officers with empty hands, open shirt, and calm demeanor, and says who he is. Have students articulate their weapon position and why, and identify the moment at which the justification for a muzzle on the head ends.\n\nTeach the search lesson in the facts. Robinson was handcuffed and held for up to half an hour and never searched; he had a knife on his belt the whole time. It is a basic officer safety failure: the deputies escalated to a gun on the head and then skipped the step that actually addresses a weapon.\n\nTeach the Saucier sequence using this case. First, a constitutional violation on the plaintiff's facts; second, whether the law was clearly established at the time. Here the answers were yes and no. The deputies won on timing, and the same conduct after 2002 would not have that protection in the Ninth Circuit.\n\nTeach the Fernandez concurrence as the counter argument students will hear: a gun pointed is a threat, not force. The majority rejected it, and the majority's view is the law of the circuit.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which does not show reporter page breaks. The facts are Robinson's version taken in his favor; the deputies disputed his demeanor and when they drew their weapons. No liability was found on the federal claim, and the outcome of the state law claims on remand was not researched. The clearly established holding is specific to conduct in 1995.",
+  "applications": [
+    {
+      "title": "Pointing a gun is force that needs a reason",
+      "body": "The en banc court held that pointing a gun at the head of an apparently unarmed, non-threatening person during a misdemeanor investigation can violate the Fourth Amendment, and overruled contrary language in Fuller v. Vines. Articulate the threat that justifies the muzzle."
+    },
+    {
+      "title": "Earlier possession of a weapon is not enough once it is gone",
+      "body": "Robinson had used a shotgun minutes earlier. The court held that his earlier use of a weapon he clearly no longer carried was insufficient to justify a gun at his head as he approached with empty hands."
+    },
+    {
+      "title": "Count the factors the court used",
+      "body": "At most a misdemeanor, apparently unarmed, approaching peacefully, no exigency, officers outnumbering the subject, never charged. From Chew v. Gates: whether the subject resisted or was armed, how many officers, whether exigent circumstances existed, and the nature of the charges."
+    },
+    {
+      "title": "Immunity here was about 1995",
+      "body": "The deputies were immune because the law was unsettled at the time. Robinson settled it in the Ninth Circuit. Officers today cannot claim uncertainty about whether pointing a gun at a compliant, unarmed person can be excessive."
+    },
+    {
+      "title": "California adds exposure",
+      "body": "California denies immunity to officers for excessive force and false arrest and holds the county liable for its deputies. The state claims were reinstated even though the federal claim was dismissed."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the en banc Ninth Circuit hold about pointing a gun at Robinson's head?",
+      "options": [
+        "It can never be excessive force because no physical force was applied",
+        "On Robinson's facts it adequately alleged a Fourth Amendment violation, because the crime was at most a misdemeanor, he was apparently unarmed and approaching peacefully, there was no exigency, and officers outnumbered him",
+        "It was reasonable because he had shot two dogs with a shotgun earlier that morning",
+        "It was excessive and the deputies were ordered to pay damages"
+      ],
+      "answer": 1,
+      "teach": "The court applied Graham and the Chew v. Gates factors, found none of the justifications for force present, and held that his earlier use of a shotgun he no longer carried was insufficient."
+    },
+    {
+      "q": "Why did the deputies receive qualified immunity?",
+      "options": [
+        "Because the jury found the detention reasonable",
+        "Because Robinson was a retired police officer who should have known to comply",
+        "Because in 1995 Fuller v. Vines and decisions in other circuits had suggested that a show of force without shooting could not be excessive force, so the law was not clearly established",
+        "Because pointing a gun is never excessive force"
+      ],
+      "answer": 2,
+      "teach": "The court held the constitutional right could now be recognized as a general principle, but its contours were not clear in 1995. The immunity turned on the state of the law at the time of the conduct."
+    },
+    {
+      "q": "What did the court hold about Robinson's California state law claims?",
+      "options": [
+        "They were barred because the deputies had federal qualified immunity",
+        "They were barred because California follows the Monell rule",
+        "They were reinstated because California denies immunity to officers for excessive force and false arrest and holds the county liable under respondeat superior",
+        "They were dismissed because the jury found the detention reasonable"
+      ],
+      "answer": 2,
+      "teach": "Under Government Code sections 815.2 and 820.4, as the court explained, the county is liable for its employees and neither the officers nor the county is immune for excessive force or false arrest. The state claims were remanded for further proceedings."
+    }
+  ]
+}

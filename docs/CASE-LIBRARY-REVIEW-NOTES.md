@@ -39,3 +39,35 @@ Internal notes for Dr. Sowards, written November 15, 2026 while the first 27 Cas
 ## Sources
 
 All 27 briefs were read from the Library of Congress U.S. Reports, the Court's own slip and bound volume PDFs, the Public Resource Org Federal Reporter archive, or govinfo. Pin cites follow the source: U.S. Reports pages where the scan carries them, slip or preliminary print pages otherwise; the Federal Reporter archive carries paragraph numbers, so those briefs give no page pin cites.
+
+## Second batch, November 15 (36 briefs)
+
+- Bryan v. MacPherson: the court spells the officer MacPherson; the course materials say McPherson. The holding is limited to dart mode Tasers and devices with similar effects; the en banc court in Mattos declined to classify drive stun mode.
+- Mattos v. Agarano and Brooks v. City of Seattle: the court held a reasonable fact finder could find both Taser uses excessive on the plaintiffs' versions, then granted qualified immunity on the federal claims. "Both uses held excessive" overstates the posture. Brooks's Washington assault and battery claim survived.
+- Headwaters Forest Defense: the course cites the May 4, 2000 decision. That opinion was amended in 2001, vacated by the Supreme Court in light of Saucier, and the 2002 opinion after remand is the one holding that no reasonable officer could have thought the pepper spray reasonable. The 2000 opinion only sent the question to a jury. The protesters were linked with steel "black bear" devices, not locked to logs.
+- Blankenhorn v. City of Orange: the failure to train evidence against the city failed (it concerned one officer); what survived was the supervisory claim against the chief for approving evaluations despite earlier force complaints.
+- Jackson v. City of Bremerton: the holding is that no Fourth Amendment violation occurred; qualified immunity is a footnote alternative. The spray hit her hair, and the court called the intrusion minimal.
+- Plakas v. Drinski: the no alternatives holding stands, but its statement that the court judges the shooting "from that point on" is timing language that Barnes v. Felix (2025) rejects as a rule. Do not teach Plakas as the current rule on timing.
+- Scott v. Smith: the Supreme Court's April 20, 2026 order vacates and remands in light of Zorn with no reasoning; it does not mention Drummond and does not hold the force reasonable or the officers immune. The Ninth Circuit opinion is not good law to cite.
+- Zorn v. Linton: decided only the clearly established prong; it did not approve the wristlock. The majority and dissent disagree on whether the warning came before the hold.
+- Rochin v. California was a criminal evidence case. Lewis calls it the origin of the shocks the conscience test and says it would be a Fourth Amendment case today.
+- County of Sacramento v. Lewis says nothing approving the deputy's driving ("prudence would have repressed the reaction"); its directive to decide the constitutional question first was later made discretionary by Pearson.
+- Estate of Hernandez: all eleven judges found the first two volleys reasonable as a matter of law; the split was over the third. Teach the baseline holding for the officer along with the reassessment point.
+- Hart v. City of Grand Rapids: qualified immunity for the launcher pointing and pepper spray rested on the clearly established prong only; the deadly force characterization of the launcher shot rested on the department's own training testimony. Sixth Circuit factors are circuit specific.
+- Hainze v. Richards: Title II does not apply before the scene is secured, but the court said the duty to accommodate attaches to handling and transport once it is. The force claim was decided under Heck, not on reasonableness. Fifth Circuit law.
+- Pena v. Leombruni does not discuss a duty to retreat; it says special measures might be desirable and that failing to adopt them is at most negligence.
+- Pierce v. Multnomah County: the Fourth Amendment governs a warrantless arrestee until release or a judicial finding of probable cause, not all pretrial detention; Kingsley covers the later stage.
+- Cunningham v. Gates does not apply the provocation rule; footnote 23 declines to endorse tactics that needlessly create danger. No finding was made on the shootings.
+- Rodriguez v. County of Los Angeles: the pretrial detainee was tried under the Eighth Amendment instruction; the court said Kingsley should have applied but the error was forfeited and harmless. Monell liability rested on a custom of failing to investigate and discipline.
+- Chinaryan v. City of Los Angeles: the court held a jury could find a violation and that the law was clearly established; it did not hold the officers violated the Fourth Amendment. The city won the Monell trial. Filed August 14, 2024.
+- Monell is a maternity leave case, not a force case, and did not create failure to train liability.
+- Tatum v. City and County of San Francisco: the docket is 04-15055, not 03-16286. Tatum never cites Drummond; any comparison is a teaching comparison. The CPR holding is narrow: promptly summoning medical help satisfied the Fourth Amendment on that record.
+- Alves v. County of Riverside: the jury found no Fourth Amendment excessive force; the holding is only that the negligence verdict could be reconciled with that finding under Hayes. The court did not hold prone restraint unreasonable or require a recovery position.
+- Spencer v. Pew: qualified immunity was granted for everything up to handcuffing on the clearly established prong; immunity was denied only for the post handcuffing knee and body weight. The other officers were not liable under the integral participant doctrine.
+- Robinson v. Solano County: the deputies won qualified immunity (the law was not clearly established in 1995). It establishes the principle on pointing a gun; it is not a liability case.
+- Kostrzewa v. City of Troy is a motion to dismiss decision: allegations only, Sixth Circuit, persuasive in California.
+- LaLonde v. County of Riverside: its statement that the immunity test equals the merits test was overruled by Saucier; the force holdings remain good law.
+- Washington v. Lambert: one of the few cases where liability was established (directed verdict affirmed). The court did not decide whether reasonable suspicion existed; Judge Kozinski did not join the discussion of race.
+- Meredith v. Erath: the agent was immune for the decision to handcuff during an evidence search, not for the force or for 30 minutes of tight cuffs after complaints.
+- Palmer, Wall, Meredith, LaLonde, Drummond, Spencer, and Kostrzewa all arrive on summary judgment, judgment as a matter of law, or a motion to dismiss; none is a finding of liability.
+- Three opinions could not be read because the Ninth Circuit's archive is missing them: Gregory v. County of Maui, Andrews v. City of Henderson, and O'Doan v. Sanford. They wait on a source with the California cases.

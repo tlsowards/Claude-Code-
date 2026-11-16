@@ -1,0 +1,90 @@
+{
+  "id": "meredith-v-erath",
+  "name": "Meredith v. Erath",
+  "court": "Ninth Circuit (from the Central District of California)",
+  "courtKey": "ca9",
+  "docket": "02-55021",
+  "citation": "342 F.3d 1057 (9th Cir. 2003)",
+  "decided": "September 8, 2003",
+  "status": "published",
+  "topic": "Excessive force in handcuffing a non-violent, passively resisting occupant during a search warrant, detention in handcuffs during the search, and overly tight handcuffs left on for thirty minutes after complaints",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "handcuffing-and-detention",
+    "qualified-immunity"
+  ],
+  "published": "2026-11-16",
+  "summary": "An IRS agent executing a search warrant for tax records allegedly grabbed a resident who loudly demanded to see the warrant, threw her to the floor, twisted her arms, handcuffed her so tightly it hurt, and left the cuffs tight for thirty minutes despite complaints before loosening them. The Ninth Circuit denied qualified immunity for the forceful handcuffing and for the thirty minutes of painful cuffs, held that detaining her in handcuffs during a nonviolent evidence search violated the Fourth Amendment but granted immunity on that point because the rule was new. It is taught for tight cuffs and for the rule that handcuffing a detainee requires more justification than detaining her.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/342/342.F3d.1057.02-55021.html (opinion by Judge David R. Thompson, joined by Judge Berzon, with four footnotes, and a partial concurrence and partial dissent by Judge Meskill of the Second Circuit sitting by designation). The archive heading confirms the citation 342 F.3d 1057. The archive copy does not mark internal page breaks, so pin cites are not given.",
+    "The docket number, argument date, and filing date are taken from the caption of the archived opinion.",
+    "The district court's summary judgment ruling and proceedings after remand were not read. Agent Erath's version of events, which the court noted was quite different, is not in the opinion and is not described here."
+  ],
+  "facts": "The facts are Gayle Bybee's version, which the court was required to accept because it was reviewing the denial of qualified immunity on summary judgment. The court noted that Agent Erath's account was quite different.\n\nIRS Agent Andrew Erath was investigating Lynne Meredith, founder of an organization that advised people on avoiding federal income tax, for false returns, interfering with tax administration, and conspiracy. He obtained a warrant to search a three story building in Sunset Beach, California, that he believed was the organization's headquarters. On July 10, 1998, Erath and twelve other agents entered to search for evidence. On the third floor they encountered Bybee, who was not a target and who, unknown to them, lived there.\n\nBybee loudly told the agents the search was illegal and asked to see the warrant. Erath did not produce it; it had been left in the car. When she repeated the demand, Bybee alleged, Erath grabbed her by the arms, forcibly threw her to the ground, twisted her arms, and handcuffed her. She alleged the cuffs were closed so tightly they caused pain and that she suffered extensive bruising.\n\nErath had her sit on a couch while the search continued. She said she complained several times that the cuffs were too tight and painful. For 30 minutes they were left as they were; then they were loosened so they would restrain her without pain. Several hours later the cuffs were removed and she was told she could leave. She chose to stay in her residence, sitting on the couch reading, until about 4:00 p.m.\n\nBybee sued Erath for excessive force in the handcuffing and for unlawful detention during the search. The district court denied Erath's motion for summary judgment on qualified immunity, and he took an interlocutory appeal.",
+  "holding": "Affirmed in part, reversed in part, and remanded. The court applied the Saucier v. Katz sequence to each of three claims.\n\nExcessive force in handcuffing. Taking Bybee's facts as true, a reasonable jury could find Erath used an unreasonable amount of force. He grabbed her, threw her to the ground, and twisted her arms after she loudly asked several times to see the warrant. She posed no safety risk and made no attempt to leave. The crimes under investigation, though felonies, were nonviolent tax offenses. She objected vociferously and passively resisted the handcuffing, but the need for force, if any, was minimal at best. On these facts the force was objectively unreasonable. In July 1998 it was clearly established that this amount of force was excessive, citing Hansen v. Black (unreasonably injuring a wrist and arm while handcuffing is excessive force). Qualified immunity was denied.\n\nDetention in handcuffs during the search. Officers may detain occupants without probable cause while executing a search warrant when the circumstances justify it (Michigan v. Summers), but the detention must be reasonable both in its existence and in the manner it is carried out, and a detention connected with a search may be unreasonable if it is unnecessarily painful, degrading, or prolonged (Franklin v. Foxworth). Drawing on Robinson v. Solano County, Washington v. Lambert, and out of circuit search cases, the court announced the rule that detaining a person in handcuffs during execution of a warrant to search for evidence is permissible only when justified by the totality of the circumstances, and that because handcuffing substantially aggravates intrusiveness, circumstances that justify a detention will not necessarily justify a detention by handcuffing; more is required. Here Erath had no reason to believe the occupants were dangerous, the offenses were nonviolent, Bybee was not a serious impediment to the search or a threat to anyone, and she made no attempt to flee. Her detention in handcuffs violated the Fourth Amendment. But because it was not clearly established in any circuit in July 1998 that simply handcuffing a person during an evidence search would violate the Fourth Amendment, Erath was entitled to qualified immunity on this part of the claim.\n\nOverly tight handcuffs for 30 minutes. The court denied qualified immunity. Franklin held a detention may be unreasonable if unnecessarily painful; Palmer v. Sanderson held that an officer presented no justification for handcuffing a man so tightly that he suffered pain and bruises or for refusing to loosen the cuffs after he complained; Alexander v. County of Los Angeles denied immunity for keeping a plaintiff in overly tight cuffs for 35 to 40 minutes; and the Fifth Circuit's Heitschmidt denied immunity for tight cuffs over several hours. A reasonable agent would have known in July 1998 that placing and keeping Bybee in cuffs so tight they caused unnecessary pain violated the Fourth Amendment. Quoting Palmer, the court said no reasonable officer could believe that the abusive application of handcuffs was constitutional.",
+  "dissent": "Judge Meskill concurred as to the excessive force claim but dissented from the denial of qualified immunity on the tight handcuffs portion of the detention claim. He would have held that 30 minutes of discomfort from tight cuffs on a healthy, clothed adult seated on a couch was a far cry from the conduct found unreasonable in Franklin, and that even if a violation occurred, it was not clearly established that overly tight handcuffing violates the right against unlawful detention, as opposed to the right against excessive force. He noted that Palmer, Alexander, and Heitschmidt all treated tight cuffs as excessive force claims, not detention claims, and that Bybee conceded the cuffs were loosened after she complained.",
+  "notDecided": "Whether Erath actually used the force Bybee described. The court accepted her version for purposes of the appeal and expressly noted his account was quite different. Denial of qualified immunity sent the claims to trial; nothing was decided against Erath on the facts.\n\nWhether Bybee could have been detained without handcuffs during the search. Because the court found the handcuffed detention unreasonable, it did not decide whether Summers permits detention incident to a warrant for noncontraband evidence.\n\nThe length of the detention. Bybee did not challenge it, and she chose to remain after being told she could leave.\n\nWhat happened on remand.",
+  "inPractice": "Meredith lays out three separate questions an officer must be able to answer when handcuffing someone who is not under arrest. First, was the force used to apply the cuffs reasonable? A loud, non-violent person who passively resists and poses no safety risk does not justify a takedown and arm twisting; the court held that rule was clearly established by 1998. Second, was handcuffing justified at all? The court held that the authority to detain an occupant during a search does not by itself carry the authority to handcuff; handcuffing substantially aggravates the intrusion and needs its own justification in the circumstances, such as danger, flight risk, or interference with the search. Third, once cuffs are on, are they causing unnecessary pain? Thirty minutes of tight cuffs after repeated complaints was enough to deny immunity, and the court quoted Palmer for the proposition that no reasonable officer could think abusive application of handcuffs was constitutional.\n\nThe qualified immunity split within the case is instructive. Erath was immune for the decision to handcuff during an evidence search because no court had said that was unlawful. He was not immune for the force used or for ignoring complaints of pain, because those rules were already clear.\n\nThe practical steps are the same as in every tight cuff case: check fit, double lock, and when the person says the cuffs hurt, look and adjust promptly. Here the cuffs were eventually loosened in a way that still restrained her.",
+  "trainIt": "Teach Meredith as the warrant service case in the handcuffing block, alongside Palmer, LaLonde, Wall, and Kostrzewa. The unique lesson is the separation between authority to detain and authority to handcuff. Put the court's statement on the board: circumstances that justify a detention will not necessarily justify a detention by handcuffing; more is required. Then run a search warrant scenario with a loud, non-target occupant who demands to see the warrant and does nothing else. Have students decide whether to handcuff, articulate the justification if they do, and explain how they would manage the occupant if they do not.\n\nTrain the warrant itself. The agent could not produce the warrant because it was in the car. The court did not decide anything about that, but the confrontation started there. Bring the warrant to the door.\n\nUse the three claim structure as a report writing exercise: the force used to cuff, the reason for cuffing, and the response to complaints of pain. Each one is a sentence the officer should be able to write.\n\nTeach the dissent briefly. Judge Meskill thought tight cuffs belong in an excessive force claim, not an unlawful detention claim. Officers do not need the label, but they should know that tight cuffs left on after complaints will be actionable under one heading or the other.\n\nState the posture: denial of qualified immunity at summary judgment on the plaintiff's version of events. Nothing was proven against the agent.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which does not show reporter page breaks. The facts are Bybee's version only; the court said Erath's account was quite different and did not recite it. The appeal was from a denial of qualified immunity, so no liability was found. The handcuffing during search holding is stated by the court to be new as of this opinion; the force and tight cuff holdings rest on earlier precedent.",
+  "applications": [
+    {
+      "title": "Detaining is not the same as handcuffing",
+      "body": "The court held that detaining a person in handcuffs during an evidence search is permissible only when justified by the totality of the circumstances, and that handcuffing substantially aggravates the intrusion, so more is required than what would justify a detention alone."
+    },
+    {
+      "title": "Loud is not dangerous",
+      "body": "Bybee loudly and repeatedly demanded to see the warrant, posed no safety risk, and did not try to leave. The court held that a takedown and arm twisting to cuff her, on those facts, was excessive and clearly so by 1998."
+    },
+    {
+      "title": "Thirty minutes of tight cuffs after complaints is enough",
+      "body": "Relying on Palmer, Alexander, Franklin, and Heitschmidt, the court denied immunity for leaving the cuffs painfully tight for 30 minutes despite repeated complaints. The fix was available: the cuffs were later loosened in a way that still restrained her."
+    },
+    {
+      "title": "Bring the warrant",
+      "body": "The agent could not show the warrant because it had been left in the car. The court made no ruling on that, but it was the start of the confrontation."
+    },
+    {
+      "title": "Nonviolent felonies do not justify felony tactics",
+      "body": "Tax offenses are felonies, but the court treated them as nonviolent offenses that gave the agent no reason to expect danger from the occupants."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Which of Bybee's claims did the Ninth Circuit hold could proceed without qualified immunity?",
+      "options": [
+        "Only the claim that she was detained in handcuffs during the search",
+        "The excessive force claim for the takedown and arm twisting, and the claim that she was kept in overly tight, painful cuffs for 30 minutes",
+        "None; the agent was immune on all claims",
+        "Only the claim about the length of her detention"
+      ],
+      "answer": 1,
+      "teach": "The court denied immunity for the force used to handcuff her and for the 30 minutes of painful cuffs, both governed by clear prior precedent. It granted immunity for the decision to detain her in handcuffs during an evidence search because that rule was new."
+    },
+    {
+      "q": "What rule did the court announce about handcuffing during execution of a search warrant for evidence?",
+      "options": [
+        "Occupants may always be handcuffed for officer safety during a search",
+        "Occupants may never be handcuffed unless they are arrested",
+        "Detention in handcuffs is permissible only when justified by the totality of the circumstances, and because handcuffing substantially aggravates intrusiveness, circumstances that justify a detention will not necessarily justify handcuffing",
+        "Handcuffing is permitted whenever the warrant is for a felony"
+      ],
+      "answer": 2,
+      "teach": "The court built the rule from Summers, Robinson, Washington v. Lambert, and out of circuit narcotics search cases, and applied it to find the handcuffed detention of a loud but non-threatening occupant unreasonable."
+    },
+    {
+      "q": "What was Judge Meskill's point of disagreement?",
+      "options": [
+        "He thought the takedown and arm twisting were reasonable",
+        "He thought the agent should have been immune for the whole detention claim, because 30 minutes of tight cuffs on a seated, clothed adult was unlike Franklin and because prior tight cuff cases were excessive force cases, not unlawful detention cases",
+        "He thought the agent should not have been immune for handcuffing her during the search",
+        "He thought Bybee had no standing because she stayed after being released"
+      ],
+      "answer": 1,
+      "teach": "Judge Meskill concurred on the excessive force claim but dissented from denying immunity on the tight cuffs portion of the detention claim, arguing the theory was mislabeled and not clearly established as a detention violation."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "hainze-v-richards",
+  "name": "Hainze v. Richards",
+  "court": "Fifth Circuit (from the Western District of Texas)",
+  "courtKey": "ca5",
+  "docket": "99-50222",
+  "citation": "207 F.3d 795 (5th Cir. 2000)",
+  "decided": "April 7, 2000",
+  "status": "published",
+  "topic": "Deadly force against a suicidal man armed with a knife; Heck v. Humphrey bar after an aggravated assault conviction; Title II of the ADA and Section 504 do not apply to an officer's on-the-street response before the scene is secure",
+  "settings": [
+    "field",
+    "supervisors"
+  ],
+  "categories": [
+    "mental-health-and-disability",
+    "deadly-force",
+    "qualified-immunity"
+  ],
+  "published": "2026-11-16",
+  "summary": "Deputies sent to transport a suicidal, intoxicated man to a hospital arrived to find him holding a knife next to an occupied pickup. He ignored orders to stop, walked toward a deputy, and was shot twice at four to six feet, about twenty seconds after the deputies arrived. The Fifth Circuit held that his later aggravated assault conviction barred his excessive force claim, and held that Title II of the ADA does not apply to an officer's on-the-street response to a disturbance call, whether or not the subject is mentally ill, until the officer has secured the scene and ensured there is no threat to human life. It also said that once the scene is secure the duty to accommodate attaches to handling and transport.",
+  "coverage": [
+    "The opinion was read in full, including all 41 footnotes, from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/207/207.F3d.795.99-50222.html. The archive marks some headnote material as copyrighted material omitted; the court's opinion text is complete.",
+    "The citation 207 F.3d 795, the docket number 99-50222, the decision date of April 7, 2000, and the panel (Politz, Garwood, and Davis, Circuit Judges; Politz writing) were confirmed from that file. The archive text does not print the reporter's internal page breaks, so no pin cites are given; references are to the opinion's numbered paragraphs as the archive presents them.",
+    "The district court's summary judgment ruling and the Texas criminal judgment were not read. Sappington v. Bartee, 195 F.3d 234 (5th Cir. 1999), on which the Heck ruling relied, and Gohier v. Enright, 186 F.3d 1216 (10th Cir. 1999), which the court discussed at length, were not read.",
+    "This is Fifth Circuit law. Its Title II holding is not binding in the Ninth Circuit, and the Ninth Circuit has addressed the ADA and arrests separately in the Sheehan litigation, which has its own brief in this library. That Ninth Circuit opinion was not read for this brief."
+  ],
+  "facts": "In the early morning hours of November 16, 1997, Alicia Cluck called 911 and asked that police transport her suicidal nephew, Kim Michael Hainze, to a hospital for mental health treatment. She reported that Hainze had a history of depression, was under the influence of alcohol and antidepressants, was carrying a knife, and was threatening to commit suicide or \"suicide by cop.\" Williamson County Sheriff's deputies Steve Allison, Kevin Hallmark, and Scott Zion were given that information and dispatched in marked cars to a convenience store (para. 2).\n\nThey arrived to see a man, believed to be Hainze, standing at the passenger door of a pickup occupied by two people, apparently holding the door handle and talking to them. He had a knife in his hand and was barefoot despite the cold. Allison got out, drew his weapon, and ordered Hainze away from the truck. Hainze responded with profanity and began walking toward Allison. Zion and Hallmark had also exited with weapons drawn. Allison twice ordered Hainze to stop; Hainze ignored him. When Hainze was within four to six feet, Allison fired two shots into his chest, then immediately called for EMS. Hainze survived. About twenty seconds passed between the deputies' arrival and the shooting (para. 2). The deputies did not know that the two people in the truck were unharmed and related to Hainze (para. 15).\n\nHainze sued four days later. In August 1998 a Williamson County jury convicted him of aggravated assault with a deadly weapon for his conduct at the store (para. 3). His suit alleged excessive force under section 1983 against the three deputies, a policy claim against the county and sheriff for failing to adopt or enforce policies for handling mentally ill people in crisis, Texas assault and battery claims, and claims under Title II of the ADA and Section 504 of the Rehabilitation Act for failing to train and set policy to protect mentally ill individuals, for discriminating against him on the basis of disability, and for failing to conduct a self-evaluation (paras. 3-4).\n\nThe county had a mental health training program. All deputies received some mental health instruction, some were certified in mental health issues, and Allison was a certified mental health officer with at least sixteen hours of such training. The county had self-evaluated its physical facilities in 1992 but not its policies for responding to mental health disturbances (para. 18). The district court granted summary judgment to all defendants on all claims (para. 4).",
+  "holding": "Affirmed. Judge Politz wrote for a unanimous panel.\n\nSection 1983. The district court had found the deputies entitled to qualified immunity because their actions were objectively reasonable. The Fifth Circuit affirmed on a different ground. After the district court ruled, the circuit held in Sappington v. Bartee that under Heck v. Humphrey an excessive force claim is barred as a matter of law when brought by a person convicted of aggravated assault arising from the same events. Because a jury had convicted Hainze of aggravated assault with a deadly weapon, the force used to restrain him, \"up to and including deadly force, cannot be deemed excessive.\" Finding no constitutional violation, the court did not reach qualified immunity (para. 7). The Texas assault and battery claims rested on the same theory and were properly dismissed (para. 8).\n\nTitle II and Section 504. The court treated the two statutes together. Neither side disputed that Hainze was disabled or that the sheriff's department was a public entity (para. 10). The court noted disagreement among courts about whether an arrest is a program or activity under Title II, and that only the Tenth Circuit, in Gohier v. Enright, had considered in-the-field investigations that may or may not lead to an arrest (paras. 10-12).\n\nHainze first argued that he was denied the benefits of the county's mental health training when Allison, contrary to that training, shot him without trying to talk, back away, defuse, or use lesser force. The court held that Hainze \"was not denied the benefits and protections of Williamson County's mental health training by the County, Sheriff Richards, or the officers. Rather, Hainze's assault of Allison with a deadly weapon denied him the benefits of that program\" (para. 13).\n\nHe next argued failure to reasonably accommodate by treating mental health calls like criminal calls. The court held: \"Title II does not apply to an officer's on-the-street responses to reported disturbances or other similar incidents, whether or not those calls involve subjects with mental disabilities, prior to the officer's securing the scene and ensuring that there is no threat to human life.\" Officers in the field must instantaneously identify, assess, and react to potentially life-threatening situations; requiring them to factor in ADA compliance amid exigent circumstances, before securing their own safety and that of others, \"would pose an unnecessary risk to innocents.\" Title II does not preempt other remedies; the court held only that such a claim is unavailable under Title II in circumstances like these (para. 14). Requiring Allison \"to use less than reasonable force in defending themselves and others, or to hesitate to consider other possible actions in the course of making such split-second decisions,\" is not the reasonable accommodation Title II contemplates (para. 15).\n\nAfter the scene is secure. \"Once the area was secure and there was no threat to human safety, the Williamson County Sheriff's deputies would have been under a duty to reasonably accommodate Hainze's disability in handling and transporting him to a mental health facility,\" within Pennsylvania Department of Corrections v. Yeskey and the cases following it. \"But that was not the situation at bar\" (para. 16).\n\nSelf-evaluation. The regulations required the county to evaluate its policies and practices, and an evaluation of its mental health response policies \"was clearly required.\" But Hainze's injuries were caused by his own criminal actions, not the missing evaluation, so causation failed and he lacked standing for declaratory or injunctive relief (para. 18).",
+  "notDecided": "Whether the shooting was objectively reasonable under the Fourth Amendment. The Fifth Circuit did not decide that question on the merits. It held the claim barred by Heck because of the aggravated assault conviction, and expressly did not reach qualified immunity (para. 7). The district court's reasonableness finding was not reviewed.\n\nWhether Title II applies to arrests in general. The court noted the disagreement among courts and did not resolve it (para. 10). It decided only that Title II does not reach an officer's on-the-street response before the scene is secure.\n\nWhat accommodation would have been required after the scene was secured. The court said the duty would have attached to handling and transport, but did not describe its content (para. 16).\n\nWhether the county's failure to self-evaluate its mental health response policies would support relief for a plaintiff who could show causation. The court found the evaluation was required but found no causation here (para. 18).",
+  "inPractice": "The holding officers most need is the two-stage structure the court described. Before the scene is secure, with a weapon present and a threat to life, the Fifth Circuit said the ADA does not govern the officer's tactical response; the Fourth Amendment does. After the scene is secure and there is no threat to human safety, the court said the duty to reasonably accommodate the person's disability attaches to how the person is handled and transported. That second stage is where most mental health calls spend most of their time, and it is where this opinion says the ADA applies.\n\nThe facts drove the result. The deputies knew from dispatch that the subject was suicidal, intoxicated, armed with a knife, and had spoken of suicide by cop. They found him with a knife beside an occupied vehicle, he advanced on a deputy through two orders to stop, and the shots came at four to six feet, about twenty seconds after arrival. The court described the shooting as a split second decision made in self-defense and for the safety of others.\n\nThe case was decided on a conviction. The force claim did not fail because the court weighed the force; it failed because a jury had convicted Hainze of aggravated assault with a deadly weapon for the same conduct. Hainze is not a court approving a tactic.\n\nFor California readers, Hainze is Fifth Circuit law. The Ninth Circuit has addressed the ADA and arrests in the Sheehan litigation, which has its own brief in this library and should be read alongside this one.",
+  "trainIt": "Dr. Sowards teaches Hainze in the disability line with Sheehan, O'Doan, Pena v. Leombruni, and Pham. The training point this opinion supports is that exigency and ADA accommodation are sequential, not competing. Build scenarios with a clear transition: the threat phase, trained to the Fourth Amendment and to tactics; the control point; and the post-control phase, where the court said the accommodation duty attaches to handling and transport. Have students name the moment the scene became secure and what changed in their obligations at that moment.\n\nTrain pre-arrival information as part of the scene. The deputies had the aunt's report of depression, alcohol, antidepressants, a knife, and talk of suicide by cop before they arrived. That information shaped what they saw and did in twenty seconds. Dispatch information is tactical information and also the beginning of the accommodation analysis once the scene is secure.\n\nTeach the agency lesson honestly. The court said the county was required to self-evaluate its policies for responding to mental health disturbances and had not, and it noted the county's training program and the deputy's mental health certification. Agencies should complete and document the policy self-evaluation the regulations require and document mental health training by officer and hour.\n\nTeach the posture. Hainze did not hold that the shooting was reasonable; the claim was barred by the conviction. It did not hold that the ADA never applies to police encounters; it held the ADA does not apply before the scene is secure and said it would apply afterward.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which omits only copyrighted headnote material. Pin cites are to paragraph numbers in that text, not to reporter pages. This is Fifth Circuit precedent; its Title II holding on pre-securing exigencies has not been adopted by the Ninth Circuit, whose Sheehan opinion was not read for this brief. The Heck ruling turned on a Texas aggravated assault conviction and Fifth Circuit precedent (Sappington), which was not read.",
+  "applications": [
+    {
+      "title": "Two stages, two bodies of law",
+      "body": "The Fifth Circuit held that Title II does not apply to an officer's on-the-street response before the scene is secured and any threat to life is addressed. It also said that once the scene is secure, the duty to reasonably accommodate the person's disability attaches to handling and transport. Train both halves."
+    },
+    {
+      "title": "Accommodation is not hesitation under threat",
+      "body": "The court said requiring an officer to use less than reasonable force in self-defense, or to hesitate to consider other actions during a split second decision, is not the reasonable accommodation Title II contemplates. The decision was about a knife at four to six feet after two ignored orders to stop."
+    },
+    {
+      "title": "The claim died on the conviction, not on the tactics",
+      "body": "The excessive force claim was barred because a jury convicted Hainze of aggravated assault with a deadly weapon for the same conduct. The court did not decide whether the shooting was reasonable and did not reach qualified immunity."
+    },
+    {
+      "title": "The agency's paperwork was examined",
+      "body": "The court found the county was required to self-evaluate its mental health response policies under the ADA regulations and had not, though it found no causation here. It also noted the county's mental health training and the deputy's certification. Complete the evaluation and document the training."
+    },
+    {
+      "title": "Know whose law you are under",
+      "body": "Hainze is Fifth Circuit law. California officers should read it with the Ninth Circuit's Sheehan decision, which has its own brief in this library."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "According to the Fifth Circuit in Hainze, when does Title II of the ADA begin to apply to officers responding to a disturbance call involving a mentally ill person?",
+      "options": [
+        "From the moment dispatch reports that the subject is mentally ill",
+        "Never; police field work is not a program or activity",
+        "After the officers have secured the scene and ensured there is no threat to human life",
+        "Only once the person has been booked into a facility"
+      ],
+      "answer": 2,
+      "teach": "The court held Title II does not apply to on-the-street responses before the scene is secure, and said that once the area was secure and there was no threat to human safety the deputies would have been under a duty to reasonably accommodate the disability in handling and transporting the person."
+    },
+    {
+      "q": "Why did Hainze's excessive force claim under section 1983 fail?",
+      "options": [
+        "The court found the shooting objectively reasonable after weighing the Graham factors",
+        "His aggravated assault conviction for the same conduct barred the claim under Heck v. Humphrey",
+        "The deputies were entitled to qualified immunity because the law on knives was unsettled",
+        "He failed to file within the statute of limitations"
+      ],
+      "answer": 1,
+      "teach": "The Fifth Circuit relied on Sappington v. Bartee: a person convicted of aggravated assault arising from the same events cannot bring an excessive force claim. The court did not reach the merits or qualified immunity."
+    },
+    {
+      "q": "What did the court say about Hainze's argument that he was denied the benefit of the county's mental health training?",
+      "options": [
+        "It agreed and remanded for trial on the ADA claim",
+        "It said the county had no mental health training program",
+        "It said his own assault with a deadly weapon, not the county or the officers, denied him the benefit of that program",
+        "It said training programs can never be a service under Title II"
+      ],
+      "answer": 2,
+      "teach": "The court held a Title II claim requires that the public entity deny the benefit of its service, and found that Hainze's criminal assault, not the defendants, caused him to lose the benefit of the training. It also noted that Allison was a certified mental health officer."
+    }
+  ]
+}
