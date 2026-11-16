@@ -14,6 +14,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { decidedShort } from './lib/case-text.mjs';
+import { categoryLabel } from './lib/case-categories.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const caseDir = resolve(root, 'content/cases');
@@ -97,6 +98,11 @@ function cite(c) {
 function courtListener(n) {
   return `https://www.courtlistener.com/?q=${encodeURIComponent(`"${n}"`)}`;
 }
+/** The channel playlist a case belongs in: its first library section's label. */
+function playlist(c) {
+  const k = (c.categories ?? [])[0];
+  return k ? (categoryLabel[k] ?? k) : 'Use of force case law';
+}
 function spoken(c) {
   return shortName(c).replace(/ v\. /, ' versus ');
 }
@@ -174,13 +180,14 @@ if (cases.length === 0) {
   li(cases.map((c, i) => {
     const d = new Date(monday0);
     d.setUTCDate(d.getUTCDate() + 7 * i);
-    return `Video ${i + 1} (week of ${isoDate(d)}): ${cite(c)}`;
+    return `Video ${i + 1} (week of ${isoDate(d)}): ${cite(c)}. Playlist: ${playlist(c)}`;
   }));
 
   cases.forEach((c, vi) => {
     const yt = c.youtube ?? {};
     h(2, `Video ${vi + 1}: ${shortName(c)}`);
     p(`Decision: ${c.name}, ${courtShort(c)}, ${c.decided} (${statusLabel[c.status] ?? c.status})${c.citation ? `, ${c.citation}` : ''}${c.docket ? `, docket ${c.docket}` : ''}.`);
+    p(`Suggested playlist: ${playlist(c)}. Topic sections on the app: ${(c.categories ?? []).map((k) => categoryLabel[k] ?? k).join(', ') || 'none'}.`);
     p(`Audio: ${c.audio?.url ? `${c.audio.url} (${minutes(c)}, complete narration in Dr. Sowards' voice)` : 'not rendered yet; render it with scripts/make-audio-elevenlabs.mjs --case before building the video'}. Narration script: content/narration/cases/${c.id}.txt. Case page: ${caseUrl(c)}.`);
 
     h(3, 'Title options');
