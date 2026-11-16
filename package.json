@@ -12,7 +12,9 @@
     "sitemap": "node scripts/build-sitemap.mjs",
     "youtube": "node scripts/build-youtube-kit.mjs",
     "sync": "node scripts/sync-site.mjs",
-    "check": "tsc -b"
+    "check": "tsc -b",
+    "case-narration": "node scripts/build-case-narration.mjs",
+    "case-kit": "node scripts/build-case-kit.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

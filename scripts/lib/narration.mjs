@@ -6,10 +6,16 @@ import { resolve } from 'node:path';
 
 const escapeRegExp = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-export function loadNarration(root, id) {
-  const brief = JSON.parse(readFileSync(resolve(root, 'content/briefs', `${id}.json`), 'utf8'));
+/**
+ * kind is 'brief' (default: content/briefs/<id>.json with content/narration/<id>.txt) or 'case'
+ * (a Case library teaching brief: content/cases/<id>.json with content/narration/cases/<id>.txt).
+ */
+export function loadNarration(root, id, kind = 'brief') {
+  const jsonDir = kind === 'case' ? 'content/cases' : 'content/briefs';
+  const textDir = kind === 'case' ? 'content/narration/cases' : 'content/narration';
+  const brief = JSON.parse(readFileSync(resolve(root, jsonDir, `${id}.json`), 'utf8'));
   const pronunciations = JSON.parse(readFileSync(resolve(root, 'content/pronunciations.json'), 'utf8'));
-  let text = readFileSync(resolve(root, 'content/narration', `${id}.txt`), 'utf8').trim();
+  let text = readFileSync(resolve(root, textDir, `${id}.txt`), 'utf8').trim();
   for (const [written, spoken] of Object.entries(pronunciations)) {
     if (written.startsWith('_')) continue;
     text = text.replace(new RegExp(`\\b${escapeRegExp(written)}\\b`, 'g'), spoken);

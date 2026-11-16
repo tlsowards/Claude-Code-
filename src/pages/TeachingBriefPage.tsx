@@ -30,8 +30,18 @@ export default function TeachingBriefPage() {
       <h1>{t.name}</h1>
       <p className="lead">{summary.lead}</p>
       {summary.rest && <p>{summary.rest}</p>}
+      {t.audio && !canAccess && (
+        <p className="meta">This brief is also recorded in Dr. Sowards' voice ({Math.round(t.audio.durationSeconds / 60)} min). The recording plays for subscribers.</p>
+      )}
       {canAccess ? (
         <>
+          {t.audio && (
+            <div className="player">
+              <div className="eyebrow gold">Listen to this brief</div>
+              <div style={{ opacity: 0.85, fontSize: '0.9rem', marginBottom: 8 }}>Read by Dr. Sowards · {Math.round(t.audio.durationSeconds / 60)} min</div>
+              <audio controls preload="metadata" src={t.audio.url} />
+            </div>
+          )}
           <CaseCard c={t} briefId={t.id} standalone />
           {t.context && t.context.length > 0 && t.context.map((x, i) => (
             <section key={i}>

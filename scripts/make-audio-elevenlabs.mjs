@@ -1,6 +1,7 @@
 // Renders a narration script (content/narration/<id>.txt) to an MP3 with ElevenLabs text to speech,
 // in a cloned voice. Usage:
 //   ELEVENLABS_API_KEY=... node scripts/make-audio-elevenlabs.mjs <brief id> --voice <voice id> [--model eleven_v4] [--out dir]
+//   ... --case <case id>   renders a Case library brief (content/narration/cases/<id>.txt) to case-<id>-tim.mp3
 // The text is split at paragraph boundaries into requests under 9,000 characters. Each request carries
 // the neighbouring text so the voice stays consistent across the joins, then ffmpeg concatenates the
 // parts and writes ID3 tags. The streaming endpoint is used so long chunks start returning audio
@@ -14,7 +15,8 @@ import { loadNarration, chunkText } from './lib/narration.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
-const id = args.find((a) => !a.startsWith('--'));
+const isCase = args.includes('--case');
+const id = args.find((a, i) => !a.startsWith('--') && (i === 0 || args[i - 1] !== '--voice' && args[i - 1] !== '--model' && args[i - 1] !== '--out'));
 const opt = (name, def) => {
   const i = args.indexOf(`--${name}`);
   return i >= 0 && args[i + 1] ? args[i + 1] : def;
@@ -28,7 +30,7 @@ if (!id || !voice || !apiKey) {
   process.exit(1);
 }
 
-const { brief, text } = loadNarration(root, id);
+const { brief, text } = loadNarration(root, id, isCase ? 'case' : 'brief');
 const chunks = chunkText(text, 9000);
 
 const work = resolve(outDir, `${id}-elevenlabs`);
@@ -83,11 +85,12 @@ for (let i = 0; i < chunks.length; i++) {
 
 const list = resolve(work, 'parts.txt');
 writeFileSync(list, parts.map((p) => `file '${p.replace(/'/g, "'\\''")}'`).join('\n') + '\n');
-const out = resolve(outDir, `${brief.date}-use-of-force-case-law-update-tim.mp3`);
-const title = `Use of Force Case Law Update: ${brief.title}`;
+const out = resolve(outDir, isCase ? `case-${id}-tim.mp3` : `${brief.date}-use-of-force-case-law-update-tim.mp3`);
+const title = isCase ? `${brief.name}: what it means in practice and how to train it` : `Use of Force Case Law Update: ${brief.title}`;
+const year = isCase ? String(new Date().getFullYear()) : brief.date.slice(0, 4);
 execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy',
   '-metadata', `title=${title}`, '-metadata', 'artist=Dr. Timothy Sowards, Sowards Consulting', '-metadata', 'album=Use of Force Case Law Update',
-  '-metadata', `date=${brief.date.slice(0, 4)}`, '-metadata', 'genre=Podcast', '-id3v2_version', '3', out]);
+  '-metadata', `date=${year}`, '-metadata', isCase ? 'genre=Training' : 'genre=Podcast', '-id3v2_version', '3', out]);
 const dur = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', out]).toString().trim();
 const totalSec = Math.round(Number(dur));
 console.log(`Wrote ${out} (${Math.floor(totalSec / 60)} min ${totalSec % 60} s)`);

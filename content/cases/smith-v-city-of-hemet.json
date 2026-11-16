@@ -89,5 +89,18 @@
       "answer": 1,
       "teach": "In California an arrest made with excessive force is unlawful, so a section 148 conviction for resisting such an arrest cannot coexist with an excessive force finding. But pre-arrest obstruction is separate, and the defendants bore the burden of showing the plea covered the arrest-phase conduct. The dissent would have treated the encounter as one continuous course of conduct."
     }
-  ]
+  ],
+  "youtube": {
+    "titles": [
+      "Smith v. City of Hemet: how the Ninth Circuit defines deadly force",
+      "When compliance starts, force must change. Smith v. City of Hemet.",
+      "Pepper spray, a police dog, a man in pajamas. Smith v. City of Hemet, 2005."
+    ],
+    "thumbnail": {
+      "text": "SMITH v. CITY OF HEMET",
+      "redWord": "DEADLY FORCE",
+      "visual": "highlighted line of the opinion: \"a substantial risk of causing death or serious bodily injury\""
+    },
+    "hook": "Officers answering a domestic violence call pepper sprayed a man in pajamas on his own porch, took him to the ground, and had a police dog bite him three times. The en banc Ninth Circuit held that a jury could find the force excessive, that his resisting plea did not bar the suit, and redefined deadly force in the circuit as force that creates a substantial risk of causing death or serious bodily injury, the same definition California uses. It did not decide whether the dog was deadly force. This video walks through the facts, the holding, the dissent, what the court did not decide, what it means in practice, and how to train it."
+  }
 }
