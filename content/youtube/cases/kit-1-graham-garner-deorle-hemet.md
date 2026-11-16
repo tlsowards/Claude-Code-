@@ -19,7 +19,7 @@ Guardrail check: 4 cases screened against 1 exclusion term, none matched.
 
 - Video 1 (week of 2026-11-23): Graham v. Connor, Supreme Court of the United States, May 15, 1989
 - Video 2 (week of 2026-11-30): Tennessee v. Garner, Supreme Court of the United States, March 27, 1985
-- Video 3 (week of 2026-12-07): Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001
+- Video 3 (week of 2026-12-07): Deorle v. Rutherford, Ninth Circuit, March 16, 2001
 - Video 4 (week of 2026-12-14): Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005
 
 ## Video 1: Graham v. Connor
@@ -546,7 +546,7 @@ Pick one. Titles stay under 70 characters where possible; the full case name and
 ```
 A deputy fired a lead-filled beanbag round into the face of an unarmed, suicidal man walking toward him on his own property, with no warning and no order to stop, while negotiators were still on the way. The Ninth Circuit held that force capable of causing serious injury requires a strong governmental interest, that an officer's bare statement of fear is not enough, that apparent emotional disturbance is part of the calculus, and that a warning should be given when feasible. This video walks through the facts, the holding, the dissent, what the court did not decide, what it means in practice, and how to train it.
 
-Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001 (published), 272 F.3d 1272 (9th Cir. 2001). A SIRT deputy fired a lead-filled beanbag round into the face of an unarmed, suicidal man who was walking toward him at a steady gait on his own property, after the man had obeyed commands to drop a crossbow and other items, while negotiators were still en route. The deputy gave no warning and no order to stop. The Ninth Circuit reversed summary judgment, holding that on the plaintiff's version the force was excessive and that the deputy was not entitled to qualified immunity. The court held that force capable of causing serious injury, though less than deadly, may be used only when a strong governmental interest warrants it, that an officer's bare statement of fear is not enough, that the subject's apparent emotional disturbance is a factor, and that a warning should be given when feasible. It is the foundation of the less lethal line.
+Deorle v. Rutherford, Ninth Circuit, March 16, 2001 (published), 272 F.3d 1272 (9th Cir. 2001). A SIRT deputy fired a lead-filled beanbag round into the face of an unarmed, suicidal man who was walking toward him at a steady gait on his own property, after the man had obeyed commands to drop a crossbow and other items, while negotiators were still en route. The deputy gave no warning and no order to stop. The Ninth Circuit reversed summary judgment, holding that on the plaintiff's version the force was excessive and that the deputy was not entitled to qualified immunity. The court held that force capable of causing serious injury, though less than deadly, may be used only when a strong governmental interest warrants it, that an officer's bare statement of fear is not enough, that the subject's apparent emotional disturbance is a factor, and that a warning should be given when feasible. It is the foundation of the less lethal line.
 Written brief, training points, and knowledge check: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
 
 The full Case library, the weekly Use of Force Case Law Update, and the printable roll call versions are in the Sowards Briefing Room: https://app.sowardsconsulting.com/cases
@@ -582,8 +582,8 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 
 | Segment | On-screen text | Visual |
 |---|---|---|
-| Open | Sowards Briefing Room / Deorle v. Rutherford / March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001 | Brand open, channel mark, then the summary as on-screen lines |
-| The case | Deorle v. Rutherford / Ninth Circuit / March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001 / published | Opinion first page or caption, docket 99-17188 |
+| Open | Sowards Briefing Room / Deorle v. Rutherford / March 16, 2001 | Brand open, channel mark, then the summary as on-screen lines |
+| The case | Deorle v. Rutherford / Ninth Circuit / March 16, 2001 / published | Opinion first page or caption, docket 99-17188 |
 | Facts | Facts | Timeline built from the facts paragraph; map if a place is named |
 | Holding | Holding | Highlighted opinion text |
 | Dissent | Dissent | Highlighted opinion text, second color |
@@ -599,7 +599,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 
 - Hook (on screen and spoken): Deorle sets the standard for every impact munition, and by later extension for other intermediate tools: if the force can cause serious injury, it requires a strong governmental interest, and a warning should precede it when feasible.
 - Body: The officer's job is to be able to name the interest and the warning. Name the interest in objective facts. The court rejected a bare statement of fear.
-- Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001
+- Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001
 - Close: Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "What this means in practice" segment of Video 3, or re-record from this text in the same voice.
 
@@ -607,7 +607,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 
 - Hook (on screen and spoken): Teach the Deorle articulation before teaching the shot.
 - Body: Before any impact munition training evolution, require the student to state three things aloud: the objective facts showing an immediate threat or other strong interest, the warning given and the time allowed for compliance, and the alternatives available and why they were not used. The court faulted the record for lacking all three. Build the warning into muscle memory.
-- Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001
+- Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001
 - Close: Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "How to train it" segment of Video 3, or re-record from this text in the same voice.
 
@@ -615,7 +615,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 
 - Hook (on screen and spoken): Serious injury force needs a strong interest.
 - Body: The court held that force capable of causing serious injury, even though less than deadly, is permissible only when a strong governmental interest compels it. Before deploying an impact munition, be able to state that interest in objective facts.
-- Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001
+- Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001
 - Close: Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Serious injury force needs a strong interest" segment of Video 3, or re-record from this text in the same voice.
 
@@ -623,7 +623,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 
 - Hook (on screen and spoken): Fear is not a fact.
 - Body: A simple statement that the officer feared for his safety is not enough. There must be objective factors to justify the concern. What did the person have, what did he do, who was at risk, and what did you actually see.
-- Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001
+- Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001
 - Close: Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Fear is not a fact" segment of Video 3, or re-record from this text in the same voice.
 
@@ -649,14 +649,14 @@ Serious injury force needs a strong interest.
 
 The court held that force capable of causing serious injury, even though less than deadly, is permissible only when a strong governmental interest compels it. Before deploying an impact munition, be able to state that interest in objective facts.
 
-From the Sowards Briefing Room Case library: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001. Full brief and how to train it: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
+From the Sowards Briefing Room Case library: Deorle v. Rutherford, Ninth Circuit, March 16, 2001. Full brief and how to train it: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
 
 Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
 Instagram and TikTok caption (pair with the matching Short):
 ```
-Serious injury force needs a strong interest. The court held that force capable of causing serious injury, even though less than deadly, is permissible only when a strong governmental interest compels it. Deorle v. Rutherford, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
+Serious injury force needs a strong interest. The court held that force capable of causing serious injury, even though less than deadly, is permissible only when a strong governmental interest compels it. Deorle v. Rutherford, March 16, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
 X:
@@ -672,14 +672,14 @@ Fear is not a fact.
 
 A simple statement that the officer feared for his safety is not enough. There must be objective factors to justify the concern. What did the person have, what did he do, who was at risk, and what did you actually see.
 
-From the Sowards Briefing Room Case library: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001. Full brief and how to train it: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
+From the Sowards Briefing Room Case library: Deorle v. Rutherford, Ninth Circuit, March 16, 2001. Full brief and how to train it: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
 
 Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
 Instagram and TikTok caption (pair with the matching Short):
 ```
-Fear is not a fact. A simple statement that the officer feared for his safety is not enough. Deorle v. Rutherford, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
+Fear is not a fact. A simple statement that the officer feared for his safety is not enough. Deorle v. Rutherford, March 16, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
 X:
@@ -695,14 +695,14 @@ Warn when feasible, and warn the target.
 
 Warnings should be given when feasible if the force may result in serious injury, and the giving or failure to give one is a Graham factor. An announcement of less lethal to other officers is not a warning to the subject. Order him to stop and tell him what is coming.
 
-From the Sowards Briefing Room Case library: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001. Full brief and how to train it: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
+From the Sowards Briefing Room Case library: Deorle v. Rutherford, Ninth Circuit, March 16, 2001. Full brief and how to train it: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
 
 Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
 Instagram and TikTok caption (pair with the matching Short):
 ```
-Warn when feasible, and warn the target. Warnings should be given when feasible if the force may result in serious injury, and the giving or failure to give one is a Graham factor. Deorle v. Rutherford, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
+Warn when feasible, and warn the target. Warnings should be given when feasible if the force may result in serious injury, and the giving or failure to give one is a Graham factor. Deorle v. Rutherford, March 16, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
 X:
@@ -718,14 +718,14 @@ Time removes the split second defense.
 
 Officers were on scene over half an hour, Rutherford watched Deorle for five to ten minutes, had cover and a retreat path, and chose his firing point in advance. The court called the shot a calculated and deliberate decision, not a split second judgment.
 
-From the Sowards Briefing Room Case library: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001. Full brief and how to train it: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
+From the Sowards Briefing Room Case library: Deorle v. Rutherford, Ninth Circuit, March 16, 2001. Full brief and how to train it: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
 
 Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
 Instagram and TikTok caption (pair with the matching Short):
 ```
-Time removes the split second defense. Officers were on scene over half an hour, Rutherford watched Deorle for five to ten minutes, had cover and a retreat path, and chose his firing point in advance. Deorle v. Rutherford, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
+Time removes the split second defense. Officers were on scene over half an hour, Rutherford watched Deorle for five to ten minutes, had cover and a retreat path, and chose his firing point in advance. Deorle v. Rutherford, March 16, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
 X:
@@ -741,14 +741,14 @@ Apparent crisis is a factor, not a rule.
 
 The court declined to create a separate class of mentally ill suspects, but held that where it is or should be apparent that the person is emotionally disturbed, that fact must be considered in weighing the force. It favors negotiators and time where feasible.
 
-From the Sowards Briefing Room Case library: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001. Full brief and how to train it: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
+From the Sowards Briefing Room Case library: Deorle v. Rutherford, Ninth Circuit, March 16, 2001. Full brief and how to train it: https://app.sowardsconsulting.com/cases/deorle-v-rutherford
 
 Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
 Instagram and TikTok caption (pair with the matching Short):
 ```
-Apparent crisis is a factor, not a rule. The court declined to create a separate class of mentally ill suspects, but held that where it is or should be apparent that the person is emotionally disturbed, that fact must be considered in weighing the force. Deorle v. Rutherford, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
+Apparent crisis is a factor, not a rule. The court declined to create a separate class of mentally ill suspects, but held that where it is or should be apparent that the person is emotionally disturbed, that fact must be considered in weighing the force. Deorle v. Rutherford, March 16, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
 X:

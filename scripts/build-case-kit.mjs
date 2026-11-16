@@ -90,8 +90,12 @@ function shortName(c) {
 function courtShort(c) {
   return c.court.split(' (')[0];
 }
+/** The first decision date only; amended-opinion history stays in the Decision line. */
+function decidedShort(c) {
+  return c.decided.split(';')[0].trim();
+}
 function cite(c) {
-  return `${c.name}, ${courtShort(c)}, ${c.decided}`;
+  return `${c.name}, ${courtShort(c)}, ${decidedShort(c)}`;
 }
 function courtListener(n) {
   return `https://www.courtlistener.com/?q=${encodeURIComponent(`"${n}"`)}`;
@@ -179,7 +183,7 @@ if (cases.length === 0) {
   cases.forEach((c, vi) => {
     const yt = c.youtube ?? {};
     h(2, `Video ${vi + 1}: ${shortName(c)}`);
-    p(`Decision: ${cite(c)} (${statusLabel[c.status] ?? c.status})${c.citation ? `, ${c.citation}` : ''}${c.docket ? `, docket ${c.docket}` : ''}.`);
+    p(`Decision: ${c.name}, ${courtShort(c)}, ${c.decided} (${statusLabel[c.status] ?? c.status})${c.citation ? `, ${c.citation}` : ''}${c.docket ? `, docket ${c.docket}` : ''}.`);
     p(`Audio: ${c.audio?.url ? `${c.audio.url} (${minutes(c)}, complete narration in Dr. Sowards' voice)` : 'not rendered yet; render it with scripts/make-audio-elevenlabs.mjs --case before building the video'}. Narration script: content/narration/cases/${c.id}.txt. Case page: ${caseUrl(c)}.`);
 
     h(3, 'Title options');
@@ -227,8 +231,8 @@ if (cases.length === 0) {
 
     h(3, 'Shot list');
     out.push('| Segment | On-screen text | Visual |', '|---|---|---|');
-    out.push(`| Open | ${CHANNEL} / ${shortName(c)} / ${c.decided} | Brand open, channel mark, then the summary as on-screen lines |`);
-    out.push(`| The case | ${c.name} / ${courtShort(c)} / ${c.decided} / ${statusLabel[c.status] ?? c.status} | Opinion first page or caption, docket ${c.docket ?? 'n/a'} |`);
+    out.push(`| Open | ${CHANNEL} / ${shortName(c)} / ${decidedShort(c)} | Brand open, channel mark, then the summary as on-screen lines |`);
+    out.push(`| The case | ${c.name} / ${courtShort(c)} / ${decidedShort(c)} / ${statusLabel[c.status] ?? c.status} | Opinion first page or caption, docket ${c.docket ?? 'n/a'} |`);
     out.push(`| Facts | Facts | Timeline built from the facts paragraph; map if a place is named |`);
     out.push(`| Holding | Holding | Highlighted opinion text |`);
     if (c.dissent) out.push(`| Dissent | Dissent | Highlighted opinion text, second color |`);
@@ -278,7 +282,7 @@ if (cases.length === 0) {
       out.push(`${title}.`, '', clean(a.body), '', `From the Sowards Briefing Room Case library: ${cite(c)}. Full brief and how to train it: ${caseUrl(c)}`, '', CTA);
       out.push('```', '');
       out.push('Instagram and TikTok caption (pair with the matching Short):', '```');
-      out.push(`${title}. ${clean(firstSentence(a.body))} ${shortName(c)}, ${c.decided}. ${CTA}`);
+      out.push(`${title}. ${clean(firstSentence(a.body))} ${shortName(c)}, ${decidedShort(c)}. ${CTA}`);
       out.push('```', '');
       out.push('X:', '```');
       out.push(clip(`${title}. ${clean(firstSentence(a.body))} ${shortName(c)}. ${caseUrl(c)}`, 275));
