@@ -1,0 +1,93 @@
+{
+  "id": "davis-v-city-of-las-vegas",
+  "name": "Davis v. City of Las Vegas",
+  "court": "Ninth Circuit (from the District of Nevada, District Judge James C. Mahan)",
+  "courtKey": "ca9",
+  "docket": "04-17284",
+  "citation": "478 F.3d 1048 (9th Cir. 2007)",
+  "decided": "February 28, 2007",
+  "status": "published",
+  "topic": "Fourth Amendment excessive force, handcuffed, unarmed trespass suspect swung head first into walls, thrown to the floor and punched in the face after refusing consent to a pocket search, neck fractured, qualified immunity denied, Nevada discretionary immunity does not cover bad faith",
+  "settings": [
+    "field"
+  ],
+  "categories": [
+    "takedowns-and-control",
+    "force-standards",
+    "handcuffing-and-detention"
+  ],
+  "published": "2026-11-16",
+  "summary": "Casino security found a man reading a magazine in a non-public stairwell, handcuffed him with his consent and called police. When he declined to consent to a search of his pockets, the responding officer, who had already patted him down and knew he was unarmed, swung him head first into two walls, threw him face down, knelt on his back and punched him in the face, fracturing his neck. The Ninth Circuit reversed summary judgment, holding that on these facts the force was excessive and that any reasonable officer would have known it, and reinstated the state battery claim because Nevada's discretionary immunity does not protect bad faith. It is the case for force on a handcuffed, controlled subject.",
+  "coverage": [
+    "The opinion by Judge Reinhardt, including all footnotes, was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/478/478.F3d.1048.04-17284.html. The archive heads the file 478 F.3d 1048, No. 04-17284, argued and submitted October 19, 2006, filed February 28, 2007, which confirms the citation.",
+    "The archive text has paragraph numbers but no Federal Reporter page breaks, so no pin cites are given. The Ninth Circuit's slip opinion was not available at the court's archive for the 2007 filing date.",
+    "The internal affairs findings and discipline are described only as the court described them. No subsequent history (remand or trial result) was checked."
+  ],
+  "facts": "The facts are those stated by Davis and the independent witnesses who supported him, which the court was required to accept on review of summary judgment.\n\nOn November 7, 2001, a security officer at the Las Vegas Club Hotel and Casino found Frankie Davis sitting at the top of a stairwell in a non-public area, reading a magazine. A second guard told Davis to come down two flights and approach, and he did. When the guards produced handcuffs, Davis protested that they were unnecessary, but after they said the cuffs were for everyone's safety and that they only meant to escort him off the property, he put his hands behind his back and was handcuffed. He was taken to the security office and placed in a holding area, and the casino called the Las Vegas Metropolitan Police Department to report a person in custody.\n\nOfficer David Miller arrived, ordered Davis to stand, confirmed he was handcuffed, patted him down, and asked if he could search Davis's pockets. Davis declined, and told Miller he was unarmed, which the pat down had already shown. Miller reached for Davis's left pocket anyway to take his wallet. Davis rotated his hips away. Miller pushed him into a corner, pinning him face first against the wall, and reached again. Davis pushed off the wall toward Miller and the two engaged in a brief pushing and pulling match. Miller then spun Davis around, pushed him out of the holding area into a hallway, slammed him head first into the wall, and swung him head first into a second wall, leaving a dent in the sheetrock. Miller threw Davis face down onto the floor, where his teeth hit the floor, landed on him and put a knee in his back. Davis wiggled and tried to slide out from under him because he was in pain. Miller turned him over and punched him in the face. At some point Miller fractured Davis's neck. Davis was unarmed and handcuffed throughout.\n\nWhen Davis stopped moving, Miller finished the search, took him to the city jail and had him held for obstructing a police officer. Jail staff sent Davis to the hospital, where the neck fracture was diagnosed. The department's internal affairs bureau concluded Miller did not use the minimal amount of force necessary and had options other than punching a handcuffed suspect on the ground; he was suspended for ten hours and ordered to use of force training. A footnote notes he had been before internal affairs at least four times before, twice on excessive force complaints.\n\nDavis sued Miller and others under section 1983 and for battery under Nevada law. The district court granted Miller summary judgment on both claims, saying from the bench that the force was not clearly excessive so Miller had qualified immunity, and that the state claims were discretionary acts covered by immunity.",
+  "holding": "Reversed and remanded for trial on both claims.\n\nThe constitutional violation. The court applied Graham through Smith v. City of Hemet, beginning with the quantum of force. On Davis's version, the force was extremely severe: a handcuffed man swung head first into two walls, thrown to the floor, knelt on and punched in the face, with a broken neck as the result. The governmental interest did not come close. Trespassing and obstructing an officer, as Davis committed them, were minor offenses, less serious than the domestic violence allegation in Smith that the court had already held did not make a suspect particularly dangerous. Davis posed no immediate threat: he was unarmed, handcuffed, confined in a small area and surrounded by security guards, and even if he had wanted to hurt Miller it would have been difficult. He was somewhat uncooperative and resisted the search of his pockets, but he never tried to flee and could not have, so he was neither actively resisting arrest nor evading it. And there were less abusive methods: Miller could have tried to persuade Davis, used the guards who were present, used less force, or, having already patted him down, simply waited to search until he reached the jail. The department itself had reprimanded him for not using the minimal force necessary when he had other options. Weighing severe force against minimal interests, the court had no difficulty concluding that Davis's Fourth Amendment rights were violated on his version of the facts.\n\nQualified immunity. The dispositive question is whether it would be clear to a reasonable officer that the conduct was unlawful in the situation confronted, and no case on identical facts is required; otherwise officers would escape responsibility for the most egregious conduct for lack of a case on all fours. The court held that any reasonable officer would have known the force was excessive, from an elementary understanding of a peace officer's obligations and from the existing case law: Smith, Drummond (knees on the back and neck of a restrained man), Chew (severe force on a non-threatening suspect), Palmer v. Sanderson (jerking a man from his car, cuffing him painfully tight and shoving him into a patrol car) and Hansen v. Black (rough handcuffing that injured the wrist). Swinging a handcuffed man into a wall head first multiple times and punching him in the face as he lay face down, breaking his neck, was unnecessary and excessive, and the department's own finding confirmed it. Miller cited no Ninth Circuit authority; the out of circuit cases he relied on involved suspects who shoved, kicked, bit, fled or fought, unlike a handcuffed man who never tried to flee or injure anyone. Immunity was denied.\n\nState battery claim. Nevada's statute bars suits over discretionary acts even when discretion is abused, and how to accomplish a search or seizure is ordinarily discretionary. But the immunity does not apply to acts attributable to bad faith, which the Nevada Supreme Court describes as conduct outside the circumference of the officer's authority rather than an unreasonable judgment within it. No officer has the rightful prerogative to commit a malicious battery on a handcuffed person who is neither resisting arrest nor trying to flee. A reasonable juror could find that Miller's conduct was a deliberate and willful disregard for the law or malice over the refusal to consent, which is a question of fact that cannot be resolved on summary judgment where the conduct and motive are disputed.",
+  "notDecided": "Whether Miller is liable. The court held only that on Davis's version of the facts a violation occurred and immunity was unavailable, and remanded for trial.\n\nWhether the force was deadly force. Davis also alleged that Miller used deadly force unlawfully; the court did not reach that theory because reversal was required on the excessive force theory.\n\nWhether Miller had lawful cause to search Davis's pockets. The court assumed it for purposes of the alternatives analysis and did not decide it.\n\nThe liability of the casino, its employees, the city or the department. Only the summary judgment for Miller was before the court.\n\nWhether Miller acted in bad faith under Nevada law. The court held only that a reasonable juror could so find.",
+  "inPractice": "Davis is the clearest Ninth Circuit statement that control changes the force calculus. Once a subject is handcuffed, searched for weapons, confined and surrounded, almost nothing he does short of an actual attack supports significant force. Davis turned his hips away and later pushed off a wall; the court treated that as resistance to a search, not resistance to arrest or flight, and found no threat at all.\n\nThe case is also about the difference between a contest and a need. The officer wanted the wallet and the handcuffed man did not want to give it to him. The court listed what the officer could have done: talk, use the guards, use less force, or wait and search at the jail. None of those cost anything. The force that was used broke a neck.\n\nThird, the case shows how the agency's own review becomes evidence. Internal affairs found that the officer did not use the minimal force necessary and had other options. The court quoted that finding twice, once on the merits and once on notice. Officers should assume a sustained finding will be in front of the judge.\n\nFourth, the Nevada battery holding has a lesson beyond Nevada. State immunities for discretionary decisions generally do not reach malicious or bad faith conduct, and a court may let a jury infer bad faith from force far out of proportion to a refusal to cooperate.\n\nDr. Sowards teaches Davis with Blankenhorn in the arrest and control curriculum: force on a controlled subject is judged against what the subject can actually do, and prone, handcuffed and surrounded means very little.",
+  "trainIt": "Teach control as a stop sign. Once a subject is handcuffed and has been patted down, students should treat the force menu as closed except for an actual assault or escape attempt. Scenario: a handcuffed, searched detainee in a small room with security staff present refuses consent to a pocket search and turns away. Require the student to name three options that do not involve force. The court named four.\n\nTeach the distinction between resisting a search and resisting arrest. Turning the hips away from a hand reaching for a pocket is not flight and is not an attack. Students must be able to describe what the subject actually did in neutral terms and match any response to it.\n\nTeach the head as a prohibited target absent deadly force justification. Swinging a handcuffed subject head first into a wall is a head strike by another name. The court described the force as extremely severe and the neck fracture as the result. Tie this to the impact weapons rule that head strikes are deadly force.\n\nTeach the prone rule. Once the subject was face down with a knee on his back, the punch to the face had no justification the court would entertain. Pair this with Drummond on body weight and breathing, which the court cited.\n\nTeach reporting and review honestly. The internal affairs finding, and the officer's prior complaints, appear in the published opinion. Students should understand that the agency's review is part of the record a court sees, and that a finding of minimal force not used will be quoted against the officer.\n\nTeach the posture: summary judgment reversed on the plaintiff's version, remand for trial, no finding of liability. The officer's account differed and was for the jury.",
+  "caution": "The opinion was read from the Public.Resource.Org archive, which has no reporter pagination, so no pin cites are given. The facts are Davis's version supported by independent witnesses, as the court was required to accept them on summary judgment; the officer's version was not adopted. The court decided that a reasonable jury could find excessive force and that qualified immunity and Nevada discretionary immunity did not bar trial. It did not find the officer liable, and it did not decide the deadly force theory.",
+  "applications": [
+    {
+      "title": "Handcuffed and searched means controlled",
+      "body": "Davis was unarmed, handcuffed, confined and surrounded by guards. The court held he posed no immediate threat and that even if he had wanted to harm the officer he could hardly have done so. Significant force on such a subject needs an actual attack or escape, not a refusal."
+    },
+    {
+      "title": "Resisting a search is not resisting arrest",
+      "body": "Turning the hips away from a hand reaching into a pocket, and a brief push off a wall, were treated as being somewhat uncooperative, not as active resistance or flight. Describe what the subject did, not what you felt."
+    },
+    {
+      "title": "Name the free alternatives",
+      "body": "Persuade him, use the guards present, use less force, or wait and search at the jail. The court listed these as available and the agency's own review said the officer had options other than punching a handcuffed suspect on the ground."
+    },
+    {
+      "title": "No case on all fours is needed",
+      "body": "The court held that any reasonable officer would know that swinging a handcuffed man head first into walls and punching him while prone was excessive, from an elementary understanding of the job and from Smith, Drummond, Chew, Palmer and Hansen."
+    },
+    {
+      "title": "State immunity does not cover bad faith",
+      "body": "Nevada immunizes discretionary acts even when discretion is abused, but not acts in bad faith. A jury could infer willful disregard or malice from force this far out of proportion to a refusal to consent."
+    },
+    {
+      "title": "Posture",
+      "body": "Summary judgment for the officer was reversed on both the federal and state claims and the case was remanded for trial. The court accepted the plaintiff's version for purposes of the appeal and did not find the officer liable."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "How did the court characterize Davis's conduct in rotating his hips away from the officer and briefly pushing off the wall?",
+      "options": [
+        "Active resistance to arrest justifying severe force",
+        "An attempt to flee",
+        "Being somewhat uncooperative and resisting a search of his pockets, but neither actively resisting arrest nor attempting to flee, which he could not have done in handcuffs surrounded by guards",
+        "An assault on a peace officer"
+      ],
+      "answer": 2,
+      "teach": "The court separated resistance to the search from resistance to arrest or flight and found the latter two factors weighed against the officer. The most important factor, immediate threat, was absent because Davis was unarmed, handcuffed and confined."
+    },
+    {
+      "q": "What alternatives did the court say were available to Officer Miller instead of the force he used?",
+      "options": [
+        "None; a refusal to consent leaves no choice",
+        "Persuading Davis, obtaining help from the security guards present, using less force, or waiting to search until Davis was delivered to the jail",
+        "Calling a supervisor only",
+        "Releasing Davis"
+      ],
+      "answer": 1,
+      "teach": "The court considered alternatives as part of the Graham analysis and noted that the department's own internal affairs bureau had reprimanded Miller for not using the minimal force necessary when he had other options."
+    },
+    {
+      "q": "Why was the Nevada battery claim reinstated despite the state's discretionary act immunity?",
+      "options": [
+        "Because Nevada has no immunity for police officers",
+        "Because the immunity does not extend to acts attributable to bad faith, and a reasonable juror could find that slamming a handcuffed man into walls and punching him while prone was willful disregard for the law or malice rather than an abuse of discretion",
+        "Because Davis was not under arrest",
+        "Because the officer was off duty"
+      ],
+      "answer": 1,
+      "teach": "The Nevada Supreme Court distinguishes an abuse of discretion within the officer's authority, which is immune, from bad faith outside it, which is not. Whether Miller acted in bad faith was a disputed fact question for the jury."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "monell-v-department-of-social-services",
+  "name": "Monell v. Department of Social Services",
+  "court": "Supreme Court of the United States",
+  "courtKey": "scotus",
+  "docket": "75-1914",
+  "citation": "436 U.S. 658 (1978)",
+  "decided": "June 6, 1978",
+  "status": "published",
+  "topic": "Municipal liability under 42 U.S.C. section 1983: local governments are persons who can be sued for their own policies and customs, but not on a respondeat superior theory for the acts of their employees",
+  "settings": [
+    "all",
+    "supervisors"
+  ],
+  "categories": [
+    "instructor-and-training-liability",
+    "force-standards",
+    "supervision-and-intercede"
+  ],
+  "published": "2026-11-16",
+  "summary": "Monell is not a force case. It is a maternity leave case in which the Supreme Court held that cities, counties, and their departments are persons who can be sued under section 1983 when an official policy or a settled custom causes a constitutional violation, and that they cannot be held liable simply because they employ the officer who caused the harm. Every lawsuit against an agency over a use of force, a training program, or a supervision failure runs through this decision.",
+  "coverage": [
+    "The opinion was read in full, including the syllabus, the appendix setting out the Sherman amendment texts, Justice Powell's concurrence, Justice Stevens's statement concurring in part, and Justice Rehnquist's dissent, from the Library of Congress U.S. Reports PDF at https://tile.loc.gov/storage-services/service/ll/usrep/usrep436/usrep436658/usrep436658.pdf. Pin cites are to the U.S. Reports pages printed in that file.",
+    "The citation 436 U.S. 658, the docket number 75-1914, the argument date of November 2, 1977, and the decision date of June 6, 1978 were confirmed from the syllabus and running heads of that file.",
+    "The lower court opinions (394 F. Supp. 853 and 532 F.2d 259) were not read. They are described as the Supreme Court described them.",
+    "Later Supreme Court decisions developing Monell (for example on municipal immunity, on who is a policymaker, and on failure to train) were not read for this brief. City of Canton v. Harris has its own brief in this library."
+  ],
+  "facts": "In July 1971 a class of female employees of the New York City Department of Social Services and the New York City Board of Education sued under 42 U.S.C. section 1983. Their complaint was that the Department and the Board, as a matter of official policy, compelled pregnant employees to take unpaid leaves of absence before those leaves were required for any medical reason. They sought an injunction and back pay for the periods of forced leave. The defendants were the Department and its Commissioner, the Board and its Chancellor, and the City of New York and its Mayor. Each individual was sued only in his official capacity (436 U.S. at 660-661).\n\nThe District Court held that the claims for injunctive and declaratory relief were moot, because the City and the Board had changed their maternity leave policies after the suit was filed so that no pregnant employee had to take leave unless she was medically unable to work. The court concluded that the practices had been unconstitutional under Cleveland Board of Education v. LaFleur. It nonetheless denied back pay, reasoning that any damages would ultimately be paid by the City, and that awarding them would circumvent the immunity that Monroe v. Pape, 365 U.S. 167 (1961), had conferred on municipalities (at 661-662).\n\nThe Second Circuit affirmed. It held that the Board of Education was not a person under section 1983, that the individual officials were persons even when sued in their official capacities, but that a damages award against them in their official capacities would have to be paid by a city that could not itself be sued under Monroe, and so could not proceed (at 662).\n\nThe Supreme Court granted certiorari on one question: whether local government officials or local independent school boards are persons within the meaning of section 1983 when equitable relief in the nature of back pay is sought against them in their official capacities (at 662). Monroe v. Pape had held, based on Congress's rejection of the so-called Sherman amendment in 1871, that Congress did not intend to bring municipal corporations within the statute (at 664). The Court had reaffirmed that reading three times, most recently in 1976, while continuing to decide dozens of section 1983 cases in which school boards were the principal defendants (at 663 and n. 5).",
+  "holding": "Reversed. Justice Brennan wrote for the Court, joined in full by five Justices and in part by Justice Stevens. The Court overruled Monroe v. Pape \"insofar as it holds that local governments are wholly immune from suit under § 1983\" (436 U.S. at 663).\n\nMunicipalities are persons. After a fresh review of the 1871 debates, the Court concluded that the constitutional objection to the Sherman amendment (which would have made cities liable for riot damage caused by private persons) did not extend to holding a municipality liable for its own violations of the Fourteenth Amendment, and that \"person\" in the 1871 Act was understood to include municipal corporations. Local governing bodies can therefore be sued directly for monetary, declaratory, or injunctive relief \"where, as here, the action that is alleged to be unconstitutional implements or executes a policy statement, ordinance, regulation, or decision officially adopted and promulgated by that body's officers\" (at 690).\n\nCustom counts. A local government may also be sued \"for constitutional deprivations visited pursuant to governmental 'custom' even though such a custom has not received formal approval through the body's official decisionmaking channels.\" Practices of officials \"could well be so permanent and well settled as to constitute a 'custom or usage' with the force of law\" (at 690-691, quoting Adickes v. S. H. Kress & Co.).\n\nNo respondeat superior. The statute reaches a person who \"subjects, or causes to be subjected,\" another to a deprivation. That language imposes liability on a government that, under color of official policy, causes an employee to violate rights, but \"cannot be easily read to impose liability vicariously on governing bodies solely on the basis of the existence of an employer-employee relationship with a tortfeasor\" (at 692). \"[A] local government may not be sued under § 1983 for an injury inflicted solely by its employees or agents. Instead, it is when execution of a government's policy or custom, whether made by its lawmakers or by those whose edicts or acts may fairly be said to represent official policy, inflicts the injury that the government as an entity is responsible under § 1983\" (at 694).\n\nOfficial capacity suits. Because an official capacity suit is another way of pleading an action against the entity, local officials sued in their official capacities are persons where the government itself would be suable (at 690 n. 55).\n\nStare decisis did not bar the overruling: Monroe departed from prior practice, could not be cabined short of school boards, had been rejected by Congress as to school boards, and gave municipalities no reliance interest in violating rights (at 695-701).\n\nNo absolute immunity. Municipal bodies \"cannot be entitled to an absolute immunity,\" or the decision would be drained of meaning; the Court expressed no view on any lesser immunity (at 701).\n\nBecause the maternity leave policy was unquestionably official policy and the moving force of the violation, the judgment was reversed. The Court had no occasion to address \"what the full contours of municipal liability under § 1983 may be\" and left further development \"to another day\" (at 694-695).",
+  "dissent": "Justice Rehnquist, joined by Chief Justice Burger, dissented. Stare decisis is strongest for statutory construction, because Congress can correct the Court's errors. Monroe had been reaffirmed three times, and municipalities had arranged insurance and indemnity ordinances on the understanding that they would not be held liable retroactively for their officers' failure to predict new constitutional rights. He read the Dictionary Act as permissive, not mandatory, and pointed out that the Sherman amendment debate was the only occasion on which Congress squarely considered municipal tort liability, and Congress rejected it. In his view the Court had not shown beyond doubt that Monroe misapprehended the statute, and only Congress was equipped to weigh the consequences of so drastic a change. He would have affirmed (436 U.S. at 714-724).\n\nJustice Powell concurred, writing that Monroe had produced the odd result of opening the courthouse to suits against officers while immunizing the governments whose express policies they carried out, and that difficult line drawing questions about when execution of a policy or custom inflicts constitutional injury remained for another day; this case, involving formal written policies, was \"the clear case\" (at 704-714). Justice Stevens joined only Parts I, III, and V, regarding the respondeat superior and immunity discussions as advisory (at 714).",
+  "notDecided": "The full contours of municipal liability. The Court said it had attempted only to sketch so much of the cause of action as was apparent from the history and its prior cases, and left further development to another day (436 U.S. at 694-695). What makes a practice a custom, who speaks with final policymaking authority, and whether a failure to train or supervise can be municipal policy were not decided here. City of Canton v. Harris (1989), which has its own brief in this library, later built the deliberate indifference failure to train theory on Monell's foundation.\n\nQualified immunity for municipalities. The Court held only that municipalities have no absolute immunity and reserved whether any lesser immunity exists (at 701). The Court later took that question up in Owen v. City of Independence (1980); that opinion was not read for this brief.\n\nWhether Monroe was right on its own facts, and how earlier cases relying on Monroe's municipal immunity should have been decided (at 701 n. 66).\n\nThe case involved no use of force and no finding about any officer's conduct. It reached the Court as a dispute about who can be made to pay for an admittedly unconstitutional written policy.",
+  "inPractice": "Monell is the reason an officer's agency is in the caption of nearly every force lawsuit, and the reason it is not automatically liable. The agency does not pay simply because it employs the officer. It pays when its own policy or its own settled practice caused the violation. For the officer that has two consequences.\n\nFirst, an officer who acts inside written policy and trained practice puts the policy on trial, not only the officer. If the policy is sound, that is protection. If the policy is bad, the agency owns the result along with the officer.\n\nSecond, the custom prong means the unwritten way things are actually done can be the agency's policy. A practice that supervisors know about and tolerate, such as prone restraint continued past the point of control, high risk stops on bare suspicion, or a habit of not reporting force, can be treated as a custom with the force of law even though no one wrote it down. What officers do repeatedly, and what supervisors let pass, becomes evidence against the agency.\n\nOfficial capacity suits against the chief or sheriff are suits against the agency. Personal capacity suits against the officer are separate, and Monell does not shield the individual officer.\n\nFor custody staff the same rule applies to the jail: policy, custom, and the failure to correct known practices are how the county becomes a defendant. Rodriguez v. County of Los Angeles, in this library, shows a jury inferring a custom of condoning force from a jail's failure to investigate and discipline.",
+  "trainIt": "Teach Monell as the frame for the training liability line (Owens v. Haas, Hays v. Jefferson County, City of Canton v. Harris, and the other cases in this section). Those cases ask whether an agency's training, supervision, or practice was so deficient that it amounted to official policy. Monell is where that question comes from.\n\nMake the lesson plan a policy document. Under Monell, what the agency actually teaches and actually tolerates is what a court looks at when it asks whether a policy or custom caused the injury. A current, documented lesson plan tied to the tasks officers actually face is the agency's evidence that its policy was lawful and its practice matched it. Undocumented drift between what is taught and what is done is evidence of a custom.\n\nTrain supervisors on the custom prong. Supervisors are the people whose tolerance turns a repeated practice into an agency custom. Reviewing force reports, correcting technique, and documenting the correction are Monell defenses as much as they are good supervision.\n\nTeach the posture accurately. Monell held that municipalities are persons who can be sued for their own policies and customs and cannot be held liable on respondeat superior. It did not involve force, did not define failure to train liability, and expressly left the contours of municipal liability for later cases. Present Canton, Pierce v. Multnomah County, and Rodriguez v. County of Los Angeles, all in this library, as the cases that applied the rule to police and jail practice.",
+  "caution": "The opinion was read in full from the U.S. Reports PDF at the Library of Congress. The lower court opinions were not read. Later cases developing Monell were not read for this brief; references to City of Canton v. Harris, Pierce v. Multnomah County, and Rodriguez v. County of Los Angeles rely on the separate briefs for those cases. The reference to Owen v. City of Independence is to the existence of that later decision only; it was not read.",
+  "applications": [
+    {
+      "title": "The agency pays for its policy, not for your paycheck",
+      "body": "A local government is liable under section 1983 when execution of its policy or custom inflicts the injury. It is not liable simply because it employs the officer who caused the harm. Acting inside sound, written policy keeps the agency's exposure tied to the policy rather than to improvisation."
+    },
+    {
+      "title": "Custom is what actually happens",
+      "body": "The Court said a practice can be so permanent and well settled that it is a custom with the force of law even without formal approval. Repeated field or jail practices that supervisors know about and allow can be treated as agency policy."
+    },
+    {
+      "title": "Official capacity means the agency",
+      "body": "Suing the chief or sheriff in an official capacity is another way of suing the agency. Suing the officer personally is a different claim, and Monell does not protect the individual officer from it."
+    },
+    {
+      "title": "Teach the posture",
+      "body": "Monell was a maternity leave case about who can be sued. It did not decide any force question, did not create failure to train liability, and left the contours of municipal liability for later cases such as City of Canton v. Harris."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Under Monell, when can a city or county be held liable under section 1983?",
+      "options": [
+        "Whenever one of its employees violates someone's constitutional rights while on duty",
+        "When execution of its official policy or settled custom inflicts the constitutional injury",
+        "Only when the city council passes an ordinance that is unconstitutional on its face",
+        "Never; local governments are immune under Monroe v. Pape"
+      ],
+      "answer": 1,
+      "teach": "The Court held that local governments are persons under section 1983 and can be sued for their own policies and customs. It overruled Monroe's blanket immunity but rejected liability based solely on the employer-employee relationship."
+    },
+    {
+      "q": "What did the Court say about respondeat superior liability for municipalities?",
+      "options": [
+        "A municipality is vicariously liable for all torts of its employees, like a private employer",
+        "A municipality cannot be held liable under section 1983 solely because it employs a tortfeasor",
+        "Respondeat superior applies only to police departments",
+        "The Court did not address the question"
+      ],
+      "answer": 1,
+      "teach": "The Court read the words 'subjects, or causes to be subjected' and the 1871 debates to mean that Congress did not intend vicarious liability. The government is liable when its own policy or custom causes the violation."
+    },
+    {
+      "q": "Does an agency practice have to be written down to count as a policy under Monell?",
+      "options": [
+        "Yes; only ordinances, regulations, and formal decisions count",
+        "No; a custom so permanent and well settled that it has the force of law counts even without formal approval",
+        "Only if the chief personally approved it in writing",
+        "Only in jail cases"
+      ],
+      "answer": 1,
+      "teach": "The Court expressly held that local governments may be sued for deprivations visited pursuant to governmental custom even though the custom never received formal approval through official decisionmaking channels."
+    }
+  ]
+}

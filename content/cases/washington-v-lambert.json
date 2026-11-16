@@ -1,0 +1,90 @@
+{
+  "id": "washington-v-lambert",
+  "name": "Washington v. Lambert",
+  "court": "Ninth Circuit (from the Central District of California)",
+  "courtKey": "ca9",
+  "docket": "94-56685",
+  "citation": "98 F.3d 1181 (9th Cir. 1996)",
+  "decided": "October 28, 1996",
+  "status": "published",
+  "topic": "When an investigative stop becomes an arrest: guns drawn, handcuffs, and confinement in patrol cars of two cooperative men on a vague robbery description; qualified immunity",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "handcuffing-and-detention",
+    "qualified-immunity"
+  ],
+  "published": "2026-11-16",
+  "summary": "Santa Monica officers followed two Black visitors from a restaurant to their hotel garage, ordered them out at gunpoint, handcuffed them, and held them in separate patrol cars because they loosely resembled a bulletin describing two robbery suspects as one tall and one short. The Ninth Circuit held that, with cooperative subjects and no specific information of danger, those tactics turned the stop into an arrest without probable cause, that the law was clearly established, and that the officer was not entitled to qualified immunity. It sets out the factors that decide when Terry stop tactics cross the line.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/098/98.F3d.1181.94-56685.html (opinion by Judge Reinhardt, joined by Judge Hawkins, with twenty-two footnotes, and a concurrence in the judgment by Judge Kozinski). The archive heading confirms the citation 98 F.3d 1181. The archive copy does not mark internal page breaks, so pin cites are not given except where the opinion's own cross references supply them.",
+    "The docket number, argument date, and decision date are taken from the caption of the archived opinion.",
+    "The district court proceedings (two trials before Judge Hupp) were not read and are described only as the Ninth Circuit described them. The Ninth Circuit cases the court relied on (Del Vizo, Bautista, Allen, Alexander, Jacobs, and others) were not read independently."
+  ],
+  "facts": "Around midnight on June 25, 1991, George Washington, a Sports Illustrated picture editor, and Darryl Hicks, a bank program analyst, both African American men visiting from New York, stopped at a Carl's Jr. in Santa Monica after a Dodgers game. Officer Skystone Lambert was in the restaurant. He thought they resembled a bulletin describing two suspects in nineteen armed robberies in the western Los Angeles area, none in Santa Monica, the most recent six days earlier. The bulletin described two African American males aged 20 to 30, one 6 feet to 6 feet 2 inches and 150 to 170 pounds, the other 5 feet 5 to 5 feet 7 and 170 to 190 pounds, considered armed and dangerous, who had used a Porsche, a BMW, and a stolen white Oldsmobile.\n\nNeither man matched. Washington was 6 feet 4 and 235 pounds. Hicks was 5 feet 7 and a half and 135 to 140 pounds. Lambert thought Washington appeared nervous, though he also testified the men seemed casual. Lambert called for backup and followed their white rental Plymouth, joined by a second patrol car. A plate check showed the car was not stolen.\n\nThe men drove into their hotel's underground garage. As they prepared to get out, officers lit them with spotlights and pointed guns at them. Over the loudspeaker Lambert ordered each man out, hands interlocked behind the head, to face the wall, close the door with his feet, and walk backward. He handcuffed both behind the back, patted them down, and placed them in separate police cars. Both complied fully and offered no resistance. Officers searched the car, opened Hicks's pouch for identification, reached into Washington's pants for his wallet, may have run a warrant check, and released them. Three or four police cars, about four to seven officers, and a police dog were present. The detention lasted five to ten minutes by the defense account and fifteen to twenty-five by Washington's; the court assumed the shorter figure.\n\nThe men sued under section 1983. The district judge denied qualified immunity before and during trial, directed a verdict on liability, and left damages to the jury. Lambert conceded there was no probable cause if the detention was an arrest. After a first jury deadlocked on damages, a second awarded $10,000 to each plaintiff. The other officers were granted qualified immunity because they followed Lambert's lead. Lambert appealed.",
+  "holding": "Affirmed. The court held the detention was an arrest, not a Terry stop, and that Lambert was not entitled to qualified immunity.\n\nStop or arrest. There is no bright line; courts examine the totality of the circumstances, weighing both the intrusiveness of the police methods and the justification for them. Intrusive tactics do not automatically convert a stop into an arrest, because officers may take protective measures when the situation presents particular danger. But under ordinary circumstances, when the police have only reasonable suspicion to make an investigatory stop, drawing weapons and using handcuffs and other restraints will violate the Fourth Amendment. Handcuffing substantially aggravates the intrusiveness of a detention and is not part of a typical Terry stop; drawn guns greatly increase the seriousness of a stop; and confinement in a patrol car is an important factor.\n\nThe court identified the special circumstances in which it had allowed especially intrusive means during a stop: where the suspect is uncooperative or acts at the scene in a way that raises a reasonable possibility of danger or flight; where police have information the suspect is currently armed; where the stop closely follows a violent crime; and where police have information that a crime involving violence is about to occur. Courts also consider the specificity of the information linking the person stopped to the suspect sought, and the number of officers present.\n\nNone of those circumstances existed here. Washington and Hicks were completely cooperative. There was no specific information that either was armed, no recent violent crime nearby, no indication a crime was about to occur, and at least four officers and a dog for two men. The only link was a general similarity to a vague description with no distinguishing features, and the men did not match the height and weight details given. Any reasonable juror would be compelled to find the stop was an arrest, and because probable cause was conceded to be absent, the directed verdict was correct.\n\nRace. The court wrote that the burden of aggressive and intrusive police action falls disproportionately on African American and sometimes Latino men. It observed that if the general description here could be stretched to cover these two men, a significant percentage of African American males out together in a predominantly white neighborhood could be subjected to similar treatment, and said it doubted two white men in the same circumstances would have been treated the same way.\n\nQualified immunity. The law was clearly established in 1991 that officers conducting a Terry stop may not use highly intrusive measures unless circumstances reasonably justify them for safety, and that with cooperative subjects and no specific information of arms or a recent dangerous crime such tactics are not warranted. Given the meager information Lambert had, no reasonable officer could have believed the tactics were lawful. The court distinguished Allen (a high speed chase and combative suspect) and Alexander (an armed robbery with shots fired less than an hour earlier and specific matching features).",
+  "dissent": "Judge Kozinski concurred in the judgment only. He agreed the violation was egregious and amply proven but declined to join what he called the majority's sociological discussion of police racial prejudice, because the events it catalogued were not in the record. He wrote that the only hard thing about the case was understanding why the defendants appealed a modest damages award.",
+  "notDecided": "Whether Lambert had even reasonable suspicion to stop the men. The court said it was extremely questionable but did not decide the issue because the parties had not raised it.\n\nWhether the force used (pointing guns, handcuffing) was excessive as a separate Fourth Amendment force claim. The case was decided as an unlawful arrest without probable cause; the intrusive tactics were analyzed as what converted the stop into an arrest.\n\nThe liability of the other officers. The district court granted them qualified immunity because they reasonably relied on Lambert as lead officer, and that ruling was not before the Ninth Circuit.\n\nThe court did not hold that guns, handcuffs, or patrol car confinement are never permitted during a Terry stop. It listed the circumstances in which they are, and found none present.",
+  "inPractice": "Washington v. Lambert gives officers a working checklist for how far a Terry stop can go. Guns pointed, handcuffs, and confinement in patrol cars are not forbidden during a stop. They are permitted when the circumstances justify them: the subject is uncooperative or does something at the scene suggesting danger or flight; there is information the subject is currently armed; the stop closely follows a violent crime; or there is information a violent crime is about to occur. Specific identifying information tying this person to that suspect, and the ratio of officers to subjects, also count. Without those facts, the court said, drawing weapons and using restraints on a reasonable suspicion stop will ordinarily violate the Fourth Amendment.\n\nThe description problem is the heart of the case. Two Black men, one tall and one short, in a general area where robberies had occurred a week earlier, with no distinguishing features, is not a basis for a felony stop. The men did not even match the heights and weights given. Officers should ask what specifically ties this person to this suspect beyond race, sex, and rough size.\n\nThe court's discussion of race is part of the opinion. The court said the burden of these stops falls disproportionately on Black and Latino men and doubted two white men would have been treated the same way. Officers who can articulate specific, individualized facts are protected; officers who rely on general descriptions are not.",
+  "trainIt": "Teach Washington v. Lambert as the detention side of the handcuffing block, paired with Robinson v. Solano County on pointing guns and Meredith v. Erath on handcuffs during a detention. The core teaching tool is the court's list of special circumstances. Put the four circumstances on the board, add specificity of description and officer to subject ratio, and run scenarios that vary one fact at a time: cooperative versus uncooperative, information of a weapon versus none, a robbery twenty minutes ago versus six days ago, a detailed description versus a general one.\n\nTrain description discipline. Have students compare the bulletin to the subjects in this case and identify the mismatches the court found exceedingly difficult to ignore. Then practice articulating individualized facts in a report. If the only facts are race, sex, and approximate height, the report should tell the writer the stop is in trouble.\n\nTeach the stop versus arrest consequence. A stop needs only reasonable suspicion; an arrest needs probable cause. Intrusive tactics without justification convert the stop into an arrest, and the officer loses the case if there is no probable cause, as Lambert conceded.\n\nTeach the race discussion honestly. Read the majority's passage and Judge Kozinski's response, and discuss both. Officers should understand how a court may view a stop built on a general description of two Black men.\n\nState the posture: a directed verdict on liability affirmed on appeal, with damages set by a jury. Liability was actually established here.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which does not show reporter page breaks. The court assumed the defense estimate of five to ten minutes for the detention. The court did not decide whether reasonable suspicion existed for any stop. The other officers' qualified immunity was decided by the district court and not reviewed. Judge Kozinski concurred in the judgment only and did not join the discussion of race.",
+  "applications": [
+    {
+      "title": "Know the four circumstances",
+      "body": "The court allowed especially intrusive stop tactics where the suspect is uncooperative or acts in a way suggesting danger or flight, where there is information the suspect is currently armed, where the stop closely follows a violent crime, or where there is information a violent crime is about to occur. Articulate which one applies before drawing down on a Terry stop."
+    },
+    {
+      "title": "Handcuffs and guns change the character of a stop",
+      "body": "Handcuffing substantially aggravates the intrusiveness of a detention and is not part of a typical Terry stop. Drawn guns greatly increase its seriousness. Under ordinary circumstances, with only reasonable suspicion, those tactics will violate the Fourth Amendment."
+    },
+    {
+      "title": "A general description is not individualized suspicion",
+      "body": "Two Black men, one tall and one short, with no distinguishing features and mismatched heights and weights, did not justify a felony stop. Ask what ties this person to this suspect beyond race, sex, and rough size."
+    },
+    {
+      "title": "Count the officers",
+      "body": "The ratio of officers to subjects is a factor. Four or more officers and a dog for two cooperative men weighed against the need for guns and restraints."
+    },
+    {
+      "title": "Cooperation matters in real time",
+      "body": "The men complied with every order and offered no resistance. The court compared the case to Del Vizo, where complete cooperation at the scene made the same tactics an arrest. Tactics that might be justified against a non-compliant subject are not justified against a compliant one."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "According to Washington v. Lambert, when may officers use highly intrusive tactics such as drawn guns and handcuffs during a Terry stop without converting it into an arrest?",
+      "options": [
+        "Whenever they have an articulable basis to suspect the person of a crime",
+        "Only when the suspect is uncooperative or acts in a way suggesting danger or flight, there is information the suspect is currently armed, the stop closely follows a violent crime, or there is information a violent crime is about to occur, or some combination of these",
+        "Never; any use of handcuffs during a stop is an arrest",
+        "Only when the officer is alone"
+      ],
+      "answer": 1,
+      "teach": "The court listed these special circumstances, plus the specificity of the identifying information and the number of officers present, and found none applied to two cooperative men who loosely matched a vague description."
+    },
+    {
+      "q": "What did the court say about the description that Lambert relied on?",
+      "options": [
+        "It was specific enough to justify the stop but not the arrest",
+        "It was exceedingly vague and general, the men did not match the height and weight details given, and stretching it to cover them would subject a significant percentage of African American males to similar treatment",
+        "It was sufficient because the men were in a white rental car",
+        "It was sufficient because the robberies had occurred at night"
+      ],
+      "answer": 1,
+      "teach": "The court rejected the white car and nighttime factors and said the general description, with mismatched specifics, could not justify so intrusive a stop. It also said it was extremely questionable whether reasonable suspicion existed at all."
+    },
+    {
+      "q": "What was the outcome in Washington v. Lambert?",
+      "options": [
+        "The officer received qualified immunity because the law on Terry stop tactics was unclear",
+        "The case was remanded for a jury to decide whether the stop was an arrest",
+        "The directed verdict on liability and the denial of qualified immunity were affirmed; a jury had awarded $10,000 to each plaintiff",
+        "The court held the stop was lawful because the suspects were described as armed and dangerous"
+      ],
+      "answer": 2,
+      "teach": "The court held that any reasonable juror would be compelled to find the stop was an arrest, probable cause was conceded to be absent, and the law was clearly established. Liability was established, which is unusual in this block of cases."
+    }
+  ]
+}

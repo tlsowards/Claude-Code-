@@ -1,0 +1,91 @@
+{
+  "id": "palmer-v-sanderson",
+  "name": "Palmer v. Sanderson",
+  "court": "Ninth Circuit (from the Western District of Washington)",
+  "courtKey": "ca9",
+  "docket": "92-35290, 92-35311",
+  "citation": "9 F.3d 1433 (9th Cir. 1993)",
+  "decided": "November 23, 1993",
+  "status": "published",
+  "topic": "Tight handcuffing of a 67 year old stroke survivor during a DUI investigation as excessive force; refusal to loosen cuffs after complaint; arrest for obstruction without probable cause; no vicarious liability of a sheriff under section 1983",
+  "settings": [
+    "field",
+    "supervisors",
+    "all"
+  ],
+  "categories": [
+    "handcuffing-and-detention",
+    "qualified-immunity"
+  ],
+  "published": "2026-11-16",
+  "summary": "A deputy whose field sobriety tests failed to confirm intoxication allegedly jerked a 67 year old stroke survivor out of his car, cuffed him so tightly his wrists were bruised for weeks, refused to loosen the cuffs, shoved him into the patrol car, and cited him for obstruction. The Ninth Circuit held the Fourth Amendment right against excessive force was clearly established before Graham, that no reasonable officer could believe the abusive application of handcuffs was constitutional, and that the probable cause question was for a jury; it also held a sheriff cannot be vicariously liable under section 1983 through a state statute. It is the original Ninth Circuit tight cuffs case.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/009/9.F3d.1433.92-35311.92-35290.html (opinion by Judge Pregerson, joined by Judges Goodwin and Schroeder, with six footnotes). The archive heading confirms the citation 9 F.3d 1433. The archive copy does not mark internal page breaks, so pin cites are not given; later Ninth Circuit opinions (Meredith v. Erath) cite the tight cuffs passage at 9 F.3d 1436.",
+    "The docket numbers (Nos. 92-35290 and 92-35311), argument date, and decision date are taken from the caption of the archived opinion.",
+    "The district court order and proceedings after remand were not read and are described only as the Ninth Circuit described them. Hansen v. Black, which the court relied on, was not read independently."
+  ],
+  "facts": "The facts are Palmer's deposition testimony, which the court was required to credit because the appeal was from a denial of summary judgment on qualified immunity.\n\nAt about 3:30 a.m. on November 5, 1988, Grays Harbor County Deputy Sheriff Timothy Sanderson stopped Kenneth Palmer on suspicion of driving while intoxicated. Palmer was 67 and had recently suffered a stroke that impaired his mobility. Sanderson had him step out and administered two field sobriety tests. Sanderson admitted the tests failed to confirm his suspicion that Palmer was intoxicated.\n\nAccording to Palmer, it was raining with wind at about 40 knots. He grew tired of standing in the rain taking tests, walked back to his car, and told Sanderson he would sit there and answer questions. He also offered to go to the station for a breath test if Sanderson wanted. Sanderson then allegedly jerked Palmer out of the car, pushed him against it, frisked him, handcuffed him, and shoved him into the back of the patrol car so hard that he fell over sideways. Palmer said the cuffs were tight enough to cause pain and discoloration to his wrists, that the bruises lasted several weeks, and that Sanderson refused his request to loosen them.\n\nSanderson's evidence was that after the second test Palmer said he was going to leave. After consulting another officer by radio, Sanderson cited Palmer for obstructing a public servant under Washington law and released him. A county district court judge dismissed the charge, finding no evidence that Palmer had obstructed the deputy.\n\nPalmer sued Sanderson under section 1983 for arrest without probable cause and excessive force, and sued Sheriff Morrisette for failure to train, supervise, and control. Palmer later conceded he had no evidence to support the training and supervision theory, but argued the sheriff was vicariously liable under a Washington statute making a sheriff responsible for his deputies' acts. The district court denied both defendants' motions for summary judgment, holding neither was entitled to qualified immunity and that the sheriff could be vicariously liable under the state statute.",
+  "holding": "Affirmed in part and reversed in part.\n\nThe right was clearly established before Graham. The defendants argued that excessive force was not governed by the Fourth Amendment until Graham v. Connor in 1989, after the November 1988 arrest, and that before Graham only force that was brutal and offensive to human dignity under substantive due process was unconstitutional. The court rejected the argument. Tennessee v. Garner (1985) held that the Fourth Amendment governs not only whether a seizure occurs but the manner in which it is conducted, and the Ninth Circuit's White v. Pierce County (1986) held that excessive force in an arrest violates the Fourth Amendment. That some pre Graham cases analyzed force under due process did not mean the Fourth Amendment's application was not clearly established.\n\nTight handcuffing. Palmer claimed Sanderson fastened the cuffs so tightly that they caused pain and left bruises lasting several weeks. Sanderson presented no evidence that would justify handcuffing Palmer so tightly that he suffered pain and bruises, or justify his refusal to loosen the cuffs after Palmer complained. Under these circumstances, the court held, no reasonable officer could believe that the abusive application of handcuffs was constitutional. Because Palmer's evidence, if credited, would establish excessive force under Hansen v. Black (unreasonably injuring a person's wrists while applying handcuffs is excessive force), the district court properly denied summary judgment on this claim.\n\nProbable cause. Sanderson would be immune if a reasonable officer could have believed there was probable cause to arrest for obstruction. Sanderson's evidence was that Palmer said he was leaving, which under Washington law can constitute obstruction. Palmer's evidence was that he walked to his car to get out of the rain, said he would sit there and answer questions, and offered to go to the station for a breath test. If credited, that evidence would establish that no reasonable officer could believe there was probable cause for obstruction. Because the dispute was genuine and material, qualified immunity could not be granted as a matter of law.\n\nSheriff's liability. Palmer conceded he could not prove inadequate training, supervision, or control. The court held that the Washington statute making a sheriff responsible for his deputies' acts cannot be applied in a section 1983 action. Although the Ninth Circuit had held otherwise in Hesselgesser v. Reilly (1971), the Supreme Court's decision in Monell held that Congress did not intend to impose vicarious liability under section 1983 on employers or supervisors solely because of the employment relationship, so a state vicarious liability statute is inconsistent with federal law and cannot be imported through 42 U.S.C. section 1988. The court reversed and directed judgment for the sheriff on all claims.",
+  "dissent": "None. The panel was unanimous.",
+  "notDecided": "Whether Sanderson actually cuffed Palmer too tightly or arrested him without probable cause. The court held that Palmer's evidence, if credited by a jury, would establish both violations and that the disputes had to go to trial. No liability was found.\n\nWhether the force used to remove Palmer from the car and place him in the patrol car was independently excessive. The excessive force analysis focused on the tight handcuffs and the refusal to loosen them.\n\nWhether the sheriff could have been liable on a proper failure to train or supervise showing. Palmer conceded he had no such evidence.\n\nWhat happened on remand.",
+  "inPractice": "Palmer is the root of the Ninth Circuit's tight handcuffing line, and later cases (LaLonde, Meredith, Wall) cite it for the same two sentences: the officer presented no evidence that would justify handcuffing the man so tightly that he suffered pain and bruises, or justify refusing to loosen the cuffs after he complained; and under these circumstances no reasonable officer could believe that the abusive application of handcuffs was constitutional. Those sentences describe two separate failures. The first is how the cuffs went on. The second is what the officer did when told they hurt.\n\nThe case also shows how an officer's own evidence can defeat immunity. Sanderson admitted the sobriety tests did not confirm intoxication. He had no evidence justifying the tightness of the cuffs. His only justification for the arrest, that Palmer said he was leaving, was contradicted by Palmer's account that he walked to his car in a storm and offered to sit and answer questions or go to the station.\n\nAge and known physical limitation matter: a 67 year old recent stroke survivor is not a flight or fight risk that justifies abusive cuffing. The subject's offer of cooperation matters too; a court will weigh an offer to take a breath test heavily against a claim of obstruction.\n\nFor supervisors, section 1983 liability requires personal involvement or a policy or training failure; a state statute cannot make a sheriff automatically liable for a deputy's conduct in federal court.",
+  "trainIt": "Teach Palmer first in the tight cuffs sequence because it supplies the language every later Ninth Circuit case quotes. Have students read the two key sentences aloud and break them into the two duties: do not apply cuffs so tightly that they cause pain and injury without a reason, and when the subject complains, respond. Then run the drill: cuff, double lock, check for clearance, and when the role player complains, look and adjust. Students should be able to state what they checked and what they did.\n\nUse the subject profile. Build scenarios with older subjects and subjects with disclosed mobility limitations, and discuss how those facts change the Graham balance for the force used to control and cuff.\n\nTeach the obstruction lesson with the probable cause holding. Walking back to a car in a rainstorm while offering to sit and answer questions and to take a breath test is not, on the subject's account, obstruction. Officers should distinguish a person managing weather or a disability from a person attempting to leave, and should document the specific words and conduct that showed hindering.\n\nTeach the pre Graham holding briefly: the Ninth Circuit held the Fourth Amendment governed the manner of an arrest from at least Garner in 1985.\n\nFor supervisor courses, use the Morrisette holding to explain what section 1983 supervisory liability requires: no respondeat superior through a state statute; liability requires the supervisor's own conduct, policy, or deliberate indifference in training and supervision.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which does not show reporter page breaks. The facts are Palmer's deposition account credited for summary judgment; the deputy's account differed on whether Palmer said he was leaving. The appeal was from a denial of qualified immunity, so no liability was found against the deputy, and the outcome on remand was not researched. The sheriff won judgment on all claims because the plaintiff conceded he had no training or supervision evidence.",
+  "applications": [
+    {
+      "title": "Two duties in one sentence",
+      "body": "The court faulted the deputy both for cuffing so tightly as to cause pain and bruises without justification and for refusing to loosen the cuffs after the complaint. Fit at application and response to complaint are separate obligations."
+    },
+    {
+      "title": "No reasonable officer could believe abusive handcuffing is constitutional",
+      "body": "That sentence from Palmer is quoted in Meredith v. Erath and relied on in LaLonde and Wall. It means tight cuffs after a complaint will rarely be protected by qualified immunity in the Ninth Circuit."
+    },
+    {
+      "title": "Your own admissions shape the record",
+      "body": "The deputy admitted the sobriety tests did not confirm intoxication and offered no evidence justifying the tightness of the cuffs. Immunity depends on facts the officer can point to."
+    },
+    {
+      "title": "Weather and disability are not obstruction",
+      "body": "On Palmer's account he walked to his car to get out of a storm and offered to answer questions and take a breath test. The court held that, if believed, no reasonable officer could find probable cause for obstruction."
+    },
+    {
+      "title": "Supervisors are not automatically liable",
+      "body": "A state statute making the sheriff responsible for his deputies cannot create vicarious liability under section 1983. Supervisory liability requires the supervisor's own conduct, policy, or failure to train or supervise."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the Ninth Circuit hold about the tight handcuffing claim in Palmer?",
+      "options": [
+        "Tight handcuffs can never be excessive force because handcuffing is standard practice",
+        "The deputy presented no evidence justifying cuffs so tight they caused pain and bruises or justifying his refusal to loosen them, and no reasonable officer could believe the abusive application of handcuffs was constitutional, so summary judgment was properly denied",
+        "The deputy was immune because the arrest occurred before Graham v. Connor",
+        "The claim failed because Palmer was cited and released rather than booked"
+      ],
+      "answer": 1,
+      "teach": "Palmer is the source of the Ninth Circuit's tight cuffs rule. The court relied on Hansen v. Black and held the evidence, if credited, established excessive force."
+    },
+    {
+      "q": "How did the court respond to the argument that the Fourth Amendment excessive force right was not clearly established before Graham v. Connor (1989)?",
+      "options": [
+        "It agreed and granted qualified immunity",
+        "It held that Tennessee v. Garner (1985) and White v. Pierce County (1986) had already established that the Fourth Amendment governs the manner of an arrest, so the right was clearly established in November 1988",
+        "It held Graham applied retroactively",
+        "It held the question was for the jury"
+      ],
+      "answer": 1,
+      "teach": "The court held the Fourth Amendment's application to the manner of a seizure was clear from Garner, and that occasional pre Graham use of due process analysis did not change that."
+    },
+    {
+      "q": "What did the court hold about Sheriff Morrisette's liability?",
+      "options": [
+        "He was liable under a Washington statute making sheriffs responsible for their deputies",
+        "He was liable for failing to train Sanderson",
+        "He was entitled to judgment because Palmer conceded he had no training or supervision evidence and a state vicarious liability statute cannot be applied in a section 1983 action after Monell",
+        "The question was remanded for trial"
+      ],
+      "answer": 2,
+      "teach": "The court held its earlier decision in Hesselgesser had been undermined by Monell, which rejected vicarious liability under section 1983, and directed judgment for the sheriff."
+    }
+  ]
+}

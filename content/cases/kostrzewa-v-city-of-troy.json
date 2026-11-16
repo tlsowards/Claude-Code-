@@ -1,0 +1,91 @@
+{
+  "id": "kostrzewa-v-city-of-troy",
+  "name": "Kostrzewa v. City of Troy",
+  "court": "Sixth Circuit (from the Eastern District of Michigan)",
+  "courtKey": "ca6",
+  "docket": "00-1037",
+  "citation": "247 F.3d 633 (6th Cir. 2001)",
+  "decided": "April 23, 2001",
+  "status": "published",
+  "topic": "Excessive force at the pleading stage, tight handcuffing of a non-violent traffic arrestee who complained of pain, reckless transport driving, re-cuffing swollen wrists, and a municipal policy of handcuffing every detainee",
+  "settings": [
+    "field",
+    "custody",
+    "all"
+  ],
+  "categories": [
+    "handcuffing-and-detention",
+    "qualified-immunity"
+  ],
+  "published": "2026-11-16",
+  "summary": "A man arrested on a suspended license and a civil child support warrant alleged that officers cuffed his large wrists so tightly the cuffs latched only on the first tooth, ignored his complaints, drove recklessly to toss him around the back seat, and re-cuffed his swollen wrists for a hospital trip. The Sixth Circuit held those allegations stated an excessive force claim, could not be dismissed on qualified immunity, and also stated claims for gross negligence, malicious prosecution, and municipal liability for a policy of cuffing every detainee regardless of circumstances. It is taught as the tight handcuffing case.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/247/247.F3d.633.00-1037.html (opinion by Judge Moore, joined by Judges Siler and Clay, with six footnotes). The archive heading confirms the citation 247 F.3d 633 (6th Cir. 2001). The archive copy does not mark internal page breaks, so pin cites are not given.",
+    "The docket number, argument date, and decision date are taken from the caption of the archived opinion.",
+    "The complaint, the district court's August 27, 1999 dismissal order, and proceedings after remand were not read and are described only as the Sixth Circuit described them. Martin v. Heideman and Walton v. City of Southfield, the Sixth Circuit tight handcuffing cases the court relied on, were not read independently."
+  ],
+  "facts": "The facts are the allegations of the complaint, which the court was required to accept as true because the district court dismissed the case under Rule 12(b)(6). Nothing had been proven.\n\nOn November 18, 1998, a City of Troy, Michigan officer stopped Charles Kostrzewa for an illegal left turn. A records check showed his license was suspended for an unpaid ticket and that a civil warrant had issued for unpaid child support. The officer arrested him and radioed Officers Kocenda and Jenkins to transport him.\n\nKostrzewa alleged the transport officers forcefully handcuffed him and that he complained the cuffs were too small and tight and were injuring his wrists. Officer Kocenda's own report stated that the cuffs could be latched only to the first tooth because of the arrestee's large wrists. The officers told him it was city policy to handcuff detainees no matter what the circumstances. He alleged that during the drive the officers amused themselves with unnecessary speeding, tailgating, abrupt braking, and reckless driving on a winding road, tossing him around the back seat, knocking his head and shoulders into the partition, and forcing him to wedge himself into the footwell.\n\nAt the station he asked for medical care and was told he had to be booked first. A sergeant told him that if he kept insisting on medical care he would be prosecuted for obstructing an officer, then yelled at him and repeated the threat when he persisted. The same two officers were assigned to take him to the hospital. They found a larger set of cuffs and cuffed his already swollen wrists. At the hospital the cuffs stayed on until a doctor examined him, and the officer agreed to free only one wrist, although the wrists were allegedly extremely swollen, red, and painful. The doctor recommended elevation, ice, and ibuprofen. He was cuffed for the return trip and alleged the same reckless driving. He alleged severe, debilitating, and permanent wrist injuries.\n\nHe was charged with driving on a suspended license and obstructing an officer. He sued the two transport officers for excessive force and gross negligence, the sergeant for malicious prosecution, and the city for its handcuffing policy. The district court dismissed all claims except a federal claim against the sergeant, which the parties later dismissed by agreement.",
+  "holding": "Reversed and remanded on every claim. The question was only whether the complaint stated claims on which relief could be granted, not whether the plaintiff would prove them.\n\nExcessive force. Applying Graham v. Connor, the court found that none of the Graham factors favored greater force: the offenses were not severe, nothing suggested a tendency toward violence, and there was no allegation of flight or resistance. The Sixth Circuit rejected the district court's view that handcuffing an arrestee is always objectively reasonable. The circuit had already recognized that excessive force claims can be maintained for cuffing wrists too tightly (Martin v. Heideman; Walton v. City of Southfield), and the complaint alleged more than tight cuffs: repeated complaints of pain that were ignored, reckless driving that tossed a cuffed man around the back seat to add pressure on his wrists, and re-cuffing wrists that were already swollen, red, and painful for the hospital trip. The court held that the reckless driving allegation, by itself, was enough to state a claim on which a reasonable factfinder could find excessive force, and that under Martin the tight handcuffing allegations alone were also sufficient to survive a motion to dismiss.\n\nQualified immunity. The right to be free from excessive force, including excessively forceful handcuffing, was clearly established in the Sixth Circuit. Because there was a genuine question whether the force was objectively reasonable, there was necessarily a question whether a reasonable officer would have known the conduct was wrongful, so the claim could not be dismissed on qualified immunity at the pleading stage.\n\nGross negligence. Under Michigan's governmental immunity statute, officers lose immunity for conduct so reckless as to show a substantial lack of concern for whether injury results. Because the court rejected the premise that handcuffing is always reasonable, and because the complaint alleged cuffing despite large wrists, reckless driving, and re-cuffing swollen wrists, the claim could proceed.\n\nMalicious prosecution. The district court had found the obstruction charge was dismissed under a plea agreement, which under Michigan law is generally not a favorable termination. But the complaint did not say that, and the court could not rely on the defendants' outside assertions or on documents that did not show a plea agreement without converting the motion to summary judgment with notice. In a footnote the court added that if the sergeant charged obstruction simply because the plaintiff demanded medical care, probable cause was in doubt.\n\nMunicipal liability. The complaint alleged a direct causal link between the alleged policy of handcuffing all detainees regardless of circumstances and the injury: the officers said they cuffed him because policy required it. A blanket rule that handcuffing is always reasonable is at odds with Graham's command to examine the particular facts, and it was not clear from the complaint that the government's interest in safety outweighed a non-violent detainee's interest in being free from severe pain and risk of injury from cuffs too small even on their loosest setting.",
+  "dissent": "None. The panel was unanimous.",
+  "notDecided": "Whether any of the allegations were true. The case was decided on a motion to dismiss, before any evidence. The court held only that the complaint stated claims; it made no findings about what the officers did.\n\nWhether the officers were entitled to qualified immunity on a developed record. The court held immunity could not be decided on the pleadings; it did not foreclose the defense at summary judgment or trial.\n\nWhether Troy actually had a policy of handcuffing all detainees, or whether such a policy is unconstitutional. The court held the allegation stated a claim; it did not rule on the policy.\n\nWhether the obstruction charge was dismissed as part of a plea agreement, and whether that would bar the malicious prosecution claim.\n\nThe court noted in a footnote that Saucier v. Katz was then pending in the Supreme Court on whether the qualified immunity test is the same as the Fourth Amendment reasonableness test, and it decided this case under existing Sixth Circuit practice.",
+  "inPractice": "Kostrzewa is the case to remember when a cooperative arrestee says the cuffs hurt. The Sixth Circuit rejected the idea that handcuffing is per se reasonable and held that tight cuffs, ignored complaints, and conduct that aggravates the pain can together state an excessive force claim against a non-violent misdemeanant. The court also made clear that a lack of visible marks does not defeat the claim.\n\nThe allegations that moved the court were about what the officers did after they knew there was a problem. The officer's own report said the cuffs latched only on the first tooth. The arrestee complained repeatedly. The officers answered with a policy excuse, allegedly drove in a way that threw him around the back seat, and later re-cuffed wrists that were visibly swollen and red.\n\nThe practical response is simple. Check the fit, double lock, and ask. When a subject complains, look, adjust, consider a larger set or two linked pairs, and document what was done and why. A request for medical attention is not obstruction; the court questioned whether charging a man for insisting on seeing a doctor could be supported by probable cause.\n\nFor agencies, a rule that says cuff everyone regardless of circumstances, quoted by officers to justify ignoring a complaint of injury, can be the basis of a municipal liability claim. Policies should require handcuffing as the norm while giving direction on fit, size, and medical complaints.",
+  "trainIt": "Teach Kostrzewa in the handcuffing block together with the Ninth Circuit tight cuff cases (Palmer v. Sanderson, LaLonde, Meredith v. Erath, Wall v. County of Orange) so students see that courts across circuits treat tight cuffs plus ignored complaints as a jury question. Stress the posture: this was a motion to dismiss, so the allegations were accepted as true and nothing was proven.\n\nRun a fit and response drill. Have students cuff role players of different wrist sizes, double lock, and check for clearance. Then have the role player complain. Grade the response: look, adjust or re-cuff with a larger set or linked pairs, and state what was done. Any student who answers with policy requires it should hear the court's response to that argument.\n\nTeach the transport lesson. The court held that reckless driving with a cuffed prisoner in the back, alleged to add pressure to injured wrists, could by itself be excessive force. Transport is part of the use of force timeline; seat belts, driving, and medical complaints during transport belong in the lesson plan.\n\nTeach the medical request lesson for custody staff. The complaint alleged a sergeant threatened an obstruction charge for insisting on medical care, and the court questioned whether that charge could have probable cause. A request for medical attention should trigger evaluation, not a threat.\n\nFor supervisors, teach the policy point: a blanket handcuff everyone rule that officers cite to ignore injury complaints can support a claim against the agency.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which does not show reporter page breaks. The facts are the allegations of the complaint accepted as true on a motion to dismiss; nothing was proven and the outcome on remand was not researched. The qualified immunity discussion reflects Sixth Circuit practice before Saucier v. Katz was decided, as the court itself noted. This is a Sixth Circuit decision and is persuasive, not binding, in California.",
+  "applications": [
+    {
+      "title": "Handcuffing is not per se reasonable",
+      "body": "The district court said cuffing an arrestee is always objectively reasonable. The Sixth Circuit rejected that as inconsistent with Graham's case by case inquiry and cited Soares v. Connecticut for refusing to hold handcuffing per se reasonable."
+    },
+    {
+      "title": "The complaint changes the analysis",
+      "body": "The allegations that mattered were what happened after the arrestee said the cuffs hurt: ignored complaints, a policy excuse, reckless driving that added pressure, and re-cuffing swollen wrists. Respond to the complaint and document the response."
+    },
+    {
+      "title": "Transport is part of the force",
+      "body": "The court held that reckless driving with a handcuffed prisoner in the back, alleged to toss him around and injure his wrists, could by itself state an excessive force claim."
+    },
+    {
+      "title": "No marks does not mean no claim",
+      "body": "In a footnote the court said the plaintiff could allege excessive force regardless of whether his injuries left physical marks or caused extensive damage."
+    },
+    {
+      "title": "Policy quoted as an excuse becomes a Monell allegation",
+      "body": "The officers allegedly told the arrestee that city policy required cuffing every detainee regardless of circumstances. That statement supplied the direct causal link the court needed to let the claim against the city proceed."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "At what stage was Kostrzewa decided, and what does that mean for how the facts should be described?",
+      "options": [
+        "After a jury trial; the facts were found by the jury",
+        "On summary judgment; the facts were undisputed",
+        "On a motion to dismiss; the allegations of the complaint were accepted as true and nothing was proven",
+        "On appeal from a verdict for the officers"
+      ],
+      "answer": 2,
+      "teach": "The court reviewed a Rule 12(b)(6) dismissal. It held the complaint stated claims; it made no findings about what the officers actually did."
+    },
+    {
+      "q": "Which allegation did the court say was, by itself, enough to state an excessive force claim?",
+      "options": [
+        "That the officers handcuffed a misdemeanant at all",
+        "That the officers drove recklessly with the plaintiff handcuffed in the back seat so as to cause him further pain and injury",
+        "That the officers used the loosest setting on the cuffs",
+        "That a sergeant threatened to charge him with obstruction"
+      ],
+      "answer": 1,
+      "teach": "The court said that even setting aside the refusal to loosen the cuffs and the re-cuffing of swollen wrists, the reckless driving allegation alone stated a claim on which a factfinder could find excessive force."
+    },
+    {
+      "q": "What did the court hold about the plaintiff's claim against the City of Troy?",
+      "options": [
+        "It was dismissed because municipalities cannot be sued for handcuffing",
+        "It was dismissed because the officers were entitled to qualified immunity",
+        "It survived because the complaint alleged a policy of handcuffing all detainees regardless of circumstances, which the officers cited, and a blanket rule that handcuffing is always reasonable conflicts with Graham",
+        "It survived because the city admitted the policy was unconstitutional"
+      ],
+      "answer": 2,
+      "teach": "The court held the alleged policy supplied the direct causal link required for municipal liability and that it was not clear from the complaint that officer safety outweighed a non-violent detainee's interest in avoiding severe pain from cuffs too small even on their loosest setting."
+    }
+  ]
+}

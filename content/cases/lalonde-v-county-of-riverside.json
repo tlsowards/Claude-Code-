@@ -1,0 +1,92 @@
+{
+  "id": "lalonde-v-county-of-riverside",
+  "name": "LaLonde v. County of Riverside",
+  "court": "Ninth Circuit (from the Central District of California)",
+  "courtKey": "ca9",
+  "docket": "98-55887",
+  "citation": "204 F.3d 947 (9th Cir. 2000)",
+  "decided": "February 25, 2000",
+  "status": "published",
+  "topic": "Warrantless entry and excessive force on a noise complaint: a knee in the back during handcuffing, tight handcuffs with complaints ignored, and pepper spray left on a handcuffed, surrendered man for twenty to thirty minutes without first aid",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "handcuffing-and-detention",
+    "intermediate-force",
+    "takedowns-and-control"
+  ],
+  "published": "2026-11-16",
+  "summary": "Deputies on a disputed noise complaint reached into a man's apartment, took him down, pepper sprayed him, handcuffed him with a knee in his back, and then left him cuffed on his couch with the spray burning for twenty to thirty minutes while ignoring complaints that the cuffs were cutting off his circulation, despite training to offer first aid. The Ninth Circuit reversed judgment for the deputies on every claim and held that once an arrestee has surrendered and is helpless, any reasonable officer knows that continued use of a weapon or a refusal without cause to alleviate its harmful effects is excessive force. It is taught for pepper spray decontamination, tight cuffs, and force after surrender.",
+  "coverage": [
+    "The opinion was read in full from the Public.Resource.Org Federal Reporter archive at https://law.resource.org/pub/us/case/reporter/F3/204/204.F3d.947.98-55887.html (opinion by Judge Reinhardt, joined by Senior Judge Bright of the Eighth Circuit sitting by designation, with eighteen footnotes, and a partial concurrence and partial dissent by Judge Trott). The archive heading confirms the citation 204 F.3d 947 (9th Cir. 2000). The archive copy does not mark internal page breaks, so pin cites are not given; Drummond v. City of Anaheim quotes the surrender passage at 204 F.3d 961, and Wall v. County of Orange cites the tight cuffs passage at 960.",
+    "The docket number, argument date, and filing date are taken from the caption of the archived opinion.",
+    "The trial record and the district court's rulings were not read and are described only as the Ninth Circuit described them. Proceedings after remand were not researched.",
+    "The opinion states that the qualified immunity test in excessive force cases is the same as the merits test, citing Katz v. United States, 194 F.3d 962. That statement was overruled by Saucier v. Katz, 533 U.S. 194 (2001), as the en banc court explained in Robinson v. Solano County, 278 F.3d 1007 (9th Cir. 2002), which was read for this library. The excessive force holdings in LaLonde are still cited by the Ninth Circuit, including in Drummond, Wall, and Spencer v. Pew."
+  ],
+  "facts": "The facts are LaLonde's version, which the court was required to credit because the district court granted the deputies qualified immunity before trial on the entry claim and by judgment as a matter of law at trial on the force claims.\n\nJohn LaLonde lived in a Hemet apartment with his roommate and her three children. Shortly after 1 a.m. on July 22, 1996, Riverside County Deputies Moquin and Horton responded to a neighbor's noise complaint. The neighbor had made at least three prior unfounded noise complaints. She told the deputies LaLonde had a rifle, was hostile to law enforcement, and might use it.\n\nLaLonde's roommate opened the door. LaLonde came into view in his underwear and T-shirt holding a sandwich and stayed inside. He declined to step outside and declined to let the deputies in, saying he would talk from inside. When Moquin explained the complaint, LaLonde called it ongoing harassment by the neighbor. According to LaLonde, Moquin then reached in, grabbed his shirt, and tore it as LaLonde stepped back. Moquin said LaLonde turned toward the interior first; LaLonde denied any movement. Moquin said he was arresting him for obstructing an investigation, grabbed his hands, pulled him backward to the floor by his ponytail, and straddled him. LaLonde resisted and they scuffled. Moquin pepper sprayed LaLonde in the face, and LaLonde's resistance ceased. Horton entered and helped handcuff him, forcefully putting his knee into LaLonde's back, causing significant pain.\n\nThe deputies sat LaLonde on his couch, handcuffed, for twenty to thirty minutes with the spray burning his face. He told them the cuffs were too tight and cutting off his circulation; they told him to hold still. He said the spray was burning like hell; they said it was not that bad. Both deputies were trained that pepper spray symptoms can last up to 45 minutes untreated and that they should offer first aid such as flushing with water when possible. Moquin testified he did not offer any first aid whatsoever. Two other deputies arrived and almost immediately wiped LaLonde's face with a wet towel.\n\nLaLonde sued the deputies and the county for warrantless entry and excessive force. The district court granted qualified immunity on the entry claim after a pretrial hearing, and after LaLonde's last witness at trial granted judgment as a matter of law on the force claims and dismissed the county.",
+  "holding": "Reversed in all respects and remanded for a jury trial on all claims against all defendants.\n\nWarrantless entry. Probable cause alone does not justify a warrantless entry into a home; exigent circumstances are also required (Payton; Welsh v. Wisconsin). The doorway arrest exception did not apply because the arrest occurred only after the deputies crossed the threshold. The Ninth Circuit's mild exigency rule for entries without property damage was no longer good law after United States v. Ramirez. On LaLonde's facts, he stood peacefully inside his home when he was grabbed and tackled, and no exigency existed; a neighbor's report that he owned a rifle and disliked police did not by itself permit entry to seize him for declining to step outside on a misdemeanor noise complaint. A reasonable officer would have known the entry was unlawful.\n\nKnee in the back. There was a factual dispute about where Horton placed his knee and how hard. The district court erred by crediting Horton's testimony. LaLonde admitted he initially resisted, a Graham factor, but testified he stopped resisting after being sprayed and before being handcuffed. A jury could find that if the back injury was serious enough, Horton used more force than reasonable even if LaLonde had been resisting, and the minor nature of the offense weighed in LaLonde's favor.\n\nTight handcuffs. The district court ignored this claim. A series of Ninth Circuit cases, including Palmer v. Sanderson and Hansen v. Black, holds that tight handcuffing can constitute excessive force. The issue is fact specific and turns on credibility. On LaLonde's facts it could not be said that the only reasonable conclusion was that the force was reasonable, so the claim should have gone to the jury.\n\nProlonged pepper spray exposure. Citing its police canine cases (Mendoza v. Block; Watkins v. City of Oakland), the court held that no particularized case law is needed for an officer to know that excessive force has been used when a weapon is used on a handcuffed arrestee who has fully surrendered and is completely under control. The same principle applies to pepper spray: its use may be reasonable as a general policy to bring an arrestee under control, but in a situation in which an arrestee surrenders and is rendered helpless, any reasonable officer would know that a continued use of the weapon or a refusal without cause to alleviate its harmful effects constitutes excessive force. The deputies knew the effects, were trained to offer first aid, and offered none for twenty to thirty minutes, while the next deputies to arrive immediately flushed his face.\n\nEvidence rulings and the county. Excluding LaLonde's medical expert was error, because the extent of injury bears on reasonableness and could help resolve where the knee was placed. Precluding Horton from testifying whether his handcuffing technique followed department policy was error that prejudiced the Monell claim, so judgment for the county was reversed. The state law claims were revived with the federal claims.",
+  "dissent": "Judge Trott concurred in part and dissented in part. He agreed the entry claim had to go to a jury because the facts were disputed, and he agreed that leaving the pepper spray on a surrendered man despite first aid training could amount to purposeful excessive force for a jury to decide. He dissented on the knee in the back, reasoning that LaLonde admitted resisting and a reasonable officer could conclude a knee in the back was proper weaponless force, and on the tight cuffs, which he called a garden variety handcuffing allegation supported only by subjective evidence, noting that handcuffing an arrestee is standard practice everywhere. The majority responded in a footnote that LaLonde testified he stopped resisting after being sprayed and before the knee was applied, and that the tight cuffs claim was simply a jury question.",
+  "notDecided": "Whether the deputies actually did what LaLonde described. The court reversed because disputed facts had been resolved against him and sent every claim to a jury. No liability was found.\n\nWhether the initial pepper spray application during the scuffle was excessive. The court said use of pepper spray may be reasonable as a general policy to bring an arrestee under control; the claim was about leaving it on after surrender.\n\nWhether the county's handcuffing policy caused the injury. The court held only that excluding the policy testimony prejudiced the Monell claim.\n\nThe outcome on remand.",
+  "inPractice": "LaLonde is three field lessons in one case. The first is pepper spray decontamination. The court treated a refusal without cause to alleviate the harmful effects of a weapon, after the subject has surrendered and is under control, as the equivalent of continuing to use the weapon. The deputies knew the spray could burn for 45 minutes, were trained to flush with water, and did nothing for twenty to thirty minutes while a handcuffed man on his own couch said it was burning. Decontamination is part of the use of force, and the clock starts when resistance stops.\n\nThe second is the knee in the back. The court did not hold that a knee in the back during handcuffing is unlawful. It held that reasonableness depended on disputed facts: where the knee went, how hard, whether the subject had already stopped resisting, and how serious the injury was. Officers should expect the moment resistance stops to be the moment the justification for weight on the back ends.\n\nThe third is the tight cuffs. The court said the Ninth Circuit has held repeatedly that tight handcuffing can be excessive force and that the question is usually one of credibility. The deputies answered the complaint with hold still.\n\nThe entry holding is also worth knowing: probable cause for a misdemeanor plus a neighbor's claim that the man owns a rifle did not justify reaching into his home to pull him out when he declined to step outside.",
+  "trainIt": "Teach LaLonde in two blocks. In the intermediate force block, use it for pepper spray aftercare. The rule to put on the board: once the arrestee has surrendered and is helpless, continued use of the weapon or refusal without cause to alleviate its effects is excessive force, and no case on point is needed. Run a spray scenario that ends in handcuffs and grade the team on how quickly decontamination begins, what is used, and what is said to the subject.\n\nIn the handcuffing block, use the knee and the cuffs. Drill the transition from resistance to control: when the subject stops fighting, the knee comes off the spine and the hands are checked. Then the cuffs: fit, double lock, and a real response to a complaint about circulation.\n\nTeach the resistance timeline with the dissent. Judge Trott thought the knee was clearly reasonable because LaLonde admitted resisting. The majority pointed to LaLonde's testimony that he stopped resisting after the spray and before the knee. The timing of resistance relative to the force is what the jury will decide.\n\nTeach the entry briefly for patrol: misdemeanor noise complaint, subject inside, declines to come out. The court held a reasonable officer would know that reaching in to grab him was unlawful on those facts.\n\nFlag the law update: LaLonde's statement that the immunity test equals the merits test was overruled by Saucier v. Katz in 2001. The force holdings remain good law and are still cited.",
+  "caution": "The opinion was read in full from the Public.Resource.Org archive, which does not show reporter page breaks. The facts are LaLonde's version credited for purposes of the appeal; the deputies disputed them. Every claim was remanded for a jury; no liability was found and the outcome on remand was not researched. The opinion's statement that the qualified immunity inquiry is the same as the merits inquiry was overruled by Saucier v. Katz (2001), as the en banc Ninth Circuit explained in Robinson v. Solano County; the excessive force holdings continue to be cited.",
+  "applications": [
+    {
+      "title": "Decontamination is part of the force",
+      "body": "After a subject surrenders and is under control, a refusal without cause to alleviate the harmful effects of pepper spray is excessive force, and the court said no particularized case law is needed to know it. Flush, ventilate, and document the time."
+    },
+    {
+      "title": "Your training is the standard you will be held to",
+      "body": "Both deputies testified they were trained to offer first aid after spraying and that the effects can last 45 minutes. The court used their training and their admission that they offered none."
+    },
+    {
+      "title": "Weight on the back ends when resistance ends",
+      "body": "The court held a jury could find the knee in the back excessive if applied after LaLonde stopped resisting and if the injury was serious enough. Drummond and Spencer later built on this holding."
+    },
+    {
+      "title": "Hold still is not a response to a cuff complaint",
+      "body": "LaLonde said the cuffs were cutting off his circulation and was told to hold still. The court said tight handcuffing can be excessive force and the claim was for the jury."
+    },
+    {
+      "title": "A rifle in the house and a misdemeanor do not open the door",
+      "body": "A neighbor's report that the man owned a rifle and disliked police, on a noise complaint, did not permit deputies to reach in and seize him when he declined to step outside. Probable cause without exigency does not justify a warrantless home entry."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What rule did LaLonde state about pepper spray after a subject has surrendered?",
+      "options": [
+        "Pepper spray may never be used on a person inside his home",
+        "Officers must decontaminate within five minutes or face liability",
+        "When an arrestee surrenders and is rendered helpless, any reasonable officer would know that continued use of the weapon or a refusal without cause to alleviate its harmful effects constitutes excessive force",
+        "Pepper spray effects are too minor to support an excessive force claim"
+      ],
+      "answer": 2,
+      "teach": "The court drew the principle from its police canine cases and applied it to pepper spray, relying on the deputies' own training to offer first aid and their admission that they offered none for twenty to thirty minutes."
+    },
+    {
+      "q": "Why did the court hold the knee in the back claim should have gone to the jury?",
+      "options": [
+        "Because a knee in the back is always excessive force",
+        "Because the facts were disputed about where the knee was placed, how hard, whether LaLonde had stopped resisting, and how serious the injury was, and the district court had credited the deputy's testimony",
+        "Because LaLonde was arrested for a felony",
+        "Because the deputy admitted the technique violated policy"
+      ],
+      "answer": 1,
+      "teach": "The court said a jury could find the force excessive if the injury was serious enough, even though LaLonde admitted initially resisting, and noted his testimony that he stopped resisting after being sprayed."
+    },
+    {
+      "q": "Which part of LaLonde was later overruled, and which part remains good law?",
+      "options": [
+        "The pepper spray holding was overruled; the entry holding remains",
+        "The statement that the qualified immunity test is the same as the merits test was overruled by Saucier v. Katz; the excessive force holdings remain and are still cited",
+        "The tight handcuffs holding was overruled by Graham v. Connor",
+        "Nothing in LaLonde has been overruled"
+      ],
+      "answer": 1,
+      "teach": "Saucier v. Katz (2001) separated the two inquiries, as the en banc Ninth Circuit explained in Robinson v. Solano County. Drummond, Wall, and Spencer v. Pew continue to cite LaLonde's force holdings."
+    }
+  ]
+}

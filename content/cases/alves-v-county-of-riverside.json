@@ -1,0 +1,91 @@
+{
+  "id": "alves-v-county-of-riverside",
+  "name": "Alves v. County of Riverside",
+  "court": "Ninth Circuit (from the Central District of California)",
+  "courtKey": "ca9",
+  "docket": "23-55532",
+  "citation": "No. 23-55532 (9th Cir. Apr. 29, 2025)",
+  "decided": "April 29, 2025",
+  "status": "published",
+  "topic": "Prone restraint after handcuffing, mixed jury verdict of no Fourth Amendment excessive force but negligence under California law, reconciled under Hayes v. County of San Diego; post restraint monitoring and the recovery position",
+  "settings": [
+    "field",
+    "all"
+  ],
+  "categories": [
+    "restraint-and-asphyxia",
+    "california-law"
+  ],
+  "published": "2026-11-16",
+  "summary": "Two deputies tased, handcuffed, and held a man in crisis face down with a knee and then a hand on his back; he stopped moving, lay unresponsive and prone for more than four minutes, and died. A jury found no excessive force under the Fourth Amendment but found the deputies negligent under California law and awarded damages. The Ninth Circuit held the verdicts were reconcilable because California's reasonable care standard is broader than the Fourth Amendment, and the jury could find a breach in the failure to monitor him or place him in a recovery position. It is the case that makes post restraint monitoring a California negligence issue.",
+  "coverage": [
+    "The opinion was read in full from the Ninth Circuit's own server at https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/29/23-55532.pdf (24 slip opinion pages, opinion by Judge Sanchez, joined by Judge Wardlaw and District Judge Lynn sitting by designation, with eleven footnotes and a staff summary that is not part of the opinion), converted with pdftotext.",
+    "The slip opinion is marked FOR PUBLICATION. It does not carry a Federal Reporter citation, and the F.4th citation was not confirmed from any primary source read for this brief, so the citation field gives the docket and filing date only.",
+    "Hayes v. County of San Diego, 57 Cal. 4th 622 (2013), is described only as this opinion describes and quotes it; it was not read independently for this brief. The trial record, jury instructions, and the district court's Rule 50(b) order were not read and are described as the Ninth Circuit described them. The body camera video exhibit was not viewed.",
+    "Citation as written in the brief: No. 23-55532 (9th Cir. Apr. 29, 2025). The source read gave it as: No. 23-55532 (9th Cir. Apr. 29, 2025) (published opinion)."
+  ],
+  "facts": "The facts were captured on Deputy Gomez's body camera and were largely undisputed.\n\nOn the afternoon of July 29, 2019, Riverside County Sheriff's dispatch received several 911 calls from a Temecula apartment complex reporting an unarmed, shirtless man having a psychotic meltdown, bleeding from a head wound. Deputies Keeney and Gomez found Kevin Niedzialek seated in an alcove, barefoot, bleeding from the head, and speaking incoherently. Both requested medical assistance, believing he was under the influence or in a mental health crisis.\n\nNiedzialek abruptly stood and advanced toward Deputy Keeney. Gomez fired her taser in dart mode and he fell. When he stood and advanced again, Gomez tased him a second time and he fell forward. As he lay face down kicking and flailing, Keeney placed his right knee on the left side of Niedzialek's back and held his left wrist while Gomez worked to control the right arm. After about 35 seconds they handcuffed his hands behind his back, and Gomez made a second call for paramedics.\n\nAfter handcuffing, Niedzialek kept bucking, kicking, rolling, and flailing his legs. Keeney removed his knee, then replaced it near the shoulder blade when Niedzialek rolled to his side. Gomez placed her right hand on the middle of his back. About 45 seconds after handcuffing, Niedzialek stopped moving and began grunting or moaning. Keeney lifted his knee, but Gomez kept her hand on his back. Two and a half minutes later Gomez asked his name and got no response. Another minute and twenty seconds passed before Keeney noticed he might not be breathing. The deputies rolled him onto his back; he had not moved for more than four minutes. Neither deputy performed CPR before paramedics arrived two minutes later and directed them to begin. Niedzialek died the next day. The medical examiner attributed death to methamphetamine and ruled out asphyxiation.\n\nHis successor in interest sued. The excessive force, battery, and negligence claims went to trial against the county. The plaintiff's police practices expert testified that the national standard of care requires moving a handcuffed arrestee to a recovery position as soon as possible and that the county's policy of holding agitated subjects chest down until paramedics arrive ignored that practice. The plaintiff's cardiologist testified that prone restraint with pressure on the back prevented Niedzialek from recovering from an oxygen debt, leading to cardiac arrest.",
+  "holding": "Affirmed. The jury found unanimously for the defense on the Fourth Amendment excessive force and state battery claims and unanimously for the plaintiff on negligence, apportioning 20 percent of fault to the deputies and 80 percent to Niedzialek. It awarded $7.5 million in damages, and the district court entered judgment for $1.5 million. The county moved for judgment as a matter of law, arguing the verdicts were irreconcilable because the same reasonableness standard governs both claims. The district court denied the motion and the Ninth Circuit affirmed.\n\nThe standard. Where verdicts are alleged to be inconsistent, the court must search for a reasonable way to read them as a coherent view of the case and must uphold the judgment if they can be reconciled on any reasonable theory consistent with the evidence.\n\nCalifornia negligence is broader than the Fourth Amendment. Relying on Hayes v. County of San Diego, the court held that the federal and state standards are legally distinct. Hayes stated that the Fourth Amendment's reasonableness standard is not the same as the standard of reasonable care under tort law, and that California negligence law, which considers the totality of the circumstances surrounding any use of deadly force, is broader than federal Fourth Amendment law, which tends to focus more narrowly on the moment when force is used. The court rejected the county's argument that Hayes applies only to pre force tactical conduct. Hayes restated broad principles of California negligence law, refused to divide a negligence claim artificially into decisional moments, and treated pre force conduct as one part of a continuum of circumstances; its focus on pre shooting conduct reflected the question certified, not a limit on the doctrine.\n\nReconciling the verdicts. The instructions, though imperfect, reflected the distinction. The Fourth Amendment instruction asked whether the deputies used excessive force or restraint when they restrained Niedzialek on his chest after handcuffing, listing eleven Graham type factors. The negligence instruction asked whether the deputies were negligent after Niedzialek was restrained and defined the totality of the circumstances to include the conduct leading up to the use of force or restraint. The jury could have analyzed the Fourth Amendment claim narrowly, focusing on the amount of force applied after handcuffing, and found the light pressure on his back and legs was not excessive. It could have analyzed the negligence claim more broadly, considering whether continued restraint was reasonably necessary after he stopped moving or breathing and was no longer resisting. From the expert testimony and the cross examination of the deputies, the jury could reasonably have found that the deputies owed Niedzialek a duty of due care after handcuffing him and breached it by not placing him in a recovery position, failing to check whether he was breathing and had a pulse, or applying pressure to his back when it was no longer necessary. Because the verdicts could be reconciled, the denial of judgment as a matter of law was affirmed.",
+  "dissent": "None. The panel was unanimous.",
+  "notDecided": "Whether the deputies used excessive force. The jury found they did not, and the plaintiff did not appeal that finding. The Ninth Circuit did not hold that prone restraint after handcuffing is or is not reasonable under the Fourth Amendment.\n\nWhether the deputies were in fact negligent as a matter of law. The court held only that the jury could reasonably have so found on the evidence presented, which is the standard for upholding a verdict.\n\nThe deputies' pre handcuffing conduct, including the two taser applications. The plaintiff did not challenge it.\n\nThe deliberate indifference and Bane Act claims, which were resolved on summary judgment and not before the court.\n\nWhether the county's policy of holding agitated subjects chest down until paramedics arrive is itself unlawful. The plaintiff's expert criticized the policy, and the court recited that testimony as evidence the jury could consider, but the court made no ruling on the policy.\n\nThe cause of death. The medical examiner attributed it to methamphetamine and ruled out asphyxiation; the plaintiff's cardiologist disagreed. The court described both and resolved neither; it asked only whether the jury had evidence to support its verdict.",
+  "inPractice": "Alves tells California officers that clearing the Fourth Amendment is not the end of the analysis. The jury found the deputies' force reasonable, and that finding stood. The deputies' employer still paid a judgment because California negligence asks a broader question: did the officers act with reasonable care across the whole encounter, including what they did after the subject was handcuffed and stopped moving.\n\nThe facts the court identified as supporting the negligence verdict are the ones officers control after the cuffs go on. Niedzialek stopped moving about 45 seconds after handcuffing. He was not moved to a recovery position. Two and a half minutes passed before anyone spoke to him, and another minute and twenty seconds before anyone noticed he might not be breathing. No one checked breathing or pulse until he had been motionless for more than four minutes. The plaintiff's expert testified that the national standard is to move a handcuffed arrestee to a side or seated position as soon as possible.\n\nTwo cautions. The court did not adopt a rule that prone restraint is unreasonable or that a recovery position is constitutionally required; it held that a jury could find a breach of the duty of care on this evidence. And the medical examiner attributed the death to methamphetamine; the negligence verdict rested on evidence that pressure and position kept a man in an oxygen debt from recovering and that no one was watching. Once the subject is controlled, the job becomes monitoring.",
+  "trainIt": "Teach Alves as the California layer on top of Drummond, Tatum, and Spencer. Those cases define the Fourth Amendment line. Alves shows that in California a jury can find officers negligent for what they did not do after handcuffing even when it finds the force itself reasonable. Students who leave a restraint class thinking only about the amount of pressure have missed half the exposure.\n\nBuild a post restraint protocol into every ground control and handcuffing drill and grade it: weight off the back once resistance stops, roll to the side or sit the subject up, speak to the subject and get a response, check breathing and pulse at set intervals, and be ready to start CPR before paramedics arrive. In Alves the gaps were measured in minutes on body camera.\n\nTeach the policy lesson carefully. The plaintiff's expert testified that the county's policy of holding agitated subjects chest down until paramedics arrive conflicted with the national standard of care. The court did not rule on the policy, but the testimony went to the jury. Agencies should compare their own restraint policies to the standard described in the record and document the comparison.\n\nTeach Hayes correctly. The Ninth Circuit read Hayes to mean California negligence considers the totality of the circumstances across the encounter, before and after the force, and is not limited to pre force tactics. Do not teach Alves as a Fourth Amendment restraint holding; the jury rejected the Fourth Amendment claim.",
+  "caution": "The opinion was read in full from the Ninth Circuit's published slip opinion; the Federal Reporter citation was not confirmed and is omitted. Hayes v. County of San Diego and the other California authorities are described only as this opinion describes them. The jury found no excessive force; the appellate holding is that the negligence verdict could be reconciled with that finding, not that the deputies were negligent as a matter of law. The medical examiner attributed the death to methamphetamine and ruled out asphyxiation, and the court did not resolve the cause of death.",
+  "applications": [
+    {
+      "title": "Reasonable force can still be negligent in California",
+      "body": "The jury found no Fourth Amendment violation and still found negligence. The Ninth Circuit held that is a coherent result because California's reasonable care standard, under Hayes, considers the totality of the circumstances and is broader than the Fourth Amendment's focus on the moment force is used."
+    },
+    {
+      "title": "The duty continues after the cuffs",
+      "body": "The court identified three ways the jury could find a breach: not placing Niedzialek in a recovery position, failing to check whether he was breathing and had a pulse, and applying pressure to his back when it was no longer necessary. All three happened after he was handcuffed and had stopped moving."
+    },
+    {
+      "title": "Watch the clock on an unresponsive subject",
+      "body": "Niedzialek stopped moving about 45 seconds after handcuffing and was prone and unresponsive for more than four minutes before anyone checked his breathing. The gaps were on video. Build timed checks into the post restraint routine."
+    },
+    {
+      "title": "Hayes is not limited to pre force tactics",
+      "body": "The county argued Hayes applies only to conduct before deadly force. The court rejected that reading: Hayes refused to divide negligence into decisional moments and treats the encounter as a continuum."
+    },
+    {
+      "title": "Policy that conflicts with the standard of care is evidence",
+      "body": "The plaintiff's expert testified that the county's chest down until paramedics arrive policy ignored the generally accepted practice of moving a handcuffed arrestee to a recovery position. The court did not rule on the policy, but the testimony supported the verdict."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did the jury in Alves decide?",
+      "options": [
+        "The deputies used excessive force under the Fourth Amendment and were negligent",
+        "The deputies did not use excessive force under the Fourth Amendment but were negligent under California law",
+        "The deputies used excessive force but were not negligent",
+        "The deputies were entitled to qualified immunity"
+      ],
+      "answer": 1,
+      "teach": "The verdict was mixed: unanimous for the defense on excessive force and battery, unanimous for the plaintiff on negligence, with 20 percent of fault assigned to the deputies."
+    },
+    {
+      "q": "Why did the Ninth Circuit hold the verdicts could be reconciled?",
+      "options": [
+        "Because the jury was improperly instructed and the error favored the defense",
+        "Because California negligence law, under Hayes v. County of San Diego, applies a broader totality of the circumstances standard than the Fourth Amendment, so the jury could find a breach of the duty of care after handcuffing even if the force itself was not excessive",
+        "Because the Fourth Amendment does not apply after a subject is handcuffed",
+        "Because the medical examiner found the cause of death was asphyxiation"
+      ],
+      "answer": 1,
+      "teach": "The court held the state and federal standards are legally distinct and that the jury could focus narrowly on the force for the Fourth Amendment claim and more broadly on monitoring, recovery position, and continued pressure for the negligence claim."
+    },
+    {
+      "q": "Which of the following did the Ninth Circuit NOT decide in Alves?",
+      "options": [
+        "Whether the jury's verdicts were reconcilable",
+        "Whether Hayes is limited to pre force tactical conduct",
+        "Whether prone restraint after handcuffing violates the Fourth Amendment",
+        "Whether the denial of judgment as a matter of law should be affirmed"
+      ],
+      "answer": 2,
+      "teach": "The jury found no Fourth Amendment violation and that finding was not appealed. The court decided only that the negligence verdict could stand alongside it."
+    }
+  ]
+}
