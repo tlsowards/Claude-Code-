@@ -275,7 +275,7 @@ Correct answer for the follow-up reply: B. The standard is objective. The office
 
 Decision: Bryan v. MacPherson, Ninth Circuit, November 30, 2010 (order and superseding opinion; the earlier panel opinions reported at 590 F.3d 767 (2009) and 608 F.3d 614 (June 18, 2010) were withdrawn) (published), 630 F.3d 805 (9th Cir. 2010), docket 08-55622.
 
-Audio: not rendered yet; render it with scripts/make-audio-elevenlabs.mjs --case before building the video. Narration script: content/narration/cases/bryan-v-macpherson.txt. Case page: https://app.sowardsconsulting.com/cases/bryan-v-macpherson.
+Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-bryan-v-macpherson.mp3 (16 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/bryan-v-macpherson.txt. Case page: https://app.sowardsconsulting.com/cases/bryan-v-macpherson.
 
 ### Title options
 
