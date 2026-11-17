@@ -28,7 +28,7 @@ Decision: Graham v. Connor, Supreme Court of the United States, May 15, 1989 (pu
 
 Suggested playlist: Force standards. Topic sections on the app: Force standards.
 
-Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-graham-v-connor.mp3 (12 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/graham-v-connor.txt. Case page: https://app.sowardsconsulting.com/cases/graham-v-connor.
+Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-graham-v-connor-1.mp3 (12 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/graham-v-connor.txt. Case page: https://app.sowardsconsulting.com/cases/graham-v-connor.
 
 ### Title options
 
