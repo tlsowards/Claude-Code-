@@ -142,7 +142,7 @@ Which case do you want broken down next? Reply and it goes on the list.
 
 ### Post schedule for Video 1
 
-One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 1 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining
+One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 1 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining. Platforms: LinkedIn, Facebook, Instagram, TikTok, and YouTube; X is not used.
 
 #### Monday 2026-12-21: Your intent is not the test; your perspective is
 
@@ -160,11 +160,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Your intent is not the test; your perspective is. A pretrial detainee does not have to prove the officer knew the force was excessive. Kingsley v. Hendrickson, June 22, 2015. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Your intent is not the test; your perspective is. A pretrial detainee does not have to prove the officer knew the force was excessive. Kingsley v. Hendrickson. https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson
 ```
 
 #### Tuesday 2026-12-22: The six factors are the report outline
@@ -185,11 +180,6 @@ Instagram and TikTok caption (pair with the matching Short):
 The six factors are the report outline. Need versus amount of force, extent of injury, efforts to temper or limit force, severity of the security problem, threat reasonably perceived, and active resistance. Kingsley v. Hendrickson, June 22, 2015. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-The six factors are the report outline. Need versus amount of force, extent of injury, efforts to temper or limit force, severity of the security problem, threat reasonably perceived, and active resistance. Kingsley v. Hendrickson.…
-```
-
 #### Wednesday 2026-12-23: Policy earns deference
 
 LinkedIn and Facebook:
@@ -206,11 +196,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Policy earns deference. Courts defer to the policies and practices jail officials judge necessary for order and security. Kingsley v. Hendrickson, June 22, 2015. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Policy earns deference. Courts defer to the policies and practices jail officials judge necessary for order and security. Kingsley v. Hendrickson. https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson
 ```
 
 #### Thursday 2026-12-24: Same cell, two standards
@@ -231,11 +216,6 @@ Instagram and TikTok caption (pair with the matching Short):
 Same cell, two standards. A pretrial detainee and a sentenced prisoner in the same unit are protected by different clauses. Kingsley v. Hendrickson, June 22, 2015. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-Same cell, two standards. A pretrial detainee and a sentenced prisoner in the same unit are protected by different clauses. Kingsley v. Hendrickson. https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson
-```
-
 #### Friday 2026-12-25: Teach the posture
 
 LinkedIn and Facebook:
@@ -252,11 +232,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Teach the posture. Kingsley vacated a defense verdict because of a bad jury instruction. Kingsley v. Hendrickson, June 22, 2015. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Teach the posture. Kingsley vacated a defense verdict because of a bad jury instruction. Kingsley v. Hendrickson. https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson
 ```
 
 ### Community post poll (optional, Saturday)
@@ -394,7 +369,7 @@ Which case do you want broken down next? Reply and it goes on the list.
 
 ### Post schedule for Video 2
 
-One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 2 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/bryan-v-macpherson. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining
+One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 2 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/bryan-v-macpherson. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining. Platforms: LinkedIn, Facebook, Instagram, TikTok, and YouTube; X is not used.
 
 #### Monday 2026-12-28: Dart mode is intermediate force
 
@@ -412,11 +387,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Dart mode is intermediate force. The court held that the X26 and similar devices in dart mode are an intermediate, significant level of force that must be justified by the governmental interest involved. Bryan v. MacPherson, November 30, 2010. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Dart mode is intermediate force. The court held that the X26 and similar devices in dart mode are an intermediate, significant level of force that must be justified by the governmental interest involved. Bryan v. MacPherson.…
 ```
 
 #### Tuesday 2026-12-29: Non-lethal is not non-excessive
@@ -437,11 +407,6 @@ Instagram and TikTok caption (pair with the matching Short):
 Non-lethal is not non-excessive. All force, lethal and non-lethal, must be justified by the need for that specific level of force. Bryan v. MacPherson, November 30, 2010. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-Non-lethal is not non-excessive. All force, lethal and non-lethal, must be justified by the need for that specific level of force. Bryan v. MacPherson. https://app.sowardsconsulting.com/cases/bryan-v-macpherson
-```
-
 #### Wednesday 2026-12-30: Objective facts, not adjectives
 
 LinkedIn and Facebook:
@@ -458,11 +423,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Objective facts, not adjectives. A visibly unarmed man fifteen to twenty-five feet away, yelling gibberish and facing away, was not an immediate threat. Bryan v. MacPherson, November 30, 2010. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Objective facts, not adjectives. A visibly unarmed man fifteen to twenty-five feet away, yelling gibberish and facing away, was not an immediate threat. Bryan v. MacPherson. https://app.sowardsconsulting.com/cases/bryan-v-macpherson
 ```
 
 #### Thursday 2026-12-31: Apparent crisis lowers the interest
@@ -483,11 +443,6 @@ Instagram and TikTok caption (pair with the matching Short):
 Apparent crisis lowers the interest. If the officer believed Bryan was mentally disturbed, the court said he should have made greater effort at less intrusive means. Bryan v. MacPherson, November 30, 2010. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-Apparent crisis lowers the interest. If the officer believed Bryan was mentally disturbed, the court said he should have made greater effort at less intrusive means. Bryan v. MacPherson. https://app.sowardsconsulting.com/cases/bryan-v-macpherson
-```
-
 #### Friday 2027-01-01: Warn and consider alternatives when time allows
 
 LinkedIn and Facebook:
@@ -504,11 +459,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Warn and consider alternatives when time allows. There was time to warn that the Taser would be fired and no reason not to. Bryan v. MacPherson, November 30, 2010. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Warn and consider alternatives when time allows. There was time to warn that the Taser would be fired and no reason not to. Bryan v. MacPherson. https://app.sowardsconsulting.com/cases/bryan-v-macpherson
 ```
 
 Held for replies: Posture.
@@ -648,7 +598,7 @@ Which case do you want broken down next? Reply and it goes on the list.
 
 ### Post schedule for Video 3
 
-One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 3 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/scott-v-harris. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining
+One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 3 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/scott-v-harris. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining. Platforms: LinkedIn, Facebook, Instagram, TikTok, and YouTube; X is not used.
 
 #### Monday 2027-01-04: There is no deadly force switch
 
@@ -666,11 +616,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 There is no deadly force switch. The Court held that Garner did not create rigid preconditions that apply whenever force might be called deadly. Scott v. Harris, April 30, 2007. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-There is no deadly force switch. The Court held that Garner did not create rigid preconditions that apply whenever force might be called deadly. Scott v. Harris. https://app.sowardsconsulting.com/cases/scott-v-harris
 ```
 
 #### Tuesday 2027-01-05: Count the lives and weigh the culpability
@@ -691,11 +636,6 @@ Instagram and TikTok caption (pair with the matching Short):
 Count the lives and weigh the culpability. The Court balanced the high likelihood of serious injury to the driver against the actual and imminent threat he posed to motorists, pedestrians who might have been present, and officers. Scott v. Harris, April 30, 2007. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-Count the lives and weigh the culpability. The Court balanced the high likelihood of serious injury to the driver against the actual and imminent threat he posed to motorists, pedestrians who might have been present, and officers. Scott v. Harris.…
-```
-
 #### Wednesday 2027-01-06: Lights and sirens were the warning
 
 LinkedIn and Facebook:
@@ -712,11 +652,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Lights and sirens were the warning. Multiple police cars with lights and sirens chased Harris for nearly ten miles, and the Court counted his refusal to stop as ignoring their warning. Scott v. Harris, April 30, 2007. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Lights and sirens were the warning. Multiple police cars with lights and sirens chased Harris for nearly ten miles, and the Court counted his refusal to stop as ignoring their warning. Scott v. Harris. https://app.sowardsconsulting.com/cases/scott-v-harris
 ```
 
 #### Thursday 2027-01-07: The video is the record
@@ -737,11 +672,6 @@ Instagram and TikTok caption (pair with the matching Short):
 The video is the record. A court ruling on summary judgment will not adopt a version of events that an unaltered recording blatantly contradicts. Scott v. Harris, April 30, 2007. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-The video is the record. A court ruling on summary judgment will not adopt a version of events that an unaltered recording blatantly contradicts. Scott v. Harris. https://app.sowardsconsulting.com/cases/scott-v-harris
-```
-
 #### Friday 2027-01-08: The Constitution is the floor; policy is the rule
 
 LinkedIn and Facebook:
@@ -758,11 +688,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 The Constitution is the floor; policy is the rule. The Court refused to require officers to abandon a dangerous chase, but it also said the supervisor's permission was irrelevant to the constitutional question. Scott v. Harris, April 30, 2007. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-The Constitution is the floor; policy is the rule. The Court refused to require officers to abandon a dangerous chase, but it also said the supervisor's permission was irrelevant to the constitutional question. Scott v. Harris.…
 ```
 
 Held for replies: Posture.

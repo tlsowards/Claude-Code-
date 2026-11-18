@@ -275,7 +275,7 @@ if (cases.length === 0) {
     h(3, `Post schedule for Video ${vi + 1}`);
     const monday = new Date(monday0);
     monday.setUTCDate(monday.getUTCDate() + 7 * vi);
-    p(`One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video ${vi + 1} once it is live, and to the case page until then: ${caseUrl(c)}. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining`);
+    p(`One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video ${vi + 1} once it is live, and to the case page until then: ${caseUrl(c)}. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining. Platforms: LinkedIn, Facebook, Instagram, TikTok, and YouTube; X is not used.`);
     const apps = (c.applications ?? []).slice(0, 5);
     apps.forEach((a, i) => {
       const d = new Date(monday);
@@ -287,9 +287,6 @@ if (cases.length === 0) {
       out.push('```', '');
       out.push('Instagram and TikTok caption (pair with the matching Short):', '```');
       out.push(`${title}. ${clean(firstSentence(a.body))} ${shortName(c)}, ${decidedShort(c.decided)}. ${CTA}`);
-      out.push('```', '');
-      out.push('X:', '```');
-      out.push(clip(`${title}. ${clean(firstSentence(a.body))} ${shortName(c)}. ${caseUrl(c)}`, 275));
       out.push('```', '');
     });
     if ((c.applications?.length ?? 0) > 5) p(`Held for replies: ${c.applications.slice(5).map((a) => a.title).join('; ')}.`);

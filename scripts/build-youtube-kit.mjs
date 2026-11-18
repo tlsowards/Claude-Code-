@@ -310,7 +310,7 @@ function buildKit(brief) {
 
   // Social schedule
   h(2, 'Post schedule');
-  p(`One briefing room point a day, ${WEEKDAYS[0]} to ${WEEKDAYS[4]}, starting the Monday after the brief. Each post links to the video for its case once that video is live, and to the case page until then. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining`);
+  p(`One briefing room point a day, ${WEEKDAYS[0]} to ${WEEKDAYS[4]}, starting the Monday after the brief. Each post links to the video for its case once that video is live, and to the case page until then. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining. Platforms: LinkedIn, Facebook, Instagram, TikTok, and YouTube; X is not used.`);
   const monday = nextMonday(brief.coverageEnd);
   const apps = (brief.applications ?? []).slice(0, 5);
   const fallbackApps = cases.map((c) => ({ title: c.name, body: `${firstSentence(c.inPractice)} ${firstSentence(c.trainIt)}`, caseId: c.id }));
@@ -337,9 +337,6 @@ function buildKit(brief) {
     out.push('```', '');
     out.push('Instagram and TikTok caption (pair with the matching Short):', '```');
     out.push(`${a.title}. ${firstSentence(a.body)} ${shortCites}. ${CTA}`);
-    out.push('```', '');
-    out.push('X:', '```');
-    out.push(clip(`${a.title}. ${firstSentence(a.body)} ${shortNames}. ${link}`, 275));
     out.push('```', '');
   });
   if (brief.applications?.length > 5) {
