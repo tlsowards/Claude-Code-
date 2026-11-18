@@ -42,8 +42,11 @@ Pick one. Titles stay under 70 characters where possible; the full case name and
 
 - Text: GRAHAM v. CONNOR (red word: REASONABLE)
 - Visual: highlighted line of the opinion: "judged from the perspective of a reasonable officer on the scene, rather than with the 20/20 vision of hindsight"
-- Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.
-- Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11. Hold the title fixed and change only the thumbnail.
+- Standard (approved by Dr. Sowards, November 18, 2026). Variant A is the default: a darkened opinion page fills the frame, one sentence quoted exactly from the opinion outlined in a thin gold stroke, the headline in white heavy condensed type on a navy band, one red word, and the gold series badge bottom right at the same size and position every time.
+- Keep testing Variant B: type only, the headline plus a single icon on a plain field, no photo. Hold the title fixed and change only the thumbnail.
+- For a short, well-known case name (Graham, Barnes, Torres), try the case-name variant: CASE v. NAME in very large type plus the one-line holding. For a long case name, use the holding as the headline instead.
+- Headlines are two to five words, high contrast, one accent color. Red only as an accent.
+- Never: a face (real, generated, or cartoon), red arrows, outrage words such as DESTROYS, SLAPS DOWN, or BACKFIRES, or any claim the video does not deliver.
 
 ### Description
 
@@ -267,8 +270,11 @@ Pick one. Titles stay under 70 characters where possible; the full case name and
 
 - Text: TENNESSEE v. GARNER (red word: FLEEING)
 - Visual: highlighted line of the opinion: "A police officer may not seize an unarmed, nondangerous suspect by shooting him dead"
-- Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.
-- Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11. Hold the title fixed and change only the thumbnail.
+- Standard (approved by Dr. Sowards, November 18, 2026). Variant A is the default: a darkened opinion page fills the frame, one sentence quoted exactly from the opinion outlined in a thin gold stroke, the headline in white heavy condensed type on a navy band, one red word, and the gold series badge bottom right at the same size and position every time.
+- Keep testing Variant B: type only, the headline plus a single icon on a plain field, no photo. Hold the title fixed and change only the thumbnail.
+- For a short, well-known case name (Graham, Barnes, Torres), try the case-name variant: CASE v. NAME in very large type plus the one-line holding. For a long case name, use the holding as the headline instead.
+- Headlines are two to five words, high contrast, one accent color. Red only as an accent.
+- Never: a face (real, generated, or cartoon), red arrows, outrage words such as DESTROYS, SLAPS DOWN, or BACKFIRES, or any claim the video does not deliver.
 
 ### Description
 
@@ -494,8 +500,11 @@ Pick one. Titles stay under 70 characters where possible; the full case name and
 
 - Text: DEORLE v. RUTHERFORD (red word: WARNING)
 - Visual: highlighted line of the opinion: "a simple statement by an officer that he fears for his safety or the safety of others is not enough"
-- Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.
-- Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11. Hold the title fixed and change only the thumbnail.
+- Standard (approved by Dr. Sowards, November 18, 2026). Variant A is the default: a darkened opinion page fills the frame, one sentence quoted exactly from the opinion outlined in a thin gold stroke, the headline in white heavy condensed type on a navy band, one red word, and the gold series badge bottom right at the same size and position every time.
+- Keep testing Variant B: type only, the headline plus a single icon on a plain field, no photo. Hold the title fixed and change only the thumbnail.
+- For a short, well-known case name (Graham, Barnes, Torres), try the case-name variant: CASE v. NAME in very large type plus the one-line holding. For a long case name, use the holding as the headline instead.
+- Headlines are two to five words, high contrast, one accent color. Red only as an accent.
+- Never: a face (real, generated, or cartoon), red arrows, outrage words such as DESTROYS, SLAPS DOWN, or BACKFIRES, or any claim the video does not deliver.
 
 ### Description
 
@@ -723,8 +732,11 @@ Pick one. Titles stay under 70 characters where possible; the full case name and
 
 - Text: SMITH v. CITY OF HEMET (red word: DEADLY FORCE)
 - Visual: highlighted line of the opinion: "a substantial risk of causing death or serious bodily injury"
-- Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.
-- Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11. Hold the title fixed and change only the thumbnail.
+- Standard (approved by Dr. Sowards, November 18, 2026). Variant A is the default: a darkened opinion page fills the frame, one sentence quoted exactly from the opinion outlined in a thin gold stroke, the headline in white heavy condensed type on a navy band, one red word, and the gold series badge bottom right at the same size and position every time.
+- Keep testing Variant B: type only, the headline plus a single icon on a plain field, no photo. Hold the title fixed and change only the thumbnail.
+- For a short, well-known case name (Graham, Barnes, Torres), try the case-name variant: CASE v. NAME in very large type plus the one-line holding. For a long case name, use the holding as the headline instead.
+- Headlines are two to five words, high contrast, one accent color. Red only as an accent.
+- Never: a face (real, generated, or cartoon), red arrows, outrage words such as DESTROYS, SLAPS DOWN, or BACKFIRES, or any claim the video does not deliver.
 
 ### Description
 
