@@ -230,8 +230,11 @@ function buildKit(brief) {
     li([
       `Text: ${thumb.text ?? clip(shortName(lead), 40).toUpperCase()}${thumb.redWord ? ` (red word: ${thumb.redWord})` : ''}`,
       `Visual: ${thumb.visual ?? 'one element only: a highlighted line of the opinion or a single still from the facts'}`,
-      'Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.',
-      'Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11 (also in the handoff folder file 01 THUMBNAILS). Hold the title fixed and change only the thumbnail.',
+      'Standard (approved by Dr. Sowards, November 18, 2026). Variant A is the default: a darkened opinion page fills the frame, one sentence quoted exactly from the opinion outlined in a thin gold stroke, the headline in white heavy condensed type on a navy band, one red word, and the gold series badge bottom right at the same size and position every time.',
+      'Keep testing Variant B: type only, the headline plus a single icon on a plain field, no photo. Hold the title fixed and change only the thumbnail.',
+      'For a short, well-known case name (Graham, Barnes, Torres), try the case-name variant: CASE v. NAME in very large type plus the one-line holding. For a long case name, use the holding as the headline instead.',
+      'Headlines are two to five words, high contrast, one accent color. Red only as an accent.',
+      'Never: a face (real, generated, or cartoon), red arrows, outrage words such as DESTROYS, SLAPS DOWN, or BACKFIRES, or any claim the video does not deliver.',
     ]);
 
     h(3, 'Description');
@@ -310,7 +313,7 @@ function buildKit(brief) {
 
   // Social schedule
   h(2, 'Post schedule');
-  p(`One briefing room point a day, ${WEEKDAYS[0]} to ${WEEKDAYS[4]}, starting the Monday after the brief. Each post links to the video for its case once that video is live, and to the case page until then. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining`);
+  p(`One briefing room point a day, ${WEEKDAYS[0]} to ${WEEKDAYS[4]}, starting the Monday after the brief. Each post links to the video for its case once that video is live, and to the case page until then. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining. Platforms: LinkedIn, Facebook, Instagram, TikTok, and YouTube; X is not used.`);
   const monday = nextMonday(brief.coverageEnd);
   const apps = (brief.applications ?? []).slice(0, 5);
   const fallbackApps = cases.map((c) => ({ title: c.name, body: `${firstSentence(c.inPractice)} ${firstSentence(c.trainIt)}`, caseId: c.id }));
@@ -329,7 +332,6 @@ function buildKit(brief) {
     const vIdx = videoFor(primary);
     const link = caseUrl(primary);
     const shortCites = relatedCases.map((c) => `${shortName(c)}, ${c.decided}`).join('; ');
-    const shortNames = relatedCases.map(shortName).join('; ');
     h(3, `${WEEKDAYS[i]} ${isoDate(d)}: ${a.title}`);
     p(`Links to: ${vIdx >= 0 ? `Video ${vIdx + 1} once live, otherwise ` : ''}${link}`);
     out.push('LinkedIn and Facebook:', '```');
@@ -337,9 +339,6 @@ function buildKit(brief) {
     out.push('```', '');
     out.push('Instagram and TikTok caption (pair with the matching Short):', '```');
     out.push(`${a.title}. ${firstSentence(a.body)} ${shortCites}. ${CTA}`);
-    out.push('```', '');
-    out.push('X:', '```');
-    out.push(clip(`${a.title}. ${firstSentence(a.body)} ${shortNames}. ${link}`, 275));
     out.push('```', '');
   });
   if (brief.applications?.length > 5) {

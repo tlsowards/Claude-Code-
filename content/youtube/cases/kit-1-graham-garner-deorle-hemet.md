@@ -42,8 +42,11 @@ Pick one. Titles stay under 70 characters where possible; the full case name and
 
 - Text: GRAHAM v. CONNOR (red word: REASONABLE)
 - Visual: highlighted line of the opinion: "judged from the perspective of a reasonable officer on the scene, rather than with the 20/20 vision of hindsight"
-- Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.
-- Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11. Hold the title fixed and change only the thumbnail.
+- Standard (approved by Dr. Sowards, November 18, 2026). Variant A is the default: a darkened opinion page fills the frame, one sentence quoted exactly from the opinion outlined in a thin gold stroke, the headline in white heavy condensed type on a navy band, one red word, and the gold series badge bottom right at the same size and position every time.
+- Keep testing Variant B: type only, the headline plus a single icon on a plain field, no photo. Hold the title fixed and change only the thumbnail.
+- For a short, well-known case name (Graham, Barnes, Torres), try the case-name variant: CASE v. NAME in very large type plus the one-line holding. For a long case name, use the holding as the headline instead.
+- Headlines are two to five words, high contrast, one accent color. Red only as an accent.
+- Never: a face (real, generated, or cartoon), red arrows, outrage words such as DESTROYS, SLAPS DOWN, or BACKFIRES, or any claim the video does not deliver.
 
 ### Description
 
@@ -141,7 +144,7 @@ Which case do you want broken down next? Reply and it goes on the list.
 
 ### Post schedule for Video 1
 
-One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 1 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/graham-v-connor. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining
+One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 1 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/graham-v-connor. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining. Platforms: LinkedIn, Facebook, Instagram, TikTok, and YouTube; X is not used.
 
 #### Monday 2026-11-23: Articulate the three factors every time
 
@@ -159,11 +162,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Articulate the three factors every time. Severity of the crime, immediate threat to officers or others, and active resistance or flight. Graham v. Connor, May 15, 1989. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Articulate the three factors every time. Severity of the crime, immediate threat to officers or others, and active resistance or flight. Graham v. Connor. https://app.sowardsconsulting.com/cases/graham-v-connor
 ```
 
 #### Tuesday 2026-11-24: No hindsight, in either direction
@@ -184,11 +182,6 @@ Instagram and TikTok caption (pair with the matching Short):
 No hindsight, in either direction. Reasonableness is judged from the perspective of a reasonable officer on the scene, not with 20/20 hindsight. Graham v. Connor, May 15, 1989. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-No hindsight, in either direction. Reasonableness is judged from the perspective of a reasonable officer on the scene, not with 20/20 hindsight. Graham v. Connor. https://app.sowardsconsulting.com/cases/graham-v-connor
-```
-
 #### Wednesday 2026-11-25: Intent does not change the standard, but it can change the jury
 
 LinkedIn and Facebook:
@@ -205,11 +198,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Intent does not change the standard, but it can change the jury. The inquiry is objective, without regard to intent or motivation. Graham v. Connor, May 15, 1989. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Intent does not change the standard, but it can change the jury. The inquiry is objective, without regard to intent or motivation. Graham v. Connor. https://app.sowardsconsulting.com/cases/graham-v-connor
 ```
 
 #### Thursday 2026-11-26: Split second judgments are protected; stabilized situations are judged differently
@@ -230,11 +218,6 @@ Instagram and TikTok caption (pair with the matching Short):
 Split second judgments are protected; stabilized situations are judged differently. The calculus allows for tense, uncertain, and rapidly evolving circumstances. Graham v. Connor, May 15, 1989. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-Split second judgments are protected; stabilized situations are judged differently. The calculus allows for tense, uncertain, and rapidly evolving circumstances. Graham v. Connor. https://app.sowardsconsulting.com/cases/graham-v-connor
-```
-
 #### Friday 2026-11-27: Teach the posture accurately
 
 LinkedIn and Facebook:
@@ -251,11 +234,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Teach the posture accurately. Graham set the standard and sent the case back. Graham v. Connor, May 15, 1989. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Teach the posture accurately. Graham set the standard and sent the case back. Graham v. Connor. https://app.sowardsconsulting.com/cases/graham-v-connor
 ```
 
 ### Community post poll (optional, Saturday)
@@ -292,8 +270,11 @@ Pick one. Titles stay under 70 characters where possible; the full case name and
 
 - Text: TENNESSEE v. GARNER (red word: FLEEING)
 - Visual: highlighted line of the opinion: "A police officer may not seize an unarmed, nondangerous suspect by shooting him dead"
-- Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.
-- Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11. Hold the title fixed and change only the thumbnail.
+- Standard (approved by Dr. Sowards, November 18, 2026). Variant A is the default: a darkened opinion page fills the frame, one sentence quoted exactly from the opinion outlined in a thin gold stroke, the headline in white heavy condensed type on a navy band, one red word, and the gold series badge bottom right at the same size and position every time.
+- Keep testing Variant B: type only, the headline plus a single icon on a plain field, no photo. Hold the title fixed and change only the thumbnail.
+- For a short, well-known case name (Graham, Barnes, Torres), try the case-name variant: CASE v. NAME in very large type plus the one-line holding. For a long case name, use the holding as the headline instead.
+- Headlines are two to five words, high contrast, one accent color. Red only as an accent.
+- Never: a face (real, generated, or cartoon), red arrows, outrage words such as DESTROYS, SLAPS DOWN, or BACKFIRES, or any claim the video does not deliver.
 
 ### Description
 
@@ -393,7 +374,7 @@ Which case do you want broken down next? Reply and it goes on the list.
 
 ### Post schedule for Video 2
 
-One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 2 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/tennessee-v-garner. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining
+One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 2 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/tennessee-v-garner. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining. Platforms: LinkedIn, Facebook, Instagram, TikTok, and YouTube; X is not used.
 
 #### Monday 2026-11-30: Flight is not a threat
 
@@ -411,11 +392,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Flight is not a threat. Garner rejected the rule that any fleeing felon may be stopped with deadly force. Tennessee v. Garner, March 27, 1985. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Flight is not a threat. Garner rejected the rule that any fleeing felon may be stopped with deadly force. Tennessee v. Garner. https://app.sowardsconsulting.com/cases/tennessee-v-garner
 ```
 
 #### Tuesday 2026-12-01: Two routes to probable cause of a threat
@@ -436,11 +412,6 @@ Instagram and TikTok caption (pair with the matching Short):
 Two routes to probable cause of a threat. The suspect threatens the officer with a weapon, or there is probable cause that the suspect committed a crime involving the infliction or threatened infliction of serious physical harm. Tennessee v. Garner, March 27, 1985. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-Two routes to probable cause of a threat. The suspect threatens the officer with a weapon, or there is probable cause that the suspect committed a crime involving the infliction or threatened infliction of serious physical harm. Tennessee v. Garner.…
-```
-
 #### Wednesday 2026-12-02: Necessary, and with a warning where feasible
 
 LinkedIn and Facebook:
@@ -457,11 +428,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Necessary, and with a warning where feasible. Even where the threat element is met, deadly force must be necessary to prevent escape, and some warning should be given if feasible. Tennessee v. Garner, March 27, 1985. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Necessary, and with a warning where feasible. Even where the threat element is met, deadly force must be necessary to prevent escape, and some warning should be given if feasible. Tennessee v. Garner. https://app.sowardsconsulting.com/cases/tennessee-v-garner
 ```
 
 #### Thursday 2026-12-03: Burglary is serious, but not automatically dangerous
@@ -482,11 +448,6 @@ Instagram and TikTok caption (pair with the matching Short):
 Burglary is serious, but not automatically dangerous. The Court held that an unarmed suspect breaking into a dwelling at night is not automatically dangerous. Tennessee v. Garner, March 27, 1985. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-Burglary is serious, but not automatically dangerous. The Court held that an unarmed suspect breaking into a dwelling at night is not automatically dangerous. Tennessee v. Garner. https://app.sowardsconsulting.com/cases/tennessee-v-garner
-```
-
 #### Friday 2026-12-04: Teach the posture accurately
 
 LinkedIn and Facebook:
@@ -503,11 +464,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Teach the posture accurately. The officer had already been dismissed on qualified immunity. Tennessee v. Garner, March 27, 1985. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Teach the posture accurately. The officer had already been dismissed on qualified immunity. Tennessee v. Garner. https://app.sowardsconsulting.com/cases/tennessee-v-garner
 ```
 
 ### Community post poll (optional, Saturday)
@@ -544,8 +500,11 @@ Pick one. Titles stay under 70 characters where possible; the full case name and
 
 - Text: DEORLE v. RUTHERFORD (red word: WARNING)
 - Visual: highlighted line of the opinion: "a simple statement by an officer that he fears for his safety or the safety of others is not enough"
-- Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.
-- Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11. Hold the title fixed and change only the thumbnail.
+- Standard (approved by Dr. Sowards, November 18, 2026). Variant A is the default: a darkened opinion page fills the frame, one sentence quoted exactly from the opinion outlined in a thin gold stroke, the headline in white heavy condensed type on a navy band, one red word, and the gold series badge bottom right at the same size and position every time.
+- Keep testing Variant B: type only, the headline plus a single icon on a plain field, no photo. Hold the title fixed and change only the thumbnail.
+- For a short, well-known case name (Graham, Barnes, Torres), try the case-name variant: CASE v. NAME in very large type plus the one-line holding. For a long case name, use the holding as the headline instead.
+- Headlines are two to five words, high contrast, one accent color. Red only as an accent.
+- Never: a face (real, generated, or cartoon), red arrows, outrage words such as DESTROYS, SLAPS DOWN, or BACKFIRES, or any claim the video does not deliver.
 
 ### Description
 
@@ -645,7 +604,7 @@ Which case do you want broken down next? Reply and it goes on the list.
 
 ### Post schedule for Video 3
 
-One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 3 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/deorle-v-rutherford. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining
+One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 3 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/deorle-v-rutherford. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining. Platforms: LinkedIn, Facebook, Instagram, TikTok, and YouTube; X is not used.
 
 #### Monday 2026-12-07: Serious injury force needs a strong interest
 
@@ -663,11 +622,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Serious injury force needs a strong interest. The court held that force capable of causing serious injury, even though less than deadly, is permissible only when a strong governmental interest compels it. Deorle v. Rutherford, March 16, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Serious injury force needs a strong interest. The court held that force capable of causing serious injury, even though less than deadly, is permissible only when a strong governmental interest compels it. Deorle v. Rutherford.…
 ```
 
 #### Tuesday 2026-12-08: Fear is not a fact
@@ -688,11 +642,6 @@ Instagram and TikTok caption (pair with the matching Short):
 Fear is not a fact. A simple statement that the officer feared for his safety is not enough. Deorle v. Rutherford, March 16, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-Fear is not a fact. A simple statement that the officer feared for his safety is not enough. Deorle v. Rutherford. https://app.sowardsconsulting.com/cases/deorle-v-rutherford
-```
-
 #### Wednesday 2026-12-09: Warn when feasible, and warn the target
 
 LinkedIn and Facebook:
@@ -709,11 +658,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Warn when feasible, and warn the target. Warnings should be given when feasible if the force may result in serious injury, and the giving or failure to give one is a Graham factor. Deorle v. Rutherford, March 16, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Warn when feasible, and warn the target. Warnings should be given when feasible if the force may result in serious injury, and the giving or failure to give one is a Graham factor. Deorle v. Rutherford. https://app.sowardsconsulting.com/cases/deorle-v-rutherford
 ```
 
 #### Thursday 2026-12-10: Time removes the split second defense
@@ -734,11 +678,6 @@ Instagram and TikTok caption (pair with the matching Short):
 Time removes the split second defense. Officers were on scene over half an hour, Rutherford watched Deorle for five to ten minutes, had cover and a retreat path, and chose his firing point in advance. Deorle v. Rutherford, March 16, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-Time removes the split second defense. Officers were on scene over half an hour, Rutherford watched Deorle for five to ten minutes, had cover and a retreat path, and chose his firing point in advance. Deorle v. Rutherford.…
-```
-
 #### Friday 2026-12-11: Apparent crisis is a factor, not a rule
 
 LinkedIn and Facebook:
@@ -755,11 +694,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Apparent crisis is a factor, not a rule. The court declined to create a separate class of mentally ill suspects, but held that where it is or should be apparent that the person is emotionally disturbed, that fact must be considered in weighing the force. Deorle v. Rutherford, March 16, 2001. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Apparent crisis is a factor, not a rule. The court declined to create a separate class of mentally ill suspects, but held that where it is or should be apparent that the person is emotionally disturbed, that fact must be considered in weighing the force. Deorle v.…
 ```
 
 Held for replies: Posture.
@@ -798,8 +732,11 @@ Pick one. Titles stay under 70 characters where possible; the full case name and
 
 - Text: SMITH v. CITY OF HEMET (red word: DEADLY FORCE)
 - Visual: highlighted line of the opinion: "a substantial risk of causing death or serious bodily injury"
-- Formula: a darkened evidence image fills the frame (opinion page, court filing, non-graphic footage still, or a brand slide), one focal element outlined with a thin gold stroke or a red box (no arrows), the headline in white heavy condensed type on a navy band, the channel badge in gold bottom right at the same size and position every time. No face. Red only as an accent. Nothing shown that the video does not deliver.
-- Variants for YouTube Test and compare: A is the formula above; B is type only (headline plus a single icon, no photo); C is the pillar variant named in docs/YOUTUBE-NICHE-SCRUB.md section 11. Hold the title fixed and change only the thumbnail.
+- Standard (approved by Dr. Sowards, November 18, 2026). Variant A is the default: a darkened opinion page fills the frame, one sentence quoted exactly from the opinion outlined in a thin gold stroke, the headline in white heavy condensed type on a navy band, one red word, and the gold series badge bottom right at the same size and position every time.
+- Keep testing Variant B: type only, the headline plus a single icon on a plain field, no photo. Hold the title fixed and change only the thumbnail.
+- For a short, well-known case name (Graham, Barnes, Torres), try the case-name variant: CASE v. NAME in very large type plus the one-line holding. For a long case name, use the holding as the headline instead.
+- Headlines are two to five words, high contrast, one accent color. Red only as an accent.
+- Never: a face (real, generated, or cartoon), red arrows, outrage words such as DESTROYS, SLAPS DOWN, or BACKFIRES, or any claim the video does not deliver.
 
 ### Description
 
@@ -899,7 +836,7 @@ Which case do you want broken down next? Reply and it goes on the list.
 
 ### Post schedule for Video 4
 
-One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 4 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/smith-v-city-of-hemet. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining
+One briefing room point a day, Monday to Friday, the week the video goes live. Each post links to Video 4 once it is live, and to the case page until then: https://app.sowardsconsulting.com/cases/smith-v-city-of-hemet. Hashtags: #UseOfForce #CaseLaw #Corrections #Probation #LawEnforcementTraining. Platforms: LinkedIn, Facebook, Instagram, TikTok, and YouTube; X is not used.
 
 #### Monday 2026-12-14: The definition
 
@@ -917,11 +854,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 The definition. Deadly force is force that creates a substantial risk of causing death or serious bodily injury. Smith v. City of Hemet, January 10, 2005. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-The definition. Deadly force is force that creates a substantial risk of causing death or serious bodily injury. Smith v. City of Hemet. https://app.sowardsconsulting.com/cases/smith-v-city-of-hemet
 ```
 
 #### Tuesday 2026-12-15: The court did not call the dog deadly force
@@ -942,11 +874,6 @@ Instagram and TikTok caption (pair with the matching Short):
 The court did not call the dog deadly force. The en banc court expressly declined to decide whether a police dog is deadly force, generally or on these facts, and left that to the district court. Smith v. City of Hemet, January 10, 2005. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-The court did not call the dog deadly force. The en banc court expressly declined to decide whether a police dog is deadly force, generally or on these facts, and left that to the district court. Smith v. City of Hemet.…
-```
-
 #### Wednesday 2026-12-16: When compliance starts, force must change
 
 LinkedIn and Facebook:
@@ -963,11 +890,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 When compliance starts, force must change. A jury could find excessive force where a man who had shown his hands, made no threats, and was pinned by four officers was bitten a second and third time and sprayed again. Smith v. City of Hemet, January 10, 2005. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-When compliance starts, force must change. A jury could find excessive force where a man who had shown his hands, made no threats, and was pinned by four officers was bitten a second and third time and sprayed again. Smith v. City of Hemet.…
 ```
 
 #### Thursday 2026-12-17: Investigation and arrest are different phases
@@ -988,11 +910,6 @@ Instagram and TikTok caption (pair with the matching Short):
 Investigation and arrest are different phases. Obstruction while officers investigate from the yard is not erased by excessive force used later during the arrest, but a section 148 plea that does not say which conduct it covers does not bar the suit. Smith v. City of Hemet, January 10, 2005. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
 ```
 
-X:
-```
-Investigation and arrest are different phases. Obstruction while officers investigate from the yard is not erased by excessive force used later during the arrest, but a section 148 plea that does not say which conduct it covers does not bar the suit. Smith v. City of…
-```
-
 #### Friday 2026-12-18: Decontaminate everything
 
 LinkedIn and Facebook:
@@ -1009,11 +926,6 @@ Follow for use-of-force case law explained for officers, and get the full teachi
 Instagram and TikTok caption (pair with the matching Short):
 ```
 Decontaminate everything. Officers flushed Smith's eyes but not the dog bite wounds, and the court noted that the pepper spray in the wounds made the force worse. Smith v. City of Hemet, January 10, 2005. Follow for use-of-force case law explained for officers, and get the full teaching brief at app.sowardsconsulting.com.
-```
-
-X:
-```
-Decontaminate everything. Officers flushed Smith's eyes but not the dog bite wounds, and the court noted that the pepper spray in the wounds made the force worse. Smith v. City of Hemet. https://app.sowardsconsulting.com/cases/smith-v-city-of-hemet
 ```
 
 ### Community post poll (optional, Saturday)
