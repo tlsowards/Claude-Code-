@@ -329,7 +329,6 @@ function buildKit(brief) {
     const vIdx = videoFor(primary);
     const link = caseUrl(primary);
     const shortCites = relatedCases.map((c) => `${shortName(c)}, ${c.decided}`).join('; ');
-    const shortNames = relatedCases.map(shortName).join('; ');
     h(3, `${WEEKDAYS[i]} ${isoDate(d)}: ${a.title}`);
     p(`Links to: ${vIdx >= 0 ? `Video ${vIdx + 1} once live, otherwise ` : ''}${link}`);
     out.push('LinkedIn and Facebook:', '```');
