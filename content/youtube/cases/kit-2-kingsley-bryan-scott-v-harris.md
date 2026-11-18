@@ -17,13 +17,15 @@ Guardrail check: 3 cases screened against 1 exclusion term, none matched.
 
 ## 3 videos
 
-- Video 1 (week of 2026-12-21): Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 2015
-- Video 2 (week of 2026-12-28): Bryan v. MacPherson, Ninth Circuit, November 30, 2010
-- Video 3 (week of 2027-01-04): Scott v. Harris, Supreme Court of the United States, April 30, 2007
+- Video 1 (week of 2026-12-21): Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 2015. Playlist: Custody and corrections
+- Video 2 (week of 2026-12-28): Bryan v. MacPherson, Ninth Circuit, November 30, 2010. Playlist: Intermediate and less lethal force
+- Video 3 (week of 2027-01-04): Scott v. Harris, Supreme Court of the United States, April 30, 2007. Playlist: Deadly force
 
 ## Video 1: Kingsley v. Hendrickson
 
 Decision: Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 2015 (published), 576 U.S. 389 (2015), docket 14-6368.
+
+Suggested playlist: Custody and corrections. Topic sections on the app: Custody and corrections, Force standards.
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-kingsley-v-hendrickson.mp3 (14 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/kingsley-v-hendrickson.txt. Case page: https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson.
 
@@ -274,6 +276,8 @@ Correct answer for the follow-up reply: B. The standard is objective. The office
 ## Video 2: Bryan v. MacPherson
 
 Decision: Bryan v. MacPherson, Ninth Circuit, November 30, 2010 (order and superseding opinion; the earlier panel opinions reported at 590 F.3d 767 (2009) and 608 F.3d 614 (June 18, 2010) were withdrawn) (published), 630 F.3d 805 (9th Cir. 2010), docket 08-55622.
+
+Suggested playlist: Intermediate and less lethal force. Topic sections on the app: Intermediate and less lethal force, Qualified immunity, Mental health and disability.
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-bryan-v-macpherson.mp3 (16 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/bryan-v-macpherson.txt. Case page: https://app.sowardsconsulting.com/cases/bryan-v-macpherson.
 
@@ -526,6 +530,8 @@ Correct answer for the follow-up reply: B. The court based the classification on
 ## Video 3: Scott v. Harris
 
 Decision: Scott v. Harris, Supreme Court of the United States, April 30, 2007 (published), 550 U.S. 372 (2007), docket 05-1631.
+
+Suggested playlist: Deadly force. Topic sections on the app: Deadly force, Force standards.
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-scott-v-harris.mp3 (16 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/scott-v-harris.txt. Case page: https://app.sowardsconsulting.com/cases/scott-v-harris.
 

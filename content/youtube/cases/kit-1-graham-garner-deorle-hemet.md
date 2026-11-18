@@ -17,16 +17,18 @@ Guardrail check: 4 cases screened against 1 exclusion term, none matched.
 
 ## 4 videos
 
-- Video 1 (week of 2026-11-23): Graham v. Connor, Supreme Court of the United States, May 15, 1989
-- Video 2 (week of 2026-11-30): Tennessee v. Garner, Supreme Court of the United States, March 27, 1985
-- Video 3 (week of 2026-12-07): Deorle v. Rutherford, Ninth Circuit, March 16, 2001
-- Video 4 (week of 2026-12-14): Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005
+- Video 1 (week of 2026-11-23): Graham v. Connor, Supreme Court of the United States, May 15, 1989. Playlist: Force standards
+- Video 2 (week of 2026-11-30): Tennessee v. Garner, Supreme Court of the United States, March 27, 1985. Playlist: Deadly force
+- Video 3 (week of 2026-12-07): Deorle v. Rutherford, Ninth Circuit, March 16, 2001. Playlist: Intermediate and less lethal force
+- Video 4 (week of 2026-12-14): Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005. Playlist: Deadly force
 
 ## Video 1: Graham v. Connor
 
 Decision: Graham v. Connor, Supreme Court of the United States, May 15, 1989 (published), 490 U.S. 386 (1989), docket 87-6571.
 
-Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-graham-v-connor.mp3 (12 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/graham-v-connor.txt. Case page: https://app.sowardsconsulting.com/cases/graham-v-connor.
+Suggested playlist: Force standards. Topic sections on the app: Force standards.
+
+Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-graham-v-connor-1.mp3 (12 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/graham-v-connor.txt. Case page: https://app.sowardsconsulting.com/cases/graham-v-connor.
 
 ### Title options
 
@@ -46,9 +48,9 @@ Pick one. Titles stay under 70 characters where possible; the full case name and
 ### Description
 
 ```
-A diabetic man having an insulin reaction was handcuffed, slammed onto a car hood, and thrown into a patrol car by officers who thought he was drunk. The Supreme Court used his case to set the standard every use of force in this country is measured against: objective reasonableness, judged from the perspective of a reasonable officer on the scene, without regard to intent. This video walks through the facts, the holding, what the Court did not decide, what it means in practice, and how to train it.
+A diabetic man having an insulin reaction was handcuffed, placed face down on the hood of a car, and thrown headfirst into a patrol car by officers who thought he was drunk. The Supreme Court used his case to set the standard every use of force in this country is measured against: objective reasonableness, judged from the perspective of a reasonable officer on the scene, without regard to intent. This video walks through the facts, the holding, what the Court did not decide, what it means in practice, and how to train it.
 
-Graham v. Connor, Supreme Court of the United States, May 15, 1989 (published), 490 U.S. 386 (1989). A diabetic man having an insulin reaction was stopped, handcuffed, slammed onto a car hood, and thrown into a patrol car by Charlotte officers who thought he was drunk. The Supreme Court held that every claim of excessive force in an arrest, investigative stop, or other seizure of a free citizen is judged under the Fourth Amendment's objective reasonableness standard, from the perspective of a reasonable officer on the scene, without regard to the officer's intent. It is the foundation of every use of force class.
+Graham v. Connor, Supreme Court of the United States, May 15, 1989 (published), 490 U.S. 386 (1989). A diabetic man having an insulin reaction was stopped, handcuffed, placed face down on the hood of a car, and thrown headfirst into a patrol car by Charlotte officers who thought he was drunk. The Supreme Court held that every claim of excessive force in an arrest, investigative stop, or other seizure of a free citizen is judged under the Fourth Amendment's objective reasonableness standard, from the perspective of a reasonable officer on the scene, without regard to the officer's intent. It is the foundation of every use of force class.
 Written brief, training points, and knowledge check: https://app.sowardsconsulting.com/cases/graham-v-connor
 
 The full Case library, the weekly Use of Force Case Law Update, and the printable roll call versions are in the Sowards Briefing Room: https://app.sowardsconsulting.com/cases
@@ -273,6 +275,8 @@ Correct answer for the follow-up reply: C. The Court rejected the generic Johnso
 ## Video 2: Tennessee v. Garner
 
 Decision: Tennessee v. Garner, Supreme Court of the United States, March 27, 1985 (published), 471 U.S. 1 (1985), docket 83-1035 (together with 83-1070, Memphis Police Department v. Garner).
+
+Suggested playlist: Deadly force. Topic sections on the app: Deadly force, Force standards.
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-tennessee-v-garner.mp3 (13 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/tennessee-v-garner.txt. Case page: https://app.sowardsconsulting.com/cases/tennessee-v-garner.
 
@@ -523,6 +527,8 @@ Correct answer for the follow-up reply: C. The Court stated this rule at 471 U.S
 ## Video 3: Deorle v. Rutherford
 
 Decision: Deorle v. Rutherford, Ninth Circuit, March 16, 2001; amended August 31, 2001; second amended opinion filed November 19, 2001 (published), 272 F.3d 1272 (9th Cir. 2001), docket 99-17188.
+
+Suggested playlist: Intermediate and less lethal force. Topic sections on the app: Intermediate and less lethal force, Mental health and disability, Impact weapons.
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-deorle-v-rutherford.mp3 (19 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/deorle-v-rutherford.txt. Case page: https://app.sowardsconsulting.com/cases/deorle-v-rutherford.
 
@@ -775,6 +781,8 @@ Correct answer for the follow-up reply: B. The court placed the cloth-cased shot
 ## Video 4: Smith v. City of Hemet
 
 Decision: Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005 (published), 394 F.3d 689 (9th Cir. 2005) (en banc), docket 02-56445.
+
+Suggested playlist: Deadly force. Topic sections on the app: Deadly force, Intermediate and less lethal force, California law.
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-smith-v-city-of-hemet.mp3 (18 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/smith-v-city-of-hemet.txt. Case page: https://app.sowardsconsulting.com/cases/smith-v-city-of-hemet.
 
