@@ -15,6 +15,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { decidedShort } from './lib/case-text.mjs';
 import { labelFor } from './lib/case-categories.mjs';
+import { loadUsedShorts, angles, planShorts, shortsNote, withoutDisposition } from './lib/shorts-registry.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const caseDir = resolve(root, 'content/cases');
@@ -44,6 +45,9 @@ if (!name || !start || ids.length === 0 || !/^\d{4}-\d{2}-\d{2}$/.test(start)) {
   console.error('Usage: node scripts/build-case-kit.mjs --name <kit name> --start <YYYY-MM-DD, a Monday> <case id> [more ids...]');
   process.exit(1);
 }
+const outPath = resolve(outDir, `${name}.md`);
+// Shorts already written in every other kit, so this kit never repeats one (see scripts/lib/shorts-registry.mjs).
+const usedShorts = loadUsedShorts(root, outPath);
 
 function isoDate(d) {
   return d.toISOString().slice(0, 10);
@@ -250,19 +254,26 @@ if (cases.length === 0) {
     out.push(`| Close | Sowards Briefing Room / Free 30 days / ${SUBSCRIBE.replace('https://', '')} | End screen with empty zones for subscribe and watch-next |`, '');
 
     h(3, 'Shorts for this video (vertical, under 60 seconds each)');
-    const shorts = [
+    // Candidate angles in priority order. The no-repeat check drops any angle that shares a sentence
+    // with a Short already written for this case in an earlier kit (weekly or Case library).
+    const pool = [
       ['What this means in practice', c.inPractice],
       ['How to train it', c.trainIt],
+      ...(c.applications ?? []).map((a) => [`Briefing room point: ${a.title}`, `${a.title}. ${a.body}`]),
+      ['Holding', withoutDisposition(c.holding)],
+      ['Dissent', c.dissent],
+      ['What was not decided', c.notDecided],
     ];
-    (c.applications ?? []).slice(0, 2).forEach((a) => shorts.push([`Briefing room point: ${a.title}`, `${a.title}. ${a.body}`]));
-    shorts.forEach(([seg, text], i) => {
+    const plan = planShorts({ used: usedShorts, caseName: c.name, candidates: angles(pool, { sentences, clean }), want: 4 });
+    shortsNote(plan, shortName(c)).forEach((line) => p(line));
+    plan.shorts.forEach((s, i) => {
       h(4, `Short ${vi + 1}.${i + 1}: ${shortName(c)}`);
       li([
-        `Hook (on screen and spoken): ${clean(firstSentence(text))}`,
-        `Body: ${clean(sentences(text).slice(1, 4).join(' '))}`,
+        `Hook (on screen and spoken): ${s.hook}`,
+        `Body: ${s.body}`,
         `Card: ${cite(c)}`,
         'Close: Full brief and training points in the Sowards Briefing Room, link in bio.',
-        `Cut from: the "${seg}" segment of Video ${vi + 1}, or re-record from this text in the same voice.`,
+        `Cut from: ${s.cut} of Video ${vi + 1}, or re-record from this text in the same voice.`,
       ]);
     });
 
@@ -303,6 +314,5 @@ if (cases.length === 0) {
   });
 }
 
-const outPath = resolve(outDir, `${name}.md`);
 writeFileSync(outPath, out.join('\n') + '\n');
 console.log(`${name}: kit written to content/youtube/cases/${name}.md (${cases.length} video${cases.length === 1 ? '' : 's'}${excluded.length ? `, ${excluded.length} excluded` : ''})`);

@@ -101,6 +101,8 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 
 ### Shorts for this video (vertical, under 60 seconds each)
 
+No-repeat check: no earlier kit has Shorts for Kingsley v. Hendrickson. All of these are new.
+
 #### Short 1.1: Kingsley v. Hendrickson
 
 - Hook (on screen and spoken): For jail and juvenile hall staff, the force used on a pretrial detainee is judged by what a reasonable officer on the scene would have done with what that officer knew.
@@ -330,6 +332,8 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
+
+No-repeat check: no earlier kit has Shorts for Bryan v. MacPherson. All of these are new.
 
 #### Short 2.1: Bryan v. MacPherson
 
@@ -562,6 +566,8 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
+
+No-repeat check: no earlier kit has Shorts for Scott v. Harris. All of these are new.
 
 #### Short 3.1: Scott v. Harris
 

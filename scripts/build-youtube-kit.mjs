@@ -13,6 +13,7 @@
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { loadUsedShorts, angles, planShorts, shortsNote, withoutDisposition } from './lib/shorts-registry.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const briefDir = resolve(root, 'content/briefs');
@@ -132,7 +133,7 @@ function planVideos(brief, cases) {
   return { videos, shortsOnly: cases.filter((c) => !used.has(c.id)) };
 }
 
-function buildKit(brief) {
+function buildKit(brief, usedShorts) {
   const yt = brief.youtube ?? {};
   const episode = episodeFor(brief);
   const allCases = brief.sections.flatMap((s) => s.cases.map((c) => ({ ...c, section: s.heading })));
@@ -186,23 +187,25 @@ function buildKit(brief) {
     ...shortsOnly.map((c) => `Shorts only (no long video): ${shortName(c)}, ${statusLabel[c.status] ?? c.status}`),
   ]);
 
+  // Two Shorts per case, each on a distinct angle. The no-repeat check drops any angle that shares a
+  // sentence with a Short already written for this case in an earlier kit (weekly or Case library).
   const shortsFor = (c, label) => {
-    const items = [];
-    items.push([
-      `Hook (on screen and spoken): ${firstSentence(c.inPractice)}`,
-      `Body: ${sentences(c.inPractice).slice(1, 4).join(' ')}`,
+    const pool = [
+      ['What this means in practice', c.inPractice],
+      ['How to train it', c.trainIt],
+      ['Holding', withoutDisposition(c.holding)],
+      ['Dissent', c.dissent],
+      ['What was not decided', c.notDecided],
+    ];
+    const plan = planShorts({ used: usedShorts, caseName: c.name, candidates: angles(pool, { sentences }), want: 2 });
+    const items = plan.shorts.map((s) => [
+      `Hook (on screen and spoken): ${s.hook}`,
+      `Body: ${s.body}`,
       `Card: ${cite(c)}`,
       `Close: Full brief and training points in the Sowards Briefing Room, link in bio.`,
-      `Cut from: the "What this means in practice" segment of ${label}, or re-record from this text in the same voice.`,
+      `Cut from: ${s.cut} of ${label}, or re-record from this text in the same voice.`,
     ]);
-    items.push([
-      `Hook (on screen and spoken): ${firstSentence(c.trainIt)}`,
-      `Body: ${sentences(c.trainIt).slice(1, 4).join(' ')}`,
-      `Card: ${cite(c)}`,
-      `Close: Full brief and training points in the Sowards Briefing Room, link in bio.`,
-      `Cut from: the "How to train it" segment of ${label}, or re-record from this text in the same voice.`,
-    ]);
-    return items;
+    return { items, note: shortsNote(plan, shortName(c)) };
   };
 
   videos.forEach((v, vi) => {
@@ -283,7 +286,9 @@ function buildKit(brief) {
     h(3, 'Shorts for this video (vertical, under 60 seconds each)');
     let n = 0;
     for (const c of v.cases) {
-      for (const items of shortsFor(c, `Video ${vi + 1}`)) {
+      const { items: list, note } = shortsFor(c, `Video ${vi + 1}`);
+      note.forEach((line) => p(line));
+      for (const items of list) {
         n += 1;
         h(4, `Short ${vi + 1}.${n}: ${shortName(c)}`);
         li(items);
@@ -304,7 +309,9 @@ function buildKit(brief) {
     h(2, 'Shorts-only cases');
     p('These decisions are unpublished or are orders rather than opinions, so they get Shorts and a post but no long video. Cut from the weekly narration segment for the case.');
     shortsOnly.forEach((c, i) => {
-      for (const [k, items] of shortsFor(c, 'the weekly narration').entries()) {
+      const { items: list, note } = shortsFor(c, 'the weekly narration');
+      note.forEach((line) => p(line));
+      for (const [k, items] of list.entries()) {
         h(4, `Short S${i + 1}.${k + 1}: ${shortName(c)}`);
         li(items);
       }
@@ -371,8 +378,9 @@ if (files.length === 0) {
 }
 for (const f of files) {
   const brief = JSON.parse(readFileSync(resolve(briefDir, f), 'utf8'));
-  const kit = buildKit(brief);
   const out = resolve(outDir, f.replace('.json', '.md'));
+  // Shorts already written in every other kit, so this kit never repeats one (see scripts/lib/shorts-registry.mjs).
+  const kit = buildKit(brief, loadUsedShorts(root, out));
   writeFileSync(out, kit + '\n');
   console.log(`${brief.id}: kit written to content/youtube/${f.replace('.json', '.md')}`);
 }
