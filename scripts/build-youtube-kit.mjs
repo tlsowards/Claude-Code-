@@ -14,6 +14,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadUsedShorts, angles, planShorts, shortsNote, withoutDisposition } from './lib/shorts-registry.mjs';
+import { firstSentence, sentences } from './lib/case-text.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const briefDir = resolve(root, 'content/briefs');
@@ -47,13 +48,6 @@ function nextMonday(iso) {
 }
 function isoDate(d) {
   return d.toISOString().slice(0, 10);
-}
-function firstSentence(s) {
-  const m = s.match(/^.*?[.!?](?=\s|$)/);
-  return (m ? m[0] : s).trim();
-}
-function sentences(s) {
-  return s.match(/[^.!?]+[.!?]+(?=\s|$)/g)?.map((x) => x.trim()) ?? [s];
 }
 function clip(s, max) {
   if (s.length <= max) return s;
@@ -197,7 +191,7 @@ function buildKit(brief, usedShorts) {
       ['Dissent', c.dissent],
       ['What was not decided', c.notDecided],
     ];
-    const plan = planShorts({ used: usedShorts, caseName: c.name, candidates: angles(pool, { sentences }), want: 2 });
+    const plan = planShorts({ used: usedShorts, caseName: shortName(c), candidates: angles(pool, { sentences }), want: 2 });
     const items = plan.shorts.map((s) => [
       `Hook (on screen and spoken): ${s.hook}`,
       `Body: ${s.body}`,

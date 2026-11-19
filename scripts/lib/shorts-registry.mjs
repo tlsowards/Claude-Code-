@@ -14,7 +14,7 @@ import { resolve } from 'node:path';
 const HOOK = /^- Hook \(on screen and spoken\): (.+)$/;
 const BODY = /^- Body: (.+)$/;
 const HEAD = /^#### Short [\w.]+: (.+)$/;
-const MIN = 30; // sentences shorter than this (a case name, a title) are too generic to count as a repeat
+const MIN = 12; // fragments shorter than this ("The test.") are too generic to count as a repeat; a real hook is longer
 
 export function normalize(s) {
   return s.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
@@ -26,7 +26,7 @@ function keySentences(text) {
   return (text.match(/[^.!?]+[.!?]+/g) ?? [text]).map((x) => normalize(x)).filter((x) => x.length >= MIN);
 }
 
-/** Every Short already written in a kit file, keyed by case name. `exclude` is the kit being rebuilt. */
+/** Every Short already written in a kit file, keyed by the case name as the Short heading prints it (the builders' shortName). `exclude` is the kit being rebuilt. */
 export function loadUsedShorts(root, exclude) {
   const used = new Map();
   const dirs = [resolve(root, 'content/youtube'), resolve(root, 'content/youtube/cases')];

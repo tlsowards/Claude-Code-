@@ -13,7 +13,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { decidedShort } from './lib/case-text.mjs';
+import { decidedShort, firstSentence, sentences } from './lib/case-text.mjs';
 import { labelFor } from './lib/case-categories.mjs';
 import { loadUsedShorts, angles, planShorts, shortsNote, withoutDisposition } from './lib/shorts-registry.mjs';
 
@@ -51,24 +51,6 @@ const usedShorts = loadUsedShorts(root, outPath);
 
 function isoDate(d) {
   return d.toISOString().slice(0, 10);
-}
-// Periods inside citations and abbreviations (U.S., v., No., n.10, F.3d, Dr., Supp.) are not sentence ends.
-const ABBR = /\b(U\.S\.C\.|U\.S\.|v\.|No\.|Nos\.|n\.|F\.|Supp\.|Dr\.|Mr\.|Mrs\.|Ms\.|Cir\.|Cal\.|Dist\.|Ct\.|App\.|Inc\.|Jr\.|Sr\.)/g;
-const MARK = '\u0001';
-function protect(s) {
-  return s.replace(ABBR, (m) => m.replace(/\./g, MARK));
-}
-function restore(s) {
-  return s.replace(new RegExp(MARK, 'g'), '.');
-}
-function firstSentence(s) {
-  const t = protect(s);
-  const m = t.match(/^.*?[.!?]["')\]]*(?=\s|$)/);
-  return restore(m ? m[0] : t).trim();
-}
-function sentences(s) {
-  const t = protect(s);
-  return (t.match(/[^.!?]+[.!?]+["')\]]*(?=\s|$)/g)?.map((x) => restore(x).trim()) ?? [restore(t)]);
 }
 function clip(s, max) {
   if (s.length <= max) return s;
@@ -264,7 +246,7 @@ if (cases.length === 0) {
       ['Dissent', c.dissent],
       ['What was not decided', c.notDecided],
     ];
-    const plan = planShorts({ used: usedShorts, caseName: c.name, candidates: angles(pool, { sentences, clean }), want: 4 });
+    const plan = planShorts({ used: usedShorts, caseName: shortName(c), candidates: angles(pool, { sentences, clean }), want: 4 });
     shortsNote(plan, shortName(c)).forEach((line) => p(line));
     plan.shorts.forEach((s, i) => {
       h(4, `Short ${vi + 1}.${i + 1}: ${shortName(c)}`);
