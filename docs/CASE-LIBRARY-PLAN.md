@@ -85,6 +85,7 @@ Columns: W24 = 24-hour ACI update, W80 = 80-hour ACI, W40 = 40-hour ACI, IWI = I
 | Long Beach Police Officers Assn. v. City of Long Beach | 156 Cal.App.3d 996 (1984) | x |  |  |  | California force standards | to write |
 | Hayes v. County of San Diego | 57 Cal.4th 622 (2013) | x |  |  |  | California negligence and force | to write |
 | Pierce v. Multnomah County | 76 F.3d 1032 (9th Cir. 1996) | x |  |  |  | Custody force standards | in library |
+| Bearchild v. Cobban | 947 F.3d 1130 (9th Cir. 2020) |  |  |  |  | Custody, sexual assault by staff (added at Dr. Sowards' direction November 21, 2026; not in the course outlines) | in library |
 | Bushnell v. Japanese-American Religious and Cultural Center | 43 Cal.App.4th 525 (1996) | x | x | x | x | Training injury | to write |
 | Pfau v. Kim's Hapkido | unpublished / unconfirmed (1999) | x | x |  | x | Training injury | to write |
 | Rodrigo v. Koryo Martial Arts | 100 Cal.App.4th 1 (2002) [cite to verify] | x | x |  | x | Training injury | to write |
