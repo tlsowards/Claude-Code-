@@ -100,6 +100,8 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 
 ### Shorts for this video (vertical, under 60 seconds each)
 
+No-repeat check: no earlier kit has Shorts for Graham v. Connor. All of these are new.
+
 #### Short 1.1: Graham v. Connor
 
 - Hook (on screen and spoken): Graham is the test every force decision will be measured against.
@@ -330,6 +332,8 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 
 ### Shorts for this video (vertical, under 60 seconds each)
 
+No-repeat check: no earlier kit has Shorts for Tennessee v. Garner. All of these are new.
+
 #### Short 2.1: Tennessee v. Garner
 
 - Hook (on screen and spoken): Garner draws the line officers carry into every foot pursuit.
@@ -559,6 +563,8 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
+
+No-repeat check: no earlier kit has Shorts for Deorle v. Rutherford. All of these are new.
 
 #### Short 3.1: Deorle v. Rutherford
 
@@ -791,6 +797,8 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
+
+No-repeat check: no earlier kit has Shorts for Smith v. City of Hemet. All of these are new.
 
 #### Short 4.1: Smith v. City of Hemet
 
