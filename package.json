@@ -14,7 +14,8 @@
     "sync": "node scripts/sync-site.mjs",
     "check": "tsc -b",
     "case-narration": "node scripts/build-case-narration.mjs",
-    "case-kit": "node scripts/build-case-kit.mjs"
+    "case-kit": "node scripts/build-case-kit.mjs",
+    "test": "node --test scripts/test/*.test.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
