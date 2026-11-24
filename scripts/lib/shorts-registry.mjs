@@ -10,6 +10,7 @@
 // same case. The kit itself says what was checked and what was skipped, so the editor can see it.
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { sentences } from './case-text.mjs';
 
 const HOOK = /^- Hook \(on screen and spoken\): (.+)$/;
 const BODY = /^- Body: (.+)$/;
@@ -23,7 +24,7 @@ function keyCase(name) {
   return normalize(name);
 }
 function keySentences(text) {
-  return (text.match(/[^.!?]+[.!?]+/g) ?? [text]).map((x) => normalize(x)).filter((x) => x.length >= MIN);
+  return sentences(text).map((x) => normalize(x)).filter((x) => x.length >= MIN);
 }
 
 /** Every Short already written in a kit file, keyed by the case name as the Short heading prints it (the builders' shortName). `exclude` is the kit being rebuilt. */
@@ -69,7 +70,10 @@ export function loadUsedShorts(root, exclude) {
 export function questionFor(segment, name) {
   if (segment === 'What this means in practice') return `What does ${name} mean on your next shift?`;
   if (segment === 'How to train it') return `How do you train ${name}?`;
-  if (segment.startsWith('Briefing room point')) return `What would you tell your shift about ${name}?`;
+  if (segment.startsWith('Briefing room point')) {
+    const title = segment.replace(/^Briefing room point:\s*/, '').replace(/[.!?]+$/, '');
+    return `What does "${title}" mean after ${name}?`;
+  }
   if (segment === 'Holding') return `What did the court actually hold in ${name}?`;
   if (segment === 'Dissent') return `Why did the dissent in ${name} disagree?`;
   if (segment === 'What was not decided') return `What did ${name} leave undecided?`;

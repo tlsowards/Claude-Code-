@@ -16,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 import { decidedShort, firstSentence, sentences } from './lib/case-text.mjs';
 import { labelFor } from './lib/case-categories.mjs';
 import { loadUsedShorts, angles, planShorts, shortsNote, withoutDisposition } from './lib/shorts-registry.mjs';
+import { COMMENT_ASK, COMMENT_ASK_AUDIO, SUBSCRIBE_ASK_AUDIO } from './lib/channel.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const caseDir = resolve(root, 'content/cases');
@@ -28,9 +29,6 @@ const SUBSCRIBE = `${SITE}/membership/sowards-briefing-room/`;
 const CHANNEL = 'Sowards Briefing Room';
 const YOUTUBE = 'https://www.youtube.com/@SowardsConsulting';
 const HANDOFF = 'Dropbox: /Claude handoff to Grok';
-const COMMENT_ASK = 'Would your agency train this? Tell me in the comments.';
-const COMMENT_ASK_AUDIO = 'https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3';
-const SUBSCRIBE_ASK_AUDIO = { long: 'https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-long.mp3', short: 'https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-short.mp3' };
 
 const CTA = `Follow for use-of-force case law explained for officers, and get the full teaching brief at ${APP.replace(/^https?:\/\//, '')}.`;
 const DISCLAIMER =

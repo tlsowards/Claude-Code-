@@ -127,7 +127,7 @@ No-repeat check: no earlier kit has Shorts for Graham v. Connor. All of these ar
 
 #### Short 1.3: Graham v. Connor
 
-- Question (on screen, first two seconds): What would you tell your shift about Graham v. Connor?
+- Question (on screen, first two seconds): What does "Articulate the three factors every time" mean after Graham v. Connor?
 - Hook (on screen and spoken): Articulate the three factors every time.
 - Body: Severity of the crime, immediate threat to officers or others, and active resistance or flight. The Court listed them as part of the facts and circumstances of each case. Officers who can state them for the moment force was used are describing their decision in the words a court will use.
 - Card: Graham v. Connor, Supreme Court of the United States, May 15, 1989
@@ -136,7 +136,7 @@ No-repeat check: no earlier kit has Shorts for Graham v. Connor. All of these ar
 
 #### Short 1.4: Graham v. Connor
 
-- Question (on screen, first two seconds): What would you tell your shift about Graham v. Connor?
+- Question (on screen, first two seconds): What does "No hindsight, in either direction" mean after Graham v. Connor?
 - Hook (on screen and spoken): No hindsight, in either direction.
 - Body: Reasonableness is judged from the perspective of a reasonable officer on the scene, not with 20/20 hindsight. That protects the officer from facts learned later. It also means facts learned later cannot be used to justify force that was unreasonable when applied.
 - Card: Graham v. Connor, Supreme Court of the United States, May 15, 1989
@@ -367,7 +367,7 @@ No-repeat check: no earlier kit has Shorts for Tennessee v. Garner. All of these
 
 #### Short 2.3: Tennessee v. Garner
 
-- Question (on screen, first two seconds): What would you tell your shift about Tennessee v. Garner?
+- Question (on screen, first two seconds): What does "Flight is not a threat" mean after Tennessee v. Garner?
 - Hook (on screen and spoken): Flight is not a threat.
 - Body: Garner rejected the rule that any fleeing felon may be stopped with deadly force. The question is whether there is probable cause that this suspect poses a threat of serious physical harm to the officer or others. Escape, by itself, does not supply it.
 - Card: Tennessee v. Garner, Supreme Court of the United States, March 27, 1985
@@ -376,7 +376,7 @@ No-repeat check: no earlier kit has Shorts for Tennessee v. Garner. All of these
 
 #### Short 2.4: Tennessee v. Garner
 
-- Question (on screen, first two seconds): What would you tell your shift about Tennessee v. Garner?
+- Question (on screen, first two seconds): What does "Two routes to probable cause of a threat" mean after Tennessee v. Garner?
 - Hook (on screen and spoken): Two routes to probable cause of a threat.
 - Body: The suspect threatens the officer with a weapon, or there is probable cause that the suspect committed a crime involving the infliction or threatened infliction of serious physical harm. Officers should be able to say which applied and what facts supported it.
 - Card: Tennessee v. Garner, Supreme Court of the United States, March 27, 1985
@@ -607,7 +607,7 @@ No-repeat check: no earlier kit has Shorts for Deorle v. Rutherford. All of thes
 
 #### Short 3.3: Deorle v. Rutherford
 
-- Question (on screen, first two seconds): What would you tell your shift about Deorle v. Rutherford?
+- Question (on screen, first two seconds): What does "Serious injury force needs a strong interest" mean after Deorle v. Rutherford?
 - Hook (on screen and spoken): Serious injury force needs a strong interest.
 - Body: The court held that force capable of causing serious injury, even though less than deadly, is permissible only when a strong governmental interest compels it. Before deploying an impact munition, be able to state that interest in objective facts.
 - Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001
@@ -616,7 +616,7 @@ No-repeat check: no earlier kit has Shorts for Deorle v. Rutherford. All of thes
 
 #### Short 3.4: Deorle v. Rutherford
 
-- Question (on screen, first two seconds): What would you tell your shift about Deorle v. Rutherford?
+- Question (on screen, first two seconds): What does "Fear is not a fact" mean after Deorle v. Rutherford?
 - Hook (on screen and spoken): Fear is not a fact.
 - Body: A simple statement that the officer feared for his safety is not enough. There must be objective factors to justify the concern. What did the person have, what did he do, who was at risk, and what did you actually see.
 - Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001
@@ -849,7 +849,7 @@ No-repeat check: no earlier kit has Shorts for Smith v. City of Hemet. All of th
 
 #### Short 4.3: Smith v. City of Hemet
 
-- Question (on screen, first two seconds): What would you tell your shift about Smith v. City of Hemet?
+- Question (on screen, first two seconds): What does "The definition" mean after Smith v. City of Hemet?
 - Hook (on screen and spoken): The definition.
 - Body: Deadly force is force that creates a substantial risk of causing death or serious bodily injury. The Ninth Circuit adopted it because California agencies already used it. Apply it to how a tool is used, not to the name of the tool.
 - Card: Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005
@@ -858,7 +858,7 @@ No-repeat check: no earlier kit has Shorts for Smith v. City of Hemet. All of th
 
 #### Short 4.4: Smith v. City of Hemet
 
-- Question (on screen, first two seconds): What would you tell your shift about Smith v. City of Hemet?
+- Question (on screen, first two seconds): What does "The court did not call the dog deadly force" mean after Smith v. City of Hemet?
 - Hook (on screen and spoken): The court did not call the dog deadly force.
 - Body: The en banc court expressly declined to decide whether a police dog is deadly force, generally or on these facts, and left that to the district court. Course materials that say Smith held K-9 bites are deadly force, or that the court found the deployment reasonable, overstate the case.
 - Card: Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005

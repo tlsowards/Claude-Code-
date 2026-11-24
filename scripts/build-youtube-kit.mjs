@@ -14,6 +14,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadUsedShorts, angles, planShorts, shortsNote, withoutDisposition } from './lib/shorts-registry.mjs';
+import { COMMENT_ASK, COMMENT_ASK_AUDIO, SUBSCRIBE_ASK_AUDIO } from './lib/channel.mjs';
 import { firstSentence, sentences } from './lib/case-text.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -27,9 +28,6 @@ const SUBSCRIBE = `${SITE}/membership/sowards-briefing-room/`;
 const CHANNEL = 'Sowards Briefing Room';
 const YOUTUBE = 'https://www.youtube.com/@SowardsConsulting';
 const HANDOFF = 'Dropbox: /Claude handoff to Grok';
-const COMMENT_ASK = 'Would your agency train this? Tell me in the comments.';
-const COMMENT_ASK_AUDIO = 'https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3';
-const SUBSCRIBE_ASK_AUDIO = { long: 'https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-long.mp3', short: 'https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-short.mp3' };
 
 const CTA = `Follow for weekly use-of-force case law, and get the full teaching brief at ${APP.replace(/^https?:\/\//, '')}.`;
 const DISCLAIMER =
@@ -160,7 +158,7 @@ function buildKit(brief, usedShorts) {
     'Keep every case name, court, date, and docket exactly as written here. The written spelling is "Sowards"; the audio pronunciation file is for the voice engine only.',
     'Visuals: brand slides (navy #1B2A4E, red #CF2E2E, gold #C9A24B, Inter and Montserrat), highlighted lines of the opinion text, a facts timeline, a circuit map, and the training photos in public/images/training. Steady, slow-moving b-roll only. Body camera or courtroom footage only if it is public record or a court exhibit, non-graphic, with no identifiable juveniles, and obtained through a formal records request. No AI avatar or synthetic host anywhere in the video.',
     'Thumbnail: follow the thumbnail section of each video. No generated or avatar face, ever. A real photograph of Dr. Sowards appears only as a tested variant on staff-side corrections videos.',
-  `Opening question and comment ask (Dr. Sowards, November 23, 2026): every video and every Short opens with its question on screen in the first two seconds, over the brand slate, before the first spoken words. Every close carries the comment ask "${COMMENT_ASK}" spoken in Dr. Sowards' voice (${COMMENT_ASK_AUDIO}, 3 seconds) and on screen, followed by the subscribe ask (short line ${SUBSCRIBE_ASK_AUDIO.short}, long line ${SUBSCRIBE_ASK_AUDIO.long}) under the animated Subscribe or Follow button. These are inserts at natural pauses; the narration audio stays as delivered.`,
+    `Opening question and comment ask (Dr. Sowards, November 23, 2026): every video and every Short opens with its question on screen in the first two seconds, over the brand slate, before the first spoken words. Every close carries the comment ask "${COMMENT_ASK}" spoken in Dr. Sowards' voice (${COMMENT_ASK_AUDIO}, 3 seconds) and on screen, followed by the subscribe ask (short line ${SUBSCRIBE_ASK_AUDIO.short}, long line ${SUBSCRIBE_ASK_AUDIO.long}) under the animated Subscribe or Follow button. These are inserts at natural pauses; the narration audio stays as delivered.`,
     'Timestamps: each chapter list gives the first words of the segment. Place each chapter marker where those words are spoken, and list every chapter in the description starting at 0:00.',
     'Posts: the schedule below is the copy. Formatting, hashtags beyond the ones listed, and scheduling are yours. The substance is not. A post about a case goes out only after that case page is live on the app.',
   ]);

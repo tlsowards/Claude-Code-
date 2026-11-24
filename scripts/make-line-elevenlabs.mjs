@@ -22,16 +22,23 @@ if (!slug || !text || !voice || !apiKey) {
   console.error('Usage: ELEVENLABS_API_KEY=... node scripts/make-line-elevenlabs.mjs <slug> "<text>" --voice <voice id> [--model eleven_v4] [--out dir]');
   process.exit(1);
 }
-const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voice}/stream?output_format=mp3_44100_128`, {
-  method: 'POST',
-  headers: { 'xi-api-key': apiKey, 'Content-Type': 'application/json', Accept: 'audio/mpeg' },
-  body: JSON.stringify({ text, model_id: model, voice_settings: { stability: 0.5, similarity_boost: 0.8, style: 0, use_speaker_boost: true } }),
-});
-if (!r.ok) {
-  console.error(`ElevenLabs ${r.status}: ${await r.text()}`);
-  process.exit(1);
+let audio;
+for (let attempt = 1; attempt <= 3 && !audio; attempt++) {
+  try {
+    const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voice}/stream?output_format=mp3_44100_128`, {
+      method: 'POST',
+      headers: { 'xi-api-key': apiKey, 'Content-Type': 'application/json', Accept: 'audio/mpeg' },
+      body: JSON.stringify({ text, model_id: model, voice_settings: { stability: 0.5, similarity_boost: 0.8, style: 0, use_speaker_boost: true } }),
+    });
+    if (r.ok) audio = Buffer.from(await r.arrayBuffer());
+    else if (r.status >= 500 || r.status === 429) console.error(`attempt ${attempt}: ElevenLabs ${r.status}, retrying`);
+    else { console.error(`ElevenLabs ${r.status}: ${await r.text()}`); process.exit(1); }
+  } catch (err) {
+    console.error(`attempt ${attempt}: ${err.message}`);
+  }
 }
+if (!audio) { console.error('gave up after 3 attempts'); process.exit(1); }
 mkdirSync(outDir, { recursive: true });
 const file = resolve(outDir, `${slug}.mp3`);
-writeFileSync(file, Buffer.from(await r.arrayBuffer()));
+writeFileSync(file, audio);
 console.log(`${slug}: ${text.length} characters, written to ${file}`);

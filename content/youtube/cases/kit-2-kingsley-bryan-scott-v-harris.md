@@ -128,7 +128,7 @@ No-repeat check: no earlier kit has Shorts for Kingsley v. Hendrickson. All of t
 
 #### Short 1.3: Kingsley v. Hendrickson
 
-- Question (on screen, first two seconds): What would you tell your shift about Kingsley v. Hendrickson?
+- Question (on screen, first two seconds): What does "Your intent is not the test; your perspective is" mean after Kingsley v. Hendrickson?
 - Hook (on screen and spoken): Your intent is not the test; your perspective is.
 - Body: A pretrial detainee does not have to prove the officer knew the force was excessive. The question is whether the force was objectively unreasonable from the perspective of a reasonable officer on the scene with the officer's knowledge. Write reports that put the reader in that position.
 - Card: Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 2015
@@ -137,7 +137,7 @@ No-repeat check: no earlier kit has Shorts for Kingsley v. Hendrickson. All of t
 
 #### Short 1.4: Kingsley v. Hendrickson
 
-- Question (on screen, first two seconds): What would you tell your shift about Kingsley v. Hendrickson?
+- Question (on screen, first two seconds): What does "The six factors are the report outline" mean after Kingsley v. Hendrickson?
 - Hook (on screen and spoken): The six factors are the report outline.
 - Body: Need versus amount of force, extent of injury, efforts to temper or limit force, severity of the security problem, threat reasonably perceived, and active resistance. The Court said the list is not exclusive, so add anything else a reasonable officer weighed.
 - Card: Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 2015
@@ -368,7 +368,7 @@ No-repeat check: no earlier kit has Shorts for Bryan v. MacPherson. All of these
 
 #### Short 2.3: Bryan v. MacPherson
 
-- Question (on screen, first two seconds): What would you tell your shift about Bryan v. MacPherson?
+- Question (on screen, first two seconds): What does "Dart mode is intermediate force" mean after Bryan v. MacPherson?
 - Hook (on screen and spoken): Dart mode is intermediate force.
 - Body: The court held that the X26 and similar devices in dart mode are an intermediate, significant level of force that must be justified by the governmental interest involved. Treat a probe deployment the way you would treat a baton: it needs a reason of matching weight.
 - Card: Bryan v. MacPherson, Ninth Circuit, November 30, 2010
@@ -377,7 +377,7 @@ No-repeat check: no earlier kit has Shorts for Bryan v. MacPherson. All of these
 
 #### Short 2.4: Bryan v. MacPherson
 
-- Question (on screen, first two seconds): What would you tell your shift about Bryan v. MacPherson?
+- Question (on screen, first two seconds): What does "Non-lethal is not non-excessive" mean after Bryan v. MacPherson?
 - Hook (on screen and spoken): Non-lethal is not non-excessive.
 - Body: All force, lethal and non-lethal, must be justified by the need for that specific level of force. Pepper spray, a baton and a Taser are not interchangeable because they share a label. Articulate the tool you used and why that tool.
 - Card: Bryan v. MacPherson, Ninth Circuit, November 30, 2010
@@ -610,7 +610,7 @@ No-repeat check: no earlier kit has Shorts for Scott v. Harris. All of these are
 
 #### Short 3.3: Scott v. Harris
 
-- Question (on screen, first two seconds): What would you tell your shift about Scott v. Harris?
+- Question (on screen, first two seconds): What does "There is no deadly force switch" mean after Scott v. Harris?
 - Hook (on screen and spoken): There is no deadly force switch.
 - Body: The Court held that Garner did not create rigid preconditions that apply whenever force might be called deadly. Garner applied the reasonableness test to a fleeing, unarmed burglary suspect shot in the back of the head. Whether or not a pursuit termination is deadly force, the question is whether it was reasonable.
 - Card: Scott v. Harris, Supreme Court of the United States, April 30, 2007
@@ -619,7 +619,7 @@ No-repeat check: no earlier kit has Shorts for Scott v. Harris. All of these are
 
 #### Short 3.4: Scott v. Harris
 
-- Question (on screen, first two seconds): What would you tell your shift about Scott v. Harris?
+- Question (on screen, first two seconds): What does "Count the lives and weigh the culpability" mean after Scott v. Harris?
 - Hook (on screen and spoken): Count the lives and weigh the culpability.
 - Body: The Court balanced the high likelihood of serious injury to the driver against the actual and imminent threat he posed to motorists, pedestrians who might have been present, and officers. It considered how many lives were at risk and who created the danger. Officers should be able to describe both sides of that balance in facts.
 - Card: Scott v. Harris, Supreme Court of the United States, April 30, 2007
