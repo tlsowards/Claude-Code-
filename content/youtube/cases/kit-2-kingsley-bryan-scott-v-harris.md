@@ -10,6 +10,7 @@ Each video has its own finished narration in Dr. Sowards' voice. The audio is co
 - Keep every case name, court, date, and docket exactly as written here. The written spelling is "Sowards"; the audio pronunciation file is for the voice engine only.
 - Visuals: brand slides (navy #1B2A4E, red #CF2E2E, gold #C9A24B, Inter and Montserrat), highlighted lines of the opinion text, a facts timeline, a map when a place is named, and the training photos in public/images/training. Steady, slow-moving b-roll only. Body camera or courtroom footage only if it is public record or a court exhibit, non-graphic, with no identifiable juveniles, and obtained through a formal records request. No AI avatar or synthetic host anywhere in the video.
 - Thumbnail: follow the thumbnail section of each video. No generated or avatar face, ever.
+- Opening question and comment ask (Dr. Sowards, November 23, 2026): every video and every Short opens with its question on screen in the first two seconds, over the brand slate, before the first spoken words. Every close carries the comment ask "Would your agency train this? Tell me in the comments." spoken in Dr. Sowards' voice (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3, 3 seconds) and on screen, followed by the subscribe ask (short line https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-short.mp3, long line https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-long.mp3) under the animated Subscribe or Follow button. These are inserts at natural pauses; the narration audio stays as delivered.
 - Timestamps: each chapter list gives the first words of the segment. Place each chapter marker where those words are spoken, and list every chapter in the description starting at 0:00.
 - Posts: the schedule below is the copy. Formatting, hashtags beyond the ones listed, and scheduling are yours. The substance is not. A post goes out only after its video is live; until then it links to the case page on the app.
 
@@ -28,6 +29,10 @@ Decision: Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 
 Suggested playlist: Custody and corrections. Topic sections on the app: Custody and corrections, Force standards.
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-kingsley-v-hendrickson.mp3 (14 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/kingsley-v-hendrickson.txt. Case page: https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson.
+
+### Opening question (on screen, first two seconds)
+
+What did Kingsley v. Hendrickson decide, and what does it change on your next shift?
 
 ### Title options
 
@@ -97,7 +102,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | In practice | In practice: custody | Training photo or brand slide |
 | Train it | Train it | Numbered points pulled from the train-it paragraph |
 | Briefing room points | 1. Your intent is not the test; your perspective is / 2. The six factors are the report outline / 3. Policy earns deference / 4. Same cell, two standards / 5. Teach the posture | One brand slide per point, title only |
-| Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
+| Close | "Would your agency train this? Tell me in the comments." / Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | Comment ask spoken (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3) and on screen, then the long subscribe ask, over the end screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
 
@@ -105,34 +110,38 @@ No-repeat check: no earlier kit has Shorts for Kingsley v. Hendrickson. All of t
 
 #### Short 1.1: Kingsley v. Hendrickson
 
+- Question (on screen, first two seconds): What does Kingsley v. Hendrickson mean on your next shift?
 - Hook (on screen and spoken): For jail and juvenile hall staff, the force used on a pretrial detainee is judged by what a reasonable officer on the scene would have done with what that officer knew.
 - Body: Good intentions do not satisfy the standard, and bad intentions are not required to fail it. What protects an officer is the objective record: what the detainee did, what the security problem was, what threat was reasonably perceived, what was tried first, how much force was used, and what injury resulted. The Court's six factors are a report outline.
 - Card: Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 2015
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "What this means in practice" segment of Video 1, or re-record from this text in the same voice.
 
 #### Short 1.2: Kingsley v. Hendrickson
 
+- Question (on screen, first two seconds): How do you train Kingsley v. Hendrickson?
 - Hook (on screen and spoken): Teach the two custody standards side by side.
 - Body: For pretrial detainees under the Fourteenth Amendment, the test is objective reasonableness with deference to jail policy (Kingsley). For convicted prisoners under the Eighth Amendment, the test is whether force was applied in a good faith effort to maintain or restore discipline or maliciously and sadistically to cause harm (Whitley, Hudson). In a mixed population, train every officer to the objective standard for every detainee; the Court noted that many facilities, including this one, already do.
 - Card: Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 2015
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "How to train it" segment of Video 1, or re-record from this text in the same voice.
 
 #### Short 1.3: Kingsley v. Hendrickson
 
+- Question (on screen, first two seconds): What does "Your intent is not the test; your perspective is" mean after Kingsley v. Hendrickson?
 - Hook (on screen and spoken): Your intent is not the test; your perspective is.
 - Body: A pretrial detainee does not have to prove the officer knew the force was excessive. The question is whether the force was objectively unreasonable from the perspective of a reasonable officer on the scene with the officer's knowledge. Write reports that put the reader in that position.
 - Card: Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 2015
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Your intent is not the test; your perspective is" segment of Video 1, or re-record from this text in the same voice.
 
 #### Short 1.4: Kingsley v. Hendrickson
 
+- Question (on screen, first two seconds): What does "The six factors are the report outline" mean after Kingsley v. Hendrickson?
 - Hook (on screen and spoken): The six factors are the report outline.
 - Body: Need versus amount of force, extent of injury, efforts to temper or limit force, severity of the security problem, threat reasonably perceived, and active resistance. The Court said the list is not exclusive, so add anything else a reasonable officer weighed.
 - Card: Kingsley v. Hendrickson, Supreme Court of the United States, June 22, 2015
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: The six factors are the report outline" segment of Video 1, or re-record from this text in the same voice.
 
 ### Pinned comment
@@ -261,6 +270,10 @@ Suggested playlist: Intermediate and less lethal force. Topic sections on the ap
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-bryan-v-macpherson.mp3 (16 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/bryan-v-macpherson.txt. Case page: https://app.sowardsconsulting.com/cases/bryan-v-macpherson.
 
+### Opening question (on screen, first two seconds)
+
+What did Bryan v. MacPherson decide, and what does it change on your next shift?
+
 ### Title options
 
 1. Bryan v. MacPherson: the Ninth Circuit's foundational Taser case
@@ -329,7 +342,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | In practice | In practice: field | Training photo or brand slide |
 | Train it | Train it | Numbered points pulled from the train-it paragraph |
 | Briefing room points | 1. Dart mode is intermediate force / 2. Non-lethal is not non-excessive / 3. Objective facts, not adjectives / 4. Apparent crisis lowers the interest / 5. Warn and consider alternatives when time allows / 6. Posture | One brand slide per point, title only |
-| Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
+| Close | "Would your agency train this? Tell me in the comments." / Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | Comment ask spoken (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3) and on screen, then the long subscribe ask, over the end screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
 
@@ -337,34 +350,38 @@ No-repeat check: no earlier kit has Shorts for Bryan v. MacPherson. All of these
 
 #### Short 2.1: Bryan v. MacPherson
 
+- Question (on screen, first two seconds): What does Bryan v. MacPherson mean on your next shift?
 - Hook (on screen and spoken): Bryan tells the officer three things about the Taser.
 - Body: First, a dart mode deployment is intermediate force, not a shortcut around the force analysis. It must be justified by the same Graham interests as a baton or an impact munition, and the court placed it above pepper spray and pain compliance holds on the scale of intrusion. Second, the justification must be objective.
 - Card: Bryan v. MacPherson, Ninth Circuit, November 30, 2010
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "What this means in practice" segment of Video 2, or re-record from this text in the same voice.
 
 #### Short 2.2: Bryan v. MacPherson
 
+- Question (on screen, first two seconds): How do you train Bryan v. MacPherson?
 - Hook (on screen and spoken): Teach the classification first.
 - Body: Students should be able to state that a conducted energy weapon in dart mode is intermediate force in the Ninth Circuit and to explain why the court said so: neuromuscular incapacitation, whole body pain, and the foreseeable fall. A deployment lesson that treats the Taser as a compliance tool for any non-compliance will not survive this case. Build the threat articulation around objective facts.
 - Card: Bryan v. MacPherson, Ninth Circuit, November 30, 2010
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "How to train it" segment of Video 2, or re-record from this text in the same voice.
 
 #### Short 2.3: Bryan v. MacPherson
 
+- Question (on screen, first two seconds): What does "Dart mode is intermediate force" mean after Bryan v. MacPherson?
 - Hook (on screen and spoken): Dart mode is intermediate force.
 - Body: The court held that the X26 and similar devices in dart mode are an intermediate, significant level of force that must be justified by the governmental interest involved. Treat a probe deployment the way you would treat a baton: it needs a reason of matching weight.
 - Card: Bryan v. MacPherson, Ninth Circuit, November 30, 2010
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Dart mode is intermediate force" segment of Video 2, or re-record from this text in the same voice.
 
 #### Short 2.4: Bryan v. MacPherson
 
+- Question (on screen, first two seconds): What does "Non-lethal is not non-excessive" mean after Bryan v. MacPherson?
 - Hook (on screen and spoken): Non-lethal is not non-excessive.
 - Body: All force, lethal and non-lethal, must be justified by the need for that specific level of force. Pepper spray, a baton and a Taser are not interchangeable because they share a label. Articulate the tool you used and why that tool.
 - Card: Bryan v. MacPherson, Ninth Circuit, November 30, 2010
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Non-lethal is not non-excessive" segment of Video 2, or re-record from this text in the same voice.
 
 ### Pinned comment
@@ -495,6 +512,10 @@ Suggested playlist: Deadly force. Topic sections on the app: Deadly force, Force
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-scott-v-harris.mp3 (16 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/scott-v-harris.txt. Case page: https://app.sowardsconsulting.com/cases/scott-v-harris.
 
+### Opening question (on screen, first two seconds)
+
+What did Scott v. Harris decide, and what does it change on your next shift?
+
 ### Title options
 
 1. Scott v. Harris: when ending a pursuit by force is reasonable
@@ -563,7 +584,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | In practice | In practice: field | Training photo or brand slide |
 | Train it | Train it | Numbered points pulled from the train-it paragraph |
 | Briefing room points | 1. There is no deadly force switch / 2. Count the lives and weigh the culpability / 3. Lights and sirens were the warning / 4. The video is the record / 5. The Constitution is the floor; policy is the rule / 6. Posture | One brand slide per point, title only |
-| Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
+| Close | "Would your agency train this? Tell me in the comments." / Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | Comment ask spoken (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3) and on screen, then the long subscribe ask, over the end screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
 
@@ -571,34 +592,38 @@ No-repeat check: no earlier kit has Shorts for Scott v. Harris. All of these are
 
 #### Short 3.1: Scott v. Harris
 
+- Question (on screen, first two seconds): What does Scott v. Harris mean on your next shift?
 - Hook (on screen and spoken): Scott v. Harris governs what the Fourth Amendment asks when an officer uses a vehicle, or any other force, to end a pursuit.
 - Body: The question is not whether the technique counts as deadly force. The question is whether the action was reasonable in light of the threat the driver posed, and the Court measured that threat by the number of lives at risk and by who created the danger. The facts that carried the day are facts an officer can observe and later articulate: speed, road type and lighting, traffic in both directions, red lights run, the center line crossed, the duration and distance of the chase, the lights and sirens the driver ignored, and the suspect's own conduct such as the collision in the parking lot.
 - Card: Scott v. Harris, Supreme Court of the United States, April 30, 2007
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "What this means in practice" segment of Video 3, or re-record from this text in the same voice.
 
 #### Short 3.2: Scott v. Harris
 
+- Question (on screen, first two seconds): How do you train Scott v. Harris?
 - Hook (on screen and spoken): Teach Scott v. Harris with Garner and Graham as one lesson: Garner applied the reasonableness test to one set of facts, and Scott applied it to another.
 - Body: Students should be able to explain why the Court said there is no deadly force switch, and why that does not loosen the standard. The balance still has to be done, and it has to be done with facts. Run a pursuit scenario and require the student to articulate the Scott balance out loud: who was at risk and how many, what the driver had done to create the danger, what warnings the driver ignored, why ending the pursuit would or would not have ended the danger, and what alternatives were available and whether they were feasible at that time and place.
 - Card: Scott v. Harris, Supreme Court of the United States, April 30, 2007
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "How to train it" segment of Video 3, or re-record from this text in the same voice.
 
 #### Short 3.3: Scott v. Harris
 
+- Question (on screen, first two seconds): What does "There is no deadly force switch" mean after Scott v. Harris?
 - Hook (on screen and spoken): There is no deadly force switch.
 - Body: The Court held that Garner did not create rigid preconditions that apply whenever force might be called deadly. Garner applied the reasonableness test to a fleeing, unarmed burglary suspect shot in the back of the head. Whether or not a pursuit termination is deadly force, the question is whether it was reasonable.
 - Card: Scott v. Harris, Supreme Court of the United States, April 30, 2007
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: There is no deadly force switch" segment of Video 3, or re-record from this text in the same voice.
 
 #### Short 3.4: Scott v. Harris
 
+- Question (on screen, first two seconds): What does "Count the lives and weigh the culpability" mean after Scott v. Harris?
 - Hook (on screen and spoken): Count the lives and weigh the culpability.
 - Body: The Court balanced the high likelihood of serious injury to the driver against the actual and imminent threat he posed to motorists, pedestrians who might have been present, and officers. It considered how many lives were at risk and who created the danger. Officers should be able to describe both sides of that balance in facts.
 - Card: Scott v. Harris, Supreme Court of the United States, April 30, 2007
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Count the lives and weigh the culpability" segment of Video 3, or re-record from this text in the same voice.
 
 ### Pinned comment

@@ -14,6 +14,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadUsedShorts, angles, planShorts, shortsNote, withoutDisposition } from './lib/shorts-registry.mjs';
+import { COMMENT_ASK, COMMENT_ASK_AUDIO, SUBSCRIBE_ASK_AUDIO } from './lib/channel.mjs';
 import { firstSentence, sentences } from './lib/case-text.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -27,6 +28,7 @@ const SUBSCRIBE = `${SITE}/membership/sowards-briefing-room/`;
 const CHANNEL = 'Sowards Briefing Room';
 const YOUTUBE = 'https://www.youtube.com/@SowardsConsulting';
 const HANDOFF = 'Dropbox: /Claude handoff to Grok';
+
 const CTA = `Follow for weekly use-of-force case law, and get the full teaching brief at ${APP.replace(/^https?:\/\//, '')}.`;
 const DISCLAIMER =
   'Educational material only. It is not legal advice and does not replace agency policy or counsel. Read the full opinion before relying on any case, and confirm unpublished decisions with counsel before citing them.';
@@ -156,6 +158,7 @@ function buildKit(brief, usedShorts) {
     'Keep every case name, court, date, and docket exactly as written here. The written spelling is "Sowards"; the audio pronunciation file is for the voice engine only.',
     'Visuals: brand slides (navy #1B2A4E, red #CF2E2E, gold #C9A24B, Inter and Montserrat), highlighted lines of the opinion text, a facts timeline, a circuit map, and the training photos in public/images/training. Steady, slow-moving b-roll only. Body camera or courtroom footage only if it is public record or a court exhibit, non-graphic, with no identifiable juveniles, and obtained through a formal records request. No AI avatar or synthetic host anywhere in the video.',
     'Thumbnail: follow the thumbnail section of each video. No generated or avatar face, ever. A real photograph of Dr. Sowards appears only as a tested variant on staff-side corrections videos.',
+    `Opening question and comment ask (Dr. Sowards, November 23, 2026): every video and every Short opens with its question on screen in the first two seconds, over the brand slate, before the first spoken words. Every close carries the comment ask "${COMMENT_ASK}" spoken in Dr. Sowards' voice (${COMMENT_ASK_AUDIO}, 3 seconds) and on screen, followed by the subscribe ask (short line ${SUBSCRIBE_ASK_AUDIO.short}, long line ${SUBSCRIBE_ASK_AUDIO.long}) under the animated Subscribe or Follow button. These are inserts at natural pauses; the narration audio stays as delivered.`,
     'Timestamps: each chapter list gives the first words of the segment. Place each chapter marker where those words are spoken, and list every chapter in the description starting at 0:00.',
     'Posts: the schedule below is the copy. Formatting, hashtags beyond the ones listed, and scheduling are yours. The substance is not. A post about a case goes out only after that case page is live on the app.',
   ]);
@@ -191,12 +194,13 @@ function buildKit(brief, usedShorts) {
       ['Dissent', c.dissent],
       ['What was not decided', c.notDecided],
     ];
-    const plan = planShorts({ used: usedShorts, caseName: shortName(c), candidates: angles(pool, { sentences }), want: 2 });
+    const plan = planShorts({ used: usedShorts, caseName: shortName(c), candidates: angles(pool, { sentences, name: shortName(c) }), want: 2 });
     const items = plan.shorts.map((s) => [
+      `Question (on screen, first two seconds): ${s.question}`,
       `Hook (on screen and spoken): ${s.hook}`,
       `Body: ${s.body}`,
       `Card: ${cite(c)}`,
-      `Close: Full brief and training points in the Sowards Briefing Room, link in bio.`,
+      `Close (spoken and on screen): "${COMMENT_ASK}" then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.`,
       `Cut from: ${s.cut} of ${label}, or re-record from this text in the same voice.`,
     ]);
     return { items, note: shortsNote(plan, shortName(c)) };
@@ -207,6 +211,9 @@ function buildKit(brief, usedShorts) {
     const multi = v.cases.length > 1;
     h(2, `Video ${vi + 1}: ${v.cases.map(shortName).join(' and ')}`);
     p(`${multi ? 'Decisions' : 'Decision'}: ${v.cases.map((c) => `${cite(c)} (${statusLabel[c.status] ?? c.status})`).join('; ')}. Audio: cut the ${multi ? 'segments' : 'segment'} for ${v.cases.map((c) => `"${shortName(c)}"`).join(' and ')} from the weekly narration, in that order, ${multi ? 'joined back to back' : 'as one piece'}. Open with the brand slate and close with the end screen.`);
+
+    h(3, 'Opening question (on screen, first two seconds)');
+    p(v.question ?? (multi ? `What did ${v.cases.map(shortName).join(' and ')} decide, and what changes on your next shift?` : `What did ${shortName(lead)} decide, and what does it change on your next shift?`));
 
     h(3, 'Title options');
     // A video's own titles win; the brief's top-level titles still apply to the first video for briefs written before videos were listed.
@@ -275,7 +282,7 @@ function buildKit(brief, usedShorts) {
       out.push(`| ${shortName(c)} in practice | In practice: ${settingsText(c)} | Training photo or brand slide |`);
       out.push(`| ${shortName(c)} train it | Train it | Numbered points pulled from the train-it paragraph |`);
     }
-    out.push(`| Close | Sowards Briefing Room / Free 30 days / ${SUBSCRIBE.replace('https://', '')} | End screen with empty zones for subscribe and watch-next |`, '');
+    out.push(`| Close | "${COMMENT_ASK}" / Sowards Briefing Room / Free 30 days / ${SUBSCRIBE.replace('https://', '')} | Comment ask spoken (${COMMENT_ASK_AUDIO}) and on screen, then the long subscribe ask, over the end screen with empty zones for subscribe and watch-next |`, '');
 
     h(3, 'Shorts for this video (vertical, under 60 seconds each)');
     let n = 0;

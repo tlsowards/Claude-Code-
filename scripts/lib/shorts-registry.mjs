@@ -10,6 +10,7 @@
 // same case. The kit itself says what was checked and what was skipped, so the editor can see it.
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { sentences } from './case-text.mjs';
 
 const HOOK = /^- Hook \(on screen and spoken\): (.+)$/;
 const BODY = /^- Body: (.+)$/;
@@ -23,7 +24,7 @@ function keyCase(name) {
   return normalize(name);
 }
 function keySentences(text) {
-  return (text.match(/[^.!?]+[.!?]+/g) ?? [text]).map((x) => normalize(x)).filter((x) => x.length >= MIN);
+  return sentences(text).map((x) => normalize(x)).filter((x) => x.length >= MIN);
 }
 
 /** Every Short already written in a kit file, keyed by the case name as the Short heading prints it (the builders' shortName). `exclude` is the kit being rebuilt. */
@@ -62,7 +63,24 @@ export function loadUsedShorts(root, exclude) {
  * (first sentence as the hook, next three as the body) and, when the text is long enough, a second
  * window later in the same segment, so a case with Shorts already out still has fresh material.
  */
-export function angles(pool, { sentences, clean = (s) => s }) {
+/**
+ * The question a Short opens with (on screen in the first two seconds), per Dr. Sowards' November 23 decision.
+ * Each is a real question the segment then answers; none adds a fact.
+ */
+export function questionFor(segment, name) {
+  if (segment === 'What this means in practice') return `What does ${name} mean on your next shift?`;
+  if (segment === 'How to train it') return `How do you train ${name}?`;
+  if (segment.startsWith('Briefing room point')) {
+    const title = segment.replace(/^Briefing room point:\s*/, '').replace(/[.!?]+$/, '');
+    return `What does "${title}" mean after ${name}?`;
+  }
+  if (segment === 'Holding') return `What did the court actually hold in ${name}?`;
+  if (segment === 'Dissent') return `Why did the dissent in ${name} disagree?`;
+  if (segment === 'What was not decided') return `What did ${name} leave undecided?`;
+  return `What does ${name} change?`;
+}
+
+export function angles(pool, { sentences, clean = (s) => s, name = '' }) {
   const opening = [];
   const later = [];
   for (const [segment, text] of pool) {
@@ -72,7 +90,7 @@ export function angles(pool, { sentences, clean = (s) => s }) {
       const hook = leadIn(all[start]);
       const body = all.slice(start + 1, start + 4).join(' ');
       if (!hook || !body) break;
-      (start === 0 ? opening : later).push({ segment, hook, body, cut: start === 0 ? `the "${segment}" segment` : `later in the "${segment}" segment` });
+      (start === 0 ? opening : later).push({ segment, question: questionFor(segment, name), hook, body, cut: start === 0 ? `the "${segment}" segment` : `later in the "${segment}" segment` });
     }
   }
   // Every segment's opening comes first, in the builder's priority order; the later windows are the reserve.
