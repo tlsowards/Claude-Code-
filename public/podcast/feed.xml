@@ -12,7 +12,19 @@
     <itunes:category text="Government" />
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
-    <lastBuildDate>Sat, 24 Oct 2026 20:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 20:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Use of Force Case Law Update: October 19 to 25, 2026</title>
+      <link>https://app.sowardsconsulting.com/podcast/2026-10-25</link>
+      <guid isPermaLink="true">https://app.sowardsconsulting.com/podcast/2026-10-25</guid>
+      <pubDate>Sun, 25 Oct 2026 20:00:00 GMT</pubDate>
+      <description>Astorga v. Villanueva on supervisor liability for crowd control, Kilnapp v. City of Cleveland on an officer shot by her partner, Bond v. Sheriff of Ottawa County and a $33 million jail death verdict, Garcia v. United States on a hostage killed in a rescue, and two published California search decisions. This public feed carries each episode 4 weeks after it airs. Current episodes, the written briefs, and the knowledge checks are in the Sowards Consulting app, free for the first 30 days, at app.sowardsconsulting.com.</description>
+      <itunes:summary>Astorga v. Villanueva on supervisor liability for crowd control, Kilnapp v. City of Cleveland on an officer shot by her partner, Bond v. Sheriff of Ottawa County and a $33 million jail death verdict, Garcia v. United States on a hostage killed in a rescue, and two published California search decisions. This public feed carries each episode 4 weeks after it airs. Current episodes, the written briefs, and the knowledge checks are in the Sowards Consulting app, free for the first 30 days, at app.sowardsconsulting.com.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:duration>00:21:09</itunes:duration>
+      <enclosure url="https://sowardsconsulting.com/wp-content/uploads/2026/11/2026-10-25-use-of-force-case-law-update.mp3" length="20305607" type="audio/mpeg" />
+    </item>
     <item>
       <title>Use of Force Case Law Update: October 19 to 24, 2026</title>
       <link>https://app.sowardsconsulting.com/podcast/2026-10-24</link>

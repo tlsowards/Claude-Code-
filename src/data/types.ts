@@ -62,7 +62,7 @@ export interface WeeklyBrief {
      * The individual case videos for the channel: one decision, or two or three on the same issue. Cases not
      * listed get Shorts only. Without this block every published decision gets its own video.
      */
-    videos?: { cases: string[]; titles?: string[]; thumbnail?: { text?: string; redWord?: string; visual?: string }; hook?: string }[];
+    videos?: { cases: string[]; titles?: string[]; thumbnail?: { text?: string; redWord?: string; visual?: string }; hook?: string; /** Hand-written opening question shown on screen in the first two seconds; the builder supplies one otherwise. */ question?: string }[];
   };
 }
 
@@ -94,7 +94,7 @@ export interface TeachingBrief extends BriefCase {
   /** Narration of the brief in Dr. Sowards' voice, hosted in the website's media library. Subscribers only. */
   audio?: { url: string; durationSeconds: number; bytes?: number };
   /** Hand-written title options, thumbnail, and description hook for the case's evergreen channel video, read by scripts/build-case-kit.mjs. */
-  youtube?: { titles?: string[]; thumbnail?: { text?: string; redWord?: string; visual?: string }; hook?: string };
+  youtube?: { titles?: string[]; thumbnail?: { text?: string; redWord?: string; visual?: string }; hook?: string; /** Hand-written opening question for the video; the builder supplies one otherwise. */ question?: string };
 }
 
 export interface QuizQuestion {

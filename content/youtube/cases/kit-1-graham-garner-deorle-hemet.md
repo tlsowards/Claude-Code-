@@ -10,6 +10,7 @@ Each video has its own finished narration in Dr. Sowards' voice. The audio is co
 - Keep every case name, court, date, and docket exactly as written here. The written spelling is "Sowards"; the audio pronunciation file is for the voice engine only.
 - Visuals: brand slides (navy #1B2A4E, red #CF2E2E, gold #C9A24B, Inter and Montserrat), highlighted lines of the opinion text, a facts timeline, a map when a place is named, and the training photos in public/images/training. Steady, slow-moving b-roll only. Body camera or courtroom footage only if it is public record or a court exhibit, non-graphic, with no identifiable juveniles, and obtained through a formal records request. No AI avatar or synthetic host anywhere in the video.
 - Thumbnail: follow the thumbnail section of each video. No generated or avatar face, ever.
+- Opening question and comment ask (Dr. Sowards, November 23, 2026): every video and every Short opens with its question on screen in the first two seconds, over the brand slate, before the first spoken words. Every close carries the comment ask "Would your agency train this? Tell me in the comments." spoken in Dr. Sowards' voice (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3, 3 seconds) and on screen, followed by the subscribe ask (short line https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-short.mp3, long line https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-long.mp3) under the animated Subscribe or Follow button. These are inserts at natural pauses; the narration audio stays as delivered.
 - Timestamps: each chapter list gives the first words of the segment. Place each chapter marker where those words are spoken, and list every chapter in the description starting at 0:00.
 - Posts: the schedule below is the copy. Formatting, hashtags beyond the ones listed, and scheduling are yours. The substance is not. A post goes out only after its video is live; until then it links to the case page on the app.
 
@@ -29,6 +30,10 @@ Decision: Graham v. Connor, Supreme Court of the United States, May 15, 1989 (pu
 Suggested playlist: Force standards. Topic sections on the app: Force standards.
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-graham-v-connor-1.mp3 (12 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/graham-v-connor.txt. Case page: https://app.sowardsconsulting.com/cases/graham-v-connor.
+
+### Opening question (on screen, first two seconds)
+
+What did Graham v. Connor decide, and what does it change on your next shift?
 
 ### Title options
 
@@ -96,7 +101,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | In practice | In practice: field, all settings | Training photo or brand slide |
 | Train it | Train it | Numbered points pulled from the train-it paragraph |
 | Briefing room points | 1. Articulate the three factors every time / 2. No hindsight, in either direction / 3. Intent does not change the standard, but it can change the jury / 4. Split second judgments are protected; stabilized situations are judged differently / 5. Teach the posture accurately | One brand slide per point, title only |
-| Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
+| Close | "Would your agency train this? Tell me in the comments." / Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | Comment ask spoken (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3) and on screen, then the long subscribe ask, over the end screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
 
@@ -104,34 +109,38 @@ No-repeat check: no earlier kit has Shorts for Graham v. Connor. All of these ar
 
 #### Short 1.1: Graham v. Connor
 
+- Question (on screen, first two seconds): What does Graham v. Connor mean on your next shift?
 - Hook (on screen and spoken): Graham is the test every force decision will be measured against.
 - Body: Three things flow from it on the street. First, the facts that justify force are the facts known to the officer at the moment. Officers should be able to articulate, in order, what they saw, what they knew, and why that made the amount of force reasonable: the severity of the suspected offense, the immediate threat to officers or others, and whether the person was actively resisting or trying to flee.
 - Card: Graham v. Connor, Supreme Court of the United States, May 15, 1989
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "What this means in practice" segment of Video 1, or re-record from this text in the same voice.
 
 #### Short 1.2: Graham v. Connor
 
+- Question (on screen, first two seconds): How do you train Graham v. Connor?
 - Hook (on screen and spoken): Teach Graham as the frame for every force scenario, then make students apply it out loud.
 - Body: After each scenario, require the trainee to state the Graham factors as they existed at the moment of decision: offense, threat, resistance or flight, and the surrounding circumstances. Correct hindsight reasoning when it appears, in both directions. Trainees who justify force with facts learned afterward are making the same mistake as critics who second guess with facts the officer could not have known.
 - Card: Graham v. Connor, Supreme Court of the United States, May 15, 1989
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "How to train it" segment of Video 1, or re-record from this text in the same voice.
 
 #### Short 1.3: Graham v. Connor
 
+- Question (on screen, first two seconds): What would you tell your shift about Graham v. Connor?
 - Hook (on screen and spoken): Articulate the three factors every time.
 - Body: Severity of the crime, immediate threat to officers or others, and active resistance or flight. The Court listed them as part of the facts and circumstances of each case. Officers who can state them for the moment force was used are describing their decision in the words a court will use.
 - Card: Graham v. Connor, Supreme Court of the United States, May 15, 1989
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Articulate the three factors every time" segment of Video 1, or re-record from this text in the same voice.
 
 #### Short 1.4: Graham v. Connor
 
+- Question (on screen, first two seconds): What would you tell your shift about Graham v. Connor?
 - Hook (on screen and spoken): No hindsight, in either direction.
 - Body: Reasonableness is judged from the perspective of a reasonable officer on the scene, not with 20/20 hindsight. That protects the officer from facts learned later. It also means facts learned later cannot be used to justify force that was unreasonable when applied.
 - Card: Graham v. Connor, Supreme Court of the United States, May 15, 1989
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: No hindsight, in either direction" segment of Video 1, or re-record from this text in the same voice.
 
 ### Pinned comment
@@ -260,6 +269,10 @@ Suggested playlist: Deadly force. Topic sections on the app: Deadly force, Force
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-tennessee-v-garner.mp3 (13 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/tennessee-v-garner.txt. Case page: https://app.sowardsconsulting.com/cases/tennessee-v-garner.
 
+### Opening question (on screen, first two seconds)
+
+What did Tennessee v. Garner decide, and what does it change on your next shift?
+
 ### Title options
 
 1. Tennessee v. Garner: when deadly force on a fleeing suspect is unreasonable
@@ -328,7 +341,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | In practice | In practice: field, all settings | Training photo or brand slide |
 | Train it | Train it | Numbered points pulled from the train-it paragraph |
 | Briefing room points | 1. Flight is not a threat / 2. Two routes to probable cause of a threat / 3. Necessary, and with a warning where feasible / 4. Burglary is serious, but not automatically dangerous / 5. Teach the posture accurately | One brand slide per point, title only |
-| Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
+| Close | "Would your agency train this? Tell me in the comments." / Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | Comment ask spoken (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3) and on screen, then the long subscribe ask, over the end screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
 
@@ -336,34 +349,38 @@ No-repeat check: no earlier kit has Shorts for Tennessee v. Garner. All of these
 
 #### Short 2.1: Tennessee v. Garner
 
+- Question (on screen, first two seconds): What does Tennessee v. Garner mean on your next shift?
 - Hook (on screen and spoken): Garner draws the line officers carry into every foot pursuit.
 - Body: Flight alone is not a basis for deadly force, and neither is the label "felony." Deadly force to stop an escape requires probable cause that the person poses a threat of serious physical harm to the officer or others. The Court gave two routes to that conclusion: the suspect threatens the officer with a weapon, or there is probable cause that the suspect committed a crime involving the infliction or threatened infliction of serious physical harm.
 - Card: Tennessee v. Garner, Supreme Court of the United States, March 27, 1985
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "What this means in practice" segment of Video 2, or re-record from this text in the same voice.
 
 #### Short 2.2: Tennessee v. Garner
 
+- Question (on screen, first two seconds): How do you train Tennessee v. Garner?
 - Hook (on screen and spoken): Teach Garner with Graham as one framework: Graham supplies the totality of the circumstances test and Garner supplies the specific rule for deadly force to prevent escape.
 - Body: In deadly force scenarios, require trainees to name the specific facts supporting probable cause of a significant threat, not a conclusion such as that he was a felon or might have been armed. Ask what they saw in the hands, what the underlying crime was and how they knew it, and what the suspect did that signaled danger to the officer or others. Train the warning.
 - Card: Tennessee v. Garner, Supreme Court of the United States, March 27, 1985
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "How to train it" segment of Video 2, or re-record from this text in the same voice.
 
 #### Short 2.3: Tennessee v. Garner
 
+- Question (on screen, first two seconds): What would you tell your shift about Tennessee v. Garner?
 - Hook (on screen and spoken): Flight is not a threat.
 - Body: Garner rejected the rule that any fleeing felon may be stopped with deadly force. The question is whether there is probable cause that this suspect poses a threat of serious physical harm to the officer or others. Escape, by itself, does not supply it.
 - Card: Tennessee v. Garner, Supreme Court of the United States, March 27, 1985
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Flight is not a threat" segment of Video 2, or re-record from this text in the same voice.
 
 #### Short 2.4: Tennessee v. Garner
 
+- Question (on screen, first two seconds): What would you tell your shift about Tennessee v. Garner?
 - Hook (on screen and spoken): Two routes to probable cause of a threat.
 - Body: The suspect threatens the officer with a weapon, or there is probable cause that the suspect committed a crime involving the infliction or threatened infliction of serious physical harm. Officers should be able to say which applied and what facts supported it.
 - Card: Tennessee v. Garner, Supreme Court of the United States, March 27, 1985
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Two routes to probable cause of a threat" segment of Video 2, or re-record from this text in the same voice.
 
 ### Pinned comment
@@ -492,6 +509,10 @@ Suggested playlist: Intermediate and less lethal force. Topic sections on the ap
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-deorle-v-rutherford.mp3 (19 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/deorle-v-rutherford.txt. Case page: https://app.sowardsconsulting.com/cases/deorle-v-rutherford.
 
+### Opening question (on screen, first two seconds)
+
+What did Deorle v. Rutherford decide, and what does it change on your next shift?
+
 ### Title options
 
 1. Deorle v. Rutherford: the case behind every less lethal warning
@@ -560,7 +581,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | In practice | In practice: field | Training photo or brand slide |
 | Train it | Train it | Numbered points pulled from the train-it paragraph |
 | Briefing room points | 1. Serious injury force needs a strong interest / 2. Fear is not a fact / 3. Warn when feasible, and warn the target / 4. Time removes the split second defense / 5. Apparent crisis is a factor, not a rule / 6. Posture | One brand slide per point, title only |
-| Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
+| Close | "Would your agency train this? Tell me in the comments." / Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | Comment ask spoken (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3) and on screen, then the long subscribe ask, over the end screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
 
@@ -568,34 +589,38 @@ No-repeat check: no earlier kit has Shorts for Deorle v. Rutherford. All of thes
 
 #### Short 3.1: Deorle v. Rutherford
 
+- Question (on screen, first two seconds): What does Deorle v. Rutherford mean on your next shift?
 - Hook (on screen and spoken): Deorle sets the standard for every impact munition, and by later extension for other intermediate tools: if the force can cause serious injury, it requires a strong governmental interest, and a warning should precede it when feasible.
 - Body: The officer's job is to be able to name the interest and the warning. Name the interest in objective facts. The court rejected a bare statement of fear.
 - Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "What this means in practice" segment of Video 3, or re-record from this text in the same voice.
 
 #### Short 3.2: Deorle v. Rutherford
 
+- Question (on screen, first two seconds): How do you train Deorle v. Rutherford?
 - Hook (on screen and spoken): Teach the Deorle articulation before teaching the shot.
 - Body: Before any impact munition training evolution, require the student to state three things aloud: the objective facts showing an immediate threat or other strong interest, the warning given and the time allowed for compliance, and the alternatives available and why they were not used. The court faulted the record for lacking all three. Build the warning into muscle memory.
 - Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "How to train it" segment of Video 3, or re-record from this text in the same voice.
 
 #### Short 3.3: Deorle v. Rutherford
 
+- Question (on screen, first two seconds): What would you tell your shift about Deorle v. Rutherford?
 - Hook (on screen and spoken): Serious injury force needs a strong interest.
 - Body: The court held that force capable of causing serious injury, even though less than deadly, is permissible only when a strong governmental interest compels it. Before deploying an impact munition, be able to state that interest in objective facts.
 - Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Serious injury force needs a strong interest" segment of Video 3, or re-record from this text in the same voice.
 
 #### Short 3.4: Deorle v. Rutherford
 
+- Question (on screen, first two seconds): What would you tell your shift about Deorle v. Rutherford?
 - Hook (on screen and spoken): Fear is not a fact.
 - Body: A simple statement that the officer feared for his safety is not enough. There must be objective factors to justify the concern. What did the person have, what did he do, who was at risk, and what did you actually see.
 - Card: Deorle v. Rutherford, Ninth Circuit, March 16, 2001
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: Fear is not a fact" segment of Video 3, or re-record from this text in the same voice.
 
 ### Pinned comment
@@ -726,6 +751,10 @@ Suggested playlist: Deadly force. Topic sections on the app: Deadly force, Inter
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-smith-v-city-of-hemet.mp3 (18 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/smith-v-city-of-hemet.txt. Case page: https://app.sowardsconsulting.com/cases/smith-v-city-of-hemet.
 
+### Opening question (on screen, first two seconds)
+
+What did Smith v. City of Hemet decide, and what does it change on your next shift?
+
 ### Title options
 
 1. Smith v. City of Hemet: how the Ninth Circuit defines deadly force
@@ -794,7 +823,7 @@ Dr. Timothy Sowards, PhD, has trained peace officers for over 25 years and is a 
 | In practice | In practice: field | Training photo or brand slide |
 | Train it | Train it | Numbered points pulled from the train-it paragraph |
 | Briefing room points | 1. The definition / 2. The court did not call the dog deadly force / 3. When compliance starts, force must change / 4. Investigation and arrest are different phases / 5. Decontaminate everything | One brand slide per point, title only |
-| Close | Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | End screen with empty zones for subscribe and watch-next |
+| Close | "Would your agency train this? Tell me in the comments." / Sowards Briefing Room / Free 30 days / sowardsconsulting.com/membership/sowards-briefing-room/ | Comment ask spoken (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3) and on screen, then the long subscribe ask, over the end screen with empty zones for subscribe and watch-next |
 
 ### Shorts for this video (vertical, under 60 seconds each)
 
@@ -802,34 +831,38 @@ No-repeat check: no earlier kit has Shorts for Smith v. City of Hemet. All of th
 
 #### Short 4.1: Smith v. City of Hemet
 
+- Question (on screen, first two seconds): What does Smith v. City of Hemet mean on your next shift?
 - Hook (on screen and spoken): Smith v. City of Hemet gives California officers the Ninth Circuit's definition of deadly force: force that creates a substantial risk of causing death or serious bodily injury.
 - Body: The court adopted that language because California and the Hemet Police Department already used it, so the constitutional definition and the state definition now say the same thing. The practical effect is that the question of whether a tool or technique is deadly force turns on the risk it creates in the way it is used, not on whether the tool is a firearm. The court did not say a police dog is deadly force.
 - Card: Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "What this means in practice" segment of Video 4, or re-record from this text in the same voice.
 
 #### Short 4.2: Smith v. City of Hemet
 
+- Question (on screen, first two seconds): How do you train Smith v. City of Hemet?
 - Hook (on screen and spoken): Teach the definition and make students apply it to tools, not labels.
 - Body: Give the Smith definition, force that creates a substantial risk of causing death or serious bodily injury, and run a list: baton strike to the head, baton strike to the thigh, impact munition at the chest from thirty feet, carotid restraint, dog bite to the arm, dog bite to the neck. For each, students explain what risk the application creates and why that makes it deadly force or not. The point is that the same tool can fall on either side depending on target, duration, and circumstances.
 - Card: Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "How to train it" segment of Video 4, or re-record from this text in the same voice.
 
 #### Short 4.3: Smith v. City of Hemet
 
+- Question (on screen, first two seconds): What would you tell your shift about Smith v. City of Hemet?
 - Hook (on screen and spoken): The definition.
 - Body: Deadly force is force that creates a substantial risk of causing death or serious bodily injury. The Ninth Circuit adopted it because California agencies already used it. Apply it to how a tool is used, not to the name of the tool.
 - Card: Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: The definition" segment of Video 4, or re-record from this text in the same voice.
 
 #### Short 4.4: Smith v. City of Hemet
 
+- Question (on screen, first two seconds): What would you tell your shift about Smith v. City of Hemet?
 - Hook (on screen and spoken): The court did not call the dog deadly force.
 - Body: The en banc court expressly declined to decide whether a police dog is deadly force, generally or on these facts, and left that to the district court. Course materials that say Smith held K-9 bites are deadly force, or that the court found the deployment reasonable, overstate the case.
 - Card: Smith v. City of Hemet, Ninth Circuit, en banc, January 10, 2005
-- Close: Full brief and training points in the Sowards Briefing Room, link in bio.
+- Close (spoken and on screen): "Would your agency train this? Tell me in the comments." then "Subscribe and follow for a new case every week." Full brief and training points in the Sowards Briefing Room, link in bio.
 - Cut from: the "Briefing room point: The court did not call the dog deadly force" segment of Video 4, or re-record from this text in the same voice.
 
 ### Pinned comment
