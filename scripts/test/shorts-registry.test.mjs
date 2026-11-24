@@ -67,3 +67,9 @@ test('sentence splitting keeps citations and abbreviations whole', () => {
   assert.equal(firstSentence(text), 'Two weeks ago in Johnson v. Adgar the court held the same (490 U.S. at 395).');
   assert.deepEqual(sentences(text), ['Two weeks ago in Johnson v. Adgar the court held the same (490 U.S. at 395).', 'Officers should read it.', 'Dr. Sowards teaches it.']);
 });
+
+test('a sentence end inside an open quotation does not split the sentence', () => {
+  const text = 'Make the shout a description. "Gun! Gun! He\'s got a gun!" justified the second shooter. Announce what is seen.';
+  assert.deepEqual(sentences(text), ['Make the shout a description.', '"Gun! Gun! He\'s got a gun!" justified the second shooter.', 'Announce what is seen.']);
+  assert.equal(firstSentence('"Gun! Gun! He\'s got a gun!" justified the shot. Next.'), '"Gun! Gun! He\'s got a gun!" justified the shot.');
+});

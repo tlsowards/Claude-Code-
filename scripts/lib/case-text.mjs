@@ -17,12 +17,29 @@ function restore(s) {
 }
 /** The first sentence, with a closing quote or bracket kept on it. */
 export function firstSentence(s) {
-  const t = protect(s);
-  const m = t.match(/^.*?[.!?]["')\]]*(?=\s|$)/);
-  return restore(m ? m[0] : t).trim();
+  return sentences(s)[0] ?? s.trim();
 }
-/** Every sentence, abbreviation-safe. */
+/**
+ * Every sentence, abbreviation-safe. A sentence end inside an open quotation ("Gun! Gun! He's got a
+ * gun!" justified the shot) does not split the sentence: pieces are joined until the double quotes balance.
+ */
 export function sentences(s) {
   const t = protect(s);
-  return (t.match(/[^.!?]+[.!?]+["')\]]*(?=\s|$)/g)?.map((x) => restore(x).trim()) ?? [restore(t)]);
+  const pieces = t.match(/[^.!?]+[.!?]+["')\]]*(?=\s|$)/g)?.map((x) => restore(x).trim()) ?? [restore(t).trim()];
+  const out = [];
+  let open = '';
+  pieces.forEach((piece, i) => {
+    open = open ? `${open} ${piece}` : piece;
+    const balanced = (open.match(/"/g) ?? []).length % 2 === 0;
+    const next = pieces[i + 1];
+    // A quotation that closes right after its own punctuation ("...gun!" justified) continues the
+    // sentence when the next piece starts in lower case.
+    const continues = /["']$/.test(piece) && next !== undefined && /^[a-z]/.test(next);
+    if (balanced && !continues) {
+      out.push(open);
+      open = '';
+    }
+  });
+  if (open) out.push(open);
+  return out;
 }

@@ -53,7 +53,7 @@ function narrate(brief) {
   for (const section of brief.sections) {
     const head = section.heading;
     if (section.cases.length === 0) continue; // a section with nothing substantive is dropped, not announced
-    p.push(`Now, the ${head}.${section.note ? ' ' + section.note : ''}`);
+    p.push(`Now, the ${head}.${section.note ? ' ' + speakable(section.note) : ''}`);
     for (const c of section.cases) {
       const lines = [];
       lines.push(`${speakable(c.name)}. ${speakable(c.court)}, decided ${c.decided}${c.docket ? `, docket number ${c.docket}` : ''}. ${statusLine[c.status] ?? ''}`);
