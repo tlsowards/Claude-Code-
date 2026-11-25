@@ -23,6 +23,8 @@ function range(a, b) {
 /** Make citations and docket numbers easier to read aloud. */
 function speakable(s) {
   return s
+    .replace(/\[([A-Za-z]+)\]/g, '$1') // a quoted "[p]rinciples" is read as "principles"
+    .replace(/\bf\*cking\b/gi, 'effing') // the opinion's own spelling; spoken as the word it stands for
     .replace(/\bF\.4th\b/g, 'F fourth')
     .replace(/\bF\.3d\b/g, 'F third')
     .replace(/\bU\.S\.C\./g, 'U S C')
@@ -51,7 +53,7 @@ function narrate(brief) {
   for (const section of brief.sections) {
     const head = section.heading;
     if (section.cases.length === 0) continue; // a section with nothing substantive is dropped, not announced
-    p.push(`Now, the ${head}.${section.note ? ' ' + section.note : ''}`);
+    p.push(`Now, the ${head}.${section.note ? ' ' + speakable(section.note) : ''}`);
     for (const c of section.cases) {
       const lines = [];
       lines.push(`${speakable(c.name)}. ${speakable(c.court)}, decided ${c.decided}${c.docket ? `, docket number ${c.docket}` : ''}. ${statusLine[c.status] ?? ''}`);
@@ -65,7 +67,7 @@ function narrate(brief) {
     }
   }
   p.push(`Now the application, the part to take into a briefing room or a training block this week.`);
-  brief.applications.forEach((a, i) => p.push(`${['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth'][i] ?? `Number ${i + 1}`}, ${a.title.replace(/\.$/, '')}. ${a.body}`));
+  brief.applications.forEach((a, i) => p.push(`${['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth', 'Seventh', 'Eighth'][i] ?? `Number ${i + 1}`}, ${speakable(a.title.replace(/\.$/, ''))}. ${speakable(a.body)}`));
   p.push(`That is the update for this week. Read the full opinion before relying on any case, confirm unpublished decisions with counsel before citing them, and check every point against your agency's policy. The written brief, a printable roll call version, and a short knowledge check are in the Sowards Consulting app. This has been the Use of Force Case Law Update from Sowards Consulting, at sowardsconsulting dot com. Train hard, document everything, and stay safe out there.`);
   return p.join('\n\n');
 }

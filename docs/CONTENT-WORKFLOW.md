@@ -44,6 +44,10 @@ Episodes are read in Dr. Sowards' own voice. The standard is the ElevenLabs prof
 3. Spoken spellings live in `content/pronunciations.json`. "Sowards" is rendered as "Souwards" so the voice engines say it correctly; the written briefs keep the real spelling. Add a line there for any other name the engine mispronounces.
 4. Listen to the opening, one case, and the close before publishing.
 
+## Where the week's cases come from
+
+The weekly brief is Claude's research, not a transcript of anything. Each Saturday the sources are read directly: the Ninth Circuit's published opinion and memoranda lists on the court's website (the memoranda list and feed show only the most recent 25 dispositions, so earlier days in the week can be out of reach and the coverage notes say so when they are); the Supreme Court's order lists for the week; the other circuits through the govinfo search API, which does not carry every circuit; and the California Courts of Appeal published opinion list, with the PDFs served from the courts' document host. Every decision in the brief is read in full from the court's own PDF. The website's own "Weekly Case Law Review" podcast posts are a separate pipeline and are not a source for the brief.
+
 ## Publish a podcast episode
 
 One command does the whole thing when the site episode already exists: `scripts/publish-episode.sh <brief id> <site episode id>` builds the narration, renders it in Dr. Sowards' voice, uploads the MP3 to the site's media library, points the site's episode at it with episode notes, and adds the entry to `content/episodes.json`. Then run `npm run build` and commit. The manual steps are:
