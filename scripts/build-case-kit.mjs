@@ -147,7 +147,7 @@ li([
   'Keep every case name, court, date, and docket exactly as written here. The written spelling is "Sowards"; the audio pronunciation file is for the voice engine only.',
   'Visuals: brand slides (navy #1B2A4E, red #CF2E2E, gold #C9A24B, Inter and Montserrat), highlighted lines of the opinion text, a facts timeline, a map when a place is named, and the training photos in public/images/training. Steady, slow-moving b-roll only. Body camera or courtroom footage only if it is public record or a court exhibit, non-graphic, with no identifiable juveniles, and obtained through a formal records request. No AI avatar or synthetic host anywhere in the video.',
   'Thumbnail: follow the thumbnail section of each video. No generated or avatar face, ever.',
-  `Opening question and comment ask (Dr. Sowards, November 23, 2026): every video and every Short opens with its question on screen in the first two seconds, over the brand slate, before the first spoken words. Every close carries the comment ask "${COMMENT_ASK}" spoken in Dr. Sowards' voice (${COMMENT_ASK_AUDIO}, 3 seconds) and on screen, followed by the subscribe ask (short line ${SUBSCRIBE_ASK_AUDIO.short}, long line ${SUBSCRIBE_ASK_AUDIO.long}) under the animated Subscribe or Follow button. These are inserts at natural pauses; the narration audio stays as delivered.`,
+  `Opening question and comment ask (Dr. Sowards, November 23, 2026): every video opens with its question spoken in Dr. Sowards' voice (the clip linked under Opening question) and on screen in the first two seconds, over the brand slate, before the narration; every Short opens with its question on screen in the first two seconds. Every close carries the comment ask "${COMMENT_ASK}" spoken in Dr. Sowards' voice (${COMMENT_ASK_AUDIO}, 3 seconds) and on screen, followed by the subscribe ask (short line ${SUBSCRIBE_ASK_AUDIO.short}, long line ${SUBSCRIBE_ASK_AUDIO.long}) under the animated Subscribe or Follow button. These are inserts at natural pauses; the narration audio stays as delivered.`,
   'Timestamps: each chapter list gives the first words of the segment. Place each chapter marker where those words are spoken, and list every chapter in the description starting at 0:00.',
   'Posts: the schedule below is the copy. Formatting, hashtags beyond the ones listed, and scheduling are yours. The substance is not. A post goes out only after its video is live; until then it links to the case page on the app.',
 ]);
@@ -179,8 +179,9 @@ if (cases.length === 0) {
     p(`Suggested playlist: ${playlist(c)}. Topic sections on the app: ${(c.categories ?? []).map(labelFor).join(', ') || 'none'}.`);
     p(`Audio: ${c.audio?.url ? `${c.audio.url} (${minutes(c)}, complete narration in Dr. Sowards' voice)` : 'not rendered yet; render it with scripts/make-audio-elevenlabs.mjs --case before building the video'}. Narration script: content/narration/cases/${c.id}.txt. Case page: ${caseUrl(c)}.`);
 
-    h(3, 'Opening question (on screen, first two seconds)');
+    h(3, 'Opening question (spoken and on screen, first two seconds)');
     p(yt.question ?? `What did ${shortName(c)} decide, and what does it change on your next shift?`);
+    p(yt.questionAudio ? `Spoken in Dr. Sowards' voice: ${yt.questionAudio} (about 5 seconds). Play it over the brand slate with the question on screen, before the narration starts.` : 'No recorded clip yet: record the question with scripts/make-line-elevenlabs.mjs ("versus" for "v.") and add the URL as questionAudio before this video is built.');
 
     h(3, 'Title options');
     const titles = yt.titles?.length
