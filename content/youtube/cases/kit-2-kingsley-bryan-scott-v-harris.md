@@ -10,7 +10,7 @@ Each video has its own finished narration in Dr. Sowards' voice. The audio is co
 - Keep every case name, court, date, and docket exactly as written here. The written spelling is "Sowards"; the audio pronunciation file is for the voice engine only.
 - Visuals: brand slides (navy #1B2A4E, red #CF2E2E, gold #C9A24B, Inter and Montserrat), highlighted lines of the opinion text, a facts timeline, a map when a place is named, and the training photos in public/images/training. Steady, slow-moving b-roll only. Body camera or courtroom footage only if it is public record or a court exhibit, non-graphic, with no identifiable juveniles, and obtained through a formal records request. No AI avatar or synthetic host anywhere in the video.
 - Thumbnail: follow the thumbnail section of each video. No generated or avatar face, ever.
-- Opening question and comment ask (Dr. Sowards, November 23, 2026): every video and every Short opens with its question on screen in the first two seconds, over the brand slate, before the first spoken words. Every close carries the comment ask "Would your agency train this? Tell me in the comments." spoken in Dr. Sowards' voice (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3, 3 seconds) and on screen, followed by the subscribe ask (short line https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-short.mp3, long line https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-long.mp3) under the animated Subscribe or Follow button. These are inserts at natural pauses; the narration audio stays as delivered.
+- Opening question and comment ask (Dr. Sowards, November 23, 2026): every video opens with its question spoken in Dr. Sowards' voice (the clip linked under Opening question) and on screen in the first two seconds, over the brand slate, before the narration; every Short opens with its question on screen in the first two seconds. Every close carries the comment ask "Would your agency train this? Tell me in the comments." spoken in Dr. Sowards' voice (https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-comment-ask.mp3, 3 seconds) and on screen, followed by the subscribe ask (short line https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-short.mp3, long line https://sowardsconsulting.com/wp-content/uploads/2026/11/sowards-briefing-room-subscribe-ask-long.mp3) under the animated Subscribe or Follow button. These are inserts at natural pauses; the narration audio stays as delivered.
 - Timestamps: each chapter list gives the first words of the segment. Place each chapter marker where those words are spoken, and list every chapter in the description starting at 0:00.
 - Posts: the schedule below is the copy. Formatting, hashtags beyond the ones listed, and scheduling are yours. The substance is not. A post goes out only after its video is live; until then it links to the case page on the app.
 
@@ -30,9 +30,11 @@ Suggested playlist: Custody and corrections. Topic sections on the app: Custody 
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-kingsley-v-hendrickson.mp3 (14 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/kingsley-v-hendrickson.txt. Case page: https://app.sowardsconsulting.com/cases/kingsley-v-hendrickson.
 
-### Opening question (on screen, first two seconds)
+### Opening question (spoken and on screen, first two seconds)
 
 What did Kingsley v. Hendrickson decide, and what does it change on your next shift?
+
+Spoken in Dr. Sowards' voice: https://sowardsconsulting.com/wp-content/uploads/2026/11/question-kingsley-v-hendrickson.mp3 (about 5 seconds). Play it over the brand slate with the question on screen, before the narration starts.
 
 ### Title options
 
@@ -270,9 +272,11 @@ Suggested playlist: Intermediate and less lethal force. Topic sections on the ap
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-bryan-v-macpherson.mp3 (16 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/bryan-v-macpherson.txt. Case page: https://app.sowardsconsulting.com/cases/bryan-v-macpherson.
 
-### Opening question (on screen, first two seconds)
+### Opening question (spoken and on screen, first two seconds)
 
 What did Bryan v. MacPherson decide, and what does it change on your next shift?
+
+Spoken in Dr. Sowards' voice: https://sowardsconsulting.com/wp-content/uploads/2026/11/question-bryan-v-macpherson.mp3 (about 5 seconds). Play it over the brand slate with the question on screen, before the narration starts.
 
 ### Title options
 
@@ -512,9 +516,11 @@ Suggested playlist: Deadly force. Topic sections on the app: Deadly force, Force
 
 Audio: https://sowardsconsulting.com/wp-content/uploads/2026/11/case-scott-v-harris.mp3 (16 minutes, complete narration in Dr. Sowards' voice). Narration script: content/narration/cases/scott-v-harris.txt. Case page: https://app.sowardsconsulting.com/cases/scott-v-harris.
 
-### Opening question (on screen, first two seconds)
+### Opening question (spoken and on screen, first two seconds)
 
 What did Scott v. Harris decide, and what does it change on your next shift?
+
+Spoken in Dr. Sowards' voice: https://sowardsconsulting.com/wp-content/uploads/2026/11/question-scott-v-harris.mp3 (about 5 seconds). Play it over the brand slate with the question on screen, before the narration starts.
 
 ### Title options
 
