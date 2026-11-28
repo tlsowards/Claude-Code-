@@ -23,8 +23,12 @@ function range(a, b) {
 /** Make citations and docket numbers easier to read aloud. */
 function speakable(s) {
   return s
-    .replace(/\[([A-Za-z]+)\]/g, '$1') // a quoted "[p]rinciples" is read as "principles"
-    .replace(/\bf\*cking\b/gi, 'effing') // the opinion's own spelling; spoken as the word it stands for
+    .replace(/\[([^\]]+)\]/g, '$1') // a quoted "[p]rinciples" or "[my plea]" is read without the brackets
+    .replace(/\bf\*ckin(?:g(?!\w)|'|(?!\w))/gi, 'effing') // the opinion's own spelling; spoken as the word it stands for
+    .replace(/\bfucking\b/gi, 'effing') // an opinion that spells the word out is softened in the spoken version only
+    .replace(/\bfuck\b/gi, 'eff')
+    .replace(/§\s*/g, 'section ')
+    .replace(/\bCPC\b/g, 'Penal Code') // the opinion's abbreviation for the California Penal Code
     .replace(/\bF\.4th\b/g, 'F fourth')
     .replace(/\bF\.3d\b/g, 'F third')
     .replace(/\bU\.S\.C\./g, 'U S C')

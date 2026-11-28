@@ -8,9 +8,11 @@ export function decidedShort(decided) {
 
 // Periods inside citations and abbreviations (U.S., v., No., n.10, F.3d, Dr., Supp.) are not sentence ends.
 const ABBR = /\b(U\.S\.C\.|U\.S\.|v\.|No\.|Nos\.|n\.|F\.|Supp\.|Dr\.|Mr\.|Mrs\.|Ms\.|Cir\.|Cal\.|Dist\.|Ct\.|App\.|Inc\.|Jr\.|Sr\.)/g;
+// A single capital letter with a period followed by another capitalized word is an initial (Officer R. Villegas, Judge W. Fletcher), not a sentence end.
+const INITIAL = /\b([A-Z])\.(?=\s+[A-Z])/g;
 const MARK = '\u0001';
 function protect(s) {
-  return s.replace(ABBR, (m) => m.replace(/\./g, MARK));
+  return s.replace(ABBR, (m) => m.replace(/\./g, MARK)).replace(INITIAL, `$1${MARK}`);
 }
 function restore(s) {
   return s.replace(new RegExp(MARK, 'g'), '.');

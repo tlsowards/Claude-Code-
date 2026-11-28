@@ -73,3 +73,9 @@ test('a sentence end inside an open quotation does not split the sentence', () =
   assert.deepEqual(sentences(text), ['Make the shout a description.', '"Gun! Gun! He\'s got a gun!" justified the second shooter.', 'Announce what is seen.']);
   assert.equal(firstSentence('"Gun! Gun! He\'s got a gun!" justified the shot. Next.'), '"Gun! Gun! He\'s got a gun!" justified the shot.');
 });
+
+test('a single-letter initial before a capitalized name is not a sentence end', () => {
+  const text = 'He was escorted by Officer R. Villegas and a second officer. Reversed, in an opinion by Judge W. Fletcher. The vote was close.';
+  assert.deepEqual(sentences(text), ['He was escorted by Officer R. Villegas and a second officer.', 'Reversed, in an opinion by Judge W. Fletcher.', 'The vote was close.']);
+  assert.equal(firstSentence('Deputy J. Smith arrived. He stopped.'), 'Deputy J. Smith arrived.');
+});

@@ -39,7 +39,7 @@ Voice rules are the same as for weekly briefs: neutral third person, written for
 
 Episodes are read in Dr. Sowards' own voice. The standard is the ElevenLabs professional clone named "Tim" with the Eleven v4 model. OpenAI's Onyx voice is the fallback only.
 
-1. Write the narration script: `node scripts/build-narration.mjs <brief id>` writes `content/narration/<brief id>.txt` from the brief JSON. Read it through; it is what will be spoken.
+1. Write the narration script: `node scripts/build-narration.mjs <brief id>` writes `content/narration/<brief id>.txt` from the brief JSON. Read it through; it is what will be spoken. The spoken text differs from the written brief only where the voice engine needs it: citations are spelled out, section signs become "section", the opinions' "CPC" becomes "Penal Code", bracketed editorial insertions lose their brackets, and profanity quoted from an opinion is softened to "effing" in speech while the written brief keeps the opinion's words.
 2. Render it: `ELEVENLABS_API_KEY=... node scripts/make-audio-elevenlabs.mjs <brief id> --voice <voice id of "Tim"> --out audio-out`. The key is never committed; in a Claude cloud session it is proxy-injected and the variable holds a placeholder. The output is `audio-out/<date>-use-of-force-case-law-update-tim.mp3`.
 3. Spoken spellings live in `content/pronunciations.json`. "Sowards" is rendered as "Souwards" so the voice engines say it correctly; the written briefs keep the real spelling. Add a line there for any other name the engine mispronounces.
 4. Listen to the opening, one case, and the close before publishing.
