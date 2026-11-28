@@ -24,7 +24,7 @@ function range(a, b) {
 function speakable(s) {
   return s
     .replace(/\[([^\]]+)\]/g, '$1') // a quoted "[p]rinciples" or "[my plea]" is read without the brackets
-    .replace(/\bf\*ckin(?:g|')?/gi, 'effing') // the opinion's own spelling; spoken as the word it stands for
+    .replace(/\bf\*ckin(?:g(?!\w)|'|(?!\w))/gi, 'effing') // the opinion's own spelling; spoken as the word it stands for
     .replace(/\bfucking\b/gi, 'effing') // an opinion that spells the word out is softened in the spoken version only
     .replace(/\bfuck\b/gi, 'eff')
     .replace(/§\s*/g, 'section ')
